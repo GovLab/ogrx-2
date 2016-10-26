@@ -30,6 +30,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - support
 
 # Folder Structure
 source: ./source

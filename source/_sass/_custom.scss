@@ -1,0 +1,387 @@
+// example custom sass file
+// place site specific sass into individual files like this one as needed for the design,
+// and @import in styles.scss
+
+
+body {
+
+
+}
+
+option { color: $black; }
+
+.b-top-nav {
+  .e-logo {
+    em {
+      font-weight: 100;
+
+    }
+  }
+}
+
+#e-main-logo {
+  width: 33rem;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.b-search-page {
+
+}
+
+.b-search-results {
+  padding: 0;
+}
+
+.b-divider {
+  text-align: center;
+  &.m-main-color {
+    background-color: $main-color;
+
+  }
+}
+
+.access-switch .switch { text-align: center; }
+
+
+
+.b-top-section {
+  background-color: $main-color;
+  margin-top: -66px;
+  padding-top: 136px;
+
+  &.m-standalone {
+    padding-bottom: 80px;
+  }
+}
+
+.b-top-nav {
+  background-color: rgba($black, .2);
+
+  .e-social-media img { width: 20px; } // Custom icon for twitter (maybe push this to styleguide)
+
+  .e-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px;
+
+    &:hover { text-decoration: none; }
+  }
+}
+
+.b-browsing-ways {
+  text-align: center;
+  padding-top: 30px;
+
+  .e-way {
+    color: $white;
+  }
+}
+
+.b-main-search-section {
+  background-color: darken($main-color, 4);
+}
+
+.b-all-categories-list {
+  padding: 0;
+
+  .e-index {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .e-index-item {
+      padding: 5px 10px;
+      display: inline-block;
+      font-size: 1.2rem;
+
+      &:hover {
+        text-decoration: none;
+        background-color: rgba($black, .1);
+      }
+    }
+  }
+
+  .e-list-item {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    &:nth-of-type(even) { background-color: rgba($black, .03); }
+  }
+
+}
+
+
+.b-categories-page {
+  .switch { text-indent: 90px; }
+}
+
+.ogr-paragraph:hover{
+  color: $green;
+}
+
+
+.b-featured-authors {
+  .e-list-item {
+    text-align: center;
+    height: 380px;
+
+    .e-picture {
+      height: 250px;
+      width: 250px;
+      margin: 0 auto 30px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba($black, .1);
+    }
+
+    .e-name {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .e-job {
+      font-size: 1rem;
+      color: rgba($black, .6);
+    }
+  }
+}
+
+
+
+
+// PLACEHOLDER COLOR CODES FOR LIST ITEM
+.e-list-item {
+  &.m-all {background-color: $all;}
+  &.m-behavioral-research {background-color: $behavioral-research !important;}
+  &.m-citizen-engagement {background-color: $citizen-engagement;}
+  &.m-civic-technology {background-color: $civic-technology !important;}
+  &.m-data-analysis {background-color: $data-analysis;}
+  &.m-expert-networking {background-color: $expert-networking !important; }
+  &.m-open-data {background-color: $open-data;}
+  &.m-labs-and-experimentation {background-color: $labs-and-experimentation !important;}
+}
+
+
+
+.b-partner-organizations {
+  &.m-disabled {
+    .e-org-logo {
+      pointer-events: none;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: .4;
+    }
+  }
+
+  .e-org-logo {
+    padding: 50px;
+    text-align: center;
+
+    &.m-ogp {
+      padding: 0 30px;
+    }
+
+    img {
+      max-height: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.b-divider.m-light {
+  color: rgba($black, .5);
+  background-color: rgba($black, .1);
+
+  h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+
+.b-footer {
+  h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .4px;
+  }
+
+  .e-sections {
+    a { display: block; }
+  }
+
+  p, a {
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  .e-partner-logo {
+    width: 140px;
+    margin: 15px;
+
+    &.m-deet {
+      width: 180px;
+    }
+  }
+}
+
+#submit-button {
+  margin: 10px 0;
+}
+
+.footer-links:hover {
+  color: $yellow;
+  text-decoration: none;
+}
+
+.b-main-menu .m-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.b-report-bug-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 30px;
+  padding: 17px;
+  width: 60px;
+  height: 60px;
+  background-color: $purple;
+  box-shadow: 2px 2px 5px rgba($black, .4);
+
+  &:hover {
+    background-color: $red;
+  }
+
+
+  i {
+    color: rgba($white, .4);
+    font-size: 1.6rem;
+  }
+
+
+}
+
+
+#facebook-logo {
+  width: 41px;
+}
+#medium-logo {
+  width: 35.1px;
+}
+.b-modal{
+  color: $teal;
+  .e-content {
+    &.m-center > * {
+      text-align: center;
+    }
+  }
+}
+
+
+.b-powered-by {
+  text-align: right;
+  opacity: .3;
+  transition: opacity .4s ease;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity .4s ease;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .e-logo {
+    width: 110px;
+    margin-left: 15px;
+
+  }
+}
+
+#error-form .b-page-section { padding: 0; }
+
+
+// TEMP POINTER FIX
+.b-top-nav {
+  .e-nav-item {
+    cursor: pointer;
+  }
+}
+
+#datasheet-download { font-size: 18px; }
+
+.b-fixed-button {
+  display: inline-block;
+  background-color: $black;
+  color: $white;
+  border-radius: 100%;
+  position: fixed;
+  visibility: hidden;
+  text-align: center;
+  padding-top: 18px;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .1s linear;
+  &.m-show {
+    visibility: visible;
+  }
+  &:hover {
+    background-color: $gray-60;
+    color: $white;
+    transition: background-color .1s linear;
+  }
+  &.m-pos-adjust-top-1 {
+    bottom: 130px;
+  }
+}
+
+.e-organization-logo {
+  &.m-odrs {
+    max-width: 560px;
+  }
+}
+
+
+.b-contributing-partners {
+  margin-top: 20px;
+  .e-organization-logo {
+    max-height: 200px;
+  }
+  .e-organization-logo img {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .column.end:last-child:last-child, .end.columns:last-child:last-child {
+    float: none !important;
+  }
+
+  
+}
+
+
+
+
+
+// #entry_580987916::-webkit-input-placeholder, #entry_580987916:-moz-placeholder, #entry_580987916::-moz-placeholder, #entry_580987916:-ms-input-placeholder{
+//   color: $teal;
+//   text-align: center;
+// }
+//
+// #entry_1026309911::placeholder{
+//   color: $teal;
+//   text-align: center;
+// }
