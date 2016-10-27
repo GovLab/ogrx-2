@@ -37,4 +37,14 @@ exclude:
 source: ./source
 # sass_dir: source/css
 
-
+page_gen:
+  - data: organizations
+    template: premium_organization
+    name: title
+    dir: organizations
+    extension: html
+  - data: categories
+    template: base_results
+    name: title
+    dir: main-categories
+    extension: html

@@ -1,0 +1,47 @@
+<!-- {# List of Articles #} -->
+<div class="b-page-section b-results-section b-isotope">
+  <div class="row">
+    <div class="column large-12">
+      {% for paper in site.data.papers %}
+        
+        <div class="b-result-item">
+          <h3 class="e-result-name"><a href="#" title="{{paper.title}}">{{paper.title}}</a></h3>
+          <p class="e-result-authors">
+            {% for author in paper.authors %}
+            <a class="e-author-link" href="#">{{author}} </a> <!-- FIX THE COMMA SEPARATION -->
+            {% endfor %}
+          </p>
+          <div class="e-result-taxonomy m-category">
+            <span class="e-key">Category</span>
+            <span class="e-value">
+              {% for category in paper.taxonomy.category %}
+              <a href="#" class="e-tag m-{{ category | slugify }}">{{ category }}</a>
+              {% endfor %}
+            </span>
+          </div>
+          <div class="e-result-taxonomy m-methodology">
+            <span class="e-key">Methodology</span>
+            <span class="e-value"><a class="e-tag" href="#">{{ paper.taxonomy.methodology }}</a></span>
+          </div>
+          <div class="e-result-taxonomy m-objective">
+            <span class="e-key">Objective</span>
+            <span class="e-value">
+              {% for objective in paper.taxonomy.objective %}
+              <a class="e-tag" href="#">{{ objective }}</a>
+              {% endfor %}
+            </span>
+          </div>
+          <div class="e-result-taxonomy m-type">
+            <span class="e-key">Type</span>
+            <span class="e-value"><a class="e-tag" href="#">{{ paper.type }}</a></span>
+          </div>
+           {% if paper.organization %}
+           <div class="e-result-extras {% for org in paper.organization %}m-{{ org | slugify }}{%endfor%}">
+            <img class="e-organization-logo" src="../images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
+          </div>
+          {% endif %}
+        </div> 
+      {% endfor %}
+    </div>
+  </div>
+</div>

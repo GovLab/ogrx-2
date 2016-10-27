@@ -45,7 +45,7 @@ layout: default
       {% if organization.founding_partner %}
       <div class="medium-4 column end">
         <div class="e-organization-logo m-{{ organization.title | slugify }}">
-          <a href="{{ organization.title | slugify }}.html"><img src="images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+          <a href="organizations/{{ organization.title | slugify }}.html"><img src="images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
         </div>
       </div>
       {% endif %}
@@ -63,7 +63,7 @@ layout: default
   <div class="row expanded" data-equalizer>
     {% for category in site.data.categories %}
     <div class="medium-3 show-for-medium column m-{{category.title | slugify}}" data-equalizer-watch>
-      <a class="e-category-item" href="{{category.title | slugify}}.html">{{category.title | slug}}</a>
+      <a class="e-category-item" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
     </div>
     {% endfor %}
   </div>

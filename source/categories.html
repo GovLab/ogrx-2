@@ -1,0 +1,42 @@
+---
+layout: default
+
+---
+
+<div class="b-all-categories-page">
+
+  <div class="b-top-section">
+    <h1>Categories</h1>
+  </div>
+
+  <div class="b-divider">
+    <h1>Main Categories</h1>
+  </div>
+
+  <div class="b-page-section b-main-categories">
+    <div class="row expanded" data-equalizer>
+      {% for cat in site.data.categories %}
+        <div class="medium-3 show-for-medium column e-list-item m-{{cat.title | slugify}}" data-equalizer-watch>
+          <a class="e-category-item" href="{{cat.title | slugify }}.html">{{cat.title}}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="b-divider">
+    <h1>All Categories</h1>
+  </div>
+
+  <div class="b-page-section b-all-categories-list">
+      <div class="row expanded">
+        {% for cat in  site.data.taxonomy_category %}
+          <div class="column large-4 e-list-item">
+            <a href="categories/{{cat.title}}.html">{{cat.value}}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+</div>
+
+

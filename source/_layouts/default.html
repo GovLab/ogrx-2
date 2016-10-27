@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Open Governance Research Exchange | Beta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- Pulls our Typekit Fonts -->
     <script src="//use.typekit.net/zez3buj.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -34,7 +34,7 @@
     <!-- <link rel="stylesheet" href="css/lib/govlab-styleguide.css"> -->
 
     <!-- Pulls the site-specific styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
 </head>
 <body id="">
 
@@ -48,22 +48,22 @@
 
     <div class="e-nav-group m-right e-social-media">
         <!-- Still questioning the relevance of this -->
-        <a href="https://twitter.com/hashtag/ogrx" class="e-nav-item" target="_blank"><img src="images/twitter-logo.png" alt=""></a>
+        <a href="https://twitter.com/hashtag/ogrx" class="e-nav-item" target="_blank"><img src="{{ 'images/twitter-logo.png' | relative_url}}" alt="Twitter"></a>
     </div>
 
-    <a class="e-logo" href="./">Open Governance Research Exchange | <em>Beta</em></a>
+    <a class="e-logo" href="{{ '/' | relative_url }}">Open Governance Research Exchange | <em>Beta</em></a>
 
 </header>
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
-        <a href="./">Home</a>
-        <a href="./organizations.html">Organizations</a>
-        <a href="./categories.html">Categories</a>
-        <a href="./authors.html">Authors</a>
-        <a href="./about.html">About</a>
-        <a href="./b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
-        <a href="./submit.html">Submit</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/organizations.html' | relative_url }}">Organizations</a>
+        <a href="{{ '/categories.html' | relative_url }}">Categories</a>
+        <a href="{{ '/authors.html' | relative_url }}">Authors</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/b1c94ca2fbc3e78fc30069c8d0f01680-all.html' | relative_url }}">Exchange</a>
+        <a href="{{ '/submit.html' | relative_url }}">Submit</a>
         <a href="#" class="m-disabled">Blog</a>
     </nav>
 
@@ -75,9 +75,9 @@
         <div class="row">
           <div class="large-2 column e-sections">
               <h4>Sections</h4>
-              <a href="./organizations.html" class="footer-links">Organizations</a>
-              <a href="./categories.html" class="footer-links">Categories</a>
-              <a href="./about.html" class="footer-links">About</a>
+              <a href="{{ '/organizations.html' | relative_url }}" class="footer-links">Organizations</a>
+              <a href="{{ '/categories.html' | relative_url }}" class="footer-links">Categories</a>
+              <a href="{{ '/about.html' | relative_url }}" class="footer-links">About</a>
               <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
               <!-- <a href="./_error-form.html" class="footer-links" style="text-decoration:none">Report Errors</a> -->
               <!-- button -->
@@ -141,9 +141,9 @@
 
           <div class="large-6 column">
             <h4>Founding Partners</h4>
-            <img src="images/organizations/deet-logo-white.png" alt="Digital Engagement logo" class="e-partner-logo m-deet"/>
-            <a target="_blank" href="http://www.thegovlab.org/"><img src="images/govlab-logo-white.png" alt="NYU Gov Lab logo" class="e-partner-logo m-govlab"/></a>
-            <a target="_blank" href="https://www.mysociety.org/"><img src="images/organizations/mysociety-logo-white.png" alt="mySociety logo" class="e-partner-logo m-mysociety"/></a>
+            <img src="{{ 'images/organizations/deet-logo-white.png' | relative_url }}" alt="Digital Engagement logo" class="e-partner-logo m-deet"/>
+            <a target="_blank" href="http://www.thegovlab.org/"><img src="{{ 'images/govlab-logo-white.png' | relative_url }}" alt="NYU Gov Lab logo" class="e-partner-logo m-govlab"/></a>
+            <a target="_blank" href="https://www.mysociety.org/"><img src="{{ 'images/organizations/mysociety-logo-white.png' | relative_url }}" alt="mySociety logo" class="e-partner-logo m-mysociety"/></a>
           </div>
 
         </div>
@@ -157,7 +157,7 @@
             </div>
             <div class="large-4 columns">
               <div class="b-powered-by">
-                <p>Powered by <a target="_blank" href="http://www.thegovlab.org/"><img src="images/govlab-logo-white.png" alt="NYU Gov Lab logo" class="e-logo"/></a></p>
+                <p>Powered by <a target="_blank" href="http://www.thegovlab.org/"><img src="{{ 'images/govlab-logo-white.png' | relative_url }}" alt="NYU Gov Lab logo" class="e-logo"/></a></p>
               </div>
             </div>
         </div>
@@ -172,12 +172,12 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
-<script src="js/underscore.js"></script>
-<script src="js/lunr.js"></script>
-<script src="js/lib/scripts.js"></script>
-<script src="js/filters.js"></script>
-<script src="js/search.js"></script>
-<script src="js/uiscripts.js"></script>
+<script src="{{ 'js/underscore.js' | relative_url }}"></script>
+<script src="{{ 'js/lunr.js' | relative_url }}"></script>
+<script src="{{ 'js/lib/scripts.js' | relative_url }}"></script>
+<script src="{{ 'js/filters.js' | relative_url }}"></script>
+<script src="{{ 'js/search.js' | relative_url }}"></script>
+<script src="{{ 'js/uiscripts.js' | relative_url }}"></script>
 
 <script>
 $(function() {
