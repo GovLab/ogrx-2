@@ -15,9 +15,9 @@ layout: default
 
   <div class="b-page-section b-main-categories">
     <div class="row expanded" data-equalizer>
-      {% for cat in site.data.categories %}
+      {% for cat in site.data.main-categories %}
         <div class="medium-3 show-for-medium column e-list-item m-{{cat.title | slugify}}" data-equalizer-watch>
-          <a class="e-category-item" href="{{cat.title | slugify }}.html">{{cat.title}}</a>
+          <a class="e-category-item" href="./{{cat.title | slugify }}.html">{{cat.title}}</a>
         </div>
       {% endfor %}
     </div>
@@ -30,9 +30,11 @@ layout: default
   <div class="b-page-section b-all-categories-list">
       <div class="row expanded">
         {% for cat in  site.data.taxonomy_category %}
+          {% unless site.data.main-categories contains cat %}
           <div class="column large-4 e-list-item">
-            <a href="categories/{{cat.title}}.html">{{cat.value}}</a>
+            <a href="./categories/{{cat.title}}.html">{{cat.value}}</a>
           </div>
+          {% endunless %}
         {% endfor %}
       </div>
     </div>

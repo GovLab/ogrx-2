@@ -1,0 +1,70 @@
+---
+layout: default
+alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+---
+
+
+<div class="b-all-categories-page">
+
+  <div class="b-top-section">
+    <h1>Authors</h1>
+  </div>
+
+<!-- List of Authors - Features Authors -->
+  <div class="b-divider">
+    <h1>Featured Authors</h1>
+  </div>
+
+  <div class="b-page-section b-featured-authors">
+    <div class="row expanded">
+      {% for a in site.data.custom_authors %}
+        <div class="column large-4 end e-list-item">
+          <a href="{{a.title | slugify }}.html"><div class="e-picture" style="background-image: url('../images/authors/{{ a.image }}');"></div></a>
+          <a href="./custom-authors/{{a.title | slugify }}.html"><p class="e-name">{{a.title}}</p></a>
+          <p class="e-job">{{a.job}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+<!-- {# List of Authors - All Authors #} -->
+  <div class="b-divider">
+    <h1>All Authors</h1>
+      <a name="authorlist"></a>
+  </div>
+
+  <div class="b-page-section b-all-categories-list">
+    <div class="row expanded">
+
+      <span class="b-fixed-button-trigger"></span>
+      <a class="b-fixed-button m-pos-adjust-top-1" href="#authorlist"><i class="material-icons">arrow_upward</i></a>
+
+      <div class="large-12 columns e-index">
+      
+        {% for a in page.alphabet %}
+          <a class="e-index-item" href="#{{a}}">{{a}}</a>
+        {% endfor %}
+      </div>
+
+      <!--{% for letter in page.alphabet %}
+      <div class="alpha_anchor">
+        <a name="{{letter}}"></a>
+      </div>
+      {% endfor %}-->
+    </div>
+    <div class="row expanded">
+      {% for author in site.data.authors %}
+      <div class="column large-4 e-list-item">
+        <a href="./authors/{{author.title}}.html">{{author.value}}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+</div>
+
+<script src="./js/scrollbtn.js"></script>
+
