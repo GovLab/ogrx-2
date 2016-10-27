@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="b-all-categories-page">
+
+  <div class="b-top-section">
+    <h1>Organizations</h1>
+  </div>
+
+<!-- List of Organizations - Founding Organizations -->
+<div class="b-divider">
+  <div class="row">
+    <div class="column large-12">
+      <h2>Founding Partners</h2>
+    </div>
+  </div>
+</div>
+
+  <div class="b-page-section b-organizations b-founding-partners">
+    <div class="row expanded">
+
+      {% for organization in site.data.organizations %}
+        {% if organization.founding_partner %}
+        <div class="column large-4 end">
+          <div class="e-organization-logo m-{{ organization.title | slugify }}">
+            <a href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="b-divider">
+    <h2>Contributing Partners</h2>
+  </div>
+
+  <div class="b-page-section b-organizations b-contributing-partners">
+    <div class="row expanded">
+      <!-- Why we have these 2 loops? -->
+      {% for organization in site.data.organizations %}
+        {% unless organization.founding_partner %}
+          <div class="column large-4 end">
+            <div class="e-organization-logo m-{{ organization.title | slugify }}">
+              <a href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+            </div>
+          </div>
+        {% endunless %}
+      {% endfor %}
+
+
+      {% for org in site.data.organizations %}
+        {% unless org.founding_partner %}
+          {% for o in site.data.organization %}
+            <div class="column large-4 end">
+              <div class="e-organization-logo m-{{ organization.title | slugify }}">
+                <a href="{{ o.id }}-{{ o.title | slugify }}.html"><img src="./images/organizations/{{ org.image }}" alt="{{ org.title }}"></a>
+              </div>
+            </div>
+          {% endfor %}
+        {% endunless %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="b-page-section b-organizations b-founding-partners">
+    <div class="row expanded">
+
+    </div>
+  </div>
+</div>

@@ -5,7 +5,7 @@
       {% for paper in site.data.papers %}
         
         <div class="b-result-item">
-          <h3 class="e-result-name"><a href="#" title="{{paper.title}}">{{paper.title}}</a></h3>
+          <h3 class="e-result-name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>
           <p class="e-result-authors">
             {% for author in paper.authors %}
             <a class="e-author-link" href="#">{{author}} </a> <!-- FIX THE COMMA SEPARATION -->

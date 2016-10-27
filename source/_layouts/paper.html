@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<!-- main content starts here -->
+<div class="b-paper-page m-{{organization}}">
+  <div class="b-top-section">
+    <div class="row">
+      <div class="large-10 column small-centered">
+        <h1 class="e-paper-title">{{ page.title }}</h1>
+        <h3 class="e-paper-authors">
+          {% for author in page.authors %}
+            <a class="e-author-link" href="{{ author }}">{{author}}</a>
+          {% endfor %}
+        </h3>
+        <h4 class="e-paper-date">{{ page.paper_date }}</h4>
+      </div>
+    </div>
+
+    <div class="e-meta-info">
+      <div class="row">
+        <div class="medium-6 columns">
+          {% if page.type %}
+            <div class="row">
+              <div class="column small-4 medium-6 e-left-column">Type</div>
+              <div class="column small-8 medium-6 type">{{ page.type }}</div>
+            </div>
+          {% endif %}
+
+          {% if page.region %}
+            <div class="row">
+              <div class="column small-4 medium-6 e-left-column">Region</div>
+              <div class="column small-8 medium-6 region">{{ page.region }}</div>
+            </div>
+          {% endif %}
+
+          {% if page.sector %}
+            <div class="row">
+              <div class="column small-4 medium-6 e-left-column">Sector</div>
+              <div class="column small-8 medium-6">{{ page.sector }}</div>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="medium-6 columns">
+          {% if page.taxonomy.category %}
+            <div class="row">
+              <div class="column small-4 medium-4 e-left-column">Category</div>
+              <div class="column small-8 medium-8">
+                {% for category in page.taxonomy.category %}
+                  {{ category }}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if page.taxonomy.methodology %}
+            <div class="row">
+              <div class="column small-4 medium-4 e-left-column">Methodology</div>
+              <div class="column small-8 medium-8">
+                {% for methodology in page.taxonomy.methodology %}
+                  {{ methodology }}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if page.taxonomy.objective %}
+            <div class="row">
+              <div class="column small-4 medium-4 e-left-column">Objective</div>
+              <div class="column small-8 medium-8">
+                {% for objective in page.taxonomy.objective %}
+                  {{ objective }}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="e-download-container">
+      <a href="{{ page.url }}" class="b-button e-download">Access this Publication</a>
+      <!-- {{ page.url }} THIS IS GETTING THE DEFAULT URL VARIABEL FROM JEKYLL -->
+    </div>
+  </div>
+
+  {% if page.abstract %}
+    <div class="b-page-section e-paper-content">
+      <div class="row">
+        <div class="large-3 column">
+          <h3 class="e-description-title">Abstract</h3>
+          {% if page.datasets or page.github or page.twitter %}
+            <div class="e-extras">
+              {% if page.datasets %}<a href="{{ page.datasets }}" class="e-extra-item">Datasets</a>{% endif %}
+              {% if page.github %}<a href="{{ page.github }}" class="e-extra-item">Github</a>{% endif %}
+              {% if page.twitter %}<a href="{{ page.twitter }}" class="e-extra-item">Twitter</a>{% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="large-7 column end">
+          <p class="e-description">{{ page.abstract }}</p>
+        </div>
+      </div>
+
+      {% if page.datasets or page.github or page.twitter %}
+        <div class="row">
+          <div class="large-7 large-offset-3 column">
+            <div class="e-extra-data">
+              {% if page.datasets %}<a href="{{ page.datasets }}" class="b-button">Databases</a>{% endif %}
+              {% if page.github %}<a href="{{ page.github }}" class="b-button">Github</a>{% endif %}
+              {% if page.twitter %}<a href="{{ page.twitter }}" class="b-button">Twitter</a>{% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

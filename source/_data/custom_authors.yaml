@@ -1,0 +1,185 @@
+- title: Beth Noveck
+  job: Co-Founder and Director, The GovLab, NYU Tandon School of Engineering # job
+  image: beth-noveck.jpg
+  short_description: Beth Simone Noveck is Co-Founder and Director of The GovLab and its MacArthur Research Network on Opening Governance. Funded by the John D. and Catherine T. MacArthur Foundation, the John S. and James L. Knight Foundation and Google.org, the GovLab strives to improve people’s lives by changing how we govern. The GovLab designs and tests technology, policy and strategies for fostering more open and collaborative approaches to strengthen the ability of people and institutions to work together to solve problems, make decisions, resolve conflict and govern themselves more effectively and legitimately.
+  long_description: "<p>Beth served in the White House as the first United States Deputy Chief Technology Officer and director of the White House Open Government Initiative (2009-2011). UK Prime Minister David Cameron appointed her senior advisor for Open Government and she served on the Obama-Biden transition team. Among projects she’s designed or collaborated on are the Network of Innovators, Unchat, The Do Tank, Peer To Patent, Data.gov, Challenge.gov and the Gov Lab Academy.</p>
+  <p>A graduate of Harvard University and Yale Law School, she is a member of the Advisory Board of the Open Contracting Partnership and a Program Committee Member of the 2016 Conferences on International Open Data, Open Data Research, Data Science for Government, and the Data for Good Exchange. She was named one of the “Foreign Policy 100″ by Foreign Policy, one of the “100 Most Creative People in Business” by Fast Company and one of the “Top Women in Technology” by Huffington Post. She has also been honored by both the National Democratic Institute and Public Knowledge for her work in civic technology. She writes for Medium at medium.com/@bethnoveck<p>"
+
+  custom_filter:
+    - Beth Simone Noveck # To be used as a custom filter
+    - Beth S. Noveck
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/bethnoveck
+    medium: https://medium.com/@bethnoveck
+    linkedin: https://www.linkedin.com/in/beth-noveck-a469a840
+    url: http://www.thegovlab.org/beth-noveck.html
+
+- title: Stefaan Verhulst
+  job: Co-founder and Chief Research and Development Officer, The GovLab, NYU Tandon School of Engineering # job
+  image: stefaan-verhulst.jpg
+  short_description: >
+    Stefaan G. Verhulst is Co-Founder and Chief Research and Development Officer of The GovLab, where he is responsible for building a research foundation on how to transform governance using advances in science and technology. Verhulst’s latest scholarship centers on how technology can improve people’s lives and the creation of more effective and collaborative forms of governance.
+  long_description: "<p>Specifically, he is interested in the perils and promise of collaborative technologies and how to harness the unprecedented volume of information to advance the public good. He more than a decade as Chief of Research for the Markle Foundation, where he continues to serve as Senior Advisor. At Markle, he was responsible for overseeing strategic research on all the priority areas of the Foundation. Many of Markle’s reports have been translated into legislation and executive orders and have informed the creation of new organizations and businesses. He has taught at New York University’s Department of Culture and Communications and the London School of Economics. He has been a senior research fellow at Central European University’s Center for Media and Communications, the University of Pennsylvania’s Center for Global Communication Studies, and Wolfson College.</p>
+  <p>Verhulst was the UNESCO Chairholder in Communications Law and Policy for the UK, a former lecturer on Communications Law and Policy issues in Belgium, and Founder and Co-Director of the International Media and Info-Comms Policy and Law Studies at the University of Glasgow School of Law. He has served as a consultant to numerous international and national organizations, including the Council of Europe, the European Commission, UNESCO, World Bank, UNDP, USAID, the UK Department for International Development among others. He has been a grant recipient of the Bertelsmann Foundation, the Ford Foundation, the Rockefeller Foundation, and the Markle Foundation. Verhulst is also founder and editor of numerous journals including the International Journal of Communications Law and Policy and the Communications Law in Transition Newsletter.</p>"
+  custom_filter:
+    - Stefaan G. Verhulst
+    - Stefaan Verhulst # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/sverhulst
+    medium: false
+    linkedin: https://www.linkedin.com/in/stefaan-verhulst-85a334
+    url: http://www.thegovlab.org/stefaan-verhulst.html
+
+- title: Andrew Young
+  job: Associate Director of Research, The GovLab, NYU Tandon School of Engineering # job
+  image: andrew-young.jpg
+  short_description: Andrew Young is the Associate Director of Research at The GovLab, where he leads research efforts focusing on the impact of technology on public institutions. He has written extended work on how public sector institutions use new technology to coordinate work and developed original public resources, including GovLab’s Twitter Lists of governance innovation areas and its Zotero bibliographies and Selected Readings on a variety of topics.
+  long_description: "<p>Among the grant-funded projects he has directed are a global assessment of the impact of open government data, comparative benchmarking of government innovation efforts against those of other countries, and crafting the experimental design for testing the adoption of technology innovations in federal agencies. He is also the Network Coordinator of the GovLab-chaired MacArthur Foundation Research Network on Opening Governance. In this role, he plans and organizes collaborative research projects and events with the Network’s members, post-docs, and advisory group who span a dozen disciplines and institutions. Andrew works closely with GovLab civic technology team and has led the design of the Network of Innovators skill sharing network for civil servants and the Open Governance Research Exchange (OGRX), a collaborative project of the GovLab, World Bank, and mySociety to develop a platform for accessing and sharing original research on governance innovation.</p>
+  <p>As Associate Director of Research, Andrew provides research and writing support to all members of GovLab’s team and to its extended network of participants in GovLab’s training programs.Previously, Andrew worked at the Markle Foundation, where his research centered on the use of technology to bolster economic security.</p>
+  <p>Andrew earned his Master’s degree in the Media, Culture and Communication department of NYU’s Steinhardt School of Culture, Education and Human Development, with a focus on Technology and Society. His Master’s thesis explored the largely unexamined use of data-tracking technologies on congressional campaign websites to inform microtargeting efforts. Prior to his graduate work at NYU, Andrew attended Pennsylvania State University and Goldsmiths College, University of London, where he studied English and Communications.</p>"
+  custom_filter:
+    - Andrew Young # To be used as a custom filter
+  social_media: # Links
+    github: https://github.com/andrew52young
+    facebook: false
+    twitter: https://twitter.com/_andrewyoung
+    medium: false
+    linkedin: https://www.linkedin.com/in/andrew-young-4a42a859
+    url: http://www.thegovlab.org/team.html#andrew-young
+
+- title: Tiago Peixoto
+  job: Team Lead, The Digital Engagement Unit of the World Bank # job
+  image: tiago-peixoto.png
+  short_description: Tiago Peixoto (PhD) is a Team Lead at the World Bank’s Digital Engagement Unit. Featured in TechCrunch as one of the “20 Most Innovative People in Democracy”, Tiago is an internationally recognized expert working at the intersection of technology and citizen engagement.
+  long_description: At the World Bank, his activities focus on working with governments to leverage technology-enabled participation for better public policies and services. As the lead of the Bank’s Digital Engagement Evaluation Team (DEET), he coordinates evaluation and research activities that apply cutting-edge methodologies to examine the effects of technology on participation, transparency, accountability, and government responsiveness. Previously, Tiago managed projects and worked as an advisor and consultant for various organizations, such as the European Commission, OECD, United Nations, and the governments of Brazil and the United Kingdom. A Research Director of the Electronic Democracy Centre at the University of Zurich and faculty member of NYU’s Governance Lab, Tiago holds a PhD and a master's in Political Sciences from the European University Institute, as well as a master's in Organized Collective Action from Sciences-Po Paris. He blogs at DemocracySpot.net.
+  custom_filter:
+    - Tiago Peixoto # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/participatory
+    medium: false
+    linkedin: https://www.linkedin.com/in/tcpeixoto
+    url: https://www.democracyspot.net/
+
+- title: Rebecca Rumbul
+  job: Head of Research, mySociety # job
+  image: rebecca-rumbul.jpg
+  short_description: Rebecca Rumbul leads mySociety’s research strategy and implementation, working in-house and with partners to assess the impact of mySociety’s tools and initiatives. Before joining mySociety, she worked in grant-making for several years with the Welsh Arts Council and Big Lottery Fund before migrating to the charitable sector, where she managed a young persons charity in Cardiff.
+  long_description: "<p>Frustrated with the mounting unfairness in the sector and with a burning curiosity about how the supranational political and structural environment that affected NGOs really worked, she embarked on a PhD in her spare time to find out. After a short time working for an NGO in Cameroon, she then went to work for the Wales Governance Centre at Cardiff University, a research centre hosted by the National Assembly for Wales specialising in territorial politics. Rebecca has a number of peer-reviewed papers in international journals, primarily focusing on civil society and politics.</p>
+  <p>When she’s not working on mySociety projects, Rebecca continues to teach politics courses for adult learners through Cardiff University’s School for Lifelong Learning, is a fellow of the Royal Society of Arts, and in 2015 was awarded a Winston Churchill Memorial Trust Fellowship. She is a regular political commentator in Wales, providing expert analysis to BBC Wales and ITV, and is a regular paper reviewer on BBC Radio Wales’ Good Morning Wales programme. Rebecca is fluent in research methods, analysis, and helping us know how best to achieve our mission.</p>"
+  custom_filter:
+    - Rebecca Rumbul # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/RebeccaRumbul
+    medium: false
+    linkedin: https://www.linkedin.com/in/rebecca-rumbul-96a5441a
+    url: https://www.mysociety.org/about/team/rebecca-rumbul/
+
+- title: Peter John
+  job: Professor of Political Science and Public Policy, University College London
+  image: peter-john.jpg
+  short_description: >
+    Peter John is a Professor of Political Science and Public Policy at University College London. He is known for his books on public policy, such as Analysing Public Policy (2nd edition 2012) and Making Policy Work (2011). His book with Keith Dowding, Exits, Voices and Social Investment: Citizens’ Reaction to Public Services was published with Cambridge University Press in 2012 and with Anthony Bertelli (NYU), Public Policy Investment by Oxford University Press in 2013), a study of how governments approach risk when selecting policies.
+  long_description: "He is currently using experiments to study civic participation in public policy, with the aim of finding out what governments and other public agencies can do to encourage citizens to carry out acts of collective benefit. This work came together in a book with Bloomsbury Academic, Nudge, Nudge, Think, Think: Using Experiments to Change Civic Behaviour which was published in 2011. He is currently working on a project that uses randomised controlled trails to test how the provision of social information can influence volunteering. He co-edits The Journal of Public Policy @JPublicPolicy."
+  custom_filter:
+    - Peter John # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/peterjohn10
+    medium: false
+    linkedin: https://www.linkedin.com/in/peter-john-38934a11
+    url: http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1313371
+
+- title: François van Schalkwyk
+  job: Regional Research Manager for the Open Data Lab Africa, World Wide Web Foundation # job
+  image: francois-van-schalkwyk.jpg
+  short_description: "François is the Regional Research Manager for the Open Data Lab Africa, co-ordinating existing IDRC-funded research including open data in agriculture, cities and illicit financial flows including others, as well as scoping new research. He has several years of research experience as an independent researcher, mainly in the areas of open data, higher education studies and scholarly communication."
+  long_description: "Open data-related publications include Viscous open data: The roles of intermediaries in an open data ecosystem, Open Data Intermediaries in Developing Countries and Embedding Open Data Practice. François also has more than 15 years of management experience as founder of COMPRESS.dsl, a publishing services company for non-governmental organisations in Africa, as well as of African Minds, an open access academic book publisher. François is a graduate from the University of Cape Town in English Literature. He has been awarded an MPhil in Publishing Studies from the University of Stirling and an MEd in Higher Education Studies from the University of the Western Cape. He is currently completing a PhD inScience Communication at the University of Stellenbosch, South Africa."
+  custom_filter:
+    - François van Schalkwyk
+    - Francois van Schalkwyk
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/Francois_fvs2
+    medium: false
+    linkedin: https://www.linkedin.com/in/francoisvanschalkwyk
+    url: http://sun.academia.edu/FrancoisvanSchalkwyk
+
+- title: Sophie Reynolds
+  job: Senior Researcher, Public and Social Innovation, Nesta # job
+  image: sophie-reynolds.jpg
+  short_description: Sophie Reynolds works across a number of Nesta’s public services innovation programmes, as a Senior Researcher in Nesta’s Policy and Research unit. She leads on Lab Notes – a monthly digest bringing together interesting tools and news from public sector innovators around the world.
+  long_description: "<p>Sophie also works on TRANSITION, an EU-funded research project, that seeks to learn and share best practice in social innovation incubation around Europe, and has helped lead Nesta's research on the Collaborative Economy. At Nesta, Sophie has contributed to and edited a number of research publications such as i-teams, Digital Social Innovation, and Making Sense of the UK’s Collaborative Economy.
+  Previously, Sophie worked in the Science Gallery in Dublin, as an English and Social Studies Teacher in Muscat, Oman, and as an Attendance Coach at Southwark College.</p>
+  <p>In addition to her BA in English, Media and Cultural Studies, she holds an LLM in Law and Social Justice from Birkbeck College, University of London, where her dissertation, ‘The Meitheal and Modernity: A Retrospective Look to the Future’ was awarded Best Dissertation Mark in the Postgraduate School of Law.</p>"
+  custom_filter:
+    - Sophie Reynolds # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/SophsASophist
+    medium: false
+    linkedin: https://www.linkedin.com/in/sophiereynolds
+    url: http://www.nesta.org.uk/users/sophie-reynolds
+
+- title: Zeynep Engin
+  job: Founder, Data for Policy; Policy Fellow, Centre for Science and Policy, University of Cambridge # job
+  image: zeynep-engin.jpg
+  short_description: Zeynep Engin recieved a PhD on biologically plausible pattern localisation and parameter estimation on visual data from Imperial College London in 2009. Her research addressed issues of digital data representation and transformation estimations through a brain circuitry model.
+  long_description: "<p>She was also Assistant Coordinator of Imperial’s Cognitive Systems Network, a cross-disciplinary project bringing together researchers into both biological and machine cognition. During her PhD studies she was also Visiting Scholar at the Tokyo Institute of Technology, Japan, exploring research into machine learning and signal processing methods. She also holds an MSc in Information Engineering from City University London and a BSc in Mathematics from the University of Ankara, Turkey. In 2014-15 academic year, Zeynep also took a visiting researcher position at the Computer Laboratory, the University of Cambridge.</p>
+  <p>Data for Policy is an independent initiative to promote interdisciplinary and cross-sectoral discussion for more efficient use of data in policy making processes. The inaugural conference was held at the University of Cambridge in 2015, and the initiative receives further support from many prominent institutions including LSE, Imperial College, UCL, University of Oxford, Office for National Statistics, Royal Statistical Society and other key stakeholders. Zeynep is also affiliated with the Department of Computer Science at University College London as an honorary Senior Research Associate where she explores new tools and methodologies of Data Science applications in the policy/government space. Prior to this, Zeynep was a director of the London Centre for Social Studies from 2010 to 2015, where she convened the LCSS Public Policy platform. She hosted a number of research and policy meetings on the pressing social policy problems, led a number of training activities for early-career researchers and several community projects at grassroots level campaigning for greater social mobility through education and professional development.</p> "
+  custom_filter:
+    - Zeynep Engin # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/zeynepengin
+    medium: false
+    linkedin: https://www.linkedin.com/in/zeynep-engin-203b463
+    url: http://www.csap.cam.ac.uk/network/zeynep-engin/
+
+
+- title: Anita McGahan
+  job: Professor of Strategic Management, University of Toronto Rotman School of Management # job
+  image: anita-mcgahan.jpg
+  short_description: Anita McGahan is a Professor of Strategic Management at Rotman (with a cross-appointment to the Munk School of Global Affairs). Her research is focused on industry change, sustainable competitive advantage and the establishment of new fields. An area of particular interest to her is in global health and the diffusion of knowledge across international boundaries.
+  long_description: false
+  custom_filter:
+    - Anita McGahan
+    - Anita M. McGahan # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/anitamcgahan
+    medium: false
+    linkedin: false
+    url: https://www.rotman.utoronto.ca/FacultyAndResearch/Faculty/FacultyBios/McGahan.aspx
+
+- title: Araz Taeihagh
+  job: Assistant Professor of Public Policy, Singapore Management University # job
+  image: araz-taeihagh.jpg
+  short_description: >
+    <p>Dr Araz Taeihagh is an Assistant Professor of Public Policy at Singapore Management University. Since 2007, his research interest has been on the interface of technology and society. His work is on: a) how to shape policies to accommodate new technologies and facilitate positive socio-technical transitions; b) the effects of these new technologies on the policy process; and c) changing the way we design and analyse policies by developing innovative practical approaches that can be used to address the growth in the interdependence and complexity of our systems.</p>
+  long_description: >
+    <p>Dr Araz Taeihagh is an Assistant Professor of Public Policy at Singapore Management University. Since 2007, his research interest has been on the interface of technology and society. His work is on: a) how to shape policies to accommodate new technologies and facilitate positive socio-technical transitions; b) the effects of these new technologies on the policy process; and c) changing the way we design and analyse policies by developing innovative practical approaches that can be used to address the growth in the interdependence and complexity of our systems.</p>
+    <p>Taeihagh is interested in socio-technical systems and their transitions and focuses on the unique challenges that arise from introduction of new technologies to society (e.g. crowdsourcing, sharing economy, MOOCs, and autonomous vehicles). These new technologies are creating their own set of issues and concerns that require the understanding and appreciation of both technical and social sciences. For addressing challenges of policy design and analysis, he takes an interdisciplinary approach using artificial and collective intelligence techniques and borrows from engineering, complexity and design sciences alongside the traditional approaches in public policy to address the challenges in policy making. Araz has developed and is continuing the enhancement of a new framework and decision support system for the design and formulation of policies to help decision makers in selecting appropriate policy measures to design sustainable policies and better understand the complex interactions among alternative instruments used.</p>
+    <p>Araz earned his DPhil conducting interdisciplinary research on “A Novel Approach for the Development of Policies in Socio-Technical Systems” at University of Oxford and carried out postdoctoral studies at City Futures Research Centre (Australia’s leading urban policy research centre) at UNSW, before joining SMU in 2015. Prior to joining Oxford, Araz obtained his MSc in Environmentally Sustainable Process Technology from Chalmers University of Technology and participated in the MSc program in Engineering Mathematics at Chalmers University. Araz obtained a BSc in Process Engineering from Sharif University of Technology. Aside from academic studies, Araz has more than 10 years of experience working with EPC firms mainly dealing with PMC and Design issues relating to chemical, petroleum and construction projects and has provided technical and policy consultation on environmental, transportation, energy, and technology related issues.</p>
+  custom_filter:
+    - Araz Taeihagh
+    - Araz Taeihagh # To be used as a custom filter
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: https://twitter.com/arazTH
+    medium: false
+    linkedin: https://www.linkedin.com/in/araztaeihagh
+    url: http://www.smu.edu.sg/faculty/profile/130431/Araz-TAEIHAGH

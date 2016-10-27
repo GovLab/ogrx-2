@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="b-author-page">
+  <!-- {# Author's Info #} -->
+  <div class="b-top-section">
+    <div class="row">
+      <div class="large-6 column e-image-column">
+        <div class="e-author-picture" style="background-image: url(../images/authors/{{ page.image }})"></div>
+        {% if page.long_description %}<span class="b-button e-more-info-panel-trigger" onclick="$('.b-extra-info-panel').toggleClass('visible');">More Information</span>{% endif %}
+      </div>
+      <div class="large-6 column">
+        <h1 class="e-name">{{ page.title }}</h1>
+        <h2 class="e-job">{{ page.job }}</h2>
+        <p class="e-description">{{ page.short_description }}</p>
+        <div class="e-extras">
+          {% if page.social_media.twitter %}
+            <a href="{{ page.social_media.twitter }}" class="b-social-media-icon m-twitter" target="_blank"><img src="../images/twitter-logo.png" alt=""></a>
+          {% endif %}
+          {% if page.social_media.github %}
+            <a href="{{ page.social_media.github }}" class="b-social-media-icon m-github" target="_blank"><img src="../images/github-logo.svg" alt=""></a>
+          {% endif %}
+          {% if page.social_media.facebook %}
+            <a href="{{ page.social_media.facebook }}" class="b-social-media-icon m-facebook" id="facebook-logo" target="_blank"><img src="../images/facebook-logo.png" alt="{{page.title}} Facebook"></a>
+          {% endif %}
+          {% if page.social_media.linkedin %}
+            <a href="{{ page.social_media.linkedin }}" class="b-social-media-icon m-linkedin" id="linkedin-logo" target="_blank"><img src="../images/linkedin-logo.png" alt="{{page.title}} Linkedin"></a>
+          {% endif %}
+          {% if page.social_media.medium %}
+            <a href="{{ page.social_media.medium }}" class="b-social-media-icon m-medium" id="medium-logo" target="_blank"><img src="../images/medium-m-color-688.png" alt="{{page.title}} Medium"></a>
+          {% endif %}
+          {% if page.social_media.url %}
+            <a href="{{ page.social_media.url }}" class="b-social-media-icon m-url" id="medium-url" target="_blank"><img src="../images/browser-window-logo.png" alt="{{page.title}} url"></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- {# Extra Info Panel #} -->
+    <div class="b-extra-info-panel">
+      <div class="row">
+        <div class="large-8 large-centered column">
+          {{ page.long_description }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- {# Article Section #} -->
+  <div class="b-divider b-filter-panel m-black">
+    <div class="b-filter-ui js-and">
+      <h2>Articles</h2>
+    </div>
+  </div>
+
+  {% include paper_list.html %}
+</div>

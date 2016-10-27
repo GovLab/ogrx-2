@@ -43,8 +43,21 @@ page_gen:
     name: title
     dir: organizations
     extension: html
+
   - data: categories
     template: base_results
     name: title
     dir: main-categories
+    extension: html
+
+  - data: papers
+    template: paper
+    name: title
+    dir: papers
+    extension: html
+    
+  - data: custom_authors
+    template: custom_authors
+    name: title
+    dir: custom-authors
     extension: html
