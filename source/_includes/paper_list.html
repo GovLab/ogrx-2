@@ -1,8 +1,7 @@
 <!-- {# List of Articles #} -->
 <div class="b-page-section b-results-section b-isotope">
   <div class="row">
-    <div class="column large-12">
-      <h2> finding {{ author_name }} </h2>
+    <div class="column large-12">      
       {% assign papers = site.emptyArray %}
       {% for paper in site.data.papers %}       
       {%   assign authors = paper.authors %}      
