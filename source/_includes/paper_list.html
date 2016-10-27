@@ -2,7 +2,18 @@
 <div class="b-page-section b-results-section b-isotope">
   <div class="row">
     <div class="column large-12">
-      {% for paper in site.data.papers %}
+      <h2> finding {{ author_name }} </h2>
+      {% assign papers = site.emptyArray %}
+      {% for paper in site.data.papers %}       
+      {%   assign authors = paper.authors %}      
+      {%   for author in authors %}            
+      {%     if author == author_name %}      
+      {%       assign papers = papers | push: paper %}
+      {%     endif %}
+      {%   endfor %}
+      {% endfor %}
+      
+      {% for paper in papers %}
         
         <div class="b-result-item">
           <h3 class="e-result-name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>
