@@ -61,7 +61,7 @@ layout: default
 
 <div class="b-page-section b-main-categories">
   <div class="row expanded" data-equalizer>
-    {% for category in site.data.categories %}
+    {% for category in site.data.main-categories %}
     <div class="medium-3 show-for-medium column m-{{category.title | slugify}}" data-equalizer-watch>
       <a class="e-category-item" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
     </div>

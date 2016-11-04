@@ -12,6 +12,7 @@ $large: 64.063em 90em;
 
 // Colors
 $main-color: rgba( 0,  79, 111, 1);
+$accent-color: #F0B300;
 
 $gray:      rgba(113, 126, 129, 1);
 $green:     rgba( 86, 161, 115, 1);
@@ -58,5 +59,8 @@ $labs-and-experimentation: rgba(219,192,72,1);
 // @import 'error-form';
 
 @import 'custom';
+
+@import 'blog';
+@import 'blog-single';
 
 

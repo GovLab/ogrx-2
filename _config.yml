@@ -37,83 +37,83 @@ exclude:
 source: ./source
 # sass_dir: source/css
 
-page_gen:
-  - data: organizations
-    template: premium_organization
-    name: title
-    dir: organizations
-    extension: html
+ # page_gen:
+#   - data: organizations
+#     template: premium_organization
+#     name: title
+#     dir: organizations
+#     extension: html
 
-  - data: main-categories
-    template: base_results
-    name: title
-    dir: categories
-    extension: html
+#   - data: main-categories
+#     template: base_results
+#     name: title
+#     dir: categories
+#     extension: html
 
-  - data: taxonomy_category
-    template: base_results
-    name: title
-    dir: categories
-    extension: html
+#   - data: taxonomy_category
+#     template: base_results
+#     name: title
+#     dir: categories
+#     extension: html
     
-  - data: custom_authors
-    template: custom_authors
-    name: title
-    dir: authors
-    extension: html
+#   - data: custom_authors
+#     template: custom_authors
+#     name: title
+#     dir: authors
+#     extension: html
   
-  - data: papers-sample # switch to the papers.json file, before deploy
-    template: paper
-    name: title
-    dir: papers
-    extension: html
+#   - data: papers-sample # switch to the papers.json file, before deploy
+#     template: paper
+#     name: title
+#     dir: papers
+#     extension: html
 
-  - data: authors-sample # switch to the authors.json file, before deploy
-    template: base_results
-    name: title
-    dir: authors
-    extension: html
+#   - data: authors-sample # switch to the authors.json file, before deploy
+#     template: base_results
+#     name: title
+#     dir: authors
+#     extension: html
 
-  - data: region-sample # switch to the region.json file, before deploy
-    template: base_results
-    name: title
-    dir: region
-    extension: html
+#   - data: region-sample # switch to the region.json file, before deploy
+#     template: base_results
+#     name: title
+#     dir: region
+#     extension: html
 
-  - data: sector-sample # switch to the sector.json file, before deploy
-    template: base_results
-    name: title
-    dir: sector
-    extension: html
+#   - data: sector-sample # switch to the sector.json file, before deploy
+#     template: base_results
+#     name: title
+#     dir: sector
+#     extension: html
 
-  - data: tools
-    template: base_results
-    name: title
-    dir: tools
-    extension: html
+#   - data: tools
+#     template: base_results
+#     name: title
+#     dir: tools
+#     extension: html
 
-  - data: access
-    template: base_results
-    name: title
-    dir: access
-    extension: html
+#   - data: access
+#     template: base_results
+#     name: title
+#     dir: access
+#     extension: html
 
-  - data: type
-    template: base_results
-    name: title
-    dir: type
-    extension: html
+#   - data: type
+#     template: base_results
+#     name: title
+#     dir: type
+#     extension: html
 
-  - data: taxonomy_objective
-    template: base_results
-    name: title
-    dir: objectives
-    extension: html
+#   - data: taxonomy_objective
+#     template: base_results
+#     name: title
+#     dir: objectives
+#     extension: html
 
-  - data: taxonomy_methodology
-    template: base_results
-    name: title
-    dir: methodologies
-    extension: html
+#   - data: taxonomy_methodology
+#     template: base_results
+#     name: title
+#     dir: methodologies
+#     extension: html
 
 
