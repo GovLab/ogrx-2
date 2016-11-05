@@ -1,92 +1,69 @@
 ---
 layout: default
-title: Boilerplate
-subtitle: Govlab Styleguide - Jekyll Build
+subtitle: Your hub for quantitative and qualitative research on innovations in governance
 ---
 
-<main role="main"> <!-- main content starts here -->
+<main id="homepage" role="main"> <!-- main content starts here -->
 
-<section class="top-section top-section--purple">
+<section class="top-section top-section--main-color">
   <div class="row">
     <div class="medium-12 column">
-      <h1>{{page.title}}</h1>
+      <h1><img id="main-logo" src="images/ogrx-logo-alpha-neg.png" alt="Open Governance Research Exchange"></h1>
       <p class="top-section__tagline">{{page.subtitle}}</p>
     </div>
   </div>
+  <section class="page-section main-search-section">
+    <div class="row align-center">
+        <div class="small-10 large-8 columns">
+            <div class="row">
+                <form class="search search--main-search search--negative" action="search.html">
+                  <input id="index-search" class="" type="text" name="s" placeholder="Search by keyword">
+                   <input class="search__trigger material-icons" type="submit" value="search">
+                </form>
+            </div>
+        </div>
+        <div class="row browsing-ways">
+          <div class="large-12 column">
+            <a href="./authors.html" class="button">Browse by author</a>
+            <a href="./categories.html" class="button">Browse by category</a>
+            <a href="./organizations.html" class="button">Browse by organization</a>
+            <a href="./submit.html" class="button">Submit new research</a>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+
+<section id="organizations" class="divider">
+  <h1>Founding Partners</h1>
 </section>
 
 <section class="page-section">
-  <div class="row">
-    <div class="column large-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed necessitatibus, error eaque vero aperiam numquam, tenetur, soluta quibusdam odio eius aut. Distinctio placeat repellendus, repellat neque itaque in esse nobis!</p>
+  <div class="row expanded">
+    {% for organization in site.data.organizations %}
+    {% if organization.founding_partner %}
+    <div class="medium-4 column">
+      <div class="organization-logo organization-logo--{{ organization.title | slugify }}">
+        <a href="organizations/{{ organization.title | slugify }}.html"><img src="images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+      </div>
     </div>
-  </div>
+    {% endif %}
+    {% endfor %}  
+    </div>
 </section>
 
-<section class="divider">
-  <h1>Divider Example - Color Examples</h1>
+<section id="categories" class="divider">
+  <h1>Browse by Category</h1>
 </section>
 
-<section class="page-section">
-  <div class="row">
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--purple">
-        <div class="card-1__content">
-          <h1>purple</h1>
-          <h2>#523080</h2>
-        </div>
-      </article>
+<section class="page-section main-categories">
+  <div class="row expanded small-collapse medium-collapse large-collapse">
+    {% for category in site.data.main-categories %}
+    <div class="medium-3 column ">
+      <a class="category-item category-item--{{category.title | slugify}}" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
     </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--orange">
-        <div class="card-1__content">
-          <h1>orange</h1>
-          <h2>#ee5b43</h2>
-        </div>
-      </article>
-    </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--teal">
-        <div class="card-1__content">
-          <h1>teal</h1>
-          <h2>#008895</h2>
-        </div>
-      </article>
-    </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--blue">
-        <div class="card-1__content">
-          <h1>blue</h1>
-          <h2>#008ab3</h2>
-        </div>
-      </article>
-    </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--black">
-        <div class="card-1__content">
-          <h1>black</h1>
-          <h2>#333333</h2>
-        </div>
-      </article>
-    </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--green">
-        <div class="card-1__content">
-          <h1>green</h1>
-          <h2>#197d32</h2>
-        </div>
-      </article>
-    </div>
-    <div class="column large-3 medium-3 small-6">
-      <article class="card-1 card-1--red">
-        <div class="card-1__content">
-          <h1>red</h1>
-          <h2>#c30014</h2>
-        </div>
-      </article>
-    </div>
+    {% endfor %}
   </div>
 </section>
 
 </main>
-

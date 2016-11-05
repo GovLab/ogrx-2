@@ -1,7 +1,15 @@
-body {
-  
+.top-section {
+  &--main-color {
+    background-color: $main-color;
+  }
 }
 
-.footer {
-  padding-top: 40px;
+.search {
+  input[type="submit"] {
+    margin-left: 0;
+  }
+}
+
+.top-bar--main-color {
+  background-color: darken($main-color, 2);
 }

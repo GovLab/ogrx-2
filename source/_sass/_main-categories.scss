@@ -1,0 +1,138 @@
+.main-categories { padding: 0; }
+
+.category-item {
+  padding: 25% 0;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  cursor: pointer;
+
+  &:hover { 
+    text-decoration: none; 
+    color: white;
+  }
+
+  // Colors for the main categories
+  &--all { background-color: $all; }
+  &--behavioral-research,
+  &--behavioral-science-and-nudges { background-color: $behavioral-research; }
+  &--citizen-engagement { background-color: $citizen-engagement; }
+  &--civic-technology { background-color: $civic-technology; }
+  &--data-analysis { background-color: $data-analysis; }
+  &--expert-networking { background-color: $expert-networking; }
+  &--open-data { background-color: $open-data; }
+  &--labs-and-experimentation { background-color: $labs-and-experimentation; }
+
+  &--all:hover { background-color: darken($all, 6); }
+  &--behavioral-research:hover,
+  &--behavioral-science-and-nudges:hover { background-color: darken($behavioral-research, 6); }
+  &--citizen-engagement:hover { background-color: darken($citizen-engagement, 6); }
+  &--civic-technology:hover { background-color: darken($civic-technology, 6); }
+  &--data-analysis:hover { background-color: darken($data-analysis, 6); }
+  &--expert-networking:hover { background-color: darken($expert-networking, 6); }
+  &--open-data:hover { background-color: darken($open-data, 6); }
+  &--labs-and-experimentation:hover { background-color: darken($labs-and-experimentation, 6); }
+}
+
+
+// Colors for the main categories
+.tag {
+  &--all {
+    background-color: rgba($all, .2);
+    color: $all;
+  }
+  &--behavioral-science-and-nudges {
+    background-color: rgba($behavioral-research, .2);
+    color: $behavioral-research;
+  }
+  &--citizen-engagement {
+    background-color: rgba($citizen-engagement, .2);
+    color: $citizen-engagement;
+  }
+  &--civic-technology {
+    background-color: rgba($civic-technology, .2);
+    color: $civic-technology;
+  }
+  &--data-analysis {
+    background-color: rgba($data-analysis, .2);
+    color: $data-analysis;
+  }
+  &--expert-networking {
+    background-color: rgba($expert-networking, .2);
+    color: $expert-networking;
+  }
+  &--open-data {
+    background-color: rgba($open-data, .2);
+    color: $open-data;
+  }
+  &--labs-and-experimentation {
+    background-color: rgba($labs-and-experimentation, .2);
+    color: $labs-and-experimentation;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.b-organizations {
+  .e-organization-logo {
+    padding: 60px 20px;
+
+    @include breakpoint($small-only) {
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.b-top-section {
+  // Colors for the top sections
+  &.m-all {
+    background-color: $all;
+  }
+  &.m-behavioral-research {
+    background-color: $behavioral-research;
+  }
+  &.m-citizen-engagement {
+    background-color: $citizen-engagement;
+  }
+  &.m-civic-technology {
+    background-color: $civic-technology;
+  }
+  &.m-data-analysis {
+    background-color: $data-analysis;
+  }
+  &.m-expert-networking {
+    background-color: $expert-networking;
+  }
+  &.m-open-data {
+    background-color: $open-data;
+  }
+  &.m-labs-and-experimentation {
+    background-color: $labs-and-experimentation;
+  }
+}
+
+
+.b-about-page {
+  .b-contributing-partners {
+    .e-contributor-logo {
+      margin: 40px 0 0 0;
+      max-height: 80px;
+      max-width: 225px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+

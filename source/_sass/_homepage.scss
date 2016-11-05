@@ -1,0 +1,31 @@
+#main-logo {
+  width: 33rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.browsing-ways {
+  margin-top: 30px;
+}
+
+.top-bar__logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px;
+  color: white;
+
+  em {
+    font-weight: 300;
+  }
+
+  &:hover { text-decoration: none; }
+}
+
+
+.organization-logo {
+  padding: 60px 20px;
+  max-width: 260px;
+  margin: 0 auto;
+}
