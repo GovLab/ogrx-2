@@ -1,17 +1,21 @@
 // All of these styles should go to styleguide
 
 .top-section {
-  &--main-color {
-    background-color: $main-color;
-  }
+  // corrects the top-bar and top-section Z stacking.
+  margin-top: -50px;
+  padding-top: 120px;
+  padding-bottom: 0;
+  
+  &--main-color { background-color: $main-color; }
 }
 
 .search {
-  input[type="submit"] {
-    margin-left: 0;
-  }
+  input[type="submit"] { margin-left: 0; }
 }
 
 .top-bar--main-color {
-  background-color: darken($main-color, 2);
+  background-color: rgba(black, .1);
+  position: relative;
+  z-index: 1;
 }
+

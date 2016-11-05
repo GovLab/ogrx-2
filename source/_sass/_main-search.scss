@@ -19,12 +19,16 @@
       &:focus { background-color: rgba(white, .3); }
   }
 
-  input[type="submit"], input[type="button"] {
+  input[type="submit"], 
+  input[type="button"] {
     padding: 17px;
     background-color: rgba(white, .2);
   }
 
-  input[type="button"] { padding: 16px 17px; }
+  input[type="button"] { 
+    padding: 16px 17px; 
+    @extend .u-material-icons;
+  }
 
   ::-webkit-input-placeholder {
    color: rgba(white, .3);
@@ -47,12 +51,6 @@
   }
 
 }
-
-
-
-
-
-
 
 .main-search-section {
   background-color: rgba(black, .2);

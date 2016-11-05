@@ -95,30 +95,30 @@
   }
 }
 
-.b-top-section {
+.top-section {
   // Colors for the top sections
-  &.m-all {
+  &--all {
     background-color: $all;
   }
-  &.m-behavioral-research {
+  &--behavioral-research {
     background-color: $behavioral-research;
   }
-  &.m-citizen-engagement {
+  &--citizen-engagement {
     background-color: $citizen-engagement;
   }
-  &.m-civic-technology {
+  &--civic-technology {
     background-color: $civic-technology;
   }
-  &.m-data-analysis {
+  &--data-analysis {
     background-color: $data-analysis;
   }
-  &.m-expert-networking {
+  &--expert-networking {
     background-color: $expert-networking;
   }
-  &.m-open-data {
+  &--open-data {
     background-color: $open-data;
   }
-  &.m-labs-and-experimentation {
+  &--labs-and-experimentation {
     background-color: $labs-and-experimentation;
   }
 }

@@ -1,0 +1,246 @@
+.base-results-page {
+  .top-section {
+    padding-bottom: 60px;
+  }
+}
+
+
+.results-section { padding: 0; }
+
+.result-item {
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background-color: white;
+  padding: 30px 30px 90px;
+  width: 100%;
+  display: block;
+  height: 420px;
+  border-bottom: 1px solid rgba(black, .1);
+  border-right: 1px solid rgba(black, .1);
+  text-decoration: none;
+
+  @include breakpoint($medium) {
+    width: 50%;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+
+  @include breakpoint($large) {
+    width: calc(100% / 3);
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: rgba(black, .05);
+
+    &:after {
+      border-top: 12px solid $main-color;
+      border-left: 12px solid $main-color;
+    }
+  }
+
+
+  // Sets the trisngle on the top left corner
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 12px solid rgba(black, .3);
+    border-left: 12px solid rgba(black, .3);
+    border-right: 12px solid rgba(black, 0);
+    border-bottom: 12px solid rgba(black, 0);
+  }
+
+  &__name {
+    font-size: 1rem;
+    text-transform: none;
+    min-height: 4.5rem;
+  }
+
+  &__authors a {
+    font-size: .9rem;
+    text-decoration: none !important;
+    color: rgba($main-color, .6);
+    
+    &:hover {
+      text-decoration: none;
+      color: rgba($main-color, 1);
+
+    }
+  }
+
+  &__taxonomy {
+    font-size: .8rem;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    &__key {
+      float: left;
+      width: 90px;
+    }
+
+    &__value {
+      float: right;
+      width: calc(100% - 90px);
+    }
+  }
+
+  &__tag {
+    font-size: .6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: rgba(black, .1);
+    margin-bottom: 3px;
+    opacity: .7;
+
+    &:empty { display: none; }
+
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+
+  // Colors for the main categories
+ 
+    &--all {
+      background-color: rgba($all, .2);
+      color: darken($all, 8);
+    }
+    &--behavioral-science-and-nudges {
+      background-color: rgba($behavioral-research, .2);
+      color: darken($behavioral-research, 8);
+    }
+    &--citizen-engagement {
+      background-color: rgba($citizen-engagement, .2);
+      color: darken($citizen-engagement, 8);
+    }
+    &--civic-technology {
+      background-color: rgba($civic-technology, .2);
+      color: darken($civic-technology, 8);
+    }
+    &--data-analysis {
+      background-color: rgba($data-analysis, .2);
+      color: darken($data-analysis, 8);
+    }
+    &--expert-networking {
+      background-color: rgba($expert-networking, .2);
+      color: darken($expert-networking, 8);
+    }
+    &--open-data {
+      background-color: rgba($open-data, .2);
+      color: darken($open-data, 8);
+    }
+    &--labs-and-experimentation {
+      background-color: rgba($labs-and-experimentation, .2);
+      color: darken($labs-and-experimentation, 8);
+    }
+  
+
+  }
+
+  &__authors {
+    font-size: .9rem;
+    min-height: 3rem;
+  }
+
+  &__extras {
+    padding: 15px 30px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+
+    &--github-logo {
+      width: 24px;
+      opacity: .2;
+      margin: 0 5px;
+    }
+
+    i {
+      opacity: .2;
+      font-size: 1.7rem;
+      line-height: 1;
+      vertical-align: bottom;
+      margin: 0 5px -2px;
+    }
+  }
+}
+
+
+// Sets the banner for the restricted access items
+.result-item {
+    &__extras {
+      &--the-govlab {
+        background-color: $purple;
+        i {color: white;}
+      }
+
+      &--mysociety {
+        background-color: rgba(black, .8);
+        i {color: white;}
+      }
+      &--centre-for-public-impact {
+        background-color: rgba(#2a5159, .8);
+        i {color: white;}
+      }
+      &--digital-commons-lab {
+        background-color: rgba(#1383a2, .8);
+        i {color: white;}
+      }
+      &--center-for-policy-informatics {
+        background-color: rgba(#8D0E45, .8);
+        i {color: white;}
+      }
+      &--swedish-law-and-informatics-institute {
+        background-color: rgba(#3f7489, .8);
+        i {color: white;}
+      }
+      &--open-data-for-development {
+        background-color: rgba(#d25e1b, .8);
+        i {color: white;}
+      }
+      &--open-evidence {
+        background-color: rgba(#00bac2, .8);
+        i {color: white;}
+      }
+      &--open-knowledge-international {
+        background-color: rgba(#68B83A, .8);
+        i {color: white;}
+      }
+      &--world-bank-digital-engagement-evaluation-team {
+        background-color: $blue;
+        i {color: white;}
+        &--organization-logo {
+          float: left;
+          max-height: 34px;
+        }
+      }
+
+    &--closed-access {
+      color: $red;
+      opacity: 1;
+    }
+
+    &--organization-logo {
+      float: left;
+      max-height: 26px;
+    }
+  }
+}
+
+
+.filter-panel {
+  text-align: center;
+}
