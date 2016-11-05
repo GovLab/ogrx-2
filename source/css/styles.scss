@@ -3,7 +3,7 @@
 
 $small-only: (max-width 40em);
 $medium: 40.063em 64em;
-$large: 64.063em 90em;
+$large: 64.063em;
 
 // Colors
 $main-color: rgba( 0,  79, 111, 1);
@@ -18,16 +18,66 @@ $expert-networking: rgba(110,123,151,1);
 $open-data: rgba(0,173,152,1);
 $labs-and-experimentation: rgba(219,192,72,1);
 
+
+$gray:      rgba(113, 126, 129, 1);
+$green:     rgba( 86, 161, 115, 1);
+$orange:    rgba(214,  90,  67, 1);
+$green2:    rgba( 96, 122,  52, 1);
+$yellow:    rgba(217, 190,  91, 1);
+$brown:     rgba(106,  79,  59, 1);
+$blue:      rgba( 63, 112, 182, 1);
+$blue-gray: rgba(102, 139, 152, 1);
+$dark-blue: rgba( 49,  73,  86, 1);
+$teal:      rgba( 75, 140, 142, 1);
+$red:       rgba(179,  57,  69, 1);
+$purple: #523080;
+
+
 #overlay { background-color: transparent !important; }
 
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.u-transition { transition: all .4s ease; }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
 
 
 @import 'breakpoint';
 @import 'base';
 @import 'custom';
 @import 'footer';
+@import 'filters';
 @import 'homepage';
 @import 'main-search';
 @import 'main-categories';
 @import 'switch';
+@import 'result';
 

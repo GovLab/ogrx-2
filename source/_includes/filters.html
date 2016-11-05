@@ -1,0 +1,52 @@
+<!-- Need to port all the logic for the filters -->
+
+<section class="filters">
+  
+  <div class="row align-center">
+    <div class="large-6 column large-offset-1">
+      <div class="switch">
+        <label>
+          All Articles
+          <input type="checkbox" class="filter" data-filter="f-open">
+          <span class="lever"></span>
+          Open Access Articles Only
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-center">
+    <div class="large-10 column">
+      <form action="" class="search search--main-search search--negative lunr-form" id="lunr-filter-form">
+        <input id="lunr-filter" type="text" placeholder="Search" data-category="{{custom_filter | slugify }}" />
+        <input class="search__trigger material-icons" type="button" value="search">
+      </form>  
+    </div>
+  </div>
+
+  <div class="filter-controls">
+    <div class="row expanded align-center">
+      <div class="large-12 column">
+        {% for r in (1..7) %}
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Filter Label</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div> 
+        {% endfor %}
+      </div>
+    </div>  
+    <div class="row align-center">
+      <div class="large-3 column">
+        <div class="button">clear filters</div>
+      </div>
+    </div>
+  </div>
+  
+
+</section>
