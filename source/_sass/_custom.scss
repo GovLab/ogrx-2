@@ -1,0 +1,59 @@
+.all-authors-list {
+  padding: 0;
+
+  &__index {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__index-item {
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgba(black, .1);
+    }
+  }
+
+  &__list-item {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    
+    &:nth-of-type(even) { background-color: rgba(black, .03); }
+  }
+
+}
+
+
+.featured-authors {
+  &__list-item {
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  &__picture {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(black, .1);
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__job {
+    font-size: 1rem;
+    color: rgba(black, .6);
+  }
+}

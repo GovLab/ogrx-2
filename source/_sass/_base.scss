@@ -5,6 +5,8 @@
   margin-top: -50px;
   padding-top: 120px;
   padding-bottom: 0;
+
+  > h1:only-child { padding-bottom: 40px; }
 }
 
 .top-bar {

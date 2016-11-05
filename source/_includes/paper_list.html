@@ -8,7 +8,7 @@
           <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>
           <p class="result-item__authors">
             {% for author in paper.authors %}
-            <a href="../authors/{{author | slugify}}.html">{{author}} </a> <!-- FIX THE COMMA SEPARATION -->
+            <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
             {% endfor %}
           </p>
           <div class="result-item__taxonomy result-item__taxonomy--category">
