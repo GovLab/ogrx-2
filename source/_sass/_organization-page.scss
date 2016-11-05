@@ -1,0 +1,102 @@
+.social-media-icon {
+  width: 28px;
+  display: inline-block;
+  margin: 10px;
+
+  > * { max-width: 100%; }
+
+  &--github { fill: white; }
+}
+
+.author-page,
+.organization-page {
+  &__image-column { text-align: center; }
+  &__description { text-align: left; }
+
+  &__extras {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__name { text-align: left; }
+}
+
+.organization-page {
+  &__org-logo {
+    max-width: 80%;
+    padding: 10%;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+
+.organization-page,
+.author-page {
+  &__extras {
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+
+.author-page {
+  &__picture {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 150px;
+    margin: 0 auto 30px;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  &__job {
+    text-align: left;
+    text-transform: none;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+.extra-info-panel {
+  padding: 50px 0;
+  margin-top: 30px;
+  padding: 0;
+  max-height: 0;
+  overflow: auto;
+  background-color: rgba(black, .2);
+  transition: max-height 0.5s ease, padding 0.5s ease;
+
+  &.visible {
+    max-height: 3500px;
+    padding: 50px 0;
+  }
+
+  h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+.about-page {
+  &__macarthur, 
+  &__rciog {
+    padding: 60px 20px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  #iri {
+    margin: 36px 0 0 0px;
+    max-width: 171px;
+  }
+}

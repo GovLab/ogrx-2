@@ -5,17 +5,21 @@
   margin-top: -50px;
   padding-top: 120px;
   padding-bottom: 0;
-  
-  &--main-color { background-color: $main-color; }
+}
+
+.top-bar {
+  background-color: rgba(black, .1);
+  position: relative;
+  z-index: 1;
+}
+
+.top-section--main-color {
+  background-color: $main-color;
 }
 
 .search {
   input[type="submit"] { margin-left: 0; }
 }
 
-.top-bar--main-color {
-  background-color: rgba(black, .1);
-  position: relative;
-  z-index: 1;
-}
+
 

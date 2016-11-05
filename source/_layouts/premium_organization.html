@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="organization-page">
+  <div class="top-section" style="background-color: #{{ page.color }};">
+    <div class="row">
+      <div class="large-6 column organization-page__image-column">
+        <img class="organization-page__org-logo" src="{{'/images/organizations/' | relative_url }}{{ page.image_white }}" alt="{{page.title}}" title="{{page.title}}">
+        {% if page.long_description %}
+        <span class="button" onclick="$('.extra-info-panel').toggleClass('visible');">More Information</span>
+        {% endif %}
+      </div>
+      <div class="large-6 column">
+        <p class="organization-page__description">{{ page.short_description | safe }}</p>
+        <div class="organization-page__extras">
+          {% if page.social_media.url %}
+          <a href="{{ page.social_media.url }}" class="social-media-icon" id="medium-url" target="_blank">
+            <img src="{{'./images/browser-window-logo.png' | relative_url}}" alt="{{page.title}} url">
+          </a>
+          {% endif %}
+          {% if page.social_media.twitter %}
+          <a href="{{ page.social_media.twitter }}" class="social-media-icon" target="_blank">
+            <img src="{{'./images/twitter-logo.png' | relative_url}}" alt="{{page.title}} Twitter">
+          </a>
+          {% endif %}
+          {% if page.social_media.github %}
+          <a href="{{ page.social_media.github }}" class="social-media-icon organization-page--github" target="_blank">
+            <img src="{{'./images/github-logo.svg' | relative_url }}" alt="{{page.title}} Github">
+          </a>
+          {% endif %}
+          {% if page.social_media.facebook %}
+          <a href="{{ page.social_media.facebook }}" class="social-media-icon m-facebook" id="facebook-logo" target="_blank">
+            <img src="{{'./images/facebook-logo' | relative_url }}.png" alt="{{page.title}} Facebook">
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% if page.long_description %}
+    <!-- {# Extra Info Panel #} -->
+    <div class="extra-info-panel">
+      <div class="row">
+        <div class="large-10 column large-offset-1 column">
+          <p>{{ page.long_description }}</p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  </div>
+</div>
+<!-- {# Article Section #} -->
+<div class="divider">
+  <h1>Articles</h1>
+</div>
+
+{% include paper_list.html %}
+  
+</div>

@@ -35,4 +35,15 @@ exclude:
 source: ./source
 # sass_dir: source/css
 
+page_gen:
+  - data: organizations
+    template: premium_organization
+    name: title
+    dir: organizations
+    extension: html
 
+  - data: custom_authors
+    template: custom_authors
+    name: title
+    dir: authors
+    extension: html
