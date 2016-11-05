@@ -1,3 +1,12 @@
+#submit-button {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  background-color: $accent-color;
+  color: darken($accent-color, 20);
+}
+
+
 .search.search--main-search {
     display: flex;
 
@@ -7,10 +16,7 @@
       max-width: 100%;
       flex: 1;
 
-
-    &:focus {
-      background-color: rgba(white, .3);
-    }
+      &:focus { background-color: rgba(white, .3); }
   }
 
   input[type="submit"], input[type="button"] {
@@ -18,13 +24,7 @@
     background-color: rgba(white, .2);
   }
 
-  input[type="button"] {
-    padding: 16px 17px;
-  }
-
-  input[type="text"]:focus ~ input[type="submit"] {
-    background-color: rgba(black, .4);
-  }
+  input[type="button"] { padding: 16px 17px; }
 
   ::-webkit-input-placeholder {
    color: rgba(white, .3);
@@ -48,8 +48,15 @@
 
 }
 
+
+
+
+
+
+
 .main-search-section {
   background-color: rgba(black, .2);
+  padding-top: 80px;
 
   .main-search-section--tagline {
     text-align: center;

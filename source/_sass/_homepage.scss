@@ -1,5 +1,14 @@
+#homepage {
+  .top-section {
+    padding-bottom: 0;
+
+    h3 { text-transform: none; }
+  }
+}
+
 #main-logo {
-  width: 33rem;
+  width: 25rem;
+  opacity: .2;
   display: block;
   margin: 0 auto;
 }
@@ -22,7 +31,6 @@
 
   &:hover { text-decoration: none; }
 }
-
 
 .organization-logo {
   padding: 60px 20px;
