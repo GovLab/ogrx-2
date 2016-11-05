@@ -1,16 +1,19 @@
 <header class="top-bar top-bar--main-color">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
-    <a href="./base-elements.html">Base Elements</a>
-    <a href="./form.html">Form</a>
-    <a href="./sections.html">Sections</a>
-    <a href="./components.html">Base Components</a>
-    <a href="./special-components.html">Special Components</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/organizations.html' | relative_url }}">Organizations</a>
+    <a href="{{ '/categories.html' | relative_url }}">Categories</a>
+    <a href="{{ '/authors.html' | relative_url }}">Authors</a>
+    <a href="{{ '/about.html' | relative_url }}">About</a>
+    <a href="{{ '/b1c94ca2fbc3e78fc30069c8d0f01680-all.html' | relative_url }}">Exchange</a>
+    <a href="{{ '/submit.html' | relative_url }}">Submit</a>
+    <a href="#" class="m-disabled">Blog</a>
   </nav>
   <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
-  <span class="top-bar__button js-trigger-menu">more_vert</span>
+  <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
     <a href="./sandbox.html">Sandbox</a>
-  </nav>
+  </nav> -->
 </header>
