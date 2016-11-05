@@ -36,24 +36,25 @@ layout: default
         </div>
       </div>
     </div>
-  {% if page.long_description %}
-    <!-- {# Extra Info Panel #} -->
-    <div class="extra-info-panel">
-      <div class="row">
-        <div class="large-10 column large-offset-1 column">
-          <p>{{ page.long_description }}</p>
+
+    {% if page.long_description %}
+      <!-- {# Extra Info Panel #} -->
+      <div class="extra-info-panel">
+        <div class="row">
+          <div class="large-10 column large-offset-1 column">
+            <p>{{ page.long_description }}</p>
+          </div>
         </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
 
   </div>
-</div>
-<!-- {# Article Section #} -->
-<div class="divider">
-  <h1>Articles</h1>
-</div>
 
-{% include paper_list.html %}
+  <!-- {# Article Section #} -->
+  <div class="divider">
+    <h1>Articles</h1>
+  </div>
+
+  {% include paper_list.html %}
   
 </div>
