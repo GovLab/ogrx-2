@@ -7,6 +7,12 @@
   padding-bottom: 0;
 
   > h1:only-child { padding-bottom: 40px; }
+
+  h2:last-child,
+  h3:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
 }
 
 .top-bar {

@@ -1,0 +1,86 @@
+.top-section {
+  background-color: $main-color;
+  margin-top: -66px;
+  padding-top: 136px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.sidebar { 
+  background-color: lighten($main-color, 4);
+  padding: 40px 0;
+}
+
+.sidebar-menu {
+  a {
+    display: block;
+    padding: 10px 60px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    text-align: right;
+  }
+
+  a:nth-of-type(even) { background-color: rgba(black, .05); }
+  a:hover { 
+    background-color: $accent-color; 
+    text-decoration: none;
+  }
+}
+
+.blog-content { }
+
+.blog-list {
+  > .row {
+    margin-left: 0;
+  }
+  > .row:nth-child(even) { background-color: rgba(black, .05); }
+  
+  &__item {
+
+  }
+}
+
+.post {
+  padding: 30px 60px 30px;
+
+  h2 {
+    font-size: 1.3rem;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  &__meta {
+    color: rgba(black, .4);
+    font-style: italic;
+    margin-top: 0;
+  }
+
+  &__author,
+  &__date {
+    color: rgba($main-color, .4);
+    &:hover { color: $main-color; }
+  }
+
+  &__category {
+    display: inline-block;
+    padding: 6px 10px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+
+    &.m-behavioral-research,
+    &.m-behavioral-science-and-nudges { background-color: $behavioral-research; }
+    &.m-citizen-engagement { background-color: $citizen-engagement; }
+    &.m-civic-technology,
+    &.m-civic-tech { background-color: $civic-technology; }
+    &.m-data-analysis { background-color: $data-analysis; }
+    &.m-expert-networking { background-color: $expert-networking; }
+    &.m-open-data { background-color: $open-data; }
+    &.m-labs-and-experimentation { background-color: $labs-and-experimentation; }
+  }
+}
