@@ -2,7 +2,7 @@
 <div class="page-section results-section isotope">
   <div class="row expanded">
     <div class="column large-12">
-      {% for paper in site.data.papers %}
+      {% for paper in papers %}
         
         <div class="result-item">
           <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>

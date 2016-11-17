@@ -53,5 +53,6 @@ color: rgba( 63, 112, 182, 1)
     <h1>Articles</h1>
   </div>
 
+  {% assign papers = site.data.papers | filter_data_by_field: 'authors', page.title %}
   {% include paper_list.html %}
 </div>
