@@ -2,8 +2,11 @@
 <div class="page-section results-section isotope">
   <div class="row expanded">
     <div class="column large-12">
+
+     {{ site.data.contentful.spaces.papers }}
+
       {% for paper in papers %}
-        
+
         <div class="result-item">
           <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>
           <p class="result-item__authors">
@@ -18,7 +21,7 @@
               <a href="../categories/{{category}}.html" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
               {% endfor %}
             </span>
-            
+
           </div>
           <div class="result-item__taxonomy result-item__taxonomy--methodology">
             <span class="result-item__taxonomy__key">Methodology</span>
@@ -46,7 +49,7 @@
             <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
           </div>
           {% endif %}
-        </div> 
+        </div>
       {% endfor %}
     </div>
   </div>
