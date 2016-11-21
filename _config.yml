@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 
-email: 
+title:
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
@@ -55,3 +55,20 @@ page_gen:
     dir: categories
     extension: html
 
+
+contentful:
+  spaces:
+    - papers: # Jekyll _data folder identifier - Required
+        space: ufh1mvj7xl16         # Required
+        access_token: a9ccc057a1e57a9dfe4ea80441cb35ae2f42ea8e5e8d37dfe08a65f7b0ae9254  # Required
+        # cda_query:                  # Optional
+        #   include: 2
+        #   limit: 100
+        all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
+        all_entries_page_size: 1000 # Optional - Defaults to 1000, maximum amount of entries per CDA Request for all_entries
+        # content_types:              # Optional
+        #   cat: MyCoolMapper
+        # client_options:             # Optional
+        #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
+        # base_path: app_path         # Optional - Defaults to Current directory
+        # destination: destination_in_data # Optional - Defaults to _data/contentful/spaces
