@@ -3,12 +3,11 @@
   <div class="row expanded">
     <div class="column large-12">
 
-     {{ site.data.contentful.spaces.papers }}
 
-      {% for paper in site.data.contentful.spaces.papers %}
+      {% for paper in site.data.contentful.spaces.papers.paper %}
 
         <div class="result-item">
-          <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.title}}</a></h3>
+          <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.publicationName}}</a></h3>
           <p class="result-item__authors">
             {% for author in paper.authors %}
             <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
