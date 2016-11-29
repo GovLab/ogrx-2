@@ -30,7 +30,11 @@ layout: default
               <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <span class="post__author">{{a}}</span> {% endfor %}</p>
               <p>{{i.post | truncate: 500}}</p>
               <p class="post__meta">
-                <span class="post__category m-{{i.innovationcategory[0] | slugify}}">{{i.innovationcategory[0]}}</span>
+                {% for c in i.innovationcategory %}
+
+                <span class="post__category m-{{c | slugify}}">{{c}}</span>
+
+                {% endfor %}
               </p>
             </div>
           </div>
