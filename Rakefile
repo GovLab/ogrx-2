@@ -1,6 +1,6 @@
 require 'jekyll'
 require 'jekyll-contentful-data-import'
-require './_plugins/mappers'
+require './source/_plugins/mappers'
 
 desc "Import Contentful Data with Custom Mappers"
 task :contentful do
