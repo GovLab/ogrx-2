@@ -31,6 +31,7 @@ blogpost:
     id: aj31tGNX0s4giAi2gCusq
   title: Test blog
   author:
+  - Stefaan Verhulst
   - Andrew Young
   affiliation:
   - The GovLab
@@ -59,22 +60,6 @@ blogpost:
     Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
 
     They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
-list:
-- sys:
-    id: 7u9YBRWeDCioowsycIGceM
-  title: GovLab things
-  author:
-  - Andrew Young
-  - Stefaan Verhulst
-  affiliation:
-  - The GovLab
-  description: This is a list of GovLab things that we make
-  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
-    STEALTH'
-  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
-  article1Author:
-  - Stefaan Verhulst
-  - Andrew Young
 paper:
 - sys:
     id: 1n9KJcIgsU0y8aeOWeS8Cs
@@ -102,3 +87,19 @@ paper:
     of citizen participation. The analysis and comprehension of governance characteristics
     plays a crucial role both for a better understanding and management of citizen
     participation, especially in complex settings where multiple actors are interacting.
+list:
+- sys:
+    id: 7u9YBRWeDCioowsycIGceM
+  title: GovLab things
+  author:
+  - Andrew Young
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  description: This is a list of GovLab things that we make
+  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
+    STEALTH'
+  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
+  article1Author:
+  - Stefaan Verhulst
+  - Andrew Young
