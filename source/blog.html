@@ -11,26 +11,26 @@ layout: default
     <div class="large-3 column">
       <aside class="sidebar">
         <nav class="sidebar-menu">
-        
-        {% for i in site.data.main-categories offset:1 %}
+
+        {% for i in site.data.contentful.spaces.content.blogpost %}
           <a href="#">{{i.title}}</a>
-        {% endfor %}          
-        </nav>  
+        {% endfor %}
+        </nav>
 
       </aside>
     </div>
 
     <div class="large-9 column">
       <section class="blog-content blog-list">
-        {% for i in site.data.blog %}
+        {% for i in site.data.contentful.spaces.content.blogpost %}
         <div class="row expanded align-center">
           <div class="large-10 column">
             <div class="blog-list__item post">
               <h2><a href="blog-post.html">{{i.title}}</a></h2>
-              <p class="post__meta"><span class="post__date">Nov 02, 2016 01:45 pm</span> by <span class="post__author">Andrew Young</span></p>
-              <p>{{i.excerpt}}</p>
+              <p class="post__meta"><span class="post__date">Nov 02, 2016 01:45 pm</span> by {% for a in i.author %} <span class="post__author">{{a}}</span> {% endfor %}</p>
+              <p>{{i.post | truncate: 500}}</p>
               <p class="post__meta">
-                <span class="post__category m-{{i.main-category | slugify}}">{{i.main-category}}</span>
+                <span class="post__category m-{{i.innovationcategory[0] | slugify}}">{{i.innovationcategory[0]}}</span>
               </p>
             </div>
           </div>
