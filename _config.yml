@@ -72,8 +72,8 @@ contentful:
         #   limit: 100
         all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
         all_entries_page_size: 1000 # Optional - Defaults to 1000, maximum amount of entries per CDA Request for all_entries
-        # content_types:              # Optional
-        #   cat: MyCoolMapper
+        content_types:
+          link: MyReverseMapper
         # client_options:             # Optional
         #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
         base_path: ./source         # Optional - Defaults to Current directory
