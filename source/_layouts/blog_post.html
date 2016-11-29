@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<!-- This page uses Styleguide 2 -->
+<div id="blog-single">
+  <div class="top-section top-section--main-color blog-header">
+    <h1>{{page.title}}</h1>
+    <h3 class="blog-single__meta">Nov 02, 2016 01:45 pm by {% for a in page.author %} {{a}} {% endfor %}</h3>
+  </div>
+  <section class="blog-content blog-single">
+    <div class="row">
+      <div class="large-8 column large-offset-2">
+        <p class="blog-single__highlight">highlight</p>
+        {{page.post}}
+      </div>
+    </div>
+  </section>
+
+</div>
+

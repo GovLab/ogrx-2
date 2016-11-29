@@ -14,7 +14,7 @@ module Jekyll
         return name.downcase.strip.gsub(' ', '-').gsub(/[^\w.-]/, '')
       else
         return ""
-      end      
+      end
     end
   end
 
