@@ -4,7 +4,7 @@
     <div class="column large-12">
 
 
-      {% for paper in site.data.contentful.spaces.papers.paper %}
+      {% for paper in site.data.contentful.spaces.content.paper %}
 
         <div class="result-item">
           <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.publicationName}}</a></h3>

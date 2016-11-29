@@ -58,7 +58,7 @@ page_gen:
 
 contentful:
   spaces:
-    - papers: # Jekyll _data folder identifier - Required
+    - content: # Jekyll _data folder identifier - Required
         space: ufh1mvj7xl16         # Required
         access_token: a9ccc057a1e57a9dfe4ea80441cb35ae2f42ea8e5e8d37dfe08a65f7b0ae9254  # Required
         # cda_query:                  # Optional

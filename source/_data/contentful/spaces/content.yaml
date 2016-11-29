@@ -1,4 +1,20 @@
 ---
+list:
+- sys:
+    id: 7u9YBRWeDCioowsycIGceM
+  title: GovLab things
+  author:
+  - Andrew Young
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  description: This is a list of GovLab things that we make
+  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
+    STEALTH'
+  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
+  article1Author:
+  - Stefaan Verhulst
+  - Andrew Young
 paper:
 - sys:
     id: 1n9KJcIgsU0y8aeOWeS8Cs
@@ -26,3 +42,31 @@ paper:
     of citizen participation. The analysis and comprehension of governance characteristics
     plays a crucial role both for a better understanding and management of citizen
     participation, especially in complex settings where multiple actors are interacting.
+blogpost:
+- sys:
+    id: 5aQrHCHIMEYQg6EIeQq0ks
+  title: Fury Road
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Big Data
+  - Civic Technology
+  - Expert Networking
+  - Participatory Budgeting
+  type:
+  - Weekly update
+  - Announcement
+  keywords:
+  - mad
+  - max
+  - fury
+  - road
+  post: "My name is __Max__. My world is *fire and blood*. Once, I was a cop. A road
+    warrior searching for a righteous cause. As the world fell, each of us in our
+    own way was broken. \n\n> It was hard to know who was more crazy... me... or everyone
+    else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
+    by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
+    reduced to one instinct: __survive__."
