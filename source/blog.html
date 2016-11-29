@@ -26,7 +26,7 @@ layout: default
         <div class="row expanded align-center">
           <div class="large-10 column">
             <div class="blog-list__item post">
-              <h2><a href="blog-post.html">{{i.title}}</a></h2>
+              <h2><a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a></h2>
               <p class="post__meta"><span class="post__date">Nov 02, 2016 01:45 pm</span> by {% for a in i.author %} <span class="post__author">{{a}}</span> {% endfor %}</p>
               <p>{{i.post | truncate: 500}}</p>
               <p class="post__meta">
