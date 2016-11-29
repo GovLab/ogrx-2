@@ -55,7 +55,7 @@ page_gen:
     dir: categories
     extension: html
 
-  - data: blog
+  - data: contentful.spaces.content.blogpost
     template: blog_post
     name: title
     dir: blog
