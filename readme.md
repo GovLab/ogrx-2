@@ -1,3 +1,5 @@
+Use `bundle exec rake contentful` to pull the contentful content
+
 # OGRX v2
 
 Branch "Old" is being kept for backup purposes.

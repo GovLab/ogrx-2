@@ -1,4 +1,26 @@
 ---
+paper:
+- sys:
+    id: 1n9KJcIgsU0y8aeOWeS8Cs
+  open: true
+  publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
+    in Amsterdam Smart City'
+  authors:
+  - Carlo Francesco Capra
+  publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
+  downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
+  abstract: Smart cities are associated almost exclusively with modern technology
+    and infrastructure. However, smart cities have the possibility to enhance the
+    involvement and contribution of citizens to urban development. This work explores
+    the role of governance as one of the factors influencing the participation of
+    citizens in smart cities projects. Governance characteristics play a major role
+    in explaining different typologies of citizen participation. Through a focus on
+    Amsterdam Smart City program as a specific case study, this research examines
+    the characteristics of governance that are present in the overall program and
+    within a selected sample of projects, and how they relate to different typologies
+    of citizen participation. The analysis and comprehension of governance characteristics
+    plays a crucial role both for a better understanding and management of citizen
+    participation, especially in complex settings where multiple actors are interacting.
 blogpost:
 - sys:
     id: 5aQrHCHIMEYQg6EIeQq0ks
@@ -82,33 +104,6 @@ blogpost:
     Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
 
     They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
-paper:
-- sys:
-    id: 1n9KJcIgsU0y8aeOWeS8Cs
-  open: true
-  publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
-    in Amsterdam Smart City'
-  authors:
-  - Carlo Francesco Capra
-  publicationDate: !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
-  downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
-  innovationArea: Citizen Engagement and Crowdsourcing, Smart Cities
-  objective: Effectiveness, Participation
-  region: Amsterdam
-  methodology: Case Studies, Conceptual Framework
-  publicationType: Journal Article
-  abstract: Smart cities are associated almost exclusively with modern technology
-    and infrastructure. However, smart cities have the possibility to enhance the
-    involvement and contribution of citizens to urban development. This work explores
-    the role of governance as one of the factors influencing the participation of
-    citizens in smart cities projects. Governance characteristics play a major role
-    in explaining different typologies of citizen participation. Through a focus on
-    Amsterdam Smart City program as a specific case study, this research examines
-    the characteristics of governance that are present in the overall program and
-    within a selected sample of projects, and how they relate to different typologies
-    of citizen participation. The analysis and comprehension of governance characteristics
-    plays a crucial role both for a better understanding and management of citizen
-    participation, especially in complex settings where multiple actors are interacting.
 list:
 - sys:
     id: 7u9YBRWeDCioowsycIGceM
@@ -125,3 +120,25 @@ list:
   article1Author:
   - Stefaan Verhulst
   - Andrew Young
+  articlesList:
+  - sys:
+      id: 1n9KJcIgsU0y8aeOWeS8Cs
+    open: true
+    publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
+      in Amsterdam Smart City'
+    authors:
+    - Carlo Francesco Capra
+    publicationDate: *1
+    downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
+    abstract: Smart cities are associated almost exclusively with modern technology
+      and infrastructure. However, smart cities have the possibility to enhance the
+      involvement and contribution of citizens to urban development. This work explores
+      the role of governance as one of the factors influencing the participation of
+      citizens in smart cities projects. Governance characteristics play a major role
+      in explaining different typologies of citizen participation. Through a focus
+      on Amsterdam Smart City program as a specific case study, this research examines
+      the characteristics of governance that are present in the overall program and
+      within a selected sample of projects, and how they relate to different typologies
+      of citizen participation. The analysis and comprehension of governance characteristics
+      plays a crucial role both for a better understanding and management of citizen
+      participation, especially in complex settings where multiple actors are interacting.
