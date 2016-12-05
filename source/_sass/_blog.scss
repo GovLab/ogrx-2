@@ -11,6 +11,7 @@ a {
 .sidebar {
   background-color: lighten($main-color, 4);
   padding: 40px 0;
+  height: 100%;
 }
 
 .sidebar-menu {
@@ -73,7 +74,8 @@ a {
     text-transform: uppercase;
     color: white;
 
-    background-color: $main-color;
+    background-color: transparentize($main-color, .5);
+    margin-bottom: 5px;
 
     &.m-behavioral-research,
     &.m-behavioral-science-and-nudges { background-color: $behavioral-research; }
