@@ -2,6 +2,17 @@
 blogpost:
 - sys:
     id: 5aQrHCHIMEYQg6EIeQq0ks
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-11-25 16:59:26.994000000 Z
+    updatedAt: !ruby/object:DateTime 2016-11-25 17:08:17.287000000 Z
+    revision: 2
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
   title: Fury Road
   author:
   - Stefaan Verhulst
@@ -29,6 +40,17 @@ blogpost:
     reduced to one instinct: __survive__."
 - sys:
     id: aj31tGNX0s4giAi2gCusq
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-11-29 12:41:21.585000000 Z
+    updatedAt: !ruby/object:DateTime 2016-11-29 14:09:17.641000000 Z
+    revision: 2
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
   title: Test blog
   author:
   - Stefaan Verhulst
