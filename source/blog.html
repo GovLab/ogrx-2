@@ -13,7 +13,7 @@ layout: default
         <nav class="sidebar-menu">
 
         {% for i in site.data.contentful.spaces.content.blogpost %}
-          <a href="#">{{i.title}}</a>
+          <a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a>
         {% endfor %}
         </nav>
 
