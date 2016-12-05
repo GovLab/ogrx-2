@@ -1,101 +1,38 @@
 ---
 paper:
 - sys:
-    id: 1n9KJcIgsU0y8aeOWeS8Cs
-  open: true
-  publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
-    in Amsterdam Smart City'
+    id: 1f6ie3dV44egyoGEE0oweK
+  publicationName: 'Confronting the Hype: The Use of Crisis Mapping for Community
+    Development'
+  region:
+  - Canada
   authors:
-  - Carlo Francesco Capra
-  publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
-  downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
-  abstract: Smart cities are associated almost exclusively with modern technology
-    and infrastructure. However, smart cities have the possibility to enhance the
-    involvement and contribution of citizens to urban development. This work explores
-    the role of governance as one of the factors influencing the participation of
-    citizens in smart cities projects. Governance characteristics play a major role
-    in explaining different typologies of citizen participation. Through a focus on
-    Amsterdam Smart City program as a specific case study, this research examines
-    the characteristics of governance that are present in the overall program and
-    within a selected sample of projects, and how they relate to different typologies
-    of citizen participation. The analysis and comprehension of governance characteristics
-    plays a crucial role both for a better understanding and management of citizen
-    participation, especially in complex settings where multiple actors are interacting.
-- sys:
-    id: 28bG1UYk3W48OaqsQ6WKQW
-  open: false
-  publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
-    stealth'
-  authors:
-  - Frank Mols
-  - S. Alexander Haslam
-  - Jolanda Jetten
-  - Niklas K. Steffens
-  publicationDate: &4 !ruby/object:DateTime 2016-12-21 00:00:00.000000000 -05:00
-  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+  - Ana Brandusescu
+  - Renée E. Sieber
+  - Sylvie Jochems
+  publicationDate: &5 !ruby/object:DateTime 2016-12-15 00:00:00.000000000 -05:00
+  downloadLink: http://con.sagepub.com/content/early/2015/05/15/1354856515584320.abstract
   innovationCategory:
+  - Big Data
   - Design Thinking
-  - Distributed Governance
   objectiveCategory:
-  - Participation
   - Transparency
   sectorCategory:
-  - Finance
-  - Development
-  - Weather
+  - Business
   methodology:
-  - Comparative Analysis
+  - Network Analysis
   publicationType:
-  - Dissertation and/or Thesis
-  abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
-    ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
-    represents a distinct (fifth) mode of governance. The effectiveness of nudging
-    as a means of bringing about lasting behaviour change is questioned and it is
-    argued that evidence for its success ignores the facts that many successful nudges
-    are not in fact nudges; that there are instances when nudges backfire; and that
-    there may be ethical concerns associated with nudges. Instead, and in contrast
-    to nudging, behaviour change is more likely to be enduring where it involves social
-    identity change and norm internalisation. The article concludes by urging public
-    policy scholars to engage with the social identity literature on ‘social influence’,
-    and the idea that those promoting lasting behaviour change need to engage with
-    people not as individual cognitive misers, but as members of groups whose norms
-    they internalise and enact.'
-- sys:
-    id: 3Yr36GTjEkSMgIyw4uiCmu
-  open: true
-  publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
-    Internal Decision-Making Processes on Policy Development and Citizen Engagement'
-  authors:
-  - Anika Gauja
-  publicationDate: &3 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
-  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-  innovationCategory:
-  - Behavioral Sciences and Nudges
-  - Citizen Engagement and Collective Intelligence
-  - Data Collaboratives
-  objectiveCategory:
-  - Privacy
-  sectorCategory:
-  - Education
-  - Energy
-  methodology:
-  - Comparative Analysis
-  - Ethnography
-  publicationType:
-  - Book
-  - Conference Proceedings
-  abstract: This article examines the changing nature of the connection between citizens,
-    party members and elites in the creation of party policy through the theoretical
-    prism of individualisation. Using qualitative case studies of recent policy-making
-    initiatives in the Australian Labor Party and the UK Labour Party, the article
-    develops a new model of policy transferal that is not built upon the mass-party
-    model of parliamentary politics, but rather upon organisational evolutions such
-    as community consultations, online participation and supporters' networks. These
-    evolutions, or reforms, typically emphasise the individuality of policy-making
-    and accountability, promote new technologies for facilitating decision-making,
-    and attempt to engage with a new style of politically active citizen. Each of
-    these developments carries implications for how political parties facilitate participation,
-    accountability and responsiveness in modern forms of representative democracy.
+  - Book Chapter
+  abstract: Crisis mapping has emerged as a method of connecting and empowering citizens
+    during emergencies. This article explores the hyperbole behind crisis mapping
+    as it extends into more long-term or ‘chronic’ community development practices.
+    We critically examined developer issues and participant (i.e. community organization)
+    usage within the context of local communities. We repurposed the predominant crisis
+    mapping platform Crowdmap for three cases of community development in Canadian
+    anglophone and francophone. Our case studies show mixed results about the actual
+    cost of deployment, the results of disintermediation, and local context with the
+    mapping application. Lastly, we discuss the relationship of hype, temporality,
+    and community development as expressed in our cases.
 - sys:
     id: 4saUvstvuwIAceeowAAcSW
   open: true
@@ -177,116 +114,134 @@ paper:
     in Azerbaijan and Liberia - ResearchGate. Available from: http://www.researchgate.net/publication/276365284_Does_transparency_matter_Evaluating_the_governance_impacts_of_the_Extractive_Industries_Transparency_Initiative_%28EITI%29_in_Azerbaijan_and_Liberia
     [accessed Jul 21, 2015].\""
   longUrl: http://eiti.org/files/Sovacool%20%26%20Andrews%20%5B2015%5D%20-%20Does%20transparency%20matter%20-%20%20Evaluating%20the%20governance%20impacts%20of%20the%20Extractive%20Industries%20Transparency%20Initiative%20%28EITI%29%20in%20Azerbaijan%20and%20Liberia.pdf
-blogpost:
 - sys:
-    id: 5aQrHCHIMEYQg6EIeQq0ks
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-11-25 16:59:26.994000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:11:47.883000000 Z
-    revision: 3
-    contentType:
-      sys:
-        id: blogpost
-    locale: en-US
-  title: Fury Road
-  author:
-  - Stefaan Verhulst
-  - Andrew Young
-  affiliation:
-  - The GovLab
-  innovationcategory:
-  - Big Data
-  - Civic Technology
-  - Expert Networking
-  - Participatory Budgeting
-  type:
-  - Weekly update
-  - Announcement
-  keywords:
-  - mad
-  - max
-  - fury
-  - road
-  highlight: "I am the one that runs from both \n1. the living \n2. and the dead. "
-  post: "My name is __Max__. My world is *fire and blood*. Once, I was a cop. A road
-    warrior searching for a righteous cause. As the world fell, each of us in our
-    own way was broken. \n\n> It was hard to know who was more crazy... me... or everyone
-    else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
-    by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
-    reduced to one instinct: __survive__."
+    id: 28bG1UYk3W48OaqsQ6WKQW
+  open: false
+  publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
+    stealth'
+  authors:
+  - Frank Mols
+  - S. Alexander Haslam
+  - Jolanda Jetten
+  - Niklas K. Steffens
+  publicationDate: &4 !ruby/object:DateTime 2016-12-21 00:00:00.000000000 -05:00
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+  innovationCategory:
+  - Design Thinking
+  - Distributed Governance
+  objectiveCategory:
+  - Participation
+  - Transparency
+  sectorCategory:
+  - Finance
+  - Development
+  - Weather
+  methodology:
+  - Comparative Analysis
+  publicationType:
+  - Dissertation and/or Thesis
+  abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
+    ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
+    represents a distinct (fifth) mode of governance. The effectiveness of nudging
+    as a means of bringing about lasting behaviour change is questioned and it is
+    argued that evidence for its success ignores the facts that many successful nudges
+    are not in fact nudges; that there are instances when nudges backfire; and that
+    there may be ethical concerns associated with nudges. Instead, and in contrast
+    to nudging, behaviour change is more likely to be enduring where it involves social
+    identity change and norm internalisation. The article concludes by urging public
+    policy scholars to engage with the social identity literature on ‘social influence’,
+    and the idea that those promoting lasting behaviour change need to engage with
+    people not as individual cognitive misers, but as members of groups whose norms
+    they internalise and enact.'
 - sys:
-    id: 4G5umLVsKcggomICggyMQa
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:08:32.182000000 Z
-    revision: 2
-    contentType:
-      sys:
-        id: blogpost
-    locale: en-US
-  title: test blog post
-  author:
-  - Stefaan Verhulst
-  affiliation:
-  - The GovLab
-  innovationcategory:
+    id: 1n9KJcIgsU0y8aeOWeS8Cs
+  open: true
+  publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
+    in Amsterdam Smart City'
+  authors:
+  - Carlo Francesco Capra
+  publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
+  downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
+  abstract: Smart cities are associated almost exclusively with modern technology
+    and infrastructure. However, smart cities have the possibility to enhance the
+    involvement and contribution of citizens to urban development. This work explores
+    the role of governance as one of the factors influencing the participation of
+    citizens in smart cities projects. Governance characteristics play a major role
+    in explaining different typologies of citizen participation. Through a focus on
+    Amsterdam Smart City program as a specific case study, this research examines
+    the characteristics of governance that are present in the overall program and
+    within a selected sample of projects, and how they relate to different typologies
+    of citizen participation. The analysis and comprehension of governance characteristics
+    plays a crucial role both for a better understanding and management of citizen
+    participation, especially in complex settings where multiple actors are interacting.
+- sys:
+    id: 3Yr36GTjEkSMgIyw4uiCmu
+  open: true
+  publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
+    Internal Decision-Making Processes on Policy Development and Citizen Engagement'
+  authors:
+  - Anika Gauja
+  publicationDate: &3 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+  innovationCategory:
   - Behavioral Sciences and Nudges
-  type:
-  - Recent trends
-  highlight: This is a highlight paragraph
-  post: testing
-- sys:
-    id: aj31tGNX0s4giAi2gCusq
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-11-29 12:41:21.585000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:12:11.758000000 Z
-    revision: 3
-    contentType:
-      sys:
-        id: blogpost
-    locale: en-US
-  title: Test blog
-  author:
-  - Stefaan Verhulst
-  - Andrew Young
-  affiliation:
-  - The GovLab
-  innovationcategory:
-  - Big Data
   - Citizen Engagement and Collective Intelligence
-  type:
-  - Weekly update
-  highlight: It’s important to shape up your hedges, it’s like getting a haircut,
-    stay fresh.
-  post: |-
-    The key to more success is to get a massage once a week, very important, major key, cloth talk. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! In life there will be road blocks but we will over come it. Wraith talk. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.
-
-    The key to more success is to have a lot of pillows. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Wraith talk. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Cloth talk. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.
-
-    We the best. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. We don’t see them, we will never see them. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Special cloth alert. Congratulations, you played yourself. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
-
-    It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Celebrate success right, the only way, apple. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Every chance I get, I water the plants, Lion! You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
-
-    You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. Life is what you make it, so let’s make it. Every chance I get, I water the plants, Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.
-
-    Surround yourself with angels. Lion! The key to success is to keep your head above the water, never give up. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Surround yourself with angels. The key to success is to keep your head above the water, never give up. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-
-    Give thanks to the most high. Congratulations, you played yourself. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Fan luv. The key to more success is to have a lot of pillows. The key is to drink coconut, fresh coconut, trust me. Mogul talk. Bless up. Fan luv. How’s business? Boomin. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.
-
-    Find peace, life is like a water fall, you’ve gotta flow. They never said winning was easy. Some people can’t handle success, I can. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Cloth talk. Mogul talk. They never said winning was easy. Some people can’t handle success, I can. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. Wraith talk.
-
-    Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
-
-    They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
+  - Data Collaboratives
+  objectiveCategory:
+  - Privacy
+  sectorCategory:
+  - Education
+  - Energy
+  methodology:
+  - Comparative Analysis
+  - Ethnography
+  publicationType:
+  - Book
+  - Conference Proceedings
+  abstract: This article examines the changing nature of the connection between citizens,
+    party members and elites in the creation of party policy through the theoretical
+    prism of individualisation. Using qualitative case studies of recent policy-making
+    initiatives in the Australian Labor Party and the UK Labour Party, the article
+    develops a new model of policy transferal that is not built upon the mass-party
+    model of parliamentary politics, but rather upon organisational evolutions such
+    as community consultations, online participation and supporters' networks. These
+    evolutions, or reforms, typically emphasise the individuality of policy-making
+    and accountability, promote new technologies for facilitating decision-making,
+    and attempt to engage with a new style of politically active citizen. Each of
+    these developments carries implications for how political parties facilitate participation,
+    accountability and responsiveness in modern forms of representative democracy.
+- sys:
+    id: 5pqVZkcQc8OQAyUoqcg604
+  publicationName: 'Smart cities: moving beyond urban cybernetics to tackle wicked
+    problems'
+  region:
+  - Brazil
+  authors:
+  - Robert Goodspeed
+  publicationDate: &6 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
+  downloadLink: http://cjres.oxfordjournals.org/content/8/1/79
+  innovationCategory:
+  - Co-Creation
+  - Distributed Governance
+  - Participatory Budgeting
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Finance
+  methodology:
+  - Case Studies
+  publicationType:
+  - Research Report
+  abstract: This article makes three related arguments. First, that although many
+    definitions of the smart city have been proposed, corporate promoters say a smart
+    city uses information technology to pursue efficient systems through real-time
+    monitoring and control. Second, this definition is not new and equivalent to the
+    idea of urban cybernetics debated in the 1970s. Third, drawing on a discussion
+    of Rio de Janeiro’s Operations Center, I argue that viewing urban problems as
+    wicked problems allows for more fundamental solutions than urban cybernetics,
+    but requires local innovation and stakeholder participation. Therefore the last
+    section describes institutions for municipal innovation and IT-enabled collaborative
+    planning.
 list:
 - sys:
     id: 7u9YBRWeDCioowsycIGceM
@@ -442,3 +397,224 @@ list:
       on ‘social influence’, and the idea that those promoting lasting behaviour change
       need to engage with people not as individual cognitive misers, but as members
       of groups whose norms they internalise and enact.'
+- sys:
+    id: 2xlAQzWc6oUik6IIoikG4Y
+  title: Cool Papers
+  author:
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  description: These papers are exceptionally cool
+  articlesList:
+  - sys:
+      id: 1f6ie3dV44egyoGEE0oweK
+    publicationName: 'Confronting the Hype: The Use of Crisis Mapping for Community
+      Development'
+    region:
+    - Canada
+    authors:
+    - Ana Brandusescu
+    - Renée E. Sieber
+    - Sylvie Jochems
+    publicationDate: *5
+    downloadLink: http://con.sagepub.com/content/early/2015/05/15/1354856515584320.abstract
+    innovationCategory:
+    - Big Data
+    - Design Thinking
+    objectiveCategory:
+    - Transparency
+    sectorCategory:
+    - Business
+    methodology:
+    - Network Analysis
+    publicationType:
+    - Book Chapter
+    abstract: Crisis mapping has emerged as a method of connecting and empowering
+      citizens during emergencies. This article explores the hyperbole behind crisis
+      mapping as it extends into more long-term or ‘chronic’ community development
+      practices. We critically examined developer issues and participant (i.e. community
+      organization) usage within the context of local communities. We repurposed the
+      predominant crisis mapping platform Crowdmap for three cases of community development
+      in Canadian anglophone and francophone. Our case studies show mixed results
+      about the actual cost of deployment, the results of disintermediation, and local
+      context with the mapping application. Lastly, we discuss the relationship of
+      hype, temporality, and community development as expressed in our cases.
+  - sys:
+      id: 5pqVZkcQc8OQAyUoqcg604
+    publicationName: 'Smart cities: moving beyond urban cybernetics to tackle wicked
+      problems'
+    region:
+    - Brazil
+    authors:
+    - Robert Goodspeed
+    publicationDate: *6
+    downloadLink: http://cjres.oxfordjournals.org/content/8/1/79
+    innovationCategory:
+    - Co-Creation
+    - Distributed Governance
+    - Participatory Budgeting
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Finance
+    methodology:
+    - Case Studies
+    publicationType:
+    - Research Report
+    abstract: This article makes three related arguments. First, that although many
+      definitions of the smart city have been proposed, corporate promoters say a
+      smart city uses information technology to pursue efficient systems through real-time
+      monitoring and control. Second, this definition is not new and equivalent to
+      the idea of urban cybernetics debated in the 1970s. Third, drawing on a discussion
+      of Rio de Janeiro’s Operations Center, I argue that viewing urban problems as
+      wicked problems allows for more fundamental solutions than urban cybernetics,
+      but requires local innovation and stakeholder participation. Therefore the last
+      section describes institutions for municipal innovation and IT-enabled collaborative
+      planning.
+  - sys:
+      id: 3Yr36GTjEkSMgIyw4uiCmu
+    open: true
+    publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
+      Internal Decision-Making Processes on Policy Development and Citizen Engagement'
+    authors:
+    - Anika Gauja
+    publicationDate: *3
+    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+    innovationCategory:
+    - Behavioral Sciences and Nudges
+    - Citizen Engagement and Collective Intelligence
+    - Data Collaboratives
+    objectiveCategory:
+    - Privacy
+    sectorCategory:
+    - Education
+    - Energy
+    methodology:
+    - Comparative Analysis
+    - Ethnography
+    publicationType:
+    - Book
+    - Conference Proceedings
+    abstract: This article examines the changing nature of the connection between
+      citizens, party members and elites in the creation of party policy through the
+      theoretical prism of individualisation. Using qualitative case studies of recent
+      policy-making initiatives in the Australian Labor Party and the UK Labour Party,
+      the article develops a new model of policy transferal that is not built upon
+      the mass-party model of parliamentary politics, but rather upon organisational
+      evolutions such as community consultations, online participation and supporters'
+      networks. These evolutions, or reforms, typically emphasise the individuality
+      of policy-making and accountability, promote new technologies for facilitating
+      decision-making, and attempt to engage with a new style of politically active
+      citizen. Each of these developments carries implications for how political parties
+      facilitate participation, accountability and responsiveness in modern forms
+      of representative democracy.
+blogpost:
+- sys:
+    id: 5aQrHCHIMEYQg6EIeQq0ks
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-11-25 16:59:26.994000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:11:47.883000000 Z
+    revision: 3
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: Fury Road
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Big Data
+  - Civic Technology
+  - Expert Networking
+  - Participatory Budgeting
+  type:
+  - Weekly update
+  - Announcement
+  keywords:
+  - mad
+  - max
+  - fury
+  - road
+  highlight: "I am the one that runs from both \n1. the living \n2. and the dead. "
+  post: "My name is __Max__. My world is *fire and blood*. Once, I was a cop. A road
+    warrior searching for a righteous cause. As the world fell, each of us in our
+    own way was broken. \n\n> It was hard to know who was more crazy... me... or everyone
+    else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
+    by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
+    reduced to one instinct: __survive__."
+- sys:
+    id: aj31tGNX0s4giAi2gCusq
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-11-29 12:41:21.585000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:12:11.758000000 Z
+    revision: 3
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: Test blog
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Big Data
+  - Citizen Engagement and Collective Intelligence
+  type:
+  - Weekly update
+  highlight: It’s important to shape up your hedges, it’s like getting a haircut,
+    stay fresh.
+  post: |-
+    The key to more success is to get a massage once a week, very important, major key, cloth talk. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! In life there will be road blocks but we will over come it. Wraith talk. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.
+
+    The key to more success is to have a lot of pillows. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Wraith talk. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Cloth talk. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.
+
+    We the best. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. We don’t see them, we will never see them. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Special cloth alert. Congratulations, you played yourself. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
+
+    It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Celebrate success right, the only way, apple. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Every chance I get, I water the plants, Lion! You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
+
+    You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. Life is what you make it, so let’s make it. Every chance I get, I water the plants, Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.
+
+    Surround yourself with angels. Lion! The key to success is to keep your head above the water, never give up. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Surround yourself with angels. The key to success is to keep your head above the water, never give up. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
+
+    Give thanks to the most high. Congratulations, you played yourself. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Fan luv. The key to more success is to have a lot of pillows. The key is to drink coconut, fresh coconut, trust me. Mogul talk. Bless up. Fan luv. How’s business? Boomin. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.
+
+    Find peace, life is like a water fall, you’ve gotta flow. They never said winning was easy. Some people can’t handle success, I can. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Cloth talk. Mogul talk. They never said winning was easy. Some people can’t handle success, I can. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. Wraith talk.
+
+    Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
+
+    They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
+- sys:
+    id: 4G5umLVsKcggomICggyMQa
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:08:32.182000000 Z
+    revision: 2
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: test blog post
+  author:
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Behavioral Sciences and Nudges
+  type:
+  - Recent trends
+  highlight: This is a highlight paragraph
+  post: testing
