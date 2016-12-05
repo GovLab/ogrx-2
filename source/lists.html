@@ -1,0 +1,43 @@
+---
+layout: default
+
+---
+<div id="blog-list-page">
+  <div class="top-section top-section--main-color">
+    <h1>Lists</h1>
+    <h3>Curated Lists of Papers on Specific Topics</h3>
+  </div>
+  <div class="row expanded large-collapse"> <!-- NEED TO MAKE THIS full height -->
+    <div class="large-3 column">
+      <aside class="sidebar">
+        <nav class="sidebar-menu">
+
+        {% for i in site.data.contentful.spaces.content.list %}
+          <a href="#">{{i.title}}</a>
+        {% endfor %}
+        </nav>
+
+      </aside>
+    </div>
+
+    <div class="large-9 column">
+      <section class="blog-content blog-list">
+        {% for i in site.data.contentful.spaces.content.list %}
+        <div class="row expanded align-center">
+          <div class="large-10 column">
+            <div class="blog-list__item post">
+              <h2><a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a></h2>
+              <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <span class="post__author">{{a}}</span> {% endfor %}</p>
+              <p>{{i.description | truncate: 500}}</p>
+              <p class="post__meta">
+
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+</div>
+
