@@ -39,6 +39,29 @@ blogpost:
     by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
     reduced to one instinct: __survive__."
 - sys:
+    id: 4G5umLVsKcggomICggyMQa
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
+    revision: 1
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: test blog post
+  author:
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Behavioral Sciences and Nudges
+  type:
+  - Recent trends
+  post: testing
+- sys:
     id: aj31tGNX0s4giAi2gCusq
     space:
       sys:
@@ -82,45 +105,124 @@ blogpost:
     Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
 
     They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
-list:
-- sys:
-    id: 7u9YBRWeDCioowsycIGceM
-  title: GovLab things
-  author:
-  - Andrew Young
-  - Stefaan Verhulst
-  affiliation:
-  - The GovLab
-  description: This is a list of GovLab things that we make
-  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
-    STEALTH'
-  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
-  article1Author:
-  - Stefaan Verhulst
-  - Andrew Young
-  articlesList:
-  - sys:
-      id: 1n9KJcIgsU0y8aeOWeS8Cs
-    open: true
-    publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
-      in Amsterdam Smart City'
-    authors:
-    - Carlo Francesco Capra
-    publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
-    downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
-    abstract: Smart cities are associated almost exclusively with modern technology
-      and infrastructure. However, smart cities have the possibility to enhance the
-      involvement and contribution of citizens to urban development. This work explores
-      the role of governance as one of the factors influencing the participation of
-      citizens in smart cities projects. Governance characteristics play a major role
-      in explaining different typologies of citizen participation. Through a focus
-      on Amsterdam Smart City program as a specific case study, this research examines
-      the characteristics of governance that are present in the overall program and
-      within a selected sample of projects, and how they relate to different typologies
-      of citizen participation. The analysis and comprehension of governance characteristics
-      plays a crucial role both for a better understanding and management of citizen
-      participation, especially in complex settings where multiple actors are interacting.
 paper:
+- sys:
+    id: 28bG1UYk3W48OaqsQ6WKQW
+  open: false
+  publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
+    stealth'
+  authors:
+  - Frank Mols
+  - S. Alexander Haslam
+  - Jolanda Jetten
+  - Niklas K. Steffens
+  publicationDate: &4 !ruby/object:DateTime 2016-12-21 00:00:00.000000000 -05:00
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+  innovationCategory:
+  - Design Thinking
+  - Distributed Governance
+  objectiveCategory:
+  - Participation
+  - Transparency
+  sectorCategory:
+  - Finance
+  - Development
+  - Weather
+  methodology:
+  - Comparative Analysis
+  publicationType:
+  - Dissertation and/or Thesis
+  abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
+    ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
+    represents a distinct (fifth) mode of governance. The effectiveness of nudging
+    as a means of bringing about lasting behaviour change is questioned and it is
+    argued that evidence for its success ignores the facts that many successful nudges
+    are not in fact nudges; that there are instances when nudges backfire; and that
+    there may be ethical concerns associated with nudges. Instead, and in contrast
+    to nudging, behaviour change is more likely to be enduring where it involves social
+    identity change and norm internalisation. The article concludes by urging public
+    policy scholars to engage with the social identity literature on ‘social influence’,
+    and the idea that those promoting lasting behaviour change need to engage with
+    people not as individual cognitive misers, but as members of groups whose norms
+    they internalise and enact.'
+- sys:
+    id: 4swRD3bz72SK8YEIAUSKSW
+  publicationName: Does transparency matter? Evaluating the governance impacts of
+    the Extractive Industries Transparency Initiative (EITI) in Azerbaijan and Liberia
+  region:
+  - Azerbaijan
+  - Liberia
+  authors:
+  - Benjamin K. Sovacoola
+  - Nathan Andrews
+  innovationCategory:
+  - Collective Intelligence
+  - Data Collaboratives
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Philanthropy and Aid
+  methodology:
+  - User Studies
+  publicationType:
+  - Conference Proceedings
+  abstract: "\"The Extractive Industries Transparency Initiative (EITI) has been sold
+    by its advocates as a badly needed way to enhance access to information in the
+    extractive industries sector and improve government accountability. It has also
+    been lauded as enabling energy companies to demonstrate their responsibility and
+    sustainability, enabling countries to attract more foreign investment, and enabling
+    communities to engage in dialogue with national planners over energy issues. In
+    this paper, we ask: does it work? Do countries adhering to EITI standards actually
+    see selected governance metrics improve? To answer this question, this article
+    first briefly summarizes the history of the EITI and details the hypothetical
+    benefits espoused by its supporters. It then proceeds to “test” these benefits
+    by qualitatively assessing the performance of EITI for the first two countries
+    to achieve candidacy, Azerbaijan and Liberia. The paper finds that while the EITI
+    affirms the salience of reliable information and data about the extractive industries,
+    it is difficult to attribute governance improvements casually to the EITI. Moreover,
+    the EITI reveals an inherent paradox about the virtues of transparency and also
+    underscores that much of the damage from mining and hydrocarbon development is
+    socially and economically unavoidable. \n\nDoes transparency matter? Evaluating
+    the governance impacts of the Extractive Industries Transparency Initiative (EITI)
+    in Azerbaijan and Liberia - ResearchGate. Available from: http://www.researchgate.net/publication/276365284_Does_transparency_matter_Evaluating_the_governance_impacts_of_the_Extractive_Industries_Transparency_Initiative_%28EITI%29_in_Azerbaijan_and_Liberia
+    [accessed Jul 21, 2015].\""
+  longUrl: http://eiti.org/files/Sovacool%20%26%20Andrews%20%5B2015%5D%20-%20Does%20transparency%20matter%20-%20%20Evaluating%20the%20governance%20impacts%20of%20the%20Extractive%20Industries%20Transparency%20Initiative%20%28EITI%29%20in%20Azerbaijan%20and%20Liberia.pdf
+- sys:
+    id: 3Yr36GTjEkSMgIyw4uiCmu
+  open: true
+  publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
+    Internal Decision-Making Processes on Policy Development and Citizen Engagement'
+  authors:
+  - Anika Gauja
+  publicationDate: &3 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+  innovationCategory:
+  - Behavioral Sciences and Nudges
+  - Citizen Engagement and Collective Intelligence
+  - Data Collaboratives
+  objectiveCategory:
+  - Privacy
+  sectorCategory:
+  - Education
+  - Energy
+  methodology:
+  - Comparative Analysis
+  - Ethnography
+  publicationType:
+  - Book
+  - Conference Proceedings
+  abstract: This article examines the changing nature of the connection between citizens,
+    party members and elites in the creation of party policy through the theoretical
+    prism of individualisation. Using qualitative case studies of recent policy-making
+    initiatives in the Australian Labor Party and the UK Labour Party, the article
+    develops a new model of policy transferal that is not built upon the mass-party
+    model of parliamentary politics, but rather upon organisational evolutions such
+    as community consultations, online participation and supporters' networks. These
+    evolutions, or reforms, typically emphasise the individuality of policy-making
+    and accountability, promote new technologies for facilitating decision-making,
+    and attempt to engage with a new style of politically active citizen. Each of
+    these developments carries implications for how political parties facilitate participation,
+    accountability and responsiveness in modern forms of representative democracy.
 - sys:
     id: 1n9KJcIgsU0y8aeOWeS8Cs
   open: true
@@ -128,7 +230,7 @@ paper:
     in Amsterdam Smart City'
   authors:
   - Carlo Francesco Capra
-  publicationDate: *1
+  publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
   downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
   abstract: Smart cities are associated almost exclusively with modern technology
     and infrastructure. However, smart cities have the possibility to enhance the
@@ -150,7 +252,7 @@ paper:
   - Lisa A. Cameron
   - Susan Olivia
   - Manisha Shah
-  publicationDate: !ruby/object:DateTime 2016-12-09 00:00:00.000000000 -05:00
+  publicationDate: &2 !ruby/object:DateTime 2016-12-09 00:00:00.000000000 -05:00
   downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376
   innovationCategory:
   - Data Analysis
@@ -181,3 +283,158 @@ paper:
     and reduced open defecation, resulting in substantial health benefits. In villages
     with low initial stocks of social capital, the approach was counterproductive
     – fewer toilets were built than in control communities and social capital suffered.
+list:
+- sys:
+    id: 7u9YBRWeDCioowsycIGceM
+  title: GovLab things
+  author:
+  - Andrew Young
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  description: This is a list of GovLab things that we make
+  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
+    STEALTH'
+  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
+  article1Author:
+  - Stefaan Verhulst
+  - Andrew Young
+  articlesList:
+  - sys:
+      id: 1n9KJcIgsU0y8aeOWeS8Cs
+    open: true
+    publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
+      in Amsterdam Smart City'
+    authors:
+    - Carlo Francesco Capra
+    publicationDate: *1
+    downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
+    abstract: Smart cities are associated almost exclusively with modern technology
+      and infrastructure. However, smart cities have the possibility to enhance the
+      involvement and contribution of citizens to urban development. This work explores
+      the role of governance as one of the factors influencing the participation of
+      citizens in smart cities projects. Governance characteristics play a major role
+      in explaining different typologies of citizen participation. Through a focus
+      on Amsterdam Smart City program as a specific case study, this research examines
+      the characteristics of governance that are present in the overall program and
+      within a selected sample of projects, and how they relate to different typologies
+      of citizen participation. The analysis and comprehension of governance characteristics
+      plays a crucial role both for a better understanding and management of citizen
+      participation, especially in complex settings where multiple actors are interacting.
+  - sys:
+      id: 4saUvstvuwIAceeowAAcSW
+    open: true
+    publicationName: 'Initial Conditions Matter: Social Capital and Participatory
+      Development'
+    authors:
+    - Lisa A. Cameron
+    - Susan Olivia
+    - Manisha Shah
+    publicationDate: *2
+    downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376
+    innovationCategory:
+    - Data Analysis
+    - Design Thinking
+    - Distributed Governance
+    objectiveCategory:
+    - Access
+    - Privacy
+    sectorCategory:
+    - Business
+    - Finance
+    - Energy
+    - Environment
+    - Geospatial Services
+    - Transportation
+    methodology:
+    - Case Studies
+    - Network Analysis
+    - Statistical Modeling
+    publicationType:
+    - Book
+    abstract: Billions of dollars have been spent on participatory development programs
+      in the developing world. These programs give community members an active decision-making
+      role. Given the emphasis on community involvement, one might expect that the
+      effectiveness of this approach would depend on communities' pre-existing social
+      capital stocks. Using data from a large randomised field experiment of Community-Led
+      Total Sanitation in Indonesia, we find that villages with high initial social
+      capital built toilets and reduced open defecation, resulting in substantial
+      health benefits. In villages with low initial stocks of social capital, the
+      approach was counterproductive – fewer toilets were built than in control communities
+      and social capital suffered.
+  - sys:
+      id: 3Yr36GTjEkSMgIyw4uiCmu
+    open: true
+    publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
+      Internal Decision-Making Processes on Policy Development and Citizen Engagement'
+    authors:
+    - Anika Gauja
+    publicationDate: *3
+    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+    innovationCategory:
+    - Behavioral Sciences and Nudges
+    - Citizen Engagement and Collective Intelligence
+    - Data Collaboratives
+    objectiveCategory:
+    - Privacy
+    sectorCategory:
+    - Education
+    - Energy
+    methodology:
+    - Comparative Analysis
+    - Ethnography
+    publicationType:
+    - Book
+    - Conference Proceedings
+    abstract: This article examines the changing nature of the connection between
+      citizens, party members and elites in the creation of party policy through the
+      theoretical prism of individualisation. Using qualitative case studies of recent
+      policy-making initiatives in the Australian Labor Party and the UK Labour Party,
+      the article develops a new model of policy transferal that is not built upon
+      the mass-party model of parliamentary politics, but rather upon organisational
+      evolutions such as community consultations, online participation and supporters'
+      networks. These evolutions, or reforms, typically emphasise the individuality
+      of policy-making and accountability, promote new technologies for facilitating
+      decision-making, and attempt to engage with a new style of politically active
+      citizen. Each of these developments carries implications for how political parties
+      facilitate participation, accountability and responsiveness in modern forms
+      of representative democracy.
+  - sys:
+      id: 28bG1UYk3W48OaqsQ6WKQW
+    open: false
+    publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
+      stealth'
+    authors:
+    - Frank Mols
+    - S. Alexander Haslam
+    - Jolanda Jetten
+    - Niklas K. Steffens
+    publicationDate: *4
+    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+    innovationCategory:
+    - Design Thinking
+    - Distributed Governance
+    objectiveCategory:
+    - Participation
+    - Transparency
+    sectorCategory:
+    - Finance
+    - Development
+    - Weather
+    methodology:
+    - Comparative Analysis
+    publicationType:
+    - Dissertation and/or Thesis
+    abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
+      ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
+      represents a distinct (fifth) mode of governance. The effectiveness of nudging
+      as a means of bringing about lasting behaviour change is questioned and it is
+      argued that evidence for its success ignores the facts that many successful
+      nudges are not in fact nudges; that there are instances when nudges backfire;
+      and that there may be ethical concerns associated with nudges. Instead, and
+      in contrast to nudging, behaviour change is more likely to be enduring where
+      it involves social identity change and norm internalisation. The article concludes
+      by urging public policy scholars to engage with the social identity literature
+      on ‘social influence’, and the idea that those promoting lasting behaviour change
+      need to engage with people not as individual cognitive misers, but as members
+      of groups whose norms they internalise and enact.'

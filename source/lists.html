@@ -9,7 +9,6 @@ layout: default
   </div>
   <div class="row expanded large-collapse"> <!-- NEED TO MAKE THIS full height -->
 
-
     <div class="large-12 column">
       <section class="blog-content blog-list">
         {% for i in site.data.contentful.spaces.content.list %}
@@ -20,7 +19,7 @@ layout: default
               <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <span class="post__author">{{a}}</span> {% endfor %}</p>
               <p>{{i.description | truncate: 500}}</p>
               {% for b in i.articlesList %}
-               <div class="result-item">
+               <div class="result-item" style="display: inline-block; margin-left: -4px;">
                 <h3 class="result-item__name"><a href="./../papers/{{b.publicationName | slugify}}.html" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
                 <p class="result-item__authors">
                   {% for author in b.authors %}
