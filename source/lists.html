@@ -8,19 +8,9 @@ layout: default
     <h3>Curated Lists of Papers on Specific Topics</h3>
   </div>
   <div class="row expanded large-collapse"> <!-- NEED TO MAKE THIS full height -->
-    <div class="large-3 column">
-      <aside class="sidebar">
-        <nav class="sidebar-menu">
 
-          {% for i in site.data.contentful.spaces.content.list %}
-          <a href="#">{{i.title}}</a>
-          {% endfor %}
-        </nav>
 
-      </aside>
-    </div>
-
-    <div class="large-9 column">
+    <div class="large-12 column">
       <section class="blog-content blog-list">
         {% for i in site.data.contentful.spaces.content.list %}
         <div class="row expanded align-center">
@@ -31,7 +21,7 @@ layout: default
               <p>{{i.description | truncate: 500}}</p>
               {% for b in i.articlesList %}
                <div class="result-item">
-                <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{b.publicationName}}</a></h3>
+                <h3 class="result-item__name"><a href="./../papers/{{b.publicationName | slugify}}.html" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
                 <p class="result-item__authors">
                   {% for author in b.authors %}
                   <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->

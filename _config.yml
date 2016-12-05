@@ -61,6 +61,12 @@ page_gen:
     dir: blog
     extension: html
 
+  - data: contentful.spaces.content.paper
+    template: paper
+    name: publicationName
+    dir: papers
+    extension: html
+
 
 contentful:
   spaces:

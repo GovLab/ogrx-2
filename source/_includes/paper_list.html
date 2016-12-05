@@ -7,7 +7,7 @@
       {% for paper in site.data.contentful.spaces.content.paper %}
 
         <div class="result-item">
-          <h3 class="result-item__name"><a href="./../papers/{{paper.title | slugify}}.html" title="{{paper.title}}">{{paper.publicationName}}</a></h3>
+          <h3 class="result-item__name"><a href="./../papers/{{paper.publicationName | slugify}}.html" title="{{paper.title}}">{{paper.publicationName}}</a></h3>
           <p class="result-item__authors">
             {% for author in paper.authors %}
             <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
