@@ -27,7 +27,7 @@ layout: default
           <div class="large-10 column">
             <div class="blog-list__item post">
               <h2><a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a></h2>
-              <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <a href="{{a | datapage_url: 'authors'}}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
+              <p class="post__meta"><a href="{{i.title | datapage_url: 'blog'}}"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{{a | datapage_url: 'authors'}}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
               <p>{{i.post | truncate: 500}}</p>
               <p class="post__meta">
                 {% for c in i.innovationcategory %}

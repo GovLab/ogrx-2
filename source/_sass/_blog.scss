@@ -61,8 +61,13 @@ a {
     margin-top: 0;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   &__author,
   &__date {
+
     color: rgba($main-color, .4);
     &:hover { color: $main-color; }
   }
