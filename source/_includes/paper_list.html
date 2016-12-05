@@ -4,51 +4,56 @@
     <div class="column large-12">
 
 
-      {% for paper in site.data.contentful.spaces.content.paper %}
+      {% for b in site.data.contentful.spaces.content.paper %}
 
-        <div class="result-item">
-          <h3 class="result-item__name"><a href="./../papers/{{paper.publicationName | slugify}}.html" title="{{paper.title}}">{{paper.publicationName}}</a></h3>
-          <p class="result-item__authors">
-            {% for author in paper.authors %}
-            <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
+      <div class="result-item" style="display: inline-block; margin-left: -4px;">
+        <h3 class="result-item__name"><a href="./../papers/{{b.publicationName | slugify}}.html" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
+        <p class="result-item__authors">
+          {% for author in b.authors %}
+          <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
+          {% endfor %}
+        </p>
+        <div class="result-item__taxonomy result-item__taxonomy--category">
+          <span class="result-item__taxonomy__key">Category</span>
+          <span class="result-item__taxonomy__value">
+            {% for category in b.innovationCategory %}
+            <a href="../categories/{{category}}.html" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
             {% endfor %}
-          </p>
-          <div class="result-item__taxonomy result-item__taxonomy--category">
-            <span class="result-item__taxonomy__key">Category</span>
-            <span class="result-item__taxonomy__value">
-              {% for category in paper.taxonomy.category %}
-              <a href="../categories/{{category}}.html" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
-              {% endfor %}
-            </span>
+          </span>
 
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--methodology">
-            <span class="result-item__taxonomy__key">Methodology</span>
-            <span class="result-item__taxonomy__value">
-            {% for m in paper.taxonomy.methodology %}
+        </div>
+        <div class="result-item__taxonomy result-item__taxonomy--methodology">
+          <span class="result-item__taxonomy__key">Methodology</span>
+          <span class="result-item__taxonomy__value">
+            {% for m in b.methodology %}
             <a class="result-item__tag" href="../methodologies/{{m | slugify }}.html">{{ m }}</a>
             {% endfor %}
-            </span>
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--objective">
-            <span class="result-item__taxonomy__key">Objective</span>
-            <span class="result-item__taxonomy__value">
-              {% for objective in paper.taxonomy.objective %}
-              <a class="result-item__tag" href="../objectives/{{ objective | slugify }}.html">{{ objective }}</a>
-              {% endfor %}
-            </span>
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value"><a class="result-item__tag" href="../type/{{ paper.type }}.html">{{ paper.type }}</a></span>
-          </div>
-           {% if paper.organization %}
-           <!-- IF organization is Premium ORG -->
-           <div class="result-item__extras {% for org in paper.organization %}result-item__extras--{{ org | slugify }}{%endfor%}">
-            <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
-          </div>
-          {% endif %}
+          </span>
         </div>
+        <div class="result-item__taxonomy result-item__taxonomy--objective">
+          <span class="result-item__taxonomy__key">Objective</span>
+          <span class="result-item__taxonomy__value">
+            {% for objective in b.objectiveCategory %}
+            <a class="result-item__tag" href="../objectives/{{ objective | slugify }}.html">{{ objective }}</a>
+            {% endfor %}
+          </span>
+        </div>
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            {% for type in b.publicationType %}
+            <a class="result-item__tag" href="../type/{{ type }}.html">{{ type }}</a>
+            {% endfor %}
+          </span>
+        </div>
+        {% if paper.organization %}
+        <!-- IF organization is Premium ORG -->
+        <div class="result-item__extras {% for org in paper.organization %}result-item__extras--{{ org | slugify }}{%endfor%}">
+          <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
+        </div>
+        {% endif %}
+      </div>
+
       {% endfor %}
     </div>
   </div>
