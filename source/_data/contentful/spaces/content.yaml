@@ -1,145 +1,112 @@
 ---
 paper:
 - sys:
-    id: 1f6ie3dV44egyoGEE0oweK
-  publicationName: 'Confronting the Hype: The Use of Crisis Mapping for Community
-    Development'
+    id: paper_103
+  open: false
+  publicationName: 'Embracing Crowdsourcing: A Strategy for State and Local Governments
+    Approaching “Whole Community” Emergency Planning'
   region:
-  - Canada
+  - United States
   authors:
-  - Ana Brandusescu
-  - Renée E. Sieber
-  - Sylvie Jochems
-  publicationDate: &5 !ruby/object:DateTime 2016-12-15 00:00:00.000000000 -05:00
-  downloadLink: http://con.sagepub.com/content/early/2015/05/15/1354856515584320.abstract
+  - Jesse A. Sievers
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
   innovationCategory:
-  - Big Data
-  - Design Thinking
-  objectiveCategory:
-  - Transparency
-  sectorCategory:
-  - Business
-  methodology:
-  - Network Analysis
-  publicationType:
-  - Book Chapter
-  abstract: Crisis mapping has emerged as a method of connecting and empowering citizens
-    during emergencies. This article explores the hyperbole behind crisis mapping
-    as it extends into more long-term or ‘chronic’ community development practices.
-    We critically examined developer issues and participant (i.e. community organization)
-    usage within the context of local communities. We repurposed the predominant crisis
-    mapping platform Crowdmap for three cases of community development in Canadian
-    anglophone and francophone. Our case studies show mixed results about the actual
-    cost of deployment, the results of disintermediation, and local context with the
-    mapping application. Lastly, we discuss the relationship of hype, temporality,
-    and community development as expressed in our cases.
-- sys:
-    id: 4saUvstvuwIAceeowAAcSW
-  open: true
-  publicationName: 'Initial Conditions Matter: Social Capital and Participatory Development'
-  authors:
-  - Lisa A. Cameron
-  - Susan Olivia
-  - Manisha Shah
-  publicationDate: &2 !ruby/object:DateTime 2016-12-09 00:00:00.000000000 -05:00
-  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376
-  innovationCategory:
-  - Data Analysis
-  - Design Thinking
-  - Distributed Governance
-  objectiveCategory:
-  - Access
-  - Privacy
-  sectorCategory:
-  - Business
-  - Finance
-  - Energy
-  - Environment
-  - Geospatial Services
-  - Transportation
-  methodology:
-  - Case Studies
-  - Network Analysis
-  - Statistical Modeling
-  publicationType:
-  - Book
-  abstract: Billions of dollars have been spent on participatory development programs
-    in the developing world. These programs give community members an active decision-making
-    role. Given the emphasis on community involvement, one might expect that the effectiveness
-    of this approach would depend on communities' pre-existing social capital stocks.
-    Using data from a large randomised field experiment of Community-Led Total Sanitation
-    in Indonesia, we find that villages with high initial social capital built toilets
-    and reduced open defecation, resulting in substantial health benefits. In villages
-    with low initial stocks of social capital, the approach was counterproductive
-    – fewer toilets were built than in control communities and social capital suffered.
-- sys:
-    id: 4swRD3bz72SK8YEIAUSKSW
-  publicationName: Does transparency matter? Evaluating the governance impacts of
-    the Extractive Industries Transparency Initiative (EITI) in Azerbaijan and Liberia
-  region:
-  - Azerbaijan
-  - Liberia
-  authors:
-  - Benjamin K. Sovacoola
-  - Nathan Andrews
-  innovationCategory:
-  - Collective Intelligence
-  - Data Collaboratives
+  - Citizen Engagement and Crowdsourcing
   objectiveCategory:
   - Effectiveness
+  - Participation
   sectorCategory:
-  - Philanthropy and Aid
+  - Public Safety
   methodology:
-  - User Studies
+  - Conceptual Framework
   publicationType:
-  - Conference Proceedings
-  abstract: "\"The Extractive Industries Transparency Initiative (EITI) has been sold
-    by its advocates as a badly needed way to enhance access to information in the
-    extractive industries sector and improve government accountability. It has also
-    been lauded as enabling energy companies to demonstrate their responsibility and
-    sustainability, enabling countries to attract more foreign investment, and enabling
-    communities to engage in dialogue with national planners over energy issues. In
-    this paper, we ask: does it work? Do countries adhering to EITI standards actually
-    see selected governance metrics improve? To answer this question, this article
-    first briefly summarizes the history of the EITI and details the hypothetical
-    benefits espoused by its supporters. It then proceeds to “test” these benefits
-    by qualitatively assessing the performance of EITI for the first two countries
-    to achieve candidacy, Azerbaijan and Liberia. The paper finds that while the EITI
-    affirms the salience of reliable information and data about the extractive industries,
-    it is difficult to attribute governance improvements casually to the EITI. Moreover,
-    the EITI reveals an inherent paradox about the virtues of transparency and also
-    underscores that much of the damage from mining and hydrocarbon development is
-    socially and economically unavoidable. \n\nDoes transparency matter? Evaluating
-    the governance impacts of the Extractive Industries Transparency Initiative (EITI)
-    in Azerbaijan and Liberia - ResearchGate. Available from: http://www.researchgate.net/publication/276365284_Does_transparency_matter_Evaluating_the_governance_impacts_of_the_Extractive_Industries_Transparency_Initiative_%28EITI%29_in_Azerbaijan_and_Liberia
-    [accessed Jul 21, 2015].\""
-  longUrl: http://eiti.org/files/Sovacool%20%26%20Andrews%20%5B2015%5D%20-%20Does%20transparency%20matter%20-%20%20Evaluating%20the%20governance%20impacts%20of%20the%20Extractive%20Industries%20Transparency%20Initiative%20%28EITI%29%20in%20Azerbaijan%20and%20Liberia.pdf
+  - Journal Article
+  gitHub: ''
+  abstract: Over the last century, state and local governments have been challenged
+    to keep proactive, emergency planning efforts ahead of the after-the-disaster,
+    response efforts. After moving from decentralized to centralized planning efforts,
+    the most recent policy has returned to the philosophy that a decentralized planning
+    approach is the most effective way to plan for a disaster. In fact, under the
+    Obama administration, a policy of using the “whole community” approach to emergency
+    planning has been adopted. This approach, however, creates an obvious problem
+    for state and local government practitioners already under pressure for funding,
+    time, and the continuous need for higher and broader expertise—the problem of
+    how to actually incorporate the whole community into emergency planning efforts.
+    This article suggests one such approach, crowdsourcing, as an option for local
+    governments. The crowdsourcer-problem-crowd-platform-solution (CPCPS) model is
+    suggested as an initial framework for practitioners seeking a practical application
+    and basic comprehension. The model, discussion, and additional examples in this
+    essay provide a skeletal framework for state and local governments wishing to
+    reach the whole community while under the constraints of time, budget, and technical
+    expertise.
+  downloadLink: http://slg.sagepub.com/content/47/1/57.short
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
 - sys:
-    id: 28bG1UYk3W48OaqsQ6WKQW
+    id: paper_110
+  open: true
+  publicationName: 'Big Data and Big Cities: The Promises and Limitations of Improved
+    Measures of Urban Life'
+  region:
+  - United States
+  authors:
+  - Edward L. Glaeser
+  - Scott Duke Kominers
+  - Michael Luca
+  - Nikhil Naik
+  publicationDate: !ruby/object:DateTime 2015-11-23 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  - Big Data
+  - Smart Cities
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Case Studies
+  publicationType:
+  - Working Paper
+  gitHub: ''
+  abstract: New, “big” data sources allow measurement of city characteristics and
+    outcome variables higher frequencies and finer geographic scales than ever before.
+    However, big data will not solve large urban social science questions on its own.
+    Big data has the most value for the study of cities when it allows measurement
+    of the previously opaque, or when it can be coupled with exogenous shocks to people
+    or place. We describe a number of new urban data sources and illustrate how they
+    can be used to improve the study and function of cities. We first show how Google
+    Street View images can be used to predict income in New York City, suggesting
+    that similar image data can be used to map wealth and poverty in previously unmeasured
+    areas of the developing world. We then discuss how survey techniques can be improved
+    to better measure willingness to pay for urban amenities. Finally, we explain
+    how Internet data is being used to improve the quality of city services.
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2694723
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_2
   open: false
   publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
     stealth'
+  region:
+  - Australia
   authors:
   - Frank Mols
   - S. Alexander Haslam
   - Jolanda Jetten
   - Niklas K. Steffens
-  publicationDate: &4 !ruby/object:DateTime 2016-12-21 00:00:00.000000000 -05:00
-  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
   innovationCategory:
-  - Design Thinking
-  - Distributed Governance
+  - Behavioral Sciences and Nudges
   objectiveCategory:
-  - Participation
-  - Transparency
+  - Effectiveness
   sectorCategory:
-  - Finance
-  - Development
-  - Weather
+  - Politics
   methodology:
-  - Comparative Analysis
+  - Conceptual Framework
   publicationType:
-  - Dissertation and/or Thesis
+  - Journal Article
+  gitHub: ''
   abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
     ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
     represents a distinct (fifth) mode of governance. The effectiveness of nudging
@@ -153,401 +120,1507 @@ paper:
     and the idea that those promoting lasting behaviour change need to engage with
     people not as individual cognitive misers, but as members of groups whose norms
     they internalise and enact.'
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
 - sys:
-    id: 1n9KJcIgsU0y8aeOWeS8Cs
+    id: paper_132
   open: true
-  publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
-    in Amsterdam Smart City'
-  authors:
-  - Carlo Francesco Capra
-  publicationDate: &1 !ruby/object:DateTime 2016-11-17 00:00:00.000000000 -05:00
-  downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
-  abstract: Smart cities are associated almost exclusively with modern technology
-    and infrastructure. However, smart cities have the possibility to enhance the
-    involvement and contribution of citizens to urban development. This work explores
-    the role of governance as one of the factors influencing the participation of
-    citizens in smart cities projects. Governance characteristics play a major role
-    in explaining different typologies of citizen participation. Through a focus on
-    Amsterdam Smart City program as a specific case study, this research examines
-    the characteristics of governance that are present in the overall program and
-    within a selected sample of projects, and how they relate to different typologies
-    of citizen participation. The analysis and comprehension of governance characteristics
-    plays a crucial role both for a better understanding and management of citizen
-    participation, especially in complex settings where multiple actors are interacting.
-- sys:
-    id: 3Yr36GTjEkSMgIyw4uiCmu
-  open: true
-  publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
-    Internal Decision-Making Processes on Policy Development and Citizen Engagement'
-  authors:
-  - Anika Gauja
-  publicationDate: &3 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
-  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-  innovationCategory:
-  - Behavioral Sciences and Nudges
-  - Citizen Engagement and Collective Intelligence
-  - Data Collaboratives
-  objectiveCategory:
-  - Privacy
-  sectorCategory:
-  - Education
-  - Energy
-  methodology:
-  - Comparative Analysis
-  - Ethnography
-  publicationType:
-  - Book
-  - Conference Proceedings
-  abstract: This article examines the changing nature of the connection between citizens,
-    party members and elites in the creation of party policy through the theoretical
-    prism of individualisation. Using qualitative case studies of recent policy-making
-    initiatives in the Australian Labor Party and the UK Labour Party, the article
-    develops a new model of policy transferal that is not built upon the mass-party
-    model of parliamentary politics, but rather upon organisational evolutions such
-    as community consultations, online participation and supporters' networks. These
-    evolutions, or reforms, typically emphasise the individuality of policy-making
-    and accountability, promote new technologies for facilitating decision-making,
-    and attempt to engage with a new style of politically active citizen. Each of
-    these developments carries implications for how political parties facilitate participation,
-    accountability and responsiveness in modern forms of representative democracy.
-- sys:
-    id: 5pqVZkcQc8OQAyUoqcg604
-  publicationName: 'Smart cities: moving beyond urban cybernetics to tackle wicked
-    problems'
+  publicationName: 'OpenFDA: an innovative platform providing access to a wealth of
+    FDA''s publicly available data'
   region:
-  - Brazil
+  - United States
   authors:
-  - Robert Goodspeed
-  publicationDate: &6 !ruby/object:DateTime 2016-12-24 00:00:00.000000000 -05:00
-  downloadLink: http://cjres.oxfordjournals.org/content/8/1/79
+  - Taha A. Kass-Hout
+  - Zhiheng Xu
+  - Matthew Mohebbi
+  - Hans Nelsen
+  - Adam Baker
+  - Jonathan Levine
+  - Elaine Johanson
+  - Roselie A. Bright
+  publicationDate: !ruby/object:DateTime 2015-12-07 12:00:00.000000000 -05:00
   innovationCategory:
-  - Co-Creation
-  - Distributed Governance
-  - Participatory Budgeting
+  - Open Data
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  sectorCategory:
+  - Health
+  methodology:
+  - Case Studies
+  publicationType:
+  - White Paper
+  gitHub: ''
+  abstract: "Objective: The objective of openFDA is to facilitate access and use of
+    big important Food and Drug Administration public datasets by developers, researchers,
+    and the public through harmonization of data across disparate FDA datasets provided
+    via application programming interfaces (APIs). \n\nMaterials and Methods: Using
+    cutting-edge technologies deployed on FDA’s new public cloud computing infrastructure,
+    openFDA provides open data for easier, faster (over 300 requests per second per
+    process), and better access to FDA datasets; open source code and documentation
+    shared on GitHub for open community contributions of examples, apps and ideas;
+    and infrastructure that can be adopted for other public health big data challenges.\n\nResults:
+    Since its launch on June 2, 2014, openFDA has developed four APIs for drug and
+    device adverse events, recall information for all FDA-regulated products, and
+    drug labeling. There have been more than 20 million API calls (more than half
+    from outside the United States), 6000 registered users, 20,000 connected Internet
+    Protocol addresses, and dozens of new software (mobile or web) apps developed.
+    A case study dem- onstrates a use of openFDA data to understand an apparent association
+    of a drug with an adverse event.\n\nConclusion: With easier and faster access
+    to these datasets, consumers worldwide can learn more about FDA-regulated products."
+  downloadLink: http://jamia.oxfordjournals.org/content/jaminfo/early/2015/12/06/jamia.ocv153.full.pdf
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_100
+  open: false
+  publicationName: 'A Process Model for Crowdsourcing Design: A Case Study in Citizen
+    Science'
+  region:
+  - United States
+  authors:
+  - Kazjon Grace
+  - Mary Lou Maher
+  - Jennifer Preece
+  - Tom Yeh
+  - Abigale Stangle
+  - Carol Boston
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Participation
+  methodology:
+  - Case Studies
+  - Conceptual Framework
+  publicationType:
+  - Book Chapter
+  gitHub: ''
+  abstract: 'Crowdsourcing design has been applied in various areas of graphic design,
+    software design, and product design. This paper draws on those experiences and
+    research in diversity, creativity and motivation to present a process model for
+    crowdsourcing experience design. Crowdsourcing experience design for volunteer
+    online communities serves two purposes: to increase the motivation of participants
+    by making them stakeholders in the success of the project, and to increase the
+    creativity of the design by increasing the diversity of expertise beyond experts
+    in experience design. Our process model for crowdsourcing design extends the meta-design
+    architecture, where for online communities is designed to be iteratively re-designed
+    by its users. We describe how our model has been deployed and adapted to a citizen
+    science project where nature preserve visitors can participate in the design of
+    a system called NatureNet. The major contribution of this paper is a model for
+    crowdsourcing experience design and a case study of how we have deployed it for
+    the design and development of NatureNet.'
+  downloadLink: http://link.springer.com/chapter/10.1007%2F978-3-319-14956-1_14
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_129
+  open: true
+  publicationName: 'Innovation Experiments: Researching Technical Advance, Knowledge
+    Production and the Design of Supporting Institutions'
+  organization:
+  - MacArthur Foundation Research Network on Opening Governance
+  region:
+  - United States
+  authors:
+  - Kevin J. Boudreau
+  - Karim Lakhani
+  publicationDate: !ruby/object:DateTime 2015-07-01 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Prizes and Challenges
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  methodology:
+  - Case Studies
+  - Design Science
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: This paper discusses several challenges in designing field experiments
+    to better understand how organizational and institutional design shapes innovation
+    outcomes and the production of knowledge. We proceed to describe the field experimental
+    research program carried out by our Crowd Innovation Laboratory at Harvard University
+    to clarify how we have attempted to address these research design challenges.
+    This program has simultaneously solved important practical innovation problems
+    for partner organizations, like NASA and Harvard Medical School, while contributing
+    research advances, particularly in relation to innovation contests and tournaments.
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2625593
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_117
+  open: true
+  publicationName: Crowdsourcing Parking Lot Occupancy using a Mobile Phone Application
+  region:
+  - United States
+  authors:
+  - Erfan Davami
+  - Gita Sukthankar
+  publicationDate: !ruby/object:DateTime 2014-06-16 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Civic Technology
   objectiveCategory:
   - Effectiveness
   sectorCategory:
-  - Finance
+  - Transportation
+  methodology:
+  - Case Studies
+  - Quantitative Analysis
+  publicationType:
+  - Conference Proceedings
+  gitHub: ''
+  abstract: "• Participatory sensing is a specialized form of crowdsourcing for mobile
+    devices in which the users act as sensors to report on local environmental conditions.
+    • This poster describes the process of prototyping a mobile phone crowdsourcing
+    app for monitoring parking availability on a large university campus. • We present
+    a case study of how an agent-based urban model can be used to perform a sensitivity
+    analysis of the comparative susceptibility of different data fusion paradigms
+    to potentially troublesome user behaviors: 1. Poor user enrollment, 2. Infrequent
+    usage, 3. A preponderance of untrustworthy users."
+  downloadLink: http://www.ase360.org/handle/123456789/107
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_111
+  open: true
+  publicationName: Big Data from the bottom up
+  region:
+  - United States
+  authors:
+  - Nick Couldry
+  - Alison Powell
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Comparative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: 'This short article argues that an adequate response to the implications
+    for governance raised by ‘Big Data’ requires much more attention to agency and
+    reflexivity than theories of ‘algorithmic power’ have so far allowed. It develops
+    this through two contrasting examples: the sociological study of social actors
+    used of analytics to meet their own social ends (for example, by community organisations)
+    and the study of actors’ attempts to build an economy of information more open
+    to civic intervention than the existing one (for example, in the environmental
+    sphere). The article concludes with a consideration of the broader norms that
+    might contextualise these empirical studies, and proposes that they can be understood
+    in terms of the notion of voice, although the practical implementation of voice
+    as a norm means that voice must sometimes be considered via the notion of transparency.'
+  downloadLink: http://bds.sagepub.com/content/1/2/2053951714539277.full
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_139
+  open: true
+  publicationName: 'Forecasting Domestic Violence: A Machine Learning Approach to
+    Help Inform Arraignment Decisions'
+  region:
+  - United States
+  authors:
+  - Richard A. Berk
+  - Susan B. Sorenson
+  - Geoffrey Barnes
+  publicationDate: !ruby/object:DateTime 2016-12-05 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Criminal Justice
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: 'Arguably the most important decision at an arraignment is whether to
+    release an offender until the date of his or her next scheduled court appearance.
+    Under the Bail Reform Act of 1984, threats to public safety can be a key factor
+    in that decision. Implicitly, a forecast of “future dangerousness” is required.
+    In this article, we consider in particular whether usefully accurate forecasts
+    of domestic violence can be obtained. We apply machine learning to data on over
+    28,000 arraignment cases from a major metropolitan area in which an offender faces
+    domestic violence charges. One of three possible post-arraignment outcomes is
+    forecasted within two years: (1) a domestic violence arrest associated with a
+    physical injury, (2) a domestic violence arrest not associated with a physical
+    injury, and (3) no arrests for domestic violence. We incorporate asymmetric costs
+    for different kinds of forecasting errors so that very strong statistical evidence
+    is required before an offender is forecasted to be a good risk. When an out-of-sample
+    forecast of no post-arraignment domestic violence arrests within two years is
+    made, it is correct about 90 percent of the time. Under current practice within
+    the jurisdiction studied, approximately 20 percent of those released after an
+    arraignment for domestic violence are arrested within two years for a new domestic
+    violence offense. If magistrates used the methods we have developed and released
+    only offenders forecasted not to be arrested for domestic violence within two
+    years after an arraignment, as few as 10 percent might be arrested. The failure
+    rate could be cut nearly in half. Over a typical 24-month period in the jurisdiction
+    studied, well over 2,000 post-arraignment arrests for domestic violence perhaps
+    could be averted.'
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/jels.12098/epdf
+  relatedContentTitle: Enhanced Article (HTML)
+  relatedContentUrl: http://onlinelibrary.wiley.com/enhanced/doi/10.1111/jels.12098
+  relatedDataUrl: ''
+- sys:
+    id: paper_131
+  open: true
+  publicationName: 'Open Data: A 21st Century Asset for Small and Medium Sized Enterprises'
+  organization:
+  - The GovLab
+  - MacArthur Foundation Research Network on Opening Governance
+  region:
+  - United States
+  authors:
+  - Stefaan Verhulst
+  - Robyn Caplan
+  publicationDate: !ruby/object:DateTime 2015-04-01 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Business
   methodology:
   - Case Studies
   publicationType:
   - Research Report
-  abstract: This article makes three related arguments. First, that although many
-    definitions of the smart city have been proposed, corporate promoters say a smart
-    city uses information technology to pursue efficient systems through real-time
-    monitoring and control. Second, this definition is not new and equivalent to the
-    idea of urban cybernetics debated in the 1970s. Third, drawing on a discussion
-    of Rio de Janeiro’s Operations Center, I argue that viewing urban problems as
-    wicked problems allows for more fundamental solutions than urban cybernetics,
-    but requires local innovation and stakeholder participation. Therefore the last
-    section describes institutions for municipal innovation and IT-enabled collaborative
-    planning.
-list:
+  gitHub: ''
+  abstract: |-
+    The economic and social potential of open data is widely acknowledged. In particular, the business opportunities have received much attention. But for all the excitement, we still know very little about how and under what conditions open data really works.
+
+    To broaden our understanding of the use and impact of open data, the GovLab has a variety of initiatives and studies underway. Today, we share publicly our findings on how Small and Medium Sized Enterprises (SMEs) are leveraging open data for a variety of purposes. Our paper “Open Data: A 21st Century Asset for Small and Medium Sized Enterprises” seeks to build a portrait of the lifecycle of open data—how it is collected, stored and used. It outlines some of the most important parameters of an open data business model for SMEs.
+
+    The universe of SMEs we analyzed comprised those identified within the GovLab’s Open Data 500 project which contains data on how 500 US businesses are using open data in their day-to-day activities. It represents arguably the first systematic effort to really understand how open data can grow revenues, drive innovation, increase efficiency and create new jobs.
+
+    The paper analyzes ten aspects of open data and establishes ten principles for its effective use by SMEs. Taken together, these offer a roadmap for any SME considering greater use or adoption of open data in its business.
+
+    Among the key findings included in the paper:
+
+    SMEs, which often lack access to data or sophisticated analytical tools to process large datasets, are likely to be one of the chief beneficiaries of open data.
+    Government data is the main category of open data being used by SMEs. A number of SMEs are also using open scientific and shared corporate data.
+    Open data is used primarily to serve the Business-to-Business (B2B) markets, followed by the Business-to-Consumer (B2C) markets. A number of the companies studied serve two or three market segments simultaneously.
+    Open data is usually a free resource, but SMEs are monetizing their open-data-driven services to build viable businesses. The most common revenue models include subscription-based services, advertising, fees for products and services, freemium models, licensing fees, lead generation and philanthropic grants.
+    The most significant challenges SMEs face in using open data include those concerning data quality and consistency, insufficient financial and human resources, and issues surrounding privacy.
+    This is just a sampling of findings and observations. The paper includes a number of additional observations concerning business and revenue models, product development, customer acquisition, and other subjects of relevance to any company considering an open data strategy.
+
+    The paper was funded by the Markle Foundation and written to inform Markle’s Rework America Initiative.
+  downloadLink: http://thegovlab.org/open-data-a-21st-century-asset-for-small-and-medium-sized-enterprises/
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
 - sys:
-    id: 7u9YBRWeDCioowsycIGceM
-  title: GovLab things
-  author:
-  - Andrew Young
-  - Stefaan Verhulst
-  affiliation:
-  - The GovLab
-  description: This is a list of GovLab things that we make
-  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
-    STEALTH'
-  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
-  article1Author:
-  - Stefaan Verhulst
-  - Andrew Young
-  articlesList:
-  - sys:
-      id: 1n9KJcIgsU0y8aeOWeS8Cs
-    open: true
-    publicationName: 'The Smart City and its Citizens: Governance and Citizen Participation
-      in Amsterdam Smart City'
-    authors:
-    - Carlo Francesco Capra
-    publicationDate: *1
-    downloadLink: http://www.igi-global.com/article/the-smart-city-and-its-citizens/144771
-    abstract: Smart cities are associated almost exclusively with modern technology
-      and infrastructure. However, smart cities have the possibility to enhance the
-      involvement and contribution of citizens to urban development. This work explores
-      the role of governance as one of the factors influencing the participation of
-      citizens in smart cities projects. Governance characteristics play a major role
-      in explaining different typologies of citizen participation. Through a focus
-      on Amsterdam Smart City program as a specific case study, this research examines
-      the characteristics of governance that are present in the overall program and
-      within a selected sample of projects, and how they relate to different typologies
-      of citizen participation. The analysis and comprehension of governance characteristics
-      plays a crucial role both for a better understanding and management of citizen
-      participation, especially in complex settings where multiple actors are interacting.
-  - sys:
-      id: 4saUvstvuwIAceeowAAcSW
-    open: true
-    publicationName: 'Initial Conditions Matter: Social Capital and Participatory
-      Development'
-    authors:
-    - Lisa A. Cameron
-    - Susan Olivia
-    - Manisha Shah
-    publicationDate: *2
-    downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708376
-    innovationCategory:
-    - Data Analysis
-    - Design Thinking
-    - Distributed Governance
-    objectiveCategory:
-    - Access
-    - Privacy
-    sectorCategory:
-    - Business
-    - Finance
-    - Energy
-    - Environment
-    - Geospatial Services
-    - Transportation
-    methodology:
-    - Case Studies
-    - Network Analysis
-    - Statistical Modeling
-    publicationType:
-    - Book
-    abstract: Billions of dollars have been spent on participatory development programs
-      in the developing world. These programs give community members an active decision-making
-      role. Given the emphasis on community involvement, one might expect that the
-      effectiveness of this approach would depend on communities' pre-existing social
-      capital stocks. Using data from a large randomised field experiment of Community-Led
-      Total Sanitation in Indonesia, we find that villages with high initial social
-      capital built toilets and reduced open defecation, resulting in substantial
-      health benefits. In villages with low initial stocks of social capital, the
-      approach was counterproductive – fewer toilets were built than in control communities
-      and social capital suffered.
-  - sys:
-      id: 3Yr36GTjEkSMgIyw4uiCmu
-    open: true
-    publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
-      Internal Decision-Making Processes on Policy Development and Citizen Engagement'
-    authors:
-    - Anika Gauja
-    publicationDate: *3
-    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-    innovationCategory:
-    - Behavioral Sciences and Nudges
-    - Citizen Engagement and Collective Intelligence
-    - Data Collaboratives
-    objectiveCategory:
-    - Privacy
-    sectorCategory:
-    - Education
-    - Energy
-    methodology:
-    - Comparative Analysis
-    - Ethnography
-    publicationType:
-    - Book
-    - Conference Proceedings
-    abstract: This article examines the changing nature of the connection between
-      citizens, party members and elites in the creation of party policy through the
-      theoretical prism of individualisation. Using qualitative case studies of recent
-      policy-making initiatives in the Australian Labor Party and the UK Labour Party,
-      the article develops a new model of policy transferal that is not built upon
-      the mass-party model of parliamentary politics, but rather upon organisational
-      evolutions such as community consultations, online participation and supporters'
-      networks. These evolutions, or reforms, typically emphasise the individuality
-      of policy-making and accountability, promote new technologies for facilitating
-      decision-making, and attempt to engage with a new style of politically active
-      citizen. Each of these developments carries implications for how political parties
-      facilitate participation, accountability and responsiveness in modern forms
-      of representative democracy.
-  - sys:
-      id: 28bG1UYk3W48OaqsQ6WKQW
-    open: false
-    publicationName: 'Why a Nudge is Not Enough: A social identity critique of governanceby
-      stealth'
-    authors:
-    - Frank Mols
-    - S. Alexander Haslam
-    - Jolanda Jetten
-    - Niklas K. Steffens
-    publicationDate: *4
-    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1475-6765.12073/abstract
-    innovationCategory:
-    - Design Thinking
-    - Distributed Governance
-    objectiveCategory:
-    - Participation
-    - Transparency
-    sectorCategory:
-    - Finance
-    - Development
-    - Weather
-    methodology:
-    - Comparative Analysis
-    publicationType:
-    - Dissertation and/or Thesis
-    abstract: 'Policy makers can use four different modes of governance: ‘hierarchy’,
-      ‘markets’, ‘networks’ and ‘persuasion’. In this article, it is argued that ‘nudging’
-      represents a distinct (fifth) mode of governance. The effectiveness of nudging
-      as a means of bringing about lasting behaviour change is questioned and it is
-      argued that evidence for its success ignores the facts that many successful
-      nudges are not in fact nudges; that there are instances when nudges backfire;
-      and that there may be ethical concerns associated with nudges. Instead, and
-      in contrast to nudging, behaviour change is more likely to be enduring where
-      it involves social identity change and norm internalisation. The article concludes
-      by urging public policy scholars to engage with the social identity literature
-      on ‘social influence’, and the idea that those promoting lasting behaviour change
-      need to engage with people not as individual cognitive misers, but as members
-      of groups whose norms they internalise and enact.'
+    id: paper_106
+  open: false
+  publicationName: 'Benchmarking open government: An open data perspective'
+  region:
+  - United States
+  authors:
+  - N. Veljković
+  - S. Bogdanović-Dinić
+  - L. Stoimenov
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: This paper presents a benchmark proposal for the Open Government and its
+    application from the open data perspective using data available on the U.S. government's
+    open data portal (data.gov). The benchmark is developed over the adopted Open
+    Government conceptual model, which describes Open Government through data openness,
+    transparency, participation and collaboration. Resulting in two measures, that
+    is, one known as the e-government openness index (eGovOI) and the other Maturity,
+    the benchmark indicates the progress of government over time, the efficiency of
+    recognizing and implementing new concepts and the willingness of the government
+    to recognize and embrace innovative ideas.
+  downloadLink: http://www.sciencedirect.com/science/article/pii/S0740624X14000434
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
 - sys:
-    id: 2xlAQzWc6oUik6IIoikG4Y
-  title: Cool Papers
-  author:
-  - Andrew Young
-  affiliation:
-  - The GovLab
-  description: These papers are exceptionally cool
-  articlesList:
-  - sys:
-      id: 1f6ie3dV44egyoGEE0oweK
-    publicationName: 'Confronting the Hype: The Use of Crisis Mapping for Community
-      Development'
-    region:
-    - Canada
-    authors:
-    - Ana Brandusescu
-    - Renée E. Sieber
-    - Sylvie Jochems
-    publicationDate: *5
-    downloadLink: http://con.sagepub.com/content/early/2015/05/15/1354856515584320.abstract
-    innovationCategory:
-    - Big Data
-    - Design Thinking
-    objectiveCategory:
-    - Transparency
-    sectorCategory:
-    - Business
-    methodology:
-    - Network Analysis
-    publicationType:
-    - Book Chapter
-    abstract: Crisis mapping has emerged as a method of connecting and empowering
-      citizens during emergencies. This article explores the hyperbole behind crisis
-      mapping as it extends into more long-term or ‘chronic’ community development
-      practices. We critically examined developer issues and participant (i.e. community
-      organization) usage within the context of local communities. We repurposed the
-      predominant crisis mapping platform Crowdmap for three cases of community development
-      in Canadian anglophone and francophone. Our case studies show mixed results
-      about the actual cost of deployment, the results of disintermediation, and local
-      context with the mapping application. Lastly, we discuss the relationship of
-      hype, temporality, and community development as expressed in our cases.
-  - sys:
-      id: 5pqVZkcQc8OQAyUoqcg604
-    publicationName: 'Smart cities: moving beyond urban cybernetics to tackle wicked
-      problems'
-    region:
-    - Brazil
-    authors:
-    - Robert Goodspeed
-    publicationDate: *6
-    downloadLink: http://cjres.oxfordjournals.org/content/8/1/79
-    innovationCategory:
-    - Co-Creation
-    - Distributed Governance
-    - Participatory Budgeting
-    objectiveCategory:
-    - Effectiveness
-    sectorCategory:
-    - Finance
-    methodology:
-    - Case Studies
-    publicationType:
-    - Research Report
-    abstract: This article makes three related arguments. First, that although many
-      definitions of the smart city have been proposed, corporate promoters say a
-      smart city uses information technology to pursue efficient systems through real-time
-      monitoring and control. Second, this definition is not new and equivalent to
-      the idea of urban cybernetics debated in the 1970s. Third, drawing on a discussion
-      of Rio de Janeiro’s Operations Center, I argue that viewing urban problems as
-      wicked problems allows for more fundamental solutions than urban cybernetics,
-      but requires local innovation and stakeholder participation. Therefore the last
-      section describes institutions for municipal innovation and IT-enabled collaborative
-      planning.
-  - sys:
-      id: 3Yr36GTjEkSMgIyw4uiCmu
-    open: true
-    publicationName: 'The Individiualisation of Party Politics: The Impact of Changing
-      Internal Decision-Making Processes on Policy Development and Citizen Engagement'
-    authors:
-    - Anika Gauja
-    publicationDate: *3
-    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/1467-856X.12035/full?utm_content=buffer3baa6&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
-    innovationCategory:
-    - Behavioral Sciences and Nudges
-    - Citizen Engagement and Collective Intelligence
-    - Data Collaboratives
-    objectiveCategory:
-    - Privacy
-    sectorCategory:
-    - Education
-    - Energy
-    methodology:
-    - Comparative Analysis
-    - Ethnography
-    publicationType:
-    - Book
-    - Conference Proceedings
-    abstract: This article examines the changing nature of the connection between
-      citizens, party members and elites in the creation of party policy through the
-      theoretical prism of individualisation. Using qualitative case studies of recent
-      policy-making initiatives in the Australian Labor Party and the UK Labour Party,
-      the article develops a new model of policy transferal that is not built upon
-      the mass-party model of parliamentary politics, but rather upon organisational
-      evolutions such as community consultations, online participation and supporters'
-      networks. These evolutions, or reforms, typically emphasise the individuality
-      of policy-making and accountability, promote new technologies for facilitating
-      decision-making, and attempt to engage with a new style of politically active
-      citizen. Each of these developments carries implications for how political parties
-      facilitate participation, accountability and responsiveness in modern forms
-      of representative democracy.
+    id: paper_105
+  open: false
+  publicationName: A taxonomy of crowdsourcing based on task complexity
+  region:
+  - United States
+  authors:
+  - Robbie T. Nakatsu
+  - Elissa B. Grossman
+  - Charalambos L. lacovou
+  publicationDate: !ruby/object:DateTime 2014-10-03 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: 'Although a great many different crowdsourcing approaches are available
+    to those seeking to accomplish individual or organizational tasks, little research
+    attention has yet been given to characterizing how those approaches might be based
+    on task characteristics. To that end, we conducted an extensive review of the
+    crowdsourcing landscape, including a look at what types of taxonomies are currently
+    available. Our review found that no taxonomy explored the multidimensional nature
+    of task complexity. This paper develops a taxonomy whose specific intent is the
+    classification of approaches in terms of the types of tasks for which they are
+    best suited. To develop this task-based taxonomy, we followed an iterative approach
+    that considered over 100 well-known examples of crowdsourcing. The taxonomy considers
+    three dimensions of task complexity: (a) task structure – is the task well-defined,
+    or does it require a more open-ended solution; (2) task interdependence – can
+    the task be solved by an individual, or does it require a community of problem
+    solvers; and (3) task commitment – what level of commitment is expected from crowd
+    members? Based on this taxonomy, we identify seven categories of crowdsourcing
+    and discuss prototypical examples of each approach. Furnished with such an understanding,
+    one should be able to determine which crowdsourcing approach is most suitable
+    for a particular task situation.'
+  downloadLink: http://jis.sagepub.com/content/40/6/823
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_116
+  open: true
+  publicationName: 'Competition-Based Innovation: The Case of the X Prize Foundation'
+  region:
+  - United States
+  authors:
+  - Mokter Hossain
+  - Ilkka Kauranen
+  publicationDate: !ruby/object:DateTime 2014-10-20 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  methodology:
+  - Case Studies
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: The use of competition-based processes for the development of innovations
+    is increasing. In parallel with the increasing use of competition-based innovation
+    in business firms, this model of innovation is successfully being used by non-profit
+    organizations for advancing the development of science and technology. One such
+    non-profit organization is the X Prize Foundation, which designs and manages innovation
+    competitions to encourage scientific and technological development. The objective
+    of this article is to analyze the X Prize Foundation and three of the competitions
+    it has organized in order to identify the challenges of competition-based innovation
+    and how to overcome them.
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2549616
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_113
+  open: true
+  publicationName: Citizen Science for Citizen Access to Law
+  region:
+  - United States
+  authors:
+  - Michael Curtotti
+  - Wayne Weibel
+  - Eric McCreath
+  - Nicolas Ceynowa
+  - Sara Frug
+  - Tom R Bruce
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Comparative Analysis
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Over 2014, the Cornell University Legal Information Institute and the
+    Australian National University worked with users of the Cornell LII site in a
+    citizen science project to collect over 43,000 crowdsourced assessments of the
+    readability of legal and other sentences. Readers (“citizen scientists”) on legislative
+    pages of the LII site were asked to rate passages from the United States Code
+    and the Code of Federal Regulations and other texts for readability and other
+    characteristics. They were also asked to provide information about themselves
+    as part of the audience that uses legislation online. The overall aim of the project
+    was to develop empirical insights into characteristics of law that may make it
+    easy or hard to read for the audience that use it. Also, the project aimed to
+    assess machine learning for automatically predicting readability of legal sentences
+    at sentence level. A major focus of this paper is to report results and insights
+    from demographic data collected during the study. Understanding the audience which
+    reads the law is directly relevant to readability - as the relevant question is
+    readable by whom? Who are the citizens for whom “citizen access” might be enhanced?
+    The paper also describes methods used to rank sentences by readability, using
+    the data provided by citizen scientists. Finally, the paper reports initial tests
+    on the viability of machine learning as a means of predicting readability in advance.
+    The exploratory machine learning results reported here will be extended in further
+    work reported in a future paper. The research provides insight into who uses legal
+    rules and how they do so. We draw conclusions as to the current readability of
+    law, as well as the spread of readability among legal rules. The research creates
+    a dataset of legal rules labelled for readability by human judges. As far as we
+    are aware, this research project is the largest ever study of readability of regulatory
+    language and the first research which has applied crowdsourcing to such an investigation.
+  downloadLink: http://ojs.law.cornell.edu/index.php/joal/article/view/34/54
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_120
+  open: true
+  publicationName: Fifty Shades of Manipulation
+  region:
+  - United States
+  authors:
+  - Cass R. Sunstein
+  publicationDate: !ruby/object:DateTime 2015-02-18 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Behavioral Science and Nudges
+  objectiveCategory:
+  - Effectiveness
+  - Legitimacy
+  sectorCategory:
+  - Law
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: "A statement or action can be said to be manipulative if it does not sufficiently
+    engage or appeal to people’s capacity for reflective and deliberative choice.
+    One problem with manipulation, thus understood, is that it fails to respect people’s
+    autonomy and is an affront to their dignity. Another problem is that if they are
+    products of manipulation, people’s choices might fail to promote their own welfare,
+    and might instead promote the welfare of the manipulator. To that extent, the
+    central objection to manipulation is rooted in a version of Mill’s Harm Principle:
+    People know what is in their best interests and should have a (manipulation-free)
+    opportunity to make that decision. On welfarist grounds, the norm against manipulation
+    can be seen as a kind of heuristic, one that generally works well, but that can
+    also lead to serious errors, at least when the manipulator is both informed and
+    genuinely interested in the welfare of the chooser. \n\nFor the legal system,
+    a pervasive puzzle is why manipulation is rarely policed. The simplest answer
+    is that manipulation has so many shades, and in a social order that values free
+    markets and is committed to freedom of expression, it is exceptionally difficult
+    to regulate manipulation as such. But as the manipulator’s motives become more
+    self-interested or venal, and as efforts to bypass people’s deliberative capacities
+    becomes more successful, the ethical objections to manipulation become very forceful,
+    and the argument for a legal response is fortified. The analysis of manipulation
+    bears on emerging first amendment issues raised by compelled speech, especially
+    in the context of graphic health warnings. Importantly, it can also help orient
+    the regulation of financial products, where manipulation of consumer choices is
+    an evident but rarely explicit concern."
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2565892
+  relatedContentTitle: The Law, Economics, and Psychology of Manipulation [Comment]
+  relatedContentUrl: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2617481
+  relatedDataUrl: ''
+- sys:
+    id: paper_126
+  open: true
+  publicationName: The Reliability of Tweets as a Supplementary Method of Seasonal
+    Influenza Surveillance
+  region:
+  - United States
+  authors:
+  - A.A. Aslam
+  - M.H. Tsou
+  - B.H. Spitzberg
+  - L. An
+  - J.M. Gawron
+  - D.K. Gupta
+  - K.M. Peddecord
+  - A.C. Nagel
+  - C. Allen
+  - J.A. Yang
+  - S. Lindsay
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Health
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: |+
+    Background: Existing influenza surveillance in the United States is focused on the collection of data from sentinel physicians and hospitals; however, the compilation and distribution of reports are usually delayed by up to 2 weeks. With the popularity of social media growing, the Internet is a source for syndromic surveillance due to the availability of large amounts of data. In this study, tweets, or posts of 140 characters or less, from the website Twitter were collected and analyzed for their potential as surveillance for seasonal influenza.
+    Objective: There were three aims: (1) to improve the correlation of tweets to sentinel-provided influenza-like illness (ILI) rates by city through filtering and a machine-learning classifier, (2) to observe correlations of tweets for emergency department ILI rates by city, and (3) to explore correlations for tweets to laboratory-confirmed influenza cases in San Diego.
+    Methods: Tweets containing the keyword “flu” were collected within a 17-mile radius from 11 US cities selected for population and availability of ILI data. At the end of the collection period, 159,802 tweets were used for correlation analyses with sentinel-provided ILI and emergency department ILI rates as reported by the corresponding city or county health department. Two separate methods were used to observe correlations between tweets and ILI rates: filtering the tweets by type (non-retweets, retweets, tweets with a URL, tweets without a URL), and the use of a machine-learning classifier that determined whether a tweet was “valid”, or from a user who was likely ill with the flu.
+    Results: Correlations varied by city but general trends were observed. Non-retweets and tweets without a URL had higher and more significant (P<.05) correlations than retweets and tweets with a URL. Correlations of tweets to emergency department ILI rates were higher than the correlations observed for sentinel-provided ILI for most of the cities. The machine-learning classifier yielded the highest correlations for many of the cities when using the sentinel-provided or emergency department ILI as well as the number of laboratory-confirmed influenza cases in San Diego. High correlation values (r=.93) with significance at P<.001 were observed for laboratory-confirmed influenza cases for most categories and tweets determined to be valid by the classifier.
+    Conclusions: Compared to tweet analyses in the previous influenza season, this study demonstrated increased accuracy in using Twitter as a supplementary surveillance tool for influenza as better filtering and classification methods yielded higher correlations for the 2013-2014 influenza season than those found for tweets in the previous influenza season, where emergency department ILI rates were better correlated to tweets than sentinel-provided ILI rates. Further investigations in the field would require expansion with regard to the location that the tweets are collected from, as well as the availability of more ILI data.
+
+  downloadLink: http://www.jmir.org/2014/11/e250/
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_104
+  open: false
+  publicationName: 'Opening Government: Designing Open Innovation Processes to Collaborate
+    With External Problem Solvers'
+  region:
+  - United States
+  authors:
+  - Ines Mergel
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Expert Networking
+  - Co-Creation
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: 'Open government initiatives in the U.S. government focus on three main
+    aspects: transparency, participation, and collaboration. Especially the collaboration
+    mandate is relatively unexplored in the literature. In practice, government organizations
+    recognize the need to include external problem solvers into their internal innovation
+    creation processes. This is partly derived from a sense of urgency to improve
+    the efficiency and quality of government service delivery. Another formal driver
+    is the America Competes Act that instructs agencies to search for opportunities
+    to meaningfully promote excellence in technology, education, and science. Government
+    agencies are responding to these requirements by using open innovation (OI) approaches
+    to invite citizens to crowdsource and peer produce solutions to public management
+    problems. These distributed innovation processes occur at all levels of the U.S.
+    government and it is important to understand what design elements are used to
+    create innovative public management ideas. This article systematically reviews
+    existing government crowdsourcing and peer production initiatives and shows that
+    after agencies have defined their public management problem, they go through four
+    different phases of the OI process: (1) idea generation through crowdsourcing,
+    (2) incubation of submitted ideas with peer voting and collaborative improvements
+    of favorite solutions, (3) validation with a proof of concept of implementation
+    possibilities, and (4) reveal of the selected solution and the (internal) implementation
+    of the winning idea. Participation and engagement are incentivized both with monetary
+    and nonmonetary rewards, which lead to tangible solutions as well as intangible
+    innovation outcomes, such as increased public awareness.'
+  downloadLink: http://ssc.sagepub.com/content/early/2014/12/11/0894439314560851
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_133
+  open: false
+  publicationName: Why Public Sector Agencies (Sometimes) Support Participatory Democracy
+    Programs
+  region:
+  - United States
+  authors:
+  - Alon Peled
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Access
+  - Legitimacy
+  - Participation
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Open Data (OD) programs have become popular. OD proponents argue that
+    OD  programs are necessary to reinvigorate participatory democracy and active
+    citizenship. However, the debate between proponents and critics of these programs
+    relies on anecdotal data. The paper describes a methodological innovation (dubbed
+    “The Public Sector Information Exchange (PSIE)”) to automatically capture, process,
+    store, and analyze metadata information about the Open Data (OD) information assets  published
+    by government agencies at any level of government (e.g., federal, national, regional,
+    municipal) worldwide. The analysis of the initial PSIE data (currently only about
+    some datasets published by U.S. federal agencies) supports the argument that OD
+    programs have become the playground of a small number of agencies and that many
+    OD information assets are either incomprehensible or impossible to find. The concluding
+    section of the paper discusses how to incentivize agencies to improve cooperation
+    with OD programs.
+  downloadLink: http://www.academia.edu/6804781/Why_Public_Sector_Agencies_Sometimes_Support_Participatory_Democracy_Programs?utm_content=buffere7037&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_115
+  open: true
+  publicationName: 'Codifying Collegiality: Recent Developments in Data Sharing Policy
+    in the Life Sciences'
+  region:
+  - United States
+  authors:
+  - G. Pham-Kanter
+  - D.E. Zinner
+  - E.G. Campbell
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Access
+  sectorCategory:
+  - Health
+  methodology:
+  - Survey
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: 'Over the last decade, there have been significant changes in data sharing
+    policies and in the data sharing environment faced by life science researchers.
+    Using data from a 2013 survey of over 1600 life science researchers, we analyze
+    the effects of sharing policies of funding agencies and journals. We also examine
+    the effects of new sharing infrastructure and tools (i.e., third party repositories
+    and online supplements). We find that recently enacted data sharing policies and
+    new sharing infrastructure and tools have had a sizable effect on encouraging
+    data sharing. In particular, third party repositories and online supplements as
+    well as data sharing requirements of funding agencies, particularly the NIH and
+    the National Human Genome Research Institute, were perceived by scientists to
+    have had a large effect on facilitating data sharing. In addition, we found a
+    high degree of compliance with these new policies, although noncompliance resulted
+    in few formal or informal sanctions. Despite the overall effectiveness of data
+    sharing policies, some significant gaps remain: about one third of grant reviewers
+    placed no weight on data sharing plans in their reviews, and a similar percentage
+    ignored the requirements of material transfer agreements. These patterns suggest
+    that although most of these new policies have been effective, there is still room
+    for policy improvement.'
+  downloadLink: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0108451
+  relatedContentTitle: 'Science 2.0: Codifying Collegiality And An Increase In Data-Sharing'
+  relatedContentUrl: http://www.science20.com/news_articles/science_20_codifying_collegiality_and_an_increase_in_datasharing-145779
+  relatedDataUrl: ''
+- sys:
+    id: paper_125
+  open: true
+  publicationName: 'Smarter, Better, Faster: The Potential for Predictive Analytics
+    and Rapid-Cycle Evaluation to Improve Program Development and Outcomes'
+  region:
+  - United States
+  authors:
+  - Scott Codyrew Asher
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Economy
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - White Paper
+  gitHub: ''
+  abstract: 'Public administrators have always been interested in identifying cost-effective
+    strategies for managing their programs. As government agencies invest in data
+    warehouses and business intelligence capabilities, it becomes feasible to employ
+    analytic techniques used more-commonly in the private sector. Predictive analytics
+    and rapid-cycle evaluation are analytical approaches that are used to do more
+    than describe the current status of programs: in both the public and private sectors,
+    these approaches provide decision makers with guidance on what to do next.'
+  downloadLink: http://www.brookings.edu/~/media/research/files/papers/2014/06/19_hamilton_policies_addressing_poverty/predictive_analytics_rapid_cycle_evaluation_cody_asher.pdf
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_109
+  open: true
+  publicationName: 'A New Source of Data for Public Health Surveillance: Facebook
+    Likes'
+  region:
+  - United States
+  authors:
+  - Steven Gittelman
+  - Victor Lange
+  - Carol Gotway Crawford
+  - Catherine Okoro
+  - Eugene Lieb
+  - Satvinder S Dhingra
+  - Elaine Trimarchi
+  publicationDate: !ruby/object:DateTime 2016-12-05 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Health
+  methodology:
+  - Statistical Modeling
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: |-
+    Background: Investigation into personal health has become focused on conditions at an increasingly local level, while response rates have declined and complicated the process of collecting data at an individual level. Simultaneously, social media data have exploded in availability and have been shown to correlate with the prevalence of certain health conditions.
+
+    Objective: Facebook likes may be a source of digital data that can complement traditional public health surveillance systems and provide data at a local level. We explored the use of Facebook likes as potential predictors of health outcomes and their behavioral determinants.
+
+    Methods: We performed principal components and regression analyses to examine the predictive qualities of Facebook likes with regard to mortality, diseases, and lifestyle behaviors in 214 counties across the United States and 61 of 67 counties in Florida. These results were compared with those obtainable from a demographic model. Health data were obtained from both the 2010 and 2011 Behavioral Risk Factor Surveillance System (BRFSS) and mortality data were obtained from the National Vital Statistics System.
+    Results: Facebook likes added significant value in predicting most examined health outcomes and behaviors even when controlling for age, race, and socioeconomic status, with model fit improvements (adjusted R2) of an average of 58% across models for 13 different health-related metrics over basic sociodemographic models. Small area data were not available in sufficient abundance to test the accuracy of the model in estimating health conditions in less populated markets, but initial analysis using data from Florida showed a strong model fit for obesity data (adjusted R2=.77).
+
+    Conclusions: Facebook likes provide estimates for examined health outcomes and health behaviors that are comparable to those obtained from the BRFSS. Online sources may provide more reliable, timely, and cost-effective county-level data than that obtainable from traditional public health surveillance systems as well as serve as an adjunct to those systems.
+  downloadLink: http://www.jmir.org/2015/4/e98/
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_123
+  open: true
+  publicationName: Nowcasting Disaster Damage
+  region:
+  - United States
+  authors:
+  - Yury Kryvasheyeu
+  - Haohui Chena
+  - Nick Obradovich
+  - Esteban Moroe
+  - Pascal Van Hentenryck
+  - James Fowler
+  - Manuel Cebrian
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Public Safety
+  methodology:
+  - Quantitative Analysis
+  - Statistical Modeling
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Could social media data aid in disaster response and damage assessment?
+    Countries face both an increasing frequency and intensity of natural disasters
+    due to climate change. And during such events, citizens are turning to social
+    media platforms for disaster-related communication and information. Social media
+    improves situational awareness, facilitates dissemination of emergency information,
+    enables early warning systems, and helps coordinate relief efforts. Additionally,
+    spatiotemporal distribution of disaster-related messages helps with real-time
+    monitoring and assessment of the disaster itself. Here we present a multiscale
+    analysis of Twitter activity before, during, and after Hurricane Sandy. We examine
+    the online response of 50 metropolitan areas of the United States and find a strong
+    relationship between proximity to Sandy’s path and hurricanerelated social media
+    activity. We show that real and perceived threats – together with the physical
+    disaster effects – are directly observable through the intensity and composition
+    of Twitter’s message stream. We demonstrate that per-capita Twitter activity strongly
+    correlates with the per-capita economic damage inflicted by the hurricane. Our
+    findings suggest that massive online social networks can be used for rapid assessment
+    (“nowcasting”) of damage caused by a large-scale disaster.
+  downloadLink: http://arxiv.org/ftp/arxiv/papers/1504/1504.06827.pdf
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_122
+  open: true
+  publicationName: Managing Innovation in a Crowd
+  region:
+  - United States
+  authors:
+  - Daron Acemoglu
+  - Mohamed Mostagir
+  - Asuman E. Ozdaglar
+  publicationDate: !ruby/object:DateTime 2014-01-17 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Working Paper
+  gitHub: ''
+  abstract: 'Crowdsourcing is an emerging technology where innovation and production
+    are sourced out to the public through an open call. At the center of crowdsourcing
+    is a resource allocation problem: there is an abundance of workers but a scarcity
+    of high skills, and an easy task assigned to a high-skill worker is a waste of
+    resources. This problem is complicated by the fact that the exact difficulties
+    of innovation tasks may not be known in advance, so tasks that require high-skill
+    labor cannot be identified and allocated ahead of time. We show that the solution
+    to this problem takes the form of a skill hierarchy, where tasks are first attempted
+    by low-skill labor, and high skill workers only engage with a task if less skilled
+    workers are unable to finish it. This hierarchy can be constructed and implemented
+    in a decentralized manner even though neither the difficulties of the tasks nor
+    the skills of the candidate workers are known. We provide a dynamic pricing mechanism
+    that achieves this implementation by inducing workers to self-select into different
+    layers. The mechanism is simple: each time a task is attempted and not finished,
+    its price (reward upon completion) goes up.'
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2382917
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_107
+  open: false
+  publicationName: 'Big Data and Privacy: Emerging Issues'
+  region:
+  - United States
+  authors:
+  - D. E. O'Leary
+  publicationDate: !ruby/object:DateTime 2015-11-05 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Data Analysis
+  - Big Data
+  objectiveCategory:
+  - Legitimacy
+  - Privacy
+  sectorCategory:
+  - Criminal Justice
+  methodology:
+  - Case Studies
+  - Conceptual Framework
+  publicationType:
+  - Conference Proceedings
+  gitHub: ''
+  abstract: 'The goals of big data and privacy are fundamentally opposed to each other.
+    Big data and knowledge discovery are aimed reducing information asymmetries between
+    organizations and the data sources, whereas privacy is aimed at maintaining information
+    asymmetries of data sources. A number of different definitions of privacy are
+    used to investigate some of the tensions between different characteristics of
+    big data and potential privacy concerns. Specifically, the author examines the
+    consequences of unevenness in big data, digital data going from local controlled
+    settings to uncontrolled global settings, privacy effects of reputation monitoring
+    systems, and inferring knowledge from social media. In addition, the author briefly
+    analyzes two other emerging sources of big data: police cameras and stingray for
+    location information.'
+  downloadLink: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7320921
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_134
+  open: true
+  publicationName: Anonymization and Risk
+  region:
+  - United States
+  authors:
+  - Ira Rubinstein
+  - Woodrow Hartzog
+  publicationDate: !ruby/object:DateTime 2015-08-17 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Open Data
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  - Privacy
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Perfect anonymization of data sets has failed. But the process of protecting
+    data subjects in shared information remains integral to privacy practice and policy.
+    While the deidentification debate has been vigorous and productive, there is no
+    clear direction for policy. As a result, the law has been slow to adapt a holistic
+    approach to protecting data subjects when data sets are released to others. Currently,
+    the law is focused on whether an individual can be identified within a given set.
+    We argue that the better locus of data release policy is on the process of minimizing
+    the risk of reidentification and sensitive attribute disclosure. Process-based
+    data release policy, which resembles the law of data security, will help us move
+    past the limitations of focusing on whether data sets have been “anonymized.”
+    It draws upon different tactics to protect the privacy of data subjects, including
+    accurate deidentification rhetoric, contracts prohibiting reidentification and
+    sensitive attribute disclosure, data enclaves, and query-based strategies to match
+    required protections with the level of risk. By focusing on process, data release
+    policy can better balance privacy and utility where nearly all data exchanges
+    carry some risk.
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2646185
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_118
+  open: true
+  publicationName: Crowdsourcing Pedestrian and Cyclist Activity Data
+  region:
+  - United States
+  authors:
+  - Amy Smith
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Data Analysis
+  - Co-Creation
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Transportation
+  methodology:
+  - Comparative Analysis
+  publicationType:
+  - White Paper
+  gitHub: ''
+  abstract: |-
+    This paper considers how crowdsourcing applications and crowdsourced data are currently being applied, as well as potential new uses for active transportation research and planning efforts of various types.
+
+    The objectives of this white paper are to review existing crowdsourced bicycle and pedestrian data resources and crowdsourcing tools; discuss potential planning implementations of crowdsourced data for a sample of bicycle and pedestrian project types; and provide examples of how crowdsourcing is currently being used to inform decision-making. Potential issues related to crowdsourced data are also considered (e.g., quality, privacy concerns, participation rates, bias). The research presented here highlights a decreasing skepticism over the quality of volunteered, user-generated data provided by amateurs (as opposed to professionals) in light of a desire to open the lines of communication between the planning world and those affected by planning decisions, directly addressing (rather than being discouraged by) data limitations. The initiatives surrounding progressive data collection, management, and analysis are further reflected in the numerous conferences, meetups, and other events fostering collaboration between planners, developers, data scientists and others interested in applying critical thought and innovation in planning.
+
+    While this paper reviews existing crowdsourcing techniques and their current applications in planning, the pace of technological change and rate of adoption in planning indicates that planners will continue to develop and apply innovative approaches like crowdsourcing in response to continually changing community needs. This paper focuses on examples of current uses of crowdsourced data, crowdsourcing data suggestions, and data considerations.
+  downloadLink: http://www.pedbikeinfo.org/cms/downloads/PBIC_WhitePaper_Crowdsourcing.pdf
+  relatedContentTitle: Crowdsourcing Cyclist and Pedestrian Activity Data Webinar
+  relatedContentUrl: http://www.transportationops.org/event/crowdsourcing-cyclist-and-pedestrian-activity-data-webinar
+  relatedDataUrl: ''
+- sys:
+    id: paper_102
+  open: false
+  publicationName: 'Digilantism: An Analysis of Crowdsourcing and the Boston Marathon
+    Bombings'
+  region:
+  - United States
+  authors:
+  - Johnny Nhan
+  - Laura Huey
+  - Ryan Broll
+  publicationDate: !ruby/object:DateTime 2015-12-06 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - National Security
+  methodology:
+  - Case Studies
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: This paper explores the aftermath of the Boston Marathon bombing incident
+    and how members of the general public, through the online community Reddit, attempted
+    to provide assistance to law enforcement through conducting their own parallel
+    investigations. As we document through an analysis of user posts, Reddit members
+    shared information about the investigation, searched for information that would
+    identify the perpetrators and, in some cases, drew on their own expert knowledge
+    to uncover clues concerning key aspects of the attack. Although it is the case
+    that the Reddit cyber-sleuths’ did not ultimately solve this case, or provide
+    significant assistance to the police investigation, their actions suggest the
+    potential role the public could play within security networks.
+  downloadLink: http://bjc.oxfordjournals.org/content/early/2015/12/06/bjc.azv118.abstract
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_137
+  open: false
+  publicationName: 'Using Technology, Building Democracy: Digital Campaigning and
+    the Construction of Citizenship'
+  region:
+  - United States
+  authors:
+  - Jessica Baldwin-Philippi
+  publicationDate: !ruby/object:DateTime 2015-08-12 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Legitimacy
+  - Participation
+  sectorCategory:
+  - Politics
+  methodology:
+  - Surveys
+  - Ethnography
+  - Qualitative Analysis
+  publicationType:
+  - Book
+  gitHub: ''
+  abstract: |-
+    Traces the emergence and solidification of campaign strategies that reflect what it means to be a citizen in the digital era
+
+    Draws on ethnographic fieldwork in a federal-level election, interviews with communications and digital media consultants, and textual analysis of campaign materials
+
+    Identifies shifting norms and emerging trends to build new theories of citizenship in contemporary democracy
+  downloadLink: http://global.oup.com/academic/product/using-technology-building-democracy-9780190231910?cc=us&lang=en&#
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_114
+  open: true
+  publicationName: 'Citizen-Centered Government: The Mayor''s Office of New Urban
+    Mechanics and the Evolution of CRM in Boston'
+  region:
+  - United States
+  authors:
+  - Susan P. Crawford
+  - Dana Walters
+  publicationDate: !ruby/object:DateTime 2013-08-07 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Labs and Experimentation
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  methodology:
+  - Case Studies
+  publicationType:
+  - White Paper
+  gitHub: ''
+  abstract: |+
+    Over the last three years, the Boston Mayor's Office of New Urban Mechanics, the innovative, collaborative ethos within City Hall fostered by Mayor Menino and his current chief of staff, Mitchell Weiss, and Boston's launch of a CRM system and its associated Citizens Connect smartphone app have all attracted substantial media attention. In particular, the City of Boston's strategy to put citizen engagement and participation at the center of its efforts, implemented by Chris Osgood and Nigel Jacob as co-chairs of the Mayor's Office of New Urban Mechanics, has drawn attention to the potential power of collaboration and technology to transform citizens' connections to their government and to each other. Several global developments have combined to make Boston's collaborative efforts interesting: First, city managers around the world confront shrinking budgets and diminishing trust in the role of government; second, civic entrepreneurs and technology innovators are pressuring local governments to adopt new forms of engagement with citizens; and third, new digital tools are emerging that can help make city services both more visible and more effective. Boston's experience in pursuing partnerships that facilitate opportunities for engaging citizens may provide scalable (and disruptive) lessons for other cities.
+
+    During the summer of 2013, in anticipation of Mayor Menino's retirement in January 2014, Prof. Susan Crawford and Project Assistant Dana Walters carried out a case study examining the ongoing evolution of the Boston Mayor's Hotline into a platform for civic engagement. We chose this CRM focus because the initial development of the system provides a concrete example of how leaders in government can connect to local partners and citizens. In the course of this research, we interviewed 21 city employees and several of their partners outside government, and gathered data about the use of the system. (Exhibit A is a list of interviewees.)
+
+    We found a traditional technology story — selection and integration of CRM software, initial performance management using that software, development of ancillary channels of communication, initial patterns of adoption and use — that reflects the commitment of Mayor Menino to personalized constituent service. We also found that that commitment, his long tenure, and the particular personalities of the people on the New Urban Mechanics team make this both a cultural story as well as a technology story. Here are the highlights: The combination of Mitchell Weiss's vision for citizen engagement, Nigel Jacob's expertise in software development and digital strategy, Chris Osgood's experience in navigating government bureaucracy, and Bill Oates's (CIO) private-sector experience has allowed this team to launch successful projects and build valuable partnerships that focus on citizen-centered innovation; Even without budgetary authority or staff, the innovation office within the Mayor's suite (the Office of New Urban Mechanics) has been able to nudge, encourage, and facilitate collaborations inside City Hall and across academic institutions, technologists, and other city governments that have been productive; As one example of the team's joint efforts and partnerships, both inside and outside City Hall, the launch of Boston's Lagan CRM system in October 2008 was followed by integration of the system into the operations of several constituent-facing service departments; The system has evolved over time to include, among other things, a mobile app for field workers in the Department of Public Works (City Worker), a smartphone app for citizens (Citizen Connect), reports that are useful for performance management, and several different channels through which citizens can interact with City Hall, while retaining its high-touch, personalized character; Although every CRM system case is assigned a case ID number, the CRM system as a whole does not automatically assign a unique identifier to citizens that would allow uniform tracking across different modes of contact (smartphone app, Web interface, phone call) or mapping of particular citizens to particular neighborhoods. Constituents who contact the system may voluntarily provide contact details (name, home address, email, and phone); Future versions of this system, and layering of CRM data over other City data (911, inspections, sensor data, social sentiment data, traffic data), could make possible much more extensive citizen collaboration, situation awareness, policy inputs, performance analysis, and co-creation of government services or policies. Although there are many channels for reporting into the CRM system — Citizens Connect, SMS, web chat, phone calls — all of the people reporting in are not connected to each other, and the lack of unique identifiers makes true "citizen relationship management" difficult. Customer satisfaction is also not measured by the system, as far as we can tell. Outbound calls, texting, and Twitter/social media sentiment mining might be useful tools for this assessment; Combining formal CRM requests with social sentiment information could provide useful guidance underpinning policy decisions and resource allocation. Connecting all of this information to job functions within City Hall would also clearly be productive. And if we believe that people in their communities know more about their communities than all the gifted people in City Hall, how do we enable them to help themselves solve some of their own problems? Boston City Hall has not been focused on predictive analytics or the public release of data; rather, the team's top priorities (in line with Mayor Menino's strategy) have been to improve service delivery and encourage citizen engagement; Mayor Menino's leadership style, strategic goals, and long tenure, together with the particular personalities of the members of the core team profiled in this study, have been essential to this narrative; The longterm effects on either the operation of City government or citizen engagement of the Office of New Urban Mechanics and the innovative, experimental ethos encouraged by that Office, Chief of Staff Mitchell Weiss, and CIO Bill Oates are unclear. Much will depend on the character and priorities of the new mayor.
+
+  downloadLink: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2307158
+  relatedContentTitle: 'Boston’s Office of New Urban Mechanics: Innovation for the
+    Public Good'
+  relatedContentUrl: http://rctom.hbs.org/submission/bostons-office-of-new-urban-mechanics-innovation-for-the-public-good/
+  relatedDataUrl: ''
+- sys:
+    id: paper_127
+  open: true
+  publicationName: A new model to explore non-profit social media use for advocacy
+    and civic engagement
+  region:
+  - United States
+  authors:
+  - David Chapman
+  - Katrina Miller-Stevens
+  - John C. Morris
+  - Brendan O'Hallarn
+  publicationDate: !ruby/object:DateTime 2015-10-05 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Social Media
+  objectiveCategory:
+  - Legitimacy
+  sectorCategory:
+  - Philanthropy & Aid
+  methodology:
+  - Case Studies
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Non-profit organizations are actively using social media platforms as
+    a way to deliver information to end users, yet little is known of the internal
+    processes these organizations follow to implement this tool. We present a case
+    study of one non-profit organization, Blue Star Families, Inc., that is actively
+    engaged in advocacy and civic engagement. We offer a new model to explore non-profit
+    organizations’ use of social media platforms by building on previous models and
+    frameworks developed to explore the use of social media in the public, private,
+    and non-profit sectors.
+  downloadLink: http://firstmonday.org/ojs/index.php/fm/article/view/5912/5002
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_9
+  open: false
+  publicationName: 'Confronting the Hype: The Use of Crisis Mapping for Community
+    Development'
+  region:
+  - Canada
+  authors:
+  - Ana Brandusescu
+  - Renée E. Sieber
+  - Sylvie Jochems
+  publicationDate: !ruby/object:DateTime 2015-05-18 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Crisis Response
+  methodology:
+  - Case Studies
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Crisis mapping has emerged as a method of connecting and empowering citizens
+    during emergencies. This article explores the hyperbole behind crisis mapping
+    as it extends into more long-term or ‘chronic’ community development practices.
+    We critically examined developer issues and participant (i.e. community organization)
+    usage within the context of local communities. We repurposed the predominant crisis
+    mapping platform Crowdmap for three cases of community development in Canadian
+    anglophone and francophone. Our case studies show mixed results about the actual
+    cost of deployment, the results of disintermediation, and local context with the
+    mapping application. Lastly, we discuss the relationship of hype, temporality,
+    and community development as expressed in our cases.
+  downloadLink: http://con.sagepub.com/content/early/2015/05/15/1354856515584320.abstract
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_101
+  open: false
+  publicationName: Crowdsourcing medical expertise in near real time
+  region:
+  - United States
+  authors:
+  - Max H. Sims
+  - Jeffrey Bigham
+  - Henry Kautz
+  - Marc W. Halterman
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Expert Networking
+  objectiveCategory:
+  - Effectiveness
+  - Participation
+  sectorCategory:
+  - Health
+  methodology:
+  - Case Studies
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Given the pace of discovery in medicine, accessing the literature to make
+    informed decisions at the point of care has become increasingly difficult. Although
+    the Internet creates unprecedented access to information, gaps in the medical
+    literature and inefficient searches often leave healthcare providers' questions
+    unanswered. Advances in social computation and human computer interactions offer
+    a potential solution to this problem. We developed and piloted the mobile application
+    DocCHIRP, which uses a system of point-to-multipoint push notifications designed
+    to help providers problem solve by crowdsourcing from their peers. Over the 244-day
+    pilot period, 85 registered users logged 1544 page views and sent 45 consult questions.
+    The median initial first response from the crowd occurred within 19 minutes. Review
+    of the transcripts revealed several dominant themes, including complex medical
+    decision making and inquiries related to prescription medication use. Feedback
+    from the post-trial survey identified potential hurdles related to medical crowdsourcing,
+    including a reluctance to expose personal knowledge gaps and the potential risk
+    for “distracted doctoring.” Users also suggested program modifications that could
+    support future adoption, including changes to the mobile interface and mechanisms
+    that could expand the crowd of participating healthcare providers.Journal of Hospital
+    Medicine 2014;9:451–456. © 2014 Society of Hospital Medicine
+  downloadLink: http://onlinelibrary.wiley.com/doi/10.1002/jhm.2204/abstract
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_138
+  open: true
+  publicationName: 'Federal Front Door: The public''s front door to government services'
+  region:
+  - United States
+  publicationDate: !ruby/object:DateTime 2016-02-15 12:00:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Data Analysis
+  objectiveCategory:
+  - Effectiveness
+  - Legitimacy
+  methodology:
+  - Surveys
+  publicationType:
+  - Research Report
+  gitHub: ''
+  abstract: |-
+    Recent research has made clear what many folks have personally experienced: The federal government needs to improve how it interacts with the public. Enter the Federal Front Door, an initiative to improve public-government interactions across the board.
+
+    We’re currently exploring projects to improve the quality of experiences and interactions people have with the government. These include efforts to improve transparency in service design, promote information sharing among agencies, and increase people’s trust in the government.
+
+    Here, you’ll find the most updated information on our research and progress.
+  downloadLink: http://labs.usa.gov/files/FFD_ResearchReport_0216.pdf
+  relatedContentTitle: Methodology Supplement
+  relatedContentUrl: http://labs.usa.gov/files/FFD_Research_Methodology_v11.pdf
+  relatedDataUrl: ''
+- sys:
+    id: paper_112
+  open: true
+  publicationName: Can 311 Call Centers Improve Service Delivery? Lessons from New
+    York and Chicago
+  region:
+  - United States
+  authors:
+  - Jane Wiseman
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Civic Technology
+  objectiveCategory:
+  - Effectiveness
+  methodology:
+  - Comparative Analysis
+  - Quantitative Analysis
+  publicationType:
+  - White Paper
+  gitHub: ''
+  abstract: 'This paper is the first of the IDB''s "Innovations in Public Service
+    Delivery" series, which identifies and analyzes innovative experiences of promising
+    practices in Latin America and the Caribbean and around the world to improve the
+    quality and delivery of public services. It presents the 311 Programs in New York
+    City and Chicago, leading 311 centers in the United States. "311" is the universal
+    toll-free number that provides citizens with a single point of entry to a wide
+    array of information and services in major cities. In the cities studied, these
+    centers have evolved to support new models of service delivery management. This
+    publication provides an overview of these programs, analyzing their design and
+    implementation, results, and impacts, and identifying their success factors. The
+    final section consolidates the lessons learned from these experiences, highlighting
+    what policymakers and public officials should consider when developing similar
+    solutions. - See more at: http://publications.iadb.org/handle/11319/6765?scope=123456789/1&thumbnail=true&rpp=5&page=1&group_by=none&etal=0#sthash.yyDAO9OJ.dpuf'
+  downloadLink: http://publications.iadb.org/handle/11319/6765?scope=123456789/1&thumbnail=true&rpp=5&page=1&group_by=none&etal=0
+  relatedContentTitle: What cities can learn from New York and Chicago's 311 systems
+  relatedContentUrl: http://www.fiercecities.com/story/what-cities-can-learn-new-york-and-chicagos-311-systems/2015-01-27
+  relatedDataUrl: ''
+- sys:
+    id: paper_119
+  open: true
+  publicationName: 'Crowdteaching: Supporting Teaching as Designing in Crowdsourcing
+    Communities'
+  region:
+  - United States
+  authors:
+  - Mimi Recker
+  - Min Yuan Lei Ye
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:14:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Expert Networking
+  objectiveCategory:
+  - Participation
+  sectorCategory:
+  - Education
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: The widespread availability of high-quality Web-based content offers new
+    potential for supporting teachers as designers of curricula and classroom activities.
+    When coupled with a participatory Web culture and infrastructure, teachers can
+    share their creations as well as leverage from the best that their peers have
+    to offer to support a collective intelligence or crowdsourcing community, which
+    we dubcrowdteaching. We applied a collective intelligence framework to characterize
+    crowdteaching in the context of a Web-based tool for teachers called the Instructional
+    Architect (IA). The IA enables teachers to find, create, and share instructional
+    activities (called IA projects) for their students using online learning resources.
+    These IA projects can further be viewed, copied, or adapted by other IA users.
+    This study examines the usage activities of two samples of teachers, and also
+    analyzes the characteristics of a subset of their IA projects. Analyses of teacher
+    activities suggest that they are engaging in crowdteaching processes. Teachers,
+    on average, chose to share over half of their IA projects, and copied some directly
+    from other IA projects. Thus, these teachers can be seen as both contributors
+    to and consumers of crowdteaching processes. In addition, IA users preferred to
+    view IA projects rather than to completely copy them. Finally, correlational results
+    based on an analysis of the characteristics of IA projects suggest that several
+    easily computed metrics (number of views, number of copies, and number of words
+    in IA projects) can act as an indirect proxy of instructionally relevant indicators
+    of the content of IA projects.
+  downloadLink: http://www.irrodl.org/index.php/irrodl/article/view/1785/3000
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_121
+  open: true
+  publicationName: Is Transparency a Recipe for Innovation?
+  region:
+  - United States
+  authors:
+  - Bastiaan Heemsbergen
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Open Data
+  objectiveCategory:
+  - Effectiveness
+  - Legitimacy
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: |-
+    Innovation is a key driver in organizational sustainability, and yes, openness and transparency are a recipe for innovation. But, according to Tapscott and Williams, “when it comes to innovation, competitive advantage and organizational success, ‘openness’ is rarely the first word one would use to describe companies and other societal organizations like government agencies or medical institutions. For many, words like ‘insular,’ ‘bureaucratic,’ ‘hierarchical,’ ‘secretive’ and ‘closed’ come to mind instead.”1 And yet a few months ago, The Tesla Model S just became the world's first open-source car. Elon Musk, CEO of Tesla Motor Vehicles, shared all the patents on Tesla's electric car technology, allowing anyone — including competitors — to use them without fear of litigation. Elon wrote in his post “Yesterday, there was a wall of Tesla patents in the lobby of our Palo Alto headquarters. That is no longer the case. They have been removed, in the spirit of the open source movement, for the advancement of electric vehicle technology.”2
+    In the public sector, terms such as open government, citizen sourcing, and wiki government are also akin to the notion of open innovation and transparency. As Hilgers and Ihl report, “a good example of this approach is the success of the Future Melbourne program, a Wiki and blog-based approach to shaping the future urban landscape of Australia’s second largest city. The program allowed citizens to directly edit and comment on the plans for the future development of the city. It attracted more than 30,000 individuals, who submitted hundreds of comments and suggestions (futuremelbourne.com.au). Basically, problems concerning design and creativity, future strategy and local culture, and even questions of management and service innovation can be broadcasted on such web-platforms.”3 The authors suggest that there are three dimensions to applying the concept of open innovation to the public sector: citizen ideation and innovation (tapping knowledge and creativity), collaborative administration (user generated new tasks and processes), and collaborative democracy (improve public participation in the policy process).
+  downloadLink: http://irc.queensu.ca/articles/transparency-recipe-innovation
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_128
+  open: true
+  publicationName: Improving Crowdsourcing and Citizen Science as a Policy Mechanism
+    for NA
+  region:
+  - United States
+  authors:
+  - Brittany Balcom
+  publicationDate: !ruby/object:DateTime 2015-06-18 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Citizen Science
+  objectiveCategory:
+  - Participation
+  methodology:
+  - Quantitative Analysis
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: This article examines citizen science projects, defined as “a form of
+    open collaboration where members of the public participate in the scientific process,
+    including identifying research questions, collecting and analyzing the data, interpreting
+    the results, and problem solving,” as an effective and innovative tool for National
+    Aeronautics and Space Administration (NASA) science in line with the Obama Administration's
+    Open Government Directive. Citizen science projects allow volunteers with no technical
+    training to participate in analysis of large sets of data that would otherwise
+    constitute prohibitively tedious and lengthy work for research scientists. Zooniverse.com
+    hosts a multitude of popular space-focused citizen science projects, many of which
+    have been extraordinarily successful and have enabled new research publications
+    and major discoveries. This article takes a multifaceted look at such projects
+    by examining the benefits of citizen science, effective game design, and current
+    desktop computer and mobile device usage trends. It offers suggestions of potential
+    research topics to be studied with emerging technologies, policy considerations,
+    and opportunities for outreach. This analysis includes an overview of other crowdsourced
+    research methods such as distributed computing and contests. New research and
+    data analysis of mobile phone usage, scientific curiosity, and political engagement
+    among Zooniverse.com project participants has been conducted for this study.
+  downloadLink: http://online.liebertpub.com/doi/abs/10.1089/space.2015.0017
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_108
+  open: true
+  publicationName: "‘Data.gov-in-a-box’: Delimiting transparency"
+  region:
+  - United States
+  authors:
+  - Clare Birchall
+  publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Legitimacy
+  - Participation
+  sectorCategory:
+  - Economy
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: Given that the Obama administration still relies on many strategies we
+    would think of as sitting on the side of secrecy, it seems that the only lasting
+    transparency legacy of the Obama administration will be data-driven or e-transparency
+    as exemplified by the web interface ‘data.gov’. As the data-driven transparency
+    model is exported and assumes an ascendant position around the globe, it is imperative
+    that we ask what kind of publics, subjects, and indeed, politics it will produce.
+    Open government data is not just a matter concerning accountability but is seen
+    as a necessary component of the new ‘data economy’. To participate and benefit
+    from this info-capitalist-democracy, the data subject is called upon to be both
+    auditor and entrepreneur. This article explores the implications of responsibilization,
+    outsourcing, and commodification on the contract of representational democracy
+    and asks if there are other forms of transparency that might better resist neoliberal
+    formations and re-politicize the public sphere.
+  downloadLink: http://est.sagepub.com/content/early/2015/02/27/1368431014555259.abstract
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_124
+  open: true
+  publicationName: Preparing for Responsible Sharing of Clinical Trial Data
+  region:
+  - United States
+  authors:
+  - Michelle M. Mello
+  - Jeffrey K. Francer
+  - Marc Wilenzick
+  - Patricia Teden
+  - Barbara E. Bierer
+  - Mark Barnes
+  publicationDate: !ruby/object:DateTime 2013-10-24 12:00:00.000000000 -04:00
+  innovationCategory:
+  - Open Data
+  objectiveCategory:
+  - Access
+  sectorCategory:
+  - Health
+  methodology:
+  - Conceptual Framework
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: |-
+    Data from clinical trials, including participant-level data, are being shared by sponsors and investigators more widely than ever before. Some sponsors have voluntarily offered data to researchers, some journals now require authors to agree to share the data underlying the studies they publish, the Office of Science and Technology Policy has directed federal agencies to expand public access to data from federally funded projects, and the European Medicines Agency (EMA) and U.S. Food and Drug Administration (FDA) have proposed the expansion of access to data submitted in regulatory applications. Sharing participant-level data may bring exciting benefits for scientific research and public health but may also have unintended consequences. Thus, expanded data sharing must be pursued thoughtfully.
+    We provide a suggested framework for broad sharing of participant-level data from clinical trials and related technical documents. After reviewing current data-sharing initiatives, potential benefits and risks, and legal and regulatory implications, we propose potential governing principles and key features for a system of expanded access to participant-level data and evaluate several governance structures.
+  downloadLink: http://www.nejm.org/doi/full/10.1056/NEJMhle1309073
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
+- sys:
+    id: paper_136
+  open: false
+  publicationName: Outcome-driven open innovation at NASA
+  region:
+  - United States
+  authors:
+  - Jennifer L. Gustetic
+  - Jason Crusan
+  - Steve Rader
+  - Sam Ortega
+  publicationDate: !ruby/object:DateTime 2015-11-15 23:30:00.000000000 -05:00
+  innovationCategory:
+  - Citizen Engagement and Crowdsourcing
+  - Prizes and Challenges
+  objectiveCategory:
+  - Effectiveness
+  sectorCategory:
+  - Science
+  methodology:
+  - Case Studies
+  publicationType:
+  - Journal Article
+  gitHub: ''
+  abstract: In an increasingly connected and networked world, the National Aeronautics
+    and Space Administration (NASA) recognizes the value of the public as a strategic
+    partner in addressing some of our most pressing challenges. The agency is working
+    to more effectively harness the expertise, ingenuity, and creativity of individual
+    members of the public by enabling, accelerating, and scaling the use of open innovation
+    approaches including prizes, challenges, and crowdsourcing. As NASA's use of open
+    innovation tools to solve a variety of types of problems and advance of number
+    of outcomes continues to grow, challenge design is also becoming more sophisticated
+    as our expertise and capacity (personnel, platforms, and partners) grows and develops.
+    NASA has recently pivoted from talking about the benefits of challenge-driven
+    approaches, to the outcomes these types of activities yield. Challenge design
+    should be informed by desired outcomes that align with NASA's mission. This paper
+    provides several case studies of NASA open innovation activities and maps the
+    outcomes of those activities to a successful set of outcomes that challenges can
+    help drive alongside traditional tools such as contracts, grants and partnerships.
+  downloadLink: http://www.sciencedirect.com/science/article/pii/S0265964615300072
+  relatedContentTitle: ''
+  relatedContentUrl: ''
+  relatedDataUrl: ''
 blogpost:
 - sys:
-    id: 5aQrHCHIMEYQg6EIeQq0ks
+    id: 4G5umLVsKcggomICggyMQa
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-11-25 16:59:26.994000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:11:47.883000000 Z
-    revision: 3
+    createdAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:08:32.182000000 Z
+    revision: 2
     contentType:
       sys:
         id: blogpost
     locale: en-US
-  title: Fury Road
+  title: test blog post
   author:
   - Stefaan Verhulst
-  - Andrew Young
   affiliation:
   - The GovLab
   innovationcategory:
-  - Big Data
-  - Civic Technology
-  - Expert Networking
-  - Participatory Budgeting
+  - Behavioral Sciences and Nudges
   type:
-  - Weekly update
-  - Announcement
-  keywords:
-  - mad
-  - max
-  - fury
-  - road
-  highlight: "I am the one that runs from both \n1. the living \n2. and the dead. "
-  post: "My name is __Max__. My world is *fire and blood*. Once, I was a cop. A road
-    warrior searching for a righteous cause. As the world fell, each of us in our
-    own way was broken. \n\n> It was hard to know who was more crazy... me... or everyone
-    else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
-    by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
-    reduced to one instinct: __survive__."
+  - Recent trends
+  highlight: This is a highlight paragraph
+  post: testing
 - sys:
     id: aj31tGNX0s4giAi2gCusq
     space:
@@ -595,26 +1668,81 @@ blogpost:
 
     They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
 - sys:
-    id: 4G5umLVsKcggomICggyMQa
+    id: 5aQrHCHIMEYQg6EIeQq0ks
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-05 17:22:25.756000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:08:32.182000000 Z
-    revision: 2
+    createdAt: !ruby/object:DateTime 2016-11-25 16:59:26.994000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:11:47.883000000 Z
+    revision: 3
     contentType:
       sys:
         id: blogpost
     locale: en-US
-  title: test blog post
+  title: Fury Road
   author:
   - Stefaan Verhulst
+  - Andrew Young
   affiliation:
   - The GovLab
   innovationcategory:
-  - Behavioral Sciences and Nudges
+  - Big Data
+  - Civic Technology
+  - Expert Networking
+  - Participatory Budgeting
   type:
-  - Recent trends
-  highlight: This is a highlight paragraph
-  post: testing
+  - Weekly update
+  - Announcement
+  keywords:
+  - mad
+  - max
+  - fury
+  - road
+  highlight: "I am the one that runs from both \n1. the living \n2. and the dead. "
+  post: "My name is __Max__. My world is *fire and blood*. Once, I was a cop. A road
+    warrior searching for a righteous cause. As the world fell, each of us in our
+    own way was broken. \n\n> It was hard to know who was more crazy... me... or everyone
+    else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
+    by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
+    reduced to one instinct: __survive__."
+list:
+- sys:
+    id: 7u9YBRWeDCioowsycIGceM
+  title: GovLab things
+  author:
+  - Andrew Young
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  description: This is a list of GovLab things that we make
+  article1: 'WHY A NUDGE IS NOT ENOUGH: A SOCIAL IDENTITY CRITIQUE OF GOVERNANCEBY
+    STEALTH'
+  article1Uri: http://ogrx.org/c81e728d9d4c2f636f067f89cc14862c-why-a-nudge-is-not-enough-a-social-identity-critique-of-governanceby-stealth.html
+  article1Author:
+  - Stefaan Verhulst
+  - Andrew Young
+  articlesList:
+  - sys:
+      id: 1n9KJcIgsU0y8aeOWeS8Cs
+  - sys:
+      id: 4saUvstvuwIAceeowAAcSW
+  - sys:
+      id: 3Yr36GTjEkSMgIyw4uiCmu
+  - sys:
+      id: 28bG1UYk3W48OaqsQ6WKQW
+- sys:
+    id: 2xlAQzWc6oUik6IIoikG4Y
+  title: Cool Papers
+  author:
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  description: These papers are exceptionally cool
+  articlesList:
+  - sys:
+      id: 1f6ie3dV44egyoGEE0oweK
+  - sys:
+      id: 5pqVZkcQc8OQAyUoqcg604
+  - sys:
+      id: 3Yr36GTjEkSMgIyw4uiCmu
