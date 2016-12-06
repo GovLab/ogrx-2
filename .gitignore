@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 node_modules
 _site
+import/*.json
+import/*.db
+import/*.csv
