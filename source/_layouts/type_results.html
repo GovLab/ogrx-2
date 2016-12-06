@@ -15,11 +15,8 @@ layout: default
     {% include filters.html %}
   </div>
 
-  {% if page.custom_filter %}
-  {% assign f = page.custom_filter %}
-  {% else %}
+
   {% assign f = page.title %}
-  {% endif %}
 
   {% include paper_list.html filter_on="publicationType" filter_by=f %} <!-- This will receive a pre-filter by David's Plugin -->
 

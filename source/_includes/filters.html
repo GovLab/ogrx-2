@@ -1,7 +1,7 @@
 <!-- Need to port all the logic for the filters -->
 
 <section class="filters">
-  
+
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
       <div class="switch">
@@ -18,9 +18,9 @@
   <div class="row align-center">
     <div class="large-10 column">
       <form action="" class="search search--main-search search--negative lunr-form" id="lunr-filter-form">
-        <input id="lunr-filter" type="text" placeholder="Search" data-category="{{custom_filter | slugify }}" />
+        <input id="lunr-filter" type="text" placeholder="Search" data-category="{{display_name | slugify }}" />
         <input class="search__trigger material-icons" type="button" value="search">
-      </form>  
+      </form>
     </div>
   </div>
 
@@ -37,16 +37,16 @@
               {% endfor %}
             </select>
           </div>
-        </div> 
+        </div>
         {% endfor %}
       </div>
-    </div>  
+    </div>
     <div class="row align-center">
       <div class="large-3 column">
         <div class="button">clear filters</div>
       </div>
     </div>
   </div>
-  
+
 
 </section>

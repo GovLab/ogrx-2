@@ -1,44 +1,44 @@
 - title: Article Draft
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Book
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Book Chapter
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Conference Proceedings
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Dissertation and/or Thesis
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Journal Article
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Research Report
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: White Paper
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Working Paper
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false

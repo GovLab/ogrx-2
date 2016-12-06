@@ -3,7 +3,7 @@
   image_white: deet-logo-white.png # Logo image (white version)
   short_description: The World Bank is a vital source of financial and technical assistance to developing countries around the world. The Bank’s Digital Engagement Evaluation Team (DEET) works with governments to leverage technology-enabled solutions for better public policies and services.
   long_description: DEET undertakes a number of evaluation and research activities that apply cutting-edge methodologies to examine the effects of technology on participation, transparency, accountability and government responsiveness. Providing evidence to better inform practice at the intersection of technology and citizen engagement is one of the core goals of the Bank’s Digital Engagement Evaluation Team (DEET). To contribute empirical data to the debate on the effects of technology on participatory processes, the team has been carrying out a number of studies, some covering as many as 132 countries.
-  custom_filter:
+  display_name:
     - world-bank-digital-engagement-evaluation-team # To be used as a custom filter
     - Digital Engagement Evaluation Team
   founding_partner: true
@@ -19,7 +19,7 @@
   image_white: mysociety-logo-white.png # Logo image (white version)
   short_description: mySociety is a not-for-profit social enterprise, based in the United Kingdom but with an international reach. The organization builds online technologies that give people the power to get things changed and shares these technologies so that they can be used anywhere.
   long_description: mySociety believes that strong democratic accountability and a thriving civil society are vital to the common welfare, which only can survive when people engage with their government and communities. mySociety works with online technologies because the Internet can lower the barriers to taking the first civic or democratic steps in a citizen’s life. Working with partner groups, the organization helps to build effective civic websites through the implementation of in-house tools and software.  mySociety ensures their projects have real impact through a rigorous programme of research that they share in collaboration with civic tech practitioners worldwide, providing global leadership and inspiration in their sector.
-  custom_filter:
+  display_name:
     - mySociety
     - mysociety # To be used as a custom filter
   founding_partner: true
@@ -35,7 +35,7 @@
   image_white: govlab-logo-white.png # Logo image (white version)
   short_description:  The GovLab’s mission is to improve people’s lives by changing the way we govern. Its goal is to strengthen the ability of institutions – including but not limited to governments – and people to work more openly, collaboratively, effectively and legitimately to make better decisions and solve public problems.
   long_description: The GovLab believes that increased availability and use of data, new ways to leverage the capacity, intelligence, and expertise of people in the problem-solving process, combined with new advances in technology and science, can transform governance. Their team approach each challenge and opportunity in an interdisciplinary and collaborative way, irrespective of the problem, sector, geography and level of government. The GovLab develops and tests prototypes for new platforms to enable open and collaborative problem-solving inside a variety of organizations.  The organization assesses and disseminates information and analysis about governance innovations successes and failures globally and their impact on people’s lives.  Its team trains entrepreneurs to tackle public interest challenges using open innovation to take projects from idea to implementation.
-  custom_filter:
+  display_name:
     - The Govlab
     - the-govlab # To be used as a custom filter
   founding_partner: true
@@ -50,8 +50,8 @@
   image: CPI-logo.png # Logo image
   image_white: CPI-logo-white.png # Logo image (white version)
   short_description: The Centre for Public Impact is a not-for-profit foundation, founded by The Boston Consulting Group, dedicated to improving the positive impact of governments. It brings together world leaders to learn, exchange ideas and inspire each other to strengthen the public impact of their organisations. Sharing insights from around the world, its global forums highlight what has worked and where challenges require new approaches.
-  long_description: 
-  custom_filter:
+  long_description:
+  display_name:
     - Centre for Public Impact
     - CPI # To be used as a custom filter
   founding_partner: false
@@ -68,8 +68,8 @@
   short_description: "<p>Open Evidence is a spin-off from Universitat Oberta de Catalunya formed by professors, researchers and consultants with more than 20 years of experience in applied research and consultancy.</p> <p>Openly presented and shared design and methodologies: our research design and methodologies are always transparent, replicable and openly shared with our clients and with the community of researchers and practitioners through consultation and validation processes.</p>
   <p>Opening the black boxes: we open ‘black boxes’ of complex empirical models and of analytical econometric and statistical sophisticated techniques as to ensure that results of our ex-post data analysis or of ex ante modeling simulations are user-friendly and can be fully understood and challenged by a wide audience of policy makers and practitioners.</p>
   <p>Opening stakeholders engagement and innovation: our approach is never technocratic and top-down but it tries and includes insights and knowledge from broadly defined stakeholders through open online engagement and consultation processes.</p>"
-  long_description: 
-  custom_filter: 
+  long_description:
+  display_name:
     - Open Evidence
     - open-evidence
   founding_partner: false
@@ -86,7 +86,7 @@
   image_white: dcl-white.png # Logo image (white version)
   short_description: "<p>Digital Commons Lab (DCL) aims at studying, supporting, popularizing and innovating the world of digital commons. Our goal is to analyze the results of what is continuously produced by the communities with the aim of fostering their growth and maximizing the diffusion of data culture. Our research is related to the quality of open government data and community data and their economic and social impact. We are strongly interested in fostering the dialogue between communities, government and companies on how government data can be made more useful. The We advise national and local governments as well as with business and other institutions. Digital Commons Lab is a unit of <a href='http://www.fbk.eu/'>Fondazione Bruno Kessler</a>, ICT Center and a node of the <a href='http://theodi.org/'>Open Data Institute in Trento</a>.</p>"
   long_description:
-  custom_filter: 
+  display_name:
     - Digital Commons Lab
   founding_partner: false
   color: 1383a2 # Hash value to be applied to the top section
@@ -101,7 +101,7 @@
   image_white: od4d-logo-white.png
   short_description: "<p>Open Data for Development (OD4D) is a global network of leaders in the Open Data community, working together to develop open data solutions around the world.</p><p>OD4D is hosted through the International Development Research Centre. It organizes work through the guidance of a Donors Committee and the consultation of a group of dedicated implementing partners who are experts in Open Data issues around the world.</p>"
   long_description:
-  custom_filter:
+  display_name:
     - Open Data for Development
   founding_partner: false
   color: d25e1b # Hash value to be applied to the top section
@@ -116,7 +116,7 @@
   image_white: iri-white.png
   short_description: IRI is an independent research unit at the Department of Law at Stockholm University. The Institute is under the auspices of the Faculty of Law and its constitution has been confirmed by the University’s Vice Chancellor. The work is led by an executive board and its daily activities are managed by a director. The current director is Peter Wahlgren, Professor of Law and Information Technology.
   long_description: "<p>While IRI is primarily a research organisation, it is also actively involved in community development and participates in various expert groups concerning the regulation of information and communication technology. The Institute functions as secretariat for the Foundation for Legal Information, whose purpose is to promote the digitalization of legal information.</p>"
-  custom_filter: 
+  display_name:
     - Swedish Law and Informatics Institute
     - Swedish Law and Informatics Research Institute
     - swedish-law-and-informatics-institute
@@ -134,7 +134,7 @@
   image_white: ASU-CPI-white.png # Logo image (white version)
   short_description: The Center's mission is to leverage technology to solve public problems and design modern governance. The Center seeks to become a global leader in advancing the research and practice of policy informatics to address complex public issues. The Center advances its mission and vision by engaging in a variety of interdisciplinary and cross-sector research activities that focus on four categories of policy informatics - societal change, policy analysis, design interventions, and field building - that transcend contexts, including health, education, environment, and governance.
   long_description:
-  custom_filter: 
+  display_name:
     - Center for Policy Informatics
     - center-for-policy-informatics
   founding_partner: false
@@ -151,8 +151,8 @@
   short_description: >
     <p>Having good data is a vital step to making progress on social goals. However, open data is only valuable insofar as it is relevant to the concerns of society, and actually being used to improve people’s lives.  Open Knowledge International is a global non-profit organisation focussing on realising open data’s value to society - by helping civil society groups to take action on urgent societal problems using data.</p>
     <p>Open Knowledge International addresses this in three steps: 1) we show the value of open data for the work of civil society organizations; 2) we provide organizations with the tools and skills to effectively use open data; and 3) we make government information systems responsive to civil society.</p>
-  long_description: 
-  custom_filter: 
+  long_description:
+  display_name:
     - Open Knowledge International
     - open-knowledge-international
   founding_partner: false

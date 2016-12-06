@@ -1,34 +1,34 @@
 - title: Access
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Effectiveness
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Legitimacy
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Outside Innovation
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Participation
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Privacy
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false
 
 - title: Transparency
   description:
-  custom_filter: false
+  display_name: false
   cover_image: false

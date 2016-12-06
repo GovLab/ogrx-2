@@ -48,7 +48,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
       </div>
     </div>
     {% endif %}
-    {% endfor %}  
+    {% endfor %}
     </div>
 </section>
 
@@ -59,8 +59,12 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
 <section class="page-section main-categories">
   <div class="row expanded small-collapse medium-collapse large-collapse">
     {% for category in site.data.main-categories %}
+    {% assign name = category.title %}
+    {% if category.display_name %}
+    {% assign name = category.display_name %}
+    {% endif %}
     <div class="medium-3 column ">
-      <a class="category-item category-item--{{category.title | slugify}}" href="categories/{{category.title | slugify}}.html">{{category.title}}</a>
+      <a class="category-item category-item--{{category.title | slugify}}" href="categories/{{category.title | slugify}}.html">{{name}}</a>
     </div>
     {% endfor %}
   </div>
