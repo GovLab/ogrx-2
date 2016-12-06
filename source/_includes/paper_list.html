@@ -1,4 +1,3 @@
-{{include.category}}
 {% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: "innovationCategory", include.category %}
 <!-- {# List of Articles #} -->
 <div class="page-section results-section isotope">
@@ -18,7 +17,7 @@
           <span class="result-item__taxonomy__key">Category</span>
           <span class="result-item__taxonomy__value">
             {% for category in b.innovationCategory %}
-            <a href="../categories/{{category}}.html" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
+            <a href="../{{category | datapage_url: 'categories'}}" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
             {% endfor %}
           </span>
 
