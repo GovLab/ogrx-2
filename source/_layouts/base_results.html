@@ -1,8 +1,5 @@
 ---
 layout: default
-title: 
-subtitle: 
-main-category: open-data
 ---
 
 <div class="base-result-page">
@@ -10,15 +7,15 @@ main-category: open-data
     <div class="row align-center">
       <div class="large-10 column">
         <h1>{{page.title}}</h1>
-        <h3 class="top-section__tagline">{{page.subtitle}}</h3>    
+        <h3 class="top-section__tagline">{{page.subtitle}}</h3>
       </div>
     </div>
 
     <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
-    {% include filters.html %} 
+    {% include filters.html %}
   </div>
 
-  
-  {% include paper_list.html %} <!-- This will receive a pre-filter by David's Plugin -->
+  <!-- {% assign category = page.title | slugify %} -->
+  {% include paper_list.html category=page.title %} <!-- This will receive a pre-filter by David's Plugin -->
 
 </div>

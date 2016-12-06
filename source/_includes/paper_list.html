@@ -1,13 +1,14 @@
+{{include.category}}
+{% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: "innovationCategory", include.category %}
 <!-- {# List of Articles #} -->
 <div class="page-section results-section isotope">
   <div class="row expanded">
     <div class="column large-12">
 
-
-      {% for b in site.data.contentful.spaces.content.paper %}
+      {% for b in papers %}
 
       <div class="result-item" style="display: inline-block; margin-left: -4px;">
-        <h3 class="result-item__name"><a href="{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
+        <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
         <p class="result-item__authors">
           {% for author in b.authors %}
           <a href="../authors/{{author | slugify}}.html">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->

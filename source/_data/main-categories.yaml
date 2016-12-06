@@ -3,6 +3,11 @@
   custom_filter: false
   cover_image: false
 
+- title: Big Data
+  description: Based on an evolving understanding of behavioral tendencies, many public sector institutions are seeking to improve citizen’s decision-making ability without regulatory intervention.
+  custom_filter: Behavioral Science and Nudges
+  cover_image: false
+
 - title: Behavioral Research
   description: Based on an evolving understanding of behavioral tendencies, many public sector institutions are seeking to improve citizen’s decision-making ability without regulatory intervention.
   custom_filter: Behavioral Science and Nudges
