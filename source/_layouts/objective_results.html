@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="base-result-page">
+  <div class="top-section top-section--{{page.main-category}}">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <h1>{{page.title}}</h1>
+        <h3 class="top-section__tagline">{{page.subtitle}}</h3>
+      </div>
+    </div>
+
+    <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
+    {% include filters.html %}
+  </div>
+
+  {% if page.custom_filter %}
+  {% assign f = page.custom_filter %}
+  {% else %}
+  {% assign f = page.title %}
+  {% endif %}
+
+  {% include paper_list.html filter_on="objectiveCategory" filter_by=f %} <!-- This will receive a pre-filter by David's Plugin -->
+
+</div>

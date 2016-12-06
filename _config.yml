@@ -61,6 +61,12 @@ page_gen:
     dir: methodologies
     extension: html
 
+  - data: objectives
+    template: objective_results
+    name: title
+    dir: objectives
+    extension: html
+
   - data: contentful.spaces.content.blogpost
     template: blog_post
     name: title
