@@ -9,10 +9,13 @@
   display: block;
   cursor: pointer;
 
-  &:hover { 
-    text-decoration: none; 
+  &:hover {
+    text-decoration: none;
     color: white;
+    background-color: darken($main-color, 6);
   }
+
+  background-color: $main-color;
 
   // Colors for the main categories
   &--all { background-color: $all; }
