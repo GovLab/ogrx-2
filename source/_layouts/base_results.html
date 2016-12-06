@@ -16,11 +16,11 @@ layout: default
   </div>
 
   {% if page.custom_filter %}
-  {% assign cat = page.custom_filter %}
+  {% assign f = page.custom_filter %}
   {% else %}
-  {% assign cat = page.title %}
+  {% assign f = page.title %}
   {% endif %}
 
-  {% include paper_list.html category=cat %} <!-- This will receive a pre-filter by David's Plugin -->
+  {% include paper_list.html filter_on="innovationCategory" filter_by=f %} <!-- This will receive a pre-filter by David's Plugin -->
 
 </div>

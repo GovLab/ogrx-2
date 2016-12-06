@@ -1,4 +1,4 @@
-{% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: "innovationCategory", include.category %}
+{% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: include.filter_on, include.filter_by %}
 <!-- {# List of Articles #} -->
 <div class="page-section results-section isotope">
   <div class="row expanded">

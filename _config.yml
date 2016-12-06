@@ -55,6 +55,12 @@ page_gen:
     dir: categories
     extension: html
 
+  - data: methodologies
+    template: methodology_results
+    name: title
+    dir: methodologies
+    extension: html
+
   - data: contentful.spaces.content.blogpost
     template: blog_post
     name: title
