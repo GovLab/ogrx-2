@@ -15,7 +15,12 @@ layout: default
     {% include filters.html %}
   </div>
 
-  <!-- {% assign category = page.title | slugify %} -->
-  {% include paper_list.html category=page.title %} <!-- This will receive a pre-filter by David's Plugin -->
+  {% if page.custom_filter %}
+  {% assign cat = page.custom_filter %}
+  {% else %}
+  {% assign cat = page.title %}
+  {% endif %}
+
+  {% include paper_list.html category=cat %} <!-- This will receive a pre-filter by David's Plugin -->
 
 </div>
