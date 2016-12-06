@@ -1,10 +1,10 @@
 # import content of csv file into sqlite database
-# ruby create_db_from_csv.rb
+# ruby create_db_from_csv.rb CSVFILE.csv
 
 require "sqlite3"
 require "csv"
 
-DATA_FILE = "data.csv"
+DATA_FILE = ARGV[0]
 DB_FILE = "data.db"
 
 File.delete DB_FILE

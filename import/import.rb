@@ -6,6 +6,7 @@ require "sqlite3"
 require 'contentful/database_importer'
 require 'tempfile'
 require 'chronic'
+require './contentful_monkey_patch.rb'
 
 class Paper
   include Contentful::DatabaseImporter::Resource
