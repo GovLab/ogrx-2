@@ -1,6 +1,116 @@
 ---
 blogpost:
 - sys:
+    id: 14iiA42nvoacEWKcEkuGks
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
+    revision: 1
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: 'Toward Evidence-Based Open Governance by Curating and Exchanging Research:
+    OGRX 2.0'
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  type:
+  - Announcement
+  post: "The Open Governance Research Exchange (OGRX) is a platform that seeks to
+    identify, collect and share curated insights on new ways of solving public problems.
+    It was created last year by founding partners the GovLab, World Bank Digital Engagement
+    Evaluation Team and mySociety. Today, while more than 3000 representatives from
+    more than 70 countries are gathering in Paris for the Open Government Partnership
+    Summit, we are launching OGRX 2.0 with new features and functionalities to further
+    help users identify the signal in the noise of research and evidence on more innovative
+    means of governing.\n \n__What are the goals behind OGRX?__\nThe field of research
+    on topics falling under the banner of open governance is rapidly growing and evolving.
+    Identifying the most important findings remains challenging, however, and important
+    work often resides behind paywalls. OGRX seeks to improve the visibility and accessibility
+    of open governance research – across domains like open data, crowdsourcing and
+    civic tech – through curation, a submission form for users to share important
+    publications and a detailed taxonomy to help users browse and find the research
+    that fits their needs.\n \n__What is new?__\nFirst, the new OGRX Blog provides
+    an outlet for more easily digestible and shareable insights from the open governance
+    research community. OGRX currently features over 600 publications on governance
+    innovation – but how to digest and identify insights? This space will provide
+    summaries of important works, analyses of key trends in the field of research,
+    and guest posts from researchers working at the leading edge of governance innovation
+    across regions and domains. Check back often to stay on top of what’s new in open
+    governance research.\n \nSecond, the new OGRX Selected Readings series offers
+    curated reading lists from well-known experts in open governance. These Selected
+    Readings will give readers a sense of how to jumpstart their knowledge by focusing
+    on those publications that have been curated by those in the known about the topics
+    at hand. Today we are launching this new series with the Selected Readings on
+    Civic Technology [LINK], curated by mySociety’s head of research Rebecca Rumbul;
+    and the Selected Readings on Policy Informatics [LINK], curated Erik Johnston
+    of the [MacArthur Foundation Research Network on Opening Governance](http://www.opening-governance.org/)
+    and director of the Arizona State University Center for Policy Informatics. New
+    Selected Readings will be posted each month, so check back often!\n \n__Help us
+    develop this joint resource on Open Governance__\nThese new developments are only
+    the beginning of our efforts to increase the utility of OGRX and work toward more
+    evidence based open governance. Future efforts could include a forum for researchers
+    to share insights and best practices and a project inventory to help researchers
+    identify partners and avoid duplicative efforts. Watch this space and #OGRX to
+    stay abreast of new developments.\n \nAnd if you are interested in becoming an
+    OGRX partner, developing a Selected Readings list or penning a guest post for
+    the OGRX blog, please contact Andrew Young, OGRX editor-in-chief at [andrew@thegovlab.org](mailto:andrew@thegovlab.org).
+    We’d also love to hear your feedback on the platform and any ideas you might have
+    about how to ensure that it is as useful to the community of open governance researchers,
+    policymakers and practitioners as possible.\n\n\n"
+- sys:
+    id: aj31tGNX0s4giAi2gCusq
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-11-29 12:41:21.585000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-05 18:12:11.758000000 Z
+    revision: 3
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: Test blog
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Big Data
+  - Citizen Engagement and Collective Intelligence
+  type:
+  - Weekly update
+  highlight: It’s important to shape up your hedges, it’s like getting a haircut,
+    stay fresh.
+  post: |-
+    The key to more success is to get a massage once a week, very important, major key, cloth talk. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! In life there will be road blocks but we will over come it. Wraith talk. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.
+
+    The key to more success is to have a lot of pillows. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Wraith talk. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Cloth talk. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.
+
+    We the best. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. We don’t see them, we will never see them. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Special cloth alert. Congratulations, you played yourself. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
+
+    It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Celebrate success right, the only way, apple. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Every chance I get, I water the plants, Lion! You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
+
+    You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. Life is what you make it, so let’s make it. Every chance I get, I water the plants, Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.
+
+    Surround yourself with angels. Lion! The key to success is to keep your head above the water, never give up. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Surround yourself with angels. The key to success is to keep your head above the water, never give up. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
+
+    Give thanks to the most high. Congratulations, you played yourself. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Fan luv. The key to more success is to have a lot of pillows. The key is to drink coconut, fresh coconut, trust me. Mogul talk. Bless up. Fan luv. How’s business? Boomin. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.
+
+    Find peace, life is like a water fall, you’ve gotta flow. They never said winning was easy. Some people can’t handle success, I can. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Cloth talk. Mogul talk. They never said winning was easy. Some people can’t handle success, I can. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. Wraith talk.
+
+    Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
+
+    They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
+- sys:
     id: 4G5umLVsKcggomICggyMQa
     space:
       sys:
@@ -63,49 +173,3 @@ blogpost:
     else.\n\nI am the one that runs from both \n1. the living \n2. and the dead. \n\nHunted
     by *scavengers*, haunted by those I could not protect. So I exist in this wasteland,
     reduced to one instinct: __survive__."
-- sys:
-    id: aj31tGNX0s4giAi2gCusq
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-11-29 12:41:21.585000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-05 18:12:11.758000000 Z
-    revision: 3
-    contentType:
-      sys:
-        id: blogpost
-    locale: en-US
-  title: Test blog
-  author:
-  - Stefaan Verhulst
-  - Andrew Young
-  affiliation:
-  - The GovLab
-  innovationcategory:
-  - Big Data
-  - Citizen Engagement and Collective Intelligence
-  type:
-  - Weekly update
-  highlight: It’s important to shape up your hedges, it’s like getting a haircut,
-    stay fresh.
-  post: |-
-    The key to more success is to get a massage once a week, very important, major key, cloth talk. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! In life there will be road blocks but we will over come it. Wraith talk. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.
-
-    The key to more success is to have a lot of pillows. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Wraith talk. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Cloth talk. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm.
-
-    We the best. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. We don’t see them, we will never see them. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Special cloth alert. Congratulations, you played yourself. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
-
-    It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. Celebrate success right, the only way, apple. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Every chance I get, I water the plants, Lion! You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.
-
-    You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. Life is what you make it, so let’s make it. Every chance I get, I water the plants, Lion! The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast.
-
-    Surround yourself with angels. Lion! The key to success is to keep your head above the water, never give up. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Eliptical talk. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Surround yourself with angels. The key to success is to keep your head above the water, never give up. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-
-    Give thanks to the most high. Congratulations, you played yourself. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Fan luv. The key to more success is to have a lot of pillows. The key is to drink coconut, fresh coconut, trust me. Mogul talk. Bless up. Fan luv. How’s business? Boomin. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.
-
-    Find peace, life is like a water fall, you’ve gotta flow. They never said winning was easy. Some people can’t handle success, I can. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Cloth talk. Mogul talk. They never said winning was easy. Some people can’t handle success, I can. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. Wraith talk.
-
-    Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Bless up. They don’t want us to eat. How’s business? Boomin. They never said winning was easy. Some people can’t handle success, I can. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Give thanks to the most high. They key is to have every key, the key to open every door.
-
-    They don’t want us to win. Look at the sunset, life is amazing, life is beautiful, life is what you make it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. We don’t see them, we will never see them. They key is to have every key, the key to open every door. Look at the sunset, life is amazing, life is beautiful, life is what you make it.
