@@ -96,7 +96,7 @@ contentful:
         cda_query:                  # Optional
           content_type: paper
           include: 1
-          limit: 1000
+          # limit: 1000
         content_types:
           paper: SysMapper
           blogpost: SysMapper
@@ -126,6 +126,7 @@ contentful:
         cda_query:                  # Optional
           content_type: list
           include: 2
+          limit: 1000
         content_types:
           paper: SysMapper
           blogpost: SysMapper
