@@ -50,7 +50,7 @@
       m-{{ cat | slugify}}
       {% endfor %}
 
-      f-search-{{b.sys.id}}
+      f-search-{{b.sys.id | slugify}}
 
       " style="display: inline-block; margin-left: -4px;">
       <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
