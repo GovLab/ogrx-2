@@ -56,6 +56,33 @@
 <script>
 window.store = {
   
+  "paper-a19": {
+    "title": "Data Ethics – The New Competitive Advantage",
+    "author": "Grey Hasselbalch,Pernille Tranberg",
+    "category": "Small Data",
+    "content": "Respect for privacy and the individual’s right to control their own data is becoming a key competitive parameter. Companies, organisations and authorities that treat data ethics as a social responsibility as important as environmental awareness and respect for human rights are tomorrow’s winners. Digital trust is paramount for digital growth and welfare.  This book combines broad trend analysis with case studies of companies working with data ethics to varying degrees. The authors make the case how citizens and consumers are no longer just concerned about their lack of control over data, but also have begun to act, and how alternative business models, advances in technology and a new European data protection regulation combined foster a growing market for data ethical products and services. It provides a critical and fresh look at tech trends and the ethical dilemmas intertwined with them. It is a book for responsible players on how to get started with data ethics and how to use it to develop digital trust.",
+    "url": "papers/data-ethics--the-new-competitive-advantage.html"
+  }
+  ,
+  
+  "paper-388": {
+    "title": "Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle",
+    "author": "Liane Colonna",
+    "category": "Data Analysis,Small Data",
+    "content": "This paper is about how the concept of personal data mining, a term used to explain the individual use of dynamic data processing techniques to find hidden patterns and trends in large amounts of personal data, challenges the concept of data minimization. It is an attempt to demonstrate that fair information principles like data minimization, while providing a useful starting point for data protection laws, must give way to more nuanced legal rules and models. It stresses that a shift of paradigms from the current paternalistic approach to handling personal towards an empowered-user approach is needed in order to better protect privacy in light of recent advancements in technology.",
+    "url": "papers/mo-data-mo-problems-personal-data-mining-and-the-challenge-to-the-data-mnimization-principle.html"
+  }
+  ,
+  
+  "paper-155": {
+    "title": "Beyond the Quantified Self: Thematic exploration of a dataistic paradigm",
+    "author": "Minna Ruckenstein,Mika Pantzar",
+    "category": "Small Data",
+    "content": "This article investigates the metaphor of the Quantified Self (QS) as it is presented in the magazine Wired (2008–2012). Four interrelated themes—transparency, optimization, feedback loop, and biohacking—are identified as formative in defining a new numerical self and promoting a dataist paradigm. Wired captures certain interests and desires with the QS metaphor, while ignoring and downplaying others, suggesting that the QS positions self-tracking devices and applications as interfaces that energize technological engagements, thereby pushing us to rethink life in a data-driven manner. The thematic analysis of the QS is treated as a schematic aid for raising critical questions about self-quantification, for instance, detecting the merging of epistemological claims, technological devices, and market-making efforts. From this perspective, another definition of the QS emerges: a knowledge system that remains flexible in its aims and can be used as a resource for epistemological inquiry and in the formation of alternative paradigms.",
+    "url": "papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html"
+  }
+  
+  
 };
 </script>
 <script src="../js/lunr.min.js"></script>
@@ -101,44 +128,51 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-organization" class="filter js-change" disabled>
+            <select name="" id="filter-organization" class="filter js-change" >
               <option data-filter="*">Organization</option>
               
+              <option data-filter="f-swedish-law-and-informatics-institute">Swedish Law and Informatics Institute</option>
+              
             </select>
           </div>
         </div>
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-objective" class="filter js-change" disabled>
+            <select name="" id="filter-objective" class="filter js-change" >
               <option data-filter="**">Objective</option>
               
+              <option data-filter="f-legitimacy">Legitimacy</option>
+              
+              <option data-filter="f-privacy">Privacy</option>
+              
+              <option data-filter="f-effectiveness">Effectiveness</option>
+              
             </select>
           </div>
         </div>
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-methodology" class="filter js-change" disabled>
+            <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
+              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
+              
             </select>
           </div>
         </div>
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-sector" class="filter js-change" disabled>
+            <select name="" id="filter-sector" class="filter js-change" >
               <option data-filter="****">Sector</option>
               
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-region" class="filter js-change" disabled>
-              <option data-filter="*****">Region</option>
+              <option data-filter="f-human-rights">Human Rights</option>
+              
+              <option data-filter="f-business">Business</option>
+              
+              <option data-filter="f-health">Health</option>
               
             </select>
           </div>
@@ -146,8 +180,25 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-type" class="filter js-change" disabled>
+            <select name="" id="filter-region" class="filter js-change" >
+              <option data-filter="*****">Region</option>
+              
+              <option data-filter="f-europe">Europe</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
+              
+              <option data-filter="f-book">Book</option>
+              
+              <option data-filter="f-research-report">Research Report</option>
+              
+              <option data-filter="f-journal-article">Journal Article</option>
               
             </select>
           </div>
@@ -183,6 +234,273 @@ window.store = {
     <div class="column large-12">
 
       
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-legitimacy
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+      f-human-rights
+      
+      f-business
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-grey-hasselbalch
+      
+      f-pernille-tranberg
+      
+
+      
+      m-small-data
+      
+
+      f-search-paper-a19
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/data-ethics--the-new-competitive-advantage.html" title="Data Ethics – The New Competitive Advantage">Data Ethics – The New Competitive Advantage</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/grey-hasselbalch.html">Grey Hasselbalch</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/pernille-tranberg.html">Pernille Tranberg</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-true
+      f-open-true
+
+      
+      f-swedish-law-and-informatics-institute
+      
+
+      
+      f-legitimacy
+      
+      f-privacy
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+      f-europe
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-liane-colonna
+      
+
+      
+      m-data-analysis
+      
+      m-small-data
+      
+
+      f-search-paper-388
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/mo-data-mo-problems-personal-data-mining-and-the-challenge-to-the-data-mnimization-principle.html" title="Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle">Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/liane-colonna.html">Liane Colonna</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-effectiveness
+      
+      f-privacy
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+      f-health
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-minna-ruckenstein
+      
+      f-mika-pantzar
+      
+
+      
+      m-small-data
+      
+
+      f-search-paper-155
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html" title="Beyond the Quantified Self: Thematic exploration of a dataistic paradigm">Beyond the Quantified Self: Thematic exploration of a dataistic paradigm</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/minna-ruckenstein.html">Minna Ruckenstein</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/mika-pantzar.html">Mika Pantzar</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
   </div>
 </div>
 </div>

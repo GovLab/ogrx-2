@@ -56,6 +56,51 @@
 <script>
 window.store = {
   
+  "paper-a108": {
+    "title": "Participatory Budgeting — Not A One-Size-Fits All Approach",
+    "author": "Alexandra Flynn",
+    "category": "Participatory Budgeting",
+    "content": "Municipal staff and politicians are moving aside to let someone else make budget decisions – community residents. This practice, known as participatory budgeting or PB, is a completely different way of managing public money. It allows the public to both identify projects and programs that they want to see in their neighbourhoods, and to vote on which ones to fund. The process was developed twenty-five years ago and there are now over 1,500 participatory budgets around the world.",
+    "url": "papers/participatory-budgeting--not-a-one-size-fits-all-approach.html"
+  }
+  ,
+  
+  "paper-163": {
+    "title": "Democracy Reinvented: Participatory Budgeting and Civic Innovation in America",
+    "author": "Hollie Russon Gilman",
+    "category": "Citizen Engagement and Crowdsourcing,Participatory Budgeting",
+    "content": "Democracy Reinvented is the first comprehensive academic treatment of participatory budgeting in the United States, situating it within a broader trend of civic technology and innovation. This global phenomenon, which has been called “revolutionary civics in action” by the New York Times, started in Brazil in 1989 but came to America only in 2009.  Participatory budgeting empowers citizens to identify community needs, work with elected officials to craft budget proposals, and vote on how to spend public funds.Democracy Reinvented places participatory budgeting within the larger discussion of the health of U.S. democracy and focuses on the enabling political and institutional conditions.  Author and former White House policy adviser Hollie Russon Gilman presents theoretical insights, in-depth case studies, and interviews to offer a compelling alternative to the current citizen disaffection and mistrust of government. She offers policy recommendations on how to tap online tools and other technological and civic innovations to promote more inclusive governance.While most literature tends to focus on institutional changes without solutions, this book suggests practical ways to empower citizens to become change agents. Democracy Reinvented also includes a discussion on the challenges and opportunities that come with using digital tools to re-engage citizens in governance.",
+    "url": "papers/democracy-reinvented-participatory-budgeting-and-civic-innovation-in-america.html"
+  }
+  ,
+  
+  "paper-a65": {
+    "title": "Participatory Budgeting and Transparency in Municipal Finances",
+    "author": "H. Anthony Crossman,Dov Fischer",
+    "category": "Participatory Budgeting",
+    "content": "In the recessionary years following the 2008 financial crisis, prominent voices predicted an imminent crisis in state and municipal finances. The voices – including Bill Gates, Josh Ruah, Meredith Whitney, Paul Volcker, and Richard Ravitch – declared or implied that the road to fiscal responsibility lies in reining in the pensions and benefits of public servants. We argue that painting public employees as villains introduces divisiveness in what should be a universal goal of sound public finances. We suggest that the road to fiscal responsibility lies with budgetary transparency and widespread public knowledge of state and municipal finances. A potential key to achieving these objectives is participatory budgeting. We motivate a research question on the local government level: Does participatory budgeting increase transparency? Although it is too early to test this question on the local level, we use country-level data from the International Budgetary Partnership to explore ways to operationalize budgetary transparency in order to measure the association between participatory budgeting and budgetary transparency.",
+    "url": "papers/participatory-budgeting-and-transparency-in-municipal-finances.html"
+  }
+  ,
+  
+  "paper-a39": {
+    "title": "Participatory Budgeting in the United States: A Guide for Local Governments",
+    "author": "Victoria Gordon,Jeffery L. Osgood Jr.,Daniel Boden",
+    "category": "Participatory Budgeting",
+    "content": "Although citizen engagement is a core public service value, few public administrators receive training on how to share leadership with people outside the government. Participatory Budgeting in the United States serves as a primer for those looking to understand a classic example of participatory governance, engaging local citizens in examining budgetary constraints and priorities before making recommendations to local government. Utilizing case studies and an original set of interviews with community members, elected officials, and city employees, this book provides a rare window onto the participatory budgeting process through the words and experiences of the very individuals involved. The central themes that emerge from these fascinating and detailed cases focus on three core areas: creating the participatory budgeting infrastructure; increasing citizen participation in participatory budgeting; and assessing and increasing the impact of participatory budgeting. This book provides students, local government elected officials, practitioners, and citizens with a comprehensive understanding of participatory budgeting and straightforward guidelines to enhance the process of civic engagement and democratic values in local communities.",
+    "url": "papers/participatory-budgeting-in-the-united-states-a-guide-for-local-governments.html"
+  }
+  ,
+  
+  "paper-419": {
+    "title": "Technology for Transparent and Accountable Public Finance (TTAPF)",
+    "author": "Lucy Chambers,Velichka Dimitrova,Rufus Pollock",
+    "category": "Open Data,Data Analysis,Citizen Engagement and Crowdsourcing,Participatory Budgeting",
+    "content": "This report provides examples of projects around the world that are using technology (web, mobile or otherwise) to further aims of fiscal transparency. We focused on projects which:-Publish more or better data related to fiscal processes (aid, revenues, budgets, audits, etc.),-Help understand this data through the creation of better visualisation and ata analysis tools,-Educate citizens about fiscal processes, and assist civil society organisations in promoting accountable governance,-Facilitate direct participation in fiscal matters through participatory budgeting, citizen auditing, etc.,-Provide policymakers with complete and reliable data relevant to their work, enabling them to make better decisions.",
+    "url": "papers/technology-for-transparent-and-accountable-public-finance-ttapf.html"
+  }
+  
+  
 };
 </script>
 <script src="../js/lunr.min.js"></script>
@@ -101,17 +146,10 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-organization" class="filter js-change" disabled>
+            <select name="" id="filter-organization" class="filter js-change" >
               <option data-filter="*">Organization</option>
               
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-objective" class="filter js-change" disabled>
-              <option data-filter="**">Objective</option>
+              <option data-filter="f-open-knowledge-international">Open Knowledge International</option>
               
             </select>
           </div>
@@ -119,8 +157,35 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-methodology" class="filter js-change" disabled>
+            <select name="" id="filter-objective" class="filter js-change" >
+              <option data-filter="**">Objective</option>
+              
+              <option data-filter="f-effectiveness">Effectiveness</option>
+              
+              <option data-filter="f-legitimacy">Legitimacy</option>
+              
+              <option data-filter="f-participation">Participation</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
+              
+              <option data-filter="f-case-studies">Case Studies</option>
+              
+              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
+              
+              <option data-filter="f-survey">Survey</option>
+              
+              <option data-filter="f-ethnography">Ethnography</option>
+              
+              <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
+              
+              <option data-filter="f-user-studies">User Studies</option>
               
             </select>
           </div>
@@ -137,8 +202,10 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-region" class="filter js-change" disabled>
+            <select name="" id="filter-region" class="filter js-change" >
               <option data-filter="*****">Region</option>
+              
+              <option data-filter="f-united-states">United States</option>
               
             </select>
           </div>
@@ -146,8 +213,16 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-type" class="filter js-change" disabled>
+            <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
+              
+              <option data-filter="f-white-paper">White Paper</option>
+              
+              <option data-filter="f-book">Book</option>
+              
+              <option data-filter="f-working-paper">Working Paper</option>
+              
+              <option data-filter="f-research-report">Research Report</option>
               
             </select>
           </div>
@@ -183,6 +258,485 @@ window.store = {
     <div class="column large-12">
 
       
+
+      <div class="result-item
+      m-open-true
+      f-open-true
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-white-paper
+      
+
+      
+      f-alexandra-flynn
+      
+
+      
+      m-participatory-budgeting
+      
+
+      f-search-paper-a108
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/participatory-budgeting--not-a-one-size-fits-all-approach.html" title="Participatory Budgeting — Not A One-Size-Fits All Approach">Participatory Budgeting — Not A One-Size-Fits All Approach</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/alexandra-flynn.html">Alexandra Flynn</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/participatory-budgeting.html" class="result-item__tag result-item__tag--participatory-budgeting">Participatory Budgeting</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/white-paper.html">White Paper</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-effectiveness
+      
+      f-legitimacy
+      
+      f-participation
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+      f-survey
+      
+
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-hollie-russon-gilman
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-participatory-budgeting
+      
+
+      f-search-paper-163
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/democracy-reinvented-participatory-budgeting-and-civic-innovation-in-america.html" title="Democracy Reinvented: Participatory Budgeting and Civic Innovation in America">Democracy Reinvented: Participatory Budgeting and Civic Innovation in America</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/hollie-russon-gilman.html">Hollie Russon Gilman</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/participatory-budgeting.html" class="result-item__tag result-item__tag--participatory-budgeting">Participatory Budgeting</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-true
+      f-open-true
+
+      
+
+      
+      f-participation
+      
+      f-effectiveness
+      
+      f-legitimacy
+      
+
+      
+      f-ethnography
+      
+      f-case-studies
+      
+      f-qualitative-analysis
+      
+
+      
+
+      
+
+      
+
+      
+      f-working-paper
+      
+
+      
+      f-h-anthony-crossman
+      
+      f-dov-fischer
+      
+
+      
+      m-participatory-budgeting
+      
+
+      f-search-paper-a65
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/participatory-budgeting-and-transparency-in-municipal-finances.html" title="Participatory Budgeting and Transparency in Municipal Finances">Participatory Budgeting and Transparency in Municipal Finances</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/h-anthony-crossman.html">H. Anthony Crossman</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/dov-fischer.html">Dov Fischer</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/participatory-budgeting.html" class="result-item__tag result-item__tag--participatory-budgeting">Participatory Budgeting</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/working-paper.html">Working Paper</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-legitimacy
+      
+      f-effectiveness
+      
+
+      
+      f-qualitative-analysis
+      
+      f-ethnography
+      
+      f-user-studies
+      
+
+      
+
+      
+      f-united-states
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-victoria-gordon
+      
+      f-jeffery-l-osgood-jr
+      
+      f-daniel-boden
+      
+
+      
+      m-participatory-budgeting
+      
+
+      f-search-paper-a39
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/participatory-budgeting-in-the-united-states-a-guide-for-local-governments.html" title="Participatory Budgeting in the United States: A Guide for Local Governments">Participatory Budgeting in the United States: A Guide for Local Governments</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/victoria-gordon.html">Victoria Gordon</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/jeffery-l-osgood-jr.html">Jeffery L. Osgood Jr.</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/daniel-boden.html">Daniel Boden</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/participatory-budgeting.html" class="result-item__tag result-item__tag--participatory-budgeting">Participatory Budgeting</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          
+          <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-true
+      f-open-true
+
+      
+      f-open-knowledge-international
+      
+
+      
+      f-legitimacy
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-lucy-chambers
+      
+      f-velichka-dimitrova
+      
+      f-rufus-pollock
+      
+
+      
+      m-open-data
+      
+      m-data-analysis
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-participatory-budgeting
+      
+
+      f-search-paper-419
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/technology-for-transparent-and-accountable-public-finance-ttapf.html" title="Technology for Transparent and Accountable Public Finance (TTAPF)">Technology for Transparent and Accountable Public Finance (TTAPF)</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/lucy-chambers.html">Lucy Chambers</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/velichka-dimitrova.html">Velichka Dimitrova</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/rufus-pollock.html">Rufus Pollock</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/participatory-budgeting.html" class="result-item__tag result-item__tag--participatory-budgeting">Participatory Budgeting</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
   </div>
 </div>
 </div>
