@@ -28,7 +28,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
             <a href="./authors.html" class="button">Browse by author</a>
             <a href="./categories.html" class="button">Browse by category</a>
             <a href="./organizations.html" class="button">Browse by organization</a>
-            <a href="./lists.html" class="button">Browse curated lists</a>
+            <a href="./lists.html" class="button">Selected Readings</a>
 
           </div>
         </div>
@@ -59,7 +59,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
   </section>
 
   <section class="page-section main-categories">
-    <div class="row expanded small-collapse medium-collapse large-collapse">
+    <div class="row expanded small-collapse medium-collapse large-collapse" data-equalizer>
       <div class="medium-3 column ">
         <a class="category-item category-item--all" href="by/all.html">View All</a>
       </div>
@@ -69,7 +69,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
       {% assign name = category.display_name %}
       {% endif %}
       {% if category.featured %}
-      <div class="medium-3 column ">
+      <div class="medium-3 column" data-equalizer-watch>
         <a class="category-item category-item--{{name | slugify}}" href="categories/{{category.title | slugify}}.html">{{name}}</a>
       </div>
       {% endif %}
