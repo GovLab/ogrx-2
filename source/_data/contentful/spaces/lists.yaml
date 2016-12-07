@@ -1,0 +1,279 @@
+---
+list:
+- sys:
+    id: 6iITlL4lYQ0gK8sEseKqCy
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-07 02:32:12.935000000 Z
+    revision: 2
+    contentType:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Civic Technology
+  author:
+  - Rebecca Rumbul
+  affiliation:
+  - mySociety
+  description: "mySociety’s vision is for citizens around the world to feel empowered
+    to interact efficiently, effectively and meaningfully with their governments and
+    decision-makers using low cost and user-friendly civic technology. We want to
+    enable citizens to communicate through accessible means, to solve their problems
+    and to get what they are entitled to from institutions.\n\nWe believe that strong
+    democratic accountability and a thriving civil society are vital to our common
+    welfare, and that these cannot survive where people do not engage with government
+    and communities. We work online because we believe that the internet can meaningfully
+    lower the barriers to taking the first civic or democratic steps in a citizen’s
+    life, and that it can do so at scale.\n\nThese selected readings on civic technology
+    reflect this vision and greatly improve our understanding of how and why civic
+    tech is having an impact. \n\n__EVALUATING DIGITAL CITIZEN ENGAGEMENT : A PRACTICAL
+    GUIDE\n__\n*World Bank Group (2015)*\nWhenever I speak to someone that’s just
+    getting started in the civic tech world, this is the first report I suggest they
+    read. Its primarily aimed at practitioners rather than researchers, but it’s a
+    wonderful introduction to the key concepts, the challenges, the language and the
+    global landscape of civic tech. This report was informed by a lot of the main
+    stakeholders in civic tech, and includes great examples of the work that’s happening,
+    and the tasks associated with increasing and measuring digital civic engagement.
+    Civic tech is maturing as a field, and this report provides much encouraging inspiration
+    in analysing the real-world impacts of civic technologies, going beyond primitive
+    measurements to discuss meaningful methods.\n \n__THE PROBLEM OF CITIZENS: E-DEMOCRACY
+    FOR ACTUALLY EXISTING DEMOCRACY__\n*Kreiss (2015)*\nThis is an incredibly thoughtful
+    article that considers e-democracy initiatives to be fundamentally flawed in their
+    designs, and based on flawed assumptions about users being impartial and non-partisan.
+    It argues against generalising users of civic tech into a homogenous group, and
+    proposes that citizens be encouraged to deliberate and collaborate both within
+    and between partisan groupings in order to enhance understanding. Whilst I find
+    many of the suggestions in this paper impractical or unrealistic, and I do not
+    necessarily agree with the author on several points, the reason I enjoy it so
+    much is because it challenges assumptions that tend to be embedded into the civic
+    tech sphere, and prompts me to think about civic tech solutions in a different
+    way. In any field, there can be a tendency towards institutionalisation, and this
+    paper pushes against those boundaries with some very interesting arguments. \n
+    \n \n__\"I WLD LIKE U WMP TO EXTEND ELECTRICITY 2 OUR VILLAGE\": ON INFORMATION
+    TECHNOLOGY AND INTEREST ARTICULATION__ \n*Grossman, Humphreys & Saramone-Lutz
+    (2014)*\nIn a world where aid and development agencies, as well as philanthropists
+    and civil society, are promoting the transformative potential of the internet
+    in increasing civic engagement, this piece of research provides an incredibly
+    valuable insight into how individuals in developing countries are actually using
+    civic tech. A key risk in the research of civic tech is in drawing conclusions
+    based upon distinct or unrepresentative constituencies, and this research team
+    went to great lengths to conduct a high quality and well targeted analysis of
+    the low-income and marginalised individuals that are of significant interest to
+    the development community. This is an important piece of literature that I take
+    inspiration from when designing my own research projects. \n \n__WHO BENEFITS
+    FROM CIVIC TECH?__\n*mySociety (2015)*\nIt seems a little narcissistic to cite
+    a report produced by my own organisation, but its a report that provides some
+    useful insights into the users of civic tech, and how they feel about the tools
+    that they are using. It is again, something of a starting point for people who
+    are just entering the world of civic tech, and provides an overview not just of
+    demographics, but of public attitudes. The great thing about this report is its
+    comparative aspect, looking at both developed countries and developing countries,
+    and whilst it makes for uncomfortable reading in places (identifying the gender,
+    age and educational imbalances in the user bases), it also provides encouraging
+    data concerning users self-reported empowerment. \n \n__WHEN DOES ICT-ENABLED
+    CITIZEN VOICE LEAD TO GOVERNMENT RESPONSIVENESS?__\n*Peixoto & Fox (2016)* \nThis
+    is a really important piece of research examining one of the most critical aspects
+    of e-democracy technologies; the responsiveness of governments. Civic technologists
+    can build the most beautifully crafted and user friendly platforms in the world,
+    but if politicians or bureaucrats are unwilling or unable to be responsive to
+    the issues raised by the platforms, then failure is inevitable, and the consequence
+    is a disillusioned public. This research unfortunately does not provide a very
+    encouraging picture of current institutional behaviours, however is inspirational
+    and thought-provoking for civic technologists in identifying a key issue that
+    requires an innovative solution. "
+  articlesList:
+  - sys:
+      id: paper_360
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Evaluating Digital Citizen Engagement : A Practical Guide'
+    organization:
+    - World Bank Digital Engagement Evaluation Team
+    region:
+    - Brazil
+    - Uganda
+    - Cameroon
+    - Kenya
+    authors:
+    - World Bank Group
+    publicationDate: !ruby/object:DateTime 2015-02-25 12:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Data Analysis
+    objectiveCategory:
+    - Legitimacy
+    - Participation
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Working Paper
+    gitHub: ''
+    abstract: |-
+      With growing demand for transparency, accountability and citizen participation in
+       policy making and service provision, engagement between citizens and their governments,
+       as well as with donors and the private sector that deliver government
+       services, is increasingly important. Increased use of technology brings both opportunities
+       and challenges to citizen engagement processes, including opportunities
+       for collecting, analyzing and evaluating data about these processes. This guide provides
+       practical steps to assess the extent to which digital tools have contributed to
+       citizen engagement and the help to understand the impact that the introduction of
+       technology has had on the engagement processes. With examples and lessons from case studies from Brazil, Uganda, Cameroon and
+       Kenya, the guide provides practical tools and guidelines for use in evaluating the
+       expanding field of digital citizen engagement.
+    downloadLink: https://openknowledge.worldbank.org/bitstream/handle/10986/23752/deef-book.pdf?sequence=1&isAllowed=y
+    relatedContentTitle: ''
+    relatedContentUrl: ''
+    relatedDataUrl: ''
+  - sys:
+      id: paper_373
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: '"I wld like u WMP to extend electricity 2 our village": On Information
+      Technology and Interest Articulation'
+    region:
+    - Uganda
+    authors:
+    - Guy Grossman
+    - Macartan Humphreys
+    - Gabriella Sacramone-Lutz
+    publicationDate: !ruby/object:DateTime 2014-08-16 12:00:00.000000000 -04:00
+    innovationCategory:
+    - Civic Technology
+    - Citizen Engagement and Crowdsourcing
+    objectiveCategory:
+    - Participation
+    methodology:
+    - Case Studies
+    publicationType:
+    - Journal Article
+    gitHub: ''
+    abstract: 'How does access to information communication technology (ICT) affect
+      who gets heard and what gets communicated to politicians? On the one hand, ICT
+      can lower communication costs for poorer constituents; on the other, technological
+      channels may be used disproportionately more by the already well connected.
+      To assess the flattening effects of ICTs, we presented a representative sample
+      of constituents in Uganda with an opportunity to send a text message to their
+      representatives at one of three randomly assigned prices. Critically, and contrary
+      to concerns that technological innovations benefit the privileged, we find evidence
+      that ICT can lead to significant flattening: a greater share of marginalized
+      populations use this channel compared to existing political communication channels.
+      Price plays a more complex role. Subsidizing the full cost of messaging increases
+      uptake by over 40%. Surprisingly however, subsidy-induced increases in uptake
+      do not yield further flattening since free channels are not used at higher rates
+      by more marginalized constituents.'
+    downloadLink: http://journals.cambridge.org/download.php?file=%2FPSR%2FPSR108_03%2FS0003055414000331a.pdf&code=217f5c3bd941bed57005a5003ed21b36
+    relatedContentTitle: Appendices
+    relatedContentUrl: http://journals.cambridge.org/action/displaySuppMaterial?cupCode=1&type=4&jid=PSR&volumeId=108&issueId=03&aid=9327413&sessionId=CC69E58744D741A07ED364A13603DA95.journals
+    relatedDataUrl: ''
+  - sys:
+      id: paper_323
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Who Benefits From Civic Technology?
+    organization:
+    - mySociety
+    authors:
+    - Rebecca Rumbul
+    publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+    innovationCategory:
+    - Civic Technology
+    objectiveCategory:
+    - Participation
+    methodology:
+    - Quantitative Analysis
+    publicationType:
+    - Research Report
+    gitHub: ''
+    abstract: This research seeks to begin at the beginning, asking the most basic
+      questions about who actually uses civic technology and why. Gathering data from
+      civic technology groups from around the world, it shows the variations in usage
+      of civic tech across four core countries (US, UK, Kenya and South Africa), and
+      records the attitudes of users towards the platforms they are using.
+    downloadLink: http://www.mysociety.org/research/who-benefits-from-civic-technology/
+    relatedContentTitle: ''
+    relatedContentUrl: ''
+    relatedDataUrl: ''
+  - sys:
+      id: paper_321
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: When Does ICT-Enabled Citizen Voice Lead to Government Responsiveness?
+    organization:
+    - World Bank Digital Engagement Evaluation Team
+    authors:
+    - Tiago Peixoto
+    - Jonathan Fox
+    publicationDate: !ruby/object:DateTime 2016-01-01 12:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    objectiveCategory:
+    - Effectiveness
+    methodology:
+    - Case Studies
+    publicationType:
+    - Working Paper
+    gitHub: ''
+    abstract: |
+      This paper reviews evidence on the use of 23 information and communication technology (ICT) platforms
+       to project citizen voice to improve public service delivery. This meta-analysis focuses on empirical studies
+       of initiatives in the global South, highlighting both citizen uptake (‘yelp’) and the degree to which public
+       service providers respond to expressions of citizen voice (‘teeth’). The conceptual framework further distinguishes
+       between two trajectories for ICT-enabled citizen voice: Upwards accountability occurs when users
+       provide feedback directly to decision-makers in real time, allowing policy-makers and program managers
+       to identify and address service delivery problems – but at their discretion. Downwards accountability, in
+       contrast, occurs either through real time user feedback or less immediate forms of collective civic action
+       that publicly call on service providers to become more accountable and depends less exclusively on decision-
+       makers’ discretion about whether or not to act on the information provided. This distinction between
+       the ways in which ICT platforms mediate the relationship between citizens and service providers allows for
+       a precise analytical focus on how different dimensions of such platforms contribute to public sector responsiveness.
+       These cases suggest that while ICT platforms have been relevant in increasing policymakers’
+       and senior managers’ capacity to respond, most of them have yet to influence their willingness to do so.
+    downloadLink: http://openknowledge.worldbank.org/bitstream/handle/10986/23650/WDR16-BP-When-Does-ICT-Enabled-Citizen-Voice-Peixoto-Fox.pdf?sequence=1&isAllowed=y
+    relatedContentTitle: ''
+    relatedContentUrl: ''
+    relatedDataUrl: ''

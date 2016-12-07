@@ -88,16 +88,44 @@ page_gen:
 
 contentful:
   spaces:
-    - content: # Jekyll _data folder identifier - Required
+    - papers: # Jekyll _data folder identifier - Required
         space: ufh1mvj7xl16         # Required
-        access_token: a9ccc057a1e57a9dfe4ea80441cb35ae2f42ea8e5e8d37dfe08a65f7b0ae9254  # Required
-        # cda_query:                  # Optional
-        #   include: 2
-        #   limit: 100
-        all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
-        all_entries_page_size: 1000 # Optional - Defaults to 1000, maximum amount of entries per CDA Request for all_entries
+        access_token: 0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2  # Required
+        cda_query:                  # Optional
+          content_type: paper
+          include: 2
         content_types:
+          paper: SysMapper
           blogpost: SysMapper
+          list: SysMapper
+        # client_options:             # Optional
+        #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
+        base_path: ./source         # Optional - Defaults to Current directory
+        destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
+    - blog: # Jekyll _data folder identifier - Required
+        space: ufh1mvj7xl16         # Required
+        access_token: 0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2  # Required
+        cda_query:                  # Optional
+          content_type: blogpost
+          include: 2
+        content_types:
+          paper: SysMapper
+          blogpost: SysMapper
+          list: SysMapper
+        # client_options:             # Optional
+        #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
+        base_path: ./source         # Optional - Defaults to Current directory
+        destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
+    - lists: # Jekyll _data folder identifier - Required
+        space: ufh1mvj7xl16         # Required
+        access_token: 0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2  # Required
+        cda_query:                  # Optional
+          content_type: list
+          include: 2
+        content_types:
+          paper: SysMapper
+          blogpost: SysMapper
+          list: SysMapper
         # client_options:             # Optional
         #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
         base_path: ./source         # Optional - Defaults to Current directory
