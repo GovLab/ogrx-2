@@ -20,9 +20,13 @@ layout: default
         <a class="category-item category-item--all" href="by/all.html">View All</a>
       </div>
       {% for category in site.data.main-categories %}
+      {% assign name = category.title %}
+      {% if category.display_name %}
+      {% assign name = category.display_name %}
+      {% endif %}
       {% if category.featured %}
       <div class="medium-3 column ">
-        <a class="category-item category-item--{{category.title | slugify}}" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
+        <a class="category-item category-item--{{name | slugify}}" href="main-categories/{{category.title | slugify}}.html">{{name}}</a>
       </div>
       {% endif %}
       {% endfor %}
