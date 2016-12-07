@@ -61,11 +61,19 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
 
     {% endfor %}
 
-    {% for a in authors | sort %}
-    <div class="column large-4 all-authors-list__list-item">
-      <a href="by/author.html?filter=.f-{{a | slugify}}">{{a}}</a>
-    </div>
+
+    {% assign sorted_authors = authors | sort_authors %}
+
+    {% for a in sorted_authors %}
+        <div class="alpha_anchor">
+            <a name="{{a | get_last_initial }}"></a>
+        </div>
+        <div class="column large-4 all-authors-list__list-item">
+          <a href="by/author.html?filter=.f-{{a | slugify }}">{{ a }}</a>
+        </div>
     {% endfor %}
+
+
   </div>
 </div>
 
