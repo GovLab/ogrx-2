@@ -98,8 +98,8 @@ $(function() {
         scopes = d;
 
         for (var s in scopes) {
-            scopes[s].custom_filter &&
-            getIndex(slug(scopes[s].custom_filter));
+            scopes[s].display_name &&
+            getIndex(slug(scopes[s].display_name));
         }
     })
     .fail(function() {

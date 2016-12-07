@@ -33,6 +33,10 @@
   padding-bottom: 0; }
   .top-section > h1:only-child {
     padding-bottom: 40px; }
+  .top-section h2:last-child,
+  .top-section h3:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px; }
 
 .top-bar {
   background-color: rgba(0, 0, 0, 0.1);
@@ -104,6 +108,24 @@
     font-size: 1.1rem; }
     .all-categories__item:nth-of-type(even) {
       background-color: rgba(0, 0, 0, 0.03); }
+
+.list__description {
+  padding: 40px; }
+  .list__description a {
+    text-decoration: none; }
+  .list__description h2 {
+    font-size: 1.8rem;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 0; }
+  .list__description h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .list__description h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: none; }
 
 .footer h4 {
   font-size: 1rem;
@@ -332,6 +354,21 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   margin: 36px 0 0 0px;
   max-width: 171px; }
 
+.organization {
+  display: block;
+  padding: 20px;
+  margin: 0 auto; }
+  .organization--founding-partner {
+    max-width: 320px; }
+  .organization--contributing-partner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 250px;
+    max-height: 150px; }
+
+.organization--digital-engagement-evaluation-team {
+  max-width: 380px; }
+
 #submit-button {
   text-align: center;
   position: relative;
@@ -395,10 +432,12 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   text-transform: uppercase;
   color: white;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #004f6f; }
   .category-item:hover {
     text-decoration: none;
-    color: white; }
+    color: white;
+    background-color: #003950; }
   .category-item--all {
     background-color: #3b4f65; }
   .category-item--behavioral-research, .category-item--behavioral-science-and-nudges {
@@ -457,13 +496,6 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background-color: rgba(219, 192, 72, 0.2);
   color: #dbc048; }
 
-.b-organizations .e-organization-logo {
-  padding: 60px 20px; }
-  @media (max-width: 40em) {
-    .b-organizations .e-organization-logo {
-      max-width: 260px;
-      margin: 0 auto; } }
-
 .top-section--all {
   background-color: #3b4f65; }
 .top-section--behavioral-research {
@@ -480,13 +512,6 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background-color: #00ad98; }
 .top-section--labs-and-experimentation {
   background-color: #dbc048; }
-
-.b-about-page .b-contributing-partners .e-contributor-logo {
-  margin: 40px 0 0 0;
-  max-height: 80px;
-  max-width: 225px;
-  top: 50%;
-  transform: translateY(-50%); }
 
 .organizations {
   text-align: center; }
@@ -675,3 +700,126 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 .filter-panel {
   text-align: center; }
+
+.top-section {
+  background-color: #004f6f;
+  margin-top: -66px;
+  padding-top: 136px; }
+
+a {
+  cursor: pointer; }
+
+.sidebar {
+  background-color: #005e83;
+  padding: 40px 0;
+  height: 100%; }
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 60px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  text-align: right; }
+.sidebar-menu a:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05); }
+.sidebar-menu a:hover {
+  background-color: #F0B300;
+  text-decoration: none; }
+
+.blog-list > .row {
+  margin-left: 0; }
+.blog-list > .row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.post {
+  padding: 30px 60px 30px; }
+  .post h2 {
+    font-size: 1.3rem;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 0; }
+  .post__meta {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+    margin-top: 0; }
+  .post a {
+    text-decoration: none; }
+  .post__author, .post__date {
+    color: rgba(0, 79, 111, 0.4); }
+    .post__author:hover, .post__date:hover {
+      color: #004f6f; }
+  .post__category {
+    display: inline-block;
+    padding: 6px 10px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0, 79, 111, 0.5);
+    margin-bottom: 5px; }
+    .post__category.m-behavioral-research, .post__category.m-behavioral-science-and-nudges {
+      background-color: #de606c; }
+    .post__category.m-citizen-engagement {
+      background-color: #5fa9d4; }
+    .post__category.m-civic-technology, .post__category.m-civic-tech {
+      background-color: #a67fb9; }
+    .post__category.m-data-analysis {
+      background-color: #f3b44b; }
+    .post__category.m-expert-networking {
+      background-color: #6e7b97; }
+    .post__category.m-open-data {
+      background-color: #00ad98; }
+    .post__category.m-labs-and-experimentation {
+      background-color: #dbc048; }
+
+#blog-single .blog-header h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px; }
+#blog-single .blog-single__meta {
+  font-weight: 400;
+  text-transform: none; }
+#blog-single .blog-single {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 1.2rem;
+  font-weight: 200; }
+  #blog-single .blog-single h2, #blog-single .blog-single h3, #blog-single .blog-single h4 {
+    color: #004f6f; }
+  #blog-single .blog-single__highlight {
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: left;
+    color: rgba(0, 79, 111, 0.6);
+    line-height: 1.3;
+    margin-bottom: 80px; }
+  #blog-single .blog-single h2 {
+    font-size: 1.4rem; }
+  #blog-single .blog-single h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+  #blog-single .blog-single h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: none; }
+  #blog-single .blog-single img {
+    max-width: 100%;
+    margin: 10px auto; }
+  #blog-single .blog-single li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 8px; }
+    #blog-single .blog-single li:before {
+      width: 0;
+      height: 0;
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 8px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 7px solid #004f6f; }

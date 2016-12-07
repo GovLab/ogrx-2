@@ -7,10 +7,10 @@
 
     <title>Expert Networking</title>
     
-    <link rel="stylesheet" href="/vendor/foundation.min.css">
-    <link rel="stylesheet" href="/vendor/styleguide-v2.css">
-    <link rel="stylesheet" href="/vendor/slick.css"/>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/ogrx-2/vendor/foundation.min.css">
+    <link rel="stylesheet" href="/ogrx-2/vendor/styleguide-v2.css">
+    <link rel="stylesheet" href="/ogrx-2/vendor/slick.css"/>
+    <link rel="stylesheet" href="/ogrx-2/css/styles.css">
     <script src="https://use.typekit.net/mvc3cdb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,13 +20,13 @@
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
-    <a href="/">Home</a>
-    <a href="/organizations.html">Organizations</a>
-    <a href="/categories.html">Categories</a>
-    <a href="/authors.html">Authors</a>
-    <a href="/about.html">About</a>
-    <a href="/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
-    <a href="/submit.html">Submit</a>
+    <a href="/ogrx-2/">Home</a>
+    <a href="/ogrx-2/organizations.html">Organizations</a>
+    <a href="/ogrx-2/categories.html">Categories</a>
+    <a href="/ogrx-2/authors.html">Authors</a>
+    <a href="/ogrx-2/about.html">About</a>
+    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
   <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
@@ -38,19 +38,22 @@
 </header>
 
     <div class="base-result-page">
-  <div class="top-section top-section--open-data">
+  <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
         <h1>Expert Networking</h1>
-        <h3 class="top-section__tagline"></h3>    
+        <h3 class="top-section__tagline"></h3>
       </div>
     </div>
 
+    
+    
+
     <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
-    <!-- Need to port all the logic for the filters -->
+    
 
 <section class="filters">
-  
+
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
       <div class="switch">
@@ -69,169 +72,432 @@
       <form action="" class="search search--main-search search--negative lunr-form" id="lunr-filter-form">
         <input id="lunr-filter" type="text" placeholder="Search" data-category="" />
         <input class="search__trigger material-icons" type="button" value="search">
-      </form>  
+      </form>
     </div>
   </div>
 
   <div class="filter-controls">
     <div class="row expanded align-center">
       <div class="large-12 column">
+
         
+        
+        
+        
+        
+        
+        
+
+        
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-organization" class="filter js-change" disabled>
+              <option data-filter="*">Organization</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-objective" class="filter js-change" >
+              <option data-filter="**">Objective</option>
               
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-effectiveness">Effectiveness</option>
               
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-participation">Participation</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-methodology" class="filter js-change" >
+              <option data-filter="***">Methodology</option>
               
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
               
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-survey">Survey</option>
               
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-randomized-controlled-trial">Randomized Controlled Trial</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-sector" class="filter js-change" >
+              <option data-filter="****">Sector</option>
               
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-energy">Energy</option>
               
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-health">Health</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-region" class="filter js-change" >
+              <option data-filter="*****">Region</option>
               
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-middle-east">Middle East</option>
               
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-honduras">Honduras</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-type" class="filter js-change" >
+              <option data-filter="******">Type</option>
               
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+              <option data-filter="f-journal-article">Journal Article</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
+
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-" class="filter js-change">
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
-              
-              <option data-filter="">Filter Label</option>
+            <select name="" id="filter-project" class="filter js-change" disabled>
+              <option data-filter="*******">Project</option>
               
             </select>
           </div>
-        </div> 
-        
+        </div>
+
       </div>
-    </div>  
+    </div>
     <div class="row align-center">
       <div class="large-3 column">
-        <div class="button">clear filters</div>
+        <a class="button" id="clear-filter-btn">Clear Filters</a>
       </div>
     </div>
   </div>
-  
 
-</section> 
+
+</section>
   </div>
 
   
-  <!-- {# List of Articles #} -->
+
 <div class="page-section results-section isotope">
   <div class="row expanded">
     <div class="column large-12">
+
+      
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-ani-mateia
+      
+      f-sergiu-ioan-irimia
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-expert-networking
+      
+
+      f-search-paper_179
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/open-source-governancea-more-ambitious-cousin-of-collaborative-governance.html" title="Open Source Governance—A More Ambitious Cousin of Collaborative Governance">Open Source Governance—A More Ambitious Cousin of Collaborative Governance</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/ani-mateia.html">Ani Mateia</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/sergiu-ioan-irimia.html">Sergiu Ioan Irimia</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/expert-networking.html" class="result-item__tag result-item__tag--expert-networking">Expert Networking</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
       
     </div>
+
+    
+
+      <div class="result-item
+      m-open-true
+      f-open-true
+
+      
+
+      
+      f-effectiveness
+      
+      f-participation
+      
+
+      
+      f-survey
+      
+
+      
+      f-energy
+      
+
+      
+      f-middle-east
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-hasan-almasi
+      
+      f-mohammad-reza-palizdar
+      
+      f-hossein-parsian
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-expert-networking
+      
+
+      f-search-paper_61
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/budgetary-participation-and-managerial-performance-the-impact-of-information-and-environmental-volatility.html" title="Budgetary participation and managerial performance: The impact of information and environmental volatility">Budgetary participation and managerial performance: The impact of information and environmental volatility</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/hasan-almasi.html">Hasan Almasi</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/mohammad-reza-palizdar.html">Mohammad Reza Palizdar</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/hossein-parsian.html">Hossein Parsian</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/expert-networking.html" class="result-item__tag result-item__tag--expert-networking">Expert Networking</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      m-open-false
+      f-open-false
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-randomized-controlled-trial
+      
+
+      
+      f-health
+      
+
+      
+      f-honduras
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-david-a-kim
+      
+      f-alison-r-hwong
+      
+      f-derek-stafford
+      
+      f-d-alex-hughes
+      
+      f-a-james-o-malley
+      
+      f-james-h-fowler
+      
+      f-nicholas-a-christakis
+      
+
+      
+      m-expert-networking
+      
+      m-data-analysis
+      
+      m-social-media
+      
+
+      f-search-paper_55
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/social-network-targeting-to-maximise-population-behaviour-change-a-cluster-randomised-controlled-trial.html" title="Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial">Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../authors/david-a-kim.html">David A. Kim</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/alison-r-hwong.html">Alison R. Hwong</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/derek-stafford.html">Derek Stafford</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/d-alex-hughes.html">D. Alex Hughes</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/a-james-o-malley.html">A. James O'Malley</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/james-h-fowler.html">James H. Fowler</a> <!-- FIX THE COMMA SEPARATION -->
+        
+        <a href="../authors/nicholas-a-christakis.html">Nicholas A. Christakis</a> <!-- FIX THE COMMA SEPARATION -->
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/expert-networking.html" class="result-item__tag result-item__tag--expert-networking">Expert Networking</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/randomized-controlled-trial.html">Randomized Controlled Trial</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
   </div>
-</div> <!-- This will receive a pre-filter by David's Plugin -->
+</div>
+</div>
 
 </div>
 
@@ -239,12 +505,13 @@
   <div class="row">
     <div class="medium-3 column footer__content">
         <h4>Sections</h4>
-        <a href="/organizations.html" class="footer-links">Organizations</a>
-        <a href="/categories.html" class="footer-links">Categories</a>
-        <a href="/about.html" class="footer-links">About</a>
+        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+        <a href="/ogrx-2/about.html" class="footer-links">About</a>
         <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
         <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
         <a class="footer-links js-open-modal" href="#">Report Errors</a>
+        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
     </div>
 
     <div class="medium-3 column footer__content">
@@ -254,9 +521,9 @@
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
     </div>
   </div>
 </footer>
@@ -270,7 +537,7 @@
     </div>
     <div class="large-4 columns">
       <div class="powered-by">
-        <p>Powered by <a target="_blank" href="http://www.thegovlab.org/"><img src="/images/govlab-logo-white.png" alt="NYU Gov Lab logo" class="powered-by__logo"/></a></p>
+        <p>Powered by <a target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo" class="powered-by__logo"/></a></p>
       </div>
     </div>
   </div>
@@ -279,15 +546,15 @@
 
     <div id="overlay" class="js-overlay"></div>
     <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/vendor/jquery-2.1.4.min.js"></script>
-    <script src="/vendor/slick.min.js"></script>
+    <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
+    <script src="/ogrx-2/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/js/scripts.js"></script>
-    <script src="/js/underscore.js"></script>
-    <script src="/js/lunr.js"></script>
-    <script src="/js/lib/scripts.js"></script>
-    <script src="/js/filters.js"></script>
-    <script src="/js/search.js"></script>
-    <script src="/js/uiscripts.js"></script>
+    <script src="/ogrx-2/js/scripts.js"></script>
+    <script src="/ogrx-2/js/underscore.js"></script>
+    <script src="/ogrx-2/js/lunr.js"></script>
+    <script src="/ogrx-2/js/lib/scripts.js"></script>
+    <script src="/ogrx-2/js/filters.js"></script>
+    <script src="/ogrx-2/js/search.js"></script>
+    <script src="/ogrx-2/js/uiscripts.js"></script>
   </body>
 </html>
