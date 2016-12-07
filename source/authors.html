@@ -14,10 +14,10 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
   <div class="row expanded align-center featured-authors">
       {% for a in site.data.custom_authors %}
       <div class="large-4 column featured-authors__list-item">
-        <a href="{{a.title | slugify }}.html">
-          <div class="featured-authors__picture" style="background-image: url('../images/authors/{{ a.image }}');"></div>
+        <a href="{{a.title | datapage_url: 'authors'}}">
+          <div class="featured-authors__picture" style="background-image: url('images/authors/{{ a.image }}');"></div>
         </a>
-        <a href="./custom-authors/{{a.title | slugify }}.html">
+        <a href="{{a.title | datapage_url: 'authors'}}">
           <p class="featured-authors__name">{{a.title}}</p>
         </a>
         <p class="featured-authors__job">{{a.job}}</p>
@@ -30,7 +30,7 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
 <div class="divider">
   <h1>All Authors</h1>
 </div>
-  
+
 <div class="page-section all-authors-list">
   <div class="row expanded">
     <div class="large-12 columns all-authors-list__index">
