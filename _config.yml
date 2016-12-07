@@ -73,13 +73,13 @@ page_gen:
     dir: types
     extension: html
 
-  - data: contentful.spaces.content.blogpost
+  - data: contentful.spaces.blog.blogpost
     template: blog_post
     name: title
     dir: blog
     extension: html
 
-  - data: contentful.spaces.content.paper
+  - data: contentful.spaces.papers.paper
     template: paper
     name: publicationName
     dir: papers
