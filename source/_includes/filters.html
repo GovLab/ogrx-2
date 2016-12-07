@@ -74,21 +74,13 @@
         {% endfor %}
 
         {% endfor %}
-        <br>
-        {{ organization_filters | inspect }}
-        {{ objective_filters | inspect }}
-        {{ methodology_filters | inspect }}
-        {{ sector_filters | inspect }}
-        {{ region_filters | inspect }}
-        {{ type_filters | inspect }}
-        <br>
 
         <div class="filter-ui-container">
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Organization</option>
-              {% for r in papers[0].organization %}
-              <option data-filter="">r</option>
+              {% for r in organization_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -98,8 +90,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Objective</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in objective_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -109,8 +101,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Methodology</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in methodology_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -120,8 +112,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Sector</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in sector_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -131,8 +123,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Region</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in region_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -142,8 +134,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Type</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in type_filters %}
+              <option data-filter="">{{r}}</option>
               {% endfor %}
             </select>
           </div>
@@ -154,8 +146,8 @@
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
               <option data-filter="">Project</option>
-              {% for r in (1..5) %}
-              <option data-filter="">Filter Label</option>
+              {% for r in organization_filters %}
+              <option data-filter="">r</option>
               {% endfor %}
             </select>
           </div>
