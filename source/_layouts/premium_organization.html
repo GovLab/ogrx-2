@@ -55,8 +55,6 @@ layout: default
     <h1>Articles</h1>
   </div>
 
-  {% assign papers = site.data.papers | filter_data_by_field: 'organization', page.title %}
-  {% include paper_list.html %}  
+  {% include paper_list.html filter_on="organization" filter_by=page.title %}
 
-  
 </div>
