@@ -2,19 +2,33 @@
 layout: default
 ---
 
-<form action="search.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
-</form>
+<div class="all-categories-page">
 
-<div class="page-section results-section isotope">
-  <div class="row expanded">
-    <div class="column large-12">
-      <div id="search-results"></div>
+  <div class="top-section top-section--main-color">
+    <div class="row align-center">
+      <div class="large-9 column">
+        <h1>Search</h1>
+        <div class="row">
+          <form class="search search--main-search search--negative" action="search.html">
+            <input id="search-box" name="query" class="" type="text" name="s" placeholder="Search by keyword">
+            <input class="search__trigger material-icons" type="submit" value="search">
+          </form>
+        </div>
+        <div class="row">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-section results-section isotope">
+    <div class="row expanded">
+      <div class="column large-12">
+        <div id="search-results"></div>
+      </div>
     </div>
   </div>
-</div>
 
 <!-- {% for p in site.data.contentful.spaces.papers.paper %}
 "{{ p.sys.id | slugify }}": {

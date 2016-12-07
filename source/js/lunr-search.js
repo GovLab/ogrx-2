@@ -13,7 +13,7 @@
         s += '<div class="result-item" style="display: inline-block; margin-left: -4px;">';
         s += '<a href="' + item.url + '"><h3 class="result-item__name" >' + item.title + '</h3></a><p class="result-item__authors">';
         for (var j in authors) {
-          s += '<a href="">' + authors[j] + '</a>';
+          s += '<a href="">' + authors[j] + '</a> ';
         }
         s += '</p><div class="result-item__taxonomy result-item__taxonomy--category"><span class="result-item__taxonomy__key">Category</span>';
         for (var j in categories) {
