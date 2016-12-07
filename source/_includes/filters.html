@@ -1,5 +1,5 @@
-<!-- Need to port all the logic for the filters -->
 
+{% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: include.filter_on, include.filter_by %}
 <section class="filters">
 
   <div class="row align-center">
@@ -27,18 +27,140 @@
   <div class="filter-controls">
     <div class="row expanded align-center">
       <div class="large-12 column">
-        {% for r in (1..7) %}
+
+        {% assign organization_filters = "" | split:"|" %}
+        {% assign objective_filters = "" | split:"|" %}
+        {% assign methodology_filters = "" | split:"|" %}
+        {% assign sector_filters = "" | split:"|" %}
+        {% assign region_filters = "" | split:"|" %}
+        {% assign type_filters = "" | split:"|" %}
+
+        {% for p in papers %}
+
+        {% for x in p.organization %}
+        {% unless organization_filters contains x %}
+        {% assign organization_filters = organization_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% for x in p.objectiveCategory %}
+        {% unless objective_filters contains x %}
+        {% assign objective_filters = objective_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% for x in p.methodology %}
+        {% unless methodology_filters contains x %}
+        {% assign methodology_filters = methodology_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% for x in p.sectorCategory %}
+        {% unless sector_filters contains x %}
+        {% assign sector_filters = sector_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% for x in p.region %}
+        {% unless region_filters contains x %}
+        {% assign region_filters = region_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% for x in p.publicationType %}
+        {% unless type_filters contains x %}
+        {% assign type_filters = type_filters | push: x %}
+        {% endunless %}
+        {% endfor %}
+
+        {% endfor %}
+        <br>
+        {{ organization_filters | inspect }}
+        {{ objective_filters | inspect }}
+        {{ methodology_filters | inspect }}
+        {{ sector_filters | inspect }}
+        {{ region_filters | inspect }}
+        {{ type_filters | inspect }}
+        <br>
+
         <div class="filter-ui-container">
           <div class="select">
             <select name="" id="filter-{{field | slugify}}" class="filter js-change">
-              <option data-filter="">Filter Label</option>
+              <option data-filter="">Organization</option>
+              {% for r in papers[0].organization %}
+              <option data-filter="">r</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Objective</option>
               {% for r in (1..5) %}
               <option data-filter="">Filter Label</option>
               {% endfor %}
             </select>
           </div>
         </div>
-        {% endfor %}
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Methodology</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Sector</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Region</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Type</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-{{field | slugify}}" class="filter js-change">
+              <option data-filter="">Project</option>
+              {% for r in (1..5) %}
+              <option data-filter="">Filter Label</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="row align-center">
