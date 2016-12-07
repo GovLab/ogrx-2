@@ -1,124 +1,143 @@
-- title: All
-  description: Across the world, science and technology are creating innovative ways for people to tackle society’s problems together.
-  display_name: false
-  cover_image: false
-
 - title: Big Data
   description: Based on an evolving understanding of behavioral tendencies, many public sector institutions are seeking to improve citizen’s decision-making ability without regulatory intervention.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Behavioral Sciences and Nudges
   description: Based on an evolving understanding of behavioral tendencies, many public sector institutions are seeking to improve citizen’s decision-making ability without regulatory intervention.
   display_name: Behavioral Research
   cover_image: false
+  featured: true
 
 - title: Citizen Engagement
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: Citizen Engagement and Crowdsourcing
   cover_image: false
+  featured: true
 
 - title: Citizen Engagement and Collective Intelligence
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Citizen Science
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Co-Creation
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Collective Intelligence
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Crowdlaw
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Data Collaboratives
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Design Thinking
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Distributed Governance
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Freedom of Information
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Gamification
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Institutional Innovation
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Participatory Budgeting
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Prizes and Challenges
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Small Data
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Smart Cities
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Social Media
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
+  featured: false
 
 - title: Civic Technology
   description: New digital platforms and collaboration tools are transforming government service delivery and engagement with citizens.
   display_name: false
   cover_image: false
+  featured: true
 
 - title: Data Analysis
   description: The ability to analysis a growing array of data is allowing for more evidence-based decision-making and the development of new insights and knowledge.
   display_name: false
   cover_image: false
+  featured: true
 
 - title: Expert Networking
   description: Rather than crowdsourcing widely, expert networking can enable the targeting of opportunities to participate based on an individual’s skills and experiences.
   display_name: false
   cover_image: false
+  featured: true
 
 - title: Open Data
   description: Open data is publicly available data that can be universally and readily accessed, used, and redistributed free of charge. It is structured for usability and computability.
   display_name: false
   cover_image: false
+  featured: true
 
 - title: Labs and Experimentation
   description: Institutions are increasingly creating internal innovation labs and leveraging agile experimentation to gain a better sense of what works in practice.
   display_name: false
   cover_image: false
+  featured: true

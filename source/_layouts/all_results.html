@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="base-result-page">
+  <div class="top-section top-section--{{page.main-category}}">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <h1>All Articles</h1>
+        <h3 class="top-section__tagline">Across the world, science and technology are creating innovative ways for people to tackle society’s problems together.</h3>
+      </div>
+    </div>
+
+    {% assign filter_by_ = "*" %}
+    {% assign filter_on_ = "*" %}
+
+    <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
+    {% include filters.html filter_on=filter_on_ filter_by=filter_by_ %}
+  </div>
+
+  {% include paper_list.html filter_on=filter_on_ filter_by=filter_by_ %}
+
+</div>

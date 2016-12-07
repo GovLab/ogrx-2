@@ -8,41 +8,44 @@ layout: default
     <div class="row align-center">
       <div class="large-9 column">
         <h1>Main Categories</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta corrupti expedita quam voluptas</h3>    
+        <h3>Across the world, science and technology are creating innovative ways for people to tackle society’s problems together.</h3>
       </div>
     </div>
-    
+
   </div>
 
-<section class="page-section main-categories">
-  <div class="row expanded small-collapse medium-collapse large-collapse">
-    {% for category in site.data.main-categories %}
-    <div class="medium-3 column ">
-      <a class="category-item category-item--{{category.title | slugify}}" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
+  <section class="page-section main-categories">
+    <div class="row expanded small-collapse medium-collapse large-collapse">
+      <div class="medium-3 column ">
+        <a class="category-item category-item--all" href="by/all.html">View All</a>
+      </div>
+      {% for category in site.data.main-categories %}
+      {% if category.featured %}
+      <div class="medium-3 column ">
+        <a class="category-item category-item--{{category.title | slugify}}" href="main-categories/{{category.title | slugify}}.html">{{category.title}}</a>
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-</section>
+  </section>
 
   <div class="divider">
-    <h1>All Categories</h1>
+    <h1>Additional Categories</h1>
   </div>
 
   <div class="page-section all-categories">
-      <div class="row expanded">
-        {% for cat in site.data.taxonomy_category %}
-          <!-- Failed attempt to remove dupes -->
-          <!-- {% unless site.data.main-categories contains cat %} -->
-          
-          <div class="column large-4 all-categories__item">
-            <a href="./categories/{{cat.title}}.html">{{cat.value}}</a>
-          </div>
+    <div class="row expanded">
+      {% for category in site.data.main-categories %}
 
-          <!-- {% endunless %} -->
-          
-        {% endfor %}
+      {% unless category.featured %}
+      <div class="column large-4 all-categories__item">
+        <a href="./categories/{{category.title | slugify}}.html">{{category.title}}</a>
       </div>
+      {% endunless %}
+
+      {% endfor %}
     </div>
+  </div>
 
 </div>
 
