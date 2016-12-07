@@ -17,7 +17,7 @@ title:
 email:
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "/ogrx-2/" # the subpath of your site, e.g. /blog
+baseurl: "/ogrx-2" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
@@ -96,13 +96,8 @@ contentful:
         cda_query:                  # Optional
           content_type: paper
           include: 1
-<<<<<<< HEAD
           limit: 10
           # limit: 1000
-=======
-          # limit: 10
-          limit: 10
->>>>>>> 4d840dec8d1d19b3e26c5008e0a8a3126cf18d93
         content_types:
           paper: SysMapper
           blogpost: SysMapper
