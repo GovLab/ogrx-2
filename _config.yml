@@ -26,6 +26,8 @@ github_username:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - 'jekyll-lunr-js-search'
+
 
 exclude:
   - Gemfile
