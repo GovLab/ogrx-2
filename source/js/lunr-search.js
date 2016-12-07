@@ -3,15 +3,26 @@
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
-      var appendString = '';
+      var s = '';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        var authors = item.author.split(',');
+        var categories = item.category.split(',');
+
+        s += '<div class="result-item" style="display: inline-block; margin-left: -4px;">';
+        s += '<a href="' + item.url + '"><h3 class="result-item__name" >' + item.title + '</h3></a><p class="result-item__authors">';
+        for (var j in authors) {
+          s += '<a href="">' + authors[j] + '</a>';
+        }
+        s += '</p><div class="result-item__taxonomy result-item__taxonomy--category"><span class="result-item__taxonomy__key">Category</span>';
+        for (var j in categories) {
+          s += '<span class="result-item__taxonomy__value"><a href="" class="result-item__tag">' + categories[j] + '</a></span>';
+        }
+        s += '</div></div>';
       }
 
-      searchResults.innerHTML = appendString;
+      searchResults.innerHTML = s;
     } else {
       searchResults.innerHTML = '<li>No results found</li>';
     }
@@ -54,8 +65,8 @@
         'content': window.store[key].content
       });
 
-      var results = idx.search(searchTerm); // Get lunr to perform a search
-      displaySearchResults(results, window.store); // We'll write this in the next section
+      var results = idx.search(searchTerm);
+      displaySearchResults(results, window.store);
     }
   }
 })();
