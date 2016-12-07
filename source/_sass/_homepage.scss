@@ -6,7 +6,7 @@
 
 #main-logo {
   width: 25rem;
-  opacity: .2;
+  opacity: .5;
   display: block;
   margin: 0 auto;
 }
@@ -27,8 +27,8 @@
     font-weight: 300;
   }
 
-  &:hover { 
-    text-decoration: none; 
+  &:hover {
+    text-decoration: none;
     color: white;
   }
 }
