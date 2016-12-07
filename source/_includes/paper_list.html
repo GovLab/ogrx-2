@@ -42,6 +42,10 @@
       f-{{ type | slugify}}
       {% endfor %}
 
+      {% for a in b.authors %}
+      f-{{ a | slugify}}
+      {% endfor %}
+
       {% for cat in b.innovationCategory %}
       m-{{ cat | slugify}}
       {% endfor %}
