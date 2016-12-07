@@ -1,7 +1,7 @@
 {% if include.filter_on == "*" %}
-{% assign papers = site.data.contentful.spaces.content.paper %}
+{% assign papers = site.data.contentful.spaces.papers.paper %}
 {% else %}
-{% assign papers = site.data.contentful.spaces.content.paper | filter_data_by_field: include.filter_on, include.filter_by %}
+{% assign papers = site.data.contentful.spaces.papers.paper | filter_data_by_field: include.filter_on, include.filter_by %}
 {% endif %}
 
 <div class="page-section results-section isotope">

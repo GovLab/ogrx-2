@@ -12,7 +12,7 @@ layout: default
       <aside class="sidebar">
         <nav class="sidebar-menu">
 
-        {% for i in site.data.contentful.spaces.content.blogpost %}
+        {% for i in site.data.contentful.spaces.blog.blogpost %}
           <a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a>
         {% endfor %}
         </nav>
@@ -22,7 +22,7 @@ layout: default
 
     <div class="large-9 column">
       <section class="blog-content blog-list">
-        {% for i in site.data.contentful.spaces.content.blogpost %}
+        {% for i in site.data.contentful.spaces.blog.blogpost %}
         <div class="row expanded align-center">
           <div class="large-10 column">
             <div class="blog-list__item post">
