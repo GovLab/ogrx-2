@@ -10,22 +10,6 @@ module Jekyll
       author.split(" ")[-1][0].upcase
     end
 
-
-
-
-    # // make people objects from data
-    # function createPeopleObjects(obj) {
-    #   var people = [];
-    #   obj.forEach(function(val) {
-    #     if (val){
-    #       var nameArr = val.value.split(" ");
-    #       var lastName = nameArr[nameArr.length-1];
-    #       var firstName = nameArr.slice(0,nameArr.indexOf(lastName)).join(" ");
-    #       people.push(new Person(val.id, firstName, lastName));
-    #     }
-    #   });
-    #   return people;
-    # }
     
     def titlecase(str)
       no_caps = ["a", "an", "and", "as", "at", "but", "by", "for", "from", "if", "in", "nor", "of", "on", "or", "so", "the", "to", "via", "vs", "with ", "without", "yet"]
