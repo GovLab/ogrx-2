@@ -1,0 +1,677 @@
+#overlay {
+  background-color: transparent !important; }
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.u-material-icons, .search.search--main-search input[type="button"] {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
+.u-transition {
+  transition: all .4s ease; }
+
+.top-section {
+  margin-top: -50px;
+  padding-top: 120px;
+  padding-bottom: 0; }
+  .top-section > h1:only-child {
+    padding-bottom: 40px; }
+
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1; }
+
+.top-section--main-color {
+  background-color: #004f6f; }
+
+.search input[type="submit"] {
+  margin-left: 0; }
+
+.divider {
+  text-align: center; }
+  .divider--main-color {
+    background-color: #004f6f; }
+  .divider--light {
+    color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(51, 51, 51, 0.1); }
+
+.all-authors-list {
+  padding: 0; }
+  .all-authors-list__index {
+    text-align: center;
+    padding-bottom: 30px; }
+  .all-authors-list__index-item {
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 1.2rem; }
+    .all-authors-list__index-item:hover {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.1); }
+  .all-authors-list__list-item {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.1rem; }
+    .all-authors-list__list-item:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.03); }
+
+.featured-authors__list-item {
+  text-align: center;
+  vertical-align: top;
+  padding: 20px;
+  display: inline-block; }
+.featured-authors__picture {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
+.featured-authors__name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0; }
+.featured-authors__job {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6); }
+
+.all-categories {
+  padding: 0; }
+  .all-categories__index {
+    text-align: center;
+    padding-bottom: 30px; }
+  .all-categories__item {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.1rem; }
+    .all-categories__item:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.03); }
+
+.footer h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .4px; }
+.footer__content a {
+  display: block; }
+.footer p, .footer a {
+  font-size: .9rem;
+  margin: 0; }
+.footer__partner-logo {
+  margin-right: 5%;
+  display: inline-block !important; }
+  .footer__partner-logo--deet {
+    max-width: 40%; }
+  .footer__partner-logo--govlab {
+    max-width: 24%; }
+  .footer__partner-logo--mysociety {
+    max-width: 25%; }
+
+.powered-by {
+  text-align: right;
+  opacity: .3;
+  transition: opacity .4s ease; }
+  .powered-by:hover {
+    opacity: 1;
+    transition: opacity .4s ease; }
+  .powered-by p {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .powered-by__logo {
+    width: 110px;
+    margin-left: 15px; }
+
+.filters > .row {
+  margin-bottom: 30px; }
+
+.filter-controls {
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .filter-controls .filter-ui-container {
+    display: inline-block;
+    width: 150px; }
+  .filter-controls .button--active {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .filter-controls .select {
+    background-color: transparent; }
+    .filter-controls .select:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .filter-controls .select select, .filter-controls .select::before {
+      color: white; }
+    .filter-controls .select::before {
+      z-index: 1;
+      pointer-events: none; }
+  .filter-controls .filter[disabled] {
+    opacity: .3; }
+    ~ .filter-controls .filter[disabled]:before {
+      opacity: .3; }
+
+/***************
+     Switch
+***************/
+.switch,
+.switch * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; }
+
+.switch label {
+  cursor: pointer;
+  color: white;
+  text-align: center; }
+
+.switch label input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.switch label input[type=checkbox]:checked + .lever {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.switch label .lever {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+  margin: 0 16px; }
+
+.switch label .lever:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 21px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+  left: -5px;
+  top: -3px;
+  transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease; }
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px transparent; }
+
+input[type=checkbox]:not(:disabled) ~ .lever:active:after {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+
+.switch label input[type=checkbox]:checked + .lever:after {
+  left: 24px; }
+
+#homepage .top-section h3 {
+  text-transform: none; }
+
+#main-logo {
+  width: 25rem;
+  opacity: .2;
+  display: block;
+  margin: 0 auto; }
+
+.browsing-ways {
+  margin-top: 30px; }
+
+.top-bar__logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px;
+  color: white; }
+  .top-bar__logo em {
+    font-weight: 300; }
+  .top-bar__logo:hover {
+    text-decoration: none;
+    color: white; }
+
+.organization-logo {
+  padding: 60px 20px;
+  max-width: 260px;
+  margin: 0 auto; }
+
+.social-media-icon {
+  width: 28px;
+  display: inline-block;
+  margin: 10px; }
+  .social-media-icon > * {
+    max-width: 100%; }
+  .social-media-icon--github {
+    fill: white; }
+
+.author-page__image-column,
+.organization-page__image-column {
+  text-align: center; }
+.author-page__description,
+.organization-page__description {
+  text-align: left; }
+.author-page__extras,
+.organization-page__extras {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center; }
+.author-page__name,
+.organization-page__name {
+  text-align: left; }
+
+.organization-page__org-logo {
+  max-width: 80%;
+  padding: 10%; }
+.organization-page__name {
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+.organization-page__extras,
+.author-page__extras {
+  text-align: left;
+  padding-top: 10px; }
+
+.author-page__picture {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+  margin: 0 auto 30px; }
+.author-page__name {
+  font-size: 1.8rem;
+  margin-bottom: 0; }
+.author-page__job {
+  text-align: left;
+  text-transform: none;
+  font-size: 1.5rem;
+  margin-bottom: 30px; }
+
+.extra-info-panel {
+  padding: 50px 0;
+  margin-top: 30px;
+  padding: 0;
+  max-height: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: max-height 0.5s ease, padding 0.5s ease; }
+  .extra-info-panel.visible {
+    max-height: 3500px;
+    padding: 50px 0; }
+  .extra-info-panel h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem; }
+
+.about-page__macarthur, .about-page__rciog {
+  padding: 60px 20px;
+  max-width: 360px;
+  margin: 0 auto; }
+.about-page #iri {
+  margin: 36px 0 0 0px;
+  max-width: 171px; }
+
+#submit-button {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  background-color: #F0B300;
+  color: #8a6700; }
+
+.search.search--main-search {
+  display: flex; }
+  .search.search--main-search input[type="text"] {
+    padding: 12px;
+    font-size: 1.5rem;
+    max-width: 100%;
+    flex: 1; }
+    .search.search--main-search input[type="text"]:focus {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .search.search--main-search input[type="submit"],
+  .search.search--main-search input[type="button"] {
+    padding: 17px;
+    background-color: rgba(255, 255, 255, 0.2); }
+  .search.search--main-search input[type="button"] {
+    padding: 16px 17px; }
+  .search.search--main-search ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    text-align: left; }
+  .search.search--main-search :-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.3);
+    text-align: left; }
+  .search.search--main-search ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.3);
+    text-align: left; }
+  .search.search--main-search :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    text-align: left; }
+
+.main-search-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 80px; }
+  .main-search-section .main-search-section--tagline {
+    text-align: center;
+    padding: 0 0 40px;
+    color: white; }
+    @media (max-width: 40em) {
+      .main-search-section .main-search-section--tagline {
+        font-size: 16px; } }
+
+.organizations {
+  background-color: white; }
+  .organizations--digital-engagement-evaluation-team {
+    max-width: 330px !important; }
+
+.main-categories {
+  padding: 0; }
+
+.category-item {
+  padding: 25% 0;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  cursor: pointer; }
+  .category-item:hover {
+    text-decoration: none;
+    color: white; }
+  .category-item--all {
+    background-color: #3b4f65; }
+  .category-item--behavioral-research, .category-item--behavioral-science-and-nudges {
+    background-color: #de606c; }
+  .category-item--citizen-engagement {
+    background-color: #5fa9d4; }
+  .category-item--civic-technology {
+    background-color: #a67fb9; }
+  .category-item--data-analysis {
+    background-color: #f3b44b; }
+  .category-item--expert-networking {
+    background-color: #6e7b97; }
+  .category-item--open-data {
+    background-color: #00ad98; }
+  .category-item--labs-and-experimentation {
+    background-color: #dbc048; }
+  .category-item--all:hover {
+    background-color: #304052; }
+  .category-item--behavioral-research:hover, .category-item--behavioral-science-and-nudges:hover {
+    background-color: #d94755; }
+  .category-item--citizen-engagement:hover {
+    background-color: #479cce; }
+  .category-item--civic-technology:hover {
+    background-color: #986bae; }
+  .category-item--data-analysis:hover {
+    background-color: #f1a82e; }
+  .category-item--expert-networking:hover {
+    background-color: #606c86; }
+  .category-item--open-data:hover {
+    background-color: #008e7d; }
+  .category-item--labs-and-experimentation:hover {
+    background-color: #d6b72e; }
+
+.tag--all {
+  background-color: rgba(59, 79, 101, 0.2);
+  color: #3b4f65; }
+.tag--behavioral-science-and-nudges {
+  background-color: rgba(222, 96, 108, 0.2);
+  color: #de606c; }
+.tag--citizen-engagement {
+  background-color: rgba(95, 169, 212, 0.2);
+  color: #5fa9d4; }
+.tag--civic-technology {
+  background-color: rgba(166, 127, 185, 0.2);
+  color: #a67fb9; }
+.tag--data-analysis {
+  background-color: rgba(243, 180, 75, 0.2);
+  color: #f3b44b; }
+.tag--expert-networking {
+  background-color: rgba(110, 123, 151, 0.2);
+  color: #6e7b97; }
+.tag--open-data {
+  background-color: rgba(0, 173, 152, 0.2);
+  color: #00ad98; }
+.tag--labs-and-experimentation {
+  background-color: rgba(219, 192, 72, 0.2);
+  color: #dbc048; }
+
+.b-organizations .e-organization-logo {
+  padding: 60px 20px; }
+  @media (max-width: 40em) {
+    .b-organizations .e-organization-logo {
+      max-width: 260px;
+      margin: 0 auto; } }
+
+.top-section--all {
+  background-color: #3b4f65; }
+.top-section--behavioral-research {
+  background-color: #de606c; }
+.top-section--citizen-engagement {
+  background-color: #5fa9d4; }
+.top-section--civic-technology {
+  background-color: #a67fb9; }
+.top-section--data-analysis {
+  background-color: #f3b44b; }
+.top-section--expert-networking {
+  background-color: #6e7b97; }
+.top-section--open-data {
+  background-color: #00ad98; }
+.top-section--labs-and-experimentation {
+  background-color: #dbc048; }
+
+.b-about-page .b-contributing-partners .e-contributor-logo {
+  margin: 40px 0 0 0;
+  max-height: 80px;
+  max-width: 225px;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.organizations {
+  text-align: center; }
+
+.organization-logo {
+  margin: 0 auto; }
+
+.base-results-page .top-section {
+  padding-bottom: 60px; }
+  .base-results-page .top-section h1 {
+    text-transform: uppercase; }
+
+.results-section {
+  padding: 0; }
+
+.result-item {
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background-color: white;
+  padding: 30px 30px 90px;
+  width: 100%;
+  display: block;
+  height: 420px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none; }
+  @media (min-width: 40.063em) and (max-width: 64em) {
+    .result-item {
+      width: 50%;
+      margin: 0; }
+      .result-item a {
+        text-decoration: none; }
+        .result-item a:hover {
+          text-decoration: underline; } }
+  @media (min-width: 64.063em) {
+    .result-item {
+      width: calc(100% / 3);
+      margin: 0; } }
+  .result-item:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+    .result-item:hover:after {
+      border-top: 12px solid #004f6f;
+      border-left: 12px solid #004f6f; }
+  .result-item:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 12px solid rgba(0, 0, 0, 0.3);
+    border-left: 12px solid rgba(0, 0, 0, 0.3);
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent; }
+  .result-item__name {
+    font-size: 1rem;
+    text-transform: none;
+    min-height: 4.5rem; }
+  .result-item__authors a {
+    font-size: .9rem;
+    text-decoration: none !important;
+    color: rgba(0, 79, 111, 0.6); }
+    .result-item__authors a:hover {
+      text-decoration: none;
+      color: #004f6f; }
+  .result-item__taxonomy {
+    font-size: .8rem;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px; }
+    .result-item__taxonomy__key {
+      float: left;
+      width: 90px; }
+    .result-item__taxonomy__value {
+      float: right;
+      width: calc(100% - 90px); }
+  .result-item__tag {
+    font-size: .6rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 3px;
+    opacity: .7; }
+    .result-item__tag:empty {
+      display: none; }
+    .result-item__tag:hover {
+      opacity: 1;
+      text-decoration: none; }
+    .result-item__tag--all {
+      background-color: rgba(59, 79, 101, 0.2);
+      color: #2c3b4b; }
+    .result-item__tag--behavioral-science-and-nudges {
+      background-color: rgba(222, 96, 108, 0.2);
+      color: #d73e4d; }
+    .result-item__tag--citizen-engagement {
+      background-color: rgba(95, 169, 212, 0.2);
+      color: #3f98cb; }
+    .result-item__tag--civic-technology {
+      background-color: rgba(166, 127, 185, 0.2);
+      color: #9465ab; }
+    .result-item__tag--data-analysis {
+      background-color: rgba(243, 180, 75, 0.2);
+      color: #f0a425; }
+    .result-item__tag--expert-networking {
+      background-color: rgba(110, 123, 151, 0.2);
+      color: #5c6780; }
+    .result-item__tag--open-data {
+      background-color: rgba(0, 173, 152, 0.2);
+      color: #008474; }
+    .result-item__tag--labs-and-experimentation {
+      background-color: rgba(219, 192, 72, 0.2);
+      color: #d1b229; }
+  .result-item__authors {
+    font-size: .9rem;
+    min-height: 3rem; }
+  .result-item__extras {
+    padding: 15px 30px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0; }
+    .result-item__extras--github-logo {
+      width: 24px;
+      opacity: .2;
+      margin: 0 5px; }
+    .result-item__extras i {
+      opacity: .2;
+      font-size: 1.7rem;
+      line-height: 1;
+      vertical-align: bottom;
+      margin: 0 5px -2px; }
+
+.result-item__extras--the-govlab {
+  background-color: #523080; }
+  .result-item__extras--the-govlab i {
+    color: white; }
+.result-item__extras--mysociety {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .result-item__extras--mysociety i {
+    color: white; }
+.result-item__extras--centre-for-public-impact {
+  background-color: rgba(42, 81, 89, 0.8); }
+  .result-item__extras--centre-for-public-impact i {
+    color: white; }
+.result-item__extras--digital-commons-lab {
+  background-color: rgba(19, 131, 162, 0.8); }
+  .result-item__extras--digital-commons-lab i {
+    color: white; }
+.result-item__extras--center-for-policy-informatics {
+  background-color: rgba(141, 14, 69, 0.8); }
+  .result-item__extras--center-for-policy-informatics i {
+    color: white; }
+.result-item__extras--swedish-law-and-informatics-institute {
+  background-color: rgba(63, 116, 137, 0.8); }
+  .result-item__extras--swedish-law-and-informatics-institute i {
+    color: white; }
+.result-item__extras--open-data-for-development {
+  background-color: rgba(210, 94, 27, 0.8); }
+  .result-item__extras--open-data-for-development i {
+    color: white; }
+.result-item__extras--open-evidence {
+  background-color: rgba(0, 186, 194, 0.8); }
+  .result-item__extras--open-evidence i {
+    color: white; }
+.result-item__extras--open-knowledge-international {
+  background-color: rgba(104, 184, 58, 0.8); }
+  .result-item__extras--open-knowledge-international i {
+    color: white; }
+.result-item__extras--world-bank-digital-engagement-evaluation-team {
+  background-color: #3f70b6; }
+  .result-item__extras--world-bank-digital-engagement-evaluation-team i {
+    color: white; }
+  .result-item__extras--world-bank-digital-engagement-evaluation-team--organization-logo {
+    float: left;
+    max-height: 34px; }
+.result-item__extras--closed-access {
+  color: #b33945;
+  opacity: 1; }
+.result-item__extras--organization-logo {
+  float: left;
+  max-height: 26px; }
+
+.filter-panel {
+  text-align: center; }

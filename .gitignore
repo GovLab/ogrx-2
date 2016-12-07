@@ -1,9 +1,0 @@
-_site
-.sass-cache
-.jekyll-metadata
-node_modules
-_site
-import/*.json
-import/*.db
-import/*.csv
-.DS_Store
