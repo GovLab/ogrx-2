@@ -91,8 +91,10 @@ module Jekyll
                 records = records[level]
               end
             end
-            records.each do |record|
-              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+            unless records.nil?
+              records.each do |record|
+                site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+              end
             end
           else
             puts "error. could not find template #{template}" if not site.layouts.key? template
