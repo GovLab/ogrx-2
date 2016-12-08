@@ -92,12 +92,15 @@
           {% endfor %}
         </span>
       </div>
-      {% if paper.organization %}
-      <!-- IF organization is Premium ORG -->
-      <div class="result-item__extras {% for org in paper.organization %}result-item__extras--{{ org | slugify }}{%endfor%}">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
+      {% for org in b.organization %}
+      <div class="result-item__extras result-item__extras--{{ org | slugify }}">
+        {% for o in site.data.organizations %}
+        {% if org == o.title %}
+        <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image}}" alt="">
+        {% endif %}
+        {% endfor %}
       </div>
-      {% endif %}
+      {% endfor %}
     </div>
 
     {% endfor %}
