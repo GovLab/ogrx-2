@@ -156,12 +156,19 @@
   .paper-metadata__left-column {
     text-align: right;
     font-weight: 600; }
+    @media (max-width: 40em) {
+      .paper-metadata__left-column {
+        text-align: left; } }
 
 #paper-access-button {
   text-align: center;
   position: relative;
   top: 24px;
-  background-color: #003d56; }
+  background-color: #003d56;
+  transition: all .2s ease-out; }
+  #paper-access-button:hover {
+    background-color: #F0B300;
+    transition: all .2s ease-out; }
 
 .submit-confirmation {
   text-align: center; }
