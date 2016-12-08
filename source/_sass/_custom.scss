@@ -143,3 +143,12 @@
     font-weight: 600;
   }
 }
+
+.main-menu {
+  z-index: 999;
+}
+
+#overlay {
+  left: 28%;
+  z-index: 20;
+}
