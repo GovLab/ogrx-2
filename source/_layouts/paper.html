@@ -5,8 +5,63 @@ layout: default
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.publicationName}}</h1>
-    <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {% for a in page.authors %} {{a}} {% endfor %}</h3>
+    <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {{ page.authors | join: ", "}}</h3>
+
+      <div class="paper-metadata">
+        <div class="row">
+          <div class="large-6 medium-6 small-12 column">
+
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>
+              {% if page.publicationType %}
+                {% for type in page.publicationType %}
+                  <div class="column large-8 medium-6 small-12 type">{{ type }}</div>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>
+                {% if page.region %}
+                  {% for region in page.region %}
+                    <div class="column large-8 medium-6 small-12 type">{{ region }}</div>
+                  {% endfor %}
+                {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>
+              {% if page.sectorCategory %}
+                <div class="column large-8 medium-6 small-12 category">{{ page.sectorCategory | join: ", " }}</div>
+              {% endif %}
+            </div>
+        </div>
+
+          <div class="large-6 column">
+
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>
+              {% if page.innovationCategory %}
+                <div class="column large-8 medium-6 small-12 type">{{ page.innovationCategory | join: ", "}}</div>
+              {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Methodology</div>
+                {% if page.methodology %}
+                  <div class="column large-8 medium-6 small-12 type">{{ page.methodology | join: ", " }}</div>
+                {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12  paper-metadata__left-column">Objective</div>
+                {% if page.objectiveCategory %}
+                  <div class="column large-8 medium-6 small-12  category">{{ page.objectiveCategory  | join: ", " }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="{{ page.downloadLink }}" target="_blank" class="button">Access this Publication</a>
   </div>
+
   <section class="blog-content blog-single">
     <div class="row">
       <div class="large-8 column large-offset-2">
@@ -16,4 +71,9 @@ layout: default
   </section>
 
 </div>
+
+
+
+
+
 
