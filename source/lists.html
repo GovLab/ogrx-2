@@ -15,7 +15,7 @@ layout: default
         <div class="list__description">
           <a href="{{i.title | datapage_url: 'list'}}"><h2>{{i.title}}</h2></a>
           <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <a href="{{a | datapage_url: 'authors'}}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
-          <p>{{i.description | truncate: 500}}</p>
+          <p>{{i.description | truncate: 500 | markdownify}}</p>
           <p><a class="button" href="{{i.title | datapage_url: 'list'}}">View List</a></p>
         </div>
       </div>
