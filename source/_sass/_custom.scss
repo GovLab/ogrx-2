@@ -151,7 +151,7 @@
   background-color: #003d56;
 }
 
-.submit-confirmation { 
+.submit-confirmation {
   text-align: center;
   h3 {font-size: 1.5em;}
 }
@@ -165,6 +165,7 @@
 }
 .main-menu {
   z-index: 999;
+  overflow-y: scroll;
 }
 
 #overlay {
