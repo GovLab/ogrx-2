@@ -7,8 +7,8 @@ list:
         id: ufh1mvj7xl16
     type: Entry
     createdAt: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 05:49:21.341000000 Z
-    revision: 4
+    updatedAt: !ruby/object:DateTime 2016-12-08 06:16:35.293000000 Z
+    revision: 5
     contentType:
       sys:
         id: list
@@ -30,7 +30,7 @@ list:
     life, and that it can do so at scale.\n\nThese selected readings on civic technology
     reflect this vision and greatly improve our understanding of how and why civic
     tech is having an impact. \n\n\n__EVALUATING DIGITAL CITIZEN ENGAGEMENT : A PRACTICAL
-    GUIDE\n__\n\n*World Bank Group (2015)*\n\nWhenever I speak to someone that’s just
+    GUIDE__\n\n*World Bank Group (2015)*\n\nWhenever I speak to someone that’s just
     getting started in the civic tech world, this is the first report I suggest they
     read. Its primarily aimed at practitioners rather than researchers, but it’s a
     wonderful introduction to the key concepts, the challenges, the language and the

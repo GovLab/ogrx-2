@@ -7,8 +7,8 @@ blogpost:
         id: ufh1mvj7xl16
     type: Entry
     createdAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 06:00:52.843000000 Z
-    revision: 4
+    updatedAt: !ruby/object:DateTime 2016-12-08 06:17:47.846000000 Z
+    revision: 5
     contentType:
       sys:
         id: blogpost
@@ -52,10 +52,10 @@ blogpost:
     These Selected Readings will give readers a sense of how to jumpstart their knowledge
     by focusing on those publications that have been curated by those in the known
     about the topics at hand. Today we are launching this new series with the [Selected
-    Readings on Civic Technology](http://ogrx.org/list/selected-readings-on-civic-technology.html)
-    [LINK], curated by mySociety’s head of research [Rebecca Rumbul](http://ogrx.org/authors/rebecca-rumbul.html);
-    and the [Selected Readings on Policy Informatics](http://ogrx.org/list/selected-readings-on-policy-informatics.html)
-    [LINK], curated [Erik Johnston](http://ogrx.org/by/author.html?filter=.f-erik-johnston)
+    Readings on Civic Technology](http://ogrx.org/list/selected-readings-on-civic-technology.html),
+    curated by mySociety’s head of research [Rebecca Rumbul](http://ogrx.org/authors/rebecca-rumbul.html);
+    and the [Selected Readings on Policy Informatics](http://ogrx.org/list/selected-readings-on-policy-informatics.html),
+    curated by [Erik Johnston](http://ogrx.org/by/author.html?filter=.f-erik-johnston)
     of the [MacArthur Foundation Research Network on Opening Governance](http://www.opening-governance.org/)
     and director of the Arizona State University Center for Policy Informatics. New
     Selected Readings will be posted each month, so check back often!\n \n__Help us
