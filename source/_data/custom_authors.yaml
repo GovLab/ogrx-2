@@ -1,4 +1,4 @@
-- title: Beth Noveck
+- title: Beth Simone Noveck
   job: Co-Founder and Director, The GovLab, NYU Tandon School of Engineering # job
   image: beth-noveck.jpg
   color: '#523080'
@@ -7,7 +7,7 @@
   <p>A graduate of Harvard University and Yale Law School, she is a member of the Advisory Board of the Open Contracting Partnership and a Program Committee Member of the 2016 Conferences on International Open Data, Open Data Research, Data Science for Government, and the Data for Good Exchange. She was named one of the “Foreign Policy 100″ by Foreign Policy, one of the “100 Most Creative People in Business” by Fast Company and one of the “Top Women in Technology” by Huffington Post. She has also been honored by both the National Democratic Institute and Public Knowledge for her work in civic technology. She writes for Medium at medium.com/@bethnoveck<p>"
 
   display_name:
-    - Beth Simone Noveck # To be used as a custom filter
+    - Beth Noveck # To be used as a custom filter
     - Beth S. Noveck
   social_media: # Links
     github: false

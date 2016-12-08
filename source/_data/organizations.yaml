@@ -1,4 +1,4 @@
-- title: Digital Engagement Evaluation Team # Organization
+- title: World Bank Digital Engagement Evaluation Team # Organization
   image: deet-logo.png # Logo image
   image_white: deet-logo-white.png # Logo image (white version)
   short_description: The World Bank is a vital source of financial and technical assistance to developing countries around the world. The Bank’s Digital Engagement Evaluation Team (DEET) works with governments to leverage technology-enabled solutions for better public policies and services.
@@ -30,7 +30,7 @@
     facebook: https://www.facebook.com/mySociety/
     twitter: https://twitter.com/mysociety
 
-- title: The Govlab # Organization
+- title: The GovLab # Organization
   image: govlab-logo.png # Logo image
   image_white: govlab-logo-white.png # Logo image (white version)
   short_description:  The GovLab’s mission is to improve people’s lives by changing the way we govern. Its goal is to strengthen the ability of institutions – including but not limited to governments – and people to work more openly, collaboratively, effectively and legitimately to make better decisions and solve public problems.
@@ -111,7 +111,7 @@
     twitter: https://twitter.com/od4_d
     url: http://od4d.com
 
-- title: Swedish Law and Informatics Research Institute
+- title: Swedish Law and Informatics Institute
   image: iri-logo.png
   image_white: iri-white.png
   short_description: IRI is an independent research unit at the Department of Law at Stockholm University. The Institute is under the auspices of the Faculty of Law and its constitution has been confirmed by the University’s Vice Chancellor. The work is led by an executive board and its daily activities are managed by a director. The current director is Peter Wahlgren, Professor of Law and Information Technology.
