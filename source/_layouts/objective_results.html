@@ -11,12 +11,13 @@ layout: default
       </div>
     </div>
 
+    {% assign filter_by_ = page.title %}
+    {% assign filter_on_ = "objectiveCategory" %}
+
     <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
-    {% include filters.html %}
+    {% include filters.html filter_on=filter_on_ filter_by=filter_by_ %}
   </div>
 
-  {% assign f = page.title %}
-
-  {% include paper_list.html filter_on="objectiveCategory" filter_by=f %} <!-- This will receive a pre-filter by David's Plugin -->
+  {% include paper_list.html filter_on=filter_on_ filter_by=filter_by_ %}
 
 </div>

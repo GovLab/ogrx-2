@@ -1,4 +1,8 @@
+{% if include.filter_on == "*" %}
+{% assign papers = site.data.contentful.spaces.papers.paper %}
+{% else %}
 {% assign papers = site.data.contentful.spaces.papers.paper | filter_data_by_field: include.filter_on, include.filter_by %}
+{% endif %}
 
 <script>
 window.store = {
