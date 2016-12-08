@@ -71,7 +71,7 @@
     font-size: .9rem;
     text-decoration: none !important;
     color: rgba($main-color, .6);
-    
+
     &:hover {
       text-decoration: none;
       color: rgba($main-color, 1);
@@ -113,7 +113,7 @@
     }
 
   // Colors for the main categories
- 
+
     &--all {
       background-color: rgba($all, .2);
       color: darken($all, 8);
@@ -122,7 +122,7 @@
       background-color: rgba($behavioral-research, .2);
       color: darken($behavioral-research, 8);
     }
-    &--citizen-engagement {
+    &--citizen-engagement-and-crowdsourcing {
       background-color: rgba($citizen-engagement, .2);
       color: darken($citizen-engagement, 8);
     }
@@ -146,7 +146,7 @@
       background-color: rgba($labs-and-experimentation, .2);
       color: darken($labs-and-experimentation, 8);
     }
-  
+
 
   }
 
@@ -221,7 +221,7 @@
         i {color: white;}
       }
       &--world-bank-digital-engagement-evaluation-team {
-        background-color: $blue;
+        background-color: rgba(#008ab3, .8);
         i {color: white;}
         &--organization-logo {
           float: left;

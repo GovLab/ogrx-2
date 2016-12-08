@@ -187,7 +187,7 @@ window.store = {
             <select name="" id="filter-project" class="filter js-change" {% unless project_filters.size > 0 %}disabled{% endunless %}>
               <option data-filter="*******">Project</option>
               {% for r in project_filters %}
-              <option data-filter="f-{{r | slugify}}">r</option>
+              <option data-filter="f-{{r | slugify}}">{{r}}</option>
               {% endfor %}
             </select>
           </div>
