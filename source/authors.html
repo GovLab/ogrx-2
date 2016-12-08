@@ -1,13 +1,25 @@
 ---
 layout: default
 alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+custom_authors:
+  - Beth Simone Noveck
+  - Stefaan Verhulst
+  - Andrew Young
+  - Tiago Peixoto
+  - Rebecca Rumbul
+  - Peter John
+  - François van Schalkwyk
+  - Sophie Reynolds
+  - Zeynep Engin
+  - Anita McGahan
+  - Araz Taeihagh
+
 ---
 
 <div class="authors-list-page">
   <div class="top-section top-section--main-color">
     <h1>Featured Authors</h1>
   </div>
-
   <!-- List of Authors - Features Authors -->
 
   <div class="page-section">
@@ -70,7 +82,11 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
         <a name="{{a | get_last_initial }}"></a>
       </div>
       <div class="column small-12 large-4 all-authors-list__list-item">
+        {% if page.custom_authors contains a %}
+        <a href="{{a | slugify | datapage_url: 'authors'}}">{{a}}</a>
+        {% else %}
         <a href="by/author.html?filter=.f-{{a | slugify }}">{{ a }}</a>
+        {% endif %}
       </div>
       {% endfor %}
 
