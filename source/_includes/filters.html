@@ -21,16 +21,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">

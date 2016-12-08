@@ -11,8 +11,10 @@
       {% for b in papers %}
 
       <div class="result-item
-      m-open-{{b.open}}
-      f-open-{{b.open}}
+      {% if b.open %}
+      m-open
+      f-open
+      {% endif %}
 
       {% for org in b.organization %}
       f-{{org | slugify}}
