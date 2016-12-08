@@ -18,23 +18,6 @@
 </head>
 
 <body>
-    <style type="text/css">
-    #overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        display: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    #overlay.active {
-        display: block;
-    }
-</style>
-<div id="overlay" class="js-overlay"></div>
 <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -43,7 +26,7 @@
     <a href="/ogrx-2/categories.html">Categories</a>
     <a href="/ogrx-2/authors.html">Authors</a>
     <a href="/ogrx-2/about.html">About</a>
-    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <!-- <a href="/ogrx-2/by/all.html">Exchange</a> -->
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
@@ -56,7 +39,7 @@
 </header>
 
 <div class="base-result-page">
-  <div class="top-section top-section--">
+  <div class="top-section top-section--social-media">
     <div class="row align-center">
       <div class="large-10 column">
         <h1>Social Media</h1>
@@ -72,6 +55,15 @@
 
 <script>
 window.store = {
+  
+  "paper-410": {
+    "title": "Civic Media: Technology, Design, Practice",
+    "author": "Eric Gordon,Paul Mihailidis",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Social Media",
+    "content": "Countless people around the world harness the affordances of digital media to enable democratic participation, coordinate disaster relief, campaign for policy change, and strengthen local advocacy groups. The world watched as activists used social media to organize protests during the Arab Spring, Occupy Wall Street, and Hong Kong’s Umbrella Revolution. Many governmental and community organizations changed their mission and function as they adopted new digital tools and practices. This book examines the use of “civic media”—the technologies, designs, and practices that support connection through common purpose in civic, political, and social life. Scholars from a range of disciplines and practitioners from a variety of organizations offer analyses and case studies that explore the theory and practice of civic media.The contributors set out the conceptual context for the intersection of civic and media; examine the pressure to innovate and the sustainability of innovation; explore play as a template for resistance; look at civic education; discuss media-enabled activism in communities; and consider methods and funding for civic media research. The case studies that round out each section range from a “debt resistance” movement to government service delivery ratings to the “It Gets Better” campaign aimed at combating suicide among lesbian, gay, bisexual, transgender, and queer youth. The book offers a valuable interdisciplinary dialogue on the challenges and opportunities of the increasingly influential space of civic media.",
+    "url": "papers/civic-media-technology-design-practice.html"
+  }
+  ,
   
   "paper-188": {
     "title": "Social Media for Government Services",
@@ -109,21 +101,21 @@ window.store = {
   }
   ,
   
+  "paper-a91": {
+    "title": "The ‘who’ and ‘what’ of #diabetes on Twitter",
+    "author": "Mariano Beguerisse-Díaz,Amy K. McLennan,Guillermo Garduño-Hernández,Mauricio Barahona,Stanley J. Ulijaszek",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Data Analysis,Social Media",
+    "content": "Social media are being increasingly used for health promotion, yet the landscape of users, messages and interactions in such fora is poorly understood. Studies of social media and diabetes have focused mostly on patients, or public agencies addressing it, but have not looked broadly at all the participants or the diversity of content they contribute. We study Twitter conversations about diabetes through the systematic analysis of 2.5 million tweets collected over 8 months and the interactions between their authors. We address three questions: (1) what themes arise in these tweets?; (2) who are the most influential users?; (3) which type of users contribute to which themes? We answer these questions using a mixed-methods approach, integrating techniques from anthropology, network science and information retrieval such as thematic coding, temporal network analysis, and community and topic detection. Diabetes-related tweets fall within broad thematic groups: health information, news, social interaction, and commercial. At the same time, humorous messages and references to popular culture appear consistently, more than any other type of tweet. We classify authors according to their temporal 'hub' and 'authority' scores. Whereas the hub landscape is diffuse and fluid over time, top authorities are highly persistent across time and comprise bloggers, advocacy groups and NGOs related to diabetes, as well as for-profit entities without specific diabetes expertise. Top authorities fall into seven interest communities as derived from their Twitter follower network. Our findings have implications for public health professionals and policy makers who seek to use social media as an engagement tool and to inform policy design.",
+    "url": "papers/the-who-and-what-of-diabetes-on-twitter.html"
+  }
+  ,
+  
   "paper-a32": {
     "title": "Improving Services—At What Cost? Examining the Ethics of Twitter Research",
     "author": "Sara Mannheimer",
     "category": "Social Media,Big Data,Data Analysis",
     "content": "This case study describes research conducted by Montana State University (MSU) librarians to analyze the MSU Library’s Twitter community, and the ethical questions that we encountered over the course of the research. The case study will walk through our Twitter research at the MSU Library, and then suggest discussion questions to frame an ethical conversation surrounding social media research. We offer a number of areas of ethical inquiry that we recommend be engaged with as a cohesive whole.",
     "url": "papers/improving-servicesat-what-cost-examining-the-ethics-of-twitter-research.html"
-  }
-  ,
-  
-  "paper-a91": {
-    "title": "The ‘who’ and ‘what’ of #diabetes on Twitter",
-    "author": "Mariano Beguerisse-Díaz,Amy K. McLennan,Guillermo Garduño-Hernández,Mauricio Barahona,Stanley J. Ulijaszek",
-    "category": "Social Media,Data Analysis,Citizen Engagement and Collective Intelligence",
-    "content": "Social media are being increasingly used for health promotion, yet the landscape of users, messages and interactions in such fora is poorly understood. Studies of social media and diabetes have focused mostly on patients, or public agencies addressing it, but have not looked broadly at all the participants or the diversity of content they contribute. We study Twitter conversations about diabetes through the systematic analysis of 2.5 million tweets collected over 8 months and the interactions between their authors. We address three questions: (1) what themes arise in these tweets?; (2) who are the most influential users?; (3) which type of users contribute to which themes? We answer these questions using a mixed-methods approach, integrating techniques from anthropology, network science and information retrieval such as thematic coding, temporal network analysis, and community and topic detection. Diabetes-related tweets fall within broad thematic groups: health information, news, social interaction, and commercial. At the same time, humorous messages and references to popular culture appear consistently, more than any other type of tweet. We classify authors according to their temporal 'hub' and 'authority' scores. Whereas the hub landscape is diffuse and fluid over time, top authorities are highly persistent across time and comprise bloggers, advocacy groups and NGOs related to diabetes, as well as for-profit entities without specific diabetes expertise. Top authorities fall into seven interest communities as derived from their Twitter follower network. Our findings have implications for public health professionals and policy makers who seek to use social media as an engagement tool and to inform policy design.",
-    "url": "papers/the-who-and-what-of-diabetes-on-twitter.html"
   }
   ,
   
@@ -260,15 +252,6 @@ window.store = {
     "content": "Since the Cold War, peacekeeping has evolved from first-generation peacekeeping that focused on monitoring peace agreements, to third-generation multidimensional peacekeeping operations tasked with rebuilding states and their institutions during and after conflict. However, peacekeeping today is lagging behind the changes marking our time. Big Data, including social media, and the many actors in the field may provide peacekeeping and peacebuilding operations with information and tools to enable them to respond better, faster and more effectively, saving lives and building states. These tools are already well known in the areas of humanitarian action, social activism, and development. Also the United Nations, through the Global Pulse initiative, has begun to discover the potential of “Big Data for Development,” which may in time help prevent violent conflict. However, less has been done in the area of peacekeeping. UN member states should push for change so that the world organization and other multilateral actors can get their act together, mounting a fourth generation of peacekeeping operations that can utilize the potentials of Big Data, social media and modern technology—“Peacekeeping 4.0.” The chapter details some of the initiatives that can be harnessed and further developed, and offers policy recommendations for member states, the UN Security Council, and UN peacekeeping at UN headquarters and at field levels.",
     "url": "papers/peacekeeping-4.0-harnessing-the-potential-of-big-data-social-media-and-cyber-technologies.html"
   }
-  ,
-  
-  "paper-410": {
-    "title": "Civic Media: Technology, Design, Practice",
-    "author": "Eric Gordon,Paul Mihailidis",
-    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Social Media",
-    "content": "Countless people around the world harness the affordances of digital media to enable democratic participation, coordinate disaster relief, campaign for policy change, and strengthen local advocacy groups. The world watched as activists used social media to organize protests during the Arab Spring, Occupy Wall Street, and Hong Kong’s Umbrella Revolution. Many governmental and community organizations changed their mission and function as they adopted new digital tools and practices. This book examines the use of “civic media”—the technologies, designs, and practices that support connection through common purpose in civic, political, and social life. Scholars from a range of disciplines and practitioners from a variety of organizations offer analyses and case studies that explore the theory and practice of civic media.The contributors set out the conceptual context for the intersection of civic and media; examine the pressure to innovate and the sustainability of innovation; explore play as a template for resistance; look at civic education; discuss media-enabled activism in communities; and consider methods and funding for civic media research. The case studies that round out each section range from a “debt resistance” movement to government service delivery ratings to the “It Gets Better” campaign aimed at combating suicide among lesbian, gay, bisexual, transgender, and queer youth. The book offers a valuable interdisciplinary dialogue on the challenges and opportunities of the increasingly influential space of civic media.",
-    "url": "papers/civic-media-technology-design-practice.html"
-  }
   
   
 };
@@ -367,9 +350,9 @@ window.store = {
               
               <option data-filter="f-conceptual-framework">Conceptual Framework</option>
               
-              <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
-              
               <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
+              
+              <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
               
               <option data-filter="f-design-science">Design Science</option>
               
@@ -396,11 +379,11 @@ window.store = {
               
               <option data-filter="f-human-rights">Human Rights</option>
               
-              <option data-filter="f-education">Education</option>
-              
               <option data-filter="f-health">Health</option>
               
               <option data-filter="f-politics">Politics</option>
+              
+              <option data-filter="f-education">Education</option>
               
               <option data-filter="f-internet-governance">Internet Governance</option>
               
@@ -490,6 +473,108 @@ window.store = {
     <div class="column large-12">
 
       
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-legitimacy
+      
+      f-participation
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-eric-gordon
+      
+      f-paul-mihailidis
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-civic-technology
+      
+      m-social-media
+      
+
+      f-search-paper-410
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/civic-media-technology-design-practice.html" title="Civic Media: Technology, Design, Practice">Civic Media: Technology, Design, Practice</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-eric-gordon">Eric Gordon</a>
+        
+        <a href="../by/author.html?filter=.f-paul-mihailidis">Paul Mihailidis</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
 
       <div class="result-item
       
@@ -873,6 +958,135 @@ window.store = {
       
 
       
+      f-participation
+      
+      f-effectiveness
+      
+      f-access
+      
+
+      
+      f-quantitative-analysis
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-health
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-mariano-beguerisse-díaz
+      
+      f-amy-k-mclennan
+      
+      f-guillermo-garduño-hernández
+      
+      f-mauricio-barahona
+      
+      f-stanley-j-ulijaszek
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-data-analysis
+      
+      m-social-media
+      
+
+      f-search-paper-a91
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-mariano-beguerisse-díaz">Mariano Beguerisse-Díaz</a>
+        
+        <a href="../by/author.html?filter=.f-amy-k-mclennan">Amy K. McLennan</a>
+        
+        <a href="../by/author.html?filter=.f-guillermo-garduño-hernández">Guillermo Garduño-Hernández</a>
+        
+        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
+        
+        <a href="../by/author.html?filter=.f-stanley-j-ulijaszek">Stanley J. Ulijaszek</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/access.html">Access</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
       f-effectiveness
       
       f-legitimacy
@@ -949,131 +1163,6 @@ window.store = {
           <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
           
           <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-
-      
-      f-participation
-      
-      f-effectiveness
-      
-      f-access
-      
-
-      
-      f-quantitative-analysis
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-      f-politics
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-mariano-beguerisse-díaz
-      
-      f-amy-k-mclennan
-      
-      f-guillermo-garduño-hernández
-      
-      f-mauricio-barahona
-      
-      f-stanley-j-ulijaszek
-      
-
-      
-      m-social-media
-      
-      m-data-analysis
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a91
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-mariano-beguerisse-díaz">Mariano Beguerisse-Díaz</a>
-        
-        <a href="../by/author.html?filter=.f-amy-k-mclennan">Amy K. McLennan</a>
-        
-        <a href="../by/author.html?filter=.f-guillermo-garduño-hernández">Guillermo Garduño-Hernández</a>
-        
-        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
-        
-        <a href="../by/author.html?filter=.f-stanley-j-ulijaszek">Stanley J. Ulijaszek</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
           
         </span>
       </div>
@@ -1263,7 +1352,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
@@ -2640,108 +2729,6 @@ window.store = {
     </div>
 
     
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-      f-legitimacy
-      
-      f-participation
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-eric-gordon
-      
-      f-paul-mihailidis
-      
-
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-civic-technology
-      
-      m-social-media
-      
-
-      f-search-paper-410
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/civic-media-technology-design-practice.html" title="Civic Media: Technology, Design, Practice">Civic Media: Technology, Design, Practice</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-eric-gordon">Eric Gordon</a>
-        
-        <a href="../by/author.html?filter=.f-paul-mihailidis">Paul Mihailidis</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
-          
-          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
   </div>
 </div>
 </div>
@@ -2844,33 +2831,33 @@ window.store = {
 </div>
 
 <script type="text/javascript">
-$(function() {
-  $('#overlay').click(function (e) {
-    e.preventDefault();
-    $('#error-modal').removeClass('active');
-    $('#overlay').removeClass('active');
-  });
-  $('.js-open-error-modal').click(function (e) {
-    e.preventDefault();
-    $($(this).attr('data-modal')).addClass('active');
-    $('#overlay').addClass('active');
-  });
+// $(function() {
+//   $('#overlay').click(function (e) {
+//     e.preventDefault();
+//     $('#error-modal').removeClass('active');
+//     $('#overlay').removeClass('active');
+//   });
+//   $('.js-open-error-modal').click(function (e) {
+//     e.preventDefault();
+//     $($(this).attr('data-modal')).addClass('active');
+//     $('#overlay').addClass('active');
+//   });
 
-  var confirm = function () {
-    var $errorhtml = $('#error-modal-content').clone();
-    var $thanks = $('<h3>Thank you!</h3>');
-    $thanks.append(
-      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
-        $('#error-modal').removeClass('active');
-        $('#overlay').removeClass('active');
-        $('#error-modal-content').empty().append($errorhtml);
-      })
-      );
-    $('#error-modal-content').empty().append($thanks);
-  }
+//   var confirm = function () {
+//     var $errorhtml = $('#error-modal-content').clone();
+//     var $thanks = $('<h3>Thank you!</h3>');
+//     $thanks.append(
+//       $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+//         $('#error-modal').removeClass('active');
+//         $('#overlay').removeClass('active');
+//         $('#error-modal-content').empty().append($errorhtml);
+//       })
+//       );
+//     $('#error-modal-content').empty().append($thanks);
+//   }
 
-  $(document).on('submit', '#error-form', confirm);
-});
+//   $(document).on('submit', '#error-form', confirm);
+// });
 </script>
 
 
@@ -2907,6 +2894,8 @@ $(function() {
     $(document).foundation();
 });
 </script>
+
+<div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

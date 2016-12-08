@@ -18,23 +18,6 @@
 </head>
 
 <body>
-    <style type="text/css">
-    #overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        display: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    #overlay.active {
-        display: block;
-    }
-</style>
-<div id="overlay" class="js-overlay"></div>
 <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -43,7 +26,7 @@
     <a href="/ogrx-2/categories.html">Categories</a>
     <a href="/ogrx-2/authors.html">Authors</a>
     <a href="/ogrx-2/about.html">About</a>
-    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <!-- <a href="/ogrx-2/by/all.html">Exchange</a> -->
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
@@ -233,33 +216,33 @@ or whether privacy expectations need adjustment to reflect the new reality of â€
 </div>
 
 <script type="text/javascript">
-$(function() {
-  $('#overlay').click(function (e) {
-    e.preventDefault();
-    $('#error-modal').removeClass('active');
-    $('#overlay').removeClass('active');
-  });
-  $('.js-open-error-modal').click(function (e) {
-    e.preventDefault();
-    $($(this).attr('data-modal')).addClass('active');
-    $('#overlay').addClass('active');
-  });
+// $(function() {
+//   $('#overlay').click(function (e) {
+//     e.preventDefault();
+//     $('#error-modal').removeClass('active');
+//     $('#overlay').removeClass('active');
+//   });
+//   $('.js-open-error-modal').click(function (e) {
+//     e.preventDefault();
+//     $($(this).attr('data-modal')).addClass('active');
+//     $('#overlay').addClass('active');
+//   });
 
-  var confirm = function () {
-    var $errorhtml = $('#error-modal-content').clone();
-    var $thanks = $('<h3>Thank you!</h3>');
-    $thanks.append(
-      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
-        $('#error-modal').removeClass('active');
-        $('#overlay').removeClass('active');
-        $('#error-modal-content').empty().append($errorhtml);
-      })
-      );
-    $('#error-modal-content').empty().append($thanks);
-  }
+//   var confirm = function () {
+//     var $errorhtml = $('#error-modal-content').clone();
+//     var $thanks = $('<h3>Thank you!</h3>');
+//     $thanks.append(
+//       $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+//         $('#error-modal').removeClass('active');
+//         $('#overlay').removeClass('active');
+//         $('#error-modal-content').empty().append($errorhtml);
+//       })
+//       );
+//     $('#error-modal-content').empty().append($thanks);
+//   }
 
-  $(document).on('submit', '#error-form', confirm);
-});
+//   $(document).on('submit', '#error-form', confirm);
+// });
 </script>
 
 
@@ -296,6 +279,8 @@ $(function() {
     $(document).foundation();
 });
 </script>
+
+<div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

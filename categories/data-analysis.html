@@ -18,23 +18,6 @@
 </head>
 
 <body>
-    <style type="text/css">
-    #overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        display: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    #overlay.active {
-        display: block;
-    }
-</style>
-<div id="overlay" class="js-overlay"></div>
 <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -43,7 +26,7 @@
     <a href="/ogrx-2/categories.html">Categories</a>
     <a href="/ogrx-2/authors.html">Authors</a>
     <a href="/ogrx-2/about.html">About</a>
-    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <!-- <a href="/ogrx-2/by/all.html">Exchange</a> -->
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
@@ -56,7 +39,7 @@
 </header>
 
 <div class="base-result-page">
-  <div class="top-section top-section--">
+  <div class="top-section top-section--data-analysis">
     <div class="row align-center">
       <div class="large-10 column">
         <h1>Data Analysis</h1>
@@ -72,6 +55,15 @@
 
 <script>
 window.store = {
+  
+  "paper-209": {
+    "title": "An Analysis of the Map Seeking Circuit and Monte Carlo Extensions",
+    "author": "Zeynep Engin,Jeffrey Ng,Mauricio Barahona,Anil A. Bharath",
+    "category": "Data Analysis",
+    "content": "The Map Seeking Circuit (MSC) has been suggested to address the inverse problem of transformation discovery as found in signal processing, vision, inverse kinematics and many other natural tasks. According to this idea, a parallel search in the transformation space of a high dimensional problem can be decomposed into parts efficiently using the ordering property of superpositions. Deterministic formulations of the circuit have been suggested. Here, we provide a probabilistic interpretation of the architecture whereby the superpositions of the circuit are seen as a series of marginalisations over parameters of the transform. Based on this, we interpret the weights of the MSC as importance weights. The latter suggests the incorporation of Monte-Carlo approaches in the MSC, providing improved resolution of parameter estimates within resource constrained implementations. As a final contribution, we model mixed serial/parallel search strategies of biological vision to reduce the problem of collusions, a common problem in the standard MSC approach.",
+    "url": "papers/an-analysis-of-the-map-seeking-circuit-and-monte-carlo-extensions.html"
+  }
+  ,
   
   "paper-425": {
     "title": "From Smart City to Open City: Lessons from Jakarta Smart City",
@@ -217,6 +209,15 @@ window.store = {
   }
   ,
   
+  "paper-a75": {
+    "title": "Evidence-based policy making in the social sciences: Methods that matter",
+    "author": "Gerry Stoker,Mark Evans",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Data Analysis,Institutional Innovation",
+    "content": "Drawing on the insights of some of the world’s leading authorities in public policy analysis, this important book offers a distinct and critical showcase of emerging forms of discovery for policy-making. Chapter by chapter this expert group of social scientists showcase their chosen method or approach, showing the context, the method’s key features and how it can be applied in practice, including the scope and limitations of its application and value to policy makers. Arguing that it is not just econometric analysis, cost benefit or surveys that can do policy work, the contributors demonstrate a range of other methods that can provide evidenced-based policy insights and how they can help facilitate progressive policy outcomes. The book will be ideal for upper level undergraduate students as well as Public Policy post-graduates, and can be used as the basis of an intensive learning experience for policy makers. - See more at: http://policypress.co.uk/evidence-based-policy-making-in-the-social-sciences#book-detail-tabs-stison-block-content-1-0-tab0",
+    "url": "papers/evidence-based-policy-making-in-the-social-sciences-methods-that-matter.html"
+  }
+  ,
+  
   "paper-144": {
     "title": "Using Big Data to Understand the Human Condition: The Kavli HUMAN Project",
     "author": "Okan Azmak,Hannah Bayerrew Caplin,Miyoung Chun,Paul Glimcher,Steven Koonin,Aristides Patrinos",
@@ -277,6 +278,15 @@ window.store = {
     "category": "Data Analysis,Big Data,Social Media",
     "content": "Social media is an invaluable source of time-critical information during a crisis. However, emergency response and humanitarian relief organizations that would like to use this information struggle with an avalanche of social media messages that exceeds human capacity to process. Emergency managers, decision makers, and affected communities can make sense of social media through a combination of machine computation and human compassion - expressed by thousands of digital volunteers who publish, process, and summarize potentially life-saving information. This book brings together computational methods from many disciplines: natural language processing, semantic technologies, data mining, machine learning, network analysis, human-computer interaction, and information visualization, focusing on methods that are commonly used for processing social media messages under time-critical constraints, and offering more than 500 references to in-depth information.",
     "url": "papers/big-crisis-data-social-media-in-disasters-and-time-critical-situations.html"
+  }
+  ,
+  
+  "paper-a91": {
+    "title": "The ‘who’ and ‘what’ of #diabetes on Twitter",
+    "author": "Mariano Beguerisse-Díaz,Amy K. McLennan,Guillermo Garduño-Hernández,Mauricio Barahona,Stanley J. Ulijaszek",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Data Analysis,Social Media",
+    "content": "Social media are being increasingly used for health promotion, yet the landscape of users, messages and interactions in such fora is poorly understood. Studies of social media and diabetes have focused mostly on patients, or public agencies addressing it, but have not looked broadly at all the participants or the diversity of content they contribute. We study Twitter conversations about diabetes through the systematic analysis of 2.5 million tweets collected over 8 months and the interactions between their authors. We address three questions: (1) what themes arise in these tweets?; (2) who are the most influential users?; (3) which type of users contribute to which themes? We answer these questions using a mixed-methods approach, integrating techniques from anthropology, network science and information retrieval such as thematic coding, temporal network analysis, and community and topic detection. Diabetes-related tweets fall within broad thematic groups: health information, news, social interaction, and commercial. At the same time, humorous messages and references to popular culture appear consistently, more than any other type of tweet. We classify authors according to their temporal 'hub' and 'authority' scores. Whereas the hub landscape is diffuse and fluid over time, top authorities are highly persistent across time and comprise bloggers, advocacy groups and NGOs related to diabetes, as well as for-profit entities without specific diabetes expertise. Top authorities fall into seven interest communities as derived from their Twitter follower network. Our findings have implications for public health professionals and policy makers who seek to use social media as an engagement tool and to inform policy design.",
+    "url": "papers/the-who-and-what-of-diabetes-on-twitter.html"
   }
   ,
   
@@ -349,15 +359,6 @@ window.store = {
     "category": "Data Analysis",
     "content": "A key challenge of developing a generic visual pattern detection system is the handling of variability in natural images. Estimation of multiple parameters that describe the pose of objects relative to a previously captured view or model in the images typically requires a search for an optimum in a high dimensional search space. Inspired from a controversial parallel search mechanism in the recent literature, the problem is tackled through a new neural circuitry model called Monte Carlo Map Seeking Circuit (MC-MSC). This replaces the regular sampling of transformation parameters in the original Map Seeking Circuit with a probabilistic sampling approach. Another novelty of this work is the ''queuing'' approach which serialises the search by a small amount and increases the performance considerably. This serialisation approach can also be considered as a rough estimation to the ''attentional mechanisms'' known to exist in primate vision strategy.",
     "url": "papers/an-interdiscilinary-approach-to-visual-pattern-detection-biologically-plausible-pattern-localisation-and-parameter-estimation-on-visual-data.html"
-  }
-  ,
-  
-  "paper-a75": {
-    "title": "Evidence-based policy making in the social sciences: Methods that matter",
-    "author": "Gerry Stoker,Mark Evans",
-    "category": "Data Analysis,Institutional Innovation,Citizen Engagement and Collective Intelligence",
-    "content": "Drawing on the insights of some of the world’s leading authorities in public policy analysis, this important book offers a distinct and critical showcase of emerging forms of discovery for policy-making. Chapter by chapter this expert group of social scientists showcase their chosen method or approach, showing the context, the method’s key features and how it can be applied in practice, including the scope and limitations of its application and value to policy makers. Arguing that it is not just econometric analysis, cost benefit or surveys that can do policy work, the contributors demonstrate a range of other methods that can provide evidenced-based policy insights and how they can help facilitate progressive policy outcomes. The book will be ideal for upper level undergraduate students as well as Public Policy post-graduates, and can be used as the basis of an intensive learning experience for policy makers. - See more at: http://policypress.co.uk/evidence-based-policy-making-in-the-social-sciences#book-detail-tabs-stison-block-content-1-0-tab0",
-    "url": "papers/evidence-based-policy-making-in-the-social-sciences-methods-that-matter.html"
   }
   ,
   
@@ -439,15 +440,6 @@ window.store = {
     "category": "Citizen Engagement and Crowdsourcing,Data Analysis,Smart Cities",
     "content": "Can today's city govern well if its citizens lack modern technology? How important is access to computers for lowering unemployment? What infrastructure does a city have to build in order to attract new business? Michael A. Pagano curates engagement with such questions by public intellectuals, academics, policy analysts, and citizens. Each essay explores the impact and opportunities technology provides in government and citizenship, health care, workforce development, service delivery to citizens, and metropolitan growth. As the authors show, rapidly emerging technologies and access to such technologies shape the ways people and institutions interact in the public sphere and private marketplace. The direction of metropolitan growth and development, in turn, depends on access to appropriate technology scaled and informed by the individual, household, and community needs of the region.",
     "url": "papers/technology-and-the-resilience-of-metropolitan-regions-digital-technologies-and-the-future-of-cities.html"
-  }
-  ,
-  
-  "paper-a91": {
-    "title": "The ‘who’ and ‘what’ of #diabetes on Twitter",
-    "author": "Mariano Beguerisse-Díaz,Amy K. McLennan,Guillermo Garduño-Hernández,Mauricio Barahona,Stanley J. Ulijaszek",
-    "category": "Social Media,Data Analysis,Citizen Engagement and Collective Intelligence",
-    "content": "Social media are being increasingly used for health promotion, yet the landscape of users, messages and interactions in such fora is poorly understood. Studies of social media and diabetes have focused mostly on patients, or public agencies addressing it, but have not looked broadly at all the participants or the diversity of content they contribute. We study Twitter conversations about diabetes through the systematic analysis of 2.5 million tweets collected over 8 months and the interactions between their authors. We address three questions: (1) what themes arise in these tweets?; (2) who are the most influential users?; (3) which type of users contribute to which themes? We answer these questions using a mixed-methods approach, integrating techniques from anthropology, network science and information retrieval such as thematic coding, temporal network analysis, and community and topic detection. Diabetes-related tweets fall within broad thematic groups: health information, news, social interaction, and commercial. At the same time, humorous messages and references to popular culture appear consistently, more than any other type of tweet. We classify authors according to their temporal 'hub' and 'authority' scores. Whereas the hub landscape is diffuse and fluid over time, top authorities are highly persistent across time and comprise bloggers, advocacy groups and NGOs related to diabetes, as well as for-profit entities without specific diabetes expertise. Top authorities fall into seven interest communities as derived from their Twitter follower network. Our findings have implications for public health professionals and policy makers who seek to use social media as an engagement tool and to inform policy design.",
-    "url": "papers/the-who-and-what-of-diabetes-on-twitter.html"
   }
   ,
   
@@ -637,15 +629,6 @@ window.store = {
     "category": "Data Analysis,Big Data",
     "content": "An introduction for everyone. In this rich, fascinating — surprisingly accessible — introduction, leading expert Eric Siegel reveals how predictive analytics works, and how it affects everyone every day. Rather than a \"how to\" for hands-on techies, the book serves lay readers and experts alike by covering new case studies and the latest state-of-the-art techniques.",
     "url": "papers/predictive-analytics-the-power-to-predict-who-will-click-buy-lie-or-die.html"
-  }
-  ,
-  
-  "paper-a26": {
-    "title": "Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools",
-    "author": "Tanja Aitamurto,Kaiping Chen,Ahmed Cherif,Jorge Saldivar Galli,Luis Santana",
-    "category": "Big Data,Citizen Engagement and Collective Intelligence,Data Analysis",
-    "content": "This paper examines the impact of crowdsourcing on a policymaking process by using a novel data analytics tool called Civic CrowdAnalytics, applying Natural Language Processing (NLP) methods such as concept extraction, word association and sentiment analysis. By drawing on data from a crowdsourced urban planning process in the City of Palo Alto in California, we examine the influence of civic input on the city’s Comprehensive City Plan update. The findings show that the impact of citizens’ voices depends on the volume and the tone of their demands. A higher demand with a stronger tone results in more policy changes. We also found an interesting and unexpected result: the city government in Palo Alto mirrors more or less the online crowd’s voice while citizen representatives rather filter than mirror the crowd’s will. While NLP methods show promise in making the analysis of the crowdsourced input more efficient, there are several issues. The accuracy rates should be improved. Furthermore, there is still considerable amount of human work in training the algorithm.",
-    "url": "papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html"
   }
   ,
   
@@ -955,15 +938,6 @@ window.store = {
   }
   ,
   
-  "paper-a47": {
-    "title": "The Architecture of Innovation",
-    "author": "Hollie Russon Gilman,Jessica Gover",
-    "category": "Data Analysis,Institutional Innovation,Citizen Engagement and Collective Intelligence",
-    "content": "“The Architecture of Innovation” provides recommendations for how government can embed innovation into federal policymaking to achieve scalable solutions and better serve the American public. Produced by Georgetown University’s Beeck Center for Social Impact + Innovation and the Massive Data Institute at the McCourt School of Public Policy, this report offers a framework for how to structure innovation in policymaking.",
-    "url": "papers/the-architecture-of-innovation.html"
-  }
-  ,
-  
   "paper-36": {
     "title": "Policies for a Fair Re-Use of Data: Big Data and the Application of Anonymization Techniques",
     "author": "Giuseppe D'Acquisto",
@@ -1018,6 +992,15 @@ window.store = {
   }
   ,
   
+  "paper-a47": {
+    "title": "The Architecture of Innovation",
+    "author": "Hollie Russon Gilman,Jessica Gover",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Data Analysis,Institutional Innovation",
+    "content": "“The Architecture of Innovation” provides recommendations for how government can embed innovation into federal policymaking to achieve scalable solutions and better serve the American public. Produced by Georgetown University’s Beeck Center for Social Impact + Innovation and the Massive Data Institute at the McCourt School of Public Policy, this report offers a framework for how to structure innovation in policymaking.",
+    "url": "papers/the-architecture-of-innovation.html"
+  }
+  ,
+  
   "paper-429": {
     "title": "Fine-Grained Dengue Forecasting Using Telephone Triage Services",
     "author": "Nabeel Abdur Rehman,Shankar Kalyanaraman,Talal Ahmad,Fahad Pervaiz,Umar Saif,Lakshminarayanan Subramanian",
@@ -1060,6 +1043,15 @@ window.store = {
     "category": "Data Analysis",
     "content": "Social media enable promising new approaches to measuring economic activity and analyzing economic behavior at high frequency and in real time using information independent from standard survey and administrative sources. This paper uses data from Twitter to create indexes of job loss, job search, and job posting. Signals are derived by counting job-related phrases in Tweets such as \"lost my job.\" The social media indexes are constructed from the principal components of these signals. The University of Michigan Social Media Job Loss Index tracks initial claims for unemployment insurance at medium and high frequencies and predicts 15 to 20 percent of the variance of the prediction error of the consensus forecast for initial claims. The social media indexes provide real-time indicators of events such as Hurricane Sandy and the 2013 government shutdown. Comparing the job loss index with the search and posting indexes indicates that the Beveridge Curve has been shifting inward since 2011.",
     "url": "papers/using-social-media-to-measure-labor-market-flows.html"
+  }
+  ,
+  
+  "paper-a26": {
+    "title": "Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools",
+    "author": "Tanja Aitamurto,Kaiping Chen,Ahmed Cherif,Jorge Saldivar Galli,Luis Santana",
+    "category": "Big Data,Citizen Engagement and Crowdsourcing,Data Analysis",
+    "content": "This paper examines the impact of crowdsourcing on a policymaking process by using a novel data analytics tool called Civic CrowdAnalytics, applying Natural Language Processing (NLP) methods such as concept extraction, word association and sentiment analysis. By drawing on data from a crowdsourced urban planning process in the City of Palo Alto in California, we examine the influence of civic input on the city’s Comprehensive City Plan update. The findings show that the impact of citizens’ voices depends on the volume and the tone of their demands. A higher demand with a stronger tone results in more policy changes. We also found an interesting and unexpected result: the city government in Palo Alto mirrors more or less the online crowd’s voice while citizen representatives rather filter than mirror the crowd’s will. While NLP methods show promise in making the analysis of the crowdsourced input more efficient, there are several issues. The accuracy rates should be improved. Furthermore, there is still considerable amount of human work in training the algorithm.",
+    "url": "papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html"
   }
   ,
   
@@ -1781,15 +1773,6 @@ window.store = {
     "content": "This paper conceptualizes how large-scale data and algorithms condition and reshape knowledge production when addressing international development challenges. The concept of governmentality and four dimensions of an analytics of government are proposed as a theoretical framework to examine how big data is constituted as an aspiration to improve the data and knowledge underpinning development efforts. Based on this framework, we argue that big data’s impact on how relevant problems are governed is enabled by (1) new techniques of visualizing development issues, (2) linking aspects of international development agendas to algorithms that synthesize large-scale data, (3) novel ways of rationalizing knowledge claims that underlie development efforts, and (4) shifts in professional and organizational identities of those concerned with producing and processing data for development. Our discussion shows that big data problematizes selected aspects of traditional ways to collect and analyze data for development (e.g. via household surveys). We also demonstrate that using big data analyses to address development challenges raises a number of questions that can deteriorate its impact.",
     "url": "papers/big-data-as-governmentality--digital-traces-algorithms-and-the-reconfiguration-of-data-in-international-development.html"
   }
-  ,
-  
-  "paper-209": {
-    "title": "An Analysis of the Map Seeking Circuit and Monte Carlo Extensions",
-    "author": "Zeynep Engin,Jeffrey Ng,Mauricio Barahona,Anil A. Bharath",
-    "category": "Data Analysis",
-    "content": "The Map Seeking Circuit (MSC) has been suggested to address the inverse problem of transformation discovery as found in signal processing, vision, inverse kinematics and many other natural tasks. According to this idea, a parallel search in the transformation space of a high dimensional problem can be decomposed into parts efficiently using the ordering property of superpositions. Deterministic formulations of the circuit have been suggested. Here, we provide a probabilistic interpretation of the architecture whereby the superpositions of the circuit are seen as a series of marginalisations over parameters of the transform. Based on this, we interpret the weights of the MSC as importance weights. The latter suggests the incorporation of Monte-Carlo approaches in the MSC, providing improved resolution of parameter estimates within resource constrained implementations. As a final contribution, we model mixed serial/parallel search strategies of biological vision to reduce the problem of collusions, a common problem in the standard MSC approach.",
-    "url": "papers/an-analysis-of-the-map-seeking-circuit-and-monte-carlo-extensions.html"
-  }
   
   
 };
@@ -1902,15 +1885,15 @@ window.store = {
             <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
+              <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
+              
+              <option data-filter="f-statistical-modeling">Statistical Modeling</option>
+              
               <option data-filter="f-case-studies">Case Studies</option>
               
               <option data-filter="f-comparative-analysis">Comparative Analysis</option>
               
-              <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
-              
               <option data-filter="f-conceptual-framework">Conceptual Framework</option>
-              
-              <option data-filter="f-statistical-modeling">Statistical Modeling</option>
               
               <option data-filter="f-design-science">Design Science</option>
               
@@ -1937,13 +1920,13 @@ window.store = {
             <select name="" id="filter-sector" class="filter js-change" >
               <option data-filter="****">Sector</option>
               
+              <option data-filter="f-health">Health</option>
+              
               <option data-filter="f-crisis-response">Crisis Response</option>
               
               <option data-filter="f-economy">Economy</option>
               
               <option data-filter="f-human-rights">Human Rights</option>
-              
-              <option data-filter="f-health">Health</option>
               
               <option data-filter="f-development">Development</option>
               
@@ -1951,13 +1934,13 @@ window.store = {
               
               <option data-filter="f-education">Education</option>
               
+              <option data-filter="f-politics">Politics</option>
+              
               <option data-filter="f-conceptual-framework">Conceptual Framework</option>
               
               <option data-filter="f-public-safety">Public Safety</option>
               
               <option data-filter="f-philanthropy-and-aid">Philanthropy and Aid</option>
-              
-              <option data-filter="f-politics">Politics</option>
               
               <option data-filter="f-economics">Economics</option>
               
@@ -2055,13 +2038,13 @@ window.store = {
             <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
               
+              <option data-filter="f-conference-proceedings">Conference Proceedings</option>
+              
               <option data-filter="f-research-report">Research Report</option>
               
               <option data-filter="f-book">Book</option>
               
               <option data-filter="f-journal-article">Journal Article</option>
-              
-              <option data-filter="f-conference-proceedings">Conference Proceedings</option>
               
               <option data-filter="f-working-paper">Working Paper</option>
               
@@ -2105,6 +2088,102 @@ window.store = {
     <div class="column large-12">
 
       
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-quantitative-analysis
+      
+      f-statistical-modeling
+      
+
+      
+      f-health
+      
+
+      
+
+      
+
+      
+      f-conference-proceedings
+      
+
+      
+      f-zeynep-engin
+      
+      f-jeffrey-ng
+      
+      f-mauricio-barahona
+      
+      f-anil-a-bharath
+      
+
+      
+      m-data-analysis
+      
+
+      f-search-paper-209
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/an-analysis-of-the-map-seeking-circuit-and-monte-carlo-extensions.html" title="An Analysis of the Map Seeking Circuit and Monte Carlo Extensions">An Analysis of the Map Seeking Circuit and Monte Carlo Extensions</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-zeynep-engin">Zeynep Engin</a>
+        
+        <a href="../by/author.html?filter=.f-jeffrey-ng">Jeffrey Ng</a>
+        
+        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
+        
+        <a href="../by/author.html?filter=.f-anil-a-bharath">Anil A. Bharath</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
 
       <div class="result-item
       
@@ -3658,6 +3737,104 @@ window.store = {
 
       <div class="result-item
       
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-gerry-stoker
+      
+      f-mark-evans
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-data-analysis
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a75
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/evidence-based-policy-making-in-the-social-sciences-methods-that-matter.html" title="Evidence-based policy making in the social sciences: Methods that matter">Evidence-based policy making in the social sciences: Methods that matter</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-gerry-stoker">Gerry Stoker</a>
+        
+        <a href="../by/author.html?filter=.f-mark-evans">Mark Evans</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
       m-open
       f-open
       
@@ -4316,6 +4493,135 @@ window.store = {
         <span class="result-item__taxonomy__value">
           
           <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-participation
+      
+      f-effectiveness
+      
+      f-access
+      
+
+      
+      f-quantitative-analysis
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-health
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-mariano-beguerisse-díaz
+      
+      f-amy-k-mclennan
+      
+      f-guillermo-garduño-hernández
+      
+      f-mauricio-barahona
+      
+      f-stanley-j-ulijaszek
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-data-analysis
+      
+      m-social-media
+      
+
+      f-search-paper-a91
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-mariano-beguerisse-díaz">Mariano Beguerisse-Díaz</a>
+        
+        <a href="../by/author.html?filter=.f-amy-k-mclennan">Amy K. McLennan</a>
+        
+        <a href="../by/author.html?filter=.f-guillermo-garduño-hernández">Guillermo Garduño-Hernández</a>
+        
+        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
+        
+        <a href="../by/author.html?filter=.f-stanley-j-ulijaszek">Stanley J. Ulijaszek</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/access.html">Access</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
           
         </span>
       </div>
@@ -5009,7 +5315,7 @@ window.store = {
       <div class="result-item__extras result-item__extras--world-bank-digital-engagement-evaluation-team">
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/deet-logo-white.png" alt="">
         
         
         
@@ -5096,100 +5402,6 @@ window.store = {
           <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
           
           <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-gerry-stoker
-      
-      f-mark-evans
-      
-
-      
-      m-data-analysis
-      
-      m-institutional-innovation
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a75
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/evidence-based-policy-making-in-the-social-sciences-methods-that-matter.html" title="Evidence-based policy making in the social sciences: Methods that matter">Evidence-based policy making in the social sciences: Methods that matter</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-gerry-stoker">Gerry Stoker</a>
-        
-        <a href="../by/author.html?filter=.f-mark-evans">Mark Evans</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
           
         </span>
       </div>
@@ -5917,7 +6129,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/CPI-logo-white.png" alt="">
         
         
         
@@ -6111,131 +6323,6 @@ window.store = {
         <span class="result-item__taxonomy__value">
           
           <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-
-      
-      f-participation
-      
-      f-effectiveness
-      
-      f-access
-      
-
-      
-      f-quantitative-analysis
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-      f-politics
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-mariano-beguerisse-díaz
-      
-      f-amy-k-mclennan
-      
-      f-guillermo-garduño-hernández
-      
-      f-mauricio-barahona
-      
-      f-stanley-j-ulijaszek
-      
-
-      
-      m-social-media
-      
-      m-data-analysis
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a91
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-mariano-beguerisse-díaz">Mariano Beguerisse-Díaz</a>
-        
-        <a href="../by/author.html?filter=.f-amy-k-mclennan">Amy K. McLennan</a>
-        
-        <a href="../by/author.html?filter=.f-guillermo-garduño-hernández">Guillermo Garduño-Hernández</a>
-        
-        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
-        
-        <a href="../by/author.html?filter=.f-stanley-j-ulijaszek">Stanley J. Ulijaszek</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
           
         </span>
       </div>
@@ -8286,129 +8373,6 @@ window.store = {
         <span class="result-item__taxonomy__value">
           
           <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-
-      
-      f-effectiveness
-      
-      f-legitimacy
-      
-
-      
-      f-design-science
-      
-      f-qualitative-analysis
-      
-      f-ethnography
-      
-      f-user-studies
-      
-
-      
-
-      
-      f-united-states
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-tanja-aitamurto
-      
-      f-kaiping-chen
-      
-      f-ahmed-cherif
-      
-      f-jorge-saldivar-galli
-      
-      f-luis-santana
-      
-
-      
-      m-big-data
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-      m-data-analysis
-      
-
-      f-search-paper-a26
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html" title="Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools">Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
-        
-        <a href="../by/author.html?filter=.f-kaiping-chen">Kaiping Chen</a>
-        
-        <a href="../by/author.html?filter=.f-ahmed-cherif">Ahmed Cherif</a>
-        
-        <a href="../by/author.html?filter=.f-jorge-saldivar-galli">Jorge Saldivar Galli</a>
-        
-        <a href="../by/author.html?filter=.f-luis-santana">Luis Santana</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
-          
-          <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
           
         </span>
       </div>
@@ -11670,101 +11634,6 @@ window.store = {
       
       f-effectiveness
       
-
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-      f-united-states
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-hollie-russon-gilman
-      
-      f-jessica-gover
-      
-
-      
-      m-data-analysis
-      
-      m-institutional-innovation
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a47
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-architecture-of-innovation.html" title="The Architecture of Innovation">The Architecture of Innovation</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-hollie-russon-gilman">Hollie Russon Gilman</a>
-        
-        <a href="../by/author.html?filter=.f-jessica-gover">Jessica Gover</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-
-      
-      f-effectiveness
-      
       f-privacy
       
 
@@ -12341,6 +12210,105 @@ window.store = {
       
 
       
+      f-conceptual-framework
+      
+
+      
+
+      
+      f-united-states
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-hollie-russon-gilman
+      
+      f-jessica-gover
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-data-analysis
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a47
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-architecture-of-innovation.html" title="The Architecture of Innovation">The Architecture of Innovation</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-hollie-russon-gilman">Hollie Russon Gilman</a>
+        
+        <a href="../by/author.html?filter=.f-jessica-gover">Jessica Gover</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
       f-statistical-modeling
       
       f-design-science
@@ -12797,6 +12765,129 @@ window.store = {
         <span class="result-item__taxonomy__value">
           
           <a class="result-item__tag" href="../types/working-paper.html">Working Paper</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-legitimacy
+      
+
+      
+      f-design-science
+      
+      f-qualitative-analysis
+      
+      f-ethnography
+      
+      f-user-studies
+      
+
+      
+
+      
+      f-united-states
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-tanja-aitamurto
+      
+      f-kaiping-chen
+      
+      f-ahmed-cherif
+      
+      f-jorge-saldivar-galli
+      
+      f-luis-santana
+      
+
+      
+      m-big-data
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-data-analysis
+      
+
+      f-search-paper-a26
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html" title="Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools">Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
+        
+        <a href="../by/author.html?filter=.f-kaiping-chen">Kaiping Chen</a>
+        
+        <a href="../by/author.html?filter=.f-ahmed-cherif">Ahmed Cherif</a>
+        
+        <a href="../by/author.html?filter=.f-jorge-saldivar-galli">Jorge Saldivar Galli</a>
+        
+        <a href="../by/author.html?filter=.f-luis-santana">Luis Santana</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          
+          <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
           
         </span>
       </div>
@@ -13832,7 +13923,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
         
         
         
@@ -16549,7 +16640,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/dcl-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/dcl-white.png" alt="">
         
         
         
@@ -17079,7 +17170,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/oki-color.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/oki-white.png" alt="">
         
         
       </div>
@@ -20969,102 +21060,6 @@ window.store = {
     </div>
 
     
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-quantitative-analysis
-      
-      f-statistical-modeling
-      
-
-      
-      f-health
-      
-
-      
-
-      
-
-      
-      f-conference-proceedings
-      
-
-      
-      f-zeynep-engin
-      
-      f-jeffrey-ng
-      
-      f-mauricio-barahona
-      
-      f-anil-a-bharath
-      
-
-      
-      m-data-analysis
-      
-
-      f-search-paper-209
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/an-analysis-of-the-map-seeking-circuit-and-monte-carlo-extensions.html" title="An Analysis of the Map Seeking Circuit and Monte Carlo Extensions">An Analysis of the Map Seeking Circuit and Monte Carlo Extensions</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-zeynep-engin">Zeynep Engin</a>
-        
-        <a href="../by/author.html?filter=.f-jeffrey-ng">Jeffrey Ng</a>
-        
-        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
-        
-        <a href="../by/author.html?filter=.f-anil-a-bharath">Anil A. Bharath</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
   </div>
 </div>
 </div>
@@ -21167,33 +21162,33 @@ window.store = {
 </div>
 
 <script type="text/javascript">
-$(function() {
-  $('#overlay').click(function (e) {
-    e.preventDefault();
-    $('#error-modal').removeClass('active');
-    $('#overlay').removeClass('active');
-  });
-  $('.js-open-error-modal').click(function (e) {
-    e.preventDefault();
-    $($(this).attr('data-modal')).addClass('active');
-    $('#overlay').addClass('active');
-  });
+// $(function() {
+//   $('#overlay').click(function (e) {
+//     e.preventDefault();
+//     $('#error-modal').removeClass('active');
+//     $('#overlay').removeClass('active');
+//   });
+//   $('.js-open-error-modal').click(function (e) {
+//     e.preventDefault();
+//     $($(this).attr('data-modal')).addClass('active');
+//     $('#overlay').addClass('active');
+//   });
 
-  var confirm = function () {
-    var $errorhtml = $('#error-modal-content').clone();
-    var $thanks = $('<h3>Thank you!</h3>');
-    $thanks.append(
-      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
-        $('#error-modal').removeClass('active');
-        $('#overlay').removeClass('active');
-        $('#error-modal-content').empty().append($errorhtml);
-      })
-      );
-    $('#error-modal-content').empty().append($thanks);
-  }
+//   var confirm = function () {
+//     var $errorhtml = $('#error-modal-content').clone();
+//     var $thanks = $('<h3>Thank you!</h3>');
+//     $thanks.append(
+//       $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+//         $('#error-modal').removeClass('active');
+//         $('#overlay').removeClass('active');
+//         $('#error-modal-content').empty().append($errorhtml);
+//       })
+//       );
+//     $('#error-modal-content').empty().append($thanks);
+//   }
 
-  $(document).on('submit', '#error-form', confirm);
-});
+//   $(document).on('submit', '#error-form', confirm);
+// });
 </script>
 
 
@@ -21230,6 +21225,8 @@ $(function() {
     $(document).foundation();
 });
 </script>
+
+<div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

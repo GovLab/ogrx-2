@@ -157,6 +157,13 @@
     text-align: right;
     font-weight: 600; }
 
+.main-menu {
+  z-index: 999; }
+
+#overlay {
+  left: 28%;
+  z-index: 20; }
+
 .footer h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -528,22 +535,24 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background-color: rgba(219, 192, 72, 0.2);
   color: #dbc048; }
 
-.top-section--all {
-  background-color: #3b4f65; }
-.top-section--behavioral-research {
-  background-color: #de606c; }
-.top-section--citizen-engagement {
-  background-color: #5fa9d4; }
-.top-section--civic-technology {
-  background-color: #a67fb9; }
-.top-section--data-analysis {
-  background-color: #f3b44b; }
-.top-section--expert-networking {
-  background-color: #6e7b97; }
-.top-section--open-data {
-  background-color: #00ad98; }
-.top-section--labs-and-experimentation {
-  background-color: #dbc048; }
+.top-section {
+  background-color: #004f6f; }
+  .top-section--all {
+    background-color: #3b4f65; }
+  .top-section--behavioral-science-and-nudges {
+    background-color: #de606c; }
+  .top-section--citizen-engagement-and-crowdsourcing {
+    background-color: #5fa9d4; }
+  .top-section--civic-technology {
+    background-color: #a67fb9; }
+  .top-section--data-analysis {
+    background-color: #f3b44b; }
+  .top-section--expert-networking {
+    background-color: #6e7b97; }
+  .top-section--open-data {
+    background-color: #00ad98; }
+  .top-section--labs-and-experimentation {
+    background-color: #dbc048; }
 
 .organizations {
   text-align: center; }
@@ -734,7 +743,6 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   text-align: center; }
 
 .top-section {
-  background-color: #004f6f;
   margin-top: -66px;
   padding-top: 136px; }
 

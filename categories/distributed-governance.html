@@ -18,23 +18,6 @@
 </head>
 
 <body>
-    <style type="text/css">
-    #overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        display: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    #overlay.active {
-        display: block;
-    }
-</style>
-<div id="overlay" class="js-overlay"></div>
 <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -43,7 +26,7 @@
     <a href="/ogrx-2/categories.html">Categories</a>
     <a href="/ogrx-2/authors.html">Authors</a>
     <a href="/ogrx-2/about.html">About</a>
-    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <!-- <a href="/ogrx-2/by/all.html">Exchange</a> -->
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
@@ -56,7 +39,7 @@
 </header>
 
 <div class="base-result-page">
-  <div class="top-section top-section--">
+  <div class="top-section top-section--distributed-governance">
     <div class="row align-center">
       <div class="large-10 column">
         <h1>Distributed Governance</h1>
@@ -72,24 +55,6 @@
 
 <script>
 window.store = {
-  
-  "paper-a30": {
-    "title": "Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System",
-    "author": "Tobias Ruppert,Andreas Bannach,Jürgen Bernard,Hendrik Lücke-Tieke,Alex Ulmer,Jörn Kohlhammer",
-    "category": "Distributed Governance,Citizen Engagement and Collective Intelligence,Institutional Innovation,Civic Technology",
-    "content": "The process of political decision making is often complex and tedious. The policy process consists of multiple steps, most of them are highly iterative. In addition, different stakeholder groups are involved in political decision making and contribute to the process. A series of textual documents accompanies the process. Examples are official documents, discussions, scientific reports, external reviews, newspaper articles, or economic white papers. Experts from the political domain report that this plethora of textual documents often exceeds their ability to keep track of the entire policy process. We present PolicyLine, a visualization system that supports different stakeholder groups in overview-and-detail tasks for large sets of textual documents in the political decision making process. In a longitudinal design study conducted together with domain experts in political decision making, we identified missing analytical functionality on the basis of a problem and domain characterization. In an iterative design phase, we created PolicyLine in close collaboration with the domain experts. Finally, we present the results of three evaluation rounds, and reflect on our collaborative visualization system.",
-    "url": "papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html"
-  }
-  ,
-  
-  "paper-a100": {
-    "title": "Transforming Politics",
-    "author": "S. Roseneil,Jeff Hearn,Paul Bagguley",
-    "category": "Distributed Governance,Collective Intelligence,Citizen Engagement and Collective Intelligence",
-    "content": "This volume examines the transformation of politics and social movements at various levels. Starting with a transformation of identity within social movements, it goes on to discuss changes in the scale of social movement mobilisation. The impact of social movements on the state is also considered, with a particular focus upon the ways in which the state is able to incorporate apparently radical political agendas. Finally, the book examines those intellectual and theoretical debates stimulated by recent political transformations.",
-    "url": "papers/transforming-politics.html"
-  }
-  ,
   
   "paper-367": {
     "title": "Crowdsourcing Global Governance: Sustainable Development Goals, Civil Society, and the Pursuit of Democratic Legitimacy",
@@ -124,6 +89,15 @@ window.store = {
     "category": "Citizen Engagement and Crowdsourcing,Distributed Governance",
     "content": "Participation in discussions about the public interest can be enhanced by technology, but can also create an environment in which participants are overwhelmed by the quantity, quality, and diversity of information and arguments. Political participation is at a greater disadvantage than non-political activities in that participants from different parties already start out with established differences, which requires them to reach some form of common ground before progress can be made. Those seeking authentic deliberation are discouraged to participate when confronted with uncivil and inflammatory rhetoric. These issues are often exacerbated in online discussions, where lack of identity cues and low barriers to entry can lead to heightened incivility between participants, often labeled as “flaming” and “trolling”. This paper explores the extent to which moderator systems, tools online discussion forums use to manage contributions, can reduce information overload and encourage civil conversations in virtual discussion spaces. Using the popular website Slashdot as an example of sound moderation in a public discourse setting, we found that users move toward consensus about which and how comments deserve to be moderated. Using these findings, we explore how transferable these systems are for participation in public matters specifically to the unique attributes of political discussion. Slashdot's political forum provides a comparison group that allowed us to find quantitative and qualitative differences in political posting, comments, and moderation. Our results show that large scale, civil participation is possible with a distributed moderation system that enables regularly lively debates to be conducted positively because the system provides tools for people to enforce norms of civility.",
     "url": "papers/crowdsourcing-civility-a-natural-experiment-examining-the-effects-of-distributed-moderation-in-online-forums.html"
+  }
+  ,
+  
+  "paper-a30": {
+    "title": "Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System",
+    "author": "Tobias Ruppert,Andreas Bannach,Jürgen Bernard,Hendrik Lücke-Tieke,Alex Ulmer,Jörn Kohlhammer",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Collective Intelligence,Distributed Governance,Institutional Innovation",
+    "content": "The process of political decision making is often complex and tedious. The policy process consists of multiple steps, most of them are highly iterative. In addition, different stakeholder groups are involved in political decision making and contribute to the process. A series of textual documents accompanies the process. Examples are official documents, discussions, scientific reports, external reviews, newspaper articles, or economic white papers. Experts from the political domain report that this plethora of textual documents often exceeds their ability to keep track of the entire policy process. We present PolicyLine, a visualization system that supports different stakeholder groups in overview-and-detail tasks for large sets of textual documents in the political decision making process. In a longitudinal design study conducted together with domain experts in political decision making, we identified missing analytical functionality on the basis of a problem and domain characterization. In an iterative design phase, we created PolicyLine in close collaboration with the domain experts. Finally, we present the results of three evaluation rounds, and reflect on our collaborative visualization system.",
+    "url": "papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html"
   }
   ,
   
@@ -205,6 +179,15 @@ window.store = {
     "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Gamification,Labs and Experimentation,Prizes and Challenges,Behavioral Science and Nudges",
     "content": "Advances in communication and computational technology have drastically increased opportunities for the public to participate in governing activities. Well-designed responsive participatory pathways can encourage individuals to take action on issues that are important to them while receiving value and enjoyment in contributing to the overall welfare of the state. However, many crowdsourcing programs do not achieve their intended targets or goals in part because people have little motivation to participate. Serious games are examined to address this challenge as they involve the integration of intrinsic human motivators with game mechanics or game dynamics into a website, service, community, campaign, or application to drive participation and engagement. Governments can supplement open governance platforms with characteristics of games to reshape and invigorate public participation if individuals have opportunities to participate through channels that are collectively and individually rewarding. Drawing on theory and an emerging body of examples this manuscript creates a framework for how governance organizations can integrate serious games into the design of open governance platforms to improve the understanding of how the platform affects the working relationship with the public when solving collective challenges. Contributions of serious games are how to foster dialog, educate, solicit feedback, and mobilize individuals. In identifying the characteristics that differentiate early projects that have succeeded with those that have struggled, we provide recommendations of how to cultivate voluntary and enthusiastic participation in open governance platforms– giving the public the opportunity and motivation to have an impact on the communities in which they live just as many already do in the virtual worlds in which they play.",
     "url": "papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html"
+  }
+  ,
+  
+  "paper-a100": {
+    "title": "Transforming Politics",
+    "author": "S. Roseneil,Jeff Hearn,Paul Bagguley",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Distributed Governance",
+    "content": "This volume examines the transformation of politics and social movements at various levels. Starting with a transformation of identity within social movements, it goes on to discuss changes in the scale of social movement mobilisation. The impact of social movements on the state is also considered, with a particular focus upon the ways in which the state is able to incorporate apparently radical political agendas. Finally, the book examines those intellectual and theoretical debates stimulated by recent political transformations.",
+    "url": "papers/transforming-politics.html"
   }
   ,
   
@@ -319,11 +302,11 @@ window.store = {
             <select name="" id="filter-objective" class="filter js-change" >
               <option data-filter="**">Objective</option>
               
+              <option data-filter="f-effectiveness">Effectiveness</option>
+              
               <option data-filter="f-access">Access</option>
               
               <option data-filter="f-participation">Participation</option>
-              
-              <option data-filter="f-effectiveness">Effectiveness</option>
               
               <option data-filter="f-participation-and-sharing">Participation and Sharing</option>
               
@@ -344,13 +327,9 @@ window.store = {
             <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
-              <option data-filter="f-design-science">Design Science</option>
+              <option data-filter="f-case-studies">Case Studies</option>
               
               <option data-filter="f-conceptual-framework">Conceptual Framework</option>
-              
-              <option data-filter="f-ethnography">Ethnography</option>
-              
-              <option data-filter="f-case-studies">Case Studies</option>
               
               <option data-filter="f-survey">Survey</option>
               
@@ -358,9 +337,13 @@ window.store = {
               
               <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
               
+              <option data-filter="f-design-science">Design Science</option>
+              
               <option data-filter="f-user-studies">User Studies</option>
               
               <option data-filter="f-comparative-analysis">Comparative Analysis</option>
+              
+              <option data-filter="f-ethnography">Ethnography</option>
               
             </select>
           </div>
@@ -413,11 +396,11 @@ window.store = {
             <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
               
-              <option data-filter="f-conference-proceedings">Conference Proceedings</option>
+              <option data-filter="f-journal-article">Journal Article</option>
               
               <option data-filter="f-book">Book</option>
               
-              <option data-filter="f-journal-article">Journal Article</option>
+              <option data-filter="f-conference-proceedings">Conference Proceedings</option>
               
               <option data-filter="f-research-report">Research Report</option>
               
@@ -459,226 +442,6 @@ window.store = {
     <div class="column large-12">
 
       
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-access
-      
-      f-participation
-      
-
-      
-      f-design-science
-      
-      f-conceptual-framework
-      
-
-      
-      f-politics
-      
-
-      
-
-      
-
-      
-      f-conference-proceedings
-      
-
-      
-      f-tobias-ruppert
-      
-      f-andreas-bannach
-      
-      f-jürgen-bernard
-      
-      f-hendrik-lücke-tieke
-      
-      f-alex-ulmer
-      
-      f-jörn-kohlhammer
-      
-
-      
-      m-distributed-governance
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-      m-institutional-innovation
-      
-      m-civic-technology
-      
-
-      f-search-paper-a30
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html" title="Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System">Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-tobias-ruppert">Tobias Ruppert</a>
-        
-        <a href="../by/author.html?filter=.f-andreas-bannach">Andreas Bannach</a>
-        
-        <a href="../by/author.html?filter=.f-jürgen-bernard">Jürgen Bernard</a>
-        
-        <a href="../by/author.html?filter=.f-hendrik-lücke-tieke">Hendrik Lücke-Tieke</a>
-        
-        <a href="../by/author.html?filter=.f-alex-ulmer">Alex Ulmer</a>
-        
-        <a href="../by/author.html?filter=.f-jörn-kohlhammer">Jörn Kohlhammer</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-ethnography
-      
-      f-conceptual-framework
-      
-
-      
-      f-politics
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-s-roseneil
-      
-      f-jeff-hearn
-      
-      f-paul-bagguley
-      
-
-      
-      m-distributed-governance
-      
-      m-collective-intelligence
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a100
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/transforming-politics.html" title="Transforming Politics">Transforming Politics</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?filter=.f-s-roseneil">S. Roseneil</a>
-        
-        <a href="../by/author.html?filter=.f-jeff-hearn">Jeff Hearn</a>
-        
-        <a href="../by/author.html?filter=.f-paul-bagguley">Paul Bagguley</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
 
       <div class="result-item
       
@@ -1106,11 +869,135 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
         
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-access
+      
+      f-participation
+      
+
+      
+      f-design-science
+      
+      f-conceptual-framework
+      
+
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-conference-proceedings
+      
+
+      
+      f-tobias-ruppert
+      
+      f-andreas-bannach
+      
+      f-jürgen-bernard
+      
+      f-hendrik-lücke-tieke
+      
+      f-alex-ulmer
+      
+      f-jörn-kohlhammer
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-civic-technology
+      
+      m-collective-intelligence
+      
+      m-distributed-governance
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a30
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html" title="Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System">Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-tobias-ruppert">Tobias Ruppert</a>
+        
+        <a href="../by/author.html?filter=.f-andreas-bannach">Andreas Bannach</a>
+        
+        <a href="../by/author.html?filter=.f-jürgen-bernard">Jürgen Bernard</a>
+        
+        <a href="../by/author.html?filter=.f-hendrik-lücke-tieke">Hendrik Lücke-Tieke</a>
+        
+        <a href="../by/author.html?filter=.f-alex-ulmer">Alex Ulmer</a>
+        
+        <a href="../by/author.html?filter=.f-jörn-kohlhammer">Jörn Kohlhammer</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/access.html">Access</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
+          
+        </span>
       </div>
       
     </div>
@@ -1374,7 +1261,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
@@ -1527,7 +1414,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
@@ -1719,7 +1606,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
         
         
         
@@ -2193,11 +2080,111 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
         
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-ethnography
+      
+      f-conceptual-framework
+      
+
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-s-roseneil
+      
+      f-jeff-hearn
+      
+      f-paul-bagguley
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-distributed-governance
+      
+
+      f-search-paper-a100
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/transforming-politics.html" title="Transforming Politics">Transforming Politics</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-s-roseneil">S. Roseneil</a>
+        
+        <a href="../by/author.html?filter=.f-jeff-hearn">Jeff Hearn</a>
+        
+        <a href="../by/author.html?filter=.f-paul-bagguley">Paul Bagguley</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
       </div>
       
     </div>
@@ -2323,7 +2310,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
         
         
         
@@ -2483,7 +2470,7 @@ window.store = {
         
         
         
-        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-white.png" alt="">
         
         
         
@@ -2773,33 +2760,33 @@ window.store = {
 </div>
 
 <script type="text/javascript">
-$(function() {
-  $('#overlay').click(function (e) {
-    e.preventDefault();
-    $('#error-modal').removeClass('active');
-    $('#overlay').removeClass('active');
-  });
-  $('.js-open-error-modal').click(function (e) {
-    e.preventDefault();
-    $($(this).attr('data-modal')).addClass('active');
-    $('#overlay').addClass('active');
-  });
+// $(function() {
+//   $('#overlay').click(function (e) {
+//     e.preventDefault();
+//     $('#error-modal').removeClass('active');
+//     $('#overlay').removeClass('active');
+//   });
+//   $('.js-open-error-modal').click(function (e) {
+//     e.preventDefault();
+//     $($(this).attr('data-modal')).addClass('active');
+//     $('#overlay').addClass('active');
+//   });
 
-  var confirm = function () {
-    var $errorhtml = $('#error-modal-content').clone();
-    var $thanks = $('<h3>Thank you!</h3>');
-    $thanks.append(
-      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
-        $('#error-modal').removeClass('active');
-        $('#overlay').removeClass('active');
-        $('#error-modal-content').empty().append($errorhtml);
-      })
-      );
-    $('#error-modal-content').empty().append($thanks);
-  }
+//   var confirm = function () {
+//     var $errorhtml = $('#error-modal-content').clone();
+//     var $thanks = $('<h3>Thank you!</h3>');
+//     $thanks.append(
+//       $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+//         $('#error-modal').removeClass('active');
+//         $('#overlay').removeClass('active');
+//         $('#error-modal-content').empty().append($errorhtml);
+//       })
+//       );
+//     $('#error-modal-content').empty().append($thanks);
+//   }
 
-  $(document).on('submit', '#error-form', confirm);
-});
+//   $(document).on('submit', '#error-form', confirm);
+// });
 </script>
 
 
@@ -2836,6 +2823,8 @@ $(function() {
     $(document).foundation();
 });
 </script>
+
+<div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

@@ -18,23 +18,6 @@
 </head>
 
 <body>
-    <style type="text/css">
-    #overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        display: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    #overlay.active {
-        display: block;
-    }
-</style>
-<div id="overlay" class="js-overlay"></div>
 <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -43,7 +26,7 @@
     <a href="/ogrx-2/categories.html">Categories</a>
     <a href="/ogrx-2/authors.html">Authors</a>
     <a href="/ogrx-2/about.html">About</a>
-    <a href="/ogrx-2/b1c94ca2fbc3e78fc30069c8d0f01680-all.html">Exchange</a>
+    <!-- <a href="/ogrx-2/by/all.html">Exchange</a> -->
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
@@ -64,11 +47,41 @@
       </div>
     </div>
 
+    
+    
+
     <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
     
 
 <script>
 window.store = {
+  
+  "paper-462": {
+    "title": "Flooding through the lens of mobile phone activity",
+    "author": "David Pastor-Escuredo,Alfredo Morales-Guzmán,Yolanda Torres-Fernández,Jean-Martin Bauer,Amit Wadhwa,Carlos Castro-Correa,Liudmyla Romanoff,Jong Gun Lee,Alex Rutherford,Vanessa Frias-Martinez,Nuria Oliver,Enrique Frias-Martinez,Miguel Luengo-Oroz",
+    "category": "Big Data,Data Analysis,Data Collaboratives,Design Thinking,Open Data",
+    "content": "Natural disasters affect hundreds of millions of people worldwide every year. Emergency response efforts depend upon the availability of timely information, such as information concerning the movements of affected populations. The analysis of aggregated and anonymized Call Detail Records (CDR) captured from the mobile phone infrastructure provides new possibilities to characterize human behavior during critical events. In this work, we investigate the viability of using CDR data combined with other sources of information to characterize the floods that occurred in Tabasco, Mexico in 2009. An impact map has been reconstructed using Landsat-7 images to identify the floods. Within this frame, the underlying communication activity signals in the CDR data have been analyzed and compared against rainfall levels extracted from data of the NASA-TRMM project. The variations in the number of active phones connected to each cell tower reveal abnormal activity patterns in the most affected locations during and after the floods that could be used as signatures of the floods - both in terms of infrastructure impact assessment and population information awareness. The representativeness of the analysis has been assessed using census data and civil protection records. While a more extensive validation is required, these early results suggest high potential in using cell tower activity information to improve early warning and emergency management mechanisms.",
+    "url": "papers/flooding-through-the-lens-of-mobile-phone-activity.html"
+  }
+  ,
+  
+  "paper-295": {
+    "title": "Governing Methods: Policy Innovation Labs, Design and Data Science in the Digital Governance of Education",
+    "author": "Ben Williamson",
+    "category": "Labs and Experimentation,Design Thinking,Data Analysis",
+    "content": "Policy innovation labs are emerging knowledge actors and technical experts in the governing of education. The article offers a historical and conceptual account of the organisational form of the policy innovation lab. Policy innovation labs are characterised by specific methods and techniques of design, data science, and digitisation in public services such as education. The second half of the article details how labs promote the use of digital data analysis, evidence-based evaluation and ‘design-for-policy’ techniques as methods for the governing of education. In particular, they promote the ‘computational thinking’ associated with computer programming as a capacity required by a ‘reluctant state’ that is increasingly concerned to delegate its responsibilities to digitally enabled citizens with the ‘designerly’ capacities and technical expertise to ‘code’ solutions to public and social problems. Policy innovation labs are experimental laboratories trialling new methods within education for administering and governing the future of the state itself.",
+    "url": "papers/governing-methods-policy-innovation-labs-design-and-data-science-in-the-digital-governance-of-education.html"
+  }
+  ,
+  
+  "paper-402": {
+    "title": "Flooding Through the Lens of Mobile Phone Activity",
+    "author": "David Pastor-Escuredo,Alfredo Morales-Guzmán,Yolanda Torres-Fernández,Jean-Martin Bauer,Amit Wadhwa,Carlos Castro-Correa,Liudmyla Romanoff,Jong Gun Lee,Alex Rutherford,Vanessa Frias-Martinez,Nuria Oliver,Enrique Frias-Martinez,Miguel Luengo-Oroz",
+    "category": "Data Analysis,Data Collaboratives,Big Data,Design Thinking,Open Data",
+    "content": "Natural disasters affect hundreds of millions of people worldwide every year. Emergency response efforts depend upon the availability of timely information, such as information concerning the movements of affected populations. The analysis of aggregated and anonymized Call Detail Records (CDR) captured from the mobile phone infrastructure provides new possibilities to characterize human behavior during critical events. In this work, we investigate the viability of using CDR data combined with other sources of information to characterize the floods that occurred in Tabasco, Mexico in 2009. An impact map has been reconstructed using Landsat-7 images to identify the floods. Within this frame, the underlying communication activity signals in the CDR data have been analyzed and compared against rainfall levels extracted from data of the NASA-TRMM project. The variations in the number of active phones connected to each cell tower reveal abnormal activity patterns in the most affected locations during and after the floods that could be used as signatures of the floods - both in terms of infrastructure impact assessment and population information awareness. The representativeness of the analysis has been assessed using census data and civil protection records. While a more extensive validation is required, these early results suggest high potential in using cell tower activity information to improve early warning and emergency management mechanisms.",
+    "url": "papers/flooding-through-the-lens-of-mobile-phone-activity.html"
+  }
+  
   
 };
 </script>
@@ -136,35 +149,46 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-objective" class="filter js-change" disabled>
+            <select name="" id="filter-objective" class="filter js-change" >
               <option data-filter="**">Objective</option>
               
+              <option data-filter="f-effectiveness">Effectiveness</option>
+              
             </select>
           </div>
         </div>
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-methodology" class="filter js-change" disabled>
+            <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
+              <option data-filter="f-case-studies">Case Studies</option>
+              
+              <option data-filter="f-comparative-analysis">Comparative Analysis</option>
+              
+              <option data-filter="f-network-analysis">Network Analysis</option>
+              
+              <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
+              
+              <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
+              
             </select>
           </div>
         </div>
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-sector" class="filter js-change" disabled>
+            <select name="" id="filter-sector" class="filter js-change" >
               <option data-filter="****">Sector</option>
               
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-region" class="filter js-change" disabled>
-              <option data-filter="*****">Region</option>
+              <option data-filter="f-crisis-response">Crisis Response</option>
+              
+              <option data-filter="f-development">Development</option>
+              
+              <option data-filter="f-environment">Environment</option>
+              
+              <option data-filter="f-education">Education</option>
               
             </select>
           </div>
@@ -172,8 +196,25 @@ window.store = {
 
         <div class="filter-ui-container">
           <div class="select">
-            <select name="" id="filter-type" class="filter js-change" disabled>
+            <select name="" id="filter-region" class="filter js-change" >
+              <option data-filter="*****">Region</option>
+              
+              <option data-filter="f-mexico">Mexico</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-ui-container">
+          <div class="select">
+            <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
+              
+              <option data-filter="f-conference-proceedings">Conference Proceedings</option>
+              
+              <option data-filter="f-white-paper">White Paper</option>
+              
+              <option data-filter="f-journal-article">Journal Article</option>
               
             </select>
           </div>
@@ -201,8 +242,6 @@ window.store = {
 
 </section>
   </div>
-
-  
 
   
 
@@ -650,7 +689,7 @@ window.store = {
     
   </div>
 </div>
-</div> <!-- This will receive a pre-filter by David's Plugin -->
+</div>
 
 </div>
 
@@ -750,33 +789,33 @@ window.store = {
 </div>
 
 <script type="text/javascript">
-$(function() {
-  $('#overlay').click(function (e) {
-    e.preventDefault();
-    $('#error-modal').removeClass('active');
-    $('#overlay').removeClass('active');
-  });
-  $('.js-open-error-modal').click(function (e) {
-    e.preventDefault();
-    $($(this).attr('data-modal')).addClass('active');
-    $('#overlay').addClass('active');
-  });
+// $(function() {
+//   $('#overlay').click(function (e) {
+//     e.preventDefault();
+//     $('#error-modal').removeClass('active');
+//     $('#overlay').removeClass('active');
+//   });
+//   $('.js-open-error-modal').click(function (e) {
+//     e.preventDefault();
+//     $($(this).attr('data-modal')).addClass('active');
+//     $('#overlay').addClass('active');
+//   });
 
-  var confirm = function () {
-    var $errorhtml = $('#error-modal-content').clone();
-    var $thanks = $('<h3>Thank you!</h3>');
-    $thanks.append(
-      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
-        $('#error-modal').removeClass('active');
-        $('#overlay').removeClass('active');
-        $('#error-modal-content').empty().append($errorhtml);
-      })
-      );
-    $('#error-modal-content').empty().append($thanks);
-  }
+//   var confirm = function () {
+//     var $errorhtml = $('#error-modal-content').clone();
+//     var $thanks = $('<h3>Thank you!</h3>');
+//     $thanks.append(
+//       $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+//         $('#error-modal').removeClass('active');
+//         $('#overlay').removeClass('active');
+//         $('#error-modal-content').empty().append($errorhtml);
+//       })
+//       );
+//     $('#error-modal-content').empty().append($thanks);
+//   }
 
-  $(document).on('submit', '#error-form', confirm);
-});
+//   $(document).on('submit', '#error-form', confirm);
+// });
 </script>
 
 
@@ -813,6 +852,8 @@ $(function() {
     $(document).foundation();
 });
 </script>
+
+<div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>
