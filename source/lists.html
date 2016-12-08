@@ -13,62 +13,11 @@ layout: default
       {% for i in site.data.contentful.spaces.lists.list %}
       <div class="list__item">
         <div class="list__description">
-          <h2>{{i.title}}</h2>
+          <a href="{{i.title | datapage_url: 'list'}}"><h2>{{i.title}}</h2></a>
           <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <a href="{{a | datapage_url: 'authors'}}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
           <p>{{i.description | truncate: 500}}</p>
+          <p><a class="button" href="{{i.title | datapage_url: 'list'}}">View List</a></p>
         </div>
-        {% for b in i.articlesList %}
-        <div class="result-item" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name"><a href="{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
-          <p class="result-item__authors">
-            {% for author in b.authors %}
-            <a href="by/author.html?filter=.f-{{author | slugify}}">{{author}}</a> <!-- FIX THE COMMA SEPARATION -->
-            {% endfor %}
-          </p>
-          <div class="result-item__taxonomy result-item__taxonomy--category">
-            <span class="result-item__taxonomy__key">Category</span>
-            <span class="result-item__taxonomy__value">
-              {% for category in b.innovationCategory %}
-              <a href="categories/{{category}}.html" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
-              {% endfor %}
-            </span>
-
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--methodology">
-            <span class="result-item__taxonomy__key">Methodology</span>
-            <span class="result-item__taxonomy__value">
-              {% for m in b.methodology %}
-              <a class="result-item__tag" href="methodologies/{{m | slugify }}.html">{{ m }}</a>
-              {% endfor %}
-            </span>
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--objective">
-            <span class="result-item__taxonomy__key">Objective</span>
-            <span class="result-item__taxonomy__value">
-              {% for objective in b.objectiveCategory %}
-              <a class="result-item__tag" href="objectives/{{ objective | slugify }}.html">{{ objective }}</a>
-              {% endfor %}
-            </span>
-          </div>
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              {% for type in b.publicationType %}
-              <a class="result-item__tag" href="type/{{ type }}.html">{{ type }}</a>
-              {% endfor %}
-            </span>
-          </div>
-          {% if paper.organization %}
-          <!-- IF organization is Premium ORG -->
-          <div class="result-item__extras {% for org in paper.organization %}result-item__extras--{{ org | slugify }}{%endfor%}">
-            <img class="result-item__extras--organization-logo" src="images/organizations/deet-logo-white.png" alt=""> <!-- INCLUDE THE RIGHT ORG IMAGE -->
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-        <p class="post__meta">
-
-        </p>
       </div>
       {% endfor %}
     </div>

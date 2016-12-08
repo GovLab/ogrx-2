@@ -87,6 +87,12 @@ page_gen:
     dir: papers
     extension: html
 
+  - data: contentful.spaces.lists.list
+    template: list
+    name: title
+    dir: list
+    extension: html
+
 
 contentful:
   spaces:
