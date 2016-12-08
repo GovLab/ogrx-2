@@ -134,3 +134,12 @@
 
   }
 }
+
+.paper-metadata {
+  padding: 10px 10%;
+  text-align: left;
+  &__left-column {
+    text-align: right;
+    font-weight: 600;
+  }
+}
