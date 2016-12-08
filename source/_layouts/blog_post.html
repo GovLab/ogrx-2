@@ -11,7 +11,7 @@ layout: default
     <div class="row">
       <div class="large-8 column large-offset-2">
         <p class="blog-single__highlight">{{page.highlight}}</p>
-        {{page.post}}
+        {{page.post | markdownify}}
       </div>
     </div>
     <div class="row">
