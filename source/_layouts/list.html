@@ -5,6 +5,10 @@ layout: default
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.title}}</h1>
     <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {% for a in page.author %} {{a}} {% endfor %}</h3>
+    {% for a in page.affiliation %}
+    <p>{{a}}</p>
+    {% endfor %}
+    <p>&nbsp;</p>
   </div>
   <section class="blog-content blog-single">
     <div class="row">
