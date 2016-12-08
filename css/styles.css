@@ -738,9 +738,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background-color: rgba(141, 14, 69, 0.8); }
   .result-item__extras--center-for-policy-informatics i {
     color: white; }
-.result-item__extras--swedish-law-and-informatics-institute {
+.result-item__extras--swedish-law-and-informatics-research-institute {
   background-color: rgba(63, 116, 137, 0.8); }
-  .result-item__extras--swedish-law-and-informatics-institute i {
+  .result-item__extras--swedish-law-and-informatics-research-institute i {
     color: white; }
 .result-item__extras--open-data-for-development {
   background-color: rgba(210, 94, 27, 0.8); }
