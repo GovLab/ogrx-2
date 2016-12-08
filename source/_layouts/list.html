@@ -6,7 +6,16 @@ layout: default
     <h1>{{page.title}}</h1>
     <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {% for a in page.author %} {{a}} {% endfor %}</h3>
     {% for a in page.affiliation %}
+    {% assign prem = false %}
+    {% for b in site.data.organizations %}
+    {% if a == b.title %}
+    {% assign prem = true %}
+    <img src="../images/organizations/{{b.image_white}}" style="max-width: 200px">
+    {% endif %}
+    {% endfor %}
+    {% unless prem %}
     <p>{{a}}</p>
+    {% endunless %}
     {% endfor %}
     <p>&nbsp;</p>
   </div>
