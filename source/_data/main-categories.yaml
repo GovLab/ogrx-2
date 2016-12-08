@@ -4,13 +4,13 @@
   cover_image: false
   featured: false
 
-- title: Behavioral Sciences and Nudges
+- title: Behavioral Science and Nudges
   description: Based on an evolving understanding of behavioral tendencies, many public sector institutions are seeking to improve citizen’s decision-making ability without regulatory intervention.
   display_name: Behavioral Research
   cover_image: false
   featured: true
 
-- title: Citizen Engagement
+- title: Citizen Engagement and Crowdsourcing
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false

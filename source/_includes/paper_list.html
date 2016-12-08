@@ -98,7 +98,7 @@
       <div class="result-item__extras result-item__extras--{{ org | slugify }}">
         {% for o in site.data.organizations %}
         {% if org == o.title %}
-        <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image}}" alt="">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image_white}}" alt="">
         {% endif %}
         {% endfor %}
       </div>
