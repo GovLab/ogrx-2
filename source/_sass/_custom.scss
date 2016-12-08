@@ -139,6 +139,9 @@
   padding: 10px 10%;
   text-align: left;
   &__left-column {
+    @include breakpoint($small-only) {
+      text-align: left;
+    }
     text-align: right;
     font-weight: 600;
   }
