@@ -157,12 +157,34 @@
     text-align: right;
     font-weight: 600; }
 
+#paper-access-button {
+  text-align: center;
+  position: relative;
+  top: 24px;
+  background-color: #003d56; }
+
+.submit-confirmation {
+  text-align: center; }
+  .submit-confirmation h3 {
+    font-size: 1.5em; }
+
+.submit-tagline {
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: none;
+  font-size: 22px;
+  font-weight: 100; }
+
 .main-menu {
-  z-index: 999; }
+  z-index: 999;
+  overflow-y: scroll; }
 
 #overlay {
   left: 28%;
   z-index: 20; }
+
+.e-question {
+  padding: 20px 0; }
 
 .footer h4 {
   font-size: 1rem;
@@ -465,7 +487,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 .category-item {
   height: 100%;
-  padding: 25% 0;
+  padding: 25% 0 25% 0;
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -650,7 +672,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     .result-item__tag--behavioral-science-and-nudges {
       background-color: rgba(222, 96, 108, 0.2);
       color: #d73e4d; }
-    .result-item__tag--citizen-engagement {
+    .result-item__tag--citizen-engagement-and-crowdsourcing {
       background-color: rgba(95, 169, 212, 0.2);
       color: #3f98cb; }
     .result-item__tag--civic-technology {
@@ -726,7 +748,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   .result-item__extras--open-knowledge-international i {
     color: white; }
 .result-item__extras--world-bank-digital-engagement-evaluation-team {
-  background-color: #3f70b6; }
+  background-color: rgba(0, 138, 179, 0.8); }
   .result-item__extras--world-bank-digital-engagement-evaluation-team i {
     color: white; }
   .result-item__extras--world-bank-digital-engagement-evaluation-team--organization-logo {
@@ -849,11 +871,11 @@ a {
   #blog-single .blog-single img {
     max-width: 100%;
     margin: 10px auto; }
-  #blog-single .blog-single li {
+  #blog-single .blog-single ul li {
     list-style: none;
     position: relative;
     margin-bottom: 8px; }
-    #blog-single .blog-single li:before {
+    #blog-single .blog-single ul li:before {
       width: 0;
       height: 0;
       content: "";
