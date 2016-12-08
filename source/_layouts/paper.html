@@ -22,9 +22,7 @@ layout: default
             <div class="row">
               <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>
                 {% if page.region %}
-                  {% for region in page.region %}
-                    <div class="column large-8 medium-6 small-12 type">{{ region }}</div>
-                  {% endfor %}
+                  <div class="column large-8 medium-6 small-12 type">{{ page.region | join: ", " }}</div>
                 {% endif %}
             </div>
             <div class="row">
