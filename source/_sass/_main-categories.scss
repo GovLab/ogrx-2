@@ -90,14 +90,15 @@
 
 
 .top-section {
+  background-color: $main-color;
   // Colors for the top sections
   &--all {
     background-color: $all;
   }
-  &--behavioral-research {
+  &--behavioral-science-and-nudges {
     background-color: $behavioral-research;
   }
-  &--citizen-engagement {
+  &--citizen-engagement-and-crowdsourcing {
     background-color: $citizen-engagement;
   }
   &--civic-technology {
