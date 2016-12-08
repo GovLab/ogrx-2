@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -62,16 +79,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -184,8 +213,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -233,11 +264,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/open-data-in-the-governance-of-south-african-higher-education.html" title="Open Data in the Governance of South African Higher Education">Open Data in the Governance of South African Higher Education</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/françois-van-schalkwyk.html">François van Schalkwyk</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-françois-van-schalkwyk">François van Schalkwyk</a>
         
-        <a href="../authors/michelle-willmers.html">Michelle Willmers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michelle-willmers">Michelle Willmers</a>
         
-        <a href="../authors/laura-czerniewicz.html">Laura Czerniewicz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-laura-czerniewicz">Laura Czerniewicz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -281,8 +312,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -330,15 +363,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/open-data-and-its-usability-an-empirical-view-from-the-citizens-perspective.html" title="Open Data and Its Usability: An Empirical View from the Citizen's Perspective">Open Data and Its Usability: An Empirical View from the Citizen's Perspective</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/vishanth-weerakkody.html">Vishanth Weerakkody</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vishanth-weerakkody">Vishanth Weerakkody</a>
         
-        <a href="../authors/zahir-irani.html">Zahir Irani</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-zahir-irani">Zahir Irani</a>
         
-        <a href="../authors/kawal-kapoor.html">Kawal Kapoor</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kawal-kapoor">Kawal Kapoor</a>
         
-        <a href="../authors/uthayasankar-sivarajah.html">Uthayasankar Sivarajah</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-uthayasankar-sivarajah">Uthayasankar Sivarajah</a>
         
-        <a href="../authors/yogesh-k-dwivedi.html">Yogesh K. Dwivedi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yogesh-k-dwivedi">Yogesh K. Dwivedi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -382,8 +415,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -425,9 +460,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/government-as-a-platform-a-historical-and-architectural-analysis.html" title="Government as a Platform: A Historical and Architectural Analysis">Government as a Platform: A Historical and Architectural Analysis</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bendik-bygstad.html">Bendik Bygstad</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bendik-bygstad">Bendik Bygstad</a>
         
-        <a href="../authors/francis-d-silva.html">Francis D'Silva</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francis-d-silva">Francis D'Silva</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -471,8 +506,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -524,17 +561,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/opening-access-to-administrative-data-for-evaluating-public-servics-the-case-of-the-justice-data-lab.html" title="Opening access to administrative data for evaluating public servics: The case of the Justice Data Lab">Opening access to administrative data for evaluating public servics: The case of the Justice Data Lab</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/fergus-lyon.html">Fergus Lyon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fergus-lyon">Fergus Lyon</a>
         
-        <a href="../authors/tracey-gyateng.html">Tracey Gyateng</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tracey-gyateng">Tracey Gyateng</a>
         
-        <a href="../authors/david-prtichard.html">David Prtichard</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-prtichard">David Prtichard</a>
         
-        <a href="../authors/prabhat-vaze.html">Prabhat Vaze</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-prabhat-vaze">Prabhat Vaze</a>
         
-        <a href="../authors/ian-vickers.html">Ian Vickers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ian-vickers">Ian Vickers</a>
         
-        <a href="../authors/nicola-webb.html">Nicola Webb</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nicola-webb">Nicola Webb</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -576,475 +613,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-
-      
-      f-legitimacy
-      
-      f-participation
-      
-      f-outside-innovation
-      
-
-      
-      f-conceptual-framework
-      
-      f-design-science
-      
-      f-comparative-analysis
-      
-
-      
-      f-social-movements-activism
-      
-
-      
-      f-brazil
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-alan-freihof-tygel
-      
-      f-maria-luiza-machado-campos
-      
-      f-celso-alexandre-souza-de-alvear
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-7
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/teaching-open-data-for-social-movements-a-research-strategy.html" title="Teaching Open Data for Social Movements: a Research Strategy">Teaching Open Data for Social Movements: a Research Strategy</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/alan-freihof-tygel.html">Alan Freihof Tygel</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/maria-luiza-machado-campos.html">Maria Luiza Machado Campos</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/celso-alexandre-souza-de-alvear.html">Celso Alexandre Souza de Alvear</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-outside-innovation
-      
-
-      
-      f-case-studies
-      
-
-      
-
-      
-
-      
-
-      
-      f-book-chapter
-      
-
-      
-      f-daniele-archibugi
-      
-      f-andrea-filippetti
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-335
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/from-governmental-open-data-toward-governmental-open-innovation-goi.html" title="From Governmental Open Data Toward Governmental Open Innovation (GOI)">From Governmental Open Data Toward Governmental Open Innovation (GOI)</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/daniele-archibugi.html">Daniele Archibugi</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/andrea-filippetti.html">Andrea Filippetti</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book-chapter.html">Book Chapter</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-      f-outside-innovation
-      
-
-      
-      f-case-studies
-      
-
-      
-      f-education
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-javiera-atenas
-      
-      f-leo-havemann
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-263
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/open-data-as-open-educational-resources-case-studies-of-emerging-practice.html" title="Open Data as Open Educational Resources: Case studies of emerging practice">Open Data as Open Educational Resources: Case studies of emerging practice</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/javiera-atenas.html">Javiera Atenas</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/leo-havemann.html">Leo Havemann</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-outside-innovation
-      
-
-      
-      f-statistical-modeling
-      
-      f-survey
-      
-
-      
-      f-economy
-      
-
-      
-
-      
-
-      
-      f-conference-proceedings
-      
-
-      
-      f-anneke-zuiderwijk
-      
-      f-marijn-janssen
-      
-      f-kostas-poulis
-      
-      f-geerten-van-de-kaa
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-212
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/open-data-for-competitive-advantage-insights-from-open-data-use-by-companies.html" title="Open Data for Competitive Advantage: Insights from Open Data Use by Companies">Open Data for Competitive Advantage: Insights from Open Data Use by Companies</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/anneke-zuiderwijk.html">Anneke Zuiderwijk</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/marijn-janssen.html">Marijn Janssen</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/kostas-poulis.html">Kostas Poulis</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/geerten-van-de-kaa.html">Geerten van de Kaa</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-          
-          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-legitimacy
-      
-      f-outside-innovation
-      
-
-      
-      f-case-studies
-      
-
-      
-
-      
-      f-ghana
-      
-
-      
-      f-ghana-open-data-initiative
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-frank-l-k-ohemeng
-      
-      f-kwaku-ofosu-adarkwa
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-49
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/one-way-traffic-the-open-data-initiative-project-and-the-need-for-an-effective-demand-side-initiative-in-ghana.html" title="One way traffic: The open data initiative project and the need for an effective demand side initiative in Ghana">One way traffic: The open data initiative project and the need for an effective demand side initiative in Ghana</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/frank-l-k-ohemeng.html">Frank L.K. Ohemeng</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/kwaku-ofosu-adarkwa.html">Kwaku Ofosu-Adarkwa</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
       f-center-for-policy-informatics
@@ -1073,7 +642,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -1090,8 +659,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -1120,16 +687,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html" title="Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms">Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1189,13 +754,509 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+
+      
+
+      
+      f-outside-innovation
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-book-chapter
+      
+
+      
+      f-daniele-archibugi
+      
+      f-andrea-filippetti
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-335
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/from-governmental-open-data-toward-governmental-open-innovation-goi.html" title="From Governmental Open Data Toward Governmental Open Innovation (GOI)">From Governmental Open Data Toward Governmental Open Innovation (GOI)</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-daniele-archibugi">Daniele Archibugi</a>
+        
+        <a href="../by/author.html?filter=.f-andrea-filippetti">Andrea Filippetti</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book-chapter.html">Book Chapter</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-outside-innovation
+      
+
+      
+      f-case-studies
+      
+
+      
+      f-education
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-javiera-atenas
+      
+      f-leo-havemann
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-263
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/open-data-as-open-educational-resources-case-studies-of-emerging-practice.html" title="Open Data as Open Educational Resources: Case studies of emerging practice">Open Data as Open Educational Resources: Case studies of emerging practice</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-javiera-atenas">Javiera Atenas</a>
+        
+        <a href="../by/author.html?filter=.f-leo-havemann">Leo Havemann</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-outside-innovation
+      
+
+      
+      f-statistical-modeling
+      
+      f-survey
+      
+
+      
+      f-economy
+      
+
+      
+
+      
+
+      
+      f-conference-proceedings
+      
+
+      
+      f-anneke-zuiderwijk
+      
+      f-marijn-janssen
+      
+      f-kostas-poulis
+      
+      f-geerten-van-de-kaa
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-212
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/open-data-for-competitive-advantage-insights-from-open-data-use-by-companies.html" title="Open Data for Competitive Advantage: Insights from Open Data Use by Companies">Open Data for Competitive Advantage: Insights from Open Data Use by Companies</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-anneke-zuiderwijk">Anneke Zuiderwijk</a>
+        
+        <a href="../by/author.html?filter=.f-marijn-janssen">Marijn Janssen</a>
+        
+        <a href="../by/author.html?filter=.f-kostas-poulis">Kostas Poulis</a>
+        
+        <a href="../by/author.html?filter=.f-geerten-van-de-kaa">Geerten van de Kaa</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
+          
+          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-legitimacy
+      
+      f-participation
+      
+      f-outside-innovation
+      
+
+      
+      f-conceptual-framework
+      
+      f-design-science
+      
+      f-comparative-analysis
+      
+
+      
+      f-social-movements
+      
+
+      
+      f-brazil
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-alan-freihof-tygel
+      
+      f-maria-luiza-machado-campos
+      
+      f-celso-alexandre-souza-de-alvear
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-7
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/teaching-open-data-for-social-movements-a-research-strategy.html" title="Teaching Open Data for Social Movements: a Research Strategy">Teaching Open Data for Social Movements: a Research Strategy</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-alan-freihof-tygel">Alan Freihof Tygel</a>
+        
+        <a href="../by/author.html?filter=.f-maria-luiza-machado-campos">Maria Luiza Machado Campos</a>
+        
+        <a href="../by/author.html?filter=.f-celso-alexandre-souza-de-alvear">Celso Alexandre Souza de Alvear</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-legitimacy
+      
+      f-outside-innovation
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+      f-ghana
+      
+
+      
+      f-ghana-open-data-initiative
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-frank-l-k-ohemeng
+      
+      f-kwaku-ofosu-adarkwa
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-49
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/one-way-traffic-the-open-data-initiative-project-and-the-need-for-an-effective-demand-side-initiative-in-ghana.html" title="One way traffic: The open data initiative project and the need for an effective demand side initiative in Ghana">One way traffic: The open data initiative project and the need for an effective demand side initiative in Ghana</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-frank-l-k-ohemeng">Frank L.K. Ohemeng</a>
+        
+        <a href="../by/author.html?filter=.f-kwaku-ofosu-adarkwa">Kwaku Ofosu-Adarkwa</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
 
       
       f-the-govlab
@@ -1243,9 +1304,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/open-data-impact-when-demand-and-supply-meet--key-findings-of-the-open-data-impact-case-studies.html" title="Open Data Impact: When Demand and Supply Meet – Key Findings of the Open Data Impact Case Studies">Open Data Impact: When Demand and Supply Meet – Key Findings of the Open Data Impact Case Studies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
-        <a href="../authors/andrew-young.html">Andrew Young</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrew-young">Andrew Young</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1288,13 +1349,65 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+      <div class="result-item__extras result-item__extras--macarthur-foundation-research-network-on-opening-governance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1336,7 +1449,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/open-data-means-business.html" title="Open Data Means Business">Open Data Means Business</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/open-data-institute.html">Open Data Institute</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-open-data-institute">Open Data Institute</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1384,35 +1497,133 @@ window.store = {
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -1427,16 +1638,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

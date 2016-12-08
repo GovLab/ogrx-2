@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -62,16 +79,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -184,8 +213,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -233,11 +264,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/effectively-crowdsourcing-the-acquisition-and-analysis-of-visual-data-for-disaster-response.html" title="Effectively Crowdsourcing the Acquisition and Analysis of Visual Data for Disaster Response">Effectively Crowdsourcing the Acquisition and Analysis of Visual Data for Disaster Response</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/hien-to.html">Hien To</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hien-to">Hien To</a>
         
-        <a href="../authors/seon-ho-kim.html">Seon Ho Kim</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-seon-ho-kim">Seon Ho Kim</a>
         
-        <a href="../authors/cyrus-shahabi.html">Cyrus Shahabi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cyrus-shahabi">Cyrus Shahabi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -285,8 +316,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -328,9 +358,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/flutrack.org-open-source-and-linked-data-for-epidemiology.html" title="Flutrack.org: Open-source and linked data for epidemiology">Flutrack.org: Open-source and linked data for epidemiology</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/konstantinos-chorianopoulos.html">Konstantinos Chorianopoulos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-konstantinos-chorianopoulos">Konstantinos Chorianopoulos</a>
         
-        <a href="../authors/karolos-talvis.html">Karolos Talvis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-karolos-talvis">Karolos Talvis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -374,8 +404,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -433,17 +462,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html" title="Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System">Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tobias-ruppert.html">Tobias Ruppert</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tobias-ruppert">Tobias Ruppert</a>
         
-        <a href="../authors/andreas-bannach.html">Andreas Bannach</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andreas-bannach">Andreas Bannach</a>
         
-        <a href="../authors/jürgen-bernard.html">Jürgen Bernard</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jürgen-bernard">Jürgen Bernard</a>
         
-        <a href="../authors/hendrik-lücke-tieke.html">Hendrik Lücke-Tieke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hendrik-lücke-tieke">Hendrik Lücke-Tieke</a>
         
-        <a href="../authors/alex-ulmer.html">Alex Ulmer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-ulmer">Alex Ulmer</a>
         
-        <a href="../authors/jörn-kohlhammer.html">Jörn Kohlhammer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jörn-kohlhammer">Jörn Kohlhammer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -495,8 +524,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-macarthur-foundation-research-network-on-opening-governance
@@ -544,9 +575,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/innovation-experiments-researching-technical-advance-knowledge-production-and-the-design-of-supporting-institutions.html" title="Innovation Experiments: Researching Technical Advance, Knowledge Production and the Design of Supporting Institutions">Innovation Experiments: Researching Technical Advance, Knowledge Production and the Design of Supporting Institutions</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kevin-j-boudreau.html">Kevin J. Boudreau</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kevin-j-boudreau">Kevin J. Boudreau</a>
         
-        <a href="../authors/karim-lakhani.html">Karim Lakhani</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-karim-lakhani">Karim Lakhani</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -589,13 +620,39 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--macarthur-foundation-research-network-on-opening-governance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -653,17 +710,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-big-data-to-understand-the-human-condition-the-kavli-human-project.html" title="Using Big Data to Understand the Human Condition: The Kavli HUMAN Project">Using Big Data to Understand the Human Condition: The Kavli HUMAN Project</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/okan-azmak.html">Okan Azmak</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-okan-azmak">Okan Azmak</a>
         
-        <a href="../authors/hannah-bayerrew-caplin.html">Hannah Bayerrew Caplin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hannah-bayerrew-caplin">Hannah Bayerrew Caplin</a>
         
-        <a href="../authors/miyoung-chun.html">Miyoung Chun</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miyoung-chun">Miyoung Chun</a>
         
-        <a href="../authors/paul-glimcher.html">Paul Glimcher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-glimcher">Paul Glimcher</a>
         
-        <a href="../authors/steven-koonin.html">Steven Koonin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steven-koonin">Steven Koonin</a>
         
-        <a href="../authors/aristides-patrinos.html">Aristides Patrinos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aristides-patrinos">Aristides Patrinos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -711,8 +768,102 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-participation
+      
+
+      
+      f-design-science
+      
+
+      
+
+      
+      f-europe
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-charalampos-alexopoulos
+      
+      f-euripidis-loukis
+      
+      f-yannis-charalabidis
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-25
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/a-platform-for-closing-the-open-data-feedback-loop-based-on-web2.0-functionality.html" title="A Platform for Closing the Open Data Feedback Loop Based on Web2.0 Functionality">A Platform for Closing the Open Data Feedback Loop Based on Web2.0 Functionality</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-charalampos-alexopoulos">Charalampos Alexopoulos</a>
+        
+        <a href="../by/author.html?filter=.f-euripidis-loukis">Euripidis Loukis</a>
+        
+        <a href="../by/author.html?filter=.f-yannis-charalabidis">Yannis Charalabidis</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
       f-center-for-policy-informatics
@@ -745,7 +896,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -762,8 +913,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -794,16 +943,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html" title="Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries">Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -869,97 +1016,30 @@ window.store = {
         </span>
       </div>
       
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-      f-participation
-      
-
-      
-      f-design-science
-      
-
-      
-
-      
-      f-europe
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-charalampos-alexopoulos
-      
-      f-euripidis-loukis
-      
-      f-yannis-charalabidis
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-25
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/a-platform-for-closing-the-open-data-feedback-loop-based-on-web2.0-functionality.html" title="A Platform for Closing the Open Data Feedback Loop Based on Web2.0 Functionality">A Platform for Closing the Open Data Feedback Loop Based on Web2.0 Functionality</a></h3>
-      <p class="result-item__authors">
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
         
-        <a href="../authors/charalampos-alexopoulos.html">Charalampos Alexopoulos</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/euripidis-loukis.html">Euripidis Loukis</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/yannis-charalabidis.html">Yannis Charalabidis</a> <!-- FIX THE COMMA SEPARATION -->
         
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
       </div>
       
     </div>
@@ -967,8 +1047,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1012,9 +1094,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/google-votes--liquid-democracy-experiment-on-a-corporate-social-network.html" title="Google Votes:  Liquid Democracy Experiment on a Corporate Social Network">Google Votes:  Liquid Democracy Experiment on a Corporate Social Network</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/steve-hardt.html">Steve Hardt</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steve-hardt">Steve Hardt</a>
         
-        <a href="../authors/lia-c-r-lopes.html">Lia C. R. Lopes</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lia-c-r-lopes">Lia C. R. Lopes</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1062,8 +1144,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1121,15 +1205,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html" title="Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools">Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanja-aitamurto.html">Tanja Aitamurto</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
         
-        <a href="../authors/kaiping-chen.html">Kaiping Chen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kaiping-chen">Kaiping Chen</a>
         
-        <a href="../authors/ahmed-cherif.html">Ahmed Cherif</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ahmed-cherif">Ahmed Cherif</a>
         
-        <a href="../authors/jorge-saldivar-galli.html">Jorge Saldivar Galli</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jorge-saldivar-galli">Jorge Saldivar Galli</a>
         
-        <a href="../authors/luis-santana.html">Luis Santana</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-luis-santana">Luis Santana</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1183,8 +1267,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1236,13 +1319,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/urban-civics-an-iot-middleware-for-democratizing-crowdsensed-data-in-smart-societies.html" title="Urban Civics: An IoT middleware for democratizing crowdsensed data in smart societies">Urban Civics: An IoT middleware for democratizing crowdsensed data in smart societies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/s-hachem.html">S. Hachem</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-s-hachem">S. Hachem</a>
         
-        <a href="../authors/v-issarny.html">V. Issarny</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-v-issarny">V. Issarny</a>
         
-        <a href="../authors/v-mallet.html">V. Mallet</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-v-mallet">V. Mallet</a>
         
-        <a href="../authors/a-pathak.html">A. Pathak</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-pathak">A. Pathak</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1294,8 +1377,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1341,11 +1426,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizen-involvment-in-local-environmental-governance-a-methodology-combining-human-centered-design-and-living-lab-approaches.html" title="Citizen Involvment in Local Environmental Governance: A Methodology Combining Human-Centered Design and Living Lab Approaches">Citizen Involvment in Local Environmental Governance: A Methodology Combining Human-Centered Design and Living Lab Approaches</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sandrine-reiter.html">Sandrine Reiter</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sandrine-reiter">Sandrine Reiter</a>
         
-        <a href="../authors/guillaume-gronier.html">Guillaume Gronier</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-guillaume-gronier">Guillaume Gronier</a>
         
-        <a href="../authors/philippe-valoggia.html">Philippe Valoggia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-philippe-valoggia">Philippe Valoggia</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1389,434 +1474,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-
-      
-      f-effectiveness
-      
-
-      
-      f-statistical-modeling
-      
-      f-design-science
-      
-
-      
-      f-health
-      
-
-      
-      f-pakistan
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-nabeel-abdur-rehman
-      
-      f-shankar-kalyanaraman
-      
-      f-talal-ahmad
-      
-      f-fahad-pervaiz
-      
-      f-umar-saif
-      
-      f-lakshminarayanan-subramanian
-      
-
-      
-      m-data-analysis
-      
-      m-data-collaboratives
-      
-
-      f-search-paper-429
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/fine-grained-dengue-forecasting-using-telephone-triage-services.html" title="Fine-Grained Dengue Forecasting Using Telephone Triage Services">Fine-Grained Dengue Forecasting Using Telephone Triage Services</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/nabeel-abdur-rehman.html">Nabeel Abdur Rehman</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/shankar-kalyanaraman.html">Shankar Kalyanaraman</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/talal-ahmad.html">Talal Ahmad</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/fahad-pervaiz.html">Fahad Pervaiz</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/umar-saif.html">Umar Saif</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/lakshminarayanan-subramanian.html">Lakshminarayanan Subramanian</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/data-collaboratives.html" class="result-item__tag result-item__tag--data-collaboratives">Data Collaboratives</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-legitimacy
-      
-      f-participation
-      
-      f-outside-innovation
-      
-
-      
-      f-conceptual-framework
-      
-      f-design-science
-      
-      f-comparative-analysis
-      
-
-      
-      f-social-movements-activism
-      
-
-      
-      f-brazil
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-alan-freihof-tygel
-      
-      f-maria-luiza-machado-campos
-      
-      f-celso-alexandre-souza-de-alvear
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-7
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/teaching-open-data-for-social-movements-a-research-strategy.html" title="Teaching Open Data for Social Movements: a Research Strategy">Teaching Open Data for Social Movements: a Research Strategy</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/alan-freihof-tygel.html">Alan Freihof Tygel</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/maria-luiza-machado-campos.html">Maria Luiza Machado Campos</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/celso-alexandre-souza-de-alvear.html">Celso Alexandre Souza de Alvear</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-      f-privacy
-      
-
-      
-      f-design-science
-      
-      f-quantitative-analysis
-      
-
-      
-
-      
-      f-europe
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-shara-monteleone
-      
-      f-rene-van-bavel
-      
-      f-nuria-priego-rodriguez
-      
-      f-gabriele-esposito
-      
-
-      
-      m-behavioral-science-and-nudges
-      
-
-      f-search-paper-37
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/nudges-to-privacy-behaviour-exploring-an-alternative-approach-to-privacy-notices.html" title="Nudges to Privacy Behaviour: Exploring an Alternative Approach to Privacy Notices">Nudges to Privacy Behaviour: Exploring an Alternative Approach to Privacy Notices</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/shara-monteleone.html">Shara Monteleone</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/rene-van-bavel.html">Rene Van Bavel</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/nuria-priego-rodriguez.html">Nuria Priego Rodriguez</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/gabriele-esposito.html">Gabriele Esposito</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/behavioral-science-and-nudges.html" class="result-item__tag result-item__tag--behavioral-science-and-nudges">Behavioral Science and Nudges</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-design-science
-      
-
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-dániel-kondor
-      
-      f-pierrick-thebault
-      
-      f-sebastian-grauwin
-      
-      f-istván-gódor
-      
-      f-simon-moritz
-      
-      f-stanislav-sobolevsky
-      
-      f-carlo-ratti
-      
-
-      
-      m-data-analysis
-      
-      m-big-data
-      
-
-      f-search-paper-287
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/visualizing-signatures-of-human-activity-in-cities-across-the-globe.html" title="Visualizing signatures of human activity in cities across the globe">Visualizing signatures of human activity in cities across the globe</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/dániel-kondor.html">Dániel Kondor</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/pierrick-thebault.html">Pierrick Thebault</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/sebastian-grauwin.html">Sebastian Grauwin</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/istván-gódor.html">István Gódor</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/simon-moritz.html">Simon Moritz</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/stanislav-sobolevsky.html">Stanislav Sobolevsky</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/carlo-ratti.html">Carlo Ratti</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
       f-center-for-policy-informatics
@@ -1845,7 +1503,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -1862,8 +1520,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -1892,16 +1548,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html" title="Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms">Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1961,13 +1615,475 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-statistical-modeling
+      
+      f-design-science
+      
+
+      
+      f-health
+      
+
+      
+      f-pakistan
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-nabeel-abdur-rehman
+      
+      f-shankar-kalyanaraman
+      
+      f-talal-ahmad
+      
+      f-fahad-pervaiz
+      
+      f-umar-saif
+      
+      f-lakshminarayanan-subramanian
+      
+
+      
+      m-data-analysis
+      
+      m-data-collaboratives
+      
+
+      f-search-paper-429
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/fine-grained-dengue-forecasting-using-telephone-triage-services.html" title="Fine-Grained Dengue Forecasting Using Telephone Triage Services">Fine-Grained Dengue Forecasting Using Telephone Triage Services</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-nabeel-abdur-rehman">Nabeel Abdur Rehman</a>
+        
+        <a href="../by/author.html?filter=.f-shankar-kalyanaraman">Shankar Kalyanaraman</a>
+        
+        <a href="../by/author.html?filter=.f-talal-ahmad">Talal Ahmad</a>
+        
+        <a href="../by/author.html?filter=.f-fahad-pervaiz">Fahad Pervaiz</a>
+        
+        <a href="../by/author.html?filter=.f-umar-saif">Umar Saif</a>
+        
+        <a href="../by/author.html?filter=.f-lakshminarayanan-subramanian">Lakshminarayanan Subramanian</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/data-collaboratives.html" class="result-item__tag result-item__tag--data-collaboratives">Data Collaboratives</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-privacy
+      
+
+      
+      f-design-science
+      
+      f-quantitative-analysis
+      
+
+      
+
+      
+      f-europe
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-shara-monteleone
+      
+      f-rene-van-bavel
+      
+      f-nuria-priego-rodriguez
+      
+      f-gabriele-esposito
+      
+
+      
+      m-behavioral-science-and-nudges
+      
+
+      f-search-paper-37
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/nudges-to-privacy-behaviour-exploring-an-alternative-approach-to-privacy-notices.html" title="Nudges to Privacy Behaviour: Exploring an Alternative Approach to Privacy Notices">Nudges to Privacy Behaviour: Exploring an Alternative Approach to Privacy Notices</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-shara-monteleone">Shara Monteleone</a>
+        
+        <a href="../by/author.html?filter=.f-rene-van-bavel">Rene Van Bavel</a>
+        
+        <a href="../by/author.html?filter=.f-nuria-priego-rodriguez">Nuria Priego Rodriguez</a>
+        
+        <a href="../by/author.html?filter=.f-gabriele-esposito">Gabriele Esposito</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/behavioral-science-and-nudges.html" class="result-item__tag result-item__tag--behavioral-science-and-nudges">Behavioral Science and Nudges</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-design-science
+      
+
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-dániel-kondor
+      
+      f-pierrick-thebault
+      
+      f-sebastian-grauwin
+      
+      f-istván-gódor
+      
+      f-simon-moritz
+      
+      f-stanislav-sobolevsky
+      
+      f-carlo-ratti
+      
+
+      
+      m-data-analysis
+      
+      m-big-data
+      
+
+      f-search-paper-287
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/visualizing-signatures-of-human-activity-in-cities-across-the-globe.html" title="Visualizing signatures of human activity in cities across the globe">Visualizing signatures of human activity in cities across the globe</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-dániel-kondor">Dániel Kondor</a>
+        
+        <a href="../by/author.html?filter=.f-pierrick-thebault">Pierrick Thebault</a>
+        
+        <a href="../by/author.html?filter=.f-sebastian-grauwin">Sebastian Grauwin</a>
+        
+        <a href="../by/author.html?filter=.f-istván-gódor">István Gódor</a>
+        
+        <a href="../by/author.html?filter=.f-simon-moritz">Simon Moritz</a>
+        
+        <a href="../by/author.html?filter=.f-stanislav-sobolevsky">Stanislav Sobolevsky</a>
+        
+        <a href="../by/author.html?filter=.f-carlo-ratti">Carlo Ratti</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-legitimacy
+      
+      f-participation
+      
+      f-outside-innovation
+      
+
+      
+      f-conceptual-framework
+      
+      f-design-science
+      
+      f-comparative-analysis
+      
+
+      
+      f-social-movements
+      
+
+      
+      f-brazil
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-alan-freihof-tygel
+      
+      f-maria-luiza-machado-campos
+      
+      f-celso-alexandre-souza-de-alvear
+      
+
+      
+      m-open-data
+      
+
+      f-search-paper-7
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/teaching-open-data-for-social-movements-a-research-strategy.html" title="Teaching Open Data for Social Movements: a Research Strategy">Teaching Open Data for Social Movements: a Research Strategy</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-alan-freihof-tygel">Alan Freihof Tygel</a>
+        
+        <a href="../by/author.html?filter=.f-maria-luiza-machado-campos">Maria Luiza Machado Campos</a>
+        
+        <a href="../by/author.html?filter=.f-celso-alexandre-souza-de-alvear">Celso Alexandre Souza de Alvear</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2015,11 +2131,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-crowds-in-smart-cities-real-life-city-scale-deployments-of-a-smartphone-based-participatory-crowd-management-platform.html" title="Smart Crowds in Smart Cities: Real Life, City Scale Deployments of a Smartphone Based Participatory Crowd Management Platform">Smart Crowds in Smart Cities: Real Life, City Scale Deployments of a Smartphone Based Participatory Crowd Management Platform</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tobias-franke.html">Tobias Franke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tobias-franke">Tobias Franke</a>
         
-        <a href="../authors/paul-lukowicz.html">Paul Lukowicz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-lukowicz">Paul Lukowicz</a>
         
-        <a href="../authors/ulf-blanke.html">Ulf Blanke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ulf-blanke">Ulf Blanke</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2067,8 +2183,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2108,9 +2226,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/parliamentary-information-visualization-as-a-means-for-legislative-transparency-and-citizen-empowerment.html" title="Parliamentary Information Visualization as a Means for Legislative Transparency and Citizen Empowerment?">Parliamentary Information Visualization as a Means for Legislative Transparency and Citizen Empowerment?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/aspasia-papaloi.html">Aspasia Papaloi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aspasia-papaloi">Aspasia Papaloi</a>
         
-        <a href="../authors/dimitris-gouscos.html">Dimitris Gouscos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dimitris-gouscos">Dimitris Gouscos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2152,8 +2270,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-open-evidence
@@ -2203,17 +2323,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/labels-as-nudges-an-experimental-study-of-car-eco-labels.html" title="Labels as nudges? An experimental study of car eco-labels">Labels as nudges? An experimental study of car eco-labels</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/francesco-bogliacino.html">Francesco Bogliacino</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesco-bogliacino">Francesco Bogliacino</a>
         
-        <a href="../authors/cristiano-codagnone.html">Cristiano Codagnone</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cristiano-codagnone">Cristiano Codagnone</a>
         
-        <a href="../authors/giuseppe-alessandro-veltri.html">Giuseppe Alessandro Veltri</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-giuseppe-alessandro-veltri">Giuseppe Alessandro Veltri</a>
         
-        <a href="../authors/francisco-lupiáñez-villanueva.html">Francisco Lupiáñez-Villanueva</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francisco-lupiáñez-villanueva">Francisco Lupiáñez-Villanueva</a>
         
-        <a href="../authors/george-gaskell.html">George Gaskell</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-george-gaskell">George Gaskell</a>
         
-        <a href="../authors/andriy-ivchenko.html">Andriy Ivchenko</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andriy-ivchenko">Andriy Ivchenko</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2250,13 +2370,41 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--open-evidence">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/open-evidence-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2322,25 +2470,25 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-multi-source-dataset-of-urban-life-in-the-city-of-milan-and-the-province-of-trentino.html" title="A multi-source dataset of urban life in the city of Milan and the Province of Trentino">A multi-source dataset of urban life in the city of Milan and the Province of Trentino</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/gianni-barlacchi.html">Gianni Barlacchi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gianni-barlacchi">Gianni Barlacchi</a>
         
-        <a href="../authors/maco-de-nadai.html">Maco De Nadai</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maco-de-nadai">Maco De Nadai</a>
         
-        <a href="../authors/roberto-larcher.html">Roberto Larcher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roberto-larcher">Roberto Larcher</a>
         
-        <a href="../authors/antonio-casella.html">Antonio Casella</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-antonio-casella">Antonio Casella</a>
         
-        <a href="../authors/christiana-chitic.html">Christiana Chitic</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-christiana-chitic">Christiana Chitic</a>
         
-        <a href="../authors/giovanni-torrisi.html">Giovanni Torrisi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-giovanni-torrisi">Giovanni Torrisi</a>
         
-        <a href="../authors/fabrizio-antonelli.html">Fabrizio Antonelli</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fabrizio-antonelli">Fabrizio Antonelli</a>
         
-        <a href="../authors/alessandro-vespignani.html">Alessandro Vespignani</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alessandro-vespignani">Alessandro Vespignani</a>
         
-        <a href="../authors/alex-pentland.html">Alex Pentland</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-pentland">Alex Pentland</a>
         
-        <a href="../authors/bruno-lepri.html">Bruno Lepri</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bruno-lepri">Bruno Lepri</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2390,35 +2538,133 @@ window.store = {
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -2433,16 +2679,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

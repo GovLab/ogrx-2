@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -62,16 +79,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -185,8 +214,7 @@ window.store = {
       
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -226,11 +254,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/how-open-data-are-turned-into-services.html" title="How Open Data Are Turned into Services?">How Open Data Are Turned into Services?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/muriel-foulonneau.html">Muriel Foulonneau</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-muriel-foulonneau">Muriel Foulonneau</a>
         
-        <a href="../authors/sébastien-martin.html">Sébastien Martin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sébastien-martin">Sébastien Martin</a>
         
-        <a href="../authors/slim-turki.html">Slim Turki</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-slim-turki">Slim Turki</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -272,8 +300,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -315,9 +345,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/gamification-and-sustainable-consumption-overcoming-the-limitations-of-persuasive-technologies.html" title="Gamification and Sustainable Consumption: Overcoming the Limitations of Persuasive Technologies">Gamification and Sustainable Consumption: Overcoming the Limitations of Persuasive Technologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/martina-z-huber.html">Martina Z. Huber</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-martina-z-huber">Martina Z. Huber</a>
         
-        <a href="../authors/lorenz-m-hilty.html">Lorenz M. Hilty</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lorenz-m-hilty">Lorenz M. Hilty</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -361,8 +391,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -410,13 +439,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/case-studies-of-government-use-of-big-data-in-latin-america-brazil-and-mexico.html" title="Case Studies of Government Use of Big Data in Latin America: Brazil and Mexico">Case Studies of Government Use of Big Data in Latin America: Brazil and Mexico</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/roberto-da-mota-ueti.html">Roberto da Mota Ueti</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roberto-da-mota-ueti">Roberto da Mota Ueti</a>
         
-        <a href="../authors/daniela-fernandez-espinosa.html">Daniela Fernandez Espinosa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniela-fernandez-espinosa">Daniela Fernandez Espinosa</a>
         
-        <a href="../authors/laura-rafferty.html">Laura Rafferty</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-laura-rafferty">Laura Rafferty</a>
         
-        <a href="../authors/patrick-c-k-hung.html">Patrick C. K. Hung</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-c-k-hung">Patrick C. K. Hung</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -460,8 +489,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -501,9 +532,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/regulatory-transformations-an-introduction.html" title="Regulatory Transformations: An Introduction">Regulatory Transformations: An Introduction</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bettina-lange.html">Bettina Lange</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bettina-lange">Bettina Lange</a>
         
-        <a href="../authors/fiona-haines.html">Fiona Haines</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fiona-haines">Fiona Haines</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -547,8 +578,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -586,9 +616,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/participatory-governance.html" title="Participatory Governance">Participatory Governance</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stephanie-l-mcnulty.html">Stephanie L. McNulty</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stephanie-l-mcnulty">Stephanie L. McNulty</a>
         
-        <a href="../authors/brian-wampler.html">Brian Wampler</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-brian-wampler">Brian Wampler</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -630,8 +660,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -671,7 +700,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/doing-good-with-data-alternative-practices-elephants-in-rooms.html" title="Doing Good with Data: Alternative Practices, Elephants in Rooms">Doing Good with Data: Alternative Practices, Elephants in Rooms</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/helen-kennedy.html">Helen Kennedy</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-kennedy">Helen Kennedy</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -717,8 +746,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -760,7 +791,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/behavioural-science-randomized-evaluations-and-the-transformation-of-public-policy-the-case-of-the-uk-government.html" title="Behavioural Science, Randomized Evaluations and the Transformation of Public Policy: The Case of the UK Government">Behavioural Science, Randomized Evaluations and the Transformation of Public Policy: The Case of the UK Government</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/peter-john.html">Peter John</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-john">Peter John</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -804,8 +835,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -843,9 +873,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/from-governmental-open-data-toward-governmental-open-innovation-goi.html" title="From Governmental Open Data Toward Governmental Open Innovation (GOI)">From Governmental Open Data Toward Governmental Open Innovation (GOI)</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/daniele-archibugi.html">Daniele Archibugi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniele-archibugi">Daniele Archibugi</a>
         
-        <a href="../authors/andrea-filippetti.html">Andrea Filippetti</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrea-filippetti">Andrea Filippetti</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -887,8 +917,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -942,15 +974,15 @@ on the Impact of ICT for Governance and Policy Modelling">The Decalogue of Polic
 on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sotirios-koussouris.html">Sotirios Koussouris</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sotirios-koussouris">Sotirios Koussouris</a>
         
-        <a href="../authors/fenareti-lampathaki.html">Fenareti Lampathaki</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fenareti-lampathaki">Fenareti Lampathaki</a>
         
-        <a href="../authors/gianluca-misuraca.html">Gianluca Misuraca</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gianluca-misuraca">Gianluca Misuraca</a>
         
-        <a href="../authors/panagiotis-kokkinakos.html">Panagiotis Kokkinakos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-panagiotis-kokkinakos">Panagiotis Kokkinakos</a>
         
-        <a href="../authors/dimitrios-askounis.html">Dimitrios Askounis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dimitrios-askounis">Dimitrios Askounis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -998,8 +1030,10 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1039,7 +1073,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/government-for-a-digital-economy.html" title="Government for a Digital Economy">Government for a Digital Economy</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/zoë-baird.html">Zoë Baird</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-zoë-baird">Zoë Baird</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1081,8 +1115,10 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1124,9 +1160,9 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/design-lessons-for-smart-governance-infrastructures.html" title="Design Lessons for Smart Governance Infrastructures">Design Lessons for Smart Governance Infrastructures</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
-        <a href="../authors/derek-hansen.html">Derek Hansen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-derek-hansen">Derek Hansen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1168,8 +1204,10 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1209,7 +1247,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/behavioural-approaches-how-nudges-lead-to-more-intelligent-policy-design.html" title="Behavioural Approaches: How Nudges Lead to More Intelligent Policy Design">Behavioural Approaches: How Nudges Lead to More Intelligent Policy Design</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/peter-john.html">Peter John</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-john">Peter John</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1253,8 +1291,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1304,17 +1341,17 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/a-process-model-for-crowdsourcing-design-a-case-study-in-citizen-science.html" title="A Process Model for Crowdsourcing Design: A Case Study in Citizen Science">A Process Model for Crowdsourcing Design: A Case Study in Citizen Science</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kazjon-grace.html">Kazjon Grace</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kazjon-grace">Kazjon Grace</a>
         
-        <a href="../authors/mary-lou-maher.html">Mary Lou Maher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mary-lou-maher">Mary Lou Maher</a>
         
-        <a href="../authors/jennifer-preece.html">Jennifer Preece</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jennifer-preece">Jennifer Preece</a>
         
-        <a href="../authors/tom-yeh.html">Tom Yeh</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tom-yeh">Tom Yeh</a>
         
-        <a href="../authors/abigale-stangle.html">Abigale Stangle</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-abigale-stangle">Abigale Stangle</a>
         
-        <a href="../authors/carol-boston.html">Carol Boston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carol-boston">Carol Boston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1358,8 +1395,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1405,11 +1441,11 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/e-consultation-platforms-generating-or-just-recycling-ideas.html" title="e-Consultation Platforms: Generating or Just Recycling Ideas?">e-Consultation Platforms: Generating or Just Recycling Ideas?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/efthimios-tambouris.html">Efthimios Tambouris</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-efthimios-tambouris">Efthimios Tambouris</a>
         
-        <a href="../authors/anastasia-migotzidou.html">Anastasia Migotzidou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-anastasia-migotzidou">Anastasia Migotzidou</a>
         
-        <a href="../authors/konstantinos-tarabanis.html">Konstantinos Tarabanis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-konstantinos-tarabanis">Konstantinos Tarabanis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1455,8 +1491,10 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1496,7 +1534,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/understanding-the-smart-city-domain-a-literature-review.html" title="Understanding the Smart City Domain: A Literature Review">Understanding the Smart City Domain: A Literature Review</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/leonidas-g-anthopoulos.html">Leonidas G. Anthopoulos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-leonidas-g-anthopoulos">Leonidas G. Anthopoulos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1542,8 +1580,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1587,7 +1624,7 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
       <h3 class="result-item__name"><a href="../papers/peacekeeping-4.0-harnessing-the-potential-of-big-data-social-media-and-cyber-technologies.html" title="Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies">Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/john-karlsrud.html">John Karlsrud</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-karlsrud">John Karlsrud</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1639,35 +1676,133 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -1682,16 +1817,24 @@ on the Impact of ICT for Governance and Policy Modelling</a></h3>
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

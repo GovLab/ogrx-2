@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -55,6 +72,15 @@
 
 <script>
 window.store = {
+  
+  "paper-425": {
+    "title": "From Smart City to Open City: Lessons from Jakarta Smart City",
+    "author": "Dinita Andriana Putri,Marahani Karlina CH,Jimmy Tanaya",
+    "category": "Data Analysis,Open Data,Smart Cities",
+    "content": "In 2011, Indonesia started its Open Government journey when along with seven other countries it initiated Open Government Partnership. Following the global declaration, Indonesia launched the Open Government Indonesia (OGI) in January 2012 with the aim to introduce open government reforms, including open data. This initiative is supported by Law No. 14/2008 on Freedom of Information. Despite its early stage, the implementation of Open Government in Indonesia has shown promising developments, with three action plans enacted in the last four years. In the Southeast Asian region, Indonesia could be considered a pioneer in implementing the open data initiative at national as well as sub-national levels. In some cases, the open data initiative at sub-national level has even surpassed the progress at the national level. Jakarta, for example, became the first city to have its own gubernatorial bylaw on data and system management, which requires the city administration and agencies to open its public data, thus leading to the birth of open data initiatives in the city. The city also have Jakarta Smart City that connect sub-districts officials with the citizen. Jakarta Smart City is an initiative that promote openness of the government through public service delivery. This paper aims to take a closer look on the dynamics of citizens-generated data in Jakarta and how Jakarta smart city program contributes to the implementation of open data.",
+    "url": "papers/from-smart-city-to-open-city-lessons-from-jakarta-smart-city.html"
+  }
+  ,
   
   "paper-186": {
     "title": "Smart Urbanism: Utopian vision or false dawn?",
@@ -468,15 +494,6 @@ window.store = {
     "content": "In this paper a framework is constructed to hypothesize if and how smart city technologies and urban big data produce privacy concerns among the people in these cities (as inhabitants, workers, visitors, and otherwise). The framework is built on the basis of two recurring dimensions in research about people's concerns about privacy: one dimensions represents that people perceive particular data as more personal and sensitive than others, the other dimension represents that people's privacy concerns differ according to the purpose for which data is collected, with the contrast between service and surveillance purposes most paramount. These two dimensions produce a 2 × 2 framework that hypothesizes which technologies and data-applications in smart cities are likely to raise people's privacy concerns, distinguishing between raising hardly any concern (impersonal data, service purpose), to raising controversy (personal data, surveillance purpose). Specific examples from the city of Rotterdam are used to further explore and illustrate the academic and practical usefulness of the framework. It is argued that the general hypothesis of the framework offers clear directions for further empirical research and theory building about privacy concerns in smart cities, and that it provides a sensitizing instrument for local governments to identify the absence, presence, or emergence of privacy concerns among their citizens.",
     "url": "papers/privacy-concerns-in-smart-cities.html"
   }
-  ,
-  
-  "paper-425": {
-    "title": "From Smart City to Open City: Lessons from Jakarta Smart City",
-    "author": "Dinita Andriana Putri,Marahani Karlina CH,Jimmy Tanaya",
-    "category": "Data Analysis,Open Data,Smart Cities",
-    "content": "In 2011, Indonesia started its Open Government journey when along with seven other countries it initiated Open Government Partnership. Following the global declaration, Indonesia launched the Open Government Indonesia (OGI) in January 2012 with the aim to introduce open government reforms, including open data. This initiative is supported by Law No. 14/2008 on Freedom of Information. Despite its early stage, the implementation of Open Government in Indonesia has shown promising developments, with three action plans enacted in the last four years. In the Southeast Asian region, Indonesia could be considered a pioneer in implementing the open data initiative at national as well as sub-national levels. In some cases, the open data initiative at sub-national level has even surpassed the progress at the national level. Jakarta, for example, became the first city to have its own gubernatorial bylaw on data and system management, which requires the city administration and agencies to open its public data, thus leading to the birth of open data initiatives in the city. The city also have Jakarta Smart City that connect sub-districts officials with the citizen. Jakarta Smart City is an initiative that promote openness of the government through public service delivery. This paper aims to take a closer look on the dynamics of citizens-generated data in Jakarta and how Jakarta smart city program contributes to the implementation of open data.",
-    "url": "papers/from-smart-city-to-open-city-lessons-from-jakarta-smart-city.html"
-  }
   
   
 };
@@ -488,16 +505,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -557,9 +586,9 @@ window.store = {
             <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
-              <option data-filter="f-comparative-analysis">Comparative Analysis</option>
-              
               <option data-filter="f-case-studies">Case Studies</option>
+              
+              <option data-filter="f-comparative-analysis">Comparative Analysis</option>
               
               <option data-filter="f-user-studies">User Studies</option>
               
@@ -623,6 +652,8 @@ window.store = {
             <select name="" id="filter-region" class="filter js-change" >
               <option data-filter="*****">Region</option>
               
+              <option data-filter="f-indonesia">Indonesia</option>
+              
               <option data-filter="f-united-states">United States</option>
               
               <option data-filter="f-europe">Europe</option>
@@ -647,8 +678,6 @@ window.store = {
               
               <option data-filter="f-italy">Italy</option>
               
-              <option data-filter="f-indonesia">Indonesia</option>
-              
             </select>
           </div>
         </div>
@@ -657,6 +686,8 @@ window.store = {
           <div class="select">
             <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
+              
+              <option data-filter="f-research-report">Research Report</option>
               
               <option data-filter="f-book">Book</option>
               
@@ -667,8 +698,6 @@ window.store = {
               <option data-filter="f-working-paper">Working Paper</option>
               
               <option data-filter="f-conference-proceedings">Conference Proceedings</option>
-              
-              <option data-filter="f-research-report">Research Report</option>
               
               <option data-filter="f-book-chapter">Book Chapter</option>
               
@@ -708,8 +737,106 @@ window.store = {
       
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+      f-indonesia
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-dinita-andriana-putri
+      
+      f-marahani-karlina-ch
+      
+      f-jimmy-tanaya
+      
+
+      
+      m-data-analysis
+      
+      m-open-data
+      
+      m-smart-cities
+      
+
+      f-search-paper-425
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/from-smart-city-to-open-city-lessons-from-jakarta-smart-city.html" title="From Smart City to Open City: Lessons from Jakarta Smart City">From Smart City to Open City: Lessons from Jakarta Smart City</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-dinita-andriana-putri">Dinita Andriana Putri</a>
+        
+        <a href="../by/author.html?filter=.f-marahani-karlina-ch">Marahani Karlina CH</a>
+        
+        <a href="../by/author.html?filter=.f-jimmy-tanaya">Jimmy Tanaya</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+          <a href="../categories/smart-cities.html" class="result-item__tag result-item__tag--smart-cities">Smart Cities</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
 
@@ -749,9 +876,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-urbanism-utopian-vision-or-false-dawn.html" title="Smart Urbanism: Utopian vision or false dawn?">Smart Urbanism: Utopian vision or false dawn?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/simon-marvinrés-luque-ayala.html">Simon Marvinrés Luque-Ayala</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-simon-marvinrés-luque-ayala">Simon Marvinrés Luque-Ayala</a>
         
-        <a href="../authors/colin-mcfarlane.html">Colin McFarlane</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-colin-mcfarlane">Colin McFarlane</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -795,8 +922,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -838,9 +964,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-responsive-city-engaging-communities-through-data-smart-governance.html" title="The Responsive City: Engaging Communities Through Data-Smart Governance">The Responsive City: Engaging Communities Through Data-Smart Governance</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/susan-crawford.html">Susan Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-susan-crawford">Susan Crawford</a>
         
-        <a href="../authors/stephen-goldsmith.html">Stephen Goldsmith</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stephen-goldsmith">Stephen Goldsmith</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -882,8 +1008,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -923,7 +1051,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/empowering-cities.html" title="Empowering cities">Empowering cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/the-economist.html">The Economist</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-the-economist">The Economist</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -965,8 +1093,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1024,17 +1154,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-big-data-to-understand-the-human-condition-the-kavli-human-project.html" title="Using Big Data to Understand the Human Condition: The Kavli HUMAN Project">Using Big Data to Understand the Human Condition: The Kavli HUMAN Project</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/okan-azmak.html">Okan Azmak</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-okan-azmak">Okan Azmak</a>
         
-        <a href="../authors/hannah-bayerrew-caplin.html">Hannah Bayerrew Caplin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hannah-bayerrew-caplin">Hannah Bayerrew Caplin</a>
         
-        <a href="../authors/miyoung-chun.html">Miyoung Chun</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miyoung-chun">Miyoung Chun</a>
         
-        <a href="../authors/paul-glimcher.html">Paul Glimcher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-glimcher">Paul Glimcher</a>
         
-        <a href="../authors/steven-koonin.html">Steven Koonin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steven-koonin">Steven Koonin</a>
         
-        <a href="../authors/aristides-patrinos.html">Aristides Patrinos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aristides-patrinos">Aristides Patrinos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1082,8 +1212,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1121,7 +1250,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-economy-in-smart-cities.html" title="Smart Economy in Smart Cities">Smart Economy in Smart Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/vinod-kumar.html">Vinod Kumar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vinod-kumar">Vinod Kumar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1163,8 +1292,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1204,9 +1332,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/cities-in-the-21st-century.html" title="Cities in the 21st Century">Cities in the 21st Century</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/oriol-nel-lo.html">Oriol Nel-lo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-oriol-nel-lo">Oriol Nel-lo</a>
         
-        <a href="../authors/renata-mele.html">Renata Mele</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-renata-mele">Renata Mele</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1250,8 +1378,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1293,7 +1423,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/privacy-security-and-data-protection-in-smart-cities-a-critical-eu-law-perspective.html" title="Privacy, Security and Data Protection in Smart Cities: a Critical EU Law Perspective">Privacy, Security and Data Protection in Smart Cities: a Critical EU Law Perspective</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/lilian-edwards.html">Lilian Edwards</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lilian-edwards">Lilian Edwards</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1339,8 +1469,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1386,11 +1518,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/towards-a-dataplace-mapping-data-in-a-game-to-encourage-participatory-design-in-smart-cities.html" title="Towards a DataPlace: mapping data in a game to encourage participatory design in smart cities">Towards a DataPlace: mapping data in a game to encourage participatory design in smart cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/matthew-barker.html">Matthew Barker</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-matthew-barker">Matthew Barker</a>
         
-        <a href="../authors/annika-wolff.html">Annika Wolff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-annika-wolff">Annika Wolff</a>
         
-        <a href="../authors/janet-van-der-linden.html">Janet van der Linden</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-janet-van-der-linden">Janet van der Linden</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1438,8 +1570,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1487,7 +1618,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-cities-as-democratic-ecologies.html" title="Smart Cities as Democratic Ecologies">Smart Cities as Democratic Ecologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/daniel-araya.html">Daniel Araya</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniel-araya">Daniel Araya</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1541,8 +1672,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1592,13 +1725,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/customers-users-or-citizens-inclusion-spatial-data-and-governance-in-the-smart-city.html" title="Customers, Users or Citizens? Inclusion, Spatial Data and Governance in the Smart City">Customers, Users or Citizens? Inclusion, Spatial Data and Governance in the Smart City</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/linnet-taylor.html">Linnet Taylor</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-linnet-taylor">Linnet Taylor</a>
         
-        <a href="../authors/christine-richter.html">Christine Richter</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-christine-richter">Christine Richter</a>
         
-        <a href="../authors/shazade-jameson.html">Shazade Jameson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-shazade-jameson">Shazade Jameson</a>
         
-        <a href="../authors/carmen-perez-de-pulgar.html">Carmen Perez de Pulgar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carmen-perez-de-pulgar">Carmen Perez de Pulgar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1648,8 +1781,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1691,7 +1823,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/technology-and-the-resilience-of-metropolitan-regions-digital-technologies-and-the-future-of-cities.html" title="Technology and the Resilience of Metropolitan Regions: Digital Technologies and the Future of Cities">Technology and the Resilience of Metropolitan Regions: Digital Technologies and the Future of Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/michael-a-pagano.html">Michael A. Pagano</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-a-pagano">Michael A. Pagano</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1739,8 +1871,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1782,11 +1913,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smarter-as-the-new-urban-agenda-a-comprehensive-view-of-the-21st-century-city.html" title="Smarter as the New Urban Agenda: A Comprehensive View of the 21st Century City">Smarter as the New Urban Agenda: A Comprehensive View of the 21st Century City</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/j-ramon-gil-garcia.html">J. Ramon Gil-Garcia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-j-ramon-gil-garcia">J. Ramon Gil-Garcia</a>
         
-        <a href="../authors/theresa-a-pardo.html">Theresa A. Pardo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-theresa-a-pardo">Theresa A. Pardo</a>
         
-        <a href="../authors/taewoo-nam.html">Taewoo Nam</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-taewoo-nam">Taewoo Nam</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1830,8 +1961,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1873,11 +2006,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-political-economy-framework-for-the-urban-data-revolution.html" title="A Political Economy Framework for the Urban Data Revolution">A Political Economy Framework for the Urban Data Revolution</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/ben-edwards.html">Ben Edwards</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ben-edwards">Ben Edwards</a>
         
-        <a href="../authors/solomon-greene.html">Solomon Greene</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-solomon-greene">Solomon Greene</a>
         
-        <a href="../authors/g-thomas-kingsley.html">G. Thomas Kingsley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-g-thomas-kingsley">G. Thomas Kingsley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1921,8 +2054,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1974,7 +2109,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-cities--international-case-studies.html" title="Smart Cities – International Case Studies">Smart Cities – International Case Studies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/inter-american-development-bank.html">Inter-American Development Bank</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-inter-american-development-bank">Inter-American Development Bank</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2018,8 +2153,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2079,21 +2213,21 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/another-tale-of-two-cities-understanding-human-activity-space-using-actively-tracked-cellphone-location-data.html" title="Another Tale of Two Cities: Understanding Human Activity Space Using Actively Tracked Cellphone Location Data">Another Tale of Two Cities: Understanding Human Activity Space Using Actively Tracked Cellphone Location Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/yang-xu.html">Yang Xu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yang-xu">Yang Xu</a>
         
-        <a href="../authors/shih-lung-shaw.html">Shih-Lung Shaw</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-shih-lung-shaw">Shih-Lung Shaw</a>
         
-        <a href="../authors/ziliang-zhao.html">Ziliang Zhao</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ziliang-zhao">Ziliang Zhao</a>
         
-        <a href="../authors/ling-yin.html">Ling Yin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ling-yin">Ling Yin</a>
         
-        <a href="../authors/feng-lu.html">Feng Lu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-feng-lu">Feng Lu</a>
         
-        <a href="../authors/jie-chen.html">Jie Chen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jie-chen">Jie Chen</a>
         
-        <a href="../authors/zhixiang-fang.html">Zhixiang Fang</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-zhixiang-fang">Zhixiang Fang</a>
         
-        <a href="../authors/quingquan-li.html">Quingquan Li</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-quingquan-li">Quingquan Li</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2141,8 +2275,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2180,7 +2316,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/making-sense-of-the-new-urban-science.html" title="Making Sense of the New Urban Science">Making Sense of the New Urban Science</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/anthony-m-townsend.html">Anthony M. Townsend</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-anthony-m-townsend">Anthony M. Townsend</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2224,8 +2360,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2263,9 +2401,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/thinking-about-smart-cities-the-travels-of-a-policy-idea-that-promises-a-great-deal-but-so-far-has-delivered-modest-results.html" title="Thinking about Smart Cities: The Travels of a Policy Idea that Promises a Great Deal, but So Far Has Delivered Modest Results">Thinking about Smart Cities: The Travels of a Policy Idea that Promises a Great Deal, but So Far Has Delivered Modest Results</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/amy-k-glasmeier.html">Amy K. Glasmeier</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amy-k-glasmeier">Amy K. Glasmeier</a>
         
-        <a href="../authors/molly-nebiolo.html">Molly Nebiolo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-molly-nebiolo">Molly Nebiolo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2307,8 +2445,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2350,7 +2487,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/playful-cities-crowdsourcing-urban-happiness-with-web-games.html" title="Playful Cities: Crowdsourcing Urban Happiness with Web Games">Playful Cities: Crowdsourcing Urban Happiness with Web Games</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/daniele-quercia.html">Daniele Quercia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniele-quercia">Daniele Quercia</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2396,8 +2533,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2441,13 +2577,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/enablers-for-smart-cities.html" title="Enablers for Smart Cities">Enablers for Smart Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/amal-el-fallah-seghrouchni.html">Amal El Fallah Seghrouchni</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amal-el-fallah-seghrouchni">Amal El Fallah Seghrouchni</a>
         
-        <a href="../authors/fuyuki-ishikawa.html">Fuyuki Ishikawa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fuyuki-ishikawa">Fuyuki Ishikawa</a>
         
-        <a href="../authors/laurent-hérault.html">Laurent Hérault</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-laurent-hérault">Laurent Hérault</a>
         
-        <a href="../authors/hideyuki-tokuda.html">Hideyuki Tokuda</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hideyuki-tokuda">Hideyuki Tokuda</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2491,8 +2627,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2548,11 +2683,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/seeing-cities-through-big-data.html" title="Seeing Cities Through Big Data">Seeing Cities Through Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/piyushimita-thakuriah.html">Piyushimita Thakuriah</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-piyushimita-thakuriah">Piyushimita Thakuriah</a>
         
-        <a href="../authors/nebiyou-tilahun.html">Nebiyou Tilahun</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nebiyou-tilahun">Nebiyou Tilahun</a>
         
-        <a href="../authors/moira-zellner.html">Moira Zellner</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-moira-zellner">Moira Zellner</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2602,8 +2737,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2655,13 +2789,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/urban-civics-an-iot-middleware-for-democratizing-crowdsensed-data-in-smart-societies.html" title="Urban Civics: An IoT middleware for democratizing crowdsensed data in smart societies">Urban Civics: An IoT middleware for democratizing crowdsensed data in smart societies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/s-hachem.html">S. Hachem</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-s-hachem">S. Hachem</a>
         
-        <a href="../authors/v-issarny.html">V. Issarny</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-v-issarny">V. Issarny</a>
         
-        <a href="../authors/v-mallet.html">V. Mallet</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-v-mallet">V. Mallet</a>
         
-        <a href="../authors/a-pathak.html">A. Pathak</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-pathak">A. Pathak</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2713,8 +2847,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2774,27 +2910,27 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/co-creating-the-cities-of-the-future.html" title="Co-Creating the Cities of the Future">Co-Creating the Cities of the Future</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/verónica-gutiérrez.html">Verónica Gutiérrez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-verónica-gutiérrez">Verónica Gutiérrez</a>
         
-        <a href="../authors/evangelos-theodoridis.html">Evangelos Theodoridis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-evangelos-theodoridis">Evangelos Theodoridis</a>
         
-        <a href="../authors/georgios-mylonas.html">Georgios Mylonas</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-georgios-mylonas">Georgios Mylonas</a>
         
-        <a href="../authors/fengrui-shi.html">Fengrui Shi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fengrui-shi">Fengrui Shi</a>
         
-        <a href="../authors/usman-adeel.html">Usman Adeel</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-usman-adeel">Usman Adeel</a>
         
-        <a href="../authors/luis-diez.html">Luis Diez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-luis-diez">Luis Diez</a>
         
-        <a href="../authors/dimitrios-amaxilatis.html">Dimitrios Amaxilatis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dimitrios-amaxilatis">Dimitrios Amaxilatis</a>
         
-        <a href="../authors/johnny-choque.html">Johnny Choque</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-johnny-choque">Johnny Choque</a>
         
-        <a href="../authors/guillem-camprodom.html">Guillem Camprodom</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-guillem-camprodom">Guillem Camprodom</a>
         
-        <a href="../authors/julie-mccann.html">Julie McCann</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-julie-mccann">Julie McCann</a>
         
-        <a href="../authors/luis-muñoz.html">Luis Muñoz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-luis-muñoz">Luis Muñoz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2840,8 +2976,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2887,11 +3022,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-everyone-city-how-ict-based-participation-shapes-urban-form.html" title="The Everyone City: How ICT-Based Participation Shapes Urban Form">The Everyone City: How ICT-Based Participation Shapes Urban Form</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sara-levy.html">Sara Levy</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sara-levy">Sara Levy</a>
         
-        <a href="../authors/karel-martens.html">Karel Martens</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-karel-martens">Karel Martens</a>
         
-        <a href="../authors/rob-van-der-heijden.html">Rob van der Heijden</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rob-van-der-heijden">Rob van der Heijden</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2937,8 +3072,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2976,7 +3113,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-quantified-community-and-neighborhood-labs-a-framework-for-computational-urban-planning-and-civic-technology-innovation.html" title="The Quantified Community and Neighborhood Labs: A Framework for Computational Urban Planning and Civic Technology Innovation">The Quantified Community and Neighborhood Labs: A Framework for Computational Urban Planning and Civic Technology Innovation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/constantine-e-kontokosta.html">Constantine E. Kontokosta</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-constantine-e-kontokosta">Constantine E. Kontokosta</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3020,8 +3157,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3073,9 +3212,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ten-actions-to-implement-big-data-initiatives-a-study-of-65-cities.html" title="Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities">Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alfred-tat-kei-ho.html">Alfred Tat-Kei Ho</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfred-tat-kei-ho">Alfred Tat-Kei Ho</a>
         
-        <a href="../authors/bo-mccall.html">Bo McCall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bo-mccall">Bo McCall</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3131,8 +3270,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3174,9 +3315,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-spectrum-of-control-a-social-theory-of-the-smart-city.html" title="The Spectrum of Control: A Social Theory of the Smart City">The Spectrum of Control: A Social Theory of the Smart City</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jathan-sadowski.html">Jathan Sadowski</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jathan-sadowski">Jathan Sadowski</a>
         
-        <a href="../authors/frank-a-pasquale-iii.html">Frank A. Pasquale III</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-frank-a-pasquale-iii">Frank A. Pasquale III</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3222,8 +3363,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3267,7 +3407,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-smart-city-and-its-citizens-governance-and-citizen-participation-in-amsterdam-smart-city.html" title="The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City">The Smart City and its Citizens: Governance and Citizen Participation in Amsterdam Smart City</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/carlo-francesco-capra.html">Carlo Francesco Capra</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlo-francesco-capra">Carlo Francesco Capra</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3315,8 +3455,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3372,11 +3511,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-well-informed-city-a-decentralized-bottom-up-model-for-a-smart-city-service-using-information-and-self-organization.html" title="The well-informed city: A decentralized, bottom-up model for a smart city service using information and self-organization">The well-informed city: A decentralized, bottom-up model for a smart city service using information and self-organization</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eyal-feder-levy.html">Eyal Feder-Levy</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eyal-feder-levy">Eyal Feder-Levy</a>
         
-        <a href="../authors/efrat-blumenfeld-liebertal.html">Efrat Blumenfeld-Liebertal</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-efrat-blumenfeld-liebertal">Efrat Blumenfeld-Liebertal</a>
         
-        <a href="../authors/juval-portugali.html">Juval Portugali</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-juval-portugali">Juval Portugali</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3428,8 +3567,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3477,13 +3618,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-big-cities-the-promises-and-limitations-of-improved-measures-of-urban-life.html" title="Big Data and Big Cities: The Promises and Limitations of Improved Measures of Urban Life">Big Data and Big Cities: The Promises and Limitations of Improved Measures of Urban Life</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/edward-l-glaeser.html">Edward L. Glaeser</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-edward-l-glaeser">Edward L. Glaeser</a>
         
-        <a href="../authors/scott-duke-kominers.html">Scott Duke Kominers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-scott-duke-kominers">Scott Duke Kominers</a>
         
-        <a href="../authors/michael-luca.html">Michael Luca</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-luca">Michael Luca</a>
         
-        <a href="../authors/nikhil-naik.html">Nikhil Naik</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nikhil-naik">Nikhil Naik</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3529,8 +3670,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3570,9 +3710,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/human-smart-cities-rethinking-the-interplay-between-design-and-planning.html" title="Human Smart Cities: Rethinking the Interplay between Design and Planning">Human Smart Cities: Rethinking the Interplay between Design and Planning</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/grazia-concilio.html">Grazia Concilio</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-grazia-concilio">Grazia Concilio</a>
         
-        <a href="../authors/francesca-rizzo.html">Francesca Rizzo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesca-rizzo">Francesca Rizzo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3616,8 +3756,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3665,17 +3807,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/push-pull-and-spill-a-transdisciplinary-case-study-in-municipal-open-government.html" title="Push, Pull, and Spill: A Transdisciplinary Case Study in Municipal Open Government">Push, Pull, and Spill: A Transdisciplinary Case Study in Municipal Open Government</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jan-whittington.html">Jan Whittington</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jan-whittington">Jan Whittington</a>
         
-        <a href="../authors/ryan-calo.html">Ryan Calo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ryan-calo">Ryan Calo</a>
         
-        <a href="../authors/mike-simon.html">Mike Simon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mike-simon">Mike Simon</a>
         
-        <a href="../authors/jesse-woo.html">Jesse Woo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jesse-woo">Jesse Woo</a>
         
-        <a href="../authors/meg-young.html">Meg Young</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-meg-young">Meg Young</a>
         
-        <a href="../authors/peter-schmiedeskamp.html">Peter Schmiedeskamp</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-schmiedeskamp">Peter Schmiedeskamp</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3719,8 +3861,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3760,7 +3904,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/report-to-the-president-technology-and-the-future-of-cities.html" title="Report to the President: Technology and the Future of Cities">Report to the President: Technology and the Future of Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/president-s-council-of-advisors-on-science-and-technology.html">President's Council of Advisors on Science and Technology</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-president-s-council-of-advisors-on-science-and-technology">President's Council of Advisors on Science and Technology</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3804,8 +3948,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3851,7 +3997,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/hacking-the-streets-smart-writing-in-the-smart-city.html" title="Hacking the streets: 'Smart' writing in the smart city">Hacking the streets: 'Smart' writing in the smart city</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/spencer-jordan.html">Spencer Jordan</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-spencer-jordan">Spencer Jordan</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3903,8 +4049,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3946,7 +4094,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-city-as-platform-how-digital-networks-are-changing-urban-life-and-governance.html" title="The City As Platform: How Digital Networks Are Changing Urban Life and Governance">The City As Platform: How Digital Networks Are Changing Urban Life and Governance</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-bollier.html">David Bollier</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-bollier">David Bollier</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3994,8 +4142,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4037,9 +4184,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/code-and-the-city.html" title="Code and the City">Code and the City</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/rob-kitchin.html">Rob Kitchin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rob-kitchin">Rob Kitchin</a>
         
-        <a href="../authors/sung-yueh-perng.html">Sung-Yueh Perng</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sung-yueh-perng">Sung-Yueh Perng</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4085,8 +4232,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4126,7 +4275,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/understanding-the-smart-city-domain-a-literature-review.html" title="Understanding the Smart City Domain: A Literature Review">Understanding the Smart City Domain: A Literature Review</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/leonidas-g-anthopoulos.html">Leonidas G. Anthopoulos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-leonidas-g-anthopoulos">Leonidas G. Anthopoulos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4172,8 +4321,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4221,11 +4372,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-crowds-in-smart-cities-real-life-city-scale-deployments-of-a-smartphone-based-participatory-crowd-management-platform.html" title="Smart Crowds in Smart Cities: Real Life, City Scale Deployments of a Smartphone Based Participatory Crowd Management Platform">Smart Crowds in Smart Cities: Real Life, City Scale Deployments of a Smartphone Based Participatory Crowd Management Platform</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tobias-franke.html">Tobias Franke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tobias-franke">Tobias Franke</a>
         
-        <a href="../authors/paul-lukowicz.html">Paul Lukowicz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-lukowicz">Paul Lukowicz</a>
         
-        <a href="../authors/ulf-blanke.html">Ulf Blanke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ulf-blanke">Ulf Blanke</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4273,8 +4424,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4314,9 +4464,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/human-smart-cities.html" title="Human Smart Cities">Human Smart Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/grazia-concilio.html">Grazia Concilio</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-grazia-concilio">Grazia Concilio</a>
         
-        <a href="../authors/francesca-rizzo.html">Francesca Rizzo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesca-rizzo">Francesca Rizzo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4360,8 +4510,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4403,7 +4555,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/informed-and-interconnected-a-manifesto-for-smarter-cities.html" title="Informed and Interconnected: A Manifesto for Smarter Cities">Informed and Interconnected: A Manifesto for Smarter Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/rosabeth-kanter.html">Rosabeth Kanter</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rosabeth-kanter">Rosabeth Kanter</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4449,8 +4601,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4490,7 +4641,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/transforming-city-governments-for-successful-smart-cities.html" title="Transforming City Governments for Successful Smart Cities">Transforming City Governments for Successful Smart Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/manuel-pedro-rodríguez-bolívar.html">Manuel Pedro Rodríguez Bolívar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-manuel-pedro-rodríguez-bolívar">Manuel Pedro Rodríguez Bolívar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4536,8 +4687,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4581,11 +4731,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/sustainable-smart-cities-creating-spaces-for-technological-social-and-business-development.html" title="Sustainable Smart Cities: Creating Spaces for Technological, Social and Business Development">Sustainable Smart Cities: Creating Spaces for Technological, Social and Business Development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/marta-peris-ortiz.html">Marta Peris-Ortiz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-marta-peris-ortiz">Marta Peris-Ortiz</a>
         
-        <a href="../authors/dag-bennett.html">Dag Bennett</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dag-bennett">Dag Bennett</a>
         
-        <a href="../authors/diana-pérez-bustamante-yábar.html">Diana Pérez-Bustamante Yábar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-diana-pérez-bustamante-yábar">Diana Pérez-Bustamante Yábar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4629,8 +4779,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4676,9 +4828,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-devolution.html" title="Smart Devolution">Smart Devolution</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eddie-copeland.html">Eddie Copeland</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eddie-copeland">Eddie Copeland</a>
         
-        <a href="../authors/cameron-scott.html">Cameron Scott</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cameron-scott">Cameron Scott</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4726,8 +4878,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4769,9 +4923,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/designing-for-cities-technology-and-the-urban-experience.html" title="Designing for Cities: Technology and the Urban Experience">Designing for Cities: Technology and the Urban Experience</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/paul-mcconnell.html">Paul McConnell</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-mcconnell">Paul McConnell</a>
         
-        <a href="../authors/michael-clare.html">Michael Clare</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-clare">Michael Clare</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4817,8 +4971,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4884,25 +5040,25 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-multi-source-dataset-of-urban-life-in-the-city-of-milan-and-the-province-of-trentino.html" title="A multi-source dataset of urban life in the city of Milan and the Province of Trentino">A multi-source dataset of urban life in the city of Milan and the Province of Trentino</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/gianni-barlacchi.html">Gianni Barlacchi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gianni-barlacchi">Gianni Barlacchi</a>
         
-        <a href="../authors/maco-de-nadai.html">Maco De Nadai</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maco-de-nadai">Maco De Nadai</a>
         
-        <a href="../authors/roberto-larcher.html">Roberto Larcher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roberto-larcher">Roberto Larcher</a>
         
-        <a href="../authors/antonio-casella.html">Antonio Casella</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-antonio-casella">Antonio Casella</a>
         
-        <a href="../authors/christiana-chitic.html">Christiana Chitic</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-christiana-chitic">Christiana Chitic</a>
         
-        <a href="../authors/giovanni-torrisi.html">Giovanni Torrisi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-giovanni-torrisi">Giovanni Torrisi</a>
         
-        <a href="../authors/fabrizio-antonelli.html">Fabrizio Antonelli</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fabrizio-antonelli">Fabrizio Antonelli</a>
         
-        <a href="../authors/alessandro-vespignani.html">Alessandro Vespignani</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alessandro-vespignani">Alessandro Vespignani</a>
         
-        <a href="../authors/alex-pentland.html">Alex Pentland</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-pentland">Alex Pentland</a>
         
-        <a href="../authors/bruno-lepri.html">Bruno Lepri</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bruno-lepri">Bruno Lepri</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4948,8 +5104,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4989,9 +5147,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/rethinking-smart-cities-from-the-ground-up.html" title="Rethinking Smart Cities From The Ground Up">Rethinking Smart Cities From The Ground Up</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tom-saunders.html">Tom Saunders</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tom-saunders">Tom Saunders</a>
         
-        <a href="../authors/peter-baeck.html">Peter Baeck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-baeck">Peter Baeck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5035,8 +5193,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -5074,7 +5231,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/privacy-concerns-in-smart-cities.html" title="Privacy Concerns in Smart Cities">Privacy Concerns in Smart Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/liesbet-van-zoonen.html">Liesbet van Zoonen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-liesbet-van-zoonen">Liesbet van Zoonen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5116,138 +5273,139 @@ window.store = {
     </div>
 
     
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-case-studies
-      
-
-      
-
-      
-      f-indonesia
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-dinita-andriana-putri
-      
-      f-marahani-karlina-ch
-      
-      f-jimmy-tanaya
-      
-
-      
-      m-data-analysis
-      
-      m-open-data
-      
-      m-smart-cities
-      
-
-      f-search-paper-425
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/from-smart-city-to-open-city-lessons-from-jakarta-smart-city.html" title="From Smart City to Open City: Lessons from Jakarta Smart City">From Smart City to Open City: Lessons from Jakarta Smart City</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/dinita-andriana-putri.html">Dinita Andriana Putri</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/marahani-karlina-ch.html">Marahani Karlina CH</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/jimmy-tanaya.html">Jimmy Tanaya</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-          <a href="../categories/smart-cities.html" class="result-item__tag result-item__tag--smart-cities">Smart Cities</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
   </div>
 </div>
 </div>
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -5262,16 +5420,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

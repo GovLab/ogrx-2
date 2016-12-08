@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <!-- This page uses Styleguide 2 -->
+<!-- This page uses Styleguide 2 -->
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>Toward Evidence-Based Open Governance by Curating and Exchanging Research: OGRX 2.0</h1>
@@ -48,21 +65,20 @@
     <div class="row">
       <div class="large-8 column large-offset-2">
         <p class="blog-single__highlight"></p>
-        The Open Governance Research Exchange (OGRX) is a platform that seeks to identify, collect and share curated insights on new ways of solving public problems. It was created last year by founding partners the GovLab, World Bank Digital Engagement Evaluation Team and mySociety. Today, while more than 3000 representatives from more than 70 countries are gathering in Paris for the Open Government Partnership Summit, we are launching OGRX 2.0 with new features and functionalities to further help users identify the signal in the noise of research and evidence on more innovative means of governing.
- 
-__What are the goals behind OGRX?__
-The field of research on topics falling under the banner of open governance is rapidly growing and evolving. Identifying the most important findings remains challenging, however, and important work often resides behind paywalls. OGRX seeks to improve the visibility and accessibility of open governance research – across domains like open data, crowdsourcing and civic tech – through curation, a submission form for users to share important publications and a detailed taxonomy to help users browse and find the research that fits their needs.
- 
-__What is new?__
-First, the new OGRX Blog provides an outlet for more easily digestible and shareable insights from the open governance research community. OGRX currently features over 600 publications on governance innovation – but how to digest and identify insights? This space will provide summaries of important works, analyses of key trends in the field of research, and guest posts from researchers working at the leading edge of governance innovation across regions and domains. Check back often to stay on top of what’s new in open governance research.
- 
-Second, the new OGRX Selected Readings series offers curated reading lists from well-known experts in open governance. These Selected Readings will give readers a sense of how to jumpstart their knowledge by focusing on those publications that have been curated by those in the known about the topics at hand. Today we are launching this new series with the Selected Readings on Civic Technology [LINK], curated by mySociety’s head of research Rebecca Rumbul; and the Selected Readings on Policy Informatics [LINK], curated Erik Johnston of the [MacArthur Foundation Research Network on Opening Governance](http://www.opening-governance.org/) and director of the Arizona State University Center for Policy Informatics. New Selected Readings will be posted each month, so check back often!
- 
-__Help us develop this joint resource on Open Governance__
-These new developments are only the beginning of our efforts to increase the utility of OGRX and work toward more evidence based open governance. Future efforts could include a forum for researchers to share insights and best practices and a project inventory to help researchers identify partners and avoid duplicative efforts. Watch this space and #OGRX to stay abreast of new developments.
- 
-And if you are interested in becoming an OGRX partner, developing a Selected Readings list or penning a guest post for the OGRX blog, please contact Andrew Young, OGRX editor-in-chief at [andrew@thegovlab.org](mailto:andrew@thegovlab.org). We’d also love to hear your feedback on the platform and any ideas you might have about how to ensure that it is as useful to the community of open governance researchers, policymakers and practitioners as possible.
+        <p>The Open Governance Research Exchange (OGRX) is a platform that seeks to identify, collect and share curated insights on new ways of solving public problems. It was created last year by founding partners the GovLab, World Bank Digital Engagement Evaluation Team and mySociety. Today, while more than 3000 representatives from more than 70 countries are gathering in Paris for the Open Government Partnership Summit, we are launching OGRX 2.0 with new features and functionalities to further help users identify the signal in the noise of research and evidence on more innovative means of governing.</p>
 
+<p><strong>What are the goals behind OGRX?</strong>
+The field of research on topics falling under the banner of open governance is rapidly growing and evolving. Identifying the most important findings remains challenging, however, and important work often resides behind paywalls. OGRX seeks to improve the visibility and accessibility of open governance research – across domains like open data, crowdsourcing and civic tech – through curation, a submission form for users to share important publications and a detailed taxonomy to help users browse and find the research that fits their needs.</p>
+
+<p><strong>What is new?</strong>
+First, the new OGRX Blog provides an outlet for more easily digestible and shareable insights from the open governance research community. OGRX currently features over 600 publications on governance innovation – but how to digest and identify insights? This space will provide summaries of important works, analyses of key trends in the field of research, and guest posts from researchers working at the leading edge of governance innovation across regions and domains. Check back often to stay on top of what’s new in open governance research.</p>
+
+<p>Second, the new OGRX Selected Readings series offers curated reading lists from well-known experts in open governance. These Selected Readings will give readers a sense of how to jumpstart their knowledge by focusing on those publications that have been curated by those in the known about the topics at hand. Today we are launching this new series with the Selected Readings on Civic Technology [LINK], curated by mySociety’s head of research Rebecca Rumbul; and the Selected Readings on Policy Informatics [LINK], curated Erik Johnston of the <a href="http://www.opening-governance.org/">MacArthur Foundation Research Network on Opening Governance</a> and director of the Arizona State University Center for Policy Informatics. New Selected Readings will be posted each month, so check back often!</p>
+
+<p><strong>Help us develop this joint resource on Open Governance</strong>
+These new developments are only the beginning of our efforts to increase the utility of OGRX and work toward more evidence based open governance. Future efforts could include a forum for researchers to share insights and best practices and a project inventory to help researchers identify partners and avoid duplicative efforts. Watch this space and #OGRX to stay abreast of new developments.</p>
+
+<p>And if you are interested in becoming an OGRX partner, developing a Selected Readings list or penning a guest post for the OGRX blog, please contact Andrew Young, OGRX editor-in-chief at <a href="mailto:andrew@thegovlab.org">andrew@thegovlab.org</a>. We’d also love to hear your feedback on the platform and any ideas you might have about how to ensure that it is as useful to the community of open governance researchers, policymakers and practitioners as possible.</p>
 
 
       </div>
@@ -78,35 +94,133 @@ And if you are interested in becoming an OGRX partner, developing a Selected Rea
 
 
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -121,16 +235,24 @@ And if you are interested in becoming an OGRX partner, developing a Selected Rea
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

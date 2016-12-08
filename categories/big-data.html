@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -713,16 +730,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -945,8 +974,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -988,9 +1019,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/guidance-for-incorporating-big-data-into-humanitarian-operations.html" title="Guidance for Incorporating Big Data into Humanitarian Operations">Guidance for Incorporating Big Data into Humanitarian Operations</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/katie-whipkey.html">Katie Whipkey</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-katie-whipkey">Katie Whipkey</a>
         
-        <a href="../authors/andrej-verity.html">Andrej Verity</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrej-verity">Andrej Verity</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1034,8 +1065,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1081,13 +1114,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/who-is-doing-computational-social-science.html" title="Who Is Doing Computational Social Science?">Who Is Doing Computational Social Science?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/katie-metzler.html">Katie Metzler</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-katie-metzler">Katie Metzler</a>
         
-        <a href="../authors/david-a-kim.html">David A. Kim</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-a-kim">David A. Kim</a>
         
-        <a href="../authors/nick-alum.html">Nick Alum</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nick-alum">Nick Alum</a>
         
-        <a href="../authors/angella-denman.html">Angella Denman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-angella-denman">Angella Denman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1133,8 +1166,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1180,9 +1212,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-transformation-of-human-rights-fact-finding.html" title="The Transformation of Human Rights Fact-Finding">The Transformation of Human Rights Fact-Finding</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/philip-alston.html">Philip Alston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-philip-alston">Philip Alston</a>
         
-        <a href="../authors/sarah-knuckey.html">Sarah Knuckey</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sarah-knuckey">Sarah Knuckey</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1230,8 +1262,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1279,11 +1313,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-quality-a-roadmap-for-open-data.html" title="Big Data Quality: a Roadmap for Open Data">Big Data Quality: a Roadmap for Open Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/paolo-ciancarini.html">Paolo Ciancarini</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paolo-ciancarini">Paolo Ciancarini</a>
         
-        <a href="../authors/francesco-poggi.html">Francesco Poggi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesco-poggi">Francesco Poggi</a>
         
-        <a href="../authors/daniel-russo.html">Daniel Russo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniel-russo">Daniel Russo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1331,8 +1365,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1374,7 +1410,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-world-that-counts-mobilising-the-data-revolution-for-sustainable-development.html" title="A world that counts: Mobilising the data revolution for sustainable development">A world that counts: Mobilising the data revolution for sustainable development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/data-revolution-group.html">Data Revolution Group</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-data-revolution-group">Data Revolution Group</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1420,8 +1456,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1461,7 +1499,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/environmental-law-big-data-and-the-torrent-of-singularities.html" title="Environmental Law, Big Data, and the Torrent of Singularities">Environmental Law, Big Data, and the Torrent of Singularities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/william-boyd.html">William Boyd</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-william-boyd">William Boyd</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1505,8 +1543,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1546,9 +1586,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/reining-in-the-big-promise-of-big-data-transparency-inequality-and-new-regulatory-frontiers.html" title="Reining in the Big Promise of Big Data: Transparency, Inequality, and New Regulatory Frontiers">Reining in the Big Promise of Big Data: Transparency, Inequality, and New Regulatory Frontiers</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/philipp-hacker.html">Philipp Hacker</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-philipp-hacker">Philipp Hacker</a>
         
-        <a href="../authors/bilyana-petkova.html">Bilyana Petkova</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bilyana-petkova">Bilyana Petkova</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1592,8 +1632,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1651,17 +1693,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-big-data-to-understand-the-human-condition-the-kavli-human-project.html" title="Using Big Data to Understand the Human Condition: The Kavli HUMAN Project">Using Big Data to Understand the Human Condition: The Kavli HUMAN Project</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/okan-azmak.html">Okan Azmak</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-okan-azmak">Okan Azmak</a>
         
-        <a href="../authors/hannah-bayerrew-caplin.html">Hannah Bayerrew Caplin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hannah-bayerrew-caplin">Hannah Bayerrew Caplin</a>
         
-        <a href="../authors/miyoung-chun.html">Miyoung Chun</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miyoung-chun">Miyoung Chun</a>
         
-        <a href="../authors/paul-glimcher.html">Paul Glimcher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-glimcher">Paul Glimcher</a>
         
-        <a href="../authors/steven-koonin.html">Steven Koonin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steven-koonin">Steven Koonin</a>
         
-        <a href="../authors/aristides-patrinos.html">Aristides Patrinos</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aristides-patrinos">Aristides Patrinos</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1709,8 +1751,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1758,9 +1802,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-politics-and-ethics-of-cdr-analytics.html" title="The Politics and Ethics of CDR Analytics">The Politics and Ethics of CDR Analytics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/emmanuel-letouzé.html">Emmanuel Letouzé</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-emmanuel-letouzé">Emmanuel Letouzé</a>
         
-        <a href="../authors/patrick-vinck.html">Patrick Vinck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-vinck">Patrick Vinck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1808,8 +1852,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1849,7 +1895,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-for-public-policy-the-quadruple-helix.html" title="Big Data for Public Policy: The Quadruple Helix">Big Data for Public Policy: The Quadruple Helix</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/julia-lane.html">Julia Lane</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-julia-lane">Julia Lane</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1895,8 +1941,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1940,7 +1985,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-crisis-data-social-media-in-disasters-and-time-critical-situations.html" title="Big Crisis Data: Social Media in Disasters and Time-Critical Situations">Big Crisis Data: Social Media in Disasters and Time-Critical Situations</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/carlos-castillo.html">Carlos Castillo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castillo">Carlos Castillo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1988,8 +2033,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2037,7 +2084,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/improving-servicesat-what-cost-examining-the-ethics-of-twitter-research.html" title="Improving Services—At What Cost? Examining the Ethics of Twitter Research">Improving Services—At What Cost? Examining the Ethics of Twitter Research</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sara-mannheimer.html">Sara Mannheimer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sara-mannheimer">Sara Mannheimer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2087,8 +2134,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2134,9 +2183,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-due-process-toward-a-framework-to-redress-predictive-privacy-harms.html" title="Big Data and Due Process: Toward a Framework to Redress Predictive Privacy Harms">Big Data and Due Process: Toward a Framework to Redress Predictive Privacy Harms</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kate-crawford.html">Kate Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kate-crawford">Kate Crawford</a>
         
-        <a href="../authors/jason-schultz.html">Jason Schultz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jason-schultz">Jason Schultz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2184,8 +2233,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2235,7 +2286,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ebola-a-big-data-disaster-privacy-property-and-the-law-of-disaster-experimentation.html" title="Ebola: A Big Data Disaster: Privacy, Property, and the Law of Disaster Experimentation">Ebola: A Big Data Disaster: Privacy, Property, and the Law of Disaster Experimentation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sean-martin-mcdonald.html">Sean Martin McDonald</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sean-martin-mcdonald">Sean Martin McDonald</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2287,8 +2338,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2336,13 +2386,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/case-studies-of-government-use-of-big-data-in-latin-america-brazil-and-mexico.html" title="Case Studies of Government Use of Big Data in Latin America: Brazil and Mexico">Case Studies of Government Use of Big Data in Latin America: Brazil and Mexico</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/roberto-da-mota-ueti.html">Roberto da Mota Ueti</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roberto-da-mota-ueti">Roberto da Mota Ueti</a>
         
-        <a href="../authors/daniela-fernandez-espinosa.html">Daniela Fernandez Espinosa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniela-fernandez-espinosa">Daniela Fernandez Espinosa</a>
         
-        <a href="../authors/laura-rafferty.html">Laura Rafferty</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-laura-rafferty">Laura Rafferty</a>
         
-        <a href="../authors/patrick-c-k-hung.html">Patrick C. K. Hung</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-c-k-hung">Patrick C. K. Hung</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2386,8 +2436,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2431,9 +2483,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/new-technology-and-the-prevention-of-violence-and-conflict.html" title="New Technology and the Prevention of Violence and Conflict">New Technology and the Prevention of Violence and Conflict</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/francesco-mancini.html">Francesco Mancini</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesco-mancini">Francesco Mancini</a>
         
-        <a href="../authors/marie-o-reilly.html">Marie O'Reilly</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-marie-o-reilly">Marie O'Reilly</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2479,8 +2531,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2522,7 +2576,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/world-disasters-report-focus-on-technology-and-the-future-of-humanitarian-action.html" title="World Disasters Report: Focus on technology and the future of humanitarian action">World Disasters Report: Focus on technology and the future of humanitarian action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/patrick-vinck.html">Patrick Vinck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-vinck">Patrick Vinck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2568,8 +2622,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2611,9 +2667,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-ethics-investing-wisely-in-data-at-scale.html" title="Data Ethics: Investing Wisely in Data at Scale">Data Ethics: Investing Wisely in Data at Scale</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-robinson.html">David Robinson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-robinson">David Robinson</a>
         
-        <a href="../authors/miranda-bogen.html">Miranda Bogen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miranda-bogen">Miranda Bogen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2657,8 +2713,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2710,7 +2765,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-entrepreneurial-state.html" title="The Entrepreneurial State">The Entrepreneurial State</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mariana-mazzucato.html">Mariana Mazzucato</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mariana-mazzucato">Mariana Mazzucato</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2760,8 +2815,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2813,13 +2867,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/humanitarian-technology-a-critical-research-agenda.html" title="Humanitarian technology: a critical research agenda">Humanitarian technology: a critical research agenda</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kristin-bergtora-sandvik.html">Kristin Bergtora Sandvik</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kristin-bergtora-sandvik">Kristin Bergtora Sandvik</a>
         
-        <a href="../authors/maria-gabrielsen-jumbert.html">Maria Gabrielsen Jumbert</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maria-gabrielsen-jumbert">Maria Gabrielsen Jumbert</a>
         
-        <a href="../authors/john-karlsrud.html">John Karlsrud</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-karlsrud">John Karlsrud</a>
         
-        <a href="../authors/mareile-kaufmann.html">Mareile Kaufmann</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mareile-kaufmann">Mareile Kaufmann</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2867,8 +2921,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2954,31 +3010,31 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/flooding-through-the-lens-of-mobile-phone-activity.html" title="Flooding through the lens of mobile phone activity">Flooding through the lens of mobile phone activity</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-pastor-escuredo.html">David Pastor-Escuredo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-pastor-escuredo">David Pastor-Escuredo</a>
         
-        <a href="../authors/alfredo-morales-guzmán.html">Alfredo Morales-Guzmán</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfredo-morales-guzmán">Alfredo Morales-Guzmán</a>
         
-        <a href="../authors/yolanda-torres-fernández.html">Yolanda Torres-Fernández</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yolanda-torres-fernández">Yolanda Torres-Fernández</a>
         
-        <a href="../authors/jean-martin-bauer.html">Jean-Martin Bauer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jean-martin-bauer">Jean-Martin Bauer</a>
         
-        <a href="../authors/amit-wadhwa.html">Amit Wadhwa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amit-wadhwa">Amit Wadhwa</a>
         
-        <a href="../authors/carlos-castro-correa.html">Carlos Castro-Correa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castro-correa">Carlos Castro-Correa</a>
         
-        <a href="../authors/liudmyla-romanoff.html">Liudmyla Romanoff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-liudmyla-romanoff">Liudmyla Romanoff</a>
         
-        <a href="../authors/jong-gun-lee.html">Jong Gun Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jong-gun-lee">Jong Gun Lee</a>
         
-        <a href="../authors/alex-rutherford.html">Alex Rutherford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-rutherford">Alex Rutherford</a>
         
-        <a href="../authors/vanessa-frias-martinez.html">Vanessa Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vanessa-frias-martinez">Vanessa Frias-Martinez</a>
         
-        <a href="../authors/nuria-oliver.html">Nuria Oliver</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nuria-oliver">Nuria Oliver</a>
         
-        <a href="../authors/enrique-frias-martinez.html">Enrique Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-enrique-frias-martinez">Enrique Frias-Martinez</a>
         
-        <a href="../authors/miguel-luengo-oroz.html">Miguel Luengo-Oroz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miguel-luengo-oroz">Miguel Luengo-Oroz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3038,8 +3094,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3085,7 +3140,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-humanitarians-how-big-data-is-changing-the-face-of-humanitarian-response.html" title="Digital humanitarians: how big data is changing the face of humanitarian response">Digital humanitarians: how big data is changing the face of humanitarian response</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/patrick-meier.html">Patrick Meier</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-meier">Patrick Meier</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3135,8 +3190,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3174,7 +3228,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/new-development-leveraging-big-data-analytics-in-the-public-sector.html" title="New Development: Leveraging 'Big Data' Analytics in the Public Sector">New Development: Leveraging 'Big Data' Analytics in the Public Sector</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/pandula-gamage.html">Pandula Gamage</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-pandula-gamage">Pandula Gamage</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3218,8 +3272,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3261,9 +3314,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-analysis-new-algorithms-for-a-new-society.html" title="Big Data Analysis: New Algorithms for a New Society">Big Data Analysis: New Algorithms for a New Society</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/nathalie-japkowicz.html">Nathalie Japkowicz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nathalie-japkowicz">Nathalie Japkowicz</a>
         
-        <a href="../authors/jerzy-stefanowski.html">Jerzy Stefanowski</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jerzy-stefanowski">Jerzy Stefanowski</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3309,8 +3362,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3348,7 +3400,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/predictive-analytics-the-power-to-predict-who-will-click-buy-lie-or-die.html" title="Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die">Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eric-siegel.html">Eric Siegel</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eric-siegel">Eric Siegel</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3392,8 +3444,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3451,15 +3505,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/civic-crowd-analytics-making-sense-of-crowdsourced-civic-input-with-big-data-tools.html" title="Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools">Civic Crowd Analytics: Making sense of crowdsourced civic input with big data tools</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanja-aitamurto.html">Tanja Aitamurto</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
         
-        <a href="../authors/kaiping-chen.html">Kaiping Chen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kaiping-chen">Kaiping Chen</a>
         
-        <a href="../authors/ahmed-cherif.html">Ahmed Cherif</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ahmed-cherif">Ahmed Cherif</a>
         
-        <a href="../authors/jorge-saldivar-galli.html">Jorge Saldivar Galli</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jorge-saldivar-galli">Jorge Saldivar Galli</a>
         
-        <a href="../authors/luis-santana.html">Luis Santana</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-luis-santana">Luis Santana</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3513,8 +3567,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3558,7 +3614,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/accountability-data-governance-for-the-evolving-digital-marketplace.html" title="Accountability: Data Governance for the Evolving Digital Marketplace">Accountability: Data Governance for the Evolving Digital Marketplace</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/the-centre-for-information-policy-leadership.html">The Centre for Information Policy Leadership</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-the-centre-for-information-policy-leadership">The Centre for Information Policy Leadership</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3606,8 +3662,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3649,7 +3704,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizenship-social-media-and-big-data-current-and-future-research-in-the-social-sciences.html" title="Citizenship, Social Media, and Big Data: Current and Future Research in the Social Sciences">Citizenship, Social Media, and Big Data: Current and Future Research in the Social Sciences</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/homero-gil-de-zúñiga.html">Homero Gil de Zúñiga</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-homero-gil-de-zúñiga">Homero Gil de Zúñiga</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3697,8 +3752,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3754,11 +3808,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/seeing-cities-through-big-data.html" title="Seeing Cities Through Big Data">Seeing Cities Through Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/piyushimita-thakuriah.html">Piyushimita Thakuriah</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-piyushimita-thakuriah">Piyushimita Thakuriah</a>
         
-        <a href="../authors/nebiyou-tilahun.html">Nebiyou Tilahun</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nebiyou-tilahun">Nebiyou Tilahun</a>
         
-        <a href="../authors/moira-zellner.html">Moira Zellner</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-moira-zellner">Moira Zellner</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3808,8 +3862,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3849,7 +3905,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-for-development-a-review-of-promises-and-challenges.html" title="Big Data for Development: A Review of Promises and Challenges">Big Data for Development: A Review of Promises and Challenges</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/martin-hilbert.html">Martin Hilbert</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-martin-hilbert">Martin Hilbert</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3893,8 +3949,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3936,11 +3994,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-visualization-methods-challenges-and-technology-progress.html" title="Big Data and Visualization: Methods, Challenges and Technology Progress">Big Data and Visualization: Methods, Challenges and Technology Progress</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/lidong-wang.html">Lidong Wang</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lidong-wang">Lidong Wang</a>
         
-        <a href="../authors/guanghui-wang.html">Guanghui Wang</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-guanghui-wang">Guanghui Wang</a>
         
-        <a href="../authors/cheryl-ann-alexander.html">Cheryl Ann Alexander</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cheryl-ann-alexander">Cheryl Ann Alexander</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3984,8 +4042,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4029,9 +4086,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-and-open-linked-data-bold-in-government-a-challenge-to-transparency-and-privacy.html" title="Big and Open Linked Data (BOLD) in government: A challenge to transparency and privacy?">Big and Open Linked Data (BOLD) in government: A challenge to transparency and privacy?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/marijn-janssen.html">Marijn Janssen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-marijn-janssen">Marijn Janssen</a>
         
-        <a href="../authors/jeroen-van-den-hoven.html">Jeroen van den Hoven</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jeroen-van-den-hoven">Jeroen van den Hoven</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4079,8 +4136,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4126,7 +4185,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-inequality-and-second-order-disasters-social-media-in-the-typhoon-haiyan-recovery.html" title="Digital Inequality and Second-Order Disasters: Social Media in the Typhoon Haiyan Recovery">Digital Inequality and Second-Order Disasters: Social Media in the Typhoon Haiyan Recovery</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mirca-madianou.html">Mirca Madianou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mirca-madianou">Mirca Madianou</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4174,8 +4233,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4225,9 +4283,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-limits-of-crisis-data-analytical-and-ethical-challenges-of-using-social-and-mobile-data-to-understand-disasters.html" title="The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters">The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kate-crawford.html">Kate Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kate-crawford">Kate Crawford</a>
         
-        <a href="../authors/megan-finn.html">Megan Finn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-megan-finn">Megan Finn</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4279,8 +4337,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4332,9 +4389,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/privacy-in-a-digital-networked-world-technologies-implications-and-solutions.html" title="Privacy in a Digital, Networked World: Technologies, Implications and Solutions">Privacy in a Digital, Networked World: Technologies, Implications and Solutions</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sherali-zeadally.html">Sherali Zeadally</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sherali-zeadally">Sherali Zeadally</a>
         
-        <a href="../authors/mohamad-badra.html">Mohamad Badra</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mohamad-badra">Mohamad Badra</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4386,8 +4443,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4431,7 +4490,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/health-big-data-in-the-commercial-context.html" title="Health Big Data in the Commercial Context">Health Big Data in the Commercial Context</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/center-for-democracy-technology.html">Center for Democracy & Technology</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-center-for-democracy-technology">Center for Democracy & Technology</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4479,8 +4538,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4522,7 +4580,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/rethinking-big-data-in-digital-humanitarianism-practices-epistemologies-and-social-relations.html" title="Rethinking big data in digital humanitarianism: practices, epistemologies, and social relations">Rethinking big data in digital humanitarianism: practices, epistemologies, and social relations</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/ryan-burns.html">Ryan Burns</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ryan-burns">Ryan Burns</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4568,8 +4626,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4613,7 +4673,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/policies-for-a-fair-re-use-of-data-big-data-and-the-application-of-anonymization-techniques.html" title="Policies for a Fair Re-Use of Data: Big Data and the Application of Anonymization Techniques">Policies for a Fair Re-Use of Data: Big Data and the Application of Anonymization Techniques</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/giuseppe-d-acquisto.html">Giuseppe D'Acquisto</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-giuseppe-d-acquisto">Giuseppe D'Acquisto</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4659,8 +4719,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4708,15 +4770,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/mapping-collective-behavior-in-the-big-data-era.html" title="Mapping collective behavior in the big-data era ">Mapping collective behavior in the big-data era </a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/pantelis-p-analytis.html">Pantelis P. Analytis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-pantelis-p-analytis">Pantelis P. Analytis</a>
         
-        <a href="../authors/mehdi-moussaïd.html">Mehdi Moussaïd</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mehdi-moussaïd">Mehdi Moussaïd</a>
         
-        <a href="../authors/florian-artinger.html">Florian Artinger</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-florian-artinger">Florian Artinger</a>
         
-        <a href="../authors/juliane-e-kämmer.html">Juliane E Kämmer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-juliane-e-kämmer">Juliane E Kämmer</a>
         
-        <a href="../authors/gerd-gigerenzer.html">Gerd Gigerenzer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gerd-gigerenzer">Gerd Gigerenzer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4762,8 +4824,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4815,9 +4879,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ten-actions-to-implement-big-data-initiatives-a-study-of-65-cities.html" title="Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities">Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alfred-tat-kei-ho.html">Alfred Tat-Kei Ho</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfred-tat-kei-ho">Alfred Tat-Kei Ho</a>
         
-        <a href="../authors/bo-mccall.html">Bo McCall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bo-mccall">Bo McCall</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4873,8 +4937,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4914,7 +4977,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ethics-for-big-data-and-analytics.html" title="Ethics for Big Data and Analytics">Ethics for Big Data and Analytics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/daniel-e-o-leary.html">Daniel E. O'Leary</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniel-e-o-leary">Daniel E. O'Leary</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4958,8 +5021,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5009,9 +5074,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-data-sharing-to-improve-coordination-in-peacebuilding.html" title="Using Data Sharing to Improve Coordination in Peacebuilding">Using Data Sharing to Improve Coordination in Peacebuilding</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/andrew-robertson.html">Andrew Robertson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrew-robertson">Andrew Robertson</a>
         
-        <a href="../authors/steve-olson.html">Steve Olson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steve-olson">Steve Olson</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5061,8 +5126,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5112,19 +5179,19 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/visualizing-signatures-of-human-activity-in-cities-across-the-globe.html" title="Visualizing signatures of human activity in cities across the globe">Visualizing signatures of human activity in cities across the globe</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/dániel-kondor.html">Dániel Kondor</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dániel-kondor">Dániel Kondor</a>
         
-        <a href="../authors/pierrick-thebault.html">Pierrick Thebault</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-pierrick-thebault">Pierrick Thebault</a>
         
-        <a href="../authors/sebastian-grauwin.html">Sebastian Grauwin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sebastian-grauwin">Sebastian Grauwin</a>
         
-        <a href="../authors/istván-gódor.html">István Gódor</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-istván-gódor">István Gódor</a>
         
-        <a href="../authors/simon-moritz.html">Simon Moritz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-simon-moritz">Simon Moritz</a>
         
-        <a href="../authors/stanislav-sobolevsky.html">Stanislav Sobolevsky</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stanislav-sobolevsky">Stanislav Sobolevsky</a>
         
-        <a href="../authors/carlo-ratti.html">Carlo Ratti</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlo-ratti">Carlo Ratti</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5168,8 +5235,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -5213,13 +5279,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-challenges-society-security-innovation-and-ethics.html" title="Big Data Challenges: Society, Security, Innovation and Ethics">Big Data Challenges: Society, Security, Innovation and Ethics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/a-bunnik.html">A. Bunnik</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-bunnik">A. Bunnik</a>
         
-        <a href="../authors/a-cawley.html">A. Cawley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-cawley">A. Cawley</a>
         
-        <a href="../authors/m-mulqueen.html">M. Mulqueen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-m-mulqueen">M. Mulqueen</a>
         
-        <a href="../authors/a-zwitter.html">A. Zwitter</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-zwitter">A. Zwitter</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5263,8 +5329,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5308,11 +5376,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/public-private-partnerships-for-statistics-lessons-learned-future-steps.html" title="Public-Private Partnerships for Statistics: Lessons Learned, Future Steps">Public-Private Partnerships for Statistics: Lessons Learned, Future Steps</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/nicholas-robin.html">Nicholas Robin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nicholas-robin">Nicholas Robin</a>
         
-        <a href="../authors/thilo-klein.html">Thilo Klein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-thilo-klein">Thilo Klein</a>
         
-        <a href="../authors/johannes-jütting.html">Johannes Jütting</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-johannes-jütting">Johannes Jütting</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5358,8 +5426,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5405,7 +5475,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ebola-a-big-data-disaster.html" title="Ebola: A Big Data Disaster">Ebola: A Big Data Disaster</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sean-mcdonald.html">Sean McDonald</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sean-mcdonald">Sean McDonald</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5451,8 +5521,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5504,13 +5576,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-data-revolution-finding-the-missing-millions.html" title="The Data Revolution: Finding the Missing Millions">The Data Revolution: Finding the Missing Millions</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/elizabeth-stuart.html">Elizabeth Stuart</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-elizabeth-stuart">Elizabeth Stuart</a>
         
-        <a href="../authors/emma-samman.html">Emma Samman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-emma-samman">Emma Samman</a>
         
-        <a href="../authors/william-avis.html">William Avis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-william-avis">William Avis</a>
         
-        <a href="../authors/tom-berliner.html">Tom Berliner</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tom-berliner">Tom Berliner</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5560,8 +5632,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5613,11 +5687,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/enabling-humanitarian-use-of-mobile-phone-data.html" title="Enabling Humanitarian Use of Mobile Phone Data">Enabling Humanitarian Use of Mobile Phone Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/yves-alexandre-de-montjoye.html">Yves-Alexandre de Montjoye</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yves-alexandre-de-montjoye">Yves-Alexandre de Montjoye</a>
         
-        <a href="../authors/jake-kendall.html">Jake Kendall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jake-kendall">Jake Kendall</a>
         
-        <a href="../authors/cameron-f-kerry.html">Cameron F. Kerry</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cameron-f-kerry">Cameron F. Kerry</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5665,8 +5739,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5710,9 +5786,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/privacy-preservation-in-the-age-of-big-data.html" title="Privacy Preservation in the Age of Big Data">Privacy Preservation in the Age of Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/john-s-davis-ii.html">John S. Davis II</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-s-davis-ii">John S. Davis II</a>
         
-        <a href="../authors/osonde-osoba.html">Osonde Osoba</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-osonde-osoba">Osonde Osoba</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5756,8 +5832,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5805,13 +5883,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-big-cities-the-promises-and-limitations-of-improved-measures-of-urban-life.html" title="Big Data and Big Cities: The Promises and Limitations of Improved Measures of Urban Life">Big Data and Big Cities: The Promises and Limitations of Improved Measures of Urban Life</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/edward-l-glaeser.html">Edward L. Glaeser</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-edward-l-glaeser">Edward L. Glaeser</a>
         
-        <a href="../authors/scott-duke-kominers.html">Scott Duke Kominers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-scott-duke-kominers">Scott Duke Kominers</a>
         
-        <a href="../authors/michael-luca.html">Michael Luca</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-luca">Michael Luca</a>
         
-        <a href="../authors/nikhil-naik.html">Nikhil Naik</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nikhil-naik">Nikhil Naik</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5857,8 +5935,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5902,7 +5982,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-dividends-world-development-report-2016.html" title="Digital Dividends: World Development Report 2016">Digital Dividends: World Development Report 2016</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/the-world-bank.html">The World Bank</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-the-world-bank">The World Bank</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5950,8 +6030,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5993,9 +6075,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-big-power-shifts.html" title="Big Data: Big Power Shifts?">Big Data: Big Power Shifts?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/lena-ulbricht.html">Lena Ulbricht</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lena-ulbricht">Lena Ulbricht</a>
         
-        <a href="../authors/maximilian-von-grafenstein.html">Maximilian von Grafenstein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maximilian-von-grafenstein">Maximilian von Grafenstein</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6041,8 +6123,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -6086,9 +6167,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-protection-in-a-big-data-society.-ideas-for-a-future-regulation.html" title="Data protection in a big data society. Ideas for a future regulation">Data protection in a big data society. Ideas for a future regulation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alessandro-mantelero.html">Alessandro Mantelero</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alessandro-mantelero">Alessandro Mantelero</a>
         
-        <a href="../authors/giuseppe-vaciago.html">Giuseppe Vaciago</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-giuseppe-vaciago">Giuseppe Vaciago</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6136,8 +6217,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6183,7 +6266,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/mapping-the-risk-utility-landscape-of-mobile-data-for-sustainable-development--humanitarian-action.html" title="Mapping the Risk-Utility Landscape of Mobile Data for Sustainable Development & Humanitarian Action">Mapping the Risk-Utility Landscape of Mobile Data for Sustainable Development & Humanitarian Action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/un-global-pulse.html">UN Global Pulse</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-un-global-pulse">UN Global Pulse</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6229,8 +6312,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6278,13 +6363,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/combatting-police-discrimination-in-the-age-of-big-data.html" title="Combatting Police Discrimination in the Age of Big Data">Combatting Police Discrimination in the Age of Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sharad-goel.html">Sharad Goel</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sharad-goel">Sharad Goel</a>
         
-        <a href="../authors/maya-perelman.html">Maya Perelman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maya-perelman">Maya Perelman</a>
         
-        <a href="../authors/ravi-shroff.html">Ravi Shroff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ravi-shroff">Ravi Shroff</a>
         
-        <a href="../authors/david-alan-sklansky.html">David Alan Sklansky</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-alan-sklansky">David Alan Sklansky</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6330,8 +6415,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6377,7 +6464,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/health-data-governance-privacy-monitoring-and-research.html" title="Health Data Governance: Privacy, Monitoring and Research">Health Data Governance: Privacy, Monitoring and Research</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/oecd.html">OECD</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-oecd">OECD</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6427,8 +6514,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -6472,9 +6558,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/algorithmic-life-calculative-devices-in-the-age-of-big-data.html" title="Algorithmic Life: Calculative Devices in the Age of Big Data">Algorithmic Life: Calculative Devices in the Age of Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/louise-amoore.html">Louise Amoore</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-louise-amoore">Louise Amoore</a>
         
-        <a href="../authors/volha-piotukh.html">Volha Piotukh</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-volha-piotukh">Volha Piotukh</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6522,8 +6608,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6573,11 +6661,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-hubris-humanitarian-information-systems-and-the-mirage-of-technology.html" title="Data hubris? Humanitarian information systems and the mirage of technology">Data hubris? Humanitarian information systems and the mirage of technology</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/róisín-reada.html">Róisín Reada</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-róisín-reada">Róisín Reada</a>
         
-        <a href="../authors/bertrand-taithea.html">Bertrand Taithea</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bertrand-taithea">Bertrand Taithea</a>
         
-        <a href="../authors/roger-mac-gintya.html">Roger Mac Gintya</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roger-mac-gintya">Roger Mac Gintya</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6625,8 +6713,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6712,31 +6802,31 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/flooding-through-the-lens-of-mobile-phone-activity.html" title="Flooding Through the Lens of Mobile Phone Activity">Flooding Through the Lens of Mobile Phone Activity</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-pastor-escuredo.html">David Pastor-Escuredo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-pastor-escuredo">David Pastor-Escuredo</a>
         
-        <a href="../authors/alfredo-morales-guzmán.html">Alfredo Morales-Guzmán</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfredo-morales-guzmán">Alfredo Morales-Guzmán</a>
         
-        <a href="../authors/yolanda-torres-fernández.html">Yolanda Torres-Fernández</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yolanda-torres-fernández">Yolanda Torres-Fernández</a>
         
-        <a href="../authors/jean-martin-bauer.html">Jean-Martin Bauer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jean-martin-bauer">Jean-Martin Bauer</a>
         
-        <a href="../authors/amit-wadhwa.html">Amit Wadhwa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amit-wadhwa">Amit Wadhwa</a>
         
-        <a href="../authors/carlos-castro-correa.html">Carlos Castro-Correa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castro-correa">Carlos Castro-Correa</a>
         
-        <a href="../authors/liudmyla-romanoff.html">Liudmyla Romanoff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-liudmyla-romanoff">Liudmyla Romanoff</a>
         
-        <a href="../authors/jong-gun-lee.html">Jong Gun Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jong-gun-lee">Jong Gun Lee</a>
         
-        <a href="../authors/alex-rutherford.html">Alex Rutherford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-rutherford">Alex Rutherford</a>
         
-        <a href="../authors/vanessa-frias-martinez.html">Vanessa Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vanessa-frias-martinez">Vanessa Frias-Martinez</a>
         
-        <a href="../authors/nuria-oliver.html">Nuria Oliver</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nuria-oliver">Nuria Oliver</a>
         
-        <a href="../authors/enrique-frias-martinez.html">Enrique Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-enrique-frias-martinez">Enrique Frias-Martinez</a>
         
-        <a href="../authors/miguel-luengo-oroz.html">Miguel Luengo-Oroz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miguel-luengo-oroz">Miguel Luengo-Oroz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6796,8 +6886,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6849,15 +6941,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/questioning-big-data-crowdsourcing-crisis-data-towards-an-inclusive-humanitarian-response.html" title="Questioning Big Data: Crowdsourcing crisis data towards an inclusive humanitarian response">Questioning Big Data: Crowdsourcing crisis data towards an inclusive humanitarian response</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/femke-mulder.html">Femke Mulder</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-femke-mulder">Femke Mulder</a>
         
-        <a href="../authors/julie-ferguson.html">Julie Ferguson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-julie-ferguson">Julie Ferguson</a>
         
-        <a href="../authors/peter-groenewegen.html">Peter Groenewegen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-groenewegen">Peter Groenewegen</a>
         
-        <a href="../authors/kees-boersma.html">Kees Boersma</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kees-boersma">Kees Boersma</a>
         
-        <a href="../authors/jeroen-wolbers.html">Jeroen Wolbers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jeroen-wolbers">Jeroen Wolbers</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6905,8 +6997,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -6948,11 +7042,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-in-the-policy-cycle-policy-decision-making-in-the-digital-era.html" title="Big data in the policy cycle: Policy decision making in the digital era">Big data in the policy cycle: Policy decision making in the digital era</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/johann-höchtl.html">Johann Höchtl</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-johann-höchtl">Johann Höchtl</a>
         
-        <a href="../authors/peter-parycek.html">Peter Parycek</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-parycek">Peter Parycek</a>
         
-        <a href="../authors/ralph-schöllhammer.html">Ralph Schöllhammer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ralph-schöllhammer">Ralph Schöllhammer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -6996,8 +7090,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7043,7 +7136,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-privacy-emerging-issues.html" title="Big Data and Privacy: Emerging Issues">Big Data and Privacy: Emerging Issues</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/d-e-o-leary.html">D. E. O'Leary</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-d-e-o-leary">D. E. O'Leary</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7091,8 +7184,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -7132,7 +7227,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-driven-innovation-big-data-for-growth-and-well-being.html" title="Data-Driven Innovation: Big Data for Growth and Well-Being">Data-Driven Innovation: Big Data for Growth and Well-Being</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/oecd.html">OECD</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-oecd">OECD</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7178,8 +7273,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -7225,9 +7322,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smart-devolution.html" title="Smart Devolution">Smart Devolution</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eddie-copeland.html">Eddie Copeland</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eddie-copeland">Eddie Copeland</a>
         
-        <a href="../authors/cameron-scott.html">Cameron Scott</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cameron-scott">Cameron Scott</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7275,8 +7372,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7322,7 +7418,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-black-box-society.html" title="The Black Box Society">The Black Box Society</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/frank-pasquale.html">Frank Pasquale</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-frank-pasquale">Frank Pasquale</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7368,8 +7464,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7413,7 +7508,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/peacekeeping-4.0-harnessing-the-potential-of-big-data-social-media-and-cyber-technologies.html" title="Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies">Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/john-karlsrud.html">John Karlsrud</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-karlsrud">John Karlsrud</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7461,8 +7556,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -7500,7 +7597,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/we-all-need-help-big-data-and-the-mismeasure-of-public-administration.html" title="We All Need Help: “Big Data” and the Mismeasure of Public Administration">We All Need Help: “Big Data” and the Mismeasure of Public Administration</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stéphane-lavertu.html">Stéphane Lavertu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stéphane-lavertu">Stéphane Lavertu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7544,8 +7641,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7619,33 +7715,33 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/policy-modeling-to-support-administrative-decisionmaking-on-the-new-york-state-hiv-testing-law..html" title="Policy modeling to support administrative decisionmaking on the New York state HIV testing law.">Policy modeling to support administrative decisionmaking on the New York state HIV testing law.</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/martin.html">Martin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-martin">Martin</a>
         
-        <a href="../authors/e-g.html">E. G.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-e-g">E. G.</a>
         
-        <a href="../authors/macdonald.html">MacDonald</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-macdonald">MacDonald</a>
         
-        <a href="../authors/r-h.html">R. H.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-r-h">R. H.</a>
         
-        <a href="../authors/smith.html">Smith</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-smith">Smith</a>
         
-        <a href="../authors/l-c.html">L. C.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-l-c">L. C.</a>
         
-        <a href="../authors/gordon.html">Gordon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gordon">Gordon</a>
         
-        <a href="../authors/d-e.html">D. E.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-d-e">D. E.</a>
         
-        <a href="../authors/tesoriero.html">Tesoriero</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tesoriero">Tesoriero</a>
         
-        <a href="../authors/j-m.html">J. M.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-j-m">J. M.</a>
         
-        <a href="../authors/laufer.html">Laufer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-laufer">Laufer</a>
         
-        <a href="../authors/f-n.html">F. N.</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-f-n">F. N.</a>
         
-        <a href="../authors/o-connell.html">O’Connell</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-o-connell">O’Connell</a>
         
-        <a href="../authors/d-a.html">D. A</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-d-a">D. A</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7693,8 +7789,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7734,7 +7829,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-love-the-seduction-and-betrayal-of-digital-technologies.html" title="Data Love: The Seduction and Betrayal of Digital Technologies">Data Love: The Seduction and Betrayal of Digital Technologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/roberto-simanowski.html">Roberto Simanowski</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roberto-simanowski">Roberto Simanowski</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7780,8 +7875,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -7821,9 +7918,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-challenges-and-limits-of-big-data-algorithms-in-technocratic-governance.html" title="The challenges and limits of big data algorithms in technocratic governance">The challenges and limits of big data algorithms in technocratic governance</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jeannine-e-relly.html">Jeannine E. Relly</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jeannine-e-relly">Jeannine E. Relly</a>
         
-        <a href="../authors/carol-b-schwalbe.html">Carol B. Schwalbe</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carol-b-schwalbe">Carol B. Schwalbe</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7867,8 +7964,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -7908,7 +8007,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-as-governmentality--digital-traces-algorithms-and-the-reconfiguration-of-data-in-international-development.html" title="Big Data as Governmentality – Digital Traces, Algorithms, and the Reconfiguration of Data in International Development">Big Data as Governmentality – Digital Traces, Algorithms, and the Reconfiguration of Data in International Development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mikkel-flyverbomreas-rasche.html">Mikkel Flyverbomreas Rasche</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mikkel-flyverbomreas-rasche">Mikkel Flyverbomreas Rasche</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -7952,8 +8051,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -7999,9 +8097,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-ethics-of-biomedical-big-data.html" title="The Ethics of Biomedical Big Data">The Ethics of Biomedical Big Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/brent-daniel-mittelstadt.html">Brent Daniel Mittelstadt</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-brent-daniel-mittelstadt">Brent Daniel Mittelstadt</a>
         
-        <a href="../authors/luciano-floridi.html">Luciano Floridi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-luciano-floridi">Luciano Floridi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -8053,35 +8151,133 @@ window.store = {
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -8096,16 +8292,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

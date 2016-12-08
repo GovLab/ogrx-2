@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -110,6 +127,15 @@ window.store = {
   }
   ,
   
+  "paper-464": {
+    "title": "Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms",
+    "author": "Tanya M. Kelley,Erik Johnston",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Gamification,Labs and Experimentation,Prizes and Challenges,Behavioral Science and Nudges",
+    "content": "Advances in communication and computational technology have drastically increased opportunities for the public to participate in governing activities. Well-designed responsive participatory pathways can encourage individuals to take action on issues that are important to them while receiving value and enjoyment in contributing to the overall welfare of the state. However, many crowdsourcing programs do not achieve their intended targets or goals in part because people have little motivation to participate. Serious games are examined to address this challenge as they involve the integration of intrinsic human motivators with game mechanics or game dynamics into a website, service, community, campaign, or application to drive participation and engagement. Governments can supplement open governance platforms with characteristics of games to reshape and invigorate public participation if individuals have opportunities to participate through channels that are collectively and individually rewarding. Drawing on theory and an emerging body of examples this manuscript creates a framework for how governance organizations can integrate serious games into the design of open governance platforms to improve the understanding of how the platform affects the working relationship with the public when solving collective challenges. Contributions of serious games are how to foster dialog, educate, solicit feedback, and mobilize individuals. In identifying the characteristics that differentiate early projects that have succeeded with those that have struggled, we provide recommendations of how to cultivate voluntary and enthusiastic participation in open governance platforms– giving the public the opportunity and motivation to have an impact on the communities in which they live just as many already do in the virtual worlds in which they play.",
+    "url": "papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html"
+  }
+  ,
+  
   "paper-146": {
     "title": "Immersive Policy Learning: An Interactive Course Experiment",
     "author": "Tanya M. Kelley,Erik W. Johnston",
@@ -155,15 +181,6 @@ window.store = {
   }
   ,
   
-  "paper-464": {
-    "title": "Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms",
-    "author": "Tanya M. Kelley,Erik Johnston",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Gamification,Labs and Experimentation,Prizes and Challenges,Behavioral Science and Nudges",
-    "content": "Advances in communication and computational technology have drastically increased opportunities for the public to participate in governing activities. Well-designed responsive participatory pathways can encourage individuals to take action on issues that are important to them while receiving value and enjoyment in contributing to the overall welfare of the state. However, many crowdsourcing programs do not achieve their intended targets or goals in part because people have little motivation to participate. Serious games are examined to address this challenge as they involve the integration of intrinsic human motivators with game mechanics or game dynamics into a website, service, community, campaign, or application to drive participation and engagement. Governments can supplement open governance platforms with characteristics of games to reshape and invigorate public participation if individuals have opportunities to participate through channels that are collectively and individually rewarding. Drawing on theory and an emerging body of examples this manuscript creates a framework for how governance organizations can integrate serious games into the design of open governance platforms to improve the understanding of how the platform affects the working relationship with the public when solving collective challenges. Contributions of serious games are how to foster dialog, educate, solicit feedback, and mobilize individuals. In identifying the characteristics that differentiate early projects that have succeeded with those that have struggled, we provide recommendations of how to cultivate voluntary and enthusiastic participation in open governance platforms– giving the public the opportunity and motivation to have an impact on the communities in which they live just as many already do in the virtual worlds in which they play.",
-    "url": "papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html"
-  }
-  ,
-  
   "paper-374": {
     "title": "A Guide for Making Innovation Offices Work",
     "author": "Rachel Burstein,Alissa Black",
@@ -191,16 +208,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -232,9 +261,9 @@ window.store = {
               
               <option data-filter="f-the-govlab">The GovLab</option>
               
-              <option data-filter="f-macarthur-foundation-research-network-on-opening-governance">MacArthur Foundation Research Network on Opening Governance</option>
-              
               <option data-filter="f-center-for-policy-informatics">Center for Policy Informatics</option>
+              
+              <option data-filter="f-macarthur-foundation-research-network-on-opening-governance">MacArthur Foundation Research Network on Opening Governance</option>
               
             </select>
           </div>
@@ -249,9 +278,9 @@ window.store = {
               
               <option data-filter="f-participation">Participation</option>
               
-              <option data-filter="f-legitimacy">Legitimacy</option>
-              
               <option data-filter="f-access">Access</option>
+              
+              <option data-filter="f-legitimacy">Legitimacy</option>
               
               <option data-filter="f-outside-innovation">Outside Innovation</option>
               
@@ -274,11 +303,11 @@ window.store = {
               
               <option data-filter="f-design-science">Design Science</option>
               
+              <option data-filter="f-user-studies">User Studies</option>
+              
               <option data-filter="f-randomized-controlled-trial">Randomized Controlled Trial</option>
               
               <option data-filter="f-comparative-analysis">Comparative Analysis</option>
-              
-              <option data-filter="f-user-studies">User Studies</option>
               
               <option data-filter="f-surveys">Surveys</option>
               
@@ -295,11 +324,11 @@ window.store = {
               
               <option data-filter="f-environment">Environment</option>
               
-              <option data-filter="f-policy">Policy</option>
-              
               <option data-filter="f-internet-governance">Internet Governance</option>
               
-              <option data-filter="f-social-movements-and-activism">Social Movements and Activism</option>
+              <option data-filter="f-social-movements">Social Movements</option>
+              
+              <option data-filter="f-policy">Policy</option>
               
               <option data-filter="f-human-rights">Human Rights</option>
               
@@ -375,8 +404,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -418,9 +449,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizen-centered-government-the-mayors-office-of-new-urban-mechanics-and-the-evolution-of-crm-in-boston.html" title="Citizen-Centered Government: The Mayor's Office of New Urban Mechanics and the Evolution of CRM in Boston">Citizen-Centered Government: The Mayor's Office of New Urban Mechanics and the Evolution of CRM in Boston</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/susan-p-crawford.html">Susan P. Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-susan-p-crawford">Susan P. Crawford</a>
         
-        <a href="../authors/dana-walters.html">Dana Walters</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dana-walters">Dana Walters</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -464,8 +495,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -507,7 +540,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/living-labs-implementing-open-innovation-in-the-public-sector.html" title="Living labs: Implementing open innovation in the public sector">Living labs: Implementing open innovation in the public sector</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mila-gascó.html">Mila Gascó</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mila-gascó">Mila Gascó</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -553,8 +586,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-the-govlab
@@ -596,11 +631,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/toward-metrics-for-reimagining-governance-the-promise-and-challenge-of-evaluating-innovations-in-how-we-govern.html" title="Toward Metrics for Re(imagining) Governance: The Promise and Challenge of Evaluating Innovations in How We Govern">Toward Metrics for Re(imagining) Governance: The Promise and Challenge of Evaluating Innovations in How We Govern</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/aleise-barnett.html">Aleise Barnett</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aleise-barnett">Aleise Barnett</a>
         
-        <a href="../authors/david-dembo.html">David Dembo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-dembo">David Dembo</a>
         
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -637,13 +672,41 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -685,7 +748,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/governing-methods-policy-innovation-labs-design-and-data-science-in-the-digital-governance-of-education.html" title="Governing Methods: Policy Innovation Labs, Design and Data Science in the Digital Governance of Education">Governing Methods: Policy Innovation Labs, Design and Data Science in the Digital Governance of Education</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/ben-williamson.html">Ben Williamson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ben-williamson">Ben Williamson</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -731,8 +794,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -772,7 +837,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-perils-of-experimentation.html" title="The Perils of Experimentation">The Perils of Experimentation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/michael-a-livermore.html">Michael A. Livermore</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-a-livermore">Michael A. Livermore</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -818,8 +883,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -865,11 +932,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizen-involvment-in-local-environmental-governance-a-methodology-combining-human-centered-design-and-living-lab-approaches.html" title="Citizen Involvment in Local Environmental Governance: A Methodology Combining Human-Centered Design and Living Lab Approaches">Citizen Involvment in Local Environmental Governance: A Methodology Combining Human-Centered Design and Living Lab Approaches</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sandrine-reiter.html">Sandrine Reiter</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sandrine-reiter">Sandrine Reiter</a>
         
-        <a href="../authors/guillaume-gronier.html">Guillaume Gronier</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-guillaume-gronier">Guillaume Gronier</a>
         
-        <a href="../authors/philippe-valoggia.html">Philippe Valoggia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-philippe-valoggia">Philippe Valoggia</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -913,473 +980,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-      f-macarthur-foundation-research-network-on-opening-governance
-      
-      f-center-for-policy-informatics
-      
-
-      
-      f-legitimacy
-      
-
-      
-      f-randomized-controlled-trial
-      
-
-      
-      f-policy
-      
-      f-education
-      
-
-      
-      f-united-states
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-tanya-m-kelley
-      
-      f-erik-w-johnston
-      
-
-      
-      m-labs-and-experimentation
-      
-      m-gamification
-      
-
-      f-search-paper-146
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/immersive-policy-learning-an-interactive-course-experiment.html" title="Immersive Policy Learning: An Interactive Course Experiment">Immersive Policy Learning: An Interactive Course Experiment</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/erik-w-johnston.html">Erik W. Johnston</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-          <a href="../categories/gamification.html" class="result-item__tag result-item__tag--gamification">Gamification</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/randomized-controlled-trial.html">Randomized Controlled Trial</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-comparative-analysis
-      
-
-      
-
-      
-
-      
-
-      
-      f-working-paper
-      
-
-      
-      f-louise-bloom
-      
-      f-romy-faulkner
-      
-
-      
-      m-labs-and-experimentation
-      
-
-      f-search-paper-256
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/innovation-spaces-transforming-humanitarian-practice-in-the-united-nations.html" title="Innovation spaces: transforming humanitarian practice in the United Nations">Innovation spaces: transforming humanitarian practice in the United Nations</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/louise-bloom.html">Louise Bloom</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/romy-faulkner.html">Romy Faulkner</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/working-paper.html">Working Paper</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-      f-case-studies
-      
-
-      
-
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-frances-westley
-      
-      f-sam-laban
-      
-      f-cheryl-rose
-      
-      f-katharine-mcgowan
-      
-      f-kirsten-robinson
-      
-      f-ola-tjornbo
-      
-      f-mark-tovey
-      
-
-      
-      m-labs-and-experimentation
-      
-      m-design-thinking
-      
-
-      f-search-paper-301
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/social-innovation-lab-guide.html" title="Social Innovation Lab Guide">Social Innovation Lab Guide</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/frances-westley.html">Frances Westley</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/sam-laban.html">Sam Laban</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/cheryl-rose.html">Cheryl Rose</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/katharine-mcgowan.html">Katharine McGowan</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/kirsten-robinson.html">Kirsten Robinson</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/ola-tjornbo.html">Ola Tjornbo</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/mark-tovey.html">Mark Tovey</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-          <a href="../categories/design-thinking.html" class="result-item__tag result-item__tag--design-thinking">Design Thinking</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-comparative-analysis
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-
-      
-
-      
-      f-white-paper
-      
-
-      
-      f-lidia-gryszkiewicz
-      
-      f-ioanna-lykourentzou
-      
-      f-tuukka-toivonen
-      
-
-      
-      m-labs-and-experimentation
-      
-
-      f-search-paper-172
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/innovation-labs-leveraging-openness-for-radical-innovation.html" title="Innovation Labs: Leveraging Openness for Radical Innovation?">Innovation Labs: Leveraging Openness for Radical Innovation?</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/lidia-gryszkiewicz.html">Lidia Gryszkiewicz</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/ioanna-lykourentzou.html">Ioanna Lykourentzou</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/tuukka-toivonen.html">Tuukka Toivonen</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/white-paper.html">White Paper</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-case-studies
-      
-
-      
-
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-alex-glennie
-      
-      f-kirsten-bound
-      
-
-      
-      m-labs-and-experimentation
-      
-
-      f-search-paper-393
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/how-innovation-agencies-work-international-lessons-to-inspire-and-inform-national-strategies.html" title="How Innovation Agencies Work: International Lessons to Inspire and Inform National Strategies">How Innovation Agencies Work: International Lessons to Inspire and Inform National Strategies</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/alex-glennie.html">Alex Glennie</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/kirsten-bound.html">Kirsten Bound</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
       f-center-for-policy-informatics
@@ -1408,7 +1009,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -1425,8 +1026,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -1455,16 +1054,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html" title="Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms">Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1524,13 +1121,563 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
+
+      
+      f-macarthur-foundation-research-network-on-opening-governance
+      
+      f-center-for-policy-informatics
+      
+
+      
+      f-legitimacy
+      
+
+      
+      f-randomized-controlled-trial
+      
+
+      
+      f-policy
+      
+      f-education
+      
+
+      
+      f-united-states
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-tanya-m-kelley
+      
+      f-erik-w-johnston
+      
+
+      
+      m-labs-and-experimentation
+      
+      m-gamification
+      
+
+      f-search-paper-146
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/immersive-policy-learning-an-interactive-course-experiment.html" title="Immersive Policy Learning: An Interactive Course Experiment">Immersive Policy Learning: An Interactive Course Experiment</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
+        
+        <a href="../by/author.html?filter=.f-erik-w-johnston">Erik W. Johnston</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+          <a href="../categories/gamification.html" class="result-item__tag result-item__tag--gamification">Gamification</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/randomized-controlled-trial.html">Randomized Controlled Trial</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--macarthur-foundation-research-network-on-opening-governance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-comparative-analysis
+      
+
+      
+
+      
+
+      
+
+      
+      f-working-paper
+      
+
+      
+      f-louise-bloom
+      
+      f-romy-faulkner
+      
+
+      
+      m-labs-and-experimentation
+      
+
+      f-search-paper-256
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/innovation-spaces-transforming-humanitarian-practice-in-the-united-nations.html" title="Innovation spaces: transforming humanitarian practice in the United Nations">Innovation spaces: transforming humanitarian practice in the United Nations</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-louise-bloom">Louise Bloom</a>
+        
+        <a href="../by/author.html?filter=.f-romy-faulkner">Romy Faulkner</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/working-paper.html">Working Paper</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-frances-westley
+      
+      f-sam-laban
+      
+      f-cheryl-rose
+      
+      f-katharine-mcgowan
+      
+      f-kirsten-robinson
+      
+      f-ola-tjornbo
+      
+      f-mark-tovey
+      
+
+      
+      m-labs-and-experimentation
+      
+      m-design-thinking
+      
+
+      f-search-paper-301
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/social-innovation-lab-guide.html" title="Social Innovation Lab Guide">Social Innovation Lab Guide</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-frances-westley">Frances Westley</a>
+        
+        <a href="../by/author.html?filter=.f-sam-laban">Sam Laban</a>
+        
+        <a href="../by/author.html?filter=.f-cheryl-rose">Cheryl Rose</a>
+        
+        <a href="../by/author.html?filter=.f-katharine-mcgowan">Katharine McGowan</a>
+        
+        <a href="../by/author.html?filter=.f-kirsten-robinson">Kirsten Robinson</a>
+        
+        <a href="../by/author.html?filter=.f-ola-tjornbo">Ola Tjornbo</a>
+        
+        <a href="../by/author.html?filter=.f-mark-tovey">Mark Tovey</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+          <a href="../categories/design-thinking.html" class="result-item__tag result-item__tag--design-thinking">Design Thinking</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-comparative-analysis
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+
+      
+
+      
+      f-white-paper
+      
+
+      
+      f-lidia-gryszkiewicz
+      
+      f-ioanna-lykourentzou
+      
+      f-tuukka-toivonen
+      
+
+      
+      m-labs-and-experimentation
+      
+
+      f-search-paper-172
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/innovation-labs-leveraging-openness-for-radical-innovation.html" title="Innovation Labs: Leveraging Openness for Radical Innovation?">Innovation Labs: Leveraging Openness for Radical Innovation?</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-lidia-gryszkiewicz">Lidia Gryszkiewicz</a>
+        
+        <a href="../by/author.html?filter=.f-ioanna-lykourentzou">Ioanna Lykourentzou</a>
+        
+        <a href="../by/author.html?filter=.f-tuukka-toivonen">Tuukka Toivonen</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/white-paper.html">White Paper</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-alex-glennie
+      
+      f-kirsten-bound
+      
+
+      
+      m-labs-and-experimentation
+      
+
+      f-search-paper-393
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/how-innovation-agencies-work-international-lessons-to-inspire-and-inform-national-strategies.html" title="How Innovation Agencies Work: International Lessons to Inspire and Inform National Strategies">How Innovation Agencies Work: International Lessons to Inspire and Inform National Strategies</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-alex-glennie">Alex Glennie</a>
+        
+        <a href="../by/author.html?filter=.f-kirsten-bound">Kirsten Bound</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1570,9 +1717,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-guide-for-making-innovation-offices-work.html" title="A Guide for Making Innovation Offices Work">A Guide for Making Innovation Offices Work</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/rachel-burstein.html">Rachel Burstein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rachel-burstein">Rachel Burstein</a>
         
-        <a href="../authors/alissa-black.html">Alissa Black</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alissa-black">Alissa Black</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1616,8 +1763,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1661,7 +1807,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/making-design-safe-for-citizens-a-hidden-history-of-humanitarian-experimentation.html" title="Making design safe for citizens: A hidden history of humanitarian experimentation">Making design safe for citizens: A hidden history of humanitarian experimentation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/katja-lindskov-jacobsen.html">Katja Lindskov Jacobsen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-katja-lindskov-jacobsen">Katja Lindskov Jacobsen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1709,35 +1855,133 @@ window.store = {
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -1752,16 +1996,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

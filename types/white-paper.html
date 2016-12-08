@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -62,16 +79,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -185,8 +214,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -232,15 +263,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/score-another-one-for-the-internet-the-role-of-the-networked-public-sphere-in-the-u.s.-net-neutrality-policy-debate.html" title="Score Another One for the Internet? The Role of the Networked Public Sphere in the U.S. Net Neutrality Policy Debate"">Score Another One for the Internet? The Role of the Networked Public Sphere in the U.S. Net Neutrality Policy Debate"</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/robert-faris.html">Robert Faris</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-robert-faris">Robert Faris</a>
         
-        <a href="../authors/hal-roberts.html">Hal Roberts</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hal-roberts">Hal Roberts</a>
         
-        <a href="../authors/bruce-etling.html">Bruce Etling</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bruce-etling">Bruce Etling</a>
         
-        <a href="../authors/dalia-othman.html">Dalia Othman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dalia-othman">Dalia Othman</a>
         
-        <a href="../authors/yochai-benkler.html">Yochai Benkler</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yochai-benkler">Yochai Benkler</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -284,8 +315,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -325,9 +358,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/from-mechanism-to-virtue-evaluating-nudge-theory.html" title="From Mechanism to Virtue: Evaluating Nudge-Theory">From Mechanism to Virtue: Evaluating Nudge-Theory</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jeroen-van-der-heijden.html">Jeroen Van der Heijden</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jeroen-van-der-heijden">Jeroen Van der Heijden</a>
         
-        <a href="../authors/mark-kosters.html">Mark Kosters</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mark-kosters">Mark Kosters</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -371,8 +404,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -414,9 +449,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizen-centered-government-the-mayors-office-of-new-urban-mechanics-and-the-evolution-of-crm-in-boston.html" title="Citizen-Centered Government: The Mayor's Office of New Urban Mechanics and the Evolution of CRM in Boston">Citizen-Centered Government: The Mayor's Office of New Urban Mechanics and the Evolution of CRM in Boston</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/susan-p-crawford.html">Susan P. Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-susan-p-crawford">Susan P. Crawford</a>
         
-        <a href="../authors/dana-walters.html">Dana Walters</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dana-walters">Dana Walters</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -460,8 +495,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -501,7 +538,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/empowering-cities.html" title="Empowering cities">Empowering cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/the-economist.html">The Economist</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-the-economist">The Economist</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -543,8 +580,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -586,11 +625,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/does-enclave-deliberation-polarize-opinions.html" title="Does Enclave Deliberation Polarize Opinions?">Does Enclave Deliberation Polarize Opinions?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kimmo-grönlund.html">Kimmo Grönlund</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kimmo-grönlund">Kimmo Grönlund</a>
         
-        <a href="../authors/kaisa-herne.html">Kaisa Herne</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kaisa-herne">Kaisa Herne</a>
         
-        <a href="../authors/maija-setälä.html">Maija Setälä</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maija-setälä">Maija Setälä</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -634,8 +673,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -683,9 +724,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-politics-and-ethics-of-cdr-analytics.html" title="The Politics and Ethics of CDR Analytics">The Politics and Ethics of CDR Analytics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/emmanuel-letouzé.html">Emmanuel Letouzé</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-emmanuel-letouzé">Emmanuel Letouzé</a>
         
-        <a href="../authors/patrick-vinck.html">Patrick Vinck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-vinck">Patrick Vinck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -733,8 +774,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-the-govlab
@@ -790,15 +833,15 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-open-data-era-in-health-and-social-care.html" title="The Open Data Era in Health and Social Care">The Open Data Era in Health and Social Care</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
-        <a href="../authors/beth-simone-noveck.html">Beth Simone Noveck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
         
-        <a href="../authors/robyn-caplan.html">Robyn Caplan</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-robyn-caplan">Robyn Caplan</a>
         
-        <a href="../authors/kristy-brown.html">Kristy Brown</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kristy-brown">Kristy Brown</a>
         
-        <a href="../authors/claudia-paz.html">Claudia Paz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-claudia-paz">Claudia Paz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -839,13 +882,65 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+      <div class="result-item__extras result-item__extras--macarthur-foundation-research-network-on-opening-governance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -885,7 +980,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/smarter-better-faster-the-potential-for-predictive-analytics-and-rapid-cycle-evaluation-to-improve-program-development-and-outcomes.html" title="Smarter, Better, Faster: The Potential for Predictive Analytics and Rapid-Cycle Evaluation to Improve Program Development and Outcomes">Smarter, Better, Faster: The Potential for Predictive Analytics and Rapid-Cycle Evaluation to Improve Program Development and Outcomes</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/scott-codyrew-asher.html">Scott Codyrew Asher</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-scott-codyrew-asher">Scott Codyrew Asher</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -927,8 +1022,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -978,7 +1075,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ebola-a-big-data-disaster-privacy-property-and-the-law-of-disaster-experimentation.html" title="Ebola: A Big Data Disaster: Privacy, Property, and the Law of Disaster Experimentation">Ebola: A Big Data Disaster: Privacy, Property, and the Law of Disaster Experimentation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sean-martin-mcdonald.html">Sean Martin McDonald</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sean-martin-mcdonald">Sean Martin McDonald</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1030,8 +1127,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1073,7 +1172,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/world-disasters-report-focus-on-technology-and-the-future-of-humanitarian-action.html" title="World Disasters Report: Focus on technology and the future of humanitarian action">World Disasters Report: Focus on technology and the future of humanitarian action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/patrick-vinck.html">Patrick Vinck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patrick-vinck">Patrick Vinck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1119,8 +1218,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1156,7 +1257,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/participatory-budgeting--not-a-one-size-fits-all-approach.html" title="Participatory Budgeting — Not A One-Size-Fits All Approach">Participatory Budgeting — Not A One-Size-Fits All Approach</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alexandra-flynn.html">Alexandra Flynn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alexandra-flynn">Alexandra Flynn</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1198,8 +1299,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1285,31 +1388,31 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/flooding-through-the-lens-of-mobile-phone-activity.html" title="Flooding through the lens of mobile phone activity">Flooding through the lens of mobile phone activity</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-pastor-escuredo.html">David Pastor-Escuredo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-pastor-escuredo">David Pastor-Escuredo</a>
         
-        <a href="../authors/alfredo-morales-guzmán.html">Alfredo Morales-Guzmán</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfredo-morales-guzmán">Alfredo Morales-Guzmán</a>
         
-        <a href="../authors/yolanda-torres-fernández.html">Yolanda Torres-Fernández</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yolanda-torres-fernández">Yolanda Torres-Fernández</a>
         
-        <a href="../authors/jean-martin-bauer.html">Jean-Martin Bauer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jean-martin-bauer">Jean-Martin Bauer</a>
         
-        <a href="../authors/amit-wadhwa.html">Amit Wadhwa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amit-wadhwa">Amit Wadhwa</a>
         
-        <a href="../authors/carlos-castro-correa.html">Carlos Castro-Correa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castro-correa">Carlos Castro-Correa</a>
         
-        <a href="../authors/liudmyla-romanoff.html">Liudmyla Romanoff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-liudmyla-romanoff">Liudmyla Romanoff</a>
         
-        <a href="../authors/jong-gun-lee.html">Jong Gun Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jong-gun-lee">Jong Gun Lee</a>
         
-        <a href="../authors/alex-rutherford.html">Alex Rutherford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-rutherford">Alex Rutherford</a>
         
-        <a href="../authors/vanessa-frias-martinez.html">Vanessa Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vanessa-frias-martinez">Vanessa Frias-Martinez</a>
         
-        <a href="../authors/nuria-oliver.html">Nuria Oliver</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nuria-oliver">Nuria Oliver</a>
         
-        <a href="../authors/enrique-frias-martinez.html">Enrique Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-enrique-frias-martinez">Enrique Frias-Martinez</a>
         
-        <a href="../authors/miguel-luengo-oroz.html">Miguel Luengo-Oroz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miguel-luengo-oroz">Miguel Luengo-Oroz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1369,8 +1472,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-the-govlab
@@ -1412,11 +1517,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/toward-metrics-for-reimagining-governance-the-promise-and-challenge-of-evaluating-innovations-in-how-we-govern.html" title="Toward Metrics for Re(imagining) Governance: The Promise and Challenge of Evaluating Innovations in How We Govern">Toward Metrics for Re(imagining) Governance: The Promise and Challenge of Evaluating Innovations in How We Govern</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/aleise-barnett.html">Aleise Barnett</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-aleise-barnett">Aleise Barnett</a>
         
-        <a href="../authors/david-dembo.html">David Dembo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-dembo">David Dembo</a>
         
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1453,13 +1558,41 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1503,9 +1636,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/google-votes--liquid-democracy-experiment-on-a-corporate-social-network.html" title="Google Votes:  Liquid Democracy Experiment on a Corporate Social Network">Google Votes:  Liquid Democracy Experiment on a Corporate Social Network</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/steve-hardt.html">Steve Hardt</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steve-hardt">Steve Hardt</a>
         
-        <a href="../authors/lia-c-r-lopes.html">Lia C. R. Lopes</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lia-c-r-lopes">Lia C. R. Lopes</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1553,8 +1686,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1594,7 +1729,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/mobile-privacy-disclosures-building-trust-through-transparency-a-federal-trade-commission-staff-report.html" title="Mobile Privacy Disclosures: Building Trust Through Transparency: A Federal Trade Commission Staff Report">Mobile Privacy Disclosures: Building Trust Through Transparency: A Federal Trade Commission Staff Report</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/us-federal-trade-commission.html">US Federal Trade Commission</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-us-federal-trade-commission">US Federal Trade Commission</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1638,8 +1773,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1683,7 +1820,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/accountability-data-governance-for-the-evolving-digital-marketplace.html" title="Accountability: Data Governance for the Evolving Digital Marketplace">Accountability: Data Governance for the Evolving Digital Marketplace</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/the-centre-for-information-policy-leadership.html">The Centre for Information Policy Leadership</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-the-centre-for-information-policy-leadership">The Centre for Information Policy Leadership</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1731,8 +1868,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1774,9 +1913,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/exploration-extraction-and-rawification.-the-shaping-of-transparency-in-the-back-rooms-of-open-data.html" title="Exploration, Extraction and ‘Rawification’. The Shaping of Transparency in the Back Rooms of Open Data">Exploration, Extraction and ‘Rawification’. The Shaping of Transparency in the Back Rooms of Open Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jerome-denis.html">Jerome Denis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jerome-denis">Jerome Denis</a>
         
-        <a href="../authors/samuel-goëta.html">Samuel Goëta</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-samuel-goëta">Samuel Goëta</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1820,8 +1959,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1875,13 +2016,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/crowdsourcing-for-participatory-democracies-efficient-elicitation-of-social-choice-functions.html" title="Crowdsourcing for Participatory Democracies: Efficient Elicitation of Social Choice Functions">Crowdsourcing for Participatory Democracies: Efficient Elicitation of Social Choice Functions</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-lee.html">David Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-lee">David Lee</a>
         
-        <a href="../authors/ashish-goel.html">Ashish Goel</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ashish-goel">Ashish Goel</a>
         
-        <a href="../authors/tanja-aitamurto.html">Tanja Aitamurto</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
         
-        <a href="../authors/hélène-landemore.html">Hélène Landemore</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hélène-landemore">Hélène Landemore</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1931,8 +2072,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1976,7 +2119,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/crowdsourcing-pedestrian-and-cyclist-activity-data.html" title="Crowdsourcing Pedestrian and Cyclist Activity Data">Crowdsourcing Pedestrian and Cyclist Activity Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/amy-smith.html">Amy Smith</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amy-smith">Amy Smith</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2022,8 +2165,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2059,7 +2204,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/structuring-big-data-to-facilitate-democratic-participation-in-international-law.html" title="Structuring Big Data to Facilitate Democratic Participation in International Law">Structuring Big Data to Facilitate Democratic Participation in International Law</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/roslyn-fulle.html">Roslyn Fulle</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roslyn-fulle">Roslyn Fulle</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2101,8 +2246,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2144,9 +2291,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/overcoming-barriers-to-data-sharing-in-public-health-a-global-perspective.html" title="Overcoming Barriers to Data Sharing in Public Health: A Global Perspective ">Overcoming Barriers to Data Sharing in Public Health: A Global Perspective </a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jussi-sane.html">Jussi Sane</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jussi-sane">Jussi Sane</a>
         
-        <a href="../authors/michael-edelstein.html">Michael Edelstein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-edelstein">Michael Edelstein</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2190,8 +2337,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2239,11 +2388,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/initial-conditions-matter-social-capital-and-participatory-development.html" title="Initial Conditions Matter: Social Capital and Participatory Development">Initial Conditions Matter: Social Capital and Participatory Development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/lisa-a-cameron.html">Lisa A. Cameron</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lisa-a-cameron">Lisa A. Cameron</a>
         
-        <a href="../authors/susan-olivia.html">Susan Olivia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-susan-olivia">Susan Olivia</a>
         
-        <a href="../authors/manisha-shah.html">Manisha Shah</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-manisha-shah">Manisha Shah</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2289,8 +2438,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2334,7 +2485,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/health-big-data-in-the-commercial-context.html" title="Health Big Data in the Commercial Context">Health Big Data in the Commercial Context</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/center-for-democracy-technology.html">Center for Democracy & Technology</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-center-for-democracy-technology">Center for Democracy & Technology</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2382,8 +2533,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2423,9 +2576,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-crowds-for-evaluation-tasks-validity-by-numbers-vs.-validity-by-expertise.html" title="Using Crowds for Evaluation Tasks: Validity by Numbers vs. Validity by Expertise">Using Crowds for Evaluation Tasks: Validity by Numbers vs. Validity by Expertise</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/christoph-hienerth.html">Christoph Hienerth</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-christoph-hienerth">Christoph Hienerth</a>
         
-        <a href="../authors/frederik-riar.html">Frederik Riar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-frederik-riar">Frederik Riar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2469,8 +2622,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2520,9 +2675,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-data-sharing-to-improve-coordination-in-peacebuilding.html" title="Using Data Sharing to Improve Coordination in Peacebuilding">Using Data Sharing to Improve Coordination in Peacebuilding</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/andrew-robertson.html">Andrew Robertson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrew-robertson">Andrew Robertson</a>
         
-        <a href="../authors/steve-olson.html">Steve Olson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-steve-olson">Steve Olson</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2572,8 +2727,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2621,13 +2778,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/law-is-code-a-software-engineering-approach-to-analyzing-the-united-states-code.html" title="Law is Code: A Software Engineering Approach to Analyzing the United States Code">Law is Code: A Software Engineering Approach to Analyzing the United States Code</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/william-li.html">William Li</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-william-li">William Li</a>
         
-        <a href="../authors/pablo-azar.html">Pablo Azar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-pablo-azar">Pablo Azar</a>
         
-        <a href="../authors/david-larochelle.html">David Larochelle</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-larochelle">David Larochelle</a>
         
-        <a href="../authors/phil-hillrew-lo.html">Phil Hillrew Lo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-phil-hillrew-lo">Phil Hillrew Lo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2671,8 +2828,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2728,21 +2887,21 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/openfda-an-innovative-platform-providing-access-to-a-wealth-of-fdas-publicly-available-data.html" title="OpenFDA: an innovative platform providing access to a wealth of FDA's publicly available data">OpenFDA: an innovative platform providing access to a wealth of FDA's publicly available data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/taha-a-kass-hout.html">Taha A. Kass-Hout</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-taha-a-kass-hout">Taha A. Kass-Hout</a>
         
-        <a href="../authors/zhiheng-xu.html">Zhiheng Xu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-zhiheng-xu">Zhiheng Xu</a>
         
-        <a href="../authors/matthew-mohebbi.html">Matthew Mohebbi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-matthew-mohebbi">Matthew Mohebbi</a>
         
-        <a href="../authors/hans-nelsen.html">Hans Nelsen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hans-nelsen">Hans Nelsen</a>
         
-        <a href="../authors/adam-baker.html">Adam Baker</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-adam-baker">Adam Baker</a>
         
-        <a href="../authors/jonathan-levine.html">Jonathan Levine</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jonathan-levine">Jonathan Levine</a>
         
-        <a href="../authors/elaine-johanson.html">Elaine Johanson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-elaine-johanson">Elaine Johanson</a>
         
-        <a href="../authors/roselie-a-bright.html">Roselie A. Bright</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-roselie-a-bright">Roselie A. Bright</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2786,8 +2945,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2831,11 +2992,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/towards-open-development-data-a-review-of-open-development-data-from-a-ngo-perspective.html" title="Towards Open Development Data: A review of open development data from a NGO perspective">Towards Open Development Data: A review of open development data from a NGO perspective</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tijs-van-den-broek.html">Tijs van den Broek</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tijs-van-den-broek">Tijs van den Broek</a>
         
-        <a href="../authors/marijn-rijken.html">Marijn Rijken</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-marijn-rijken">Marijn Rijken</a>
         
-        <a href="../authors/sander-van-oort.html">Sander van Oort</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sander-van-oort">Sander van Oort</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2879,8 +3040,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2932,11 +3095,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/enabling-humanitarian-use-of-mobile-phone-data.html" title="Enabling Humanitarian Use of Mobile Phone Data">Enabling Humanitarian Use of Mobile Phone Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/yves-alexandre-de-montjoye.html">Yves-Alexandre de Montjoye</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yves-alexandre-de-montjoye">Yves-Alexandre de Montjoye</a>
         
-        <a href="../authors/jake-kendall.html">Jake Kendall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jake-kendall">Jake Kendall</a>
         
-        <a href="../authors/cameron-f-kerry.html">Cameron F. Kerry</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cameron-f-kerry">Cameron F. Kerry</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2984,8 +3147,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3027,11 +3189,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/innovation-labs-leveraging-openness-for-radical-innovation.html" title="Innovation Labs: Leveraging Openness for Radical Innovation?">Innovation Labs: Leveraging Openness for Radical Innovation?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/lidia-gryszkiewicz.html">Lidia Gryszkiewicz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lidia-gryszkiewicz">Lidia Gryszkiewicz</a>
         
-        <a href="../authors/ioanna-lykourentzou.html">Ioanna Lykourentzou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ioanna-lykourentzou">Ioanna Lykourentzou</a>
         
-        <a href="../authors/tuukka-toivonen.html">Tuukka Toivonen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tuukka-toivonen">Tuukka Toivonen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3075,8 +3237,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3128,9 +3292,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
 </a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tina-saebi.html">Tina Saebi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tina-saebi">Tina Saebi</a>
         
-        <a href="../authors/nicolai-j-foss.html">Nicolai J. Foss</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nicolai-j-foss">Nicolai J. Foss</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3176,8 +3340,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-the-govlab
@@ -3231,13 +3397,13 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/innovations-in-global-governance-towards-a-distributed-internet-governance-ecosystem.html" title="Innovations in Global Governance: Towards a Distributed Internet Governance Ecosystem">Innovations in Global Governance: Towards a Distributed Internet Governance Ecosystem</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
-        <a href="../authors/beth-simone-noveck.html">Beth Simone Noveck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
         
-        <a href="../authors/jillian-raines.html">Jillian Raines</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jillian-raines">Jillian Raines</a>
         
-        <a href="../authors/antony-declercq.html">Antony Declercq</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-antony-declercq">Antony Declercq</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3282,13 +3448,65 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+      <div class="result-item__extras result-item__extras--macarthur-foundation-research-network-on-opening-governance">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3328,9 +3546,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/does-participatory-budgeting-improve-decentralized-public-service-delivery.html" title="Does Participatory Budgeting Improve Decentralized Public Service Delivery?">Does Participatory Budgeting Improve Decentralized Public Service Delivery?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/diether-w-beuermann.html">Diether W. Beuermann</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-diether-w-beuermann">Diether W. Beuermann</a>
         
-        <a href="../authors/maria-amelina.html">Maria Amelina</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-maria-amelina">Maria Amelina</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3372,8 +3590,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3459,31 +3679,31 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/flooding-through-the-lens-of-mobile-phone-activity.html" title="Flooding Through the Lens of Mobile Phone Activity">Flooding Through the Lens of Mobile Phone Activity</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-pastor-escuredo.html">David Pastor-Escuredo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-pastor-escuredo">David Pastor-Escuredo</a>
         
-        <a href="../authors/alfredo-morales-guzmán.html">Alfredo Morales-Guzmán</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfredo-morales-guzmán">Alfredo Morales-Guzmán</a>
         
-        <a href="../authors/yolanda-torres-fernández.html">Yolanda Torres-Fernández</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-yolanda-torres-fernández">Yolanda Torres-Fernández</a>
         
-        <a href="../authors/jean-martin-bauer.html">Jean-Martin Bauer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jean-martin-bauer">Jean-Martin Bauer</a>
         
-        <a href="../authors/amit-wadhwa.html">Amit Wadhwa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amit-wadhwa">Amit Wadhwa</a>
         
-        <a href="../authors/carlos-castro-correa.html">Carlos Castro-Correa</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castro-correa">Carlos Castro-Correa</a>
         
-        <a href="../authors/liudmyla-romanoff.html">Liudmyla Romanoff</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-liudmyla-romanoff">Liudmyla Romanoff</a>
         
-        <a href="../authors/jong-gun-lee.html">Jong Gun Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jong-gun-lee">Jong Gun Lee</a>
         
-        <a href="../authors/alex-rutherford.html">Alex Rutherford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-rutherford">Alex Rutherford</a>
         
-        <a href="../authors/vanessa-frias-martinez.html">Vanessa Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vanessa-frias-martinez">Vanessa Frias-Martinez</a>
         
-        <a href="../authors/nuria-oliver.html">Nuria Oliver</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nuria-oliver">Nuria Oliver</a>
         
-        <a href="../authors/enrique-frias-martinez.html">Enrique Frias-Martinez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-enrique-frias-martinez">Enrique Frias-Martinez</a>
         
-        <a href="../authors/miguel-luengo-oroz.html">Miguel Luengo-Oroz</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-miguel-luengo-oroz">Miguel Luengo-Oroz</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3543,8 +3763,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3590,9 +3812,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/smart-devolution.html" title="Smart Devolution">Smart Devolution</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eddie-copeland.html">Eddie Copeland</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eddie-copeland">Eddie Copeland</a>
         
-        <a href="../authors/cameron-scott.html">Cameron Scott</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cameron-scott">Cameron Scott</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3640,8 +3862,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-centre-for-information-policy-leadership
@@ -3679,9 +3903,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/reframing-data-transparency.html" title="Reframing Data Transparency">Reframing Data Transparency</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bojana-bellamy.html">Bojana Bellamy</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bojana-bellamy">Bojana Bellamy</a>
         
-        <a href="../authors/chema-alonso.html">Chema Alonso</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-chema-alonso">Chema Alonso</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3714,13 +3938,39 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--centre-for-information-policy-leadership">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3762,7 +4012,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/can-311-call-centers-improve-service-delivery-lessons-from-new-york-and-chicago.html" title="Can 311 Call Centers Improve Service Delivery? Lessons from New York and Chicago">Can 311 Call Centers Improve Service Delivery? Lessons from New York and Chicago</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jane-wiseman.html">Jane Wiseman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jane-wiseman">Jane Wiseman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3808,8 +4058,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3849,7 +4101,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/big-data-as-governmentality--digital-traces-algorithms-and-the-reconfiguration-of-data-in-international-development.html" title="Big Data as Governmentality – Digital Traces, Algorithms, and the Reconfiguration of Data in International Development">Big Data as Governmentality – Digital Traces, Algorithms, and the Reconfiguration of Data in International Development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mikkel-flyverbomreas-rasche.html">Mikkel Flyverbomreas Rasche</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mikkel-flyverbomreas-rasche">Mikkel Flyverbomreas Rasche</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3897,35 +4149,133 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -3940,16 +4290,24 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

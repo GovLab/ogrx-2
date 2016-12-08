@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -55,6 +72,15 @@
 
 <script>
 window.store = {
+  
+  "paper-a9": {
+    "title": "Digital Kenya: An Entrepreneurial Revolution in the Making",
+    "author": "Bitange Ndemo,Tim Weiss",
+    "category": "Institutional Innovation",
+    "content": "Presenting rigorous and original research, this volume offers key insights into the historical, cultural, social, economic and political forces at play in the creation of world-class ICT innovations in Kenya. Following the arrival of fiber-optic cables in 2009, Digital Kenya examines why the initial entrepreneurial spirit and digital revolution has begun to falter despite support from motivated entrepreneurs, international investors, policy experts and others. Written by engaged scholars and professionals in the field, the book offers 15 eye-opening chapters and 14 one-on-one conversations with entrepreneurs and investors to ask why establishing ICT start-ups on a continental and global scale remains a challenge on the “Silicon Savannah”. The authors present evidence-based recommendations to help Kenya to continue producing globally impactful ICT innovations that improve the lives of those still waiting on the side-lines, and to inspire other nations to do the same.",
+    "url": "papers/digital-kenya-an-entrepreneurial-revolution-in-the-making.html"
+  }
+  ,
   
   "paper-193": {
     "title": "The Quest for Good Governance: How Societies Develop Control of Corruption",
@@ -92,15 +118,6 @@ window.store = {
   }
   ,
   
-  "paper-a54": {
-    "title": "Innovations in Open Grantmaking",
-    "author": "Andrew Miller,Andrew Young,Beth Noveck",
-    "category": "Collective Intelligence,Institutional Innovation",
-    "content": "Of its $4.1 trillion fiscal year 2016 budget, the U.S. federal government and its grantmaking agencies will give out billions of dollars in the form of grants to states, localities, and individuals, supporting a dizzying array of activities, from scientific research and economic development to arts, culture, and education. Grantmaking, in short, plays a vital role in helping our government, our researchers, and our communities confront 21st-century challenges. Despite grantmaking's importance, we have a decidedly 20th-century system in place for deciding how we make these billions of dollars of crucial public investments. To make the most of limited funding—and help build confidence in the ability of public investments to make a positive difference—it is essential for our government agencies to try more innovative approaches to designing, awarding, and measuring their grantmaking activities.",
-    "url": "papers/innovations-in-open-grantmaking.html"
-  }
-  ,
-  
   "paper-a75": {
     "title": "Evidence-based policy making in the social sciences: Methods that matter",
     "author": "Gerry Stoker,Mark Evans",
@@ -134,15 +151,6 @@ window.store = {
     "category": "Institutional Innovation,Collective Intelligence",
     "content": "Regulation is no longer the prerogative of either states or markets. Increasingly citizens in association with businesses catalyse regulation which marks the rise of a social sphere in regulation. Around the world, in San Francisco, Melbourne, Munich and Mexico City, citizens have sought to transform how and to what end economic transactions are conducted. For instance, 'carrot mob' initiatives use positive economic incentives, not provided by a state legal system, but by a collective of civil society actors in order to change business behaviour. In contrast to 'negative' consumer boycotts, 'carrot mob' events use 'buycotts'. They harness competition between businesses as the lever for changing how and for what purpose business transactions are conducted. Through new social media 'carrot mobs' mobilize groups of citizens to purchase goods at a particular time in a specific shop. The business that promises to spend the greatest percentage of its takings on, for instance, environmental improvements, such as switching to a supplier of renewable energy, will be selected for an organized shopping spree and financially benefit from the extra income it receives from the 'carrot mob' event. 'Carrot mob' campaigns chime with other fundamental challenges to conventional economic activity, such as the shared use of consumer goods through citizens collective consumption which questions traditional conceptions of private property.",
     "url": "papers/regulatory-transformations-an-introduction.html"
-  }
-  ,
-  
-  "paper-467": {
-    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
-    "author": "Tanya M. Kelley,Erik Johnston",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
-    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
-    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
   }
   ,
   
@@ -191,12 +199,12 @@ window.store = {
   }
   ,
   
-  "paper-a82": {
-    "title": "Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration",
-    "author": "Beth Simone Noveck,Stefaan Verhulst",
-    "category": "Institutional Innovation,Open Data",
-    "content": "By building on progress that has been made and effectively utilizing the tools and levers in the federal government, the next administration can institutionalize the use of technology to enhance government innovation and effectiveness. The transition teams can accelerate these efforts by thinking strategically about how to implement an innovation agenda within agencies and through government-wide initiatives. The transition team can also make innovation a priority in the selection of appointees and in providing a clear agenda for action.",
-    "url": "papers/encouraging-and-sustaining-innovation-in-government-technology-and-innovation-in-the-next-administration.html"
+  "paper-467": {
+    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
+    "author": "Tanya M. Kelley,Erik Johnston",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
+    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
+    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
   }
   ,
   
@@ -353,6 +361,15 @@ window.store = {
   }
   ,
   
+  "paper-389": {
+    "title": "IT and Legislative Development",
+    "author": "Peter Wahlgren",
+    "category": "Data Analysis,Institutional Innovation",
+    "content": "Legislation is presently under strain. Technical progress, internationalisation and the growth of legal information alter the presuppositions at what seems to be an ever accelerating pace.These developments do not merely affect the issues to be regulated. This process also challenges the concept of legislation as such. It is in several ways apparent that traditional means of solving legal problems are becoming less efficient, and that alternative solutions ought to be considered.This article focuses on the latter. More precisely, the objective is to discuss whether there exist methods, or ways of approach, which may support law-making in a complicated technical environment characterised by a fast pace of change. The discussion is tentative; the ambition is merely to make an inventory of possible ways ahead.",
+    "url": "papers/it-and-legislative-development.html"
+  }
+  ,
+  
   "paper-412": {
     "title": "Enhancing Public Innovation by Transforming Public Governance",
     "author": "Jacob Torfing,Peter Triantafillou",
@@ -371,12 +388,12 @@ window.store = {
   }
   ,
   
-  "paper-389": {
-    "title": "IT and Legislative Development",
-    "author": "Peter Wahlgren",
-    "category": "Data Analysis,Institutional Innovation",
-    "content": "Legislation is presently under strain. Technical progress, internationalisation and the growth of legal information alter the presuppositions at what seems to be an ever accelerating pace.These developments do not merely affect the issues to be regulated. This process also challenges the concept of legislation as such. It is in several ways apparent that traditional means of solving legal problems are becoming less efficient, and that alternative solutions ought to be considered.This article focuses on the latter. More precisely, the objective is to discuss whether there exist methods, or ways of approach, which may support law-making in a complicated technical environment characterised by a fast pace of change. The discussion is tentative; the ambition is merely to make an inventory of possible ways ahead.",
-    "url": "papers/it-and-legislative-development.html"
+  "paper-a82": {
+    "title": "Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration",
+    "author": "Beth Simone Noveck,Stefaan Verhulst",
+    "category": "Institutional Innovation,Open Data",
+    "content": "By building on progress that has been made and effectively utilizing the tools and levers in the federal government, the next administration can institutionalize the use of technology to enhance government innovation and effectiveness. The transition teams can accelerate these efforts by thinking strategically about how to implement an innovation agenda within agencies and through government-wide initiatives. The transition team can also make innovation a priority in the selection of appointees and in providing a clear agenda for action.",
+    "url": "papers/encouraging-and-sustaining-innovation-in-government-technology-and-innovation-in-the-next-administration.html"
   }
   ,
   
@@ -395,6 +412,15 @@ window.store = {
     "category": "Institutional Innovation,Smart Cities,Citizen Science",
     "content": "Smart Cities, a concept widely growing in popularity, describes cities that use digital technology, data analysis and connectivity to create value. The basic abstraction of a Smart City service includes collecting data about an urban issue, transmitting it to a central decision making process and “improving” the city with the insights generated. This model has spurred much critique, claiming Smart Cities are undemocratic, discriminatory and cannot significantly improve citizen's quality of life. But what if the citizens were active in the process? It was Jane Jacobs who said “Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody.” In this paper we lay a conceptual groundwork to envision “The Well-Informed City” - a decentralized, self-organizing Smart City service, where the value is created by everybody. The agents, who are the citizens of the city, are the ones who use the data to create value. We base the model on the cities' feature of Self-Organization as described in the domain of Complexity Theory of Cities. We demonstrate its theoretical possibility, describe a short case study and finish with suggestions for future empirical research. This work is highly significant due to the ubiquitous nature of contemporary mobile based information services and growing open data sets.",
     "url": "papers/the-well-informed-city-a-decentralized-bottom-up-model-for-a-smart-city-service-using-information-and-self-organization.html"
+  }
+  ,
+  
+  "paper-a54": {
+    "title": "Innovations in Open Grantmaking",
+    "author": "Andrew Miller,Andrew Young,Beth Simone Noveck",
+    "category": "Collective Intelligence,Institutional Innovation",
+    "content": "Of its $4.1 trillion fiscal year 2016 budget, the U.S. federal government and its grantmaking agencies will give out billions of dollars in the form of grants to states, localities, and individuals, supporting a dizzying array of activities, from scientific research and economic development to arts, culture, and education. Grantmaking, in short, plays a vital role in helping our government, our researchers, and our communities confront 21st-century challenges. Despite grantmaking's importance, we have a decidedly 20th-century system in place for deciding how we make these billions of dollars of crucial public investments. To make the most of limited funding—and help build confidence in the ability of public investments to make a positive difference—it is essential for our government agencies to try more innovative approaches to designing, awarding, and measuring their grantmaking activities.",
+    "url": "papers/innovations-in-open-grantmaking.html"
   }
   ,
   
@@ -513,15 +539,6 @@ window.store = {
     "content": "Rapid advances in our ability to collect, analyze, and disseminate information are transforming public administration. This “big data” revolution presents opportunities for improving the management of public programs, but it also entails some risks. In addition to potentially magnifying well-known problems with public sector performance management—particularly the problem of goal displacement—the widespread dissemination of administrative data and performance information increasingly enables external political actors to peer into and evaluate the administration of public programs. The latter trend is consequential because external actors may have little sense of the validity of performance metrics and little understanding of the policy priorities they capture. The author illustrates these potential problems using recent research on U.S. primary and secondary education and suggests that public administration scholars could help improve governance in the data-rich future by informing the development and dissemination of organizational report cards that better capture the value that public agencies deliver.",
     "url": "papers/we-all-need-help-big-data-and-the-mismeasure-of-public-administration.html"
   }
-  ,
-  
-  "paper-a9": {
-    "title": "Digital Kenya: An Entrepreneurial Revolution in the Making",
-    "author": "Bitange Ndemo,Tim Weiss",
-    "category": "Institutional Innovation",
-    "content": "Presenting rigorous and original research, this volume offers key insights into the historical, cultural, social, economic and political forces at play in the creation of world-class ICT innovations in Kenya. Following the arrival of fiber-optic cables in 2009, Digital Kenya examines why the initial entrepreneurial spirit and digital revolution has begun to falter despite support from motivated entrepreneurs, international investors, policy experts and others. Written by engaged scholars and professionals in the field, the book offers 15 eye-opening chapters and 14 one-on-one conversations with entrepreneurs and investors to ask why establishing ICT start-ups on a continental and global scale remains a challenge on the “Silicon Savannah”. The authors present evidence-based recommendations to help Kenya to continue producing globally impactful ICT innovations that improve the lives of those still waiting on the side-lines, and to inspire other nations to do the same.",
-    "url": "papers/digital-kenya-an-entrepreneurial-revolution-in-the-making.html"
-  }
   
   
 };
@@ -533,16 +550,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -572,13 +601,13 @@ window.store = {
             <select name="" id="filter-organization" class="filter js-change" >
               <option data-filter="*">Organization</option>
               
-              <option data-filter="f-govlab">GovLab</option>
-              
               <option data-filter="f-center-for-policy-informatics">Center for Policy Informatics</option>
               
               <option data-filter="f-centre-for-public-impact">Centre for Public Impact</option>
               
-              <option data-filter="f-swedish-law-and-informatics-institute">Swedish Law and Informatics Institute</option>
+              <option data-filter="f-swedish-law-and-informatics-research-institute">Swedish Law and Informatics Research Institute</option>
+              
+              <option data-filter="f-the-govlab">The GovLab</option>
               
             </select>
           </div>
@@ -614,6 +643,10 @@ window.store = {
             <select name="" id="filter-methodology" class="filter js-change" >
               <option data-filter="***">Methodology</option>
               
+              <option data-filter="f-case-studies">Case Studies</option>
+              
+              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
+              
               <option data-filter="f-comparative-analysis">Comparative Analysis</option>
               
               <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
@@ -621,10 +654,6 @@ window.store = {
               <option data-filter="f-statistical-modeling">Statistical Modeling</option>
               
               <option data-filter="f-design-science">Design Science</option>
-              
-              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
-              
-              <option data-filter="f-case-studies">Case Studies</option>
               
               <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
               
@@ -643,15 +672,7 @@ window.store = {
               
               <option data-filter="f-politics">Politics</option>
               
-              <option data-filter="f-philanthropy-and-aid">Philanthropy and Aid</option>
-              
               <option data-filter="f-law">Law</option>
-              
-              <option data-filter="f-education">Education</option>
-              
-              <option data-filter="f-internet-governance">Internet Governance</option>
-              
-              <option data-filter="f-social-movements-and-activism">Social Movements and Activism</option>
               
               <option data-filter="f-urban-planning">Urban Planning</option>
               
@@ -667,9 +688,17 @@ window.store = {
               
               <option data-filter="f-science">Science</option>
               
+              <option data-filter="f-education">Education</option>
+              
+              <option data-filter="f-internet-governance">Internet Governance</option>
+              
+              <option data-filter="f-social-movements">Social Movements</option>
+              
               <option data-filter="f-development">Development</option>
               
               <option data-filter="f-geospatial-services">Geospatial Services</option>
+              
+              <option data-filter="f-philanthropy-and-aid">Philanthropy and Aid</option>
               
               <option data-filter="f-economics">Economics</option>
               
@@ -685,6 +714,8 @@ window.store = {
           <div class="select">
             <select name="" id="filter-region" class="filter js-change" >
               <option data-filter="*****">Region</option>
+              
+              <option data-filter="f-kenya">Kenya</option>
               
               <option data-filter="f-canada">Canada</option>
               
@@ -707,8 +738,6 @@ window.store = {
               <option data-filter="f-united-kingdom">United Kingdom</option>
               
               <option data-filter="f-europe">Europe</option>
-              
-              <option data-filter="f-kenya">Kenya</option>
               
             </select>
           </div>
@@ -773,8 +802,91 @@ window.store = {
       
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+
+      
+
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+
+      
+      f-kenya
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-bitange-ndemo
+      
+      f-tim-weiss
+      
+
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a9
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/digital-kenya-an-entrepreneurial-revolution-in-the-making.html" title="Digital Kenya: An Entrepreneurial Revolution in the Making">Digital Kenya: An Entrepreneurial Revolution in the Making</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-bitange-ndemo">Bitange Ndemo</a>
+        
+        <a href="../by/author.html?filter=.f-tim-weiss">Tim Weiss</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
 
@@ -810,7 +922,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-quest-for-good-governance-how-societies-develop-control-of-corruption.html" title="The Quest for Good Governance: How Societies Develop Control of Corruption">The Quest for Good Governance: How Societies Develop Control of Corruption</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alina-mungiu-pippidi.html">Alina Mungiu-Pippidi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alina-mungiu-pippidi">Alina Mungiu-Pippidi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -852,8 +964,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -899,13 +1013,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/who-is-doing-computational-social-science.html" title="Who Is Doing Computational Social Science?">Who Is Doing Computational Social Science?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/katie-metzler.html">Katie Metzler</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-katie-metzler">Katie Metzler</a>
         
-        <a href="../authors/david-a-kim.html">David A. Kim</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-a-kim">David A. Kim</a>
         
-        <a href="../authors/nick-alum.html">Nick Alum</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nick-alum">Nick Alum</a>
         
-        <a href="../authors/angella-denman.html">Angella Denman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-angella-denman">Angella Denman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -951,8 +1065,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1010,17 +1123,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/supporting-collaborative-political-decision-making-an-interactive-policy-process-visualization-system.html" title="Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System">Supporting Collaborative Political Decision Making: An Interactive Policy Process Visualization System</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tobias-ruppert.html">Tobias Ruppert</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tobias-ruppert">Tobias Ruppert</a>
         
-        <a href="../authors/andreas-bannach.html">Andreas Bannach</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andreas-bannach">Andreas Bannach</a>
         
-        <a href="../authors/jürgen-bernard.html">Jürgen Bernard</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jürgen-bernard">Jürgen Bernard</a>
         
-        <a href="../authors/hendrik-lücke-tieke.html">Hendrik Lücke-Tieke</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hendrik-lücke-tieke">Hendrik Lücke-Tieke</a>
         
-        <a href="../authors/alex-ulmer.html">Alex Ulmer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-ulmer">Alex Ulmer</a>
         
-        <a href="../authors/jörn-kohlhammer.html">Jörn Kohlhammer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jörn-kohlhammer">Jörn Kohlhammer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1072,8 +1185,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1123,11 +1238,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/government-information-sharing-is-data-going-out-of-the-silos-into-the-mines.html" title="Government Information Sharing: Is Data Going Out of the Silos, Into the Mines?">Government Information Sharing: Is Data Going Out of the Silos, Into the Mines?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stephanie-perrin.html">Stephanie Perrin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stephanie-perrin">Stephanie Perrin</a>
         
-        <a href="../authors/jennifer-barrigar.html">Jennifer Barrigar</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jennifer-barrigar">Jennifer Barrigar</a>
         
-        <a href="../authors/robert-gellman.html">Robert Gellman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-robert-gellman">Robert Gellman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1177,103 +1292,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-      f-govlab
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-philanthropy-and-aid
-      
-
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-andrew-miller
-      
-      f-andrew-young
-      
-      f-beth-noveck
-      
-
-      
-      m-collective-intelligence
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a54
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/innovations-in-open-grantmaking.html" title="Innovations in Open Grantmaking">Innovations in Open Grantmaking</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/andrew-miller.html">Andrew Miller</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/andrew-young.html">Andrew Young</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/beth-noveck.html">Beth Noveck</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
 
@@ -1317,9 +1336,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/evidence-based-policy-making-in-the-social-sciences-methods-that-matter.html" title="Evidence-based policy making in the social sciences: Methods that matter">Evidence-based policy making in the social sciences: Methods that matter</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/gerry-stoker.html">Gerry Stoker</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gerry-stoker">Gerry Stoker</a>
         
-        <a href="../authors/mark-evans.html">Mark Evans</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mark-evans">Mark Evans</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1367,8 +1386,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1404,7 +1425,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/when-to-punish-when-to-persuade-and-when-to-reward-strengthening-responsive-regulation-with-the-regulatory-diamond.html" title="When to Punish, When to Persuade and When to Reward: Strengthening Responsive Regulation with the Regulatory Diamond">When to Punish, When to Persuade and When to Reward: Strengthening Responsive Regulation with the Regulatory Diamond</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jonathan-kolieb.html">Jonathan Kolieb</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jonathan-kolieb">Jonathan Kolieb</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1446,8 +1467,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1499,9 +1519,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/achieving-open-justice-through-citizen-participation-and-transparency.html" title="Achieving Open Justice through Citizen Participation and Transparency">Achieving Open Justice through Citizen Participation and Transparency</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/carlos-e-jiménez-gómez.html">Carlos E. Jiménez-Gómez</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-e-jiménez-gómez">Carlos E. Jiménez-Gómez</a>
         
-        <a href="../authors/mila-gascó-hernández.html">Mila Gascó-Hernández</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mila-gascó-hernández">Mila Gascó-Hernández</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1553,8 +1573,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1594,9 +1616,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/regulatory-transformations-an-introduction.html" title="Regulatory Transformations: An Introduction">Regulatory Transformations: An Introduction</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bettina-lange.html">Bettina Lange</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bettina-lange">Bettina Lange</a>
         
-        <a href="../authors/fiona-haines.html">Fiona Haines</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fiona-haines">Fiona Haines</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1640,8 +1662,492 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+      f-qualitative-analysis
+      
+
+      
+
+      
+      f-spain
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-mila-gascó
+      
+
+      
+      m-institutional-innovation
+      
+      m-labs-and-experimentation
+      
+
+      f-search-paper-a49
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/living-labs-implementing-open-innovation-in-the-public-sector.html" title="Living labs: Implementing open innovation in the public sector">Living labs: Implementing open innovation in the public sector</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-mila-gascó">Mila Gascó</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-effectiveness
+      
+      f-participation-and-sharing
+      
+      f-urban-design
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-urban-planning
+      
+      f-policy
+      
+      f-governance
+      
+      f-urban-design
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-mariana-mazzucato
+      
+
+      
+      m-big-data
+      
+      m-institutional-innovation
+      
+
+      f-search-2xezzjvjlqcy0cagu2ueey
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-entrepreneurial-state.html" title="The Entrepreneurial State">The Entrepreneurial State</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-mariana-mazzucato">Mariana Mazzucato</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/participation-and-sharing.html">Participation and Sharing</a>
+          
+          <a class="result-item__tag" href="../objectives/urban-design.html">Urban Design</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-legitimacy
+      
+
+      
+      f-conceptual-framework
+      
+      f-comparative-analysis
+      
+
+      
+      f-politics
+      
+      f-health
+      
+      f-criminal-justice
+      
+      f-science
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-e-shockley
+      
+      f-t-m-s-neal
+      
+      f-l-m-pytlikzillig
+      
+      f-b-h-bornstein
+      
+
+      
+      m-institutional-innovation
+      
+      m-co-creation
+      
+
+      f-search-paper-173
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/interdisciplinary-perspectives-on-trust-towards-theoretical-and-methodological-integration.html" title="Interdisciplinary Perspectives on Trust: Towards Theoretical and Methodological Integration">Interdisciplinary Perspectives on Trust: Towards Theoretical and Methodological Integration</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-e-shockley">E. Shockley</a>
+        
+        <a href="../by/author.html?filter=.f-t-m-s-neal">T.M.S. Neal</a>
+        
+        <a href="../by/author.html?filter=.f-l-m-pytlikzillig">L.M. PytlikZillig</a>
+        
+        <a href="../by/author.html?filter=.f-b-h-bornstein">B.H. Bornstein</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+          <a href="../categories/co-creation.html" class="result-item__tag result-item__tag--co-creation">Co-Creation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-transparency
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+      f-qualitative-analysis
+      
+
+      
+
+      
+      f-austria
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-bernhard-krabina
+      
+      f-thomas-prorok
+      
+      f-brigitte-lutz
+      
+
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a67
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/open-government-implementation-model.html" title="Open Government Implementation Model">Open Government Implementation Model</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-bernhard-krabina">Bernhard Krabina</a>
+        
+        <a href="../by/author.html?filter=.f-thomas-prorok">Thomas Prorok</a>
+        
+        <a href="../by/author.html?filter=.f-brigitte-lutz">Brigitte Lutz</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/transparency.html">Transparency</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+
+      
+      f-conceptual-framework
+      
+      f-statistical-modeling
+      
+
+      
+
+      
+      f-united-states
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-suzanne-j-piotrowski
+      
+
+      
+      m-open-data
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a0
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-open-government-reform-movement.html" title="The “Open Government Reform” Movement">The “Open Government Reform” Movement</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-suzanne-j-piotrowski">Suzanne J. Piotrowski</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
       f-center-for-policy-informatics
@@ -1674,7 +2180,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -1691,8 +2197,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -1723,16 +2227,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html" title="Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries">Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1798,93 +2300,30 @@ window.store = {
         </span>
       </div>
       
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-      f-qualitative-analysis
-      
-
-      
-
-      
-      f-spain
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-mila-gascó
-      
-
-      
-      m-institutional-innovation
-      
-      m-labs-and-experimentation
-      
-
-      f-search-paper-a49
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/living-labs-implementing-open-innovation-in-the-public-sector.html" title="Living labs: Implementing open innovation in the public sector">Living labs: Implementing open innovation in the public sector</a></h3>
-      <p class="result-item__authors">
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
         
-        <a href="../authors/mila-gascó.html">Mila Gascó</a> <!-- FIX THE COMMA SEPARATION -->
         
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
       </div>
       
     </div>
@@ -1892,497 +2331,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
-
       
-
+      m-open
+      f-open
       
-      f-effectiveness
-      
-      f-participation-and-sharing
-      
-      f-urban-design
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-urban-planning
-      
-      f-policy
-      
-      f-governance
-      
-      f-urban-design
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-mariana-mazzucato
-      
-
-      
-      m-big-data
-      
-      m-institutional-innovation
-      
-
-      f-search-2xezzjvjlqcy0cagu2ueey
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-entrepreneurial-state.html" title="The Entrepreneurial State">The Entrepreneurial State</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/mariana-mazzucato.html">Mariana Mazzucato</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/big-data.html" class="result-item__tag result-item__tag--big-data">Big Data</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/participation-and-sharing.html">Participation and Sharing</a>
-          
-          <a class="result-item__tag" href="../objectives/urban-design.html">Urban Design</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-legitimacy
-      
-
-      
-      f-conceptual-framework
-      
-      f-comparative-analysis
-      
-
-      
-      f-politics
-      
-      f-health
-      
-      f-criminal-justice
-      
-      f-science
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-e-shockley
-      
-      f-t-m-s-neal
-      
-      f-l-m-pytlikzillig
-      
-      f-b-h-bornstein
-      
-
-      
-      m-institutional-innovation
-      
-      m-co-creation
-      
-
-      f-search-paper-173
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/interdisciplinary-perspectives-on-trust-towards-theoretical-and-methodological-integration.html" title="Interdisciplinary Perspectives on Trust: Towards Theoretical and Methodological Integration">Interdisciplinary Perspectives on Trust: Towards Theoretical and Methodological Integration</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/e-shockley.html">E. Shockley</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/t-m-s-neal.html">T.M.S. Neal</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/l-m-pytlikzillig.html">L.M. PytlikZillig</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/b-h-bornstein.html">B.H. Bornstein</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/co-creation.html" class="result-item__tag result-item__tag--co-creation">Co-Creation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-transparency
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-      f-qualitative-analysis
-      
-
-      
-
-      
-      f-austria
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-bernhard-krabina
-      
-      f-thomas-prorok
-      
-      f-brigitte-lutz
-      
-
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a67
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/open-government-implementation-model.html" title="Open Government Implementation Model">Open Government Implementation Model</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/bernhard-krabina.html">Bernhard Krabina</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/thomas-prorok.html">Thomas Prorok</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/brigitte-lutz.html">Brigitte Lutz</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/transparency.html">Transparency</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-
-      
-      f-conceptual-framework
-      
-      f-statistical-modeling
-      
-
-      
-
-      
-      f-united-states
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-suzanne-j-piotrowski
-      
-
-      
-      m-open-data
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a0
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-open-government-reform-movement.html" title="The “Open Government Reform” Movement">The “Open Government Reform” Movement</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/suzanne-j-piotrowski.html">Suzanne J. Piotrowski</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-          <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-      f-govlab
-      
-
-      
-      f-effectiveness
-      
-      f-participation
-      
-
-      
-      f-case-studies
-      
-
-      
-      f-politics
-      
-
-      
-      f-united-states
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-beth-simone-noveck
-      
-      f-stefaan-verhulst
-      
-
-      
-      m-institutional-innovation
-      
-      m-open-data
-      
-
-      f-search-paper-a82
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/encouraging-and-sustaining-innovation-in-government-technology-and-innovation-in-the-next-administration.html" title="Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration">Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/beth-simone-noveck.html">Beth Simone Noveck</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
 
       
 
@@ -2422,9 +2374,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-government-overcoming-the-systemic-failure-of-transformation-digital-transformation-through-policy-design-with-ict-enhanced-instruments.html" title="Digital Government: Overcoming the Systemic Failure of Transformation: Digital Transformation through Policy Design with ICT-Enhanced Instruments">Digital Government: Overcoming the Systemic Failure of Transformation: Digital Transformation through Policy Design with ICT-Enhanced Instruments</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/paul-waller.html">Paul Waller</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-waller">Paul Waller</a>
         
-        <a href="../authors/vishanth-weerakkody.html">Vishanth Weerakkody</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-vishanth-weerakkody">Vishanth Weerakkody</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2468,8 +2420,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-center-for-policy-informatics
@@ -2531,9 +2485,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/use-of-github-as-a-platform-for-open-collaboration-on-text-documents.html" title="Use of GitHub as a Platform for Open Collaboration on Text Documents">Use of GitHub as a Platform for Open Collaboration on Text Documents</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/justin-longo.html">Justin Longo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-justin-longo">Justin Longo</a>
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2588,13 +2542,41 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2636,7 +2618,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/exploring-online-engagement-in-public-policy-consultation-the-crowd-or-the-few.html" title="Exploring Online Engagement in Public Policy Consultation: The Crowd or the Few?">Exploring Online Engagement in Public Policy Consultation: The Crowd or the Few?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/helen-k-liu.html">Helen K. Liu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-k-liu">Helen K. Liu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2682,8 +2664,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2725,9 +2706,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/entrepreneurial-and-innovative-practices-in-public-institutions-a-quality-of-life-approach.html" title="Entrepreneurial and Innovative Practices in Public Institutions: A Quality of Life Approach">Entrepreneurial and Innovative Practices in Public Institutions: A Quality of Life Approach</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/joão-leitão.html">João Leitão</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-joão-leitão">João Leitão</a>
         
-        <a href="../authors/helena-alves.html">Helena Alves</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helena-alves">Helena Alves</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2771,8 +2752,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2820,9 +2800,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/open-parliament-policy-applied-to-the-brazilian-chamber-of-deputies.html" title="Open parliament policy applied to the Brazilian Chamber of Deputies">Open parliament policy applied to the Brazilian Chamber of Deputies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/cristiano-faria.html">Cristiano Faria</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-cristiano-faria">Cristiano Faria</a>
         
-        <a href="../authors/malena-rehbein.html">Malena Rehbein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-malena-rehbein">Malena Rehbein</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2872,8 +2852,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2917,11 +2899,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-regulator-of-tomorrow.html" title="The Regulator of Tomorrow">The Regulator of Tomorrow</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/shrupti-shah.html">Shrupti Shah</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-shrupti-shah">Shrupti Shah</a>
         
-        <a href="../authors/rachel-brody.html">Rachel Brody</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rachel-brody">Rachel Brody</a>
         
-        <a href="../authors/nick-olson.html">Nick Olson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nick-olson">Nick Olson</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2965,8 +2947,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3006,7 +2990,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-perils-of-experimentation.html" title="The Perils of Experimentation">The Perils of Experimentation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/michael-a-livermore.html">Michael A. Livermore</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-a-livermore">Michael A. Livermore</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3052,8 +3036,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3095,7 +3081,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-innovation-and-technology-to-improve-city-services.html" title="Using Innovation and Technology to Improve City Services">Using Innovation and Technology to Improve City Services</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sherri-r-greenberg.html">Sherri R. Greenberg</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sherri-r-greenberg">Sherri R. Greenberg</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3143,8 +3129,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3190,9 +3178,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/informed-choice-motivations-and-methods-of-data-usage-among-public-officials-in-india.html" title="Informed Choice? Motivations and methods of data usage among public officials in India">Informed Choice? Motivations and methods of data usage among public officials in India</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/rwitwika-bhattacharya.html">Rwitwika Bhattacharya</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-rwitwika-bhattacharya">Rwitwika Bhattacharya</a>
         
-        <a href="../authors/mohitkumar-daga.html">Mohitkumar Daga</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mohitkumar-daga">Mohitkumar Daga</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3240,8 +3228,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3283,11 +3270,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/blurring-the-boundaries-through-digital-innovation.html" title="Blurring the Boundaries Through Digital Innovation">Blurring the Boundaries Through Digital Innovation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/fabrizio-d-ascenzo.html">Fabrizio D'Ascenzo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fabrizio-d-ascenzo">Fabrizio D'Ascenzo</a>
         
-        <a href="../authors/massimo-magni.html">Massimo Magni</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-massimo-magni">Massimo Magni</a>
         
-        <a href="../authors/stefano-za.html">Stefano Za</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stefano-za">Stefano Za</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3331,8 +3318,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3372,7 +3361,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/datavores-of-local-government.html" title="Datavores of Local Government">Datavores of Local Government</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tom-symons.html">Tom Symons</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tom-symons">Tom Symons</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3418,8 +3407,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3463,9 +3454,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-architecture-of-innovation.html" title="The Architecture of Innovation">The Architecture of Innovation</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/hollie-russon-gilman.html">Hollie Russon Gilman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-hollie-russon-gilman">Hollie Russon Gilman</a>
         
-        <a href="../authors/jessica-gover.html">Jessica Gover</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jessica-gover">Jessica Gover</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3511,8 +3502,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3560,17 +3553,17 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/making-a-success-of-digital-government.html" title="Making a success of digital government">Making a success of digital government</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/emily-andrews.html">Emily Andrews</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-emily-andrews">Emily Andrews</a>
         
-        <a href="../authors/daniel-thorton.html">Daniel Thorton</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniel-thorton">Daniel Thorton</a>
         
-        <a href="../authors/joseph-owen.html">Joseph Owen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-joseph-owen">Joseph Owen</a>
         
-        <a href="../authors/alex-bleasdale.html">Alex Bleasdale</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-bleasdale">Alex Bleasdale</a>
         
-        <a href="../authors/gavin-freeguard.html">Gavin Freeguard</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gavin-freeguard">Gavin Freeguard</a>
         
-        <a href="../authors/ines-stelk.html">Ines Stelk</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ines-stelk">Ines Stelk</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3612,8 +3605,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
       f-centre-for-public-impact
@@ -3688,13 +3683,41 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--centre-for-public-impact">
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/CPI-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3746,9 +3769,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/ten-actions-to-implement-big-data-initiatives-a-study-of-65-cities.html" title="Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities">Ten Actions to Implement Big Data Initiatives: A Study of 65 Cities</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alfred-tat-kei-ho.html">Alfred Tat-Kei Ho</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alfred-tat-kei-ho">Alfred Tat-Kei Ho</a>
         
-        <a href="../authors/bo-mccall.html">Bo McCall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bo-mccall">Bo McCall</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3804,8 +3827,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3845,11 +3867,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-government-leveraging-innovation-to-improve-public-sector-performance-and-outcomes-for-citizens.html" title="Digital Government: Leveraging Innovation to Improve Public Sector Performance and Outcomes for Citizens">Digital Government: Leveraging Innovation to Improve Public Sector Performance and Outcomes for Citizens</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/svenja-falk.html">Svenja Falk</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-svenja-falk">Svenja Falk</a>
         
-        <a href="../authors/andrea-römmele.html">Andrea Römmele</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrea-römmele">Andrea Römmele</a>
         
-        <a href="../authors/michael-silverman.html">Michael Silverman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-michael-silverman">Michael Silverman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3891,8 +3913,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3940,7 +3961,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-silo-effect-the-peril-of-expertise-and-the-promise-of-breaking-down-barriers.html" title="The Silo Effect: The Peril of Expertise and the Promise of Breaking Down Barriers">The Silo Effect: The Peril of Expertise and the Promise of Breaking Down Barriers</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/gillian-tett.html">Gillian Tett</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gillian-tett">Gillian Tett</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3986,8 +4007,122 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+      f-swedish-law-and-informatics-research-institute
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+      f-law
+      
+
+      
+      f-europe
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-peter-wahlgren
+      
+
+      
+      m-data-analysis
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-389
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/it-and-legislative-development.html" title="IT and Legislative Development">IT and Legislative Development</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-peter-wahlgren">Peter Wahlgren</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--swedish-law-and-informatics-research-institute">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
 
@@ -4025,9 +4160,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/enhancing-public-innovation-by-transforming-public-governance.html" title="Enhancing Public Innovation by Transforming Public Governance">Enhancing Public Innovation by Transforming Public Governance</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jacob-torfing.html">Jacob Torfing</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jacob-torfing">Jacob Torfing</a>
         
-        <a href="../authors/peter-triantafillou.html">Peter Triantafillou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-triantafillou">Peter Triantafillou</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4069,8 +4204,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4110,7 +4247,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/service-design-impact-report-public-sector.html" title="Service Design Impact Report: Public Sector">Service Design Impact Report: Public Sector</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/service-design-network.html">Service Design Network</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-service-design-network">Service Design Network</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4156,61 +4293,69 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
-      f-swedish-law-and-informatics-institute
+      f-the-govlab
       
 
       
       f-effectiveness
       
-
-      
-      f-conceptual-framework
+      f-participation
       
 
       
-      f-law
+      f-case-studies
       
 
       
-      f-europe
+      f-politics
+      
+
+      
+      f-united-states
       
 
       
 
       
-      f-journal-article
+      f-research-report
       
 
       
-      f-peter-wahlgren
+      f-beth-simone-noveck
+      
+      f-stefaan-verhulst
       
 
-      
-      m-data-analysis
       
       m-institutional-innovation
       
+      m-open-data
+      
 
-      f-search-paper-389
+      f-search-paper-a82
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/it-and-legislative-development.html" title="IT and Legislative Development">IT and Legislative Development</a></h3>
+      <h3 class="result-item__name"><a href="../papers/encouraging-and-sustaining-innovation-in-government-technology-and-innovation-in-the-next-administration.html" title="Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration">Encouraging and Sustaining Innovation in Government: Technology and Innovation in the Next Administration</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/peter-wahlgren.html">Peter Wahlgren</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
+        
+        <a href="../by/author.html?filter=.f-stefaan-verhulst">Stefaan Verhulst</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
           
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
           <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
           
         </span>
 
@@ -4219,7 +4364,7 @@ window.store = {
         <span class="result-item__taxonomy__key">Methodology</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
           
         </span>
       </div>
@@ -4229,15 +4374,43 @@ window.store = {
           
           <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
           
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
         </span>
       </div>
       <div class="result-item__taxonomy result-item__taxonomy--type">
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
           
         </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
       
     </div>
@@ -4245,8 +4418,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4290,9 +4462,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-data-and-public-policy-can-it-succeed-where-e-participation-has-failed.html" title="Big Data and Public Policy: Can It Succeed Where E-Participation Has Failed?">Big Data and Public Policy: Can It Succeed Where E-Participation Has Failed?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jonathan-bright.html">Jonathan Bright</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jonathan-bright">Jonathan Bright</a>
         
-        <a href="../authors/helen-margetts.html">Helen Margetts</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-margetts">Helen Margetts</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4340,8 +4512,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -4397,11 +4568,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-well-informed-city-a-decentralized-bottom-up-model-for-a-smart-city-service-using-information-and-self-organization.html" title="The well-informed city: A decentralized, bottom-up model for a smart city service using information and self-organization">The well-informed city: A decentralized, bottom-up model for a smart city service using information and self-organization</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eyal-feder-levy.html">Eyal Feder-Levy</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eyal-feder-levy">Eyal Feder-Levy</a>
         
-        <a href="../authors/efrat-blumenfeld-liebertal.html">Efrat Blumenfeld-Liebertal</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-efrat-blumenfeld-liebertal">Efrat Blumenfeld-Liebertal</a>
         
-        <a href="../authors/juval-portugali.html">Juval Portugali</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-juval-portugali">Juval Portugali</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4453,8 +4624,130 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+      f-the-govlab
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+      f-philanthropy-and-aid
+      
+
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-andrew-miller
+      
+      f-andrew-young
+      
+      f-beth-simone-noveck
+      
+
+      
+      m-collective-intelligence
+      
+      m-institutional-innovation
+      
+
+      f-search-paper-a54
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/innovations-in-open-grantmaking.html" title="Innovations in Open Grantmaking">Innovations in Open Grantmaking</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-andrew-miller">Andrew Miller</a>
+        
+        <a href="../by/author.html?filter=.f-andrew-young">Andrew Young</a>
+        
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
 
@@ -4496,9 +4789,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/governance-networks-in-the-public-sector.html" title="Governance Networks in the Public Sector">Governance Networks in the Public Sector</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/erik-hans-klijn.html">Erik Hans Klijn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-hans-klijn">Erik Hans Klijn</a>
         
-        <a href="../authors/joop-koppenjan.html">Joop Koppenjan</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-joop-koppenjan">Joop Koppenjan</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4544,8 +4837,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4583,7 +4878,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-innovation-imperative-in-the-public-sector-setting-an-agenda-for-action.html" title="The Innovation Imperative in the Public Sector: Setting an Agenda for Action">The Innovation Imperative in the Public Sector: Setting an Agenda for Action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/oecd.html">OECD</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-oecd">OECD</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4627,8 +4922,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4668,7 +4965,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/government-for-a-digital-economy.html" title="Government for a Digital Economy">Government for a Digital Economy</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/zoë-baird.html">Zoë Baird</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-zoë-baird">Zoë Baird</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4710,8 +5007,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4763,9 +5062,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
 </a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tina-saebi.html">Tina Saebi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tina-saebi">Tina Saebi</a>
         
-        <a href="../authors/nicolai-j-foss.html">Nicolai J. Foss</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nicolai-j-foss">Nicolai J. Foss</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4811,8 +5110,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4852,9 +5153,9 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/citizen-engagement-in-rulemaking--evidence-on-regulatory-practices-in-185-countries.html" title="Citizen engagement in rulemaking — evidence on regulatory practices in 185 countries">Citizen engagement in rulemaking — evidence on regulatory practices in 185 countries</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/melissa-marie-johns.html">Melissa Marie Johns</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-melissa-marie-johns">Melissa Marie Johns</a>
         
-        <a href="../authors/valentina-saltane.html">Valentina Saltane</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-valentina-saltane">Valentina Saltane</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -4898,8 +5199,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -4951,11 +5254,11 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/effect-of-government-data-openness-on-a-knowledge-based-economy.html" title="Effect of Government Data Openness on a Knowledge-based Economy">Effect of Government Data Openness on a Knowledge-based Economy</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jae-nam-lee.html">Jae-Nam Lee</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jae-nam-lee">Jae-Nam Lee</a>
         
-        <a href="../authors/juyeon-ham.html">Juyeon Ham</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-juyeon-ham">Juyeon Ham</a>
         
-        <a href="../authors/byounggu-choi.html">Byounggu Choi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-byounggu-choi">Byounggu Choi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5007,8 +5310,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5092,8 +5397,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5133,7 +5440,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/inside-government-the-role-of-policy-actors-in-shaping-e-democracy-in-the-uk.html" title="Inside Government: The role of policy actors in shaping e-democracy in the UK">Inside Government: The role of policy actors in shaping e-democracy in the UK</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mary-houston.html">Mary Houston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mary-houston">Mary Houston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5177,8 +5484,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -5220,11 +5526,11 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/data-driven-governments-creating-value-through-open-government-data.html" title="Data Driven Governments: Creating Value Through Open Government Data">Data Driven Governments: Creating Value Through Open Government Data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/judie-attard.html">Judie Attard</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-judie-attard">Judie Attard</a>
         
-        <a href="../authors/fabrizio-orlandi.html">Fabrizio Orlandi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fabrizio-orlandi">Fabrizio Orlandi</a>
         
-        <a href="../authors/sören-auer.html">Sören Auer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sören-auer">Sören Auer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5268,8 +5574,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5311,7 +5619,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/e-government-in-support-of-sustainable-development.html" title="E-Government in Support of Sustainable Development">E-Government in Support of Sustainable Development</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/united-nations.html">United Nations</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-united-nations">United Nations</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5357,8 +5665,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5400,7 +5710,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/europe-should-promote-data-for-social-good.html" title="Europe Should Promote Data for Social Good">Europe Should Promote Data for Social Good</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/daniel-castro.html">Daniel Castro</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-daniel-castro">Daniel Castro</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5444,8 +5754,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5497,11 +5809,11 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/the-potential-of-m-health-for-improved-data-use.html" title="The Potential of M-health for Improved Data Use">The Potential of M-health for Improved Data Use</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tamlyn-munslow.html">Tamlyn Munslow</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tamlyn-munslow">Tamlyn Munslow</a>
         
-        <a href="../authors/inka-barnett.html">Inka Barnett</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-inka-barnett">Inka Barnett</a>
         
-        <a href="../authors/deviana-dewi.html">Deviana Dewi</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-deviana-dewi">Deviana Dewi</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5553,8 +5865,10 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -5592,7 +5906,7 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
       <h3 class="result-item__name"><a href="../papers/we-all-need-help-big-data-and-the-mismeasure-of-public-administration.html" title="We All Need Help: “Big Data” and the Mismeasure of Public Administration">We All Need Help: “Big Data” and the Mismeasure of Public Administration</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stéphane-lavertu.html">Stéphane Lavertu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-stéphane-lavertu">Stéphane Lavertu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -5634,126 +5948,139 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
     </div>
 
     
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-      f-kenya
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-bitange-ndemo
-      
-      f-tim-weiss
-      
-
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a9
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/digital-kenya-an-entrepreneurial-revolution-in-the-making.html" title="Digital Kenya: An Entrepreneurial Revolution in the Making">Digital Kenya: An Entrepreneurial Revolution in the Making</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/bitange-ndemo.html">Bitange Ndemo</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/tim-weiss.html">Tim Weiss</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
   </div>
 </div>
 </div>
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -5768,16 +6095,24 @@ Business Models for Open Innovation: Matching Heterogenous Open Innovation Strat
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

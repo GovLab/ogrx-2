@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -62,24 +79,6 @@ window.store = {
     "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Co-Creation",
     "content": "This research aims to explore the potential of the network e ect of the Internet (activity i.e. the service becomes more powerful when more people use it), emphasizing the characteristics of digital tools that can e ectively empower citizens and civic innovators.  e challenge is to exploit the collaborative power of networks (networks of people, of knowledge, and connected things) to harness the collective intelligenceof communities in order to tackle big social challenges.  ere is great potential to exploit digital network e ects both in social innovation activity and in new services and approaches that generate social value. But much of this potential isn’t yet being realized. Indeed, the “network e ect” of the Internet may still be in its early technical phases and early implementation to maximize social good.",
     "url": "papers/digital-social-innovation-interim-report.html"
-  }
-  ,
-  
-  "paper-a54": {
-    "title": "Innovations in Open Grantmaking",
-    "author": "Andrew Miller,Andrew Young,Beth Noveck",
-    "category": "Collective Intelligence,Institutional Innovation",
-    "content": "Of its $4.1 trillion fiscal year 2016 budget, the U.S. federal government and its grantmaking agencies will give out billions of dollars in the form of grants to states, localities, and individuals, supporting a dizzying array of activities, from scientific research and economic development to arts, culture, and education. Grantmaking, in short, plays a vital role in helping our government, our researchers, and our communities confront 21st-century challenges. Despite grantmaking's importance, we have a decidedly 20th-century system in place for deciding how we make these billions of dollars of crucial public investments. To make the most of limited funding—and help build confidence in the ability of public investments to make a positive difference—it is essential for our government agencies to try more innovative approaches to designing, awarding, and measuring their grantmaking activities.",
-    "url": "papers/innovations-in-open-grantmaking.html"
-  }
-  ,
-  
-  "4amlq0omywewcwq8aksgqu": {
-    "title": "Smart Citizens, Smarter State",
-    "author": "Beth Simone Noveck",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Collective Intelligence,Distributed Governance,Open Data,Data Governance",
-    "content": "Government “of the people, by the people, for the people” expresses an ideal that resonates in all democracies. Yet poll after poll reveals deep distrust of institutions that seem to have left “the people” out of the governing equation. Government bureaucracies that are supposed to solve critical problems on their own are a troublesome outgrowth of the professionalization of public life in the industrial age. They are especially ill-suited to confronting today’s complex challenges. Offering a far-reaching program for innovation, Smart Citizens, Smarter State suggests that public decisionmaking could be more effective and legitimate if government were smarter—if our institutions knew how to use technology to leverage citizens’ expertise. Just as individuals use only part of their brainpower to solve most problems, governing institutions make far too little use of the skills and experience of those inside and outside of government with scientific credentials, practical skills, and ground-level street smarts. New tools—what Beth Simone Noveck calls technologies of expertise—are making it possible to match the supply of citizen expertise to the demand for it in government. Drawing on a wide range of academic disciplines and practical examples from her work as an adviser to governments on institutional innovation, Noveck explores how to create more open and collaborative institutions. In so doing, she puts forward a profound new vision for participatory democracy rooted not in the paltry act of occasional voting or the serendipity of crowdsourcing but in people’s knowledge and know-how.",
-    "url": "papers/smart-citizens-smarter-state.html"
   }
   ,
   
@@ -119,15 +118,6 @@ window.store = {
   }
   ,
   
-  "paper-467": {
-    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
-    "author": "Tanya M. Kelley,Erik Johnston",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
-    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
-    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
-  }
-  ,
-  
   "paper-168": {
     "title": "Handbook of Digital Politics",
     "author": "Stephen Coleman,Deen Freelon",
@@ -152,6 +142,24 @@ window.store = {
     "category": "Expert Networking,Collective Intelligence",
     "content": "This report examines patient organisations’ ever more critical role as knowledge brokers in an increasingly complex, data-rich healthcare system.Key findingsPatient organisations are important examples of collective intelligence practiced in challenging conditions with the aim of tackling complex problems.With more long term conditions and multimorbidities, more data, more available options in diagnostics, treatments, and care, knowledge is becoming one of the most critical assets of patients seeking optimal care.Patient organisations, working as collectives, are in an excellent position to support the work of translating, assembling and analysing the information involved in healthcare.Innovative patient organisations are already supporting the development of peer relationships, driving ambitious research programmes, sharing skills and unlocking the energy and expertise of patients. But they need support from better tools to extend this critical work.Unlike many popular examples of collective intelligence such as open source software, people coming to patient organisations are not motivated by pre-existing technical skills, but by urgent personal needs. This makes them a hugely productive site of research.The ‘thinking challenges’ patients face are enormous and complex, involving an ever-growing store of medical information, the practical and bureaucratic skills of living with a condition. Many go beyond adherence to understanding and partaking in research.The health care system is under strain from increasing demand and resource pressure. The NHS and other healthcare networks have committed to engage and empower patients and support them in developing expertise, enabling them to take a more active role in their own care. But knowledge tools and systems that engage only with individuals tend to exacerbate existing health care divides. Health knowledge work is hard, and requires time and resources.In this report we argue that patient organisations have a pivotal role to play in distributing the burden and benefit of knowledge work amongst participants. They need new and better tools to support their work developing connections between the many individuals and institutions of the healthcare system, driving ambitious research programmes, and facilitating peer support.- See more at: http://www.nesta.org.uk/publications/collective-intelligence-patient-organisations#sthash.7pdFEQLH.dpuf",
     "url": "papers/collective-intelligence-in-patient-organisations.html"
+  }
+  ,
+  
+  "paper-467": {
+    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
+    "author": "Tanya M. Kelley,Erik Johnston",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
+    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
+    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
+  }
+  ,
+  
+  "paper-39": {
+    "title": "Collective Intelligence in Law Reforms: When the Logic of the Crowds and the Logic of Policymaking Collide",
+    "author": "Tanja Aitamurto",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Crowdlaw",
+    "content": "What causes the challenges when crowdsourcing is applied in policymaking? The difficulties are a result of a severe conflict between the logics of the crowds and the logics of policymaking.  The paper “Collective Intelligence in Law Reforms: When the Logic of the Crowds and the Logic of Policymaking Collide”, published at the Hawaii International Conference on System Sciences (HICSS 2016) shows how the two virtues of collective intelligence – cognitive diversity and large crowds – turn into perils in crowdsourced policymaking. ",
+    "url": "papers/collective-intelligence-in-law-reforms-when-the-logic-of-the-crowds-and-the-logic-of-policymaking-collide.html"
   }
   ,
   
@@ -182,6 +190,24 @@ window.store = {
   }
   ,
   
+  "paper-a28": {
+    "title": "Essays on collective intelligence",
+    "author": "Yiftach Nagar,Thomas W. Malone,Patrick De Boer,Ana Cristina Bicharra Garcia",
+    "category": "Collective Intelligence",
+    "content": "This dissertation consists of three essays that advance our understanding of collective-intelligence: how it works, how it can be used, and how it can be augmented. I combine theoretical and empirical work, spanning qualitative inquiry, lab experiments, and design, exploring how novel ways of organizing, enabled by advancements in information technology, can help us work better, innovate, and solve complex problems. The first essay offers a collective sensemaking model to explain structurational processes in online communities. I draw upon Weick's model of sensemaking as committed-interpretation, which I ground in a qualitative inquiry into Wikipedia's policy discussion pages, in attempt to explain how structuration emerges as interpretations are negotiated, and then committed through conversation. I argue that the wiki environment provides conditions that help commitments form, strengthen and diffuse, and that this, in turn, helps explain trends of stabilization observed in previous research. In the second essay, we characterize a class of semi-structured prediction problems, where patterns are difficult to discern, data are difficult to quantify, and changes occur unexpectedly. Making correct predictions under these conditions can be extremely difficult, and is often associated with high stakes. We argue that in these settings, combining predictions from humans and models can outperform predictions made by groups of people, or computers. In laboratory experiments, we combined human and machine predictions, and find the combined predictions more accurate and more robust than predictions made by groups of only people or only machines. The third essay addresses a critical bottleneck in open-innovation systems: reviewing and selecting the best submissions, in settings where submissions are complex intellectual artifacts whose evaluation require expertise. To aid expert reviewers, we offer a computational approach we developed and tested using data from the Climate CoLab - a large citizen science platform. Our models approximate expert decisions about the submissions with high accuracy, and their use can save review labor, and accelerate the review process.",
+    "url": "papers/essays-on-collective-intelligence.html"
+  }
+  ,
+  
+  "paper-464": {
+    "title": "Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms",
+    "author": "Tanya M. Kelley,Erik Johnston",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Gamification,Labs and Experimentation,Prizes and Challenges,Behavioral Science and Nudges",
+    "content": "Advances in communication and computational technology have drastically increased opportunities for the public to participate in governing activities. Well-designed responsive participatory pathways can encourage individuals to take action on issues that are important to them while receiving value and enjoyment in contributing to the overall welfare of the state. However, many crowdsourcing programs do not achieve their intended targets or goals in part because people have little motivation to participate. Serious games are examined to address this challenge as they involve the integration of intrinsic human motivators with game mechanics or game dynamics into a website, service, community, campaign, or application to drive participation and engagement. Governments can supplement open governance platforms with characteristics of games to reshape and invigorate public participation if individuals have opportunities to participate through channels that are collectively and individually rewarding. Drawing on theory and an emerging body of examples this manuscript creates a framework for how governance organizations can integrate serious games into the design of open governance platforms to improve the understanding of how the platform affects the working relationship with the public when solving collective challenges. Contributions of serious games are how to foster dialog, educate, solicit feedback, and mobilize individuals. In identifying the characteristics that differentiate early projects that have succeeded with those that have struggled, we provide recommendations of how to cultivate voluntary and enthusiastic participation in open governance platforms– giving the public the opportunity and motivation to have an impact on the communities in which they live just as many already do in the virtual worlds in which they play.",
+    "url": "papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html"
+  }
+  ,
+  
   "paper-378": {
     "title": "MOOCs and Crowdsourcing: Massive Courses and Massive Resources",
     "author": "John Prpić,James Melton,Araz Taeihagh,Terry Anderson",
@@ -209,6 +235,15 @@ window.store = {
   }
   ,
   
+  "4amlq0omywewcwq8aksgqu": {
+    "title": "Smart Citizens, Smarter State",
+    "author": "Beth Simone Noveck",
+    "category": "Citizen Engagement and Crowdsourcing,Collective Intelligence,Distributed Governance,Open Data,Data Governance",
+    "content": "Government “of the people, by the people, for the people” expresses an ideal that resonates in all democracies. Yet poll after poll reveals deep distrust of institutions that seem to have left “the people” out of the governing equation. Government bureaucracies that are supposed to solve critical problems on their own are a troublesome outgrowth of the professionalization of public life in the industrial age. They are especially ill-suited to confronting today’s complex challenges. Offering a far-reaching program for innovation, Smart Citizens, Smarter State suggests that public decisionmaking could be more effective and legitimate if government were smarter—if our institutions knew how to use technology to leverage citizens’ expertise. Just as individuals use only part of their brainpower to solve most problems, governing institutions make far too little use of the skills and experience of those inside and outside of government with scientific credentials, practical skills, and ground-level street smarts. New tools—what Beth Simone Noveck calls technologies of expertise—are making it possible to match the supply of citizen expertise to the demand for it in government. Drawing on a wide range of academic disciplines and practical examples from her work as an adviser to governments on institutional innovation, Noveck explores how to create more open and collaborative institutions. In so doing, she puts forward a profound new vision for participatory democracy rooted not in the paltry act of occasional voting or the serendipity of crowdsourcing but in people’s knowledge and know-how.",
+    "url": "papers/smart-citizens-smarter-state.html"
+  }
+  ,
+  
   "paper-465": {
     "title": "GitHub use in public administration in Canada: Early experience with a new open collaboration tool",
     "author": "Justin Longo,Tanya M. Kelley",
@@ -218,12 +253,12 @@ window.store = {
   }
   ,
   
-  "63wspnldeeqkgq8ykgik8q": {
-    "title": "How Regular People Can Help Shape Science",
-    "author": "David Lang",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Citizen Science,Collective Intelligence",
-    "content": "",
-    "url": "papers/how-regular-people-can-help-shape-science.html"
+  "paper-a54": {
+    "title": "Innovations in Open Grantmaking",
+    "author": "Andrew Miller,Andrew Young,Beth Simone Noveck",
+    "category": "Collective Intelligence,Institutional Innovation",
+    "content": "Of its $4.1 trillion fiscal year 2016 budget, the U.S. federal government and its grantmaking agencies will give out billions of dollars in the form of grants to states, localities, and individuals, supporting a dizzying array of activities, from scientific research and economic development to arts, culture, and education. Grantmaking, in short, plays a vital role in helping our government, our researchers, and our communities confront 21st-century challenges. Despite grantmaking's importance, we have a decidedly 20th-century system in place for deciding how we make these billions of dollars of crucial public investments. To make the most of limited funding—and help build confidence in the ability of public investments to make a positive difference—it is essential for our government agencies to try more innovative approaches to designing, awarding, and measuring their grantmaking activities.",
+    "url": "papers/innovations-in-open-grantmaking.html"
   }
   ,
   
@@ -254,15 +289,6 @@ window.store = {
   }
   ,
   
-  "paper-464": {
-    "title": "Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms",
-    "author": "Tanya M. Kelley,Erik Johnston",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Gamification,Labs and Experimentation,Prizes and Challenges,Behavioral Science and Nudges",
-    "content": "Advances in communication and computational technology have drastically increased opportunities for the public to participate in governing activities. Well-designed responsive participatory pathways can encourage individuals to take action on issues that are important to them while receiving value and enjoyment in contributing to the overall welfare of the state. However, many crowdsourcing programs do not achieve their intended targets or goals in part because people have little motivation to participate. Serious games are examined to address this challenge as they involve the integration of intrinsic human motivators with game mechanics or game dynamics into a website, service, community, campaign, or application to drive participation and engagement. Governments can supplement open governance platforms with characteristics of games to reshape and invigorate public participation if individuals have opportunities to participate through channels that are collectively and individually rewarding. Drawing on theory and an emerging body of examples this manuscript creates a framework for how governance organizations can integrate serious games into the design of open governance platforms to improve the understanding of how the platform affects the working relationship with the public when solving collective challenges. Contributions of serious games are how to foster dialog, educate, solicit feedback, and mobilize individuals. In identifying the characteristics that differentiate early projects that have succeeded with those that have struggled, we provide recommendations of how to cultivate voluntary and enthusiastic participation in open governance platforms– giving the public the opportunity and motivation to have an impact on the communities in which they live just as many already do in the virtual worlds in which they play.",
-    "url": "papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html"
-  }
-  ,
-  
   "paper-370": {
     "title": "Global Governance and ICTs: Exploring Online Governance Networks around Gender and Media ",
     "author": "Claudia Padovani,Elena Pavan",
@@ -281,12 +307,12 @@ window.store = {
   }
   ,
   
-  "paper-a28": {
-    "title": "Essays on collective intelligence",
-    "author": "Yiftach Nagar,Thomas W. Malone,Patrick De Boer,Ana Cristina Bicharra Garcia",
-    "category": "Collective Intelligence",
-    "content": "This dissertation consists of three essays that advance our understanding of collective-intelligence: how it works, how it can be used, and how it can be augmented. I combine theoretical and empirical work, spanning qualitative inquiry, lab experiments, and design, exploring how novel ways of organizing, enabled by advancements in information technology, can help us work better, innovate, and solve complex problems. The first essay offers a collective sensemaking model to explain structurational processes in online communities. I draw upon Weick's model of sensemaking as committed-interpretation, which I ground in a qualitative inquiry into Wikipedia's policy discussion pages, in attempt to explain how structuration emerges as interpretations are negotiated, and then committed through conversation. I argue that the wiki environment provides conditions that help commitments form, strengthen and diffuse, and that this, in turn, helps explain trends of stabilization observed in previous research. In the second essay, we characterize a class of semi-structured prediction problems, where patterns are difficult to discern, data are difficult to quantify, and changes occur unexpectedly. Making correct predictions under these conditions can be extremely difficult, and is often associated with high stakes. We argue that in these settings, combining predictions from humans and models can outperform predictions made by groups of people, or computers. In laboratory experiments, we combined human and machine predictions, and find the combined predictions more accurate and more robust than predictions made by groups of only people or only machines. The third essay addresses a critical bottleneck in open-innovation systems: reviewing and selecting the best submissions, in settings where submissions are complex intellectual artifacts whose evaluation require expertise. To aid expert reviewers, we offer a computational approach we developed and tested using data from the Climate CoLab - a large citizen science platform. Our models approximate expert decisions about the submissions with high accuracy, and their use can save review labor, and accelerate the review process.",
-    "url": "papers/essays-on-collective-intelligence.html"
+  "63wspnldeeqkgq8ykgik8q": {
+    "title": "How Regular People Can Help Shape Science",
+    "author": "David Lang",
+    "category": "Citizen Engagement and Crowdsourcing,Citizen Science,Collective Intelligence",
+    "content": "",
+    "url": "papers/how-regular-people-can-help-shape-science.html"
   }
   ,
   
@@ -317,16 +343,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -356,11 +394,9 @@ window.store = {
             <select name="" id="filter-organization" class="filter js-change" >
               <option data-filter="*">Organization</option>
               
-              <option data-filter="f-govlab">GovLab</option>
+              <option data-filter="f-center-for-policy-informatics">Center for Policy Informatics</option>
               
               <option data-filter="f-the-govlab">The GovLab</option>
-              
-              <option data-filter="f-center-for-policy-informatics">Center for Policy Informatics</option>
               
             </select>
           </div>
@@ -375,15 +411,15 @@ window.store = {
               
               <option data-filter="f-participation">Participation</option>
               
-              <option data-filter="f-accessibility">Accessibility</option>
+              <option data-filter="f-legitimacy">Legitimacy</option>
               
               <option data-filter="f-access">Access</option>
-              
-              <option data-filter="f-legitimacy">Legitimacy</option>
               
               <option data-filter="f-transparency">Transparency</option>
               
               <option data-filter="f-outside-innovation">Outside Innovation</option>
+              
+              <option data-filter="f-accessibility">Accessibility</option>
               
             </select>
           </div>
@@ -402,13 +438,13 @@ window.store = {
               
               <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
               
-              <option data-filter="f-design-science">Design Science</option>
-              
               <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
               
-              <option data-filter="f-user-studies">User Studies</option>
-              
               <option data-filter="f-survey">Survey</option>
+              
+              <option data-filter="f-design-science">Design Science</option>
+              
+              <option data-filter="f-user-studies">User Studies</option>
               
               <option data-filter="f-comparative-analysis">Comparative Analysis</option>
               
@@ -421,9 +457,19 @@ window.store = {
             <select name="" id="filter-sector" class="filter js-change" >
               <option data-filter="****">Sector</option>
               
-              <option data-filter="f-philanthropy-and-aid">Philanthropy and Aid</option>
-              
               <option data-filter="f-politics">Politics</option>
+              
+              <option data-filter="f-health">Health</option>
+              
+              <option data-filter="f-science">Science</option>
+              
+              <option data-filter="f-education">Education</option>
+              
+              <option data-filter="f-internet-governance">Internet Governance</option>
+              
+              <option data-filter="f-social-movements">Social Movements</option>
+              
+              <option data-filter="f-law">Law</option>
               
               <option data-filter="f-policy">Policy</option>
               
@@ -431,15 +477,7 @@ window.store = {
               
               <option data-filter="f-open-data">Open Data</option>
               
-              <option data-filter="f-health">Health</option>
-              
-              <option data-filter="f-education">Education</option>
-              
-              <option data-filter="f-internet-governance">Internet Governance</option>
-              
-              <option data-filter="f-social-movements-and-activism">Social Movements and Activism</option>
-              
-              <option data-filter="f-science">Science</option>
+              <option data-filter="f-philanthropy-and-aid">Philanthropy and Aid</option>
               
               <option data-filter="f-geospatial-services">Geospatial Services</option>
               
@@ -455,6 +493,8 @@ window.store = {
               <option data-filter="*****">Region</option>
               
               <option data-filter="f-united-kingdom">United Kingdom</option>
+              
+              <option data-filter="f-finland">Finland</option>
               
               <option data-filter="f-mexico">Mexico</option>
               
@@ -529,8 +569,10 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -596,31 +638,31 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-social-innovation-interim-report.html" title="Digital Social Innovation: Interim Report">Digital Social Innovation: Interim Report</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/francesca-bria.html">Francesca Bria</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-francesca-bria">Francesca Bria</a>
         
-        <a href="../authors/esteve-almirall.html">Esteve Almirall</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-esteve-almirall">Esteve Almirall</a>
         
-        <a href="../authors/peter-baeck.html">Peter Baeck</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-baeck">Peter Baeck</a>
         
-        <a href="../authors/harry-halpin.html">Harry Halpin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-harry-halpin">Harry Halpin</a>
         
-        <a href="../authors/jon-kingsbury.html">Jon Kingsbury</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jon-kingsbury">Jon Kingsbury</a>
         
-        <a href="../authors/frank-kresin.html">Frank Kresin</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-frank-kresin">Frank Kresin</a>
         
-        <a href="../authors/sacha-van-tongeren.html">Sacha van Tongeren</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sacha-van-tongeren">Sacha van Tongeren</a>
         
-        <a href="../authors/julian-tait.html">Julian Tait</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-julian-tait">Julian Tait</a>
         
-        <a href="../authors/kelly-armstrong.html">Kelly Armstrong</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kelly-armstrong">Kelly Armstrong</a>
         
-        <a href="../authors/jo-casebourne.html">Jo Casebourne</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jo-casebourne">Jo Casebourne</a>
         
-        <a href="../authors/sophie-reynolds.html">Sophie Reynolds</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sophie-reynolds">Sophie Reynolds</a>
         
-        <a href="../authors/sacha-van-tongeren.html">Sacha van Tongeren</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sacha-van-tongeren">Sacha van Tongeren</a>
         
-        <a href="../authors/ning-xu.html">Ning Xu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ning-xu">Ning Xu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -668,224 +710,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-      f-govlab
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-philanthropy-and-aid
-      
-
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-andrew-miller
-      
-      f-andrew-young
-      
-      f-beth-noveck
-      
-
-      
-      m-collective-intelligence
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a54
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/innovations-in-open-grantmaking.html" title="Innovations in Open Grantmaking">Innovations in Open Grantmaking</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/andrew-miller.html">Andrew Miller</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/andrew-young.html">Andrew Young</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/beth-noveck.html">Beth Noveck</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-
-      f-open-
-
-      
-      f-the-govlab
-      
-
-      
-      f-effectiveness
-      
-      f-participation
-      
-      f-accessibility
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-politics
-      
-      f-policy
-      
-      f-governance
-      
-      f-open-data
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-beth-simone-noveck
-      
-
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-collective-intelligence
-      
-      m-distributed-governance
-      
-      m-open-data
-      
-      m-data-governance
-      
-
-      f-search-4amlq0omywewcwq8aksgqu
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/smart-citizens-smarter-state.html" title="Smart Citizens, Smarter State">Smart Citizens, Smarter State</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/beth-simone-noveck.html">Beth Simone Noveck</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-          <a href="../categories/data-governance.html" class="result-item__tag result-item__tag--data-governance">Data Governance</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/accessibility.html">Accessibility</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
 
@@ -925,9 +750,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/knowing-governance-the-epistemic-construction-of-political-order.html" title="Knowing Governance: The Epistemic Construction of Political Order">Knowing Governance: The Epistemic Construction of Political Order</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jan-peter-voß.html">Jan-Peter Voß</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jan-peter-voß">Jan-Peter Voß</a>
         
-        <a href="../authors/richard-freeman.html">Richard Freeman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-richard-freeman">Richard Freeman</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -971,8 +796,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1020,11 +844,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/transforming-politics.html" title="Transforming Politics">Transforming Politics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/s-roseneil.html">S. Roseneil</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-s-roseneil">S. Roseneil</a>
         
-        <a href="../authors/jeff-hearn.html">Jeff Hearn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jeff-hearn">Jeff Hearn</a>
         
-        <a href="../authors/paul-bagguley.html">Paul Bagguley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-bagguley">Paul Bagguley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1072,8 +896,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1119,13 +945,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/collective-intelligence-meets-medical-decision-making-the-collective-outperforms-the-radiologist.html" title="Collective Intelligence Meets Medical Decision-Making: The Collective Outperforms the Radiologist">Collective Intelligence Meets Medical Decision-Making: The Collective Outperforms the Radiologist</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/max-wolf.html">Max Wolf</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-max-wolf">Max Wolf</a>
         
-        <a href="../authors/jens-krause.html">Jens Krause</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jens-krause">Jens Krause</a>
         
-        <a href="../authors/patricia-a-carneyy-bogart.html">Patricia A. Carneyy Bogart</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-patricia-a-carneyy-bogart">Patricia A. Carneyy Bogart</a>
         
-        <a href="../authors/ralf-h-j-m-kurvers.html">Ralf H. J. M. Kurvers</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-ralf-h-j-m-kurvers">Ralf H. J. M. Kurvers</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1169,8 +995,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1210,9 +1038,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/regulatory-transformations-an-introduction.html" title="Regulatory Transformations: An Introduction">Regulatory Transformations: An Introduction</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bettina-lange.html">Bettina Lange</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bettina-lange">Bettina Lange</a>
         
-        <a href="../authors/fiona-haines.html">Fiona Haines</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-fiona-haines">Fiona Haines</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1256,8 +1084,301 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-conceptual-framework
+      
+      f-case-studies
+      
+
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-stephen-coleman
+      
+      f-deen-freelon
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-distributed-governance
+      
+
+      f-search-paper-168
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/handbook-of-digital-politics.html" title="Handbook of Digital Politics">Handbook of Digital Politics</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-stephen-coleman">Stephen Coleman</a>
+        
+        <a href="../by/author.html?filter=.f-deen-freelon">Deen Freelon</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-legitimacy
+      
+      f-participation
+      
+
+      
+      f-case-studies
+      
+      f-qualitative-analysis
+      
+      f-survey
+      
+
+      
+      f-science
+      
+
+      
+      f-united-kingdom
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-helen-pallett
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+
+      f-search-paper-84
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/public-participation-organizations-and-open-policy-a-constitutional-moment-for-british-democracy.html" title="Public Participation Organizations and Open Policy: A Constitutional Moment for British Democracy? ">Public Participation Organizations and Open Policy: A Constitutional Moment for British Democracy? </a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-helen-pallett">Helen Pallett</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-participation
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-health
+      
+
+      
+      f-united-kingdom
+      
+
+      
+
+      
+      f-research-report
+      
+
+      
+      f-lydia-nicholas
+      
+      f-stefana-broadbent
+      
+
+      
+      m-expert-networking
+      
+      m-collective-intelligence
+      
+
+      f-search-paper-79
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/collective-intelligence-in-patient-organisations.html" title="Collective Intelligence in Patient Organisations">Collective Intelligence in Patient Organisations</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-lydia-nicholas">Lydia Nicholas</a>
+        
+        <a href="../by/author.html?filter=.f-stefana-broadbent">Stefana Broadbent</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/expert-networking.html" class="result-item__tag result-item__tag--expert-networking">Expert Networking</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
       f-center-for-policy-informatics
@@ -1290,7 +1411,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -1307,8 +1428,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -1339,16 +1458,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html" title="Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries">Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1414,42 +1531,70 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
 
       
 
       
       f-effectiveness
       
-
+      f-participation
       
-      f-conceptual-framework
+
       
       f-case-studies
       
 
       
-      f-politics
+      f-law
+      
+
+      
+      f-finland
       
 
       
 
       
-
-      
-      f-book
+      f-conference-proceedings
       
 
       
-      f-stephen-coleman
-      
-      f-deen-freelon
+      f-tanja-aitamurto
       
 
       
@@ -1457,18 +1602,16 @@ window.store = {
       
       m-collective-intelligence
       
-      m-distributed-governance
+      m-crowdlaw
       
 
-      f-search-paper-168
+      f-search-paper-39
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/handbook-of-digital-politics.html" title="Handbook of Digital Politics">Handbook of Digital Politics</a></h3>
+      <h3 class="result-item__name"><a href="../papers/collective-intelligence-in-law-reforms-when-the-logic-of-the-crowds-and-the-logic-of-policymaking-collide.html" title="Collective Intelligence in Law Reforms: When the Logic of the Crowds and the Logic of Policymaking Collide">Collective Intelligence in Law Reforms: When the Logic of the Crowds and the Logic of Policymaking Collide</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/stephen-coleman.html">Stephen Coleman</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/deen-freelon.html">Deen Freelon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanja-aitamurto">Tanja Aitamurto</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1479,7 +1622,7 @@ window.store = {
           
           <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
           
-          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          <a href="../categories/crowdlaw.html" class="result-item__tag result-item__tag--crowdlaw">Crowdlaw</a>
           
         </span>
 
@@ -1487,8 +1630,6 @@ window.store = {
       <div class="result-item__taxonomy result-item__taxonomy--methodology">
         <span class="result-item__taxonomy__key">Methodology</span>
         <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
           
           <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
           
@@ -1500,103 +1641,6 @@ window.store = {
           
           <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
           
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-legitimacy
-      
-      f-participation
-      
-
-      
-      f-case-studies
-      
-      f-qualitative-analysis
-      
-      f-survey
-      
-
-      
-      f-science
-      
-
-      
-      f-united-kingdom
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-helen-pallett
-      
-
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-collective-intelligence
-      
-
-      f-search-paper-84
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/public-participation-organizations-and-open-policy-a-constitutional-moment-for-british-democracy.html" title="Public Participation Organizations and Open Policy: A Constitutional Moment for British Democracy? ">Public Participation Organizations and Open Policy: A Constitutional Moment for British Democracy? </a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/helen-pallett.html">Helen Pallett</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
           <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
           
         </span>
@@ -1605,7 +1649,7 @@ window.store = {
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
           
         </span>
       </div>
@@ -1615,103 +1659,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
-
       
-
+      m-open
+      f-open
       
-      f-participation
-      
-
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-
-      
-      f-united-kingdom
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-lydia-nicholas
-      
-      f-stefana-broadbent
-      
-
-      
-      m-expert-networking
-      
-      m-collective-intelligence
-      
-
-      f-search-paper-79
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/collective-intelligence-in-patient-organisations.html" title="Collective Intelligence in Patient Organisations">Collective Intelligence in Patient Organisations</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/lydia-nicholas.html">Lydia Nicholas</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/stefana-broadbent.html">Stefana Broadbent</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/expert-networking.html" class="result-item__tag result-item__tag--expert-networking">Expert Networking</a>
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
 
       
       f-center-for-policy-informatics
@@ -1773,9 +1724,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/use-of-github-as-a-platform-for-open-collaboration-on-text-documents.html" title="Use of GitHub as a Platform for Open Collaboration on Text Documents">Use of GitHub as a Platform for Open Collaboration on Text Documents</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/justin-longo.html">Justin Longo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-justin-longo">Justin Longo</a>
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1830,13 +1781,38 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1888,7 +1864,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/social-media-and-local-governments-theory-and-practice.html" title="Social Media and Local Governments: Theory and Practice">Social Media and Local Governments: Theory and Practice</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mehmet-zahid-sobaci.html">Mehmet Zahid Sobaci</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mehmet-zahid-sobaci">Mehmet Zahid Sobaci</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1936,8 +1912,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1983,11 +1961,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/when-talk-trumps-textthe-democratizing-effects-of-deliberation-during-constitution-making-1974-2011.html" title="When Talk Trumps Text:The Democratizing Effects of Deliberation during Constitution-Making, 1974-2011">When Talk Trumps Text:The Democratizing Effects of Deliberation during Constitution-Making, 1974-2011</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/todd-a-eisenstadt.html">Todd A. Eisenstadt</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-todd-a-eisenstadt">Todd A. Eisenstadt</a>
         
-        <a href="../authors/a-carl-levan.html">A. Carl LeVan</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-carl-levan">A. Carl LeVan</a>
         
-        <a href="../authors/tofigh-mabou.html">Tofigh Mabou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tofigh-mabou">Tofigh Mabou</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2033,8 +2011,277 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-ethnography
+      
+
+      
+      f-social-movements
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-yiftach-nagar
+      
+      f-thomas-w-malone
+      
+      f-patrick-de-boer
+      
+      f-ana-cristina-bicharra-garcia
+      
+
+      
+      m-collective-intelligence
+      
+
+      f-search-paper-a28
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/essays-on-collective-intelligence.html" title="Essays on collective intelligence">Essays on collective intelligence</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-yiftach-nagar">Yiftach Nagar</a>
+        
+        <a href="../by/author.html?filter=.f-thomas-w-malone">Thomas W. Malone</a>
+        
+        <a href="../by/author.html?filter=.f-patrick-de-boer">Patrick De Boer</a>
+        
+        <a href="../by/author.html?filter=.f-ana-cristina-bicharra-garcia">Ana Cristina Bicharra Garcia</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+      f-center-for-policy-informatics
+      
+
+      
+      f-access
+      
+      f-effectiveness
+      
+      f-legitimacy
+      
+      f-outside-innovation
+      
+      f-participation
+      
+
+      
+      f-design-science
+      
+      f-user-studies
+      
+
+      
+      f-education
+      
+      f-internet-governance
+      
+      f-social-movements
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-tanya-m-kelley
+      
+      f-erik-johnston
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-civic-technology
+      
+      m-co-creation
+      
+      m-collective-intelligence
+      
+      m-design-thinking
+      
+      m-distributed-governance
+      
+      m-gamification
+      
+      m-labs-and-experimentation
+      
+      m-prizes-and-challenges
+      
+      m-behavioral-science-and-nudges
+      
+
+      f-search-paper-464
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html" title="Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms">Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
+        
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
+          
+          <a href="../categories/co-creation.html" class="result-item__tag result-item__tag--co-creation">Co-Creation</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/design-thinking.html" class="result-item__tag result-item__tag--design-thinking">Design Thinking</a>
+          
+          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          
+          <a href="../categories/gamification.html" class="result-item__tag result-item__tag--gamification">Gamification</a>
+          
+          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
+          
+          <a href="../categories/prizes-and-challenges.html" class="result-item__tag result-item__tag--prizes-and-challenges">Prizes and Challenges</a>
+          
+          <a href="../categories/behavioral-science-and-nudges.html" class="result-item__tag result-item__tag--behavioral-science-and-nudges">Behavioral Science and Nudges</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
+          
+          <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/access.html">Access</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2086,13 +2333,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/moocs-and-crowdsourcing-massive-courses-and-massive-resources.html" title="MOOCs and Crowdsourcing: Massive Courses and Massive Resources">MOOCs and Crowdsourcing: Massive Courses and Massive Resources</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/john-prpić.html">John Prpić</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-prpić">John Prpić</a>
         
-        <a href="../authors/james-melton.html">James Melton</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-james-melton">James Melton</a>
         
-        <a href="../authors/araz-taeihagh.html">Araz Taeihagh</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-araz-taeihagh">Araz Taeihagh</a>
         
-        <a href="../authors/terry-anderson.html">Terry Anderson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-terry-anderson">Terry Anderson</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2142,8 +2389,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2183,7 +2432,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/navigating-the-health-data-ecosystem-the-six-cs-understanding-the-health-data-terrain-in-the-era-of-precision-medicine.html" title="Navigating the Health Data Ecosystem: The "Six C's": Understanding the Health Data Terrain in the Era of Precision Medicine">Navigating the Health Data Ecosystem: The "Six C's": Understanding the Health Data Terrain in the Era of Precision Medicine</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/o-reilly-media.html">O'Reilly Media</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-o-reilly-media">O'Reilly Media</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2227,8 +2476,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2268,7 +2516,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/mind-the-map-the-impact-of-culture-and-economic-affluence-on-crowd-mapping-behaviours.html" title="Mind the Map: The Impact of Culture and Economic Affluence on Crowd-Mapping Behaviours">Mind the Map: The Impact of Culture and Economic Affluence on Crowd-Mapping Behaviours</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/dr-licia-capra.html">Dr. Licia Capra</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-dr-licia-capra">Dr. Licia Capra</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2314,8 +2562,149 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+
+      
+      f-the-govlab
+      
+
+      
+      f-effectiveness
+      
+      f-participation
+      
+      f-accessibility
+      
+
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-politics
+      
+      f-policy
+      
+      f-governance
+      
+      f-open-data
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-beth-simone-noveck
+      
+
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-collective-intelligence
+      
+      m-distributed-governance
+      
+      m-open-data
+      
+      m-data-governance
+      
+
+      f-search-4amlq0omywewcwq8aksgqu
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/smart-citizens-smarter-state.html" title="Smart Citizens, Smarter State">Smart Citizens, Smarter State</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
+          
+          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
+          
+          <a href="../categories/data-governance.html" class="result-item__tag result-item__tag--data-governance">Data Governance</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/accessibility.html">Accessibility</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
       f-center-for-policy-informatics
@@ -2377,9 +2766,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/github-use-in-public-administration-in-canada-early-experience-with-a-new-open-collaboration-tool.html" title="GitHub use in public administration in Canada: Early experience with a new open collaboration tool">GitHub use in public administration in Canada: Early experience with a new open collaboration tool</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/justin-longo.html">Justin Longo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-justin-longo">Justin Longo</a>
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2432,20 +2821,48 @@ window.store = {
         </span>
       </div>
       
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
+      </div>
+      
     </div>
 
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
+      
+      f-the-govlab
       
 
       
       f-effectiveness
-      
-      f-participation
       
 
       
@@ -2453,9 +2870,7 @@ window.store = {
       
 
       
-      f-education
-      
-      f-science
+      f-philanthropy-and-aid
       
 
       
@@ -2463,43 +2878,43 @@ window.store = {
       
 
       
-      f-article-draft
+      f-research-report
       
 
       
-      f-david-lang
+      f-andrew-miller
+      
+      f-andrew-young
+      
+      f-beth-simone-noveck
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-citizen-science
       
       m-collective-intelligence
       
+      m-institutional-innovation
+      
 
-      f-search-63wspnldeeqkgq8ykgik8q
+      f-search-paper-a54
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/how-regular-people-can-help-shape-science.html" title="How Regular People Can Help Shape Science">How Regular People Can Help Shape Science</a></h3>
+      <h3 class="result-item__name"><a href="../papers/innovations-in-open-grantmaking.html" title="Innovations in Open Grantmaking">Innovations in Open Grantmaking</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-lang.html">David Lang</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-andrew-miller">Andrew Miller</a>
+        
+        <a href="../by/author.html?filter=.f-andrew-young">Andrew Young</a>
+        
+        <a href="../by/author.html?filter=.f-beth-simone-noveck">Beth Simone Noveck</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
           
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/citizen-science.html" class="result-item__tag result-item__tag--citizen-science">Citizen Science</a>
-          
           <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
+          
+          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
           
         </span>
 
@@ -2518,17 +2933,41 @@ window.store = {
           
           <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
           
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
         </span>
       </div>
       <div class="result-item__taxonomy result-item__taxonomy--type">
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../types/article-draft.html">Article Draft</a>
+          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
           
         </span>
+      </div>
+      
+      <div class="result-item__extras result-item__extras--the-govlab">
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo.png" alt="">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
       
     </div>
@@ -2536,8 +2975,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2577,7 +3015,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/secrecy-and-publicity-in-votes-and-debates.html" title="Secrecy and Publicity in Votes and Debates">Secrecy and Publicity in Votes and Debates</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/jon-elster.html">Jon Elster</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-jon-elster">Jon Elster</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2621,8 +3059,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -2674,9 +3114,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/data-democracy-increased-supply-of-geospatial-information-and-expanded-participatory-processes-in-the-production-of-data.html" title="Data democracy increased supply of geospatial information and expanded participatory processes in the production of data">Data democracy increased supply of geospatial information and expanded participatory processes in the production of data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/max-craglia.html">Max Craglia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-max-craglia">Max Craglia</a>
         
-        <a href="../authors/lea-shanley.html">Lea Shanley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lea-shanley">Lea Shanley</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2728,8 +3168,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2771,7 +3210,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/forging-trust-communities-how-technology-changes-politics.html" title="Forging Trust Communities: How Technology Changes Politics">Forging Trust Communities: How Technology Changes Politics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/irene-s-wu.html">Irene S. Wu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-irene-s-wu">Irene S. Wu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2817,159 +3256,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
-
       
-      f-center-for-policy-informatics
-      
-
-      
-      f-access
-      
-      f-effectiveness
-      
-      f-legitimacy
-      
-      f-outside-innovation
-      
-      f-participation
-      
-
-      
-      f-design-science
-      
-      f-user-studies
-      
-
-      
-      f-education
-      
-      f-internet-governance
-      
-      f-social-movements-and-activism
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-tanya-m-kelley
-      
-      f-erik-johnston
-      
-
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-civic-technology
-      
-      m-co-creation
-      
-      m-collective-intelligence
-      
-      m-design-thinking
-      
-      m-distributed-governance
-      
-      m-gamification
-      
-      m-labs-and-experimentation
-      
-      m-prizes-and-challenges
-      
-      m-behavioral-science-and-nudges
-      
-
-      f-search-paper-464
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/discovering-the-appropriate-role-of-serious-games-in-the-design-of-open-governance-platforms.html" title="Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms">Discovering the Appropriate Role of Serious Games in the Design of Open Governance Platforms</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
-          
-          <a href="../categories/co-creation.html" class="result-item__tag result-item__tag--co-creation">Co-Creation</a>
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/design-thinking.html" class="result-item__tag result-item__tag--design-thinking">Design Thinking</a>
-          
-          <a href="../categories/distributed-governance.html" class="result-item__tag result-item__tag--distributed-governance">Distributed Governance</a>
-          
-          <a href="../categories/gamification.html" class="result-item__tag result-item__tag--gamification">Gamification</a>
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-          <a href="../categories/prizes-and-challenges.html" class="result-item__tag result-item__tag--prizes-and-challenges">Prizes and Challenges</a>
-          
-          <a href="../categories/behavioral-science-and-nudges.html" class="result-item__tag result-item__tag--behavioral-science-and-nudges">Behavioral Science and Nudges</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-          <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-false
-      f-open-false
 
       
 
@@ -3011,9 +3298,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/global-governance-and-icts-exploring-online-governance-networks-around-gender-and-media.html" title="Global Governance and ICTs: Exploring Online Governance Networks around Gender and Media ">Global Governance and ICTs: Exploring Online Governance Networks around Gender and Media </a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/claudia-padovani.html">Claudia Padovani</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-claudia-padovani">Claudia Padovani</a>
         
-        <a href="../authors/elena-pavan.html">Elena Pavan</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-elena-pavan">Elena Pavan</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3057,8 +3344,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -3106,13 +3392,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/political-turbulence-how-social-media-shape-collective-action.html" title="Political Turbulence: How Social Media Shape Collective Action">Political Turbulence: How Social Media Shape Collective Action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/helen-margetts.html">Helen Margetts</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-margetts">Helen Margetts</a>
         
-        <a href="../authors/peter-john.html">Peter John</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-john">Peter John</a>
         
-        <a href="../authors/scott-hale.html">Scott Hale</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-scott-hale">Scott Hale</a>
         
-        <a href="../authors/taha-yasseri.html">Taha Yasseri</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-taha-yasseri">Taha Yasseri</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3158,21 +3444,27 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
       
       f-effectiveness
       
-
-      
-      f-ethnography
+      f-participation
       
 
       
-      f-social-movements-and-activism
+      f-conceptual-framework
+      
+
+      
+      f-education
+      
+      f-science
       
 
       
@@ -3180,41 +3472,37 @@ window.store = {
       
 
       
-      f-book
+      f-article-draft
       
 
       
-      f-yiftach-nagar
-      
-      f-thomas-w-malone
-      
-      f-patrick-de-boer
-      
-      f-ana-cristina-bicharra-garcia
+      f-david-lang
       
 
+      
+      m-citizen-engagement-and-crowdsourcing
+      
+      m-citizen-science
       
       m-collective-intelligence
       
 
-      f-search-paper-a28
+      f-search-63wspnldeeqkgq8ykgik8q
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/essays-on-collective-intelligence.html" title="Essays on collective intelligence">Essays on collective intelligence</a></h3>
+      <h3 class="result-item__name"><a href="../papers/how-regular-people-can-help-shape-science.html" title="How Regular People Can Help Shape Science">How Regular People Can Help Shape Science</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/yiftach-nagar.html">Yiftach Nagar</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/thomas-w-malone.html">Thomas W. Malone</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/patrick-de-boer.html">Patrick De Boer</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/ana-cristina-bicharra-garcia.html">Ana Cristina Bicharra Garcia</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-lang">David Lang</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
+          
+          <a href="../categories/citizen-science.html" class="result-item__tag result-item__tag--citizen-science">Citizen Science</a>
           
           <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
           
@@ -3225,7 +3513,7 @@ window.store = {
         <span class="result-item__taxonomy__key">Methodology</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
           
         </span>
       </div>
@@ -3235,13 +3523,15 @@ window.store = {
           
           <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
           
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
         </span>
       </div>
       <div class="result-item__taxonomy result-item__taxonomy--type">
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../types/book.html">Book</a>
+          <a class="result-item__tag" href="../types/article-draft.html">Article Draft</a>
           
         </span>
       </div>
@@ -3251,8 +3541,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3298,11 +3590,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/new-frontiers-in-social-innovation-research.html" title="New Frontiers in Social Innovation Research">New Frontiers in Social Innovation Research</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/alex-nicholls.html">Alex Nicholls</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alex-nicholls">Alex Nicholls</a>
         
-        <a href="../authors/julie-simon.html">Julie Simon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-julie-simon">Julie Simon</a>
         
-        <a href="../authors/madeleine-gabriel.html">Madeleine Gabriel</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-madeleine-gabriel">Madeleine Gabriel</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3350,8 +3642,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -3393,9 +3687,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/do-experts-or-collective-intelligence-write-with-more-bias-evidence-from-encyclopaedia-britannica-and-wikipedia.html" title="Do Experts or Collective Intelligence Write with More Bias? Evidence from Encyclopaedia Britannica and Wikipedia">Do Experts or Collective Intelligence Write with More Bias? Evidence from Encyclopaedia Britannica and Wikipedia</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/shane-greenstein.html">Shane Greenstein</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-shane-greenstein">Shane Greenstein</a>
         
-        <a href="../authors/feng-zhu.html">Feng Zhu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-feng-zhu">Feng Zhu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -3445,35 +3739,133 @@ window.store = {
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -3488,16 +3880,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>

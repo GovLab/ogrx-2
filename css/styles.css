@@ -150,6 +150,13 @@
     font-weight: 600;
     text-transform: none; }
 
+.paper-metadata {
+  padding: 10px 10%;
+  text-align: left; }
+  .paper-metadata__left-column {
+    text-align: right;
+    font-weight: 600; }
+
 .footer h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -275,7 +282,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 
 #main-logo {
   width: 25rem;
-  opacity: .2;
+  opacity: 1;
   display: block;
   margin: 0 auto; }
 
@@ -396,8 +403,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   text-align: center;
   position: relative;
   top: 30px;
-  background-color: #F0B300;
-  color: #8a6700; }
+  background-color: #003d56; }
+  #submit-button:hover {
+    background-color: #00364b; }
 
 .search.search--main-search {
   display: flex; }
@@ -449,6 +457,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   padding: 0; }
 
 .category-item {
+  height: 100%;
   padding: 25% 0;
   text-align: center;
   font-size: 22px;

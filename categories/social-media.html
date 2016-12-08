@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,10 +15,27 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/ogrx-2/vendor/jquery-2.1.4.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <header class="top-bar">
+<body>
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+<header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
     <a href="/ogrx-2/">Home</a>
@@ -30,7 +47,7 @@
     <a href="/ogrx-2/submit.html">Submit</a>
     <a href="#" class="m-disabled">Blog</a>
   </nav>
-  <a class="top-bar__logo" href="./">Open Governance Research Exchange | <em>Beta</em></a></a>
+  <a class="top-bar__logo" href="/ogrx-2/">Open Governance Research Exchange | <em>Beta</em></a></a>
   <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
   <nav class="main-menu js-target-menu main-menu--right">
     <a href="#">Github Repository</a>
@@ -38,7 +55,7 @@
   </nav> -->
 </header>
 
-    <div class="base-result-page">
+<div class="base-result-page">
   <div class="top-section top-section--">
     <div class="row align-center">
       <div class="large-10 column">
@@ -55,6 +72,15 @@
 
 <script>
 window.store = {
+  
+  "paper-188": {
+    "title": "Social Media for Government Services",
+    "author": "Surya Nepal,Cécile Paris,Dimitrios Georgakopoulos",
+    "category": "Data Analysis,Social Media",
+    "content": "This book highlights state-of-the-art research, development and implementation efforts concerning social media in government services, bringing together researchers and practitioners in a number of case studies. It elucidates a number of significant challenges associated with social media specific to government services, such as:  benefits and methods of assessing; usability and suitability of tools, technologies and platforms; governance policies and frameworks; opportunities for new services; integrating social media with organisational business processes; and specific case studies. The book also highlights the range of uses and applications of social media in the government domain, at both local and federal levels. As such, it offers a valuable resource for a broad readership including academic researchers, practitioners in the IT industry, developers, and government policy- and decision-makers.",
+    "url": "papers/social-media-for-government-services.html"
+  }
+  ,
   
   "paper-270": {
     "title": "Quantifying crowd size with mobile phone and Twitter data",
@@ -92,21 +118,21 @@ window.store = {
   }
   ,
   
-  "paper-467": {
-    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
-    "author": "Tanya M. Kelley,Erik Johnston",
-    "category": "Citizen Engagement and Collective Intelligence,Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
-    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
-    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
-  }
-  ,
-  
   "paper-a91": {
     "title": "The ‘who’ and ‘what’ of #diabetes on Twitter",
     "author": "Mariano Beguerisse-Díaz,Amy K. McLennan,Guillermo Garduño-Hernández,Mauricio Barahona,Stanley J. Ulijaszek",
     "category": "Social Media,Data Analysis,Citizen Engagement and Collective Intelligence",
     "content": "Social media are being increasingly used for health promotion, yet the landscape of users, messages and interactions in such fora is poorly understood. Studies of social media and diabetes have focused mostly on patients, or public agencies addressing it, but have not looked broadly at all the participants or the diversity of content they contribute. We study Twitter conversations about diabetes through the systematic analysis of 2.5 million tweets collected over 8 months and the interactions between their authors. We address three questions: (1) what themes arise in these tweets?; (2) who are the most influential users?; (3) which type of users contribute to which themes? We answer these questions using a mixed-methods approach, integrating techniques from anthropology, network science and information retrieval such as thematic coding, temporal network analysis, and community and topic detection. Diabetes-related tweets fall within broad thematic groups: health information, news, social interaction, and commercial. At the same time, humorous messages and references to popular culture appear consistently, more than any other type of tweet. We classify authors according to their temporal 'hub' and 'authority' scores. Whereas the hub landscape is diffuse and fluid over time, top authorities are highly persistent across time and comprise bloggers, advocacy groups and NGOs related to diabetes, as well as for-profit entities without specific diabetes expertise. Top authorities fall into seven interest communities as derived from their Twitter follower network. Our findings have implications for public health professionals and policy makers who seek to use social media as an engagement tool and to inform policy design.",
     "url": "papers/the-who-and-what-of-diabetes-on-twitter.html"
+  }
+  ,
+  
+  "paper-467": {
+    "title": "Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries",
+    "author": "Tanya M. Kelley,Erik Johnston",
+    "category": "Citizen Engagement and Crowdsourcing,Civic Technology,Co-Creation,Collective Intelligence,Design Thinking,Distributed Governance,Institutional Innovation,Open Data,Prizes and Challenges,Social Media,Behavioral Science and Nudges",
+    "content": "\"Organizations are highly interested in integrative open innovation practices in their structure, as open innovation can bring a flood of creative contributions and problem solving from the public. However, there are significant challenges in successful adoption. One reason for this difficulty stems from conflicting organizational structures; open innovation practices are primarily online, fluid, rapid, iterative, and often temporary, whereas the command and control hierarchical structure of organizations are intended to be stable and to complete sustained services. Another source of this difficulty for administrators who are designing and managing open innovation efforts for the first time. Most administrators in organizations rarely have extensive technological or socio-technical design background or training. Therefore, an entire new skill set is being developed on to use participatory platforms. Even if the design and tech know-how is part of an administrator's toolkit, they may not know how to effectively align the goals, language, and evaluation metrics for successful implementation of participatory efforts. More often than not, administrators are attempting to run an open innovation effort in addition to their other, primary duties. Finally, even though open innovation tools like participatory platforms have existed for several years, there is high fragmentation and silos of working knowledge, meaning that many administrators continue to experiment in de facto isolation.This paper presents a case study of a public university that has made a purposeful effort to integrate open innovation values and practices into its organizational mission and work. To best understand the process of open innovation adoption and use, we interviewed administrative intermediaries who are primarily responsible for the design, management, and evaluation of open innovation platforms and programs. We explored intermediary administrators' experiences with open innovation adoption using organizational learning theory. We specifically asked questions along dimensions of design and management values, teamwork, and organizational innovation culture. We used theoretical pattern matching to explore how the experiences of interview respondents aligned with theoretical propositions of organizational learning. Our analysis provides detailed insights one best practices, challenges, and lessons learned in the design and management of participatory platforms within the organization. This study has four key findings to contribute to the management of open innovation practices in organizations. First, the best team and approaches cannot thrive within the right culture. Second, developing culture takes time and consistent and persistent work from administrators throughout the organization. Third, three types of hybridity were identified by intermediaries in the execution of their innovation effort. These include unintentional, segmented, and fluid hybridity arrangements. Fourth, administrative intermediaries can identify what is likely to lead to successful or unsuccessful implementation of open innovation platforms. These findings contribute a foundation about open innovation management that can assist other administrators in organizations seeking to integrate innovation and entrepreneurship practices into their core mission and daily activities.",
+    "url": "papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html"
   }
   ,
   
@@ -243,15 +269,6 @@ window.store = {
     "content": "Countless people around the world harness the affordances of digital media to enable democratic participation, coordinate disaster relief, campaign for policy change, and strengthen local advocacy groups. The world watched as activists used social media to organize protests during the Arab Spring, Occupy Wall Street, and Hong Kong’s Umbrella Revolution. Many governmental and community organizations changed their mission and function as they adopted new digital tools and practices. This book examines the use of “civic media”—the technologies, designs, and practices that support connection through common purpose in civic, political, and social life. Scholars from a range of disciplines and practitioners from a variety of organizations offer analyses and case studies that explore the theory and practice of civic media.The contributors set out the conceptual context for the intersection of civic and media; examine the pressure to innovate and the sustainability of innovation; explore play as a template for resistance; look at civic education; discuss media-enabled activism in communities; and consider methods and funding for civic media research. The case studies that round out each section range from a “debt resistance” movement to government service delivery ratings to the “It Gets Better” campaign aimed at combating suicide among lesbian, gay, bisexual, transgender, and queer youth. The book offers a valuable interdisciplinary dialogue on the challenges and opportunities of the increasingly influential space of civic media.",
     "url": "papers/civic-media-technology-design-practice.html"
   }
-  ,
-  
-  "paper-188": {
-    "title": "Social Media for Government Services",
-    "author": "Surya Nepal,Cécile Paris,Dimitrios Georgakopoulos",
-    "category": "Data Analysis,Social Media",
-    "content": "This book highlights state-of-the-art research, development and implementation efforts concerning social media in government services, bringing together researchers and practitioners in a number of case studies. It elucidates a number of significant challenges associated with social media specific to government services, such as:  benefits and methods of assessing; usability and suitability of tools, technologies and platforms; governance policies and frameworks; opportunities for new services; integrating social media with organisational business processes; and specific case studies. The book also highlights the range of uses and applications of social media in the government domain, at both local and federal levels. As such, it offers a valuable resource for a broad readership including academic researchers, practitioners in the IT industry, developers, and government policy- and decision-makers.",
-    "url": "papers/social-media-for-government-services.html"
-  }
   
   
 };
@@ -263,16 +280,28 @@ window.store = {
 
   <div class="row align-center">
     <div class="large-6 column large-offset-1">
-      <div class="switch">
-        <label>
-          All Articles
-          <input type="checkbox" class="filter" data-filter="f-open">
-          <span class="lever"></span>
-          Open Access Articles Only
-        </label>
-      </div>
+      <span class="filter-ui-container js-multi">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </span>
     </div>
   </div>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $("#open-switch").click(function() {
+    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
+    //         $("#open-switch").attr('data-filter') == "f-open-false"
+    //       }
+    //   });
+    // });
+  </script>
 
   <div class="row align-center">
     <div class="large-10 column">
@@ -317,9 +346,9 @@ window.store = {
               
               <option data-filter="f-legitimacy">Legitimacy</option>
               
-              <option data-filter="f-access">Access</option>
-              
               <option data-filter="f-participation">Participation</option>
+              
+              <option data-filter="f-access">Access</option>
               
               <option data-filter="f-transparency">Transparency</option>
               
@@ -340,11 +369,11 @@ window.store = {
               
               <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
               
+              <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
+              
               <option data-filter="f-design-science">Design Science</option>
               
               <option data-filter="f-user-studies">User Studies</option>
-              
-              <option data-filter="f-quantitative-analysis">Quantitative Analysis</option>
               
               <option data-filter="f-survey">Survey</option>
               
@@ -369,13 +398,13 @@ window.store = {
               
               <option data-filter="f-education">Education</option>
               
-              <option data-filter="f-internet-governance">Internet Governance</option>
-              
-              <option data-filter="f-social-movements-and-activism">Social Movements and Activism</option>
-              
               <option data-filter="f-health">Health</option>
               
               <option data-filter="f-politics">Politics</option>
+              
+              <option data-filter="f-internet-governance">Internet Governance</option>
+              
+              <option data-filter="f-social-movements">Social Movements</option>
               
               <option data-filter="f-philanthropy-aid">Philanthropy & Aid</option>
               
@@ -417,9 +446,9 @@ window.store = {
             <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
               
-              <option data-filter="f-journal-article">Journal Article</option>
-              
               <option data-filter="f-book">Book</option>
+              
+              <option data-filter="f-journal-article">Journal Article</option>
               
               <option data-filter="f-conference-proceedings">Conference Proceedings</option>
               
@@ -463,8 +492,100 @@ window.store = {
       
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+
+      
+
+      
+      f-effectiveness
+      
+
+      
+      f-case-studies
+      
+
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-surya-nepal
+      
+      f-cécile-paris
+      
+      f-dimitrios-georgakopoulos
+      
+
+      
+      m-data-analysis
+      
+      m-social-media
+      
+
+      f-search-paper-188
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/social-media-for-government-services.html" title="Social Media for Government Services">Social Media for Government Services</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-surya-nepal">Surya Nepal</a>
+        
+        <a href="../by/author.html?filter=.f-cécile-paris">Cécile Paris</a>
+        
+        <a href="../by/author.html?filter=.f-dimitrios-georgakopoulos">Dimitrios Georgakopoulos</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+      m-open
+      f-open
+      
 
       
 
@@ -508,11 +629,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/quantifying-crowd-size-with-mobile-phone-and-twitter-data.html" title="Quantifying crowd size with mobile phone and Twitter data">Quantifying crowd size with mobile phone and Twitter data</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/federico-botta.html">Federico Botta</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-federico-botta">Federico Botta</a>
         
-        <a href="../authors/helen-susannah-moat.html">Helen Susannah Moat</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-susannah-moat">Helen Susannah Moat</a>
         
-        <a href="../authors/tobias-preis.html">Tobias Preis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tobias-preis">Tobias Preis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -556,8 +677,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -603,9 +723,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-transformation-of-human-rights-fact-finding.html" title="The Transformation of Human Rights Fact-Finding">The Transformation of Human Rights Fact-Finding</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/philip-alston.html">Philip Alston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-philip-alston">Philip Alston</a>
         
-        <a href="../authors/sarah-knuckey.html">Sarah Knuckey</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sarah-knuckey">Sarah Knuckey</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -653,8 +773,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -698,7 +817,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/big-crisis-data-social-media-in-disasters-and-time-critical-situations.html" title="Big Crisis Data: Social Media in Disasters and Time-Critical Situations">Big Crisis Data: Social Media in Disasters and Time-Critical Situations</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/carlos-castillo.html">Carlos Castillo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-carlos-castillo">Carlos Castillo</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -746,8 +865,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -795,7 +916,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/improving-servicesat-what-cost-examining-the-ethics-of-twitter-research.html" title="Improving Services—At What Cost? Examining the Ethics of Twitter Research">Improving Services—At What Cost? Examining the Ethics of Twitter Research</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sara-mannheimer.html">Sara Mannheimer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sara-mannheimer">Sara Mannheimer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -845,8 +966,132 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
+      m-open
+      f-open
+      
+
+      
+
+      
+      f-participation
+      
+      f-effectiveness
+      
+      f-access
+      
+
+      
+      f-quantitative-analysis
+      
+      f-case-studies
+      
+      f-conceptual-framework
+      
+
+      
+      f-health
+      
+      f-politics
+      
+
+      
+
+      
+
+      
+      f-journal-article
+      
+
+      
+      f-mariano-beguerisse-díaz
+      
+      f-amy-k-mclennan
+      
+      f-guillermo-garduño-hernández
+      
+      f-mauricio-barahona
+      
+      f-stanley-j-ulijaszek
+      
+
+      
+      m-social-media
+      
+      m-data-analysis
+      
+      m-citizen-engagement-and-collective-intelligence
+      
+
+      f-search-paper-a91
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?filter=.f-mariano-beguerisse-díaz">Mariano Beguerisse-Díaz</a>
+        
+        <a href="../by/author.html?filter=.f-amy-k-mclennan">Amy K. McLennan</a>
+        
+        <a href="../by/author.html?filter=.f-guillermo-garduño-hernández">Guillermo Garduño-Hernández</a>
+        
+        <a href="../by/author.html?filter=.f-mauricio-barahona">Mauricio Barahona</a>
+        
+        <a href="../by/author.html?filter=.f-stanley-j-ulijaszek">Stanley J. Ulijaszek</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
+          
+          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
+          
+          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
+          
+          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
+          
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/access.html">Access</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
+          
+        </span>
+      </div>
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
 
       
       f-center-for-policy-informatics
@@ -879,7 +1124,7 @@ window.store = {
       
       f-internet-governance
       
-      f-social-movements-and-activism
+      f-social-movements
       
 
       
@@ -896,8 +1141,6 @@ window.store = {
       f-erik-johnston
       
 
-      
-      m-citizen-engagement-and-collective-intelligence
       
       m-citizen-engagement-and-crowdsourcing
       
@@ -928,16 +1171,14 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/organizational-learning-for-open-innovation-adoption-insights-from-administrative-intermediaries.html" title="Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries">Organizational Learning for Open Innovation Adoption: Insights from administrative intermediaries</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/tanya-m-kelley.html">Tanya M. Kelley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-tanya-m-kelley">Tanya M. Kelley</a>
         
-        <a href="../authors/erik-johnston.html">Erik Johnston</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-erik-johnston">Erik Johnston</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
           
           <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
           
@@ -1003,127 +1244,30 @@ window.store = {
         </span>
       </div>
       
-    </div>
-
-    
-
-      <div class="result-item
-      m-open-true
-      f-open-true
-
-      
-
-      
-      f-participation
-      
-      f-effectiveness
-      
-      f-access
-      
-
-      
-      f-quantitative-analysis
-      
-      f-case-studies
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-      f-politics
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-mariano-beguerisse-díaz
-      
-      f-amy-k-mclennan
-      
-      f-guillermo-garduño-hernández
-      
-      f-mauricio-barahona
-      
-      f-stanley-j-ulijaszek
-      
-
-      
-      m-social-media
-      
-      m-data-analysis
-      
-      m-citizen-engagement-and-collective-intelligence
-      
-
-      f-search-paper-a91
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-who-and-what-of-diabetes-on-twitter.html" title="The ‘who’ and ‘what’ of #diabetes on Twitter">The ‘who’ and ‘what’ of #diabetes on Twitter</a></h3>
-      <p class="result-item__authors">
+      <div class="result-item__extras result-item__extras--center-for-policy-informatics">
         
-        <a href="../authors/mariano-beguerisse-díaz.html">Mariano Beguerisse-Díaz</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/amy-k-mclennan.html">Amy K. McLennan</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/guillermo-garduño-hernández.html">Guillermo Garduño-Hernández</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/mauricio-barahona.html">Mauricio Barahona</a> <!-- FIX THE COMMA SEPARATION -->
         
-        <a href="../authors/stanley-j-ulijaszek.html">Stanley J. Ulijaszek</a> <!-- FIX THE COMMA SEPARATION -->
         
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/citizen-engagement-and-collective-intelligence.html" class="result-item__tag result-item__tag--citizen-engagement-and-collective-intelligence">Citizen Engagement and Collective Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <img class="result-item__extras--organization-logo" src="../images/organizations/ASU-CPI-logo.png" alt="">
+        
+        
+        
+        
       </div>
       
     </div>
@@ -1131,8 +1275,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1180,11 +1323,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/soft-data-and-public-policy-can-social-media-offer-alternatives-to-official-statistics-in-urban-policymaking.html" title="Soft Data and Public Policy: Can Social Media Offer Alternatives to Official Statistics in Urban Policymaking?">Soft Data and Public Policy: Can Social Media Offer Alternatives to Official Statistics in Urban Policymaking?</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/marta-severo.html">Marta Severo</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-marta-severo">Marta Severo</a>
         
-        <a href="../authors/amel-feredj.html">Amel Feredj</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-amel-feredj">Amel Feredj</a>
         
-        <a href="../authors/alberto-romele.html">Alberto Romele</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alberto-romele">Alberto Romele</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1234,8 +1377,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1287,7 +1429,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/social-media-and-local-governments-theory-and-practice.html" title="Social Media and Local Governments: Theory and Practice">Social Media and Local Governments: Theory and Practice</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mehmet-zahid-sobaci.html">Mehmet Zahid Sobaci</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mehmet-zahid-sobaci">Mehmet Zahid Sobaci</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1335,8 +1477,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1384,13 +1528,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/a-new-model-to-explore-non-profit-social-media-use-for-advocacy-and-civic-engagement.html" title="A new model to explore non-profit social media use for advocacy and civic engagement">A new model to explore non-profit social media use for advocacy and civic engagement</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-chapman.html">David Chapman</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-chapman">David Chapman</a>
         
-        <a href="../authors/katrina-miller-stevens.html">Katrina Miller-Stevens</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-katrina-miller-stevens">Katrina Miller-Stevens</a>
         
-        <a href="../authors/john-c-morris.html">John C. Morris</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-c-morris">John C. Morris</a>
         
-        <a href="../authors/brendan-o-hallarn.html">Brendan O'Hallarn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-brendan-o-hallarn">Brendan O'Hallarn</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1434,8 +1578,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1477,7 +1620,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/citizenship-social-media-and-big-data-current-and-future-research-in-the-social-sciences.html" title="Citizenship, Social Media, and Big Data: Current and Future Research in the Social Sciences">Citizenship, Social Media, and Big Data: Current and Future Research in the Social Sciences</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/homero-gil-de-zúñiga.html">Homero Gil de Zúñiga</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-homero-gil-de-zúñiga">Homero Gil de Zúñiga</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1525,8 +1668,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1564,7 +1709,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/tweetment-effects-on-the-tweeted-experimentally-reducing-racist-harassment.html" title="Tweetment Effects on the Tweeted: Experimentally Reducing Racist Harassment">Tweetment Effects on the Tweeted: Experimentally Reducing Racist Harassment</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kevin-munger.html">Kevin Munger</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kevin-munger">Kevin Munger</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1608,8 +1753,10 @@ window.store = {
     
 
       <div class="result-item
-      m-open-true
-      f-open-true
+      
+      m-open
+      f-open
+      
 
       
 
@@ -1655,7 +1802,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/digital-inequality-and-second-order-disasters-social-media-in-the-typhoon-haiyan-recovery.html" title="Digital Inequality and Second-Order Disasters: Social Media in the Typhoon Haiyan Recovery">Digital Inequality and Second-Order Disasters: Social Media in the Typhoon Haiyan Recovery</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/mirca-madianou.html">Mirca Madianou</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mirca-madianou">Mirca Madianou</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1703,8 +1850,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1754,9 +1900,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-limits-of-crisis-data-analytical-and-ethical-challenges-of-using-social-and-mobile-data-to-understand-disasters.html" title="The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters">The limits of crisis data: analytical and ethical challenges of using social and mobile data to understand disasters</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/kate-crawford.html">Kate Crawford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-kate-crawford">Kate Crawford</a>
         
-        <a href="../authors/megan-finn.html">Megan Finn</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-megan-finn">Megan Finn</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1808,8 +1954,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1861,9 +2006,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/privacy-in-a-digital-networked-world-technologies-implications-and-solutions.html" title="Privacy in a Digital, Networked World: Technologies, Implications and Solutions">Privacy in a Digital, Networked World: Technologies, Implications and Solutions</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/sherali-zeadally.html">Sherali Zeadally</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-sherali-zeadally">Sherali Zeadally</a>
         
-        <a href="../authors/mohamad-badra.html">Mohamad Badra</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-mohamad-badra">Mohamad Badra</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -1915,8 +2060,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -1960,11 +2104,11 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/using-social-media-in-hotel-crisis-management-the-case-of-bed-bugs.html" title="Using Social Media in Hotel Crisis Management: The Case of Bed Bugs">Using Social Media in Hotel Crisis Management: The Case of Bed Bugs</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/bingjie-lui.html">Bingjie Lui</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-bingjie-lui">Bingjie Lui</a>
         
-        <a href="../authors/lori-pennington-gray.html">Lori Pennington-Gray</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-lori-pennington-gray">Lori Pennington-Gray</a>
         
-        <a href="../authors/louisa-klemmer.html">Louisa Klemmer</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-louisa-klemmer">Louisa Klemmer</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2008,8 +2152,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2055,13 +2198,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/the-routledge-companion-to-social-media-and-politics.html" title="The Routledge Companion to Social Media and Politics">The Routledge Companion to Social Media and Politics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/axel-burns.html">Axel Burns</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-axel-burns">Axel Burns</a>
         
-        <a href="../authors/gunn-enli.html">Gunn Enli</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-gunn-enli">Gunn Enli</a>
         
-        <a href="../authors/eli-skogerboers-olof-larsson.html">Eli Skogerboers Olof Larsson</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eli-skogerboers-olof-larsson">Eli Skogerboers Olof Larsson</a>
         
-        <a href="../authors/christian-christensen.html">Christian Christensen</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-christian-christensen">Christian Christensen</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2105,8 +2248,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2148,7 +2290,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/forging-trust-communities-how-technology-changes-politics.html" title="Forging Trust Communities: How Technology Changes Politics">Forging Trust Communities: How Technology Changes Politics</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/irene-s-wu.html">Irene S. Wu</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-irene-s-wu">Irene S. Wu</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2194,8 +2336,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2251,19 +2392,19 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/social-network-targeting-to-maximise-population-behaviour-change-a-cluster-randomised-controlled-trial.html" title="Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial">Social Network Targeting to Maximise Population Behaviour Change: A Cluster Randomised Controlled Trial</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/david-a-kim.html">David A. Kim</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-david-a-kim">David A. Kim</a>
         
-        <a href="../authors/alison-r-hwong.html">Alison R. Hwong</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-alison-r-hwong">Alison R. Hwong</a>
         
-        <a href="../authors/derek-stafford.html">Derek Stafford</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-derek-stafford">Derek Stafford</a>
         
-        <a href="../authors/d-alex-hughes.html">D. Alex Hughes</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-d-alex-hughes">D. Alex Hughes</a>
         
-        <a href="../authors/a-james-o-malley.html">A. James O'Malley</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-a-james-o-malley">A. James O'Malley</a>
         
-        <a href="../authors/james-h-fowler.html">James H. Fowler</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-james-h-fowler">James H. Fowler</a>
         
-        <a href="../authors/nicholas-a-christakis.html">Nicholas A. Christakis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-nicholas-a-christakis">Nicholas A. Christakis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2309,8 +2450,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2358,13 +2498,13 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/political-turbulence-how-social-media-shape-collective-action.html" title="Political Turbulence: How Social Media Shape Collective Action">Political Turbulence: How Social Media Shape Collective Action</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/helen-margetts.html">Helen Margetts</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-helen-margetts">Helen Margetts</a>
         
-        <a href="../authors/peter-john.html">Peter John</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-peter-john">Peter John</a>
         
-        <a href="../authors/scott-hale.html">Scott Hale</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-scott-hale">Scott Hale</a>
         
-        <a href="../authors/taha-yasseri.html">Taha Yasseri</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-taha-yasseri">Taha Yasseri</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2410,8 +2550,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2455,7 +2594,7 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/peacekeeping-4.0-harnessing-the-potential-of-big-data-social-media-and-cyber-technologies.html" title="Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies">Peacekeeping 4.0: Harnessing the Potential of Big Data, Social Media, and Cyber Technologies</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/john-karlsrud.html">John Karlsrud</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-john-karlsrud">John Karlsrud</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2503,8 +2642,7 @@ window.store = {
     
 
       <div class="result-item
-      m-open-false
-      f-open-false
+      
 
       
 
@@ -2552,9 +2690,9 @@ window.store = {
       <h3 class="result-item__name"><a href="../papers/civic-media-technology-design-practice.html" title="Civic Media: Technology, Design, Practice">Civic Media: Technology, Design, Practice</a></h3>
       <p class="result-item__authors">
         
-        <a href="../authors/eric-gordon.html">Eric Gordon</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-eric-gordon">Eric Gordon</a>
         
-        <a href="../authors/paul-mihailidis.html">Paul Mihailidis</a> <!-- FIX THE COMMA SEPARATION -->
+        <a href="../by/author.html?filter=.f-paul-mihailidis">Paul Mihailidis</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -2604,132 +2742,139 @@ window.store = {
     </div>
 
     
-
-      <div class="result-item
-      m-open-false
-      f-open-false
-
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-case-studies
-      
-
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-surya-nepal
-      
-      f-cécile-paris
-      
-      f-dimitrios-georgakopoulos
-      
-
-      
-      m-data-analysis
-      
-      m-social-media
-      
-
-      f-search-paper-188
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/social-media-for-government-services.html" title="Social Media for Government Services">Social Media for Government Services</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../authors/surya-nepal.html">Surya Nepal</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/cécile-paris.html">Cécile Paris</a> <!-- FIX THE COMMA SEPARATION -->
-        
-        <a href="../authors/dimitrios-georgakopoulos.html">Dimitrios Georgakopoulos</a> <!-- FIX THE COMMA SEPARATION -->
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-    </div>
-
-    
   </div>
 </div>
 </div>
 
 </div>
 
-    <footer class='footer'>
+<footer class='footer'>
   <div class="row">
     <div class="medium-3 column footer__content">
-        <h4>Sections</h4>
-        <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
-        <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
-        <a href="/ogrx-2/about.html" class="footer-links">About</a>
-        <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
-        <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
-        <a class="footer-links js-open-modal" href="#">Report Errors</a>
-        <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+      <h4>Sections</h4>
+      <a href="/ogrx-2/organizations.html" class="footer-links">Organizations</a>
+      <a href="/ogrx-2/categories.html" class="footer-links">Categories</a>
+      <a href="/ogrx-2/about.html" class="footer-links">About</a>
+      <a href="mailto:ogrx@thegovlab.org" class="footer-links">Submit Feedback</a>
+      <a class="footer-links contact" href="mailto:ogrx@thegovlab.org">Contact</a>
+      <!-- <a class="footer-links js-open-modal" href="#">Report Errors</a> -->
+      <a href="/ogrx-2/blog.html" class="footer-links">Blog</a>
+
+      <!-- <a class="footer-links js-open-error-modal" data-modal="#error-modal" href="#">Report Errors</a> -->
+
+
+
     </div>
 
     <div class="medium-3 column footer__content">
       <h4>More Information</h4>
       <p>OGRX is a platform for browsing and sharing research findings about new, innovative ways to solve public problems.</p>
+      <p>
+        <br>
+        <a class="button" href="submit.html" style="max-width: 180px">Submit Research</a>
+      </p>
     </div>
 
     <div class="medium-6 column footer__content">
       <h4>Founding Partners</h4>
-        <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
-        <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
-        <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <span class="footer__partner-logo footer__partner-logo--deet"><img src="/ogrx-2/images/organizations/deet-logo-white.png" alt="Digital Engagement logo"/></span>
+      <a class="footer__partner-logo footer__partner-logo--govlab" target="_blank" href="http://www.thegovlab.org/"><img src="/ogrx-2/images/govlab-logo-white.png" alt="NYU Gov Lab logo"/></a>
+      <a class="footer__partner-logo footer__partner-logo--mysociety" target="_blank" href="https://www.mysociety.org/"><img src="/ogrx-2/images/organizations/mysociety-logo-white.png" alt="mySociety logo"/></a>
+      <p>
+        <br>
+        <a class="button" href="organizations.html" style="max-width: 150px">All Partners</a>
+      </p>
     </div>
   </div>
 </footer>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<!-- modal window -->
+<style type="text/css">
+.modal.active {
+  display: block;
+}
+</style>
+<div class="modal js-target-modal" id="error-modal">
+  <header class="modal__header">
+    <i class="modal__close material-icons js-close-modal">close</i>
+    <h1 class="modal__title">Report an Error</h1>
+  </header>
+  <section class="modal__content">
+    <form class="form" id="error-form" action="https://docs.google.com/forms/d/1fszCIYbk831NQ0YOtoM1x30jiGHrsr8DsFAYTgQWUrU/formResponse" method="post" target="hidden_iframe"><ol role="list" class="ss-question-list" style="padding-left: 0;">
 
-    <div class="copyright">
+      <h2>Report an Error</h2>
+
+      <label for="entry_580987916"></label>
+      <input type="text" name="entry.580987916" value="" class="ss-q-short" id="entry_580987916" dir="auto" aria-label="Location of Error (which page?)  " aria-required="true" required="" title="url" placeholder="URL Location of Error">
+
+      <div class="checkbox">
+        <input type="checkbox" id="one-checkbox">
+        <label for="one-checkbox"">Use Current Page URL</label>
+      </div>
+
+      <label for="entry_1026309911"><div class="ss-q-title">
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true"></span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <textarea name="entry.1026309911" rows="8" cols="0" class="ss-q-long" id="entry_1026309911" dir="auto" aria-label="Describe the problem.  " aria-required="true" required="" placeholder="Describe the Problem"></textarea>
+
+        <label class="ss-q-item-label" for="entry_261394681"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.261394681" value="" class="ss-q-short" id="entry_261394681" dir="auto" aria-label="Name  " title="" placeholder="Name">
+
+        <label class="ss-q-item-label" for="entry_1017009444"><div class="ss-q-title">
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <input type="text" name="entry.1017009444" value="" class="ss-q-short" id="entry_1017009444" dir="auto" aria-label="Email  " title="" placeholder="Email">
+
+        <input type="hidden" name="draftResponse" value="[,,&quot;6446067227325704188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <input type="hidden" name="fbzx" value="6446067227325704188">
+      </ol>
+    </form>
+  </section>
+  <footer class="modal__controls">
+    <input type="submit" name="submit" value="Submit" id="ss-submit">
+    <!-- <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a> -->
+  </footer>
+</div>
+
+<script type="text/javascript">
+$(function() {
+  $('#overlay').click(function (e) {
+    e.preventDefault();
+    $('#error-modal').removeClass('active');
+    $('#overlay').removeClass('active');
+  });
+  $('.js-open-error-modal').click(function (e) {
+    e.preventDefault();
+    $($(this).attr('data-modal')).addClass('active');
+    $('#overlay').addClass('active');
+  });
+
+  var confirm = function () {
+    var $errorhtml = $('#error-modal-content').clone();
+    var $thanks = $('<h3>Thank you!</h3>');
+    $thanks.append(
+      $('<a class="button" id="error-close" href="#">Close</a>').click(function() {
+        $('#error-modal').removeClass('active');
+        $('#overlay').removeClass('active');
+        $('#error-modal-content').empty().append($errorhtml);
+      })
+      );
+    $('#error-modal-content').empty().append($thanks);
+  }
+
+  $(document).on('submit', '#error-form', confirm);
+});
+</script>
+
+
+<div class="copyright">
   <div class="row">
     <div class="large-8 columns align-middle">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -2744,16 +2889,24 @@ window.store = {
 </div>
 
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="/ogrx-2/vendor/slick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="/ogrx-2/js/scripts.js"></script>
-    <script src="/ogrx-2/js/underscore.js"></script>
-    <script src="/ogrx-2/js/lunr.js"></script>
-    <script src="/ogrx-2/js/lib/scripts.js"></script>
-    <script src="/ogrx-2/js/filters.js"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="/ogrx-2/vendor/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="/ogrx-2/js/scripts.js"></script>
+<script src="/ogrx-2/js/underscore.js"></script>
+<script src="/ogrx-2/js/lunr.js"></script>
+<script src="/ogrx-2/js/lib/scripts.js"></script>
+<script src="/ogrx-2/js/filters.js"></script>
 
-    <script src="/ogrx-2/js/uiscripts.js"></script>
-  </body>
+<script src="/ogrx-2/js/uiscripts.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
+</script>
+
+</body>
 </html>
