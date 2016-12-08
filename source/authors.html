@@ -8,10 +8,10 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
     <h1>Featured Authors</h1>
   </div>
 
-<!-- List of Authors - Features Authors -->
+  <!-- List of Authors - Features Authors -->
 
-<div class="page-section">
-  <div class="row expanded align-center featured-authors">
+  <div class="page-section">
+    <div class="row expanded align-center featured-authors">
       {% for a in site.data.custom_authors %}
       <div class="large-4 column featured-authors__list-item">
         <a href="{{a.title | datapage_url: 'authors'}}">
@@ -23,57 +23,56 @@ alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
         <p class="featured-authors__job">{{a.job}}</p>
       </div>
       {% endfor %}
+    </div>
   </div>
-</div>
-<!-- {# List of Authors - All Authors #} -->
-<div class="divider">
-  <h1>All Authors</h1>
-  <a name="authorlist"></a>
-</div>
+  <!-- {# List of Authors - All Authors #} -->
+  <div class="divider">
+    <h1>All Authors</h1>
+    <a name="authorlist"></a>
+  </div>
 
-<div class="page-section all-authors-list">
-  <div class="row expanded">
+  <div class="page-section all-authors-list">
+    <div class="row expanded">
 
-    <span class="b-fixed-button-trigger"></span>
-    <a class="b-fixed-button m-pos-adjust-top-1" href="#authorlist">
-      <i class="material-icons">arrow_upward</i>
-    </a>
+      <span class="b-fixed-button-trigger"></span>
+      <a class="b-fixed-button m-pos-adjust-top-1" href="#authorlist">
+        <i class="material-icons">arrow_upward</i>
+      </a>
 
-    <div class="large-12 columns all-authors-list__index">
-      {% for a in page.alphabet %}
+      <div class="large-12 columns all-authors-list__index">
+        {% for a in page.alphabet %}
         <!-- Lets do a filter here -->
         <a class="all-authors-list__index-item" href="#{{a}}">{{a}}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row expanded">
+
+      {% assign papers = site.data.contentful.spaces.papers.paper %}
+
+      {% assign authors = "" | split:"|" %}
+
+      {% for p in papers %}
+
+      {% for x in p.authors %}
+      {% unless authors contains x %}
+      {% assign authors = authors | push: x %}
+      {% endunless %}
       {% endfor %}
-    </div>
-  </div>
-  <div class="row expanded">
 
-    {% assign papers = site.data.contentful.spaces.papers.paper %}
-
-    {% assign authors = "" | split:"|" %}
-
-    {% for p in papers %}
-
-    {% for x in p.authors %}
-    {% unless authors contains x %}
-    {% assign authors = authors | push: x %}
-    {% endunless %}
-    {% endfor %}
-
-    {% endfor %}
+      {% endfor %}
 
 
-    {% assign sorted_authors = authors | sort_authors %}
+      {% assign sorted_authors = authors | sort_authors %}
 
-    {% for a in sorted_authors %}
-    <div class="alpha_anchor">
+      {% for a in sorted_authors %}
+      <div class="alpha_anchor">
         <a name="{{a | get_last_initial }}"></a>
-    </div>
-    <div class="column large-4 all-authors-list__list-item">
-      <a href="by/author.html?filter=.f-{{a | slugify }}">{{ a }}</a>
-    </div>
-    {% endfor %}
-
+      </div>
+      <div class="column small-12 large-4 all-authors-list__list-item">
+        <a href="by/author.html?filter=.f-{{a | slugify }}">{{ a }}</a>
+      </div>
+      {% endfor %}
 
   </div>
 </div>
