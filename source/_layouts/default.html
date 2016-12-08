@@ -18,31 +18,48 @@
 </head>
 
 <body>
-    {% include top-bar.html %}
+    <style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    #overlay.active {
+        display: block;
+    }
+</style>
+<div id="overlay" class="js-overlay"></div>
+{% include top-bar.html %}
 
-    {{content}}
+{{content}}
 
-    {% include footer.html %}
-    {% include copyright.html %}
+{% include footer.html %}
+{% include copyright.html %}
 
-    <div id="overlay" class="js-overlay"></div>
-    <!-- NEED TO FIX RELATIVE URLS -->
-    <script src="{{ 'vendor/slick.min.js' | relative_url }}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="{{ 'js/scripts.js' | relative_url }}"></script>
-    <script src="{{ 'js/underscore.js' | relative_url }}"></script>
-    <script src="{{ 'js/lunr.js' | relative_url }}"></script>
-    <script src="{{ 'js/lib/scripts.js' | relative_url }}"></script>
-    <script src="{{ 'js/filters.js' | relative_url }}"></script>
+<!-- NEED TO FIX RELATIVE URLS -->
+<script src="{{ 'vendor/slick.min.js' | relative_url }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="{{ 'js/scripts.js' | relative_url }}"></script>
+<script src="{{ 'js/underscore.js' | relative_url }}"></script>
+<script src="{{ 'js/lunr.js' | relative_url }}"></script>
+<script src="{{ 'js/lib/scripts.js' | relative_url }}"></script>
+<script src="{{ 'js/filters.js' | relative_url }}"></script>
 
-    <script src="{{ 'js/uiscripts.js' | relative_url }}"></script>
+<script src="{{ 'js/uiscripts.js' | relative_url }}"></script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
-    <script type="text/javascript">
-    $(function() {
-        $(document).foundation();
-    });
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(document).foundation();
+});
 </script>
+
 </body>
 </html>
