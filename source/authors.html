@@ -29,7 +29,7 @@ custom_authors:
         <a href="{{a.title | datapage_url: 'authors'}}">
           <div class="featured-authors__picture" style="background-image: url('images/authors/{{ a.image }}');"></div>
         </a>
-        <a href="{{a.title | datapage_url: 'authors'}}">
+        <a class="author-names" href="{{a.title | datapage_url: 'authors'}}">
           <p class="featured-authors__name">{{a.title}}</p>
         </a>
         <p class="featured-authors__job">{{a.job}}</p>
@@ -39,7 +39,7 @@ custom_authors:
   </div>
   <!-- {# List of Authors - All Authors #} -->
   <div class="divider">
-    <h1>All Authors</h1>
+    <h1 class="authors-margin">All Authors</h1>
     <a name="authorlist"></a>
   </div>
 
@@ -96,4 +96,3 @@ custom_authors:
 </div>
 
 <script src="./js/scrollbtn.js"></script>
-
