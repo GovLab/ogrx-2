@@ -3,7 +3,8 @@
 
   &__index {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   &__index-item {
@@ -21,6 +22,14 @@
     padding: 40px 0;
     text-align: center;
     font-size: 1.1rem;
+
+    a {
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid $accent-color;
+      }
+    }
+
 
     &:nth-of-type(even) { background-color: rgba(black, .03); }
   }
@@ -50,11 +59,23 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     margin: 0;
+    border-bottom: 2px solid #b2cad4;
+    &:hover {
+      border-bottom: 2px solid $accent-color;
+    }
+
   }
 
   &__job {
     font-size: 1rem;
     color: rgba(black, .6);
+  }
+
+  .author-names {
+    &:hover {
+      text-decoration: none;
+      border-bottom: 2px solid $accent-color!important;
+    }
   }
 }
 
@@ -183,4 +204,8 @@
 
 .e-question {
   padding: 20px 0;
+}
+
+.authors-margin {
+  margin-bottom: 0;
 }
