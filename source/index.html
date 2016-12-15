@@ -77,4 +77,82 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
     </div>
   </section>
 
+  <section id="categories" class="divider">
+    <h1>Recent Highlights</h1>
+  </section>
+
+  <section class="page-section" style="padding: 0; background-color: #523080">
+    <div class="slider slick">
+
+      {% assign maxitems = 3 %}
+      {% assign x = 0 %}
+      {% assign y = 0 %}
+      {% assign z = 0 %}
+
+      {% for inf in (0..99) %}
+
+      {% if x > maxitems-1 %}
+      {% break %}
+      {% endif %}
+
+      {% assign oddeven = forloop.index0 | modulo:2 %}
+      {% if oddeven == 0 %}
+      {% assign i =  site.data.contentful.spaces.blog.blogpost[y] %}
+      {% assign type = 'blog' %}
+      {% assign y = y | plus:1 %}
+      {% else %}
+      {% assign i = site.data.contentful.spaces.lists.list[z] %}
+      {% assign type = 'list' %}
+      {% assign z = z | plus:1 %}
+      {% endif %}
+
+      {% if i %}
+      <section id="slide-id" class="slide slide--purple">
+        <header>
+          <div class="row">
+            <div class="column large-12">
+              {% if type == 'blog' %}
+              <h4>From the Blog</h4>
+              {% elsif type == 'list' %}
+              <h4>From Selected Readings</h4>
+              {% endif %}
+            </div>
+          </div>
+        </header>
+        <div class="row slide__content">
+          <div class="column medium-6">
+            <h2 class="slide__project-name">{{i.title}}</h2>
+            <h3 class="slide__question"><span class="">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?filter=.f-{{a | slugify }}{% endunless %}"><span class="">{{a}}</span></a> {% endfor %}</h3>
+          </div>
+          <div class="column medium-6">
+            {% if type == 'blog' %}
+            {{i.post | truncate: 500 | markdownify}}
+            {% elsif type == 'list' %}
+            {{i.description | truncate: 500 | markdownify }}
+            {% endif %}
+          </div>
+        </div>
+        <div class="row slide__content">
+          <div class="column medium-6">
+            <div class="slide__action">
+            </div>
+          </div>
+          <div class="column medium-6">
+            <div class="slide__action">
+              {% if type == 'blog' %}
+              <a class="button button--naked" href="{{i.title | datapage_url: 'blog'}}">Find out more<i class="material-icons">arrow_forward</i></a>
+              {% elsif type == 'list' %}
+              <a class="button button--naked" href="{{i.title | datapage_url: 'list'}}">Find out more<i class="material-icons">arrow_forward</i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </section>
+      {% assign x = x | plus:1 %}
+      {% endif %}
+
+      {% endfor %}
+    </div>
+  </section>
+
 </main>
