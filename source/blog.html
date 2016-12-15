@@ -22,7 +22,8 @@ layout: default
 
     <div class="large-9 column">
       <section class="blog-content blog-list">
-        {% for i in site.data.contentful.spaces.blog.blogpost %}
+        {% assign blog = (site.data.contentful.spaces.blog.blogpost | sort: "sys.createdAt") %}
+        {% for i in blog %}
         <div class="row expanded align-center">
           <div class="large-10 column">
             <div class="blog-list__item post">

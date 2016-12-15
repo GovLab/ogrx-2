@@ -10,7 +10,8 @@ layout: default
   <div class="row expanded large-collapse"> <!-- NEED TO MAKE THIS full height -->
 
     <div class="large-10 large-offset-1 column">
-      {% for i in site.data.contentful.spaces.lists.list %}
+      {% assign list = (site.data.contentful.spaces.lists.list | sort: "sys.createdAt") %}
+      {% for i in list %}
       <div class="list__item">
         <div class="list__description">
           <a href="{{i.title | datapage_url: 'list'}}"><h2>{{i.title}}</h2></a>

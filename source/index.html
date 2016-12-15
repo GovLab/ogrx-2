@@ -98,6 +98,10 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
   <section class="page-section" style="padding: 0; background-color: #523080">
     <div class="slider slick">
 
+
+      {% assign blog = (site.data.contentful.spaces.blog.blogpost | sort: "sys.createdAt") %}
+      {% assign list = (site.data.contentful.spaces.lists.list | sort: "sys.createdAt") %}
+
       {% assign maxitems = 3 %}
       {% assign x = 0 %}
       {% assign y = 0 %}
@@ -111,11 +115,11 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
 
       {% assign oddeven = forloop.index0 | modulo:2 %}
       {% if oddeven == 0 %}
-      {% assign i =  site.data.contentful.spaces.blog.blogpost[y] %}
+      {% assign i =  blog[y] %}
       {% assign type = 'blog' %}
       {% assign y = y | plus:1 %}
       {% else %}
-      {% assign i = site.data.contentful.spaces.lists.list[z] %}
+      {% assign i = list[z] %}
       {% assign type = 'list' %}
       {% assign z = z | plus:1 %}
       {% endif %}
