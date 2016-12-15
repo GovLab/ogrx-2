@@ -16,7 +16,7 @@
   cover_image: false
   featured: true
 
-- title: Citizen Engagement and Collective Intelligence
+- title: Collective Intelligence
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
@@ -29,12 +29,6 @@
   featured: false
 
 - title: Co-Creation
-  description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
-  display_name: false
-  cover_image: false
-  featured: false
-
-- title: Collective Intelligence
   description: New network technologies and digital platforms give citizens more opportunity to make their voices heard by their governing institutions.
   display_name: false
   cover_image: false
