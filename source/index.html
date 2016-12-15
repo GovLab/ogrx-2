@@ -96,7 +96,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
   </section>
 
   <section class="page-section" style="padding: 0; background-color: #523080">
-    <div class="slider slick">
+    <div class="slider slick"  data-equalizer>
 
 
       {% assign blog = (site.data.contentful.spaces.blog.blogpost | sort: "sys.createdAt") %}
@@ -125,52 +125,58 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
       {% endif %}
 
       {% if i %}
-      <section id="slide-id" class="slide slide--purple">
-        <header>
-          <div class="row">
-            <div class="column large-12">
-              {% if type == 'blog' %}
-              <h4>From the Blog</h4>
-              {% elsif type == 'list' %}
-              <h4>From Selected Readings</h4>
-              {% endif %}
-            </div>
-          </div>
-        </header>
-        <div class="row slide__content">
-          <div class="column medium-6">
-            <h2 class="slide__project-name">{{i.title}}</h2>
-            <h3 class="slide__question"><span class="">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?filter=.f-{{a | slugify }}{% endunless %}"><span class="">{{a}}</span></a> {% endfor %}</h3>
-          </div>
-          <div class="column medium-6">
+      <section id="slide-id" class="slide
+      {% if type == 'blog' %}
+      slide--color1
+      {% elsif type == 'list' %}
+      slide--color2
+      {% endif %}
+      " data-equalizer-watch>
+      <header>
+        <div class="row">
+          <div class="column large-12">
             {% if type == 'blog' %}
-            {{i.post | truncate: 500 | markdownify}}
+            <h4>From the Blog</h4>
             {% elsif type == 'list' %}
-            {{i.description | truncate: 500 | markdownify }}
+            <h4>From Selected Readings</h4>
             {% endif %}
           </div>
         </div>
-        <div class="row slide__content">
-          <div class="column medium-6">
-            <div class="slide__action">
-            </div>
-          </div>
-          <div class="column medium-6">
-            <div class="slide__action">
-              {% if type == 'blog' %}
-              <a class="button button--naked" href="{{i.title | datapage_url: 'blog'}}">Find out more<i class="material-icons">arrow_forward</i></a>
-              {% elsif type == 'list' %}
-              <a class="button button--naked" href="{{i.title | datapage_url: 'list'}}">Find out more<i class="material-icons">arrow_forward</i></a>
-              {% endif %}
-            </div>
+      </header>
+      <div class="row slide__content">
+        <div class="column medium-6">
+          <h2 class="slide__project-name">{{i.title}}</h2>
+          <h3 class="slide__question"><span class="">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?filter=.f-{{a | slugify }}{% endunless %}"><span class="">{{a}}</span></a> {% endfor %}</h3>
+        </div>
+        <div class="column medium-6">
+          {% if type == 'blog' %}
+          {{i.post | truncate: 500 | markdownify}}
+          {% elsif type == 'list' %}
+          {{i.description | truncate: 500 | markdownify }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="row slide__content">
+        <div class="column medium-6">
+          <div class="slide__action">
           </div>
         </div>
-      </section>
-      {% assign x = x | plus:1 %}
-      {% endif %}
+        <div class="column medium-6">
+          <div class="slide__action">
+            {% if type == 'blog' %}
+            <a class="button button--naked" href="{{i.title | datapage_url: 'blog'}}">Find out more<i class="material-icons">arrow_forward</i></a>
+            {% elsif type == 'list' %}
+            <a class="button button--naked" href="{{i.title | datapage_url: 'list'}}">Find out more<i class="material-icons">arrow_forward</i></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+    {% assign x = x | plus:1 %}
+    {% endif %}
 
-      {% endfor %}
-    </div>
-  </section>
+    {% endfor %}
+  </div>
+</section>
 
 </main>

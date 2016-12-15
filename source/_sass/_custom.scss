@@ -216,3 +216,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.slide {
+
+  &.slide--color1 {
+    background-color: $main-color;
+  }
+
+  &.slide--color2 {
+    background-color: darken($main-color, 10);
+  }
+
+}
