@@ -18,7 +18,7 @@
 .top-bar {
   background-color: rgba(black, .1);
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .top-section--main-color {
@@ -35,8 +35,8 @@
   &--main-color { background-color: $main-color; }
   &--light {
     color: rgba(51, 51, 51, 0.5);
-    background-color: rgba(51, 51, 51, 0.1);  
+    background-color: rgba(51, 51, 51, 0.1);
   }
-  
+
 }
 
