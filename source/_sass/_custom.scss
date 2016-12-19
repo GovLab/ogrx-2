@@ -193,12 +193,10 @@
   font-weight: 100;
 }
 .main-menu {
-  z-index: 999;
   overflow-y: scroll;
 }
 
-#overlay {
-  left: 28%;
+.top-bar {
   z-index: 20;
 }
 
