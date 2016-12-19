@@ -146,7 +146,7 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
       <div class="row slide__content">
         <div class="column medium-6">
           <h2 class="slide__project-name">{{i.title}}</h2>
-          <h3 class="slide__question"><span class="">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?filter=.f-{{a | slugify }}{% endunless %}"><span class="">{{a}}</span></a> {% endfor %}</h3>
+          <h3 class="slide__question"><span class="">{{i.sys.createdAt | date: '%B %d, %Y'}}</span></a> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?query={{a | replace: ' ', '+'  }}{% endunless %}"><span class="">{{a}}</span></a> {% endfor %}</h3>
         </div>
         <div class="column medium-6">
           {% if type == 'blog' %}

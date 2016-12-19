@@ -85,7 +85,7 @@ custom_authors:
         {% if page.custom_authors contains a %}
         <a href="{{a | slugify | datapage_url: 'authors'}}">{{a}}</a>
         {% else %}
-        <a href="by/author.html?filter=.f-{{a | slugify }}">{{ a }}</a>
+        <a href="by/author.html?query={{a | replace: ' ', '+' }}">{{ a }}</a>
         {% endif %}
       </div>
       {% endfor %}

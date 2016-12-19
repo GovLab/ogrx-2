@@ -15,7 +15,7 @@ layout: default
       <div class="list__item">
         <div class="list__description">
           <a href="{{i.title | datapage_url: 'list'}}"><h2>{{i.title}}</h2></a>
-          <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?filter=.f-{{a | slugify }}{% endunless %}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
+          <p class="post__meta"><span class="post__date">{{i.sys.createdAt | date: '%B %d, %Y'}}</span> by {% for a in i.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: 'authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}by/author.html?query={{a | replace: ' ', '+'  }}{% endunless %}"><span class="post__author">{{a}}</span></a> {% endfor %}</p>
           <p>{{i.description | truncate: 500 | markdownify}}</p>
           <p><a class="button" href="{{i.title | datapage_url: 'list'}}">View List</a></p>
         </div>

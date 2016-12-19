@@ -58,7 +58,7 @@
       <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
       <p class="result-item__authors">
         {% for author in b.authors %}
-        <a href="../by/author.html?filter=.f-{{author | slugify}}">{{author}}</a>
+        <a href="../by/author.html?query={{author | replace: ' ', '+' }}">{{author}}</a>
         {% endfor %}
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
