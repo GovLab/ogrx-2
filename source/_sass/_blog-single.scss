@@ -19,13 +19,13 @@
     padding-bottom: 50px;
     font-size: 1.2rem;
     font-weight: 200;
-    
+
     a {
-      border-bottom: 1px solid $accent-color;
+      border-bottom: 1px solid #b2cad4;
       text-decoration: none;
       &:hover {
         text-decoration: none;
-        border-bottom: 1px solid $orange;
+        border-bottom: 1px solid $accent-color;
       }
     }
 
