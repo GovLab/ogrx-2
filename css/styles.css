@@ -193,11 +193,9 @@
   font-weight: 100; }
 
 .main-menu {
-  z-index: 999;
   overflow-y: scroll; }
 
-#overlay {
-  left: 28%;
+.top-bar {
   z-index: 20; }
 
 .e-question {
@@ -890,11 +888,11 @@ a {
   font-size: 1.2rem;
   font-weight: 200; }
   #blog-single .blog-single a {
-    border-bottom: 1px solid #F0B300;
+    border-bottom: 1px solid #b2cad4;
     text-decoration: none; }
     #blog-single .blog-single a:hover {
       text-decoration: none;
-      border-bottom: 1px solid #d65a43; }
+      border-bottom: 1px solid #F0B300; }
   #blog-single .blog-single .no-border {
     border: none; }
     #blog-single .blog-single .no-border:hover {
