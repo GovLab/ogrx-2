@@ -14,11 +14,72 @@ layout: default
         {{page.post | markdownify}}
       </div>
     </div>
-    <div class="row">
-      <div class="large-8 column large-offset-2">
-        <p><a class="button no-border" href="../blog.html">Back to Blog</a></p>
-      </div>
-    </div>
   </section>
+
+  {% if page.articlesList %}
+  <section class="divider">
+    <h1>Referenced Readings</h1>
+  </section>
+  {% endif %}
+
+  {% for b in page.articlesList %}
+  <div class="result-item" style="display: inline-block; margin-left: -4px;">
+    <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
+    <p class="result-item__authors">
+      {% for author in b.authors %}
+      <a href="{% assign found = false %}{% for c in site.data.custom_authors %}{% if author == c.title %}{{author | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{author | replace: ' ', '+' }}{% endunless %}">{{author}}</a>
+      {% endfor %}
+    </p>
+    <div class="result-item__taxonomy result-item__taxonomy--category">
+      <span class="result-item__taxonomy__key">Category</span>
+      <span class="result-item__taxonomy__value">
+        {% for category in b.innovationCategory %}
+        <a href="../{{category | datapage_url: 'categories'}}" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
+        {% endfor %}
+      </span>
+
+    </div>
+    <div class="result-item__taxonomy result-item__taxonomy--methodology">
+      <span class="result-item__taxonomy__key">Methodology</span>
+      <span class="result-item__taxonomy__value">
+        {% for methodology in b.methodology %}
+        <a class="result-item__tag" href="../{{methodology | datapage_url: 'methodologies'}}">{{ methodology }}</a>
+        {% endfor %}
+      </span>
+    </div>
+    <div class="result-item__taxonomy result-item__taxonomy--objective">
+      <span class="result-item__taxonomy__key">Objective</span>
+      <span class="result-item__taxonomy__value">
+        {% for objective in b.objectiveCategory %}
+        <a class="result-item__tag" href="../{{objective | datapage_url: 'objectives'}}">{{ objective }}</a>
+        {% endfor %}
+      </span>
+    </div>
+    <div class="result-item__taxonomy result-item__taxonomy--type">
+      <span class="result-item__taxonomy__key">Type</span>
+      <span class="result-item__taxonomy__value">
+        {% for type in b.publicationType %}
+        <a class="result-item__tag" href="../{{type | datapage_url: 'types'}}">{{ type }}</a>
+        {% endfor %}
+      </span>
+    </div>
+    {% for org in b.organization %}
+    <div class="result-item__extras result-item__extras--{{ org | slugify }}">
+      {% for o in site.data.organizations %}
+      {% if org == o.title %}
+      <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image_white}}" alt="">
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+
+  <div class="row">
+    <div class="large-8 column large-offset-2" style="text-align: center; padding: 40px 0;">
+      <p><a class="button no-border" href="../blog.html">Back to Blog</a></p>
+    </div>
+  </div>
 
 </div>

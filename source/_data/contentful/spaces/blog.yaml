@@ -1,6 +1,327 @@
 ---
 blogpost:
 - sys:
+    id: 6oldouyjNSuWOwcwKc8kiM
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
+    revision: 1
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: 'December Highlights: New Research and Findings Added to OGRX'
+  author:
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  type:
+  - Weekly update
+  keywords:
+  - Citizen Engagement and Crowdsourcing
+  - Collective Intelligence
+  - Data Analysis
+  - Labs and Experimentation
+  - Big Data
+  post: "The Open Governance Research Exchange (OGRX) strives to identify and curate
+    the most useful and important research on innovations in governance. Through the
+    research efforts of OGRX’s [editorial board and partners](http://ogrx.org/about.html),
+    and, especially, [submissions from OGRX users](http://ogrx.org/submit.html), the
+    platform is constantly growing and evolving, with new publications added each
+    week. \n\nThis month we have added over 100 new research entries to OGRX. Some
+    pieces reflective of the diversity of newly added research and findings come from
+    [DSpace@MIT](https://dspace.mit.edu/), [Inter-American Development Bank](http://www.iadb.org/en/inter-american-development-bank,2837.html),
+    [Royal Society’s Philosophical Transactions](http://rstl.royalsocietypublishing.org/),
+    [Open Policy Network](https://openpolicynetwork.org/), [UN Global Pulse](http://unglobalpulse.org/),
+    and the [UN Development Programme](http://www.undp.org/), focusing on [Citizen
+    Engagement and Crowdsourcing](http://ogrx.org/categories/citizen-engagement-and-crowdsourcing.html),
+    [Collective Intelligence](http://ogrx.org/categories/collective-intelligence.html),
+    [Data Analysis](http://ogrx.org/categories/data-analysis.html), [Labs and Experimentation](http://ogrx.org/categories/labs-and-experimentation.html)
+    and [Big Data](http://ogrx.org/categories/big-data.html).\n\nCome back often to
+    stay on top of what’s new in governance innovation!"
+  articlesList:
+  - sys:
+      id: paper_a28
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 00:55:10.672000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-08 01:48:11.609000000 Z
+      revision: 2
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Essays on collective intelligence
+    authors:
+    - Yiftach Nagar
+    - Thomas W. Malone
+    - Patrick De Boer
+    - Ana Cristina Bicharra Garcia
+    publicationDate: !ruby/object:DateTime 2016-12-06 20:16:00.000000000 -05:00
+    innovationCategory:
+    - Collective Intelligence
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Social Movements
+    methodology:
+    - Ethnography
+    publicationType:
+    - Book
+    gitHub: ''
+    abstract: 'This dissertation consists of three essays that advance our understanding
+      of collective-intelligence: how it works, how it can be used, and how it can
+      be augmented. I combine theoretical and empirical work, spanning qualitative
+      inquiry, lab experiments, and design, exploring how novel ways of organizing,
+      enabled by advancements in information technology, can help us work better,
+      innovate, and solve complex problems. The first essay offers a collective sensemaking
+      model to explain structurational processes in online communities. I draw upon
+      Weick''s model of sensemaking as committed-interpretation, which I ground in
+      a qualitative inquiry into Wikipedia''s policy discussion pages, in attempt
+      to explain how structuration emerges as interpretations are negotiated, and
+      then committed through conversation. I argue that the wiki environment provides
+      conditions that help commitments form, strengthen and diffuse, and that this,
+      in turn, helps explain trends of stabilization observed in previous research.
+      In the second essay, we characterize a class of semi-structured prediction problems,
+      where patterns are difficult to discern, data are difficult to quantify, and
+      changes occur unexpectedly. Making correct predictions under these conditions
+      can be extremely difficult, and is often associated with high stakes. We argue
+      that in these settings, combining predictions from humans and models can outperform
+      predictions made by groups of people, or computers. In laboratory experiments,
+      we combined human and machine predictions, and find the combined predictions
+      more accurate and more robust than predictions made by groups of only people
+      or only machines. The third essay addresses a critical bottleneck in open-innovation
+      systems: reviewing and selecting the best submissions, in settings where submissions
+      are complex intellectual artifacts whose evaluation require expertise. To aid
+      expert reviewers, we offer a computational approach we developed and tested
+      using data from the Climate CoLab - a large citizen science platform. Our models
+      approximate expert decisions about the submissions with high accuracy, and their
+      use can save review labor, and accelerate the review process.'
+    downloadLink: https://dspace.mit.edu/handle/1721.1/105080#files-area
+    relatedContentTitle: ''
+    relatedContentUrl: ''
+    relatedDataUrl: ''
+  - sys:
+      id: xtOHhlkmzuyI2aweAUu8U
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Global Open Policy Report 2016
+    authors:
+    - Kelsey Wiens
+    - Alek Tarkowski
+    publicationDate: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Co-Creation
+    - Open Data
+    objectiveCategory:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    methodology:
+    - Case Studies
+    - Qualitative Analysis
+    publicationType:
+    - Research Report
+    project:
+    - Creative Commons
+    abstract: |-
+      Open Policy is when governments, institutions, and non-profits enact policies and legislation that makes content, knowledge, or data they produce or fund available under a permissive license to allow reuse, revision, remix, retention, and redistribution. This promotes innovation, access, and equity in areas of education, data, software, heritage, cultural content, science, and academia.
+
+      For several years, Creative Commons has been tracking the spread of open policies around the world. And now, with the new Global Open Policy Report (PDF) by the Open Policy Network, we’re able to provide a systematic overview of open policy development.
+
+      screen-shot-2016-12-02-at-5-57-09-pmThe first-of-its-kind report gives an overview of open policies in 38 countries, across four sectors: education, science, data and heritage. The report includes an Open Policy Index and regional impact and local case studies from Africa, the Middle East, Asia, Australia, Latin America, Europe, and North America. The index measures open policy strength on two scales: policy strength and scope, and level of policy implementation. The index was developed by researchers from CommonSphere, a partner organization of CC Japan.
+    downloadLink: https://creativecommons.org/wp-content/uploads/2016/12/StateofOpenPolicyFullReport_FINAL-1-1-1-1.pdf
+  - sys:
+      id: 2K6DuH2GfCoMCaIk62GMyu
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Innovation for Better Management: The Contribution of Public
+      Innovation Labs'
+    region:
+    - Latin America
+    authors:
+    - Sebastián Acevedo
+    - Nicolás Dassen
+    publicationDate: !ruby/object:DateTime 2016-09-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Co-Creation
+    - Data Analysis
+    - Design Thinking
+    - Institutional Innovation
+    - Labs and Experimentation
+    objectiveCategory:
+    - Effectiveness
+    - Participation
+    - Transparency
+    sectorCategory:
+    - Development
+    - Economics
+    - Education
+    - Energy
+    - Crisis Response
+    - Environment
+    - Geospatial Services
+    - Health
+    - Public Safety
+    - Transportation
+    - Urban Planning
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    - Quantitative Analysis
+    publicationType:
+    - Research Report
+    abstract: 'The technological, economic, and social changes of recent years have
+      required governments to adapt to new challenges and growing demands from civil
+      society. In many countries, and at different levels of government, this has
+      led to the creation of innovation labs that aim to promote various modes of
+      innovation within the public sector. This paper analyzes the roles of innovation
+      labs in Latin America, examines the challenges, and compares them to best practices
+      and characteristics that current literature associates with higher levels of
+      innovation in the public sector and in other organizations. Based on a survey
+      of lab directors and the undertaking of two case studies, this paper describes
+      the scope of innovation labs in Latin America and discusses the challenges they
+      face to (i) overcome key management issues, (ii) promote the adoption and scale
+      up of innovation, and (iii) ensure its sustainability. There are four key factors
+      that determine the success of innovation in overcoming these challenges: two
+      of these are of a political and institutional nature, namely leadership support
+      and political networks, while the other two relate to lab methodologies, namely
+      the technical adaptation of innovation and the building of a shared meaning.
+      Additionally, two major differences have been identified between the innovation
+      labs discussed herein and those of other regions, as described in the existing
+      literature: a greater focus on issues of open government and less rigorous testing
+      of innovation, such as randomized experimentation and impact evaluation. Lastly,
+      this study provides the relevant conclusions and recommendations on how to establish
+      innovation labs as effective channels to manage innovation in government, along
+      with its inherent risks, and modernize public administration.'
+    downloadLink: https://publications.iadb.org/handle/11319/7874
+  - sys:
+      id: paper_a12
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: The ethical impact of data science
+    authors:
+    - Luciano Floridi
+    - Mariarosaria Taddeo
+    publicationDate: !ruby/object:DateTime 2016-12-28 12:00:00.000000000 -05:00
+    innovationCategory:
+    - Data Analysis
+    methodology:
+    - Conceptual Framework
+    - Case Studies
+    - Ethnography
+    publicationType:
+    - Journal Article
+    gitHub: ''
+    abstract: This theme issue has the founding ambition of landscaping data ethics
+      as a new branch of ethics that studies and evaluates moral problems related
+      to data (including generation, recording, curation, processing, dissemination,
+      sharing and use), algorithms (including artificial intelligence, artificial
+      agents, machine learning and robots) and corresponding practices (including
+      responsible innovation, programming, hacking and professional codes), in order
+      to formulate and support morally good solutions (e.g. right conducts or right
+      values). Data ethics builds on the foundation provided by computer and information
+      ethics but, at the same time, it refines the approach endorsed so far in this
+      research field, by shifting the level of abstraction of ethical enquiries, from
+      being information-centric to being data-centric. This shift brings into focus
+      the different moral dimensions of all kinds of data, even data that never translate
+      directly into information but can be used to support actions or generate behaviours,
+      for example. It highlights the need for ethical analyses to concentrate on the
+      content and nature of computational operations—the interactions among hardware,
+      software and data—rather than on the variety of digital technologies that enable
+      them. And it emphasizes the complexity of the ethical challenges posed by data
+      science. Because of such complexity, data ethics should be developed from the
+      start as a macroethics, that is, as an overall framework that avoids narrow,
+      ad hoc approaches and addresses the ethical impact and implications of data
+      science and its applications within a consistent, holistic and inclusive framework.
+      Only as a macroethics will data ethics provide solutions that can maximize the
+      value of data science for our societies, for all of us and for our environments.
+    downloadLink: http://rsta.royalsocietypublishing.org/content/374/2083
+    relatedContentTitle: ''
+    relatedContentUrl: ''
+    relatedDataUrl: ''
+  - sys:
+      id: gmi7hXwAMwUK8CQ4kaSow
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'A Guide to Data Innovation for Government: From Idea to Proof-of-Concept'
+    authors:
+    - UNDP
+    - UN Global Pulse
+    publicationDate: !ruby/object:DateTime 2016-12-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Big Data
+    - Data Analysis
+    - Data Collaboratives
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    - Legitimacy
+    sectorCategory:
+    - Human Rights
+    - Philanthropy & Aid
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Research Report
+    abstract: |
+      Recognizing the potential of data innovation, the United Nations Development Programme (UNDP) innovation teams at the Regional Centre for Europe and the Commonwealth of Independent States (ECIS) and the Regional Hub for Arab States embarked on a “big data for development exploration journey,” seeking to harness new sources of data to improve services or programme implementation on topics including disaster risk management, improved welfare, migration, and poverty reduction. As part of this exercise, six UNDP Offices from the two regions developed data innovation proof-of-concept projects with governmental and civil society partners, to address urgent local challenges and gain hands-on experience in data innovation.
+
+      UN Global Pulse provided technical guidance, coaching and tools to the project managers for the duration of the exercise, and the cohort shared advice and challenges at in-person workshops. This guide is based on these experiences, and on the methodology created by Global Pulse to design and implement data innovation projects across the UN system.
+
+      The joint exercise showed how alternative sources of data can and should play a role in pursuing development outcomes and, as such, hold great promise for ful lling the Sustainable Development Goals—both from the perspective of pursuing the outcomes as well as enabling (close to) real-time monitoring and evaluation.
+    downloadLink: http://unglobalpulse.org/sites/default/files/UNGP_BigDataGuide2016_%20Web.pdf
+- sys:
     id: 14iiA42nvoacEWKcEkuGks
     space:
       sys:

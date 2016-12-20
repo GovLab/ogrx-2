@@ -28,6 +28,12 @@ layout: default
 
   </section>
 
+  {% if page.articlesList %}
+  <section class="divider">
+    <h1>Selected Readings</h1>
+  </section>
+  {% endif %}
+
   {% for b in page.articlesList %}
   <div class="result-item" style="display: inline-block; margin-left: -4px;">
     <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
