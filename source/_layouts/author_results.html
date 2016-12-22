@@ -27,12 +27,7 @@ layout: default
     <div class="row align-center">
       <div class="large-9 column">
         <h1>Papers by <span id="search-title">Author</span></h1>
-       <!--  <div class="row">
-          <form class="search search--main-search search--negative" action="search.html">
-            <input id="search-box" name="query" class="" type="text" name="s" placeholder="Search by keyword">
-            <input class="search__trigger material-icons" type="submit" value="search">
-          </form>
-        </div> -->
+
         <div class="row">
           &nbsp;
         </div>
@@ -54,8 +49,11 @@ window.store = {
   {% for p in site.data.contentful.spaces.papers.paper %}
   "{{ p.sys.id | slugify }}": {
     "title": "{{ p.publicationName | xml_escape | strip_newlines }}",
-    "author": {{ p.authors | join: ' ' | strip_html | strip_newlines | jsonify }},
-    "category": {{ p.innovationCategory | join: ' ' | strip_html | strip_newlines | jsonify }},
+    "author": {{ p.authors | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "category": {{ p.innovationCategory | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "methodology": {{ p.methodology | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "objective": {{ p.objectiveCategory | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "type": {{ p.publicationType | join: ', ' | strip_html | strip_newlines | jsonify }},
     "content": {{ p.abstract | strip_html | strip_newlines | jsonify }},
     "url": "{{ p.publicationName | datapage_url: 'papers' }}"
   }

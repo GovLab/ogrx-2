@@ -30,24 +30,16 @@ layout: default
     </div>
   </div>
 
-<!-- {% for p in site.data.contentful.spaces.papers.paper %}
-"{{ p.sys.id | slugify }}": {
-"title": "{{ p.publicationName | xml_escape }}",
-"author": "{{ p.author[0] | xml_escape }}",
-"category": "{{ p.innovationCategory[0] | xml_escape }}",
-"content": {{ p.abstract | strip_html | strip_newlines | jsonify }},
-"url": "{{ p.downloadLink | xml_escape }}"
-}
-{% unless forloop.last %},{% endunless %}
-{% endfor %} -->
-
 <script>
 window.store = {
   {% for p in site.data.contentful.spaces.papers.paper %}
   "{{ p.sys.id | slugify }}": {
     "title": "{{ p.publicationName | xml_escape | strip_newlines }}",
-    "author": {{ p.authors | join: ',' | strip_html | strip_newlines | jsonify }},
-    "category": {{ p.innovationCategory | join: ',' | strip_html | strip_newlines | jsonify }},
+    "author": {{ p.authors | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "category": {{ p.innovationCategory | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "methodology": {{ p.methodology | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "objective": {{ p.objectiveCategory | join: ', ' | strip_html | strip_newlines | jsonify }},
+    "type": {{ p.publicationType | join: ', ' | strip_html | strip_newlines | jsonify }},
     "content": {{ p.abstract | strip_html | strip_newlines | jsonify }},
     "url": "{{ p.publicationName | datapage_url: 'papers' }}"
   }
@@ -57,113 +49,3 @@ window.store = {
 </script>
 <script src="js/lunr.min.js"></script>
 <script src="js/lunr-search.js"></script>
-
-<!--
-<style>
-.b-search-results .b-lunr-results > a > div {
-  display: inline-block;
-}
-.b-search-results .b-lunr-results > a > div *:hover {
-  text-decoration: none;
-}
-.b-search-results .b-lunr-results > a > div .e-tag:hover {
-  opacity: 0.7;
-  color: rgba(10, 10, 10, 1);
-  background-color: rgba(51, 51, 51, 0.1);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-data-analysis:hover {
-  color: #f0a425;
-  background-color: rgba(243, 180, 75, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-open-data:hover {
-  color: #008474;
-  background-color: rgba(0, 173, 152, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-behavioral-science-and-nudges:hover {
-  color: #d73e4d;
-  background-color: rgba(222, 96, 108, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-civic-technology:hover {
-  color: #9465ab;
-  background-color: rgba(166, 127, 185, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-citizen-engagement:hover {
-  color: #3f98cb;
-  background-color: rgba(95, 169, 212, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-expert-networking:hover {
-  color: #5c6780;
-  background-color: rgba(110, 123, 151, 0.2);
-}
-.b-search-results .b-lunr-results > a > div .e-tag.m-labs-and-experimentation:hover {
-  color: #d1b229;
-  background-color: rgba(219, 192, 72, 0.2);
-}
-</style>
-
-<div class="b-search-page">
-  <div class="b-top-section m-main-color">
-    <div class="row">
-      <div class="small-10 large-8 small-centered columns">
-        <div class="row">
-          <form class="b-search m-main-search m-negative lunr-form" action="" id="lunr-search-form">
-            <input id="lunr-search" class="" type="text">
-            <input class="e-search-trigger material-icons" type="button" value="search">
-          </form>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="b-divider">
-    <div class="row">
-      <h2>Results</h2>
-    </div>
-  </div>
-
-  <div class="b-page-section b-search-results">
-    <div class="b-lunr-results"></div>
-  </div>
-
-
-</div>
-
-<script src="{{ 'js/search.js' | relative_url }}"></script> -->
-
-<!-- <form action="/search" method="get">
-  <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-</form>
-<script src="js/search.min.js" type="text/javascript" charset="utf-8"></script>
-
-<section id="search-results" style="display: none;"> </section>
-
-{% raw %}
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h3>
-      {{#is_post}}
-      <ul>
-        {{#tags}}<li>{{.}} </li>{{/tags}}
-      </ul>
-      {{/is_post}}
-    </article>
-  {{/entries}}
-</script>
-{% endraw %}
-
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      indexUrl  : '/js/index.json',           // url for the .json file containing search index data
-      results   : '#search-results',          // selector for containing search results element
-      template  : '#search-results-template', // selector for Mustache.js template
-      titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
-      emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
-    });
-  });
-</script> -->
