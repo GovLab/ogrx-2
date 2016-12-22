@@ -1,4 +1,15 @@
 (function() {
+
+  function slugify(text)
+  {
+    return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+    .replace(/^-+/, '')             // Trim - from start of text
+    .replace(/-+$/, '');            // Trim - from end of text
+  }
+
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
@@ -16,30 +27,30 @@
         s += '<div class="result-item" style="display: inline-block; margin-left: -4px; overflow: hidden;">';
         s += '<a href="' + item.url + '"><h3 class="result-item__name" >' + item.title + '</h3></a><p class="result-item__authors">';
         for (var j in authors) {
-          s += '<a href="">' + authors[j] + '</a> ';
+          s += '<a href="../by/author.html?query=' + authors[j].replace(' ', '+') + '">' + authors[j] + '</a> ';
         }
 
         s += '</p><div class="result-item__taxonomy result-item__taxonomy--category"><span class="result-item__taxonomy__key">Category</span>';
         for (var j in categories) {
-          s += '<span class="result-item__taxonomy__value"><a href="" class="result-item__tag">' + categories[j] + '</a></span>';
+          s += '<span class="result-item__taxonomy__value"><a href="../categories/' + slugify(categories[j]) + '" class="result-item__tag">' + categories[j] + '</a></span>';
         }
         s += '</div>';
 
         s += '<div class="result-item__taxonomy result-item__taxonomy--methodology"><span class="result-item__taxonomy__key">Methodology</span>';
         for (var j in methodologies) {
-          s += '<span class="result-item__taxonomy__value"><a href="" class="result-item__tag">' + methodologies[j] + '</a></span>';
+          s += '<span class="result-item__taxonomy__value"><a href="../methodologies/' + slugify(methodologies[j]) + '" class="result-item__tag">' + methodologies[j] + '</a></span>';
         }
         s += '</div>';
 
         s += '<div class="result-item__taxonomy result-item__taxonomy--objective"><span class="result-item__taxonomy__key">Objective</span>';
         for (var j in objectives) {
-          s += '<span class="result-item__taxonomy__value"><a href="" class="result-item__tag">' + objectives[j] + '</a></span>';
+          s += '<span class="result-item__taxonomy__value"><a href="../objectives/' + slugify(objectives[j]) + '" class="result-item__tag">' + objectives[j] + '</a></span>';
         }
         s += '</div>';
 
         s += '<div class="result-item__taxonomy result-item__taxonomy--type"><span class="result-item__taxonomy__key">Type</span>';
         for (var j in types) {
-          s += '<span class="result-item__taxonomy__value"><a href="" class="result-item__tag">' + types[j] + '</a></span>';
+          s += '<span class="result-item__taxonomy__value"><a href="../types/' + slugify(types[j]) + '" class="result-item__tag">' + types[j] + '</a></span>';
         }
         s += '</div>';
 
