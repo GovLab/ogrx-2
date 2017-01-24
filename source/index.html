@@ -99,8 +99,8 @@ subtitle: Your hub for quantitative and qualitative research on innovations in g
     <div class="slider slick"  data-equalizer>
 
 
-      {% assign blog = (site.data.contentful.spaces.blog.blogpost | sort: "sys.createdAt") %}
-      {% assign list = (site.data.contentful.spaces.lists.list | sort: "sys.createdAt") %}
+      {% assign blog = site.data.contentful.spaces.blog.blogpost | date_sort | reverse %}
+      {% assign list = site.data.contentful.spaces.lists.list | date_sort | reverse %}
 
       {% assign maxitems = 3 %}
       {% assign x = 0 %}

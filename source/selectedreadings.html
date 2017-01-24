@@ -10,7 +10,7 @@ layout: default
   <div class="row expanded large-collapse"> <!-- NEED TO MAKE THIS full height -->
 
     <div class="large-10 large-offset-1 column">
-      {% assign list = (site.data.contentful.spaces.lists.list | sort: 'sys.createdAt') | reverse %}
+      {% assign list = (site.data.contentful.spaces.lists.list | date_sort | reverse %}
       {% for i in list %}
       <div class="list__item">
         <div class="list__description">
