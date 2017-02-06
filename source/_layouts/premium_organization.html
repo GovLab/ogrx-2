@@ -11,7 +11,7 @@ layout: default
         {% endif %}
       </div>
       <div class="large-6 column">
-        <p class="organization-page__description">{{ page.short_description | safe }}</p>
+        <div class="organization-page__description">{{ page.short_description | safe }}</div>
         <div class="organization-page__extras">
           {% if page.social_media.url %}
           <a href="{{ page.social_media.url }}" class="social-media-icon" id="medium-url" target="_blank">
