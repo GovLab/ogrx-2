@@ -94,15 +94,13 @@
           {% endfor %}
         </span>
       </div>
-      {% for org in b.organization %}
-      <div class="result-item__extras result-item__extras--{{ org | slugify }}">
+      <div class="result-item__extras result-item__extras--{{ b.organization[0] | slugify }}">
         {% for o in site.data.organizations %}
-        {% if org == o.title %}
+        {% if b.organization[0] == o.title %}
         <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image_white}}" alt="">
         {% endif %}
         {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
     {% endfor %}

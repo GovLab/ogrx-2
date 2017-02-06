@@ -173,13 +173,14 @@
     url: https://okfn.org/
   display: true
 
-- title: Macarthur Research Network
+- title: MacArthur Foundation Research Network on Opening Governance
   image: maca-network-logo.png
   image_white: maca-logo-white.png # Logo image (white version)
   short_description: >
     <p>Convened and organized by the GovLab, and made possible by a grant from the John D. and Catherine T. MacArthur Foundation, the MacArthur Foundation Research Network on Opening Governance seeks to build an empirical foundation and fundamental understanding of how the redesign of democratic institutions influences effectiveness and legitimacy in governance, to the end of improving people’s lives. A core group of fifteen members is complemented by an advisory network of academics, technologists, and current and former government officials. Through both face-to-face and online collaboration, the Network is focused on assessing existing innovations in governing and experimenting with new practices and, eventually new norms, for how our institutions make decisions at the local, national, and international level.</p>
   long_description:
   display_name:
+    - Macarthur Research Network
   founding_partner: false
   color: 26ace2 # Hash value to be applied to the top section
   social_media: # Links
