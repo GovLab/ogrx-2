@@ -10,7 +10,11 @@ layout: default
     {% for b in site.data.organizations %}
     {% if a == b.title %}
     {% assign prem = true %}
+    {% if b.display %}
     <a href="{{a | datapage_url: '../organizations'}}"><img src="../images/organizations/{{b.image_white}}" style="max-width: 200px"></a>
+    {% else %}
+    <img src="../images/organizations/{{b.image_white}}" style="max-width: 200px">
+    {% endif %}
     {% endif %}
     {% endfor %}
     {% unless prem %}

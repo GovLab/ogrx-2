@@ -13,6 +13,7 @@
     github: false
     facebook: false
     twitter: false
+  display: true
 
 - title: mySociety # Organization
   image: mysociety-logo.png # Logo image
@@ -29,6 +30,7 @@
     github: https://github.com/mysociety
     facebook: https://www.facebook.com/mySociety/
     twitter: https://twitter.com/mysociety
+  display: true
 
 - title: The GovLab # Organization
   image: govlab-logo.png # Logo image
@@ -45,6 +47,7 @@
     github: https://github.com/GovLab
     facebook: https://www.facebook.com/thegovlab
     twitter: https://twitter.com/govlab
+  display: true
 
 - title: Centre for Public Impact # Organization
   image: CPI-logo.png # Logo image
@@ -61,6 +64,7 @@
     github: false
     facebook: false
     twitter: https://twitter.com/CPI_Foundation
+  display: true
 
 - title: Open Evidence
   image: open-evidence-logo.png
@@ -79,6 +83,7 @@
     facebook: false
     twitter: https://twitter.com/OpenEvidence
     url: http://www.open-evidence.com
+  display: true
 
 
 - title: Digital Commons Lab
@@ -95,6 +100,7 @@
     facebook: false
     twitter: https://twitter.com/dclfbk
     url: https://digitalcommonslab.fbk.eu/
+  display: true
 
 - title: Open Data for Development
   image: od4d-logo.png
@@ -110,6 +116,7 @@
     facebook: false
     twitter: https://twitter.com/od4_d
     url: http://od4d.com
+  display: true
 
 - title: Swedish Law and Informatics Research Institute
   image: iri-logo.png
@@ -128,6 +135,7 @@
     facebook: false
     twitter: false
     url: https://irilaw.org
+  display: true
 
 - title: Center for Policy Informatics
   image: ASU-CPI-logo.png
@@ -144,6 +152,7 @@
     facebook: false
     twitter: https://twitter.com/ASU_CPI
     url: https://policyinformatics.asu.edu/
+  display: true
 
 - title: Open Knowledge International
   image: oki-color.png
@@ -162,3 +171,35 @@
     facebook: false
     twitter: https://twitter.com/okfn
     url: https://okfn.org/
+  display: true
+
+- title: Macarthur Research Network
+  image: maca-network-logo.png
+  image_white: maca-logo-white.png # Logo image (white version)
+  short_description: >
+    <p>Convened and organized by the GovLab, and made possible by a grant from the John D. and Catherine T. MacArthur Foundation, the MacArthur Foundation Research Network on Opening Governance seeks to build an empirical foundation and fundamental understanding of how the redesign of democratic institutions influences effectiveness and legitimacy in governance, to the end of improving people’s lives. A core group of fifteen members is complemented by an advisory network of academics, technologists, and current and former government officials. Through both face-to-face and online collaboration, the Network is focused on assessing existing innovations in governing and experimenting with new practices and, eventually new norms, for how our institutions make decisions at the local, national, and international level.</p>
+  long_description:
+  display_name:
+  founding_partner: false
+  color: 26ace2 # Hash value to be applied to the top section
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: false
+    url: false
+  display: true
+
+- title: Nesta
+  image: false
+  image_white: Nesta_White_Horizontal_Logo_RGB.png # Logo image (white version)
+  short_description: false
+  long_description: false
+  display_name: false
+  founding_partner: false
+  color: false
+  social_media: # Links
+    github: false
+    facebook: false
+    twitter: false
+    url: false
+  display: false
