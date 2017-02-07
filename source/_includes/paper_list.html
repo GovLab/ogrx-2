@@ -94,12 +94,22 @@
           {% endfor %}
         </span>
       </div>
-      <div class="result-item__extras result-item__extras--{{ b.organization[0] | slugify }}">
+      {% assign rank = -1 %}
+      {% for org in b.organization %}
         {% for o in site.data.organizations %}
-        {% if b.organization[0] == o.title %}
-        <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image_white}}" alt="">
+        {% if org == o.title %}
+
+        {% if rank < o.display_rank %}
+        {% assign rank = o.display_rank %}
+        {% assign oimage = o.image_white %}
+        {% assign orgname = o.title %}
+        {% endif %}
+
         {% endif %}
         {% endfor %}
+      {% endfor %}
+      <div class="result-item__extras result-item__extras--{{ orgname | slugify }}">
+        <img class="result-item__extras--organization-logo" src="../images/organizations/{{oimage}}" alt="">
       </div>
     </div>
 

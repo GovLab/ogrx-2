@@ -14,6 +14,7 @@
     facebook: false
     twitter: false
   display: true
+  display_rank: 1
 
 - title: mySociety # Organization
   image: mysociety-logo.png # Logo image
@@ -31,6 +32,7 @@
     facebook: https://www.facebook.com/mySociety/
     twitter: https://twitter.com/mysociety
   display: true
+  display_rank: 1
 
 - title: The GovLab # Organization
   image: govlab-logo.png # Logo image
@@ -48,6 +50,7 @@
     facebook: https://www.facebook.com/thegovlab
     twitter: https://twitter.com/govlab
   display: true
+  display_rank: 1
 
 - title: Centre for Public Impact # Organization
   image: CPI-logo.png # Logo image
@@ -65,6 +68,7 @@
     facebook: false
     twitter: https://twitter.com/CPI_Foundation
   display: true
+  display_rank: 1
 
 - title: Open Evidence
   image: open-evidence-logo.png
@@ -84,6 +88,7 @@
     twitter: https://twitter.com/OpenEvidence
     url: http://www.open-evidence.com
   display: true
+  display_rank: 1
 
 
 - title: Digital Commons Lab
@@ -101,6 +106,7 @@
     twitter: https://twitter.com/dclfbk
     url: https://digitalcommonslab.fbk.eu/
   display: true
+  display_rank: 1
 
 - title: Open Data for Development
   image: od4d-logo.png
@@ -117,6 +123,7 @@
     twitter: https://twitter.com/od4_d
     url: http://od4d.com
   display: true
+  display_rank: 1
 
 - title: Swedish Law and Informatics Research Institute
   image: iri-logo.png
@@ -136,6 +143,7 @@
     twitter: false
     url: https://irilaw.org
   display: true
+  display_rank: 1
 
 - title: Center for Policy Informatics
   image: ASU-CPI-logo.png
@@ -153,6 +161,7 @@
     twitter: https://twitter.com/ASU_CPI
     url: https://policyinformatics.asu.edu/
   display: true
+  display_rank: 1
 
 - title: Open Knowledge International
   image: oki-color.png
@@ -172,6 +181,7 @@
     twitter: https://twitter.com/okfn
     url: https://okfn.org/
   display: true
+  display_rank: 1
 
 - title: MacArthur Foundation Research Network on Opening Governance
   image: maca-network-logo.png
@@ -189,6 +199,7 @@
     twitter: false
     url: false
   display: true
+  display_rank: 0
 
 - title: Nesta
   image: false
@@ -204,3 +215,4 @@
     twitter: false
     url: false
   display: false
+  display_rank: 0
