@@ -33,16 +33,36 @@ layout: default
   <div class="divider">
     <div class="row">
       <div class="column large-12">
+        <h2>Network Partners</h2>
+      </div>
+    </div>
+  </div>
+
+    <div class="page-section organizations">
+    <div class="row align-spaced expanded align-middle">
+      {% for organization in site.data.organizations %}
+        {% if organization.network_partner and organization.display %}
+          <div class="column large-3">
+              <a class="organization organization--contributing-partner organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="divider">
+    <div class="row">
+      <div class="column large-12">
         <h2>Contributing Partners</h2>
       </div>
     </div>
-
   </div>
 
   <div class="page-section organizations">
     <div class="row align-spaced expanded align-middle">
       {% for organization in site.data.organizations %}
-        {% unless organization.founding_partner %}
+        {% unless organization.founding_partner or organization.network_partner %}
           {% if organization.display %}
           <div class="column large-3">
               <a class="organization organization--contributing-partner organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>

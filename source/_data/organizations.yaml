@@ -7,6 +7,7 @@
     - world-bank-digital-engagement-evaluation-team # To be used as a custom filter
     - Digital Engagement Evaluation Team
   founding_partner: true
+  network_partner: false
   color: 008ab3 # Hash value to be applied to the top section
   social_media: # Links
     url: false
@@ -25,6 +26,7 @@
     - mySociety
     - mysociety # To be used as a custom filter
   founding_partner: true
+  network_partner: false
   color: 333333 # Hash value to be applied to the top section
   social_media: # Links
     url: false
@@ -43,6 +45,7 @@
     - The Govlab
     - the-govlab # To be used as a custom filter
   founding_partner: true
+  network_partner: false
   color: 523080 # Hash value to be applied to the top section
   social_media: # Links
     url: false
@@ -61,6 +64,7 @@
     - Centre for Public Impact
     - CPI # To be used as a custom filter
   founding_partner: false
+  network_partner: false
   color: 2A5159 # Hash value to be applied to the top section
   social_media: # Links
     url: http://www.centreforpublicimpact.org
@@ -81,6 +85,7 @@
     - Open Evidence
     - open-evidence
   founding_partner: false
+  network_partner: false
   color: 00bac2 # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -99,6 +104,7 @@
   display_name:
     - Digital Commons Lab
   founding_partner: false
+  network_partner: false
   color: 1383a2 # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -116,6 +122,7 @@
   display_name:
     - Open Data for Development
   founding_partner: false
+  network_partner: false
   color: d25e1b # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -136,6 +143,7 @@
     - swedish-law-and-informatics-institute
     - swedish-law-and-informatics-research-institute
   founding_partner: false
+  network_partner: false
   color: 3f7489 # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -154,6 +162,7 @@
     - Center for Policy Informatics
     - center-for-policy-informatics
   founding_partner: false
+  network_partner: false
   color: 8D0E45 # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -192,6 +201,7 @@
   display_name:
     - Macarthur Research Network
   founding_partner: false
+  network_partner: true
   color: 26ace2 # Hash value to be applied to the top section
   social_media: # Links
     github: false
@@ -208,6 +218,7 @@
   long_description: false
   display_name: false
   founding_partner: false
+  network_partner: false
   color: false
   social_media: # Links
     github: false
