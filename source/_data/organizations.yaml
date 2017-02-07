@@ -196,8 +196,8 @@
   social_media: # Links
     github: false
     facebook: false
-    twitter: false
-    url: false
+    twitter: https://twitter.com/opengovnet
+    url: http://www.opening-governance.org/
   display: true
   display_rank: 0
 
