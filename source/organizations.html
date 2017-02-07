@@ -17,12 +17,12 @@ layout: default
   </div>
 </div>
 
-  <div class="page-section">
+  <div class="page-section organizations">
     <div class="row align-spaced expanded align-middle">
       {% for organization in site.data.organizations %}
         {% if organization.founding_partner and organization.display %}
-        <div class="column large-4">
-          <a class="organization organization--founding-partner organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+        <div class="medium-4 column">
+          <a class="organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img class="organization-logo" src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
         </div>
         {% endif %}
       {% endfor %}
@@ -42,12 +42,11 @@ layout: default
     <div class="row align-spaced expanded align-middle">
       {% for organization in site.data.organizations %}
         {% if organization.network_partner and organization.display %}
-          <div class="column large-3">
-              <a class="organization organization--contributing-partner organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+          <div class="medium-4 column">
+              <a class="organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img class="organization-logo" src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
           </div>
         {% endif %}
       {% endfor %}
-
     </div>
   </div>
 
@@ -64,13 +63,12 @@ layout: default
       {% for organization in site.data.organizations %}
         {% unless organization.founding_partner or organization.network_partner %}
           {% if organization.display %}
-          <div class="column large-3">
-              <a class="organization organization--contributing-partner organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
+          <div class="medium-4 column">
+              <a class="organization--{{ organization.title | slugify }}" href="./organizations/{{ organization.title | slugify }}.html"><img class="organization-logo" src="./images/organizations/{{ organization.image }}" alt="{{ organization.title }}"></a>
           </div>
           {% endif %}
         {% endunless %}
       {% endfor %}
-
     </div>
   </div>
 </div>
