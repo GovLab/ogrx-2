@@ -108,9 +108,11 @@
         {% endif %}
         {% endfor %}
       {% endfor %}
+      {% if rank > 0 %}
       <div class="result-item__extras result-item__extras--{{ orgname | slugify }}">
         <img class="result-item__extras--organization-logo" src="../images/organizations/{{oimage}}" alt="">
       </div>
+      {% endif %}
     </div>
 
     {% endfor %}
