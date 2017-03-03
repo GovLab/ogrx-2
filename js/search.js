@@ -290,10 +290,10 @@ $(function() {
     });
     $('#lunr-search').keyup(debouncedSearch);
     $('#lunr-search').on('search:execute', debouncedSearch);
-    $('#lunr-filter').keyup(function () {
-        $('.e-search-trigger').val('more_horiz');
-    });
-    $('#lunr-filter').keyup(debouncedFilter);
+    // $('#lunr-filter').keyup(function () {
+    //     $('.e-search-trigger').val('more_horiz');
+    // });
+    // $('#lunr-filter').keyup(debouncedFilter);
 
     // prevent enter key from submitting form
     $('.lunr-form').on('keyup keypress', function(e) {
