@@ -1,724 +1,6 @@
 ---
 list:
 - sys:
-    id: M24ihkHGeIosci8IuYC44
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
-    revision: 2
-    contentType:
-      sys:
-        id: list
-    locale: en-US
-  title: Selected Readings on Policy Informatics
-  author:
-  - Erik Johnston
-  affiliation:
-  - Center for Policy Informatics
-  description: "__Policy informatics__ is the transdisciplinary study and application
-    of how computation and communication technology leverages information to better
-    understand and address complex public policy and administration problems and realize
-    innovations in governance processes and institutions. Rapid advancements in information,
-    computation, and communication technology continue to proliferate society and
-    become increasingly embedded in our everyday activities, transforming how we learn,
-    communicate, coordinate, organize, produce, consume, and govern. As the world
-    becomes increasingly complex, interconnected, dynamic, and resource-constrained,
-    so do the public issues with which we must grapple. In an information-intensive
-    governance environment, advancements in information, computation, and communication
-    technology afford us the possibility to better tackle complex public issues in
-    new and innovative ways that tap into and reflect the reality of this world. In
-    particular, this involves liberating data, cultivating the bottom-up generation
-    of data and ideas, modeling and simulating system dynamics of coupled human-environmental
-    interactions, as well as engaging, educating, and empowering public officials,
-    future researchers, and the public-at-large to interact with data and one another
-    in a manner that collectively produces meaningful insights, solutions, and actions
-    to address public issues.\n\nThe following reading materials are useful for scholars
-    and practitioners to understand policy informatics theoretically and practically
-    and to apply it in diverse social and policy contexts. Most of the readings were
-    selected because in addition to a theoretical contribution, they regularly are
-    situated in useful applications across many contexts including health, education,
-    and the environment. The readings range from motivating the urgency behind a formal
-    study of policy informatics, to highlighting advances in analytics including simulation
-    and computational analytics, to design recommendations of the open organizational
-    implications of a increasingly connected public through crowdsourcing, participatory
-    platforms, and citizen science, to emerging ethical considerations including the
-    digitally invisible and algorithmic biases. \n"
-  articlesList:
-  - sys:
-      id: 8xF9RfEO9GKi6Co06yEow
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: Simulation for Policy Inquiry
-    authors:
-    - Anand Desai (Ed)
-    publicationDate: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Data Governance
-    objectiveCategory:
-    - Effectiveness
-    sectorCategory:
-    - Conceptual Framework
-    - Governance
-    methodology:
-    - Conceptual Framework
-    - Essay Collection
-    publicationType:
-    - Book
-    abstract: Public policy and management problems have been described as poorly
-      defined, messy, squishy, unstructured, intractable, and wicked. In a word, they
-      are complex. This book illustrates the development and use of simulation models
-      designed to capture some of the complexity inherent in the formulation, management,
-      and implementation of policies aimed at addressing such problems. Simulation
-      models have long existed at the fringes of policy inquiry but are not yet considered
-      an essential component of the policy analyst’s toolkit. However, this situation
-      is likely to change because with improvements in computational power and software,
-      simulation is now easier to include in the standard repertoire of research tools
-      available for discovery and decision support. This volume provides both a conceptual
-      rationale for using simulations to inform public policy and a practical introduction
-      to how such models might be constructed and employed. The focus of these papers
-      is on the uses of simulation to gain understanding and inform policy decisions
-      and action. Techniques represented in this volume include Monte Carlo simulation,
-      system dynamics and agent based modeling.
-    downloadLink: 'http://www.springer.com/us/book/9781461416647
-
-'
-  - sys:
-      id: 3nuF9Hr9GECicaQKw8YeoI
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: 'The Responsive City: Engaging Communities Through Data-Smart
-      Governance'
-    authors:
-    - Susan Crawford
-    - Stephen Goldsmith
-    publicationDate: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Smart Cities
-    sectorCategory:
-    - Urban Planning
-    - Governance
-    methodology:
-    - Case Studies
-    - User Studies
-    publicationType:
-    - Book
-    abstract: 'Responsive City is a guide to civic engagement and governance in the
-      digital age that will help leaders link important breakthroughs in technology
-      and data analytics with age-old lessons of small-group community input to create
-      more agile, competitive, and economically resilient cities. Featuring vivid
-      case studies highlighting the work of pioneers in New York, Boston, Chicago
-      and more, the book provides a compelling model for the future of governance.
-      The book will help mayors, chief technology officers, city administrators, agency
-      directors, civic groups and nonprofit leaders break out of current paradigms
-      to collectively address civic problems. The Responsive City is the culmination
-      of research originating from the Data-Smart City Solutions initiative, an ongoing
-      project at Harvard Kennedy School working to catalyze adoption of data projects
-      on the city level. The book is co-authored by Professor Stephen Goldsmith, director
-      of Data-Smart City Solutions at Harvard Kennedy School, and Professor Susan
-      Crawford, co-director of Harvard''s Berkman Center for Internet and Society.
-      Former New York City Mayor Michael Bloomberg penned the book’s foreword.  Based
-      on the authors’ experiences and extensive research, The Responsive City explores
-      topics including: Building trust in the public sector and fostering a sustained,
-      collective voice among communities; Using data-smart governance to preempt and
-      predict problems while improving quality of life; Creating efficiencies and
-      saving taxpayer money with digital tools; and Spearheading these new approaches
-      to government with innovative leadership.
-
-'
-    downloadLink: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
-  - sys:
-      id: 6MoF99htFmU6MKg6UuYsUG
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
-      of Business'
-    authors:
-    - Jeff Howe
-    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Citizen Engagement and Crowdsourcing
-    sectorCategory:
-    - Governance
-    methodology:
-    - Case Studies
-    publicationType:
-    - Book
-    abstract: Why does Procter & Gamble repeatedly call on enthusiastic amateurs to
-      solve scientific and technical challenges? How can companies as diverse as iStockphoto
-      and Threadless employ just a handful of people, yet generate millions of dollars
-      in revenue every year? "Crowdsourcing" is how the power of the many can be leveraged
-      to accomplish feats that were once the responsibility of a specialized few.
-      Jeff Howe reveals that the crowd is more than wise–it’s talented, creative,
-      and stunningly productive. It’s also a perfect meritocracy, where age, gender,
-      race, education, and job history no longer matter; the quality of the work is
-      all that counts. If you can perform the service, design the product, or solve
-      the problem, you’ve got the job.But crowdsourcing has also triggered a dramatic
-      shift in the way work is organized, talent is employed, research is conducted,
-      and products are made and marketed. As the crowd comes to supplant traditional
-      forms of labor, pain and disruption are inevitable, and Howe delves into both
-      the positive and negative consequences of this intriguing phenomenon. Through
-      extensive reporting from the front lines of this workplace revolution, he employs
-      a brilliant array of stories to look at the economic, cultural, business, and
-      political implications of crowdsourcing.
-    downloadLink: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
-  - sys:
-      id: nJqEKYjhBuICcWWimu0WY
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
-      revision: 2
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: Governance Infrastructures in 2020
-    authors:
-    - Erik Johnston
-    publicationDate: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Data Governance
-    objectiveCategory:
-    - Effectiveness
-    - Participation
-    sectorCategory:
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Journal Article
-    abstract: A governance infrastructure is the collection of technologies and systems,
-      people, policies, practices, and relationships that interact to support governing
-      activities. Information technology, especially communication and computational
-      technologies, continues to augment society’s ability to organize, interact,
-      and govern. As we think about the future of governance, this article challenges
-      us to move beyond questions of how to best manage government institutions to
-      how to design smart governance systems with the appropriate incentives and rules
-      to harness and coordinate the enthusiasm and capabilities of those governed.
-      This article anticipates how the interaction of technology and society can be
-      leveraged to mindfully design an interaction-defined, participation-based governance
-      infrastructure to return power to the people while increasing accountability.
-      Supporting examples of such governance approaches already exist and are regularly
-      emerging in distributed organizations, online communities, nonprofits, and governments.
-    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
-  - sys:
-      id: 5mB4NAsSZiCCQGYwe6eigc
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: Governance in the Information Era
-    authors:
-    - Erik Johnston
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Data Governance
-    objectiveCategory:
-    - Effectiveness
-    sectorCategory:
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Book
-    abstract: Policy informatics is addressing governance challenges and their consequences,
-      which span the seeming inability of governments to solve complex problems and
-      the disaffection of people from their governments. Policy informatics seeks
-      approaches that enable our governance systems to address increasingly complex
-      challenges and to meet the rising expectations of people to be full participants
-      in their communities. This book approaches these challenges by applying a combination
-      of the latest American and European approaches in applying complex systems modeling,
-      crowdsourcing, participatory platforms and citizen science to explore complex
-      governance challenges in domains that include education, environment, and health.
-    downloadLink: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
-  - sys:
-      id: 5eO4ThP9HOQSMs4qamKQEY
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publicationName: Design Lessons for Smart Governance Infrastructures
-    authors:
-    - Erik Johnston
-    - Derek Hansen
-    publicationDate: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Data Governance
-    objectiveCategory:
-    - Effectiveness
-    sectorCategory:
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Book Chapter
-    abstract: This chapter provides design lessons on how to take advantage of advances
-      in information technologies that have enabled new governance infrastructures
-      to become both possible and desirable. A governance infrastructure is the collection
-      of technologies, people, policies, practices, resources, social norms, and information
-      that interact to support governing activities. Smart governance infrastructures
-      augment society's ability to organize, interact, and govern. Novel instances
-      of smart governance infrastructures already exist and are regularly emerging
-      in distributed organizations and online communities. As we think about rebooting
-      the public square, this chapter is intended to challenge us to move beyond questions
-      of how to best manage government institutions to questions of how to design
-      governance systems with the appropriate incentives and rules to harness and
-      coordinate the diversity, enthusiasm, and capabilities of those governed. We
-      provide several design lessons learned from successful governance infrastructures
-      and propose how they can be applied to address national priorities. This chapter
-      anticipates how the interaction of technology and society can be leveraged to
-      mindfully design problem-defined, participation-based governance infrastructures
-      to return power to the people while increasing accountability and efficiency.
-    downloadLink: nationalresourcenetwork.org/Documents/Document/Document/301940
-  - sys:
-      id: 63wsPNLDeEQkgq8ykGik8q
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
-      revision: 2
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publicationName: How Regular People Can Help Shape Science
-    authors:
-    - David Lang
-    publicationDate: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Citizen Engagement and Crowdsourcing
-    - Citizen Science
-    - Collective Intelligence
-    objectiveCategory:
-    - Effectiveness
-    - Participation
-    sectorCategory:
-    - Education
-    - Science
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Article Draft
-    downloadLink: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
-  - sys:
-      id: WBtwNIjeCcKAaOOqwY0y8
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publicationName: 'Informed and Interconnected: A Manifesto for Smarter Cities'
-    authors:
-    - Rosabeth Kanter
-    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Smart Cities
-    objectiveCategory:
-    - Effectiveness
-    - Participation
-    sectorCategory:
-    - Policy
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publicationType:
-    - Working Paper
-    abstract: The need for a fresh approach to U.S. communities is more urgent than
-      ever because of the biggest global economic crisis since the Great Depression.
-      Through examination of the barriers to solving urban problems (and the ways
-      they reinforce each other), this paper offers a new approach to community transformation
-      which calls for leaders to use technology to inform and connect people. We need
-      to convert the social safety net into a social safety network through the creation
-      of smarter communities that are information-rich, interconnected, and able to
-      provide opportunities to all citizens. This process has already begun through
-      such programs as Harlem Children's Zone, Baltimore's CitiStat, Elevate Miami,
-      and others. And they can be replicated. But technology alone is not the answer.
-      Realization of the vision requires leaders to invest in the tools, guide their
-      use, and pave the way for transformation. Perhaps the urgency of the current
-      economic crisis can provide the impetus to overcome resistance to change and
-      turn problems into an opportunity to reduce costs, improve services to communities,
-      and make our cities smarter.
-    downloadLink: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
-  - sys:
-      id: 2ai3l30s8EIsQqSw6SeQyg
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: Policy modeling to support administrative decisionmaking on the
-      New York state HIV testing law.
-    authors:
-    - Martin
-    - E. G.
-    - MacDonald
-    - R. H.
-    - Smith
-    - L. C.
-    - Gordon
-    - D. E.
-    - Tesoriero
-    - J. M.
-    - Laufer
-    - F. N.
-    - O’Connell
-    - D. A
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Big Data
-    - Open Data
-    objectiveCategory:
-    - Effectiveness
-    - Participation and Sharing
-    sectorCategory:
-    - Health
-    - Law
-    - Science
-    methodology:
-    - Case Studies
-    - Statistical Modeling
-    publicationType:
-    - Journal Article
-    abstract: A recent New York law requires medical providers to offer HIV tests
-      as part of routine care. We developed a system dynamics simulation model of
-      the HIV testing and care system to help administrators understand the law's
-      potential epidemic impact, resource needs, strategies to improve implementation,
-      and appropriate outcome indicators for future policy evaluations once postlaw
-      data become available. Policy modeling allowed us to synthesize information
-      from numerous sources including quantitative administrative data sets and practitioners'
-      content expertise, structure the information to be viewed both numerically and
-      visually, and organize consensus for decisionmaking purposes. This case illustrates
-      how policy modeling can provide an integrated framework for administrators to
-      examine policy problems in complex systems, particularly when data time lags
-      limit pre--post comparisons and key outcomes cannot be measured directly.
-    downloadLink: https://www.ncbi.nlm.nih.gov/pubmed/25893238
-  - sys:
-      id: 2XEZZJVjLqCy0cAgU2UEeY
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: The Entrepreneurial State
-    authors:
-    - Mariana Mazzucato
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Big Data
-    - Institutional Innovation
-    objectiveCategory:
-    - Effectiveness
-    - Participation and Sharing
-    - Urban Design
-    sectorCategory:
-    - Urban Planning
-    - Policy
-    - Governance
-    - Urban Design
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publicationType:
-    - Book
-    abstract: 'The book comprehensively debunks the myth of a lumbering, bureaucratic
-      state versus a dynamic, innovative private sector. In a series of case studies—from
-      IT, biotech, nanotech to today’s emerging green tech—Professor Mazzucato shows
-      that the opposite is true: the private sector only finds the courage to invest
-      after an entrepreneurial state has made the high-risk investments. In an intensely
-      researched chapter, she reveals that every technology that makes the iPhone
-      so ‘smart’ was government funded: the Internet, GPS, its touch-screen display
-      and the voice-activated Siri. Mazzucato also controversially argues that in
-      the history of modern capitalism the State has not only fixed market failures,
-      but has also actively shaped and created markets. In doing so, it sometimes
-      wins and sometimes fails. Yet by not admitting the State’s role in such active
-      risk taking, and pretending that the state only cheers on the side-lines while
-      the private sector roars, we have ended up creating an ‘innovation system’ whereby
-      the public sector socializes risks, while rewards are privatized. The book considers
-      how to change this dysfunctional dynamic so that economic growth can be not
-      only ‘smart’ but also ‘inclusive’.'
-    downloadLink: http://www.anthempress.com/the-entrepreneurial-state-876
-  - sys:
-      id: 4AMlQ0OMYwEWCwQ8aKSGqU
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
-      revision: 2
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    publicationName: Smart Citizens, Smarter State
-    organization:
-    - The GovLab
-    authors:
-    - Beth Simone Noveck
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Citizen Engagement and Crowdsourcing
-    - Collective Intelligence
-    - Distributed Governance
-    - Open Data
-    - Data Governance
-    objectiveCategory:
-    - Effectiveness
-    - Participation
-    - Accessibility
-    sectorCategory:
-    - Politics
-    - Policy
-    - Governance
-    - Open Data
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publicationType:
-    - Book
-    abstract: Government “of the people, by the people, for the people” expresses
-      an ideal that resonates in all democracies. Yet poll after poll reveals deep
-      distrust of institutions that seem to have left “the people” out of the governing
-      equation. Government bureaucracies that are supposed to solve critical problems
-      on their own are a troublesome outgrowth of the professionalization of public
-      life in the industrial age. They are especially ill-suited to confronting today’s
-      complex challenges. Offering a far-reaching program for innovation, Smart Citizens,
-      Smarter State suggests that public decisionmaking could be more effective and
-      legitimate if government were smarter—if our institutions knew how to use technology
-      to leverage citizens’ expertise. Just as individuals use only part of their
-      brainpower to solve most problems, governing institutions make far too little
-      use of the skills and experience of those inside and outside of government with
-      scientific credentials, practical skills, and ground-level street smarts. New
-      tools—what Beth Simone Noveck calls technologies of expertise—are making it
-      possible to match the supply of citizen expertise to the demand for it in government.
-      Drawing on a wide range of academic disciplines and practical examples from
-      her work as an adviser to governments on institutional innovation, Noveck explores
-      how to create more open and collaborative institutions. In so doing, she puts
-      forward a profound new vision for participatory democracy rooted not in the
-      paltry act of occasional voting or the serendipity of crowdsourcing but in people’s
-      knowledge and know-how.
-    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
-  - sys:
-      id: 7Jah8NPwo8wWsoeOYsOM8E
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: The Black Box Society
-    authors:
-    - Frank Pasquale
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Big Data
-    - Open Data
-    objectiveCategory:
-    - Privacy
-    - Transparency
-    sectorCategory:
-    - Human Rights
-    - Law
-    - Private
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Book
-    abstract: Every day, corporations are connecting the dots about our personal behavior—silently
-      scrutinizing clues left behind by our work habits and Internet use. The data
-      compiled and portraits created are incredibly detailed, to the point of being
-      invasive. But who connects the dots about what firms are doing with this information?
-      The Black Box Society argues that we all need to be able to do so—and to set
-      limits on how big data affects our lives. Hidden algorithms can make (or ruin)
-      reputations, decide the destiny of entrepreneurs, or even devastate an entire
-      economy. Shrouded in secrecy and complexity, decisions at major Silicon Valley
-      and Wall Street firms were long assumed to be neutral and technical. But leaks,
-      whistleblowers, and legal disputes have shed new light on automated judgment.
-      Self-serving and reckless behavior is surprisingly common, and easy to hide
-      in code protected by legal and real secrecy. Even after billions of dollars
-      of fines have been levied, underfunded regulators may have only scratched the
-      surface of this troubling behavior. Frank Pasquale exposes how powerful interests
-      abuse secrecy for profit and explains ways to rein them in. Demanding transparency
-      is only the first step. An intelligible society would assure that key decisions
-      of its most important firms are fair, nondiscriminatory, and open to criticism.
-      Silicon Valley and Wall Street need to accept as much accountability as they
-      impose on others.
-    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
-  - sys:
-      id: 5D75xkWIakOoiUsY8wUQ2i
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
-      revision: 1
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publicationName: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
-    authors:
-    - Clay Shirky
-    publicationDate: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Citizen Engagement and Crowdsourcing
-    - Co-Creation
-    objectiveCategory:
-    - Effectiveness
-    - Co-Creation
-    sectorCategory:
-    - Governance
-    - Open Data
-    - Big Data
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    abstract: In his bestselling Here Comes Everybody, Internet guru Clay Shirky provided
-      readers with a much-needed primer for the digital age. Now, with Cognitive Surplus,
-      he reveals how new digital technology is unleashing a torrent of creative production
-      that will transform our world. For the first time, people are embracing new
-      media that allow them to pool their efforts at vanishingly low cost. The results
-      of this aggregated effort range from mind-expanding reference tools like Wikipedia
-      to life-saving Web sites like Ushahidi.com, which allows Kenyans to report acts
-      of violence in real time. Cognitive Surplus explores what's possible when people
-      unite to use their intellect, energy, and time for the greater good.
-    downloadLink: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
-  - sys:
-      id: 2IXPwn23ksUuecSgkimMYa
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
-      revision: 3
-      contentType:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publicationName: 'Designing Successful Participatory Platforms with a Public Intent:
-      Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
-    authors:
-    - Chase Treisman
-    - Tanya M. Kelley
-    - Erik W. Johnston
-    publicationDate: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
-    - Citizen Engagement and Crowdsourcing
-    - Data Governance
-    objectiveCategory:
-    - Access
-    - Effectiveness
-    - Participation
-    sectorCategory:
-    - Policy
-    - Governance
-    - Social Movements
-    methodology:
-    - Conceptual Framework
-    publicationType:
-    - Journal Article
-    abstract: Public  organizations  have  interacted  with  citizens  through increasingly  sophisticated  internet-enabled  technology.  Participatory
-      platforms  emerged  from  Web  2.0  technologies  in  the  mid-2000s  as  a
-      governance mechanism to  engage  citizens in the process of  effecting  social
-      change.  Although  the  potential  of  platforms  is  recognized,  its  successful
-      implementation has faced challenges. To begin to get a handle on how to best
-      design  and  manage  participatory  platforms,  we  conducted  an  exploratory
-      participatory  action  research  study  grounded  in  two  events  –  The  Policy
-      Challenge and NSF Workshop on Participatory Platforms with a Public Intent.
-      Both events  communed  practitioners,  scholars,  and citizen participants with
-      diverse experience and expertise conducting and researching platforms. The insights  expressed  through  the
-      events  and  follow-up  interviews  and  online survey  informed  our  development  of  a  participatory  platform  lifecycle  and
-      design framework to assist designing successful participatory platforms.
-    downloadLink: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
-- sys:
     id: 6iITlL4lYQ0gK8sEseKqCy
     space:
       sys:
@@ -1594,3 +876,1335 @@ list:
 
       We hope the paper will be helpful to anyone designing or running meetings of any kind, and that readers will contribute good examples, ideas and evidence which can be added into future versions.
     downloadLink: http://www.nesta.org.uk/sites/default/files/meaningful_meetings.pdf
+- sys:
+    id: 5weIgaazBYIuYUIWGkcYwo
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
+    updatedAt: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
+    revision: 1
+    contentType:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Data Collaboratives
+  author:
+  - Andrew Young
+  - Stefaan Verhulst
+  affiliation:
+  - The GovLab
+  description: |-
+    The term data collaborative refers to a new form of collaboration, beyond the public-private partnership model, in which participants from different sectors (including private companies, research institutions, and government agencies) exchange data to create new public value and solve public problems. Several of society’s greatest challenges — from addressing climate change to public health to job creation to improving the lives of children — require greater access to data, more collaboration between public – and private-sector entities, and an increased ability to analyze datasets. In the coming months and years, data collaboratives will be essential vehicles for harnessing the vast stores of privately held data toward the public good.
+
+    The pieces collected here examine a number of elements related to this emerging field – from the potential (or realized) societal benefits of data collaboratives, to issues of governance and incentives for corporations to participate in such arrangements, to risks and strategies for mitigating them. To learn more about data collaboratives, check out [DataCollaboratives.org](https://datacollaboratives.org)
+  articlesList:
+  - sys:
+      id: 5Afy06zCG4wq46UC6cKwuA
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Big data and positive social change in the developing world:
+      A white paper for practitioners and researchers'
+    innovationCategory:
+    - Big Data
+    - Data Governance
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Development
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Conference Proceedings
+    abstract: A white paper describing the potential of big data, and corporate data
+      in particular, to positively benefit development efforts.
+    downloadLink: https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf
+    attachment:
+      sys:
+        id: 6BUuvwyDn2cm2WOqkQ62WO
+  - sys:
+      id: GLxQomQMYSSYwSMCceMcM
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Collaborative Governance in Theory and Practice
+    authors:
+    - Chris Ansell
+    - Alison Gash
+    innovationCategory:
+    - Data Collaboratives
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Conceptual Framework
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: 'Over the past few decades, a new form of governance has emerged to
+      replace adversarial and managerial modes of policy making and implementation.
+      Collaborative governance, as it has come to be known, brings public and private
+      stakeholders together in collective forums with public agencies to engage in
+      consensus-oriented decision making. In this article, we conduct a meta-analytical
+      study of the existing literature on collaborative governance with the goal of
+      elaborating a contingency model of collaborative governance. After reviewing
+      137 cases of collaborative governance across a range of policy sectors, we identify
+      critical variables that will influence whether or not this mode of governance
+      will produce successful collaboration. These variables include the prior history
+      of conflict or cooperation, the incentives for stakeholders to participate,
+      power and resources imbalances, leadership, and institutional design. We also
+      identify a series of factors that are crucial within the collaborative process
+      itself. These factors include face-to-face dialogue, trust building, and the
+      development of commitment and shared understanding. We found that a virtuous
+      cycle of collaboration tends to develop when collaborative forums focus on “small
+      wins” that deepen trust, commitment, and shared understanding. The article concludes
+      with a discussion of the implications of our contingency model for practitioners
+      and for future research on collaborative governance.
+
+'
+    downloadLink: https://academic.oup.com/jpart/article/18/4/543/1090370/Collaborative-Governance-in-Theory-and-Practice
+    attachment:
+      sys:
+        id: 5E781kmwHmugqKIEqgayua
+  - sys:
+      id: 2uwwZcYyvaAyUg0YwSmYGG
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Data Sharing for Public Health Key Lessons from Other Sectors
+    authors:
+    - Matthew Brack
+    - Tito Castillo
+    innovationCategory:
+    - Data Collaboratives
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Health
+    methodology:
+    - Case Studies
+    - Comparative Analysis
+    - Conceptual Framework
+    publicationType:
+    - Research Report
+    abstract: A Chatham House report describing the need for data sharing and collaboration
+      for global public health emergencies and potential lessons learned from the
+      commercial sector.
+    downloadLink: https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf
+  - sys:
+      id: BwsHpmKhOgga0uggWyMiE
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: A Decision Model for Data Sharing
+    innovationCategory:
+    - Data Collaboratives
+    - Design Thinking
+    - Open Data
+    - Data Governance
+    objectiveCategory:
+    - Outside Innovation
+    - Participation and Sharing
+    sectorCategory:
+    - Business
+    - Open Data
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: "Data-driven innovation has great potential for the development of innovative
+      services that not only have economic value, but that help to address societal
+      challenges. Many of these challenges can only be addressed by data sharing of
+      public and privately owned data. These public-private data sharing collaborations
+      require data governance rules. Data governance can address many barriers, for
+      example by deploying a decision model to guide choices regarding data sharing
+      resulting in interventions supported by a data sharing platform. Based on a
+      literature review of data governance and three use cases for data sharing in
+      the logistics sector, we have developed a data sharing decision model from the
+      perspective of a data provider. The decision model addresses technical as well
+      as ownership, privacy, and economical barriers to sharing publicly and privately
+      owned data and subsequently proposes interventions to address these barriers.
+      We found that the decision model is useful for identifying and addressing data
+      sharing barriers as it is applicable to amongst others privacy and commercial
+      sensitive data.\n\n"
+    downloadLink: https://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21#page-1
+  - sys:
+      id: 1FMU4fXuX2Q6GgEM2sW0wM
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: " Sea Change in Open Science and Data Sharing Leadership by Industry"
+    authors:
+    - Krumholz HM
+    - Gross CP
+    - Blount KL
+    - Ritchie JD
+    - Hodshon B
+    - Lehman R
+    - Ross JS
+    innovationCategory:
+    - Data Collaboratives
+    - Open Data
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Health
+    - Science
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    - Literature Review
+    publicationType:
+    - Journal Article
+    abstract: " A review of industry-led efforts and cross-sector collaborations to
+      share data from clinical trials to inform clinical practice."
+    downloadLink: https://www.ncbi.nlm.nih.gov/pubmed/24891590
+  - sys:
+      id: 67UhQturJuwM4ke4EkOssk
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    publicationName: Private Data and the Public Good
+    authors:
+    - Gideon Mann
+    innovationCategory:
+    - Data Collaboratives
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Politics
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Article Draft
+    abstract: The transcript of a keynote talk on the potential of leveraging corporate
+      data to help solve public problems
+    downloadLink: https://medium.com/@gideonmann/private-data-and-the-public-good-9c94c656ff28#.72syu058n
+  - sys:
+      id: LhqIammGYuS6S0iyiKGs2
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:14:48.486000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:14:48.487000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Open data partnerships between firms and universities: The role
+      of boundary organizations'
+    authors:
+    - M. Perkmann
+    - H. Schildt
+    innovationCategory:
+    - Data Collaboratives
+    - Labs and Experimentation
+    - Open Data
+    sectorCategory:
+    - Science
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: "Science-intensive firms are experimenting with ‘open data’ initiatives,
+      involving collaboration with academic scientists whereby all results are published
+      with no restriction. Firms seeking to benefit from open data face two key challenges:
+      revealing R&D problems may leak valuable information to competitors, and academic
+      scientists may lack motivation to address problems posed by firms. We explore
+      how firms overcome these challenges through an inductive study of the Structural
+      Genomics Consortium. We find that the operation of the consortium as a boundary
+      organization provided two core mechanisms to address the above challenges. First,
+      through mediated revealing, the boundary organization allowed firms to disclose
+      R&D problems while minimizing adverse competitive consequences. Second, by enabling
+      multiple goals the boundary organization increased the attractiveness of industry-informed
+      agendas for academic scientists. We work our results into a grounded model of
+      boundary organizations as a vehicle for open data initiatives. Our study contributes
+      to research on public–private research partnerships, knowledge revealing and
+      boundary organizations.\n\n"
+    downloadLink: http://www.sciencedirect.com/science/article/pii/S0048733314002248
+  - sys:
+      id: 1m4MmpCRG4awoE62Qo428m
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Sharing Data Is a Form of Corporate Philanthropy
+    authors:
+    - Matt Stempeck
+    innovationCategory:
+    - Data Collaboratives
+    - Open Data
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Philanthropy & Aid
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: A Harvard Business Review article on data philanthropy, the practice
+      of companies donating data for public good, and its benefits and challenges.
+    downloadLink: https://hbr.org/2014/07/sharing-data-is-a-form-of-corporate-philanthropy
+  - sys:
+      id: uBmpoLQCPYmgQSQwWIKc
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'The data revolution: finding the missing millions'
+    authors:
+    - Elizabeth Stuart
+    - Emma Samman
+    - William Avis
+    - Tom Berliner
+    innovationCategory:
+    - Big Data
+    - Data Collaboratives
+    objectiveCategory:
+    - Participation and Sharing
+    - Big Data
+    sectorCategory:
+    - Open Data
+    - Big Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Research Report
+    abstract: The Overseas Development Institute’s annual report focused on solutions
+      toward a sustainable data revolution.
+    downloadLink: https://www.odi.org/sites/odi.org.uk/files/odi-assets/publications-opinion-files/9604.pdf
+  - sys:
+      id: 6CYw5OLBzUw8UqEm48ISQY
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Is bigger better? The emergence of big data as a tool for international
+      development policy
+    authors:
+    - Linnet Taylor
+    - Ralph Schroeder
+    innovationCategory:
+    - Big Data
+    - Data Collaboratives
+    - Open Data
+    objectiveCategory:
+    - Big Data
+    sectorCategory:
+    - Development
+    - Economics
+    - Open Data
+    - Big Data
+    methodology:
+    - Case Studies
+    - Comparative Analysis
+    - Conceptual Framework
+    abstract: "The use of digital communication technologies, and of mobile phones
+      in particular, has seen an exponential rise in low- and middle-income countries
+      over the last decade. These data, emitted as a byproduct of technologies such
+      as mobile phone location information and calling metadata, have the potential
+      to fill some of the problematic gaps in data resources available to country
+      policymakers and international development organisations. Using three examples
+      of current big data initiatives in the international development field, we examine
+      the implications of these new types of data for development policy and planning:
+      their advantages and drawbacks, emerging practices relating to their use, and
+      how they potentially influence ideas and policies of development. We also assess
+      the politics of these new types of digital data, which are often collected and
+      processed by corporations or by researchers in industrialised countries. Our
+      analysis indicates that these new data sources already represent an important
+      complement to country-level statistics, but that there are currently important
+      challenges which will need to addressed if the promises of big data in development
+      are to be fulfilled.\n\n"
+    downloadLink: https://link.springer.com/article/10.1007%2Fs10708-014-9603-5
+  - sys:
+      id: 6d00JPl9wAuA6WKgm66MUa
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: A systematic review of barriers to data sharing in public health
+    authors:
+    - Willem G. van Panhuis
+    - Proma Paul
+    - Claudia Emerson
+    - John Grefenstette
+    - Richard Wilder
+    - Abraham J. Herbst
+    - David Heymann
+    - Donald S. Burke
+    innovationCategory:
+    - Data Collaboratives
+    sectorCategory:
+    - Health
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: "In the current information age, the use of data has become essential
+      for decision making in public health at the local, national, and global level.
+      Despite a global commitment to the use and sharing of public health data, this
+      can be challenging in reality. No systematic framework or global operational
+      guidelines have been created for data sharing in public health. Barriers at
+      different levels have limited data sharing but have only been anecdotally discussed
+      or in the context of specific case studies. Incomplete systematic evidence on
+      the scope and variety of these barriers has limited opportunities to maximize
+      the value and use of public health data for science and policy.\n\n"
+    downloadLink: http://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-14-1144
+  - sys:
+      id: 4IR8NlszXGs8iAI6eEyaCg
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Mapping the Next Frontier of Open Data: Corporate Data Sharing'
+    organization:
+    - The GovLab
+    authors:
+    - Stefaan Verhulst
+    - David Sangokoya
+    innovationCategory:
+    - Data Collaboratives
+    objectiveCategory:
+    - Co-Creation
+    - Participation and Sharing
+    sectorCategory:
+    - Open Data
+    - Big Data
+    methodology:
+    - Case Studies
+    publicationType:
+    - Article Draft
+    abstract: This essay describes an emerging taxonomy of activities involving corporate
+      data sharing for public good, an emerging trend in which companies share anonymized
+      and aggregated data with third-party users towards data-driven policymaking
+      and greater public good.
+    downloadLink: https://medium.com/internet-monitor-2014-data-and-privacy/mapping-the-next-frontier-of-open-data-corporate-data-sharing-73b2143878d2#.5sr15z45k
+  - sys:
+      id: 1K83ACyW5m4k2W0WqqOMCU
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Data Collaboratives: Exchanging Data to Improve People’s Lives'
+    organization:
+    - The GovLab
+    authors:
+    - Stefaan Verhulst
+    - David Sangokoya
+    innovationCategory:
+    - Big Data
+    - Data Collaboratives
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Governance
+    - Big Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Article Draft
+    abstract: an essay on leveraging the potential of data to solve complex public
+      problems through data collaboratives and four critical accelerators towards
+      responsible data sharing and collaboration.
+    downloadLink: https://medium.com/@sverhulst/data-collaboratives-exchanging-data-to-improve-people-s-lives-d0fcfc1bdd9a#.x0820rr24
+  - sys:
+      id: 5wX9bspPCE8CiEyk0ekq0A
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Open Data and Beyond
+    authors:
+    - F
+    - Welle Donker
+    - B. van Loenen
+    - A. K. Bregt
+    innovationCategory:
+    - Data Collaboratives
+    - Open Data
+    objectiveCategory:
+    - Participation and Sharing
+    sectorCategory:
+    - Open Data
+    methodology:
+    - Case Studies
+    publicationType:
+    - Journal Article
+    abstract: In recent years, there has been an increasing trend of releasing public
+      sector information as open data. Governments worldwide see the potential benefits
+      of opening up their data. The potential benefits are more transparency, increased
+      governmental efficiency and effectiveness, and external benefits, including
+      societal and economic benefits. The private sector also recognizes potential
+      benefits of making their datasets available as open data. One such company is
+      Liander, an energy network administrator in the Netherlands. Liander views open
+      data as a contributing factor to energy conservation. However, to date there
+      has been little research done into the actual effects of open data. This research
+      has developed a monitoring framework to assess the effects of open data, and
+      has applied the framework to Liander’s small-scale energy consumption dataset
+    downloadLink: http://www.mdpi.com/2220-9964/5/4/48
+  - sys:
+      id: 6a6muJecUMg6Skau2CiYW8
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
+      updatedAt: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: " Data-driven development: pathways for progress"
+    innovationCategory:
+    - Data Collaboratives
+    objectiveCategory:
+    - Big Data
+    sectorCategory:
+    - Policy
+    - Open Data
+    - Big Data
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Research Report
+    abstract: An overview report from the World Economic Forum on the existing data
+      deficit and the value and impact of big data for sustainable development
+    downloadLink: http://www3.weforum.org/docs/WEFUSA_DataDrivenDevelopment_Report2015.pdf
+- sys:
+    id: M24ihkHGeIosci8IuYC44
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
+    revision: 2
+    contentType:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Policy Informatics
+  author:
+  - Erik Johnston
+  affiliation:
+  - Center for Policy Informatics
+  description: "__Policy informatics__ is the transdisciplinary study and application
+    of how computation and communication technology leverages information to better
+    understand and address complex public policy and administration problems and realize
+    innovations in governance processes and institutions. Rapid advancements in information,
+    computation, and communication technology continue to proliferate society and
+    become increasingly embedded in our everyday activities, transforming how we learn,
+    communicate, coordinate, organize, produce, consume, and govern. As the world
+    becomes increasingly complex, interconnected, dynamic, and resource-constrained,
+    so do the public issues with which we must grapple. In an information-intensive
+    governance environment, advancements in information, computation, and communication
+    technology afford us the possibility to better tackle complex public issues in
+    new and innovative ways that tap into and reflect the reality of this world. In
+    particular, this involves liberating data, cultivating the bottom-up generation
+    of data and ideas, modeling and simulating system dynamics of coupled human-environmental
+    interactions, as well as engaging, educating, and empowering public officials,
+    future researchers, and the public-at-large to interact with data and one another
+    in a manner that collectively produces meaningful insights, solutions, and actions
+    to address public issues.\n\nThe following reading materials are useful for scholars
+    and practitioners to understand policy informatics theoretically and practically
+    and to apply it in diverse social and policy contexts. Most of the readings were
+    selected because in addition to a theoretical contribution, they regularly are
+    situated in useful applications across many contexts including health, education,
+    and the environment. The readings range from motivating the urgency behind a formal
+    study of policy informatics, to highlighting advances in analytics including simulation
+    and computational analytics, to design recommendations of the open organizational
+    implications of a increasingly connected public through crowdsourcing, participatory
+    platforms, and citizen science, to emerging ethical considerations including the
+    digitally invisible and algorithmic biases. \n"
+  articlesList:
+  - sys:
+      id: 8xF9RfEO9GKi6Co06yEow
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: Simulation for Policy Inquiry
+    authors:
+    - Anand Desai (Ed)
+    publicationDate: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Conceptual Framework
+    - Governance
+    methodology:
+    - Conceptual Framework
+    - Essay Collection
+    publicationType:
+    - Book
+    abstract: Public policy and management problems have been described as poorly
+      defined, messy, squishy, unstructured, intractable, and wicked. In a word, they
+      are complex. This book illustrates the development and use of simulation models
+      designed to capture some of the complexity inherent in the formulation, management,
+      and implementation of policies aimed at addressing such problems. Simulation
+      models have long existed at the fringes of policy inquiry but are not yet considered
+      an essential component of the policy analyst’s toolkit. However, this situation
+      is likely to change because with improvements in computational power and software,
+      simulation is now easier to include in the standard repertoire of research tools
+      available for discovery and decision support. This volume provides both a conceptual
+      rationale for using simulations to inform public policy and a practical introduction
+      to how such models might be constructed and employed. The focus of these papers
+      is on the uses of simulation to gain understanding and inform policy decisions
+      and action. Techniques represented in this volume include Monte Carlo simulation,
+      system dynamics and agent based modeling.
+    downloadLink: 'http://www.springer.com/us/book/9781461416647
+
+'
+  - sys:
+      id: 3nuF9Hr9GECicaQKw8YeoI
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: 'The Responsive City: Engaging Communities Through Data-Smart
+      Governance'
+    authors:
+    - Susan Crawford
+    - Stephen Goldsmith
+    publicationDate: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Smart Cities
+    sectorCategory:
+    - Urban Planning
+    - Governance
+    methodology:
+    - Case Studies
+    - User Studies
+    publicationType:
+    - Book
+    abstract: 'Responsive City is a guide to civic engagement and governance in the
+      digital age that will help leaders link important breakthroughs in technology
+      and data analytics with age-old lessons of small-group community input to create
+      more agile, competitive, and economically resilient cities. Featuring vivid
+      case studies highlighting the work of pioneers in New York, Boston, Chicago
+      and more, the book provides a compelling model for the future of governance.
+      The book will help mayors, chief technology officers, city administrators, agency
+      directors, civic groups and nonprofit leaders break out of current paradigms
+      to collectively address civic problems. The Responsive City is the culmination
+      of research originating from the Data-Smart City Solutions initiative, an ongoing
+      project at Harvard Kennedy School working to catalyze adoption of data projects
+      on the city level. The book is co-authored by Professor Stephen Goldsmith, director
+      of Data-Smart City Solutions at Harvard Kennedy School, and Professor Susan
+      Crawford, co-director of Harvard''s Berkman Center for Internet and Society.
+      Former New York City Mayor Michael Bloomberg penned the book’s foreword.  Based
+      on the authors’ experiences and extensive research, The Responsive City explores
+      topics including: Building trust in the public sector and fostering a sustained,
+      collective voice among communities; Using data-smart governance to preempt and
+      predict problems while improving quality of life; Creating efficiencies and
+      saving taxpayer money with digital tools; and Spearheading these new approaches
+      to government with innovative leadership.
+
+'
+    downloadLink: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
+  - sys:
+      id: 6MoF99htFmU6MKg6UuYsUG
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
+      of Business'
+    authors:
+    - Jeff Howe
+    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    sectorCategory:
+    - Governance
+    methodology:
+    - Case Studies
+    publicationType:
+    - Book
+    abstract: Why does Procter & Gamble repeatedly call on enthusiastic amateurs to
+      solve scientific and technical challenges? How can companies as diverse as iStockphoto
+      and Threadless employ just a handful of people, yet generate millions of dollars
+      in revenue every year? "Crowdsourcing" is how the power of the many can be leveraged
+      to accomplish feats that were once the responsibility of a specialized few.
+      Jeff Howe reveals that the crowd is more than wise–it’s talented, creative,
+      and stunningly productive. It’s also a perfect meritocracy, where age, gender,
+      race, education, and job history no longer matter; the quality of the work is
+      all that counts. If you can perform the service, design the product, or solve
+      the problem, you’ve got the job.But crowdsourcing has also triggered a dramatic
+      shift in the way work is organized, talent is employed, research is conducted,
+      and products are made and marketed. As the crowd comes to supplant traditional
+      forms of labor, pain and disruption are inevitable, and Howe delves into both
+      the positive and negative consequences of this intriguing phenomenon. Through
+      extensive reporting from the front lines of this workplace revolution, he employs
+      a brilliant array of stories to look at the economic, cultural, business, and
+      political implications of crowdsourcing.
+    downloadLink: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
+  - sys:
+      id: nJqEKYjhBuICcWWimu0WY
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
+      revision: 2
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: Governance Infrastructures in 2020
+    authors:
+    - Erik Johnston
+    publicationDate: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    - Participation
+    sectorCategory:
+    - Policy
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: A governance infrastructure is the collection of technologies and systems,
+      people, policies, practices, and relationships that interact to support governing
+      activities. Information technology, especially communication and computational
+      technologies, continues to augment society’s ability to organize, interact,
+      and govern. As we think about the future of governance, this article challenges
+      us to move beyond questions of how to best manage government institutions to
+      how to design smart governance systems with the appropriate incentives and rules
+      to harness and coordinate the enthusiasm and capabilities of those governed.
+      This article anticipates how the interaction of technology and society can be
+      leveraged to mindfully design an interaction-defined, participation-based governance
+      infrastructure to return power to the people while increasing accountability.
+      Supporting examples of such governance approaches already exist and are regularly
+      emerging in distributed organizations, online communities, nonprofits, and governments.
+    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
+  - sys:
+      id: 5mB4NAsSZiCCQGYwe6eigc
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: Governance in the Information Era
+    authors:
+    - Erik Johnston
+    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Book
+    abstract: Policy informatics is addressing governance challenges and their consequences,
+      which span the seeming inability of governments to solve complex problems and
+      the disaffection of people from their governments. Policy informatics seeks
+      approaches that enable our governance systems to address increasingly complex
+      challenges and to meet the rising expectations of people to be full participants
+      in their communities. This book approaches these challenges by applying a combination
+      of the latest American and European approaches in applying complex systems modeling,
+      crowdsourcing, participatory platforms and citizen science to explore complex
+      governance challenges in domains that include education, environment, and health.
+    downloadLink: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
+  - sys:
+      id: 5eO4ThP9HOQSMs4qamKQEY
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Design Lessons for Smart Governance Infrastructures
+    authors:
+    - Erik Johnston
+    - Derek Hansen
+    publicationDate: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Policy
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Book Chapter
+    abstract: This chapter provides design lessons on how to take advantage of advances
+      in information technologies that have enabled new governance infrastructures
+      to become both possible and desirable. A governance infrastructure is the collection
+      of technologies, people, policies, practices, resources, social norms, and information
+      that interact to support governing activities. Smart governance infrastructures
+      augment society's ability to organize, interact, and govern. Novel instances
+      of smart governance infrastructures already exist and are regularly emerging
+      in distributed organizations and online communities. As we think about rebooting
+      the public square, this chapter is intended to challenge us to move beyond questions
+      of how to best manage government institutions to questions of how to design
+      governance systems with the appropriate incentives and rules to harness and
+      coordinate the diversity, enthusiasm, and capabilities of those governed. We
+      provide several design lessons learned from successful governance infrastructures
+      and propose how they can be applied to address national priorities. This chapter
+      anticipates how the interaction of technology and society can be leveraged to
+      mindfully design problem-defined, participation-based governance infrastructures
+      to return power to the people while increasing accountability and efficiency.
+    downloadLink: nationalresourcenetwork.org/Documents/Document/Document/301940
+  - sys:
+      id: 63wsPNLDeEQkgq8ykGik8q
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
+      revision: 2
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: How Regular People Can Help Shape Science
+    authors:
+    - David Lang
+    publicationDate: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Citizen Science
+    - Collective Intelligence
+    objectiveCategory:
+    - Effectiveness
+    - Participation
+    sectorCategory:
+    - Education
+    - Science
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Article Draft
+    downloadLink: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
+  - sys:
+      id: WBtwNIjeCcKAaOOqwY0y8
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Informed and Interconnected: A Manifesto for Smarter Cities'
+    authors:
+    - Rosabeth Kanter
+    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Smart Cities
+    objectiveCategory:
+    - Effectiveness
+    - Participation
+    sectorCategory:
+    - Policy
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Working Paper
+    abstract: The need for a fresh approach to U.S. communities is more urgent than
+      ever because of the biggest global economic crisis since the Great Depression.
+      Through examination of the barriers to solving urban problems (and the ways
+      they reinforce each other), this paper offers a new approach to community transformation
+      which calls for leaders to use technology to inform and connect people. We need
+      to convert the social safety net into a social safety network through the creation
+      of smarter communities that are information-rich, interconnected, and able to
+      provide opportunities to all citizens. This process has already begun through
+      such programs as Harlem Children's Zone, Baltimore's CitiStat, Elevate Miami,
+      and others. And they can be replicated. But technology alone is not the answer.
+      Realization of the vision requires leaders to invest in the tools, guide their
+      use, and pave the way for transformation. Perhaps the urgency of the current
+      economic crisis can provide the impetus to overcome resistance to change and
+      turn problems into an opportunity to reduce costs, improve services to communities,
+      and make our cities smarter.
+    downloadLink: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
+  - sys:
+      id: 2ai3l30s8EIsQqSw6SeQyg
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: Policy modeling to support administrative decisionmaking on the
+      New York state HIV testing law.
+    authors:
+    - Martin
+    - E. G.
+    - MacDonald
+    - R. H.
+    - Smith
+    - L. C.
+    - Gordon
+    - D. E.
+    - Tesoriero
+    - J. M.
+    - Laufer
+    - F. N.
+    - O’Connell
+    - D. A
+    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Big Data
+    - Open Data
+    objectiveCategory:
+    - Effectiveness
+    - Participation and Sharing
+    sectorCategory:
+    - Health
+    - Law
+    - Science
+    methodology:
+    - Case Studies
+    - Statistical Modeling
+    publicationType:
+    - Journal Article
+    abstract: A recent New York law requires medical providers to offer HIV tests
+      as part of routine care. We developed a system dynamics simulation model of
+      the HIV testing and care system to help administrators understand the law's
+      potential epidemic impact, resource needs, strategies to improve implementation,
+      and appropriate outcome indicators for future policy evaluations once postlaw
+      data become available. Policy modeling allowed us to synthesize information
+      from numerous sources including quantitative administrative data sets and practitioners'
+      content expertise, structure the information to be viewed both numerically and
+      visually, and organize consensus for decisionmaking purposes. This case illustrates
+      how policy modeling can provide an integrated framework for administrators to
+      examine policy problems in complex systems, particularly when data time lags
+      limit pre--post comparisons and key outcomes cannot be measured directly.
+    downloadLink: https://www.ncbi.nlm.nih.gov/pubmed/25893238
+  - sys:
+      id: 2XEZZJVjLqCy0cAgU2UEeY
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: The Entrepreneurial State
+    authors:
+    - Mariana Mazzucato
+    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Big Data
+    - Institutional Innovation
+    objectiveCategory:
+    - Effectiveness
+    - Participation and Sharing
+    - Urban Design
+    sectorCategory:
+    - Urban Planning
+    - Policy
+    - Governance
+    - Urban Design
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Book
+    abstract: 'The book comprehensively debunks the myth of a lumbering, bureaucratic
+      state versus a dynamic, innovative private sector. In a series of case studies—from
+      IT, biotech, nanotech to today’s emerging green tech—Professor Mazzucato shows
+      that the opposite is true: the private sector only finds the courage to invest
+      after an entrepreneurial state has made the high-risk investments. In an intensely
+      researched chapter, she reveals that every technology that makes the iPhone
+      so ‘smart’ was government funded: the Internet, GPS, its touch-screen display
+      and the voice-activated Siri. Mazzucato also controversially argues that in
+      the history of modern capitalism the State has not only fixed market failures,
+      but has also actively shaped and created markets. In doing so, it sometimes
+      wins and sometimes fails. Yet by not admitting the State’s role in such active
+      risk taking, and pretending that the state only cheers on the side-lines while
+      the private sector roars, we have ended up creating an ‘innovation system’ whereby
+      the public sector socializes risks, while rewards are privatized. The book considers
+      how to change this dysfunctional dynamic so that economic growth can be not
+      only ‘smart’ but also ‘inclusive’.'
+    downloadLink: http://www.anthempress.com/the-entrepreneurial-state-876
+  - sys:
+      id: 4AMlQ0OMYwEWCwQ8aKSGqU
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
+      revision: 2
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    publicationName: Smart Citizens, Smarter State
+    organization:
+    - The GovLab
+    authors:
+    - Beth Simone Noveck
+    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Distributed Governance
+    - Open Data
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    - Participation
+    - Accessibility
+    sectorCategory:
+    - Politics
+    - Policy
+    - Governance
+    - Open Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publicationType:
+    - Book
+    abstract: Government “of the people, by the people, for the people” expresses
+      an ideal that resonates in all democracies. Yet poll after poll reveals deep
+      distrust of institutions that seem to have left “the people” out of the governing
+      equation. Government bureaucracies that are supposed to solve critical problems
+      on their own are a troublesome outgrowth of the professionalization of public
+      life in the industrial age. They are especially ill-suited to confronting today’s
+      complex challenges. Offering a far-reaching program for innovation, Smart Citizens,
+      Smarter State suggests that public decisionmaking could be more effective and
+      legitimate if government were smarter—if our institutions knew how to use technology
+      to leverage citizens’ expertise. Just as individuals use only part of their
+      brainpower to solve most problems, governing institutions make far too little
+      use of the skills and experience of those inside and outside of government with
+      scientific credentials, practical skills, and ground-level street smarts. New
+      tools—what Beth Simone Noveck calls technologies of expertise—are making it
+      possible to match the supply of citizen expertise to the demand for it in government.
+      Drawing on a wide range of academic disciplines and practical examples from
+      her work as an adviser to governments on institutional innovation, Noveck explores
+      how to create more open and collaborative institutions. In so doing, she puts
+      forward a profound new vision for participatory democracy rooted not in the
+      paltry act of occasional voting or the serendipity of crowdsourcing but in people’s
+      knowledge and know-how.
+    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
+  - sys:
+      id: 7Jah8NPwo8wWsoeOYsOM8E
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: The Black Box Society
+    authors:
+    - Frank Pasquale
+    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Big Data
+    - Open Data
+    objectiveCategory:
+    - Privacy
+    - Transparency
+    sectorCategory:
+    - Human Rights
+    - Law
+    - Private
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Book
+    abstract: Every day, corporations are connecting the dots about our personal behavior—silently
+      scrutinizing clues left behind by our work habits and Internet use. The data
+      compiled and portraits created are incredibly detailed, to the point of being
+      invasive. But who connects the dots about what firms are doing with this information?
+      The Black Box Society argues that we all need to be able to do so—and to set
+      limits on how big data affects our lives. Hidden algorithms can make (or ruin)
+      reputations, decide the destiny of entrepreneurs, or even devastate an entire
+      economy. Shrouded in secrecy and complexity, decisions at major Silicon Valley
+      and Wall Street firms were long assumed to be neutral and technical. But leaks,
+      whistleblowers, and legal disputes have shed new light on automated judgment.
+      Self-serving and reckless behavior is surprisingly common, and easy to hide
+      in code protected by legal and real secrecy. Even after billions of dollars
+      of fines have been levied, underfunded regulators may have only scratched the
+      surface of this troubling behavior. Frank Pasquale exposes how powerful interests
+      abuse secrecy for profit and explains ways to rein them in. Demanding transparency
+      is only the first step. An intelligible society would assure that key decisions
+      of its most important firms are fair, nondiscriminatory, and open to criticism.
+      Silicon Valley and Wall Street need to accept as much accountability as they
+      impose on others.
+    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
+  - sys:
+      id: 5D75xkWIakOoiUsY8wUQ2i
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publicationName: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
+    authors:
+    - Clay Shirky
+    publicationDate: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Co-Creation
+    objectiveCategory:
+    - Effectiveness
+    - Co-Creation
+    sectorCategory:
+    - Governance
+    - Open Data
+    - Big Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    abstract: In his bestselling Here Comes Everybody, Internet guru Clay Shirky provided
+      readers with a much-needed primer for the digital age. Now, with Cognitive Surplus,
+      he reveals how new digital technology is unleashing a torrent of creative production
+      that will transform our world. For the first time, people are embracing new
+      media that allow them to pool their efforts at vanishingly low cost. The results
+      of this aggregated effort range from mind-expanding reference tools like Wikipedia
+      to life-saving Web sites like Ushahidi.com, which allows Kenyans to report acts
+      of violence in real time. Cognitive Surplus explores what's possible when people
+      unite to use their intellect, energy, and time for the greater good.
+    downloadLink: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
+  - sys:
+      id: 2IXPwn23ksUuecSgkimMYa
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
+      updatedAt: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
+      revision: 3
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Designing Successful Participatory Platforms with a Public Intent:
+      Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
+    authors:
+    - Chase Treisman
+    - Tanya M. Kelley
+    - Erik W. Johnston
+    publicationDate: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Data Governance
+    objectiveCategory:
+    - Access
+    - Effectiveness
+    - Participation
+    sectorCategory:
+    - Policy
+    - Governance
+    - Social Movements
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: Public  organizations  have  interacted  with  citizens  through increasingly  sophisticated  internet-enabled  technology.  Participatory
+      platforms  emerged  from  Web  2.0  technologies  in  the  mid-2000s  as  a
+      governance mechanism to  engage  citizens in the process of  effecting  social
+      change.  Although  the  potential  of  platforms  is  recognized,  its  successful
+      implementation has faced challenges. To begin to get a handle on how to best
+      design  and  manage  participatory  platforms,  we  conducted  an  exploratory
+      participatory  action  research  study  grounded  in  two  events  –  The  Policy
+      Challenge and NSF Workshop on Participatory Platforms with a Public Intent.
+      Both events  communed  practitioners,  scholars,  and citizen participants with
+      diverse experience and expertise conducting and researching platforms. The insights  expressed  through  the
+      events  and  follow-up  interviews  and  online survey  informed  our  development  of  a  participatory  platform  lifecycle  and
+      design framework to assist designing successful participatory platforms.
+    downloadLink: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
