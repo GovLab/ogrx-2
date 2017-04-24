@@ -94,6 +94,22 @@
           {% endfor %}
         </span>
       </div>
+      {% if b.open %}
+      <div class="result-item__unpaywall">
+        <p class="">May be available at</p>
+        <img class="" src="../images/unpaywall.png" alt="">
+      </div>
+      {% endif %}
+      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
+        <span class="result-item__taxonomy__key">Open</span>
+        <span class="result-item__taxonomy__value">
+          {% if b.open %}
+          <a class="result-item__tag" href="">open</a>
+          {% else %}
+          <a class="result-item__tag" href="">closed</a>
+          {% endif %}
+        </span>
+      </div> -->
       {% assign rank = -1 %}
       {% for org in b.organization %}
         {% for o in site.data.organizations %}
