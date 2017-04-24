@@ -731,6 +731,20 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   .result-item__authors {
     font-size: .9rem;
     min-height: 3rem; }
+  .result-item__unpaywall {
+    position: absolute;
+    bottom: 10px;
+    right: 20px; }
+    .result-item__unpaywall p {
+      display: inline-block;
+      font-size: .6rem;
+      text-transform: uppercase; }
+    .result-item__unpaywall a {
+      display: inline-block; }
+    .result-item__unpaywall img {
+      display: inline-block;
+      width: 90px;
+      height: auto; }
   .result-item__extras {
     padding: 15px 30px;
     text-align: right;
