@@ -1,6 +1,361 @@
 ---
 blogpost:
 - sys:
+    id: 7ibMiVowV2QUgAWs6Ga40M
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
+    updatedAt: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
+    revision: 1
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: 'May Highlights: New Research and Findings on OGRX'
+  author:
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  innovationcategory:
+  - Big Data
+  - Citizen Engagement and Crowdsourcing
+  - Co-Creation
+  - Data Analysis
+  - Institutional Innovation
+  - Open Data
+  type:
+  - Weekly update
+  post: |-
+    *The Open Governance Research Exchange (OGRX) strives to identify and curate the most useful and important research on innovations in governance. Through the research efforts of OGRX’s [editorial board and partners](http://ogrx.org/about.html), and, especially, [submissions from OGRX users](http://ogrx.org/submit.html), the platform is constantly growing and evolving, with new publications added each week.*
+
+    Some pieces reflective of the diversity of newly added research and findings come from [*Convergence*](http://journals.sagepub.com/home/con), [The Alan Turing Institute](https://www.turing.ac.uk/), [*Health and Technology*](https://link.springer.com/journal/12553), [*International Journal of Cartography*](http://www.tandfonline.com/toc/tica20/current), and the [Centre for Public Impact](https://www.centreforpublicimpact.org/), focusing on [Citizen Engagement and Crowdsourcing](http://ogrx.org/categories/citizen-engagement-and-crowdsourcing.html), [Algorithmic Scrutiny](http://www.ogrx.org/categories/algorithmic-scrutiny), [Open Data](http://ogrx.org/categories/open-data.html), [Data Analysis](http://www.ogrx.org/categories/data-analysis.html), and [Co-Creation](http://www.ogrx.org/categories/co-creation.html).
+
+    Come back often to stay on top of what’s new in governance innovation!
+  articlesList:
+  - sys:
+      id: G8rPAc3e4EYuYI0CY88gi
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
+      updatedAt: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Confronting the hype The use of crisis mapping for community
+      development
+    authors:
+    - Ana Brandusescu
+    - Renée E Sieber
+    - Sylvie Jochems
+    publicationDate: !ruby/object:DateTime 2015-05-18 00:00:00.000000000 -04:00
+    innovationCategory:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Co-Creation
+    objectiveCategory:
+    - Effectiveness
+    sectorCategory:
+    - Development
+    - Crisis Response
+    methodology:
+    - Case Studies
+    - Comparative Analysis
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: "Crisis mapping has emerged as a method of connecting and empowering
+      citizens during emergencies. This article explores the hyperbole behind crisis
+      mapping as it extends into more long-term or ‘chronic’ community development
+      practices. We critically examined developer issues and participant (i.e. community
+      organization) usage within the context of local communities. We repurposed the
+      predominant crisis mapping platform Crowdmap for three cases of community development
+      in Canadian anglophone and francophone. Our case studies show mixed results
+      about the actual cost of deployment, the results of disintermediation, and local
+      context with the mapping application. Lastly, we discuss the relationship of
+      hype, temporality, and community development as expressed in our cases.\n\n"
+    downloadLink: http://journals.sagepub.com/doi/pdf/10.1177/1354856515584320
+  - sys:
+      id: 5B96lJDVxC08M2QGeg6GW0
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
+      updatedAt: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Ethics of the Health-Related Internet of Things: Mapping the
+      Debate'
+    authors:
+    - Brent Mittelstadt
+    publicationDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -04:00
+    innovationCategory:
+    - Big Data
+    - Data Analysis
+    - Open Data
+    objectiveCategory:
+    - Effectiveness
+    - Legitimacy
+    - Privacy
+    - Accountability
+    sectorCategory:
+    - Health
+    - Private
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    - Literature Review
+    publicationType:
+    - Journal Article
+    abstract: "The Internet of Things is increasingly spreading into the domain of
+      medical and social care. Internet-enabled devices for monitoring and managing
+      the health and well-being of users outside of traditional medical institutions
+      have rapidly become common tools to support healthcare. Health-related Internet
+      of Things (H-IoT) technologies increasingly play a key role in health management,
+      for purposes including disease prevention, real-time tele-monitoring of patient’s
+      functions, testing of treatments, fitness and well-being monitoring, medication
+      dispensation, and health research data collection. H-IoT promises many benefits
+      for health and healthcare. However, it also raises a host of ethical problems
+      stemming from the inherent risks of Internet enabled devices, the sensitivity
+      of health-related data, and their impact on the delivery of healthcare. This
+      paper maps the main ethical problems that have been identified by the relevant
+      literature and identifies key themes in the on-going debate on ethical problems
+      concerning H-IoT.\n\n"
+    downloadLink: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2932221
+  - sys:
+      id: 3cOeeEr4gwSQWWcSygCQAK
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
+      updatedAt: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: Google DeepMind and healthcare in an age of algorithms
+    authors:
+    - Julia Powles
+    - Hal Hodson
+    publicationDate: !ruby/object:DateTime 2017-03-16 00:00:00.000000000 -04:00
+    innovationCategory:
+    - Big Data
+    - Data Analysis
+    - Algorithmic Scrutiny
+    objectiveCategory:
+    - Effectiveness
+    - Accountability
+    sectorCategory:
+    - Health
+    - Big Data
+    methodology:
+    - Case Studies
+    publicationType:
+    - Journal Article
+    abstract: "Data-driven tools and techniques, particularly machine learning methods
+      that underpin artificial intelligence, offer promise in improving healthcare
+      systems and services. One of the companies aspiring to pioneer these advances
+      is DeepMind Technologies Limited, a wholly-owned subsidiary of the Google conglomerate,
+      Alphabet Inc. In 2016, DeepMind announced its first major health project: a
+      collaboration with the Royal Free London NHS Foundation Trust, to assist in
+      the management of acute kidney injury. Initially received with great enthusiasm,
+      the collaboration has suffered from a lack of clarity and openness, with issues
+      of privacy and power emerging as potent challenges as the project has unfolded.
+      Taking the DeepMind-Royal Free case study as its pivot, this article draws a
+      number of lessons on the transfer of population-derived datasets to large private
+      prospectors, identifying critical questions for policy-makers, industry and
+      individuals as healthcare moves into an algorithmic age.\n\n"
+    downloadLink: https://link.springer.com/article/10.1007%2Fs12553-017-0179-1
+  - sys:
+      id: 5NideXdtTyGWskIaQUk8S2
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
+      updatedAt: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
+      revision: 1
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'The Public Impact Gap: Focusing Governments on Outcomes and
+      Potential'
+    organization:
+    - Centre for Public Impact
+    innovationCategory:
+    - Data Governance
+    objectiveCategory:
+    - Effectiveness
+    - Legitimacy
+    sectorCategory:
+    - Governance
+    methodology:
+    - Conceptual Framework
+    - Quantitative Analysis
+    publicationType:
+    - Research Report
+    abstract: |-
+      The Public Impact Gap is the difference
+      between the outcomes a government
+      is achieving and the outcomes it could
+      be achieving. It works by comparing a
+      government’s performance on a given
+      outcome (for example, road traffic safety) to a
+      stretching but achievable benchmark based on
+      a group of peers.
+      A country’s Public Impact Gap tells us how far
+      that country lags behind its peers, and also
+      what impact could be achieved if the Gap were
+      to be closed (for example, the number of lives
+      that could saved). While it is a relatively simple
+      concept, we believe that the Public Impact Gap
+      can be a useful tool in holding governments
+      to account for delivering outcomes in areas
+      of fundamental importance to each of us,
+      including education, health, and safety.
+      Highlighting where Public Impact Gaps
+      exist is just the beginning of the story. The
+      Centre for Public Impact has also set out the
+      means to diagnose, address and close Public
+      Impact Gaps by publishing the Public Impact
+      Fundamentals – a free tool for governments,
+      developed with leading academics to help
+      leaders achieve better outcomes. This tool can
+      be used in conjunction with the Public Impact
+      Observatory, a free database of more than 200
+      case studies, accessible via the Centre for
+      Public Impact’s website.
+    downloadLink: https://publicimpact.blob.core.windows.net/production/2017/03/CPI-Public-Impact-Gap-Report.pdf
+  - sys:
+      id: 5pccpUnt8Ayc22wC8qIIog
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      createdAt: !ruby/object:DateTime 2017-04-28 17:10:10.988000000 Z
+      updatedAt: !ruby/object:DateTime 2017-05-11 20:47:26.632000000 Z
+      revision: 4
+      contentType:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publicationName: 'Geospatial big data and cartography: research challenges and
+      opportunities for making maps that matter'
+    publicationDate: !ruby/object:DateTime 2016-05-26 00:00:00.000000000 -04:00
+    innovationCategory:
+    - Big Data
+    - Citizen Engagement and Crowdsourcing
+    - Co-Creation
+    - Data Analysis
+    - Open Data
+    sectorCategory:
+    - Geospatial Services
+    - Big Data
+    methodology:
+    - Conceptual Framework
+    publicationType:
+    - Journal Article
+    abstract: "Geospatial big data present a new set of challenges and opportunities
+      for cartographic researchers in technical, methodological and artistic realms.
+      New computational and technical paradigms for cartography are accompanying the
+      rise of geospatial big data. Additionally, the art and science of cartography
+      needs to focus its contemporary efforts on work that connects to outside disciplines
+      and is grounded in problems that are important to humankind and its sustainability.
+      Following the development of position papers and a collaborative workshop to
+      craft consensus around key topics, this article presents a new cartographic
+      research agenda focused on making maps that matter using geospatial big data.
+      This agenda provides both long-term challenges that require significant attention
+      and short-term opportunities that we believe could be addressed in more concentrated
+      studies.\n\n"
+    downloadLink: http://www.tandfonline.com/doi/abs/10.1080/23729333.2016.1278151
+- sys:
+    id: 14iiA42nvoacEWKcEkuGks
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    createdAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
+    updatedAt: !ruby/object:DateTime 2016-12-08 06:17:47.846000000 Z
+    revision: 5
+    contentType:
+      sys:
+        id: blogpost
+    locale: en-US
+  title: 'Toward Evidence-Based Open Governance by Curating and Exchanging Research:
+    OGRX 2.0'
+  author:
+  - Stefaan Verhulst
+  - Andrew Young
+  affiliation:
+  - The GovLab
+  type:
+  - Announcement
+  highlight: OGRX seeks to improve the visibility and accessibility of open governance
+    research – across domains like open data, crowdsourcing and civic tech
+  post: "The Open Governance Research Exchange (OGRX) is a platform that seeks to
+    identify, collect and share curated insights on new ways of solving public problems.
+    It was created last year by founding partners [the GovLab](http://ogrx.org/organizations/the-govlab.html),
+    [World Bank Digital Engagement Evaluation Team](http://ogrx.org/organizations/world-bank-digital-engagement-evaluation-team.html)
+    and [mySociety](http://ogrx.org/organizations/mysociety.html). Today, while more
+    than 3000 representatives from more than 70 countries are gathering in Paris for
+    the Open Government Partnership Summit, we are launching OGRX 2.0 with new features
+    and functionalities to further help users identify the signal in the noise of
+    research and evidence on more innovative means of governing.\n \n__What are the
+    goals behind OGRX?__\n\nThe field of research on topics falling under the banner
+    of open governance is rapidly growing and evolving. Identifying the most important
+    findings remains challenging, however, and important work often resides behind
+    paywalls. OGRX seeks to improve the visibility and accessibility of open governance
+    research – across domains like open data, crowdsourcing and civic tech – through
+    curation, a [submission form](http://ogrx.org/submit.html) for users to share
+    important publications and a detailed taxonomy to help users browse and find the
+    research that fits their needs.\n \n__What is new?__\n\nFirst, the new __OGRX
+    Blog__ provides an outlet for more easily digestible and shareable insights from
+    the open governance research community. OGRX currently features over 600 publications
+    on governance innovation – but how to digest and identify insights? This space
+    will provide summaries of important works, analyses of key trends in the field
+    of research, and guest posts from researchers working at the leading edge of governance
+    innovation across regions and domains. Check back often to stay on top of what’s
+    new in open governance research.\n \nSecond, the new __OGRX Selected Readings__
+    series offers curated reading lists from well-known experts in open governance.
+    These Selected Readings will give readers a sense of how to jumpstart their knowledge
+    by focusing on those publications that have been curated by those in the known
+    about the topics at hand. Today we are launching this new series with the [Selected
+    Readings on Civic Technology](http://ogrx.org/list/selected-readings-on-civic-technology.html),
+    curated by mySociety’s head of research [Rebecca Rumbul](http://ogrx.org/authors/rebecca-rumbul.html);
+    and the [Selected Readings on Policy Informatics](http://ogrx.org/list/selected-readings-on-policy-informatics.html),
+    curated by [Erik Johnston](http://ogrx.org/by/author.html?filter=.f-erik-johnston)
+    of the [MacArthur Foundation Research Network on Opening Governance](http://www.opening-governance.org/)
+    and director of the Arizona State University Center for Policy Informatics. New
+    Selected Readings will be posted each month, so check back often!\n \n__Help us
+    develop this joint resource on Open Governance__\n\nThese new developments are
+    only the beginning of our efforts to increase the utility of OGRX and work toward
+    more evidence based open governance. Future efforts could include a forum for
+    researchers to share insights and best practices and a project inventory to help
+    researchers identify partners and avoid duplicative efforts. Watch this space
+    and #OGRX to stay abreast of new developments.\n \nAnd if you are interested in
+    becoming an OGRX partner, developing a Selected Readings list or penning a guest
+    post for the OGRX blog, please contact Andrew Young, OGRX editor-in-chief at [andrew@thegovlab.org](mailto:andrew@thegovlab.org).
+    We’d also love to hear your feedback on the platform and any ideas you might have
+    about how to ensure that it is as useful to the community of open governance researchers,
+    policymakers and practitioners as possible.\n\n\n"
+- sys:
     id: 6oldouyjNSuWOwcwKc8kiM
     space:
       sys:
@@ -608,73 +963,3 @@ blogpost:
       and bureaucratization and back again. I suggest that this perpetually aspirational
       logic results in the problem of “too much democracy in all the wrong places.”'
     downloadLink: http://www.journals.uchicago.edu/doi/full/10.1086/688705
-- sys:
-    id: 14iiA42nvoacEWKcEkuGks
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 06:17:47.846000000 Z
-    revision: 5
-    contentType:
-      sys:
-        id: blogpost
-    locale: en-US
-  title: 'Toward Evidence-Based Open Governance by Curating and Exchanging Research:
-    OGRX 2.0'
-  author:
-  - Stefaan Verhulst
-  - Andrew Young
-  affiliation:
-  - The GovLab
-  type:
-  - Announcement
-  highlight: OGRX seeks to improve the visibility and accessibility of open governance
-    research – across domains like open data, crowdsourcing and civic tech
-  post: "The Open Governance Research Exchange (OGRX) is a platform that seeks to
-    identify, collect and share curated insights on new ways of solving public problems.
-    It was created last year by founding partners [the GovLab](http://ogrx.org/organizations/the-govlab.html),
-    [World Bank Digital Engagement Evaluation Team](http://ogrx.org/organizations/world-bank-digital-engagement-evaluation-team.html)
-    and [mySociety](http://ogrx.org/organizations/mysociety.html). Today, while more
-    than 3000 representatives from more than 70 countries are gathering in Paris for
-    the Open Government Partnership Summit, we are launching OGRX 2.0 with new features
-    and functionalities to further help users identify the signal in the noise of
-    research and evidence on more innovative means of governing.\n \n__What are the
-    goals behind OGRX?__\n\nThe field of research on topics falling under the banner
-    of open governance is rapidly growing and evolving. Identifying the most important
-    findings remains challenging, however, and important work often resides behind
-    paywalls. OGRX seeks to improve the visibility and accessibility of open governance
-    research – across domains like open data, crowdsourcing and civic tech – through
-    curation, a [submission form](http://ogrx.org/submit.html) for users to share
-    important publications and a detailed taxonomy to help users browse and find the
-    research that fits their needs.\n \n__What is new?__\n\nFirst, the new __OGRX
-    Blog__ provides an outlet for more easily digestible and shareable insights from
-    the open governance research community. OGRX currently features over 600 publications
-    on governance innovation – but how to digest and identify insights? This space
-    will provide summaries of important works, analyses of key trends in the field
-    of research, and guest posts from researchers working at the leading edge of governance
-    innovation across regions and domains. Check back often to stay on top of what’s
-    new in open governance research.\n \nSecond, the new __OGRX Selected Readings__
-    series offers curated reading lists from well-known experts in open governance.
-    These Selected Readings will give readers a sense of how to jumpstart their knowledge
-    by focusing on those publications that have been curated by those in the known
-    about the topics at hand. Today we are launching this new series with the [Selected
-    Readings on Civic Technology](http://ogrx.org/list/selected-readings-on-civic-technology.html),
-    curated by mySociety’s head of research [Rebecca Rumbul](http://ogrx.org/authors/rebecca-rumbul.html);
-    and the [Selected Readings on Policy Informatics](http://ogrx.org/list/selected-readings-on-policy-informatics.html),
-    curated by [Erik Johnston](http://ogrx.org/by/author.html?filter=.f-erik-johnston)
-    of the [MacArthur Foundation Research Network on Opening Governance](http://www.opening-governance.org/)
-    and director of the Arizona State University Center for Policy Informatics. New
-    Selected Readings will be posted each month, so check back often!\n \n__Help us
-    develop this joint resource on Open Governance__\n\nThese new developments are
-    only the beginning of our efforts to increase the utility of OGRX and work toward
-    more evidence based open governance. Future efforts could include a forum for
-    researchers to share insights and best practices and a project inventory to help
-    researchers identify partners and avoid duplicative efforts. Watch this space
-    and #OGRX to stay abreast of new developments.\n \nAnd if you are interested in
-    becoming an OGRX partner, developing a Selected Readings list or penning a guest
-    post for the OGRX blog, please contact Andrew Young, OGRX editor-in-chief at [andrew@thegovlab.org](mailto:andrew@thegovlab.org).
-    We’d also love to hear your feedback on the platform and any ideas you might have
-    about how to ensure that it is as useful to the community of open governance researchers,
-    policymakers and practitioners as possible.\n\n\n"
