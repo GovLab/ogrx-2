@@ -7,34 +7,35 @@ color: rgba( 63, 112, 182, 1)
   <!-- {# Author's Info #} -->
   <div class="top-section" {% if page.color %} style="background-color: {{page.color}}{% endif %}">
     <div class="row">
-      <div class="large-6 column author-page__image-column">
+      <div class="small-12 medium-6 large-6 column author-page__image-column">
         <div class="author-page__picture" style="background-image: url(../images/authors/{{ page.image }})"></div>
-        {% if page.long_description %}<span class="button more-info-panel-trigger" onclick="$('.extra-info-panel').toggleClass('visible');">More Information</span>{% endif %}
+        <div class="author-page__extras">
+          {% if page.social_media.twitter %}
+          <a href="{{ page.social_media.twitter }}" class="social-media-icon" target="_blank"><img src="../images/twitter-logo.png" alt=""></a>
+          {% endif %}
+          {% if page.social_media.github %}
+          <a href="{{ page.social_media.github }}" class="social-media-icon" target="_blank"><img src="../images/github-logo.svg" alt=""></a>
+          {% endif %}
+          {% if page.social_media.facebook %}
+          <a href="{{ page.social_media.facebook }}" class="social-media-icon" id="facebook-logo" target="_blank"><img src="../images/facebook-logo.png" alt="{{page.title}} Facebook"></a>
+          {% endif %}
+          {% if page.social_media.linkedin %}
+          <a href="{{ page.social_media.linkedin }}" class="social-media-icon" id="linkedin-logo" target="_blank"><img src="../images/linkedin-logo.png" alt="{{page.title}} Linkedin"></a>
+          {% endif %}
+          {% if page.social_media.medium %}
+          <a href="{{ page.social_media.medium }}" class="social-media-icon" id="medium-logo" target="_blank"><img src="../images/medium-m-color-688.png" alt="{{page.title}} Medium"></a>
+          {% endif %}
+          {% if page.social_media.url %}
+          <a href="{{ page.social_media.url }}" class="social-media-icon" id="medium-url" target="_blank"><img src="../images/browser-window-logo.png" alt="{{page.title}} url"></a>
+          {% endif %}
+        </div>
       </div>
-      <div class="large-6 column">
+      <div class="small-12 medium-6 large-6 column align-left">
         <h1 class="author-page__name">{{ page.title }}</h1>
         <h2 class="author-page__job">{{ page.job }}</h2>
         <p class="author-page__description">{{ page.short_description }}</p>
-        <div class="author-page__extras">
-          {% if page.social_media.twitter %}
-            <a href="{{ page.social_media.twitter }}" class="social-media-icon" target="_blank"><img src="../images/twitter-logo.png" alt=""></a>
-          {% endif %}
-          {% if page.social_media.github %}
-            <a href="{{ page.social_media.github }}" class="social-media-icon" target="_blank"><img src="../images/github-logo.svg" alt=""></a>
-          {% endif %}
-          {% if page.social_media.facebook %}
-            <a href="{{ page.social_media.facebook }}" class="social-media-icon" id="facebook-logo" target="_blank"><img src="../images/facebook-logo.png" alt="{{page.title}} Facebook"></a>
-          {% endif %}
-          {% if page.social_media.linkedin %}
-            <a href="{{ page.social_media.linkedin }}" class="social-media-icon" id="linkedin-logo" target="_blank"><img src="../images/linkedin-logo.png" alt="{{page.title}} Linkedin"></a>
-          {% endif %}
-          {% if page.social_media.medium %}
-            <a href="{{ page.social_media.medium }}" class="social-media-icon" id="medium-logo" target="_blank"><img src="../images/medium-m-color-688.png" alt="{{page.title}} Medium"></a>
-          {% endif %}
-          {% if page.social_media.url %}
-            <a href="{{ page.social_media.url }}" class="social-media-icon" id="medium-url" target="_blank"><img src="../images/browser-window-logo.png" alt="{{page.title}} url"></a>
-          {% endif %}
-        </div>
+
+        {% if page.long_description %}<span class="button more-info-panel-trigger" onclick="$('.extra-info-panel').toggleClass('visible');">More Information</span>{% endif %}
       </div>
     </div>
 
