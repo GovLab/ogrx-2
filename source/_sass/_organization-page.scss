@@ -50,6 +50,15 @@
   }
 }
 
+@media only screen
+and (max-width: 799px) {
+  .author-page {
+    .align-left {
+      text-align: center;
+    }
+  }
+}
+
 .author-page {
   &__picture {
     width: 300px;
