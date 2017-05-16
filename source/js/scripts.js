@@ -68,7 +68,8 @@ $(document).ready(function () {
             {
                 breakpoint: 800,
                 settings: {
-                    draggable: true
+                    draggable: true,
+                    arrows: false
                 }
             }
         ]
