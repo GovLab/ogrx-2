@@ -215,6 +215,26 @@
 .slide.slide--color2 {
   background-color: #002b3c; }
 
+.main-menu:not(.js-active-menu) {
+  box-shadow: none; }
+
+/* fix mobile layout bug */
+@media only screen and (max-width: 799px) {
+  .featured-authors {
+    display: block;
+    text-align: center; }
+    .featured-authors__list-item {
+      flex: unset; } }
+.search-box-container {
+  margin: 0 auto;
+  max-width: 65%; }
+
+@media only screen and (max-width: 799px) {
+  .search-box-container {
+    max-width: 90%; } }
+@media only screen and (max-width: 799px) {
+  .footer__content .button {
+    margin: 0 auto; } }
 .footer h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -405,11 +425,18 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   font-size: 1.2rem;
   font-weight: 400; }
 
-.organization-page__extras,
-.author-page__extras {
+.organization-page__extras {
   text-align: left;
   padding-top: 10px; }
 
+.author-page__extras {
+  padding-top: 10px; }
+.author-page .align-left {
+  text-align: left; }
+
+@media only screen and (max-width: 799px) {
+  .author-page .align-left {
+    text-align: center; } }
 .author-page__picture {
   width: 300px;
   height: 300px;
