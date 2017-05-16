@@ -226,3 +226,9 @@
   }
 
 }
+
+.main-menu {
+  &:not(.js-active-menu) {
+    box-shadow: none;
+  }
+}
