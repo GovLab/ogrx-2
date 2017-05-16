@@ -232,3 +232,17 @@
     box-shadow: none;
   }
 }
+
+/* fix mobile layout bug */
+@media only screen
+and (max-width: 799px) {
+
+  .featured-authors {
+    display: block;
+    text-align: center;
+    &__list-item {
+      flex: unset;
+    }
+  }
+
+}
