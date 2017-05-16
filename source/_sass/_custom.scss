@@ -246,3 +246,15 @@ and (max-width: 799px) {
   }
 
 }
+
+.search-box-container {
+  margin: 0 auto;
+  max-width: 65%;
+}
+
+@media only screen
+and (max-width: 799px) {
+  .search-box-container {
+    max-width: 90%;
+  }
+}
