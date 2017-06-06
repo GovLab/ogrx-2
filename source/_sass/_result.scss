@@ -163,7 +163,7 @@
 
     p { display: inline-block; font-size: .6rem; text-transform: uppercase}
 
-    a { display:inline-block; } 
+    a { display:inline-block; }
 
     img {
       display:inline-block;
@@ -247,6 +247,10 @@
       }
       &--macarthur-foundation-research-network-on-opening-governance {
         background-color: rgba(#26ace2, .8);
+        i {color: white;}
+      }
+      &--making-all-voices-count {
+        background-color: rgba(#000000, .8);
         i {color: white;}
       }
 

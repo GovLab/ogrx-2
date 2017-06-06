@@ -227,3 +227,23 @@
     url: false
   display: false
   display_rank: 0
+
+- title: Making All Voices Count
+  image: mavc-ogrx-color.png
+  image_white: mavc-ogrx-white-badge.png # Logo image (white version)
+  image_white_full: mavc-ogrx-white-full.png # Logo image (white version)
+  short_description: >
+    <p>Making All Voices Count is a programme that works on tech-enabled approaches to amplifying citizen voice and supporting responsive, accountable governance. Over four years, it has made grants to a range of tech-enabled governance initiatives, and to researchers who are examining when and how such approaches create postive changes in governance. The programme, which ends in November 2017, focuses on Bangladesh, Ghana, Indonesia, Kenya, Liberia, Mozambique, Nigeria, Pakistan, South Africa, Tanzania, The Philippines and Uganda. It is implemented by Hivos, the Institute of Development Studies (UK), and Ushahidi, and is funded by DFID, USAID, SIDA and the Omidyar Network.</p>
+  long_description:
+  display_name:
+    - Making All Voices Count
+    - making-all-voices-count
+  founding_partner: false
+  color: "000000" # Hash value to be applied to the top section
+  social_media: # Links
+    github: false
+    facebook: https://www.facebook.com/AllVoicesCount
+    twitter: https://twitter.com/allvoicescount
+    url: http://www.makingallvoicescount.org
+  display: true
+  display_rank: 1
