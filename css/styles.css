@@ -837,6 +837,10 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background-color: rgba(38, 172, 226, 0.8); }
   .result-item__extras--macarthur-foundation-research-network-on-opening-governance i {
     color: white; }
+.result-item__extras--making-all-voices-count {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .result-item__extras--making-all-voices-count i {
+    color: white; }
 .result-item__extras--closed-access {
   color: #b33945;
   opacity: 1; }
