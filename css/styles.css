@@ -948,7 +948,7 @@ a {
       border: none; }
   #blog-single .blog-single h2, #blog-single .blog-single h3, #blog-single .blog-single h4 {
     color: #004f6f; }
-  #blog-single .blog-single__highlight {
+  #blog-single .blog-single__highlight p {
     font-size: 3rem;
     font-weight: 100;
     text-align: left;
