@@ -10,7 +10,7 @@ layout: default
   <section class="blog-content blog-single">
     <div class="row">
       <div class="large-8 column large-offset-2">
-        <p class="blog-single__highlight">{{page.highlight}}</p>
+        <p class="blog-single__highlight">{{page.highlight | markdownify}}</p>
         {{page.post | markdownify}}
       </div>
     </div>
