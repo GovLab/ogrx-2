@@ -11,8 +11,8 @@ layout: default
     <div class="large-3 column">
       <aside class="sidebar">
         <nav class="sidebar-menu">
-
-        {% for i in site.data.contentful.spaces.blog.blogpost %}
+        {%assign blog_toc = site.data.contentful.spaces.blog.blogpost | date_sort | reverse %}
+        {% for i in blog_toc %}
           <a href="{{i.title | datapage_url: 'blog'}}">{{i.title}}</a>
         {% endfor %}
         </nav>
