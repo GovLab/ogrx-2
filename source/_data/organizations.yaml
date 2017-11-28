@@ -1,3 +1,22 @@
+- title: Data for Policy # Organization
+  image: dfp-logo.png # Logo image
+  image_white: dfp-logo-white.png # Logo image (white version)
+  short_description: Data for Policy is an international conference series dedicated to exploring the interface between Data Science and Government Policy with input from top academic institutions, government departments, international organisations and other key stakeholders in the non-profit and commercial sectors.
+  long_description:
+  display_name:
+    - data-for-policy # To be used as a custom filter
+    - Data for Policy
+  founding_partner: false
+  network_partner: false
+  color: 008ab3 # Hash value to be applied to the top section
+  social_media: # Links
+    url: https://www.linkedin.com/company-beta/16271901/admin/updates/
+    github: false
+    facebook: https://www.facebook.com/dataforpolicy/
+    twitter: https://twitter.com/dataforpolicy
+  display: true
+  display_rank: 1
+
 - title: World Bank Digital Engagement Evaluation Team # Organization
   image: deet-logo.png # Logo image
   image_white: deet-logo-white.png # Logo image (white version)
