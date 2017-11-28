@@ -347,7 +347,7 @@
   transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease; }
 
 input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px transparent; }
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0); }
 
 input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
@@ -694,8 +694,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     left: 0;
     border-top: 12px solid rgba(0, 0, 0, 0.3);
     border-left: 12px solid rgba(0, 0, 0, 0.3);
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid transparent; }
+    border-right: 12px solid rgba(0, 0, 0, 0);
+    border-bottom: 12px solid rgba(0, 0, 0, 0); }
   .result-item__name {
     font-size: 1rem;
     text-transform: none;
