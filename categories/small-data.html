@@ -68,15 +68,6 @@
 <script>
 window.store = {
   
-  "paper-155": {
-    "title": "Beyond the Quantified Self: Thematic exploration of a dataistic paradigm",
-    "author": "Minna Ruckenstein,Mika Pantzar",
-    "category": "Small Data",
-    "content": "This article investigates the metaphor of the Quantified Self (QS) as it is presented in the magazine Wired (2008–2012). Four interrelated themes—transparency, optimization, feedback loop, and biohacking—are identified as formative in defining a new numerical self and promoting a dataist paradigm. Wired captures certain interests and desires with the QS metaphor, while ignoring and downplaying others, suggesting that the QS positions self-tracking devices and applications as interfaces that energize technological engagements, thereby pushing us to rethink life in a data-driven manner. The thematic analysis of the QS is treated as a schematic aid for raising critical questions about self-quantification, for instance, detecting the merging of epistemological claims, technological devices, and market-making efforts. From this perspective, another definition of the QS emerges: a knowledge system that remains flexible in its aims and can be used as a resource for epistemological inquiry and in the formation of alternative paradigms.",
-    "url": "papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html"
-  }
-  ,
-  
   "paper-388": {
     "title": "Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle",
     "author": "Liane Colonna",
@@ -86,12 +77,12 @@ window.store = {
   }
   ,
   
-  "paper-a19": {
-    "title": "Data Ethics – The New Competitive Advantage",
-    "author": "Grey Hasselbalch,Pernille Tranberg",
+  "paper-155": {
+    "title": "Beyond the Quantified Self: Thematic exploration of a dataistic paradigm",
+    "author": "Minna Ruckenstein,Mika Pantzar",
     "category": "Small Data",
-    "content": "Respect for privacy and the individual’s right to control their own data is becoming a key competitive parameter. Companies, organisations and authorities that treat data ethics as a social responsibility as important as environmental awareness and respect for human rights are tomorrow’s winners. Digital trust is paramount for digital growth and welfare.  This book combines broad trend analysis with case studies of companies working with data ethics to varying degrees. The authors make the case how citizens and consumers are no longer just concerned about their lack of control over data, but also have begun to act, and how alternative business models, advances in technology and a new European data protection regulation combined foster a growing market for data ethical products and services. It provides a critical and fresh look at tech trends and the ethical dilemmas intertwined with them. It is a book for responsible players on how to get started with data ethics and how to use it to develop digital trust.",
-    "url": "papers/data-ethics--the-new-competitive-advantage.html"
+    "content": "This article investigates the metaphor of the Quantified Self (QS) as it is presented in the magazine Wired (2008–2012). Four interrelated themes—transparency, optimization, feedback loop, and biohacking—are identified as formative in defining a new numerical self and promoting a dataist paradigm. Wired captures certain interests and desires with the QS metaphor, while ignoring and downplaying others, suggesting that the QS positions self-tracking devices and applications as interfaces that energize technological engagements, thereby pushing us to rethink life in a data-driven manner. The thematic analysis of the QS is treated as a schematic aid for raising critical questions about self-quantification, for instance, detecting the merging of epistemological claims, technological devices, and market-making efforts. From this perspective, another definition of the QS emerges: a knowledge system that remains flexible in its aims and can be used as a resource for epistemological inquiry and in the formation of alternative paradigms.",
+    "url": "papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html"
   }
   ,
   
@@ -101,6 +92,15 @@ window.store = {
     "category": "Labs and Experimentation,Small Data,Algorithmic Scrutiny,Artificial Intelligence",
     "content": "To achieve our vision of digital equality, we need to understand how new technologies are shaping society; where they present opportunities to make people's lives better, and indeed where they threaten to create harm. To this end, we have commisioned a series of white papers examining three key digital trends: artificial intelligence, algorithms, and control of personal data. The papers focus on low- and middle-income countries, which are all too often overlooked in debates around the impacts of emerging technologies.The series addresses each of these three digital issues, looking at how they are impacting people's lives and identifying steps that governments, companies and civil society organizations can take to limit the harms, and maximize benefits, for citizens.We will use these white papers to refine our thinking and set our work agenda on digital equality in the years ahead. We are sharing them openly with the hope they benefit others working towards our goal and to amplify the limited research currently available on digital issues in low- and middle-income countries. We intend the papers to foster discussion about the steps we can take together to ensure emerging technologies are used in ways that benefit people's lives, whether they are in Los Angeles or Lagos.",
     "url": "papers/opportunities-and-risks-in-emerging-technologies.html"
+  }
+  ,
+  
+  "paper-a19": {
+    "title": "Data Ethics – The New Competitive Advantage",
+    "author": "Grey Hasselbalch,Pernille Tranberg",
+    "category": "Small Data",
+    "content": "Respect for privacy and the individual’s right to control their own data is becoming a key competitive parameter. Companies, organisations and authorities that treat data ethics as a social responsibility as important as environmental awareness and respect for human rights are tomorrow’s winners. Digital trust is paramount for digital growth and welfare.  This book combines broad trend analysis with case studies of companies working with data ethics to varying degrees. The authors make the case how citizens and consumers are no longer just concerned about their lack of control over data, but also have begun to act, and how alternative business models, advances in technology and a new European data protection regulation combined foster a growing market for data ethical products and services. It provides a critical and fresh look at tech trends and the ethical dilemmas intertwined with them. It is a book for responsible players on how to get started with data ethics and how to use it to develop digital trust.",
+    "url": "papers/data-ethics--the-new-competitive-advantage.html"
   }
   
   
@@ -175,11 +175,11 @@ window.store = {
             <select name="" id="filter-objective" class="filter js-change" >
               <option data-filter="**">Objective</option>
               
-              <option data-filter="f-effectiveness">Effectiveness</option>
+              <option data-filter="f-legitimacy">Legitimacy</option>
               
               <option data-filter="f-privacy">Privacy</option>
               
-              <option data-filter="f-legitimacy">Legitimacy</option>
+              <option data-filter="f-effectiveness">Effectiveness</option>
               
             </select>
           </div>
@@ -229,13 +229,13 @@ window.store = {
             <select name="" id="filter-type" class="filter js-change" >
               <option data-filter="******">Type</option>
               
-              <option data-filter="f-journal-article">Journal Article</option>
-              
               <option data-filter="f-research-report">Research Report</option>
               
-              <option data-filter="f-book">Book</option>
+              <option data-filter="f-journal-article">Journal Article</option>
               
               <option data-filter="f-white-paper">White Paper</option>
+              
+              <option data-filter="f-book">Book</option>
               
             </select>
           </div>
@@ -271,110 +271,6 @@ window.store = {
     <div class="column large-12">
 
       
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-      f-privacy
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-minna-ruckenstein
-      
-      f-mika-pantzar
-      
-
-      
-      m-small-data
-      
-
-      f-search-paper-155
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html" title="Beyond the Quantified Self: Thematic exploration of a dataistic paradigm">Beyond the Quantified Self: Thematic exploration of a dataistic paradigm</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Minna+Ruckenstein">Minna Ruckenstein</a>
-        
-        <a href="../by/author.html?query=Mika+Pantzar">Mika Pantzar</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-      <div class="result-item__unpaywall">
-        <p class="">May be available at</p>
-        <a href="http://unpaywall.org/"><img class="" src="../images/unpaywall.png" alt=""></a>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">closed</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-    </div>
-
-    
 
       <div class="result-item
       
@@ -490,7 +386,9 @@ window.store = {
       
 
       
-      f-legitimacy
+      f-effectiveness
+      
+      f-privacy
       
 
       
@@ -498,9 +396,7 @@ window.store = {
       
 
       
-      f-human-rights
-      
-      f-business
+      f-health
       
 
       
@@ -508,28 +404,28 @@ window.store = {
       
 
       
-      f-book
+      f-journal-article
       
 
       
-      f-grey-hasselbalch
+      f-minna-ruckenstein
       
-      f-pernille-tranberg
+      f-mika-pantzar
       
 
       
       m-small-data
       
 
-      f-search-paper-a19
+      f-search-paper-155
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/data-ethics--the-new-competitive-advantage.html" title="Data Ethics – The New Competitive Advantage">Data Ethics – The New Competitive Advantage</a></h3>
+      <h3 class="result-item__name"><a href="../papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html" title="Beyond the Quantified Self: Thematic exploration of a dataistic paradigm">Beyond the Quantified Self: Thematic exploration of a dataistic paradigm</a></h3>
       <p class="result-item__authors">
         
-        <a href="../by/author.html?query=Grey+Hasselbalch">Grey Hasselbalch</a>
+        <a href="../by/author.html?query=Minna+Ruckenstein">Minna Ruckenstein</a>
         
-        <a href="../by/author.html?query=Pernille+Tranberg">Pernille Tranberg</a>
+        <a href="../by/author.html?query=Mika+Pantzar">Mika Pantzar</a>
         
       </p>
       <div class="result-item__taxonomy result-item__taxonomy--category">
@@ -553,7 +449,9 @@ window.store = {
         <span class="result-item__taxonomy__key">Objective</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
+          
+          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
           
         </span>
       </div>
@@ -561,7 +459,7 @@ window.store = {
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
           
-          <a class="result-item__tag" href="../types/book.html">Book</a>
+          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
           
         </span>
       </div>
@@ -664,6 +562,108 @@ window.store = {
         <span class="result-item__taxonomy__value">
           
           <a class="result-item__tag" href="../types/white-paper.html">White Paper</a>
+          
+        </span>
+      </div>
+      
+      <div class="result-item__unpaywall">
+        <p class="">May be available at</p>
+        <a href="http://unpaywall.org/"><img class="" src="../images/unpaywall.png" alt=""></a>
+      </div>
+      
+      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
+        <span class="result-item__taxonomy__key">Open</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="">closed</a>
+          
+        </span>
+      </div> -->
+      
+      
+      
+    </div>
+
+    
+
+      <div class="result-item
+      
+
+      
+
+      
+      f-legitimacy
+      
+
+      
+      f-conceptual-framework
+      
+
+      
+      f-human-rights
+      
+      f-business
+      
+
+      
+
+      
+
+      
+      f-book
+      
+
+      
+      f-grey-hasselbalch
+      
+      f-pernille-tranberg
+      
+
+      
+      m-small-data
+      
+
+      f-search-paper-a19
+
+      " style="display: inline-block; margin-left: -4px;">
+      <h3 class="result-item__name"><a href="../papers/data-ethics--the-new-competitive-advantage.html" title="Data Ethics – The New Competitive Advantage">Data Ethics – The New Competitive Advantage</a></h3>
+      <p class="result-item__authors">
+        
+        <a href="../by/author.html?query=Grey+Hasselbalch">Grey Hasselbalch</a>
+        
+        <a href="../by/author.html?query=Pernille+Tranberg">Pernille Tranberg</a>
+        
+      </p>
+      <div class="result-item__taxonomy result-item__taxonomy--category">
+        <span class="result-item__taxonomy__key">Category</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
+          
+        </span>
+
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--methodology">
+        <span class="result-item__taxonomy__key">Methodology</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--objective">
+        <span class="result-item__taxonomy__key">Objective</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
+          
+        </span>
+      </div>
+      <div class="result-item__taxonomy result-item__taxonomy--type">
+        <span class="result-item__taxonomy__key">Type</span>
+        <span class="result-item__taxonomy__value">
+          
+          <a class="result-item__tag" href="../types/book.html">Book</a>
           
         </span>
       </div>
