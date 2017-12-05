@@ -3,9 +3,9 @@ module Jekyll
     require 'date'
     def date_sort(collection)
       collection.sort_by do |e|
-        # puts e['sys']['createdAt']
-        # Date.parse(e['sys']['createdAt'], '%d-%m-%Y')
-        e['sys']['createdAt']
+        # puts e['sys']['created_at']
+        # Date.parse(e['sys']['created_at'], '%d-%m-%Y')
+        e['sys']['created_at']
     end
 end
 end

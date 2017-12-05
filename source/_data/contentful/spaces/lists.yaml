@@ -2,14 +2,15 @@
 list:
 - sys:
     id: 6iITlL4lYQ0gK8sEseKqCy
+    created_at: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
+    updated_at: !ruby/object:DateTime 2016-12-09 17:05:05.119000000 Z
+    content_type_id: list
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-09 17:05:05.119000000 Z
     revision: 6
-    contentType:
+    content_type:
       sys:
         id: list
     locale: en-US
@@ -84,22 +85,23 @@ list:
     encouraging picture of current institutional behaviours, however is inspirational
     and thought-provoking for civic technologists in identifying a key issue that
     requires an innovative solution. "
-  articlesList:
+  articles_list:
   - sys:
       id: paper_360
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Evaluating Digital Citizen Engagement : A Practical Guide'
+    publication_name: 'Evaluating Digital Citizen Engagement : A Practical Guide'
     organization:
     - World Bank Digital Engagement Evaluation Team
     region:
@@ -109,20 +111,20 @@ list:
     - Kenya
     authors:
     - World Bank Group
-    publicationDate: !ruby/object:DateTime 2015-02-25 12:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-02-25 12:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Civic Technology
     - Data Analysis
-    objectiveCategory:
+    objective_category:
     - Legitimacy
     - Participation
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Working Paper
-    gitHub: ''
+    git_hub: ''
     abstract: |-
       With growing demand for transparency, accountability and citizen participation in
        policy making and service provision, engagement between citizens and their governments,
@@ -135,43 +137,44 @@ list:
        technology has had on the engagement processes. With examples and lessons from case studies from Brazil, Uganda, Cameroon and
        Kenya, the guide provides practical tools and guidelines for use in evaluating the
        expanding field of digital citizen engagement.
-    downloadLink: https://openknowledge.worldbank.org/bitstream/handle/10986/23752/deef-book.pdf?sequence=1&isAllowed=y
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: https://openknowledge.worldbank.org/bitstream/handle/10986/23752/deef-book.pdf?sequence=1&isAllowed=y
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: paper_373
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: '"I wld like u WMP to extend electricity 2 our village": On Information
-      Technology and Interest Articulation'
+    publication_name: '"I wld like u WMP to extend electricity 2 our village": On
+      Information Technology and Interest Articulation'
     region:
     - Uganda
     authors:
     - Guy Grossman
     - Macartan Humphreys
     - Gabriella Sacramone-Lutz
-    publicationDate: !ruby/object:DateTime 2014-08-16 12:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2014-08-16 12:00:00.000000000 -04:00
+    innovation_category:
     - Civic Technology
     - Citizen Engagement and Crowdsourcing
-    objectiveCategory:
+    objective_category:
     - Participation
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Journal Article
-    gitHub: ''
+    git_hub: ''
     abstract: 'How does access to information communication technology (ICT) affect
       who gets heard and what gets communicated to politicians? On the one hand, ICT
       can lower communication costs for poorer constituents; on the other, technological
@@ -186,78 +189,80 @@ list:
       uptake by over 40%. Surprisingly however, subsidy-induced increases in uptake
       do not yield further flattening since free channels are not used at higher rates
       by more marginalized constituents.'
-    downloadLink: http://journals.cambridge.org/download.php?file=%2FPSR%2FPSR108_03%2FS0003055414000331a.pdf&code=217f5c3bd941bed57005a5003ed21b36
-    relatedContentTitle: Appendices
-    relatedContentUrl: http://journals.cambridge.org/action/displaySuppMaterial?cupCode=1&type=4&jid=PSR&volumeId=108&issueId=03&aid=9327413&sessionId=CC69E58744D741A07ED364A13603DA95.journals
-    relatedDataUrl: ''
+    download_link: http://journals.cambridge.org/download.php?file=%2FPSR%2FPSR108_03%2FS0003055414000331a.pdf&code=217f5c3bd941bed57005a5003ed21b36
+    related_content_title: Appendices
+    related_content_url: http://journals.cambridge.org/action/displaySuppMaterial?cupCode=1&type=4&jid=PSR&volumeId=108&issueId=03&aid=9327413&sessionId=CC69E58744D741A07ED364A13603DA95.journals
+    related_data_url: ''
   - sys:
       id: paper_323
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Who Benefits From Civic Technology?
+    publication_name: Who Benefits From Civic Technology?
     organization:
     - mySociety
     authors:
     - Rebecca Rumbul
-    publicationDate: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+    innovation_category:
     - Civic Technology
-    objectiveCategory:
+    objective_category:
     - Participation
     methodology:
     - Quantitative Analysis
-    publicationType:
+    publication_type:
     - Research Report
-    gitHub: ''
+    git_hub: ''
     abstract: This research seeks to begin at the beginning, asking the most basic
       questions about who actually uses civic technology and why. Gathering data from
       civic technology groups from around the world, it shows the variations in usage
       of civic tech across four core countries (US, UK, Kenya and South Africa), and
       records the attitudes of users towards the platforms they are using.
-    downloadLink: http://www.mysociety.org/research/who-benefits-from-civic-technology/
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: http://www.mysociety.org/research/who-benefits-from-civic-technology/
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: paper_321
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: When Does ICT-Enabled Citizen Voice Lead to Government Responsiveness?
+    publication_name: When Does ICT-Enabled Citizen Voice Lead to Government Responsiveness?
     organization:
     - World Bank Digital Engagement Evaluation Team
     authors:
     - Tiago Peixoto
     - Jonathan Fox
-    publicationDate: !ruby/object:DateTime 2016-01-01 12:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-01-01 12:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Working Paper
-    gitHub: ''
+    git_hub: ''
     abstract: |
       This paper reviews evidence on the use of 23 information and communication technology (ICT) platforms
        to project citizen voice to improve public service delivery. This meta-analysis focuses on empirical studies
@@ -273,44 +278,46 @@ list:
        a precise analytical focus on how different dimensions of such platforms contribute to public sector responsiveness.
        These cases suggest that while ICT platforms have been relevant in increasing policymakers’
        and senior managers’ capacity to respond, most of them have yet to influence their willingness to do so.
-    downloadLink: http://openknowledge.worldbank.org/bitstream/handle/10986/23650/WDR16-BP-When-Does-ICT-Enabled-Citizen-Voice-Peixoto-Fox.pdf?sequence=1&isAllowed=y
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: http://openknowledge.worldbank.org/bitstream/handle/10986/23650/WDR16-BP-When-Does-ICT-Enabled-Citizen-Voice-Peixoto-Fox.pdf?sequence=1&isAllowed=y
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: 6HezXYUtdmwWe0wIW4m02E
+      created_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'The Problem of Citizens: E-Democracy for Actually Existing Democracy'
+    publication_name: 'The Problem of Citizens: E-Democracy for Actually Existing
+      Democracy'
     authors:
     - Daniel Kreiss
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Distributed Governance
     - Open Data
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Access
     - Effectiveness
     - Participation
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Politics
     - Policy
     - Governance
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: 'This article argues that many contemporary e-democracy projects, particularly
       in the United States, have at their heart a model of atomistic, independent,
@@ -332,17 +339,18 @@ list:
       policy-making process.
 
 '
-    downloadLink: http://sms.sagepub.com/content/1/2/2056305115616151.abstract
+    download_link: http://sms.sagepub.com/content/1/2/2056305115616151.abstract
 - sys:
     id: 4XDvBZXr288E4smsGAiQCa
+    created_at: !ruby/object:DateTime 2017-02-02 22:41:46.138000000 Z
+    updated_at: !ruby/object:DateTime 2017-02-06 16:38:40.139000000 Z
+    content_type_id: list
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2017-02-02 22:41:46.138000000 Z
-    updatedAt: !ruby/object:DateTime 2017-02-06 16:38:40.139000000 Z
     revision: 3
-    contentType:
+    content_type:
       sys:
         id: list
     locale: en-US
@@ -382,36 +390,37 @@ list:
     on what’s known about making meetings successful – which shows why the vast majority
     of meetings in academic, business and politics are so unsuccessful in making the
     most of the brainpower of their participants.\n"
-  articlesList:
+  articles_list:
   - sys:
       id: B5jerRrhg42QgkMKGeqcs
+      created_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Collective Intelligence: Mankind''s Emerging World in Cyberspace'
+    publication_name: 'Collective Intelligence: Mankind''s Emerging World in Cyberspace'
     authors:
     - Pierre Levy
-    publicationDate: !ruby/object:DateTime 1999-01-19 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 1999-01-19 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
-    sectorCategory:
+    sector_category:
     - Internet Governance
     methodology:
     - Conceptual Framework
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Book
     abstract: The number of travelers along the information superhighway is increasing
       at a rate of 10 percent a month. How will this communications revolution affect
@@ -422,34 +431,35 @@ list:
       and imaginative insight rare among media critics. At once a profound historical
       analysis of the development of human culture and a blueprint for the future,
       Collective Intelligence is a visionary work.
-    downloadLink: https://www.amazon.com/Collective-Intelligence-Mankinds-Emerging-Cyberspace/dp/0738202614
+    download_link: https://www.amazon.com/Collective-Intelligence-Mankinds-Emerging-Cyberspace/dp/0738202614
   - sys:
       id: 2LO6aQwoukOqMkGaWggguQ
+      created_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Global Brain: The Evolution of Mass Mind from the Big Bang to
-      the 21st Century'
+    publication_name: 'Global Brain: The Evolution of Mass Mind from the Big Bang
+      to the 21st Century'
     authors:
     - Howard Bloom
-    publicationDate: !ruby/object:DateTime 2017-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Conceptual Framework
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Book
     abstract: |-
       In this extraordinary follow-up to the critically acclaimed The Lucifer Principle, Howard Bloom-one of today's preeminent thinkers-offers us a bold rewrite of the evolutionary saga. He shows how plants and animals (including humans) have evolved together as components of a worldwide learning machine. He describes the network of life on Earth as one that is, in fact, a ""complex adaptive system,"" a global brain in which each of us plays a sometimes conscious, sometimes unknowing role. and he reveals that the World Wide Web is just the latest step in the development of this brain. These are theories as important as they are radical. Informed by twenty years of interdisciplinary research, Bloom takes us on a spellbinding journey back to the big bang to let us see how its fires forged primordial sociality. As he brings us back via surprising routes, we see how our earliest bacterial ancestors built multitrillion-member research and development teams a full 3.5 billion years ago. We watch him unravel the previously unrecognized strands of interconnectedness woven by crowds of trilobites, hunting packs of dinosaurs, feathered flying lizards gathered in flocks, troops of baboons making communal decisions, and adventurous tribes of protohumans spreading across continents but still linked by primitive forms of information networking. We soon find ourselves reconsidering our place in the world. Along the way, Bloom offers us exhilarating insights into the strange tricks of body and mind that have organized a variety of life forms: spiny lobsters, which, during the Paleozoic age, participated in communal marching rituals; and bees, which, during the age of dinosaurs, conducted collective brainwork. This fascinating tour continues on to the sometimes brutal subculture wars that have spurred the growth of human civilization since the Stone Age. Bloom shows us how culture shapes our infant brains, immersing us in a matrix of truth and mass delusion that we think of as reality.
@@ -457,30 +467,31 @@ list:
       Global Brain is more than just a brilliantly original contribution to the ongoing debate on the inner workings of evolution. It is a ""grand vision,"" says the eminent evolutionary biologist David Sloan Wilson, a work that transforms our very view of who we are and why.
   - sys:
       id: 6N2e1GkpTqyok0eU28SAcC
+      created_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Handbook of Collective Intelligence
+    publication_name: Handbook of Collective Intelligence
     authors:
     - Thomas W. Malone
     - Michael S. Bernstein
-    publicationDate: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Essay Collection
-    publicationType:
+    publication_type:
     - Book
     abstract: "Intelligence does not arise only in individual brains; it also arises
       in groups of individuals. This is collective intelligence: groups of individuals
@@ -498,22 +509,23 @@ list:
       behavior in ant colonies; human-computer interaction and artificial intelligence;
       and cognitive psychology and the “wisdom of crowds” effect. Other areas in social
       science covered include social psychology, organizational theory, law, and communications. "
-    downloadLink: https://mitpress.mit.edu/hci
+    download_link: https://mitpress.mit.edu/hci
   - sys:
       id: 4P6hFcgOtGQUEAKw0mykiC
+      created_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Evidence for a Collective Intelligence Factor in the Performance
+    publication_name: Evidence for a Collective Intelligence Factor in the Performance
       of Human Groups
     authors:
     - Anita Williams Woolley
@@ -521,14 +533,14 @@ list:
     - Alex Pentland
     - Nada Hashmi
     - Thomas W. Malone
-    publicationDate: !ruby/object:DateTime 2010-10-29 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2010-10-29 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Randomized Controlled Trial
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: Psychologists have repeatedly shown that a single statistical factor—often
       called “general intelligence”—emerges from the correlations among people’s performance
@@ -541,39 +553,40 @@ list:
       correlated with the average social sensitivity of group members, the equality
       in distribution of conversational turn-taking, and the proportion of females
       in the group.
-    downloadLink: http://science.sciencemag.org/content/330/6004/686.full
+    download_link: http://science.sciencemag.org/content/330/6004/686.full
   - sys:
       id: 6HXCvv9TeEi0mkYmMwAese
+      created_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Collective Wisdom: Principles and Mechanisms'
+    publication_name: 'Collective Wisdom: Principles and Mechanisms'
     authors:
     - Hélène Landemore
     - Jon Elster
-    publicationDate: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
-    sectorCategory:
+    sector_category:
     - Law
     - Politics
     - Policy
     methodology:
     - Case Studies
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Book
     abstract: James Madison wrote, 'Had every Athenian citizen been a Socrates, every
       Athenian assembly would still have been a mob'. The contributors to this volume
@@ -585,36 +598,37 @@ list:
       same time, they consider voter irrationality and paradoxes of aggregation as
       possibly undermining the wisdom of groups. Implicitly or explicitly, the volume
       also offers guidance and warnings to institutional designers.
-    downloadLink: https://www.amazon.com/dp/B008R9T21E/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+    download_link: https://www.amazon.com/dp/B008R9T21E/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
   - sys:
       id: 4Uo7UpBEliua2YuwQ2gg8q
+      created_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Creative Intelligence in the 21st Century: Grappling with Enormous
+    publication_name: 'Creative Intelligence in the 21st Century: Grappling with Enormous
       Problems and Huge Opportunities'
     authors:
     - Don Ambrose
     - Robert J. Sternberg
-    publicationDate: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Education
     methodology:
     - Essay Collection
-    publicationType:
+    publication_type:
     - Book
     abstract: How can creative individuals and societies adapt to complex 21st-century
       conditions? Will civilizations thrive or collapse in the decades to come if
@@ -630,69 +644,71 @@ list:
       scholars of creativity and education use their impressive knowledge bases to
       clarify how we can adjust our thoughts and actions in order to give ourselves
       the best possible chances for success in this complex world.
-    downloadLink: http://www.springer.com/us/book/9789463005067
+    download_link: http://www.springer.com/us/book/9789463005067
   - sys:
       id: 4GB6B8Lh68iSguqKCieEs8
+      created_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Why do humans reason? Arguments for an argumentative theory
+    publication_name: Why do humans reason? Arguments for an argumentative theory
     authors:
     - Hugo Mercier
     - Dan Sperber
-    publicationDate: !ruby/object:DateTime 2017-11-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-11-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
     - Behavioral Science and Nudges
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: |-
       Reasoning is generally seen as a means to improve knowledge and make better decisions. However, much evidence shows that reasoning often leads to epistemic distortions and poor decisions. This suggests that the function of reasoning should be rethought. Our hypothesis is that the function of reasoning is argumentative. It is to devise and evaluate arguments intended to persuade.
       Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation. A wide range of evidence in the psychology of reasoning and decision making can be reinterpreted and better explained in the light of this hypothesis. Poor performance in standard reasoning tasks is explained by the lack of argumentative context. When the same problems are placed in a proper argumentative setting, people turn out to be skilled arguers. Skilled
       arguers, however, are not after the truth but after arguments supporting their views. This explains the notorious confirmation bias. This bias is apparent not only when people are actually arguing, but also when they are reasoning proactively from the perspective of having to defend their opinions. Reasoning so motivated can distort evaluations and attitudes and allow erroneous beliefs to persist. Proactively used reasoning also favors decisions that are easy to justify but not necessarily better. In all these instances traditionally described as failures or flaws, reasoning does exactly what can be expected of an argumentative device: Look for arguments that support a given conclusion, and, ceteris paribus, favor conclusions for which arguments can be found.
-    downloadLink: http://www.dan.sperber.fr/wp-content/uploads/2009/10/MercierSperberWhydohumansreason.pdf
+    download_link: http://www.dan.sperber.fr/wp-content/uploads/2009/10/MercierSperberWhydohumansreason.pdf
   - sys:
       id: 1pGoE8lal2MYMKKwyY2o4E
+      created_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Wiser: Getting Beyond Groupthink to Make Groups Smarter'
+    publication_name: 'Wiser: Getting Beyond Groupthink to Make Groups Smarter'
     authors:
     - Cass Sunstein
     - Reid Hastie
-    publicationDate: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
     - Behavioral Science and Nudges
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Case Studies
     - Conceptual Framework
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Book
     abstract: "Since the beginning of human history, people have made decisions in
       groups—first in families and villages, and now as part of companies, governments,
@@ -720,33 +736,34 @@ list:
       engaging and witty style, Wiser will not only enlighten you; it will help your
       team and your organization make better decisions—decisions that lead to greater
       success."
-    downloadLink: https://www.amazon.com/dp/B00O4CRR9C/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+    download_link: https://www.amazon.com/dp/B00O4CRR9C/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
   - sys:
       id: 62DK1TZwbuq0aOmoWqECEO
+      created_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Stronger Together: How Great Teams Work'
+    publication_name: 'Stronger Together: How Great Teams Work'
     authors:
     - Simon Hartley
-    publicationDate: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: "What do world-class teams do that others don't? How do those teams
       think, make decisions and respond to challenges?\n\nStronger Together will help
@@ -761,33 +778,34 @@ list:
       teams from businesses.\n\nThis truly insightful and fascinating book lifts the
       lid on what it takes to be the best and how we can translate these lessons to
       our own performance."
-    downloadLink: https://www.amazon.com/Stronger-Together-Great-Teams-Work/dp/0349408483
+    download_link: https://www.amazon.com/Stronger-Together-Great-Teams-Work/dp/0349408483
   - sys:
       id: 3yBdw6vQa4mEOWGWc0WesM
+      created_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Cognition in the Wild
+    publication_name: Cognition in the Wild
     authors:
     - Edwin Hutchins
-    publicationDate: !ruby/object:DateTime 1995-01-19 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 1995-01-19 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
     - Behavioral Science and Nudges
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: |-
       Edwin Hutchins combines his background as an anthropologist and an open ocean racing sailor and navigator in this account of how anthropological methods can be combined with cognitive theory to produce a new reading of cognitive science. His theoretical insights are grounded in an extended analysis of ship navigation—its computational basis, its historical roots, its social organization, and the details of its implementation in actual practice aboard large ships. The result is an unusual interdisciplinary approach to cognition in culturally constituted activities outside the laboratory—"in the wild."
@@ -795,36 +813,37 @@ list:
       Hutchins examines a set of phenomena that have fallen in the cracks between the established disciplines of psychology and anthropology, bringing to light a new set of relationships between culture and cognition. The standard view is that culture affects the cognition of individuals. Hutchins argues instead that cultural activity systems have cognitive properties of their own that are different from the cognitive properties of the individuals who participate in them. Each action for bringing a large naval vessel into port, for example, is informed by culture: the navigation team can be seen as a cognitive and computational system.
 
       Introducing Navy life and work on the bridge, Hutchins makes a clear distinction between the cognitive properties of an individual and the cognitive properties of a system. In striking contrast to the usual laboratory tasks of research in cognitive science, he applies the principal metaphor of cognitive science—cognition as computation (adopting David Marr's paradigm)—to the navigation task. After comparing modern Western navigation with the method practiced in Micronesia, Hutchins explores the computational and cognitive properties of systems that are larger than an individual. He then turns to an analysis of learning or change in the organization of cognitive systems at several scales. Hutchins's conclusion illustrates the costs of ignoring the cultural nature of cognition, pointing to the ways in which contemporary cognitive science can be transformed by new meanings and interpretations.
-    downloadLink: https://mitpress.mit.edu/books/cognition-wild
+    download_link: https://mitpress.mit.edu/books/cognition-wild
   - sys:
       id: 5o2rzi0anSmAC6KgOEyUaa
+      created_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Reinventing Discovery: The New Era of Networked Science'
+    publication_name: 'Reinventing Discovery: The New Era of Networked Science'
     authors:
     - Michael Nielsen
-    publicationDate: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
-    sectorCategory:
+    sector_category:
     - Science
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: |-
       In Reinventing Discovery, Michael Nielsen argues that we are living at the dawn of the most dramatic change in science in more than 300 years. This change is being driven by powerful new cognitive tools, enabled by the internet, which are greatly accelerating scientific discovery. There are many books about how the internet is changing business or the workplace or government. But this is the first book about something much more fundamental: how the internet is transforming the nature of our collective intelligence and how we understand the world.
@@ -832,34 +851,35 @@ list:
       Reinventing Discovery tells the exciting story of an unprecedented new era of networked science. We learn, for example, how mathematicians in the Polymath Project are spontaneously coming together to collaborate online, tackling and rapidly demolishing previously unsolved problems. We learn how 250,000 amateur astronomers are working together in a project called Galaxy Zoo to understand the large-scale structure of the Universe, and how they are making astonishing discoveries, including an entirely new kind of galaxy. These efforts are just a small part of the larger story told in this book--the story of how scientists are using the internet to dramatically expand our problem-solving ability and increase our combined brainpower.
 
       This is a book for anyone who wants to understand how the online world is revolutionizing scientific discovery today--and why the revolution is just beginning.
-    downloadLink: https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+    download_link: https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
   - sys:
       id: 4geM05ASKAA4QiGQk0C6aG
+      created_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
-      updatedAt: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Meaningful meetings: how can meetings be made better'
+    publication_name: 'Meaningful meetings: how can meetings be made better'
     organization:
     - MacArthur Foundation Research Network on Opening Governance
     authors:
     - Geoff Mulgan
-    publicationDate: !ruby/object:DateTime 2015-09-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-09-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Working Paper
     abstract: |-
       Many of us spend much of our time in meetings and at conferences. But too often these feel like a waste of time, or fail to make the most of the knowledge and experience of the people present.
@@ -875,17 +895,18 @@ list:
       It forms part of a larger research programme at Nesta on collective intelligence which is investigating how groups and organisations can make the most of their brains, and of the technologies they use.
 
       We hope the paper will be helpful to anyone designing or running meetings of any kind, and that readers will contribute good examples, ideas and evidence which can be added into future versions.
-    downloadLink: http://www.nesta.org.uk/sites/default/files/meaningful_meetings.pdf
+    download_link: http://www.nesta.org.uk/sites/default/files/meaningful_meetings.pdf
 - sys:
     id: 5weIgaazBYIuYUIWGkcYwo
+    created_at: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
+    updated_at: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
+    content_type_id: list
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
-    updatedAt: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
     revision: 1
-    contentType:
+    content_type:
       sys:
         id: list
     locale: en-US
@@ -899,68 +920,70 @@ list:
     The term data collaborative refers to a new form of collaboration, beyond the public-private partnership model, in which participants from different sectors (including private companies, research institutions, and government agencies) exchange data to create new public value and solve public problems. Several of society’s greatest challenges — from addressing climate change to public health to job creation to improving the lives of children — require greater access to data, more collaboration between public – and private-sector entities, and an increased ability to analyze datasets. In the coming months and years, data collaboratives will be essential vehicles for harnessing the vast stores of privately held data toward the public good.
 
     The pieces collected here examine a number of elements related to this emerging field – from the potential (or realized) societal benefits of data collaboratives, to issues of governance and incentives for corporations to participate in such arrangements, to risks and strategies for mitigating them. To learn more about data collaboratives, check out [DataCollaboratives.org](https://datacollaboratives.org)
-  articlesList:
+  articles_list:
   - sys:
       id: 5Afy06zCG4wq46UC6cKwuA
+      created_at: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 16:48:48.392000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Big data and positive social change in the developing world:
+    publication_name: 'Big data and positive social change in the developing world:
       A white paper for practitioners and researchers'
-    innovationCategory:
+    innovation_category:
     - Big Data
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Development
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Conference Proceedings
     abstract: A white paper describing the potential of big data, and corporate data
       in particular, to positively benefit development efforts.
-    downloadLink: https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf
+    download_link: https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf
     attachment:
       sys:
         id: 6BUuvwyDn2cm2WOqkQ62WO
   - sys:
       id: GLxQomQMYSSYwSMCceMcM
+      created_at: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 16:53:46.387000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Collaborative Governance in Theory and Practice
+    publication_name: Collaborative Governance in Theory and Practice
     authors:
     - Chris Ansell
     - Alison Gash
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Conceptual Framework
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: 'Over the past few decades, a new form of governance has emerged to
       replace adversarial and managerial modes of policy making and implementation.
@@ -983,73 +1006,75 @@ list:
       and for future research on collaborative governance.
 
 '
-    downloadLink: https://academic.oup.com/jpart/article/18/4/543/1090370/Collaborative-Governance-in-Theory-and-Practice
+    download_link: https://academic.oup.com/jpart/article/18/4/543/1090370/Collaborative-Governance-in-Theory-and-Practice
     attachment:
       sys:
         id: 5E781kmwHmugqKIEqgayua
   - sys:
       id: 2uwwZcYyvaAyUg0YwSmYGG
+      created_at: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 16:58:12.182000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Data Sharing for Public Health Key Lessons from Other Sectors
+    publication_name: Data Sharing for Public Health Key Lessons from Other Sectors
     authors:
     - Matthew Brack
     - Tito Castillo
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Health
     methodology:
     - Case Studies
     - Comparative Analysis
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Research Report
     abstract: A Chatham House report describing the need for data sharing and collaboration
       for global public health emergencies and potential lessons learned from the
       commercial sector.
-    downloadLink: https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf
+    download_link: https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf
   - sys:
       id: BwsHpmKhOgga0uggWyMiE
+      created_at: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:04:53.540000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: A Decision Model for Data Sharing
-    innovationCategory:
+    publication_name: A Decision Model for Data Sharing
+    innovation_category:
     - Data Collaboratives
     - Design Thinking
     - Open Data
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Outside Innovation
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Business
     - Open Data
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "Data-driven innovation has great potential for the development of innovative
       services that not only have economic value, but that help to address societal
@@ -1066,22 +1091,24 @@ list:
       We found that the decision model is useful for identifying and addressing data
       sharing barriers as it is applicable to amongst others privacy and commercial
       sensitive data.\n\n"
-    downloadLink: https://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21#page-1
+    download_link: https://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21#page-1
   - sys:
       id: 1FMU4fXuX2Q6GgEM2sW0wM
+      created_at: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:07:14.408000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: " Sea Change in Open Science and Data Sharing Leadership by Industry"
+    publication_name: " Sea Change in Open Science and Data Sharing Leadership by
+      Industry"
     authors:
     - Krumholz HM
     - Gross CP
@@ -1090,81 +1117,83 @@ list:
     - Hodshon B
     - Lehman R
     - Ross JS
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Health
     - Science
     methodology:
     - Case Studies
     - Conceptual Framework
     - Literature Review
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: " A review of industry-led efforts and cross-sector collaborations to
       share data from clinical trials to inform clinical practice."
-    downloadLink: https://www.ncbi.nlm.nih.gov/pubmed/24891590
+    download_link: https://www.ncbi.nlm.nih.gov/pubmed/24891590
   - sys:
       id: 67UhQturJuwM4ke4EkOssk
+      created_at: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:10:56.086000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
-    publicationName: Private Data and the Public Good
+    publication_name: Private Data and the Public Good
     authors:
     - Gideon Mann
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Politics
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Article Draft
     abstract: The transcript of a keynote talk on the potential of leveraging corporate
       data to help solve public problems
-    downloadLink: https://medium.com/@gideonmann/private-data-and-the-public-good-9c94c656ff28#.72syu058n
+    download_link: https://medium.com/@gideonmann/private-data-and-the-public-good-9c94c656ff28#.72syu058n
   - sys:
       id: LhqIammGYuS6S0iyiKGs2
+      created_at: !ruby/object:DateTime 2017-03-23 17:14:48.486000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:14:48.487000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:14:48.486000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:14:48.487000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Open data partnerships between firms and universities: The role
-      of boundary organizations'
+    publication_name: 'Open data partnerships between firms and universities: The
+      role of boundary organizations'
     authors:
     - M. Perkmann
     - H. Schildt
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
     - Labs and Experimentation
     - Open Data
-    sectorCategory:
+    sector_category:
     - Science
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "Science-intensive firms are experimenting with ‘open data’ initiatives,
       involving collaboration with academic scientists whereby all results are published
@@ -1181,101 +1210,104 @@ list:
       boundary organizations as a vehicle for open data initiatives. Our study contributes
       to research on public–private research partnerships, knowledge revealing and
       boundary organizations.\n\n"
-    downloadLink: http://www.sciencedirect.com/science/article/pii/S0048733314002248
+    download_link: http://www.sciencedirect.com/science/article/pii/S0048733314002248
   - sys:
       id: 1m4MmpCRG4awoE62Qo428m
+      created_at: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:17:51.223000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Sharing Data Is a Form of Corporate Philanthropy
+    publication_name: Sharing Data Is a Form of Corporate Philanthropy
     authors:
     - Matt Stempeck
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Philanthropy & Aid
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: A Harvard Business Review article on data philanthropy, the practice
       of companies donating data for public good, and its benefits and challenges.
-    downloadLink: https://hbr.org/2014/07/sharing-data-is-a-form-of-corporate-philanthropy
+    download_link: https://hbr.org/2014/07/sharing-data-is-a-form-of-corporate-philanthropy
   - sys:
       id: uBmpoLQCPYmgQSQwWIKc
+      created_at: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:23:52.475000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'The data revolution: finding the missing millions'
+    publication_name: 'The data revolution: finding the missing millions'
     authors:
     - Elizabeth Stuart
     - Emma Samman
     - William Avis
     - Tom Berliner
-    innovationCategory:
+    innovation_category:
     - Big Data
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
     - Big Data
-    sectorCategory:
+    sector_category:
     - Open Data
     - Big Data
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Research Report
     abstract: The Overseas Development Institute’s annual report focused on solutions
       toward a sustainable data revolution.
-    downloadLink: https://www.odi.org/sites/odi.org.uk/files/odi-assets/publications-opinion-files/9604.pdf
+    download_link: https://www.odi.org/sites/odi.org.uk/files/odi-assets/publications-opinion-files/9604.pdf
   - sys:
       id: 6CYw5OLBzUw8UqEm48ISQY
+      created_at: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:27:26.332000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Is bigger better? The emergence of big data as a tool for international
+    publication_name: Is bigger better? The emergence of big data as a tool for international
       development policy
     authors:
     - Linnet Taylor
     - Ralph Schroeder
-    innovationCategory:
+    innovation_category:
     - Big Data
     - Data Collaboratives
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Big Data
-    sectorCategory:
+    sector_category:
     - Development
     - Economics
     - Open Data
@@ -1300,22 +1332,23 @@ list:
       complement to country-level statistics, but that there are currently important
       challenges which will need to addressed if the promises of big data in development
       are to be fulfilled.\n\n"
-    downloadLink: https://link.springer.com/article/10.1007%2Fs10708-014-9603-5
+    download_link: https://link.springer.com/article/10.1007%2Fs10708-014-9603-5
   - sys:
       id: 6d00JPl9wAuA6WKgm66MUa
+      created_at: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:34:26.161000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: A systematic review of barriers to data sharing in public health
+    publication_name: A systematic review of barriers to data sharing in public health
     authors:
     - Willem G. van Panhuis
     - Proma Paul
@@ -1325,13 +1358,13 @@ list:
     - Abraham J. Herbst
     - David Heymann
     - Donald S. Burke
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
-    sectorCategory:
+    sector_category:
     - Health
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "In the current information age, the use of data has become essential
       for decision making in public health at the local, national, and global level.
@@ -1342,111 +1375,114 @@ list:
       or in the context of specific case studies. Incomplete systematic evidence on
       the scope and variety of these barriers has limited opportunities to maximize
       the value and use of public health data for science and policy.\n\n"
-    downloadLink: http://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-14-1144
+    download_link: http://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-14-1144
   - sys:
       id: 4IR8NlszXGs8iAI6eEyaCg
+      created_at: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:37:14.709000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Mapping the Next Frontier of Open Data: Corporate Data Sharing'
+    publication_name: 'Mapping the Next Frontier of Open Data: Corporate Data Sharing'
     organization:
     - The GovLab
     authors:
     - Stefaan Verhulst
     - David Sangokoya
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Co-Creation
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Open Data
     - Big Data
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Article Draft
     abstract: This essay describes an emerging taxonomy of activities involving corporate
       data sharing for public good, an emerging trend in which companies share anonymized
       and aggregated data with third-party users towards data-driven policymaking
       and greater public good.
-    downloadLink: https://medium.com/internet-monitor-2014-data-and-privacy/mapping-the-next-frontier-of-open-data-corporate-data-sharing-73b2143878d2#.5sr15z45k
+    download_link: https://medium.com/internet-monitor-2014-data-and-privacy/mapping-the-next-frontier-of-open-data-corporate-data-sharing-73b2143878d2#.5sr15z45k
   - sys:
       id: 1K83ACyW5m4k2W0WqqOMCU
+      created_at: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:39:27.658000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Data Collaboratives: Exchanging Data to Improve People’s Lives'
+    publication_name: 'Data Collaboratives: Exchanging Data to Improve People’s Lives'
     organization:
     - The GovLab
     authors:
     - Stefaan Verhulst
     - David Sangokoya
-    innovationCategory:
+    innovation_category:
     - Big Data
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Governance
     - Big Data
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Article Draft
     abstract: an essay on leveraging the potential of data to solve complex public
       problems through data collaboratives and four critical accelerators towards
       responsible data sharing and collaboration.
-    downloadLink: https://medium.com/@sverhulst/data-collaboratives-exchanging-data-to-improve-people-s-lives-d0fcfc1bdd9a#.x0820rr24
+    download_link: https://medium.com/@sverhulst/data-collaboratives-exchanging-data-to-improve-people-s-lives-d0fcfc1bdd9a#.x0820rr24
   - sys:
       id: 5wX9bspPCE8CiEyk0ekq0A
+      created_at: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:41:19.060000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Open Data and Beyond
+    publication_name: Open Data and Beyond
     authors:
     - F
     - Welle Donker
     - B. van Loenen
     - A. K. Bregt
-    innovationCategory:
+    innovation_category:
     - Data Collaboratives
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Open Data
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: In recent years, there has been an increasing trend of releasing public
       sector information as open data. Governments worldwide see the potential benefits
@@ -1459,47 +1495,49 @@ list:
       has been little research done into the actual effects of open data. This research
       has developed a monitoring framework to assess the effects of open data, and
       has applied the framework to Liander’s small-scale energy consumption dataset
-    downloadLink: http://www.mdpi.com/2220-9964/5/4/48
+    download_link: http://www.mdpi.com/2220-9964/5/4/48
   - sys:
       id: 6a6muJecUMg6Skau2CiYW8
+      created_at: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
+      updated_at: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
-      updatedAt: !ruby/object:DateTime 2017-03-23 17:43:56.452000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: " Data-driven development: pathways for progress"
-    innovationCategory:
+    publication_name: " Data-driven development: pathways for progress"
+    innovation_category:
     - Data Collaboratives
-    objectiveCategory:
+    objective_category:
     - Big Data
-    sectorCategory:
+    sector_category:
     - Policy
     - Open Data
     - Big Data
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Research Report
     abstract: An overview report from the World Economic Forum on the existing data
       deficit and the value and impact of big data for sustainable development
-    downloadLink: http://www3.weforum.org/docs/WEFUSA_DataDrivenDevelopment_Report2015.pdf
+    download_link: http://www3.weforum.org/docs/WEFUSA_DataDrivenDevelopment_Report2015.pdf
 - sys:
     id: M24ihkHGeIosci8IuYC44
+    created_at: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
+    updated_at: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
+    content_type_id: list
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
     revision: 2
-    contentType:
+    content_type:
       sys:
         id: list
     locale: en-US
@@ -1536,36 +1574,37 @@ list:
     implications of a increasingly connected public through crowdsourcing, participatory
     platforms, and citizen science, to emerging ethical considerations including the
     digitally invisible and algorithmic biases. \n"
-  articlesList:
+  articles_list:
   - sys:
       id: 8xF9RfEO9GKi6Co06yEow
+      created_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Simulation for Policy Inquiry
+    publication_name: Simulation for Policy Inquiry
     authors:
     - Anand Desai (Ed)
-    publicationDate: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Conceptual Framework
     - Governance
     methodology:
     - Conceptual Framework
     - Essay Collection
-    publicationType:
+    publication_type:
     - Book
     abstract: Public policy and management problems have been described as poorly
       defined, messy, squishy, unstructured, intractable, and wicked. In a word, they
@@ -1582,38 +1621,39 @@ list:
       is on the uses of simulation to gain understanding and inform policy decisions
       and action. Techniques represented in this volume include Monte Carlo simulation,
       system dynamics and agent based modeling.
-    downloadLink: 'http://www.springer.com/us/book/9781461416647
+    download_link: 'http://www.springer.com/us/book/9781461416647
 
 '
   - sys:
       id: 3nuF9Hr9GECicaQKw8YeoI
+      created_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'The Responsive City: Engaging Communities Through Data-Smart
+    publication_name: 'The Responsive City: Engaging Communities Through Data-Smart
       Governance'
     authors:
     - Susan Crawford
     - Stephen Goldsmith
-    publicationDate: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Smart Cities
-    sectorCategory:
+    sector_category:
     - Urban Planning
     - Governance
     methodology:
     - Case Studies
     - User Studies
-    publicationType:
+    publication_type:
     - Book
     abstract: 'Responsive City is a guide to civic engagement and governance in the
       digital age that will help leaders link important breakthroughs in technology
@@ -1638,33 +1678,34 @@ list:
       to government with innovative leadership.
 
 '
-    downloadLink: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
+    download_link: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
   - sys:
       id: 6MoF99htFmU6MKg6UuYsUG
+      created_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
+    publication_name: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
       of Business'
     authors:
     - Jeff Howe
-    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
-    sectorCategory:
+    sector_category:
     - Governance
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Book
     abstract: Why does Procter & Gamble repeatedly call on enthusiastic amateurs to
       solve scientific and technical challenges? How can companies as diverse as iStockphoto
@@ -1683,36 +1724,37 @@ list:
       extensive reporting from the front lines of this workplace revolution, he employs
       a brilliant array of stories to look at the economic, cultural, business, and
       political implications of crowdsourcing.
-    downloadLink: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
+    download_link: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
   - sys:
       id: nJqEKYjhBuICcWWimu0WY
+      created_at: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
       revision: 2
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Governance Infrastructures in 2020
+    publication_name: Governance Infrastructures in 2020
     authors:
     - Erik Johnston
-    publicationDate: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
+    innovation_category:
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
-    sectorCategory:
+    sector_category:
     - Policy
     - Governance
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: A governance infrastructure is the collection of technologies and systems,
       people, policies, practices, and relationships that interact to support governing
@@ -1727,34 +1769,35 @@ list:
       infrastructure to return power to the people while increasing accountability.
       Supporting examples of such governance approaches already exist and are regularly
       emerging in distributed organizations, online communities, nonprofits, and governments.
-    downloadLink: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
+    download_link: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
   - sys:
       id: 5mB4NAsSZiCCQGYwe6eigc
+      created_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Governance in the Information Era
+    publication_name: Governance in the Information Era
     authors:
     - Erik Johnston
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Governance
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: Policy informatics is addressing governance challenges and their consequences,
       which span the seeming inability of governments to solve complex problems and
@@ -1765,36 +1808,37 @@ list:
       of the latest American and European approaches in applying complex systems modeling,
       crowdsourcing, participatory platforms and citizen science to explore complex
       governance challenges in domains that include education, environment, and health.
-    downloadLink: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
+    download_link: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
   - sys:
       id: 5eO4ThP9HOQSMs4qamKQEY
+      created_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Design Lessons for Smart Governance Infrastructures
+    publication_name: Design Lessons for Smart Governance Infrastructures
     authors:
     - Erik Johnston
     - Derek Hansen
-    publicationDate: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Policy
     - Governance
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book Chapter
     abstract: This chapter provides design lessons on how to take advantage of advances
       in information technologies that have enabled new governance infrastructures
@@ -1813,69 +1857,71 @@ list:
       anticipates how the interaction of technology and society can be leveraged to
       mindfully design problem-defined, participation-based governance infrastructures
       to return power to the people while increasing accountability and efficiency.
-    downloadLink: nationalresourcenetwork.org/Documents/Document/Document/301940
+    download_link: nationalresourcenetwork.org/Documents/Document/Document/301940
   - sys:
       id: 63wsPNLDeEQkgq8ykGik8q
+      created_at: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
       revision: 2
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: How Regular People Can Help Shape Science
+    publication_name: How Regular People Can Help Shape Science
     authors:
     - David Lang
-    publicationDate: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Citizen Science
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
-    sectorCategory:
+    sector_category:
     - Education
     - Science
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Article Draft
-    downloadLink: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
+    download_link: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
   - sys:
       id: WBtwNIjeCcKAaOOqwY0y8
+      created_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Informed and Interconnected: A Manifesto for Smarter Cities'
+    publication_name: 'Informed and Interconnected: A Manifesto for Smarter Cities'
     authors:
     - Rosabeth Kanter
-    publicationDate: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Smart Cities
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
-    sectorCategory:
+    sector_category:
     - Policy
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Working Paper
     abstract: The need for a fresh approach to U.S. communities is more urgent than
       ever because of the biggest global economic crisis since the Great Depression.
@@ -1892,23 +1938,24 @@ list:
       economic crisis can provide the impetus to overcome resistance to change and
       turn problems into an opportunity to reduce costs, improve services to communities,
       and make our cities smarter.
-    downloadLink: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
+    download_link: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
   - sys:
       id: 2ai3l30s8EIsQqSw6SeQyg
+      created_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: Policy modeling to support administrative decisionmaking on the
-      New York state HIV testing law.
+    publication_name: Policy modeling to support administrative decisionmaking on
+      the New York state HIV testing law.
     authors:
     - Martin
     - E. G.
@@ -1924,21 +1971,21 @@ list:
     - F. N.
     - O’Connell
     - D. A
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Big Data
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation and Sharing
-    sectorCategory:
+    sector_category:
     - Health
     - Law
     - Science
     methodology:
     - Case Studies
     - Statistical Modeling
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: A recent New York law requires medical providers to offer HIV tests
       as part of routine care. We developed a system dynamics simulation model of
@@ -1952,33 +1999,34 @@ list:
       how policy modeling can provide an integrated framework for administrators to
       examine policy problems in complex systems, particularly when data time lags
       limit pre--post comparisons and key outcomes cannot be measured directly.
-    downloadLink: https://www.ncbi.nlm.nih.gov/pubmed/25893238
+    download_link: https://www.ncbi.nlm.nih.gov/pubmed/25893238
   - sys:
       id: 2XEZZJVjLqCy0cAgU2UEeY
+      created_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: The Entrepreneurial State
+    publication_name: The Entrepreneurial State
     authors:
     - Mariana Mazzucato
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Big Data
     - Institutional Innovation
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation and Sharing
     - Urban Design
-    sectorCategory:
+    sector_category:
     - Urban Planning
     - Policy
     - Governance
@@ -1986,7 +2034,7 @@ list:
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: 'The book comprehensively debunks the myth of a lumbering, bureaucratic
       state versus a dynamic, innovative private sector. In a series of case studies—from
@@ -2004,37 +2052,38 @@ list:
       the public sector socializes risks, while rewards are privatized. The book considers
       how to change this dysfunctional dynamic so that economic growth can be not
       only ‘smart’ but also ‘inclusive’.'
-    downloadLink: http://www.anthempress.com/the-entrepreneurial-state-876
+    download_link: http://www.anthempress.com/the-entrepreneurial-state-876
   - sys:
       id: 4AMlQ0OMYwEWCwQ8aKSGqU
+      created_at: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
       revision: 2
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
-    publicationName: Smart Citizens, Smarter State
+    publication_name: Smart Citizens, Smarter State
     organization:
     - The GovLab
     authors:
     - Beth Simone Noveck
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Collective Intelligence
     - Distributed Governance
     - Open Data
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
     - Accessibility
-    sectorCategory:
+    sector_category:
     - Politics
     - Policy
     - Governance
@@ -2042,7 +2091,7 @@ list:
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: Government “of the people, by the people, for the people” expresses
       an ideal that resonates in all democracies. Yet poll after poll reveals deep
@@ -2065,38 +2114,39 @@ list:
       forward a profound new vision for participatory democracy rooted not in the
       paltry act of occasional voting or the serendipity of crowdsourcing but in people’s
       knowledge and know-how.
-    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
+    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
   - sys:
       id: 7Jah8NPwo8wWsoeOYsOM8E
+      created_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: The Black Box Society
+    publication_name: The Black Box Society
     authors:
     - Frank Pasquale
-    publicationDate: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Big Data
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Privacy
     - Transparency
-    sectorCategory:
+    sector_category:
     - Human Rights
     - Law
     - Private
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Book
     abstract: Every day, corporations are connecting the dots about our personal behavior—silently
       scrutinizing clues left behind by our work habits and Internet use. The data
@@ -2117,32 +2167,33 @@ list:
       of its most important firms are fair, nondiscriminatory, and open to criticism.
       Silicon Valley and Wall Street need to accept as much accountability as they
       impose on others.
-    downloadLink: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
+    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
   - sys:
       id: 5D75xkWIakOoiUsY8wUQ2i
+      created_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
+    publication_name: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
     authors:
     - Clay Shirky
-    publicationDate: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Co-Creation
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Co-Creation
-    sectorCategory:
+    sector_category:
     - Governance
     - Open Data
     - Big Data
@@ -2158,42 +2209,43 @@ list:
       to life-saving Web sites like Ushahidi.com, which allows Kenyans to report acts
       of violence in real time. Cognitive Surplus explores what's possible when people
       unite to use their intellect, energy, and time for the greater good.
-    downloadLink: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
+    download_link: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
   - sys:
       id: 2IXPwn23ksUuecSgkimMYa
+      created_at: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
       revision: 3
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Designing Successful Participatory Platforms with a Public Intent:
-      Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
+    publication_name: 'Designing Successful Participatory Platforms with a Public
+      Intent: Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
     authors:
     - Chase Treisman
     - Tanya M. Kelley
     - Erik W. Johnston
-    publicationDate: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Access
     - Effectiveness
     - Participation
-    sectorCategory:
+    sector_category:
     - Policy
     - Governance
     - Social Movements
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: Public  organizations  have  interacted  with  citizens  through increasingly  sophisticated  internet-enabled  technology.  Participatory
       platforms  emerged  from  Web  2.0  technologies  in  the  mid-2000s  as  a
@@ -2207,4 +2259,4 @@ list:
       diverse experience and expertise conducting and researching platforms. The insights  expressed  through  the
       events  and  follow-up  interviews  and  online survey  informed  our  development  of  a  participatory  platform  lifecycle  and
       design framework to assist designing successful participatory platforms.
-    downloadLink: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
+    download_link: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants

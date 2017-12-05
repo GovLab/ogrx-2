@@ -8,11 +8,11 @@
 window.store = {
   {% for p in papers %}
   "{{ p.sys.id | slugify }}": {
-    "title": "{{ p.publicationName | xml_escape | strip_newlines }}",
+    "title": "{{ p.publication_name | xml_escape | strip_newlines }}",
     "author": {{ p.authors | join: ',' | strip_html | strip_newlines | jsonify }},
-    "category": {{ p.innovationCategory | join: ',' | strip_html | strip_newlines | jsonify }},
+    "category": {{ p.innovation_category | join: ',' | strip_html | strip_newlines | jsonify }},
     "content": {{ p.abstract | strip_html | strip_newlines | jsonify }},
-    "url": "{{ p.publicationName | datapage_url: 'papers' }}"
+    "url": "{{ p.publication_name | datapage_url: 'papers' }}"
   }
   {% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -77,7 +77,7 @@ window.store = {
         {% endunless %}
         {% endfor %}
 
-        {% for x in p.objectiveCategory %}
+        {% for x in p.objective_category %}
         {% unless objective_filters contains x %}
         {% assign objective_filters = objective_filters | push: x %}
         {% endunless %}
@@ -89,7 +89,7 @@ window.store = {
         {% endunless %}
         {% endfor %}
 
-        {% for x in p.sectorCategory %}
+        {% for x in p.sector_category %}
         {% unless sector_filters contains x %}
         {% assign sector_filters = sector_filters | push: x %}
         {% endunless %}
@@ -101,7 +101,7 @@ window.store = {
         {% endunless %}
         {% endfor %}
 
-        {% for x in p.publicationType %}
+        {% for x in p.publication_type %}
         {% unless type_filters contains x %}
         {% assign type_filters = type_filters | push: x %}
         {% endunless %}

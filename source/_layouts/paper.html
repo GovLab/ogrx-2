@@ -4,8 +4,8 @@ layout: default
 <!-- This page uses Styleguide 2 -->
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
-    <h1>{{page.publicationName}}</h1>
-    <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {{ page.authors | join: ", "}}</h3>
+    <h1>{{page.publication_name}}</h1>
+    <h3 class="blog-single__meta">{{page.sys.created_at | date: '%B %d, %Y'}} by {{ page.authors | join: ", "}}</h3>
 
       <div class="paper-metadata">
         <div class="row">
@@ -13,8 +13,8 @@ layout: default
 
             <div class="row">
               <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>
-              {% if page.publicationType %}
-                {% for type in page.publicationType %}
+              {% if page.publication_type %}
+                {% for type in page.publication_type %}
                   <div class="column large-8 medium-6 small-12 type">{{ type }}</div>
                 {% endfor %}
               {% endif %}
@@ -27,8 +27,8 @@ layout: default
             </div>
             <div class="row">
               <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>
-              {% if page.sectorCategory %}
-                <div class="column large-8 medium-6 small-12 category">{{ page.sectorCategory | join: ", " }}</div>
+              {% if page.sector_category %}
+                <div class="column large-8 medium-6 small-12 category">{{ page.sector_category | join: ", " }}</div>
               {% endif %}
             </div>
         </div>
@@ -37,8 +37,8 @@ layout: default
 
             <div class="row">
               <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>
-              {% if page.innovationCategory %}
-                <div class="column large-8 medium-6 small-12 type">{{ page.innovationCategory | join: ", "}}</div>
+              {% if page.innovation_category %}
+                <div class="column large-8 medium-6 small-12 type">{{ page.innovation_category | join: ", "}}</div>
               {% endif %}
             </div>
             <div class="row">
@@ -49,15 +49,15 @@ layout: default
             </div>
             <div class="row">
               <div class="column large-4 medium-6 small-12  paper-metadata__left-column">Objective</div>
-                {% if page.objectiveCategory %}
-                  <div class="column large-8 medium-6 small-12  category">{{ page.objectiveCategory  | join: ", " }}</div>
+                {% if page.objective_category %}
+                  <div class="column large-8 medium-6 small-12  category">{{ page.objective_category  | join: ", " }}</div>
               {% endif %}
             </div>
           </div>
         </div>
       </div>
 
-      <a href="{{ page.downloadLink }}" target="_blank" id="paper-access-button" class="button">Access this Publication</a>
+      <a href="{{ page.download_link }}" target="_blank" id="paper-access-button" class="button">Access this Publication</a>
   </div>
 
   <section class="blog-content blog-single">

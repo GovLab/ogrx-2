@@ -4,7 +4,7 @@ layout: default
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.title}}</h1>
-    <h3 class="blog-single__meta">{{page.sys.createdAt | date: '%B %d, %Y'}} by {% for a in page.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{a | replace: ' ', '+' }}{% endunless %}">{{a}}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</h3>
+    <h3 class="blog-single__meta">{{page.sys.created_at | date: '%B %d, %Y'}} by {% for a in page.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{a | replace: ' ', '+' }}{% endunless %}">{{a}}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</h3>
     {% for a in page.affiliation %}
     {% assign prem = false %}
     {% for b in site.data.organizations %}
@@ -32,15 +32,15 @@ layout: default
 
   </section>
 
-  {% if page.articlesList %}
+  {% if page.articles_list %}
   <section class="divider">
     <h1>Selected Readings</h1>
   </section>
   {% endif %}
 
-  {% for b in page.articlesList %}
+  {% for b in page.articles_list %}
   <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
+    <h3 class="result-item__name"><a href="../{{b.publication_name | datapage_url: 'papers'}}" title="{{b.publication_name}}">{{b.publication_name}}</a></h3>
     <p class="result-item__authors">
       {% for author in b.authors %}
       <a href="{% assign found = false %}{% for c in site.data.custom_authors %}{% if author == c.title %}{{author | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{author | replace: ' ', '+' }}{% endunless %}">{{author}}</a>
@@ -49,7 +49,7 @@ layout: default
     <div class="result-item__taxonomy result-item__taxonomy--category">
       <span class="result-item__taxonomy__key">Category</span>
       <span class="result-item__taxonomy__value">
-        {% for category in b.innovationCategory %}
+        {% for category in b.innovation_category %}
         <a href="../{{category | datapage_url: 'categories'}}" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       </span>
@@ -66,7 +66,7 @@ layout: default
     <div class="result-item__taxonomy result-item__taxonomy--objective">
       <span class="result-item__taxonomy__key">Objective</span>
       <span class="result-item__taxonomy__value">
-        {% for objective in b.objectiveCategory %}
+        {% for objective in b.objective_category %}
         <a class="result-item__tag" href="../{{objective | datapage_url: 'objectives'}}">{{ objective }}</a>
         {% endfor %}
       </span>
@@ -74,7 +74,7 @@ layout: default
     <div class="result-item__taxonomy result-item__taxonomy--type">
       <span class="result-item__taxonomy__key">Type</span>
       <span class="result-item__taxonomy__value">
-        {% for type in b.publicationType %}
+        {% for type in b.publication_type %}
         <a class="result-item__tag" href="../{{type | datapage_url: 'types'}}">{{ type }}</a>
         {% endfor %}
       </span>

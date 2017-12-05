@@ -83,7 +83,7 @@ page_gen:
 
   - data: contentful.spaces.papers.paper
     template: paper
-    name: publicationName
+    name: publication_name
     dir: papers
     extension: html
 
@@ -112,7 +112,7 @@ contentful:
         # client_options:             # Optional
         #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
         base_path: ./source         # Optional - Defaults to Current directory
-        destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
+        # destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
     - blog: # Jekyll _data folder identifier - Required
         space: ufh1mvj7xl16         # Required
         access_token: 0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2  # Required
@@ -127,7 +127,7 @@ contentful:
         # client_options:             # Optional
         #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
         base_path: ./source         # Optional - Defaults to Current directory
-        destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
+        # destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
     - lists: # Jekyll _data folder identifier - Required
         space: ufh1mvj7xl16         # Required
         access_token: 0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2  # Required
@@ -142,4 +142,4 @@ contentful:
         # client_options:             # Optional
         #   api_url: 'preview.contentful.com' # Defaults to 'api.contentful.com' which is Production
         base_path: ./source         # Optional - Defaults to Current directory
-        destination: ./source/_data # Optional - Defaults to _data/contentful/spaces
+        # destination: ./source/_data # Optional - Defaults to _data/contentful/spaces

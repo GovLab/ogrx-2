@@ -20,7 +20,7 @@
       f-{{org | slugify}}
       {% endfor %}
 
-      {% for obj in b.objectiveCategory %}
+      {% for obj in b.objective_category %}
       f-{{obj | slugify}}
       {% endfor %}
 
@@ -28,7 +28,7 @@
       f-{{met | slugify}}
       {% endfor %}
 
-      {% for sec in b.sectorCategory %}
+      {% for sec in b.sector_category %}
       f-{{ sec | slugify}}
       {% endfor %}
 
@@ -40,7 +40,7 @@
       f-{{ proj | slugify}}
       {% endfor %}
 
-      {% for type in b.publicationType %}
+      {% for type in b.publication_type %}
       f-{{ type | slugify}}
       {% endfor %}
 
@@ -48,14 +48,14 @@
       f-{{ a | slugify}}
       {% endfor %}
 
-      {% for cat in b.innovationCategory %}
+      {% for cat in b.innovation_category %}
       m-{{ cat | slugify}}
       {% endfor %}
 
       f-search-{{b.sys.id | slugify}}
 
       " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../{{b.publicationName | datapage_url: 'papers'}}" title="{{b.publicationName}}">{{b.publicationName}}</a></h3>
+      <h3 class="result-item__name"><a href="../{{b.publication_name | datapage_url: 'papers'}}" title="{{b.publication_name}}">{{b.publication_name}}</a></h3>
       <p class="result-item__authors">
         {% for author in b.authors %}
         <a href="../by/author.html?query={{author | replace: ' ', '+' }}">{{author}}</a>
@@ -64,7 +64,7 @@
       <div class="result-item__taxonomy result-item__taxonomy--category">
         <span class="result-item__taxonomy__key">Category</span>
         <span class="result-item__taxonomy__value">
-          {% for category in b.innovationCategory %}
+          {% for category in b.innovation_category %}
           <a href="../{{category | datapage_url: 'categories'}}" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
           {% endfor %}
         </span>
@@ -81,7 +81,7 @@
       <div class="result-item__taxonomy result-item__taxonomy--objective">
         <span class="result-item__taxonomy__key">Objective</span>
         <span class="result-item__taxonomy__value">
-          {% for objective in b.objectiveCategory %}
+          {% for objective in b.objective_category %}
           <a class="result-item__tag" href="../{{objective | datapage_url: 'objectives'}}">{{ objective }}</a>
           {% endfor %}
         </span>
@@ -89,7 +89,7 @@
       <div class="result-item__taxonomy result-item__taxonomy--type">
         <span class="result-item__taxonomy__key">Type</span>
         <span class="result-item__taxonomy__value">
-          {% for type in b.publicationType %}
+          {% for type in b.publication_type %}
           <a class="result-item__tag" href="../{{type | datapage_url: 'types'}}">{{ type }}</a>
           {% endfor %}
         </span>

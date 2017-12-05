@@ -2,14 +2,15 @@
 blogpost:
 - sys:
     id: 7ibMiVowV2QUgAWs6Ga40M
+    created_at: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
+    updated_at: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
+    content_type_id: blogpost
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
-    updatedAt: !ruby/object:DateTime 2017-05-12 16:22:39.458000000 Z
     revision: 1
-    contentType:
+    content_type:
       sys:
         id: blogpost
     locale: en-US
@@ -33,42 +34,43 @@ blogpost:
     Some pieces reflective of the diversity of newly added research and findings come from [*Convergence*](http://journals.sagepub.com/home/con), [The Alan Turing Institute](https://www.turing.ac.uk/), [*Health and Technology*](https://link.springer.com/journal/12553), [*International Journal of Cartography*](http://www.tandfonline.com/toc/tica20/current), and the [Centre for Public Impact](https://www.centreforpublicimpact.org/), focusing on [Citizen Engagement and Crowdsourcing](http://ogrx.org/categories/citizen-engagement-and-crowdsourcing.html), [Algorithmic Scrutiny](http://www.ogrx.org/categories/algorithmic-scrutiny), [Open Data](http://ogrx.org/categories/open-data.html), [Data Analysis](http://www.ogrx.org/categories/data-analysis.html), and [Co-Creation](http://www.ogrx.org/categories/co-creation.html).
 
     Come back often to stay on top of what’s new in governance innovation!
-  articlesList:
+  articles_list:
   - sys:
       id: G8rPAc3e4EYuYI0CY88gi
+      created_at: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
+      updated_at: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
-      updatedAt: !ruby/object:DateTime 2017-04-28 17:38:39.666000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Confronting the hype The use of crisis mapping for community
+    publication_name: Confronting the hype The use of crisis mapping for community
       development
     authors:
     - Ana Brandusescu
     - Renée E Sieber
     - Sylvie Jochems
-    publicationDate: !ruby/object:DateTime 2015-05-18 00:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2015-05-18 00:00:00.000000000 -04:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Civic Technology
     - Co-Creation
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Development
     - Crisis Response
     methodology:
     - Case Studies
     - Comparative Analysis
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "Crisis mapping has emerged as a method of connecting and empowering
       citizens during emergencies. This article explores the hyperbole behind crisis
@@ -80,43 +82,44 @@ blogpost:
       about the actual cost of deployment, the results of disintermediation, and local
       context with the mapping application. Lastly, we discuss the relationship of
       hype, temporality, and community development as expressed in our cases.\n\n"
-    downloadLink: http://journals.sagepub.com/doi/pdf/10.1177/1354856515584320
+    download_link: http://journals.sagepub.com/doi/pdf/10.1177/1354856515584320
   - sys:
       id: 5B96lJDVxC08M2QGeg6GW0
+      created_at: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
+      updated_at: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
-      updatedAt: !ruby/object:DateTime 2017-04-28 17:17:16.707000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Ethics of the Health-Related Internet of Things: Mapping the
+    publication_name: 'Ethics of the Health-Related Internet of Things: Mapping the
       Debate'
     authors:
     - Brent Mittelstadt
-    publicationDate: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-03-15 00:00:00.000000000 -04:00
+    innovation_category:
     - Big Data
     - Data Analysis
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
     - Privacy
     - Accountability
-    sectorCategory:
+    sector_category:
     - Health
     - Private
     methodology:
     - Case Studies
     - Conceptual Framework
     - Literature Review
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "The Internet of Things is increasingly spreading into the domain of
       medical and social care. Internet-enabled devices for monitoring and managing
@@ -132,39 +135,40 @@ blogpost:
       paper maps the main ethical problems that have been identified by the relevant
       literature and identifies key themes in the on-going debate on ethical problems
       concerning H-IoT.\n\n"
-    downloadLink: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2932221
+    download_link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2932221
   - sys:
       id: 3cOeeEr4gwSQWWcSygCQAK
+      created_at: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
+      updated_at: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
-      updatedAt: !ruby/object:DateTime 2017-04-28 17:12:25.397000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Google DeepMind and healthcare in an age of algorithms
+    publication_name: Google DeepMind and healthcare in an age of algorithms
     authors:
     - Julia Powles
     - Hal Hodson
-    publicationDate: !ruby/object:DateTime 2017-03-16 00:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-03-16 00:00:00.000000000 -04:00
+    innovation_category:
     - Big Data
     - Data Analysis
     - Algorithmic Scrutiny
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Accountability
-    sectorCategory:
+    sector_category:
     - Health
     - Big Data
     methodology:
     - Case Studies
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "Data-driven tools and techniques, particularly machine learning methods
       that underpin artificial intelligence, offer promise in improving healthcare
@@ -179,36 +183,37 @@ blogpost:
       number of lessons on the transfer of population-derived datasets to large private
       prospectors, identifying critical questions for policy-makers, industry and
       individuals as healthcare moves into an algorithmic age.\n\n"
-    downloadLink: https://link.springer.com/article/10.1007%2Fs12553-017-0179-1
+    download_link: https://link.springer.com/article/10.1007%2Fs12553-017-0179-1
   - sys:
       id: 5NideXdtTyGWskIaQUk8S2
+      created_at: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
+      updated_at: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
-      updatedAt: !ruby/object:DateTime 2017-04-27 14:29:48.258000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'The Public Impact Gap: Focusing Governments on Outcomes and
+    publication_name: 'The Public Impact Gap: Focusing Governments on Outcomes and
       Potential'
     organization:
     - Centre for Public Impact
-    innovationCategory:
+    innovation_category:
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
-    sectorCategory:
+    sector_category:
     - Governance
     methodology:
     - Conceptual Framework
     - Quantitative Analysis
-    publicationType:
+    publication_type:
     - Research Report
     abstract: |-
       The Public Impact Gap is the difference
@@ -241,36 +246,37 @@ blogpost:
       Observatory, a free database of more than 200
       case studies, accessible via the Centre for
       Public Impact’s website.
-    downloadLink: https://publicimpact.blob.core.windows.net/production/2017/03/CPI-Public-Impact-Gap-Report.pdf
+    download_link: https://publicimpact.blob.core.windows.net/production/2017/03/CPI-Public-Impact-Gap-Report.pdf
   - sys:
       id: 5pccpUnt8Ayc22wC8qIIog
+      created_at: !ruby/object:DateTime 2017-04-28 17:10:10.988000000 Z
+      updated_at: !ruby/object:DateTime 2017-05-11 20:47:26.632000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-04-28 17:10:10.988000000 Z
-      updatedAt: !ruby/object:DateTime 2017-05-11 20:47:26.632000000 Z
       revision: 4
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Geospatial big data and cartography: research challenges and
+    publication_name: 'Geospatial big data and cartography: research challenges and
       opportunities for making maps that matter'
-    publicationDate: !ruby/object:DateTime 2016-05-26 00:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-05-26 00:00:00.000000000 -04:00
+    innovation_category:
     - Big Data
     - Citizen Engagement and Crowdsourcing
     - Co-Creation
     - Data Analysis
     - Open Data
-    sectorCategory:
+    sector_category:
     - Geospatial Services
     - Big Data
     methodology:
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: "Geospatial big data present a new set of challenges and opportunities
       for cartographic researchers in technical, methodological and artistic realms.
@@ -284,17 +290,18 @@ blogpost:
       This agenda provides both long-term challenges that require significant attention
       and short-term opportunities that we believe could be addressed in more concentrated
       studies.\n\n"
-    downloadLink: http://www.tandfonline.com/doi/abs/10.1080/23729333.2016.1278151
+    download_link: http://www.tandfonline.com/doi/abs/10.1080/23729333.2016.1278151
 - sys:
     id: uDZuSB9dx6mU4s2o0aKUs
+    created_at: !ruby/object:DateTime 2017-01-24 18:18:22.938000000 Z
+    updated_at: !ruby/object:DateTime 2017-01-24 18:19:29.606000000 Z
+    content_type_id: blogpost
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2017-01-24 18:18:22.938000000 Z
-    updatedAt: !ruby/object:DateTime 2017-01-24 18:19:29.606000000 Z
     revision: 2
-    contentType:
+    content_type:
       sys:
         id: blogpost
     locale: en-US
@@ -317,43 +324,44 @@ blogpost:
     Some pieces reflective of the diversity of newly added research and findings come from [*PLOS One*](http://journals.plos.org/plosone/), [*Big Data & Society*](https://journals.sagepub.com/home/bds), the [Hawaii International Conference on System Sciences](http://hicss.hawaii.edu), [*Philosophy & Technology*](http://link.springer.com/journal/13347), and [*Current Anthropology*](http://www.journals.uchicago.edu/toc/ca/current), focusing on [Citizen Engagement and Crowdsourcing](http://ogrx.org/categories/citizen-engagement-and-crowdsourcing.html), [Big Data](http://ogrx.org/categories/big-data.html), [Citizen Science](http://ogrx.org/categories/citizen-science.html), [Social Media](http://ogrx.org/categories/social-media.html), and [Data Collaboratives](http://ogrx.org/categories/data-collaboratives.html).
 
     Come back often to stay on top of what’s new in governance innovation!
-  articlesList:
+  articles_list:
   - sys:
       id: paper_a71
+      created_at: !ruby/object:DateTime 2016-12-07 00:55:05.316000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 00:55:05.316000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 00:55:05.316000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 00:55:05.316000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Crowdsourcing: It Matters Who the Crowd Are'
+    publication_name: 'Crowdsourcing: It Matters Who the Crowd Are'
     authors:
     - Alexis Comber
     - Peter Mooney
     - Ross S. Purves
     - Duccio Rocchini
     - Ariane Walz
-    publicationDate: !ruby/object:DateTime 2016-07-26 12:00:00.000000000 -04:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-07-26 12:00:00.000000000 -04:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Citizen Science
     - Data Analysis
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
     methodology:
     - Statistical Modeling
     - Comparative Analysis
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Journal Article
-    gitHub: ''
+    git_hub: ''
     abstract: Volunteered geographical information (VGI) and citizen science have
       become important sources data for much scientific research. In the domain of
       land cover, crowdsourcing can provide a high temporal resolution data to support
@@ -377,40 +385,41 @@ blogpost:
       Rather, it is important to consider the impacts of differences in the semantics,
       affordances and functions associated with landscape features held by different
       groups of crowdsourced data contributors.
-    downloadLink: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0158329
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0158329
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: 6kVuPG4T3aW6Ymg4wqWkmO
+      created_at: !ruby/object:DateTime 2017-01-19 04:36:00.464000000 Z
+      updated_at: !ruby/object:DateTime 2017-01-19 04:36:00.464000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-01-19 04:36:00.464000000 Z
-      updatedAt: !ruby/object:DateTime 2017-01-19 04:36:00.464000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publicationName: 'Towards Scalable Governance: Sensemaking and Cooperation in
+    publication_name: 'Towards Scalable Governance: Sensemaking and Cooperation in
       the Age of Social Media'
     authors:
     - Iyad Rahwan
-    publicationDate: !ruby/object:DateTime 2016-11-30 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-11-30 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Civic Technology
     - Collective Intelligence
     - Social Media
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Conceptual Framework
     - Ethnography
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: 'Cybernetics, or self-governance of animal and machine, requires the
       ability to sense the world and to act on it in an appropriate manner. Likewise,
@@ -424,40 +433,41 @@ blogpost:
       the banners of crowdsourcing and computer-supported argumentation. I present
       some lessons from those efforts about the limits of technology, and the research
       directions more likely to bear fruit.'
-    downloadLink: http://link.springer.com/article/10.1007/s13347-016-0246-y
+    download_link: http://link.springer.com/article/10.1007/s13347-016-0246-y
   - sys:
       id: 16wGo7W0HOSkGGk64E06y6
+      created_at: !ruby/object:DateTime 2017-01-19 04:16:17.157000000 Z
+      updated_at: !ruby/object:DateTime 2017-01-19 04:16:17.157000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-01-19 04:16:17.157000000 Z
-      updatedAt: !ruby/object:DateTime 2017-01-19 04:16:17.157000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Just Good Enough Data: Figuring Data Citizenships through Air
+    publication_name: 'Just Good Enough Data: Figuring Data Citizenships through Air
       Pollution Sensing and Data Stories'
     authors:
     - Jennifer Gabrys
     - Helen Pritchard
     - Benjamin Barratt
-    innovationCategory:
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Citizen Science
     - Data Analysis
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Environment
     methodology:
     - Case Studies
     - Quantitative Analysis
     - Statistical Modeling
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: Citizen sensing, or the use of low-cost and accessible digital technologies
       to monitor environments, has contributed to new types of environmental data
@@ -476,22 +486,23 @@ blogpost:
       then suggest ways in which citizen datasets could generate different practices
       and interpretive insights that go beyond the usual uses of environmental data
       for regulation, compliance and modelling to generate expanded data citizenships.
-    downloadLink: http://journals.sagepub.com/doi/abs/10.1177/2053951716679677
+    download_link: http://journals.sagepub.com/doi/abs/10.1177/2053951716679677
   - sys:
       id: 1ZbSAJ9lTm4GKOOSA0e0mw
+      created_at: !ruby/object:DateTime 2017-01-19 03:49:31.857000000 Z
+      updated_at: !ruby/object:DateTime 2017-01-19 03:49:31.857000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-01-19 03:49:31.857000000 Z
-      updatedAt: !ruby/object:DateTime 2017-01-19 03:49:31.857000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Data Collaboratives as a New Frontier of Cross-Sector Partnerships
+    publication_name: 'Data Collaboratives as a New Frontier of Cross-Sector Partnerships
       in the Age of Open Data: Taxonomy Development'
     organization:
     - The GovLab
@@ -499,17 +510,17 @@ blogpost:
     - Iryna Susha
     - Marijn Janssen
     - Stefaan Verhulst
-    publicationDate: !ruby/object:DateTime 2017-01-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2017-01-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Data Analysis
     - Data Collaboratives
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Conference Proceedings
     abstract: |-
       Data collaboratives present a new form of cross-sector
@@ -530,35 +541,36 @@ blogpost:
       organizational arrangement, but also on aspects like the
       type of policy problem, incentives for use, and the
       expected outcome of data collaborative.
-    downloadLink: http://scholarspace.manoa.hawaii.edu/bitstream/10125/41481/1/paper0332.pdf
+    download_link: http://scholarspace.manoa.hawaii.edu/bitstream/10125/41481/1/paper0332.pdf
   - sys:
       id: MLEaqAauOYgQi6CCA8Qq2
+      created_at: !ruby/object:DateTime 2017-01-19 04:34:35.409000000 Z
+      updated_at: !ruby/object:DateTime 2017-01-19 04:34:35.409000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2017-01-19 04:34:35.409000000 Z
-      updatedAt: !ruby/object:DateTime 2017-01-19 04:34:35.409000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Too Much Democracy in All the Wrong Places: Toward a Grammar
+    publication_name: 'Too Much Democracy in All the Wrong Places: Toward a Grammar
       of Participation'
     authors:
     - Christopher M. Kelty
-    publicationDate: !ruby/object:DateTime 2016-12-05 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-12-05 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
     methodology:
     - Conceptual Framework
     - Ethnography
-    publicationType:
+    publication_type:
     - Journal Article
     abstract: 'Participation is a concept and practice that governs many aspects of
       new media and new publics. There are a wide range of attempts to create more
@@ -571,17 +583,18 @@ blogpost:
       shifts from a language of normative enthusiasm to one of critiques of co-optation
       and bureaucratization and back again. I suggest that this perpetually aspirational
       logic results in the problem of “too much democracy in all the wrong places.”'
-    downloadLink: http://www.journals.uchicago.edu/doi/full/10.1086/688705
+    download_link: http://www.journals.uchicago.edu/doi/full/10.1086/688705
 - sys:
     id: 3oiRBXJhNeMwesAymo4aKs
+    created_at: !ruby/object:DateTime 2017-08-22 21:32:59.594000000 Z
+    updated_at: !ruby/object:DateTime 2017-08-23 13:14:43.849000000 Z
+    content_type_id: blogpost
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2017-08-22 21:32:59.594000000 Z
-    updatedAt: !ruby/object:DateTime 2017-08-23 13:14:43.849000000 Z
     revision: 3
-    contentType:
+    content_type:
       sys:
         id: blogpost
     locale: en-US
@@ -612,14 +625,15 @@ blogpost:
     In this first stage, RIGA presents a limited number of studies and articles but, with the contribution of the  community in the coming months, we are confident the available resources will increase considerably. We will also post a number of selected readings on different topics as we continue to grow and expand the site. To learn more about new ways to solve public problems across Latin America – check out RIGA!
 - sys:
     id: 14iiA42nvoacEWKcEkuGks
+    created_at: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
+    updated_at: !ruby/object:DateTime 2016-12-08 06:17:47.846000000 Z
+    content_type_id: blogpost
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-07 20:56:17.593000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-08 06:17:47.846000000 Z
     revision: 5
-    contentType:
+    content_type:
       sys:
         id: blogpost
     locale: en-US
@@ -682,14 +696,15 @@ blogpost:
     policymakers and practitioners as possible.\n\n\n"
 - sys:
     id: 6oldouyjNSuWOwcwKc8kiM
+    created_at: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
+    updated_at: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
+    content_type_id: blogpost
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
-    createdAt: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
-    updatedAt: !ruby/object:DateTime 2016-12-19 21:30:08.465000000 Z
     revision: 1
-    contentType:
+    content_type:
       sys:
         id: blogpost
     locale: en-US
@@ -722,39 +737,40 @@ blogpost:
     [Data Analysis](http://ogrx.org/categories/data-analysis.html), [Labs and Experimentation](http://ogrx.org/categories/labs-and-experimentation.html)
     and [Big Data](http://ogrx.org/categories/big-data.html).\n\nCome back often to
     stay on top of what’s new in governance innovation!"
-  articlesList:
+  articles_list:
   - sys:
       id: paper_a28
+      created_at: !ruby/object:DateTime 2016-12-07 00:55:10.672000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 01:48:11.609000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 00:55:10.672000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-08 01:48:11.609000000 Z
       revision: 2
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Essays on collective intelligence
+    publication_name: Essays on collective intelligence
     authors:
     - Yiftach Nagar
     - Thomas W. Malone
     - Patrick De Boer
     - Ana Cristina Bicharra Garcia
-    publicationDate: !ruby/object:DateTime 2016-12-06 20:16:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-12-06 20:16:00.000000000 -05:00
+    innovation_category:
     - Collective Intelligence
-    objectiveCategory:
+    objective_category:
     - Effectiveness
-    sectorCategory:
+    sector_category:
     - Social Movements
     methodology:
     - Ethnography
-    publicationType:
+    publication_type:
     - Book
-    gitHub: ''
+    git_hub: ''
     abstract: 'This dissertation consists of three essays that advance our understanding
       of collective-intelligence: how it works, how it can be used, and how it can
       be augmented. I combine theoretical and empirical work, spanning qualitative
@@ -783,41 +799,42 @@ blogpost:
       using data from the Climate CoLab - a large citizen science platform. Our models
       approximate expert decisions about the submissions with high accuracy, and their
       use can save review labor, and accelerate the review process.'
-    downloadLink: https://dspace.mit.edu/handle/1721.1/105080#files-area
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: https://dspace.mit.edu/handle/1721.1/105080#files-area
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: xtOHhlkmzuyI2aweAUu8U
+      created_at: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-19 21:18:51.228000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: Global Open Policy Report 2016
+    publication_name: Global Open Policy Report 2016
     authors:
     - Kelsey Wiens
     - Alek Tarkowski
-    publicationDate: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Co-Creation
     - Open Data
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
     - Participation
     methodology:
     - Case Studies
     - Qualitative Analysis
-    publicationType:
+    publication_type:
     - Research Report
     project:
     - Creative Commons
@@ -827,30 +844,31 @@ blogpost:
       For several years, Creative Commons has been tracking the spread of open policies around the world. And now, with the new Global Open Policy Report (PDF) by the Open Policy Network, we’re able to provide a systematic overview of open policy development.
 
       screen-shot-2016-12-02-at-5-57-09-pmThe first-of-its-kind report gives an overview of open policies in 38 countries, across four sectors: education, science, data and heritage. The report includes an Open Policy Index and regional impact and local case studies from Africa, the Middle East, Asia, Australia, Latin America, Europe, and North America. The index measures open policy strength on two scales: policy strength and scope, and level of policy implementation. The index was developed by researchers from CommonSphere, a partner organization of CC Japan.
-    downloadLink: https://creativecommons.org/wp-content/uploads/2016/12/StateofOpenPolicyFullReport_FINAL-1-1-1-1.pdf
+    download_link: https://creativecommons.org/wp-content/uploads/2016/12/StateofOpenPolicyFullReport_FINAL-1-1-1-1.pdf
   - sys:
       id: 2K6DuH2GfCoMCaIk62GMyu
+      created_at: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-19 21:09:52.336000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'Innovation for Better Management: The Contribution of Public
+    publication_name: 'Innovation for Better Management: The Contribution of Public
       Innovation Labs'
     region:
     - Latin America
     authors:
     - Sebastián Acevedo
     - Nicolás Dassen
-    publicationDate: !ruby/object:DateTime 2016-09-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-09-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Citizen Engagement and Crowdsourcing
     - Civic Technology
     - Co-Creation
@@ -858,11 +876,11 @@ blogpost:
     - Design Thinking
     - Institutional Innovation
     - Labs and Experimentation
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Participation
     - Transparency
-    sectorCategory:
+    sector_category:
     - Development
     - Economics
     - Education
@@ -878,7 +896,7 @@ blogpost:
     - Case Studies
     - Conceptual Framework
     - Quantitative Analysis
-    publicationType:
+    publication_type:
     - Research Report
     abstract: 'The technological, economic, and social changes of recent years have
       required governments to adapt to new challenges and growing demands from civil
@@ -903,35 +921,36 @@ blogpost:
       this study provides the relevant conclusions and recommendations on how to establish
       innovation labs as effective channels to manage innovation in government, along
       with its inherent risks, and modernize public administration.'
-    downloadLink: https://publications.iadb.org/handle/11319/7874
+    download_link: https://publications.iadb.org/handle/11319/7874
   - sys:
       id: paper_a12
+      created_at: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-07 00:55:22.493000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: The ethical impact of data science
+    publication_name: The ethical impact of data science
     authors:
     - Luciano Floridi
     - Mariarosaria Taddeo
-    publicationDate: !ruby/object:DateTime 2016-12-28 12:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-12-28 12:00:00.000000000 -05:00
+    innovation_category:
     - Data Analysis
     methodology:
     - Conceptual Framework
     - Case Studies
     - Ethnography
-    publicationType:
+    publication_type:
     - Journal Article
-    gitHub: ''
+    git_hub: ''
     abstract: This theme issue has the founding ambition of landscaping data ethics
       as a new branch of ethics that studies and evaluates moral problems related
       to data (including generation, recording, curation, processing, dissemination,
@@ -955,44 +974,45 @@ blogpost:
       science and its applications within a consistent, holistic and inclusive framework.
       Only as a macroethics will data ethics provide solutions that can maximize the
       value of data science for our societies, for all of us and for our environments.
-    downloadLink: http://rsta.royalsocietypublishing.org/content/374/2083
-    relatedContentTitle: ''
-    relatedContentUrl: ''
-    relatedDataUrl: ''
+    download_link: http://rsta.royalsocietypublishing.org/content/374/2083
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
   - sys:
       id: gmi7hXwAMwUK8CQ4kaSow
+      created_at: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
+      content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      createdAt: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
-      updatedAt: !ruby/object:DateTime 2016-12-19 21:05:32.174000000 Z
       revision: 1
-      contentType:
+      content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publicationName: 'A Guide to Data Innovation for Government: From Idea to Proof-of-Concept'
+    publication_name: 'A Guide to Data Innovation for Government: From Idea to Proof-of-Concept'
     authors:
     - UNDP
     - UN Global Pulse
-    publicationDate: !ruby/object:DateTime 2016-12-01 00:00:00.000000000 -05:00
-    innovationCategory:
+    publication_date: !ruby/object:DateTime 2016-12-01 00:00:00.000000000 -05:00
+    innovation_category:
     - Big Data
     - Data Analysis
     - Data Collaboratives
     - Data Governance
-    objectiveCategory:
+    objective_category:
     - Effectiveness
     - Legitimacy
-    sectorCategory:
+    sector_category:
     - Human Rights
     - Philanthropy & Aid
     methodology:
     - Case Studies
     - Conceptual Framework
-    publicationType:
+    publication_type:
     - Research Report
     abstract: |
       Recognizing the potential of data innovation, the United Nations Development Programme (UNDP) innovation teams at the Regional Centre for Europe and the Commonwealth of Independent States (ECIS) and the Regional Hub for Arab States embarked on a “big data for development exploration journey,” seeking to harness new sources of data to improve services or programme implementation on topics including disaster risk management, improved welfare, migration, and poverty reduction. As part of this exercise, six UNDP Offices from the two regions developed data innovation proof-of-concept projects with governmental and civil society partners, to address urgent local challenges and gain hands-on experience in data innovation.
@@ -1000,4 +1020,4 @@ blogpost:
       UN Global Pulse provided technical guidance, coaching and tools to the project managers for the duration of the exercise, and the cohort shared advice and challenges at in-person workshops. This guide is based on these experiences, and on the methodology created by Global Pulse to design and implement data innovation projects across the UN system.
 
       The joint exercise showed how alternative sources of data can and should play a role in pursuing development outcomes and, as such, hold great promise for ful lling the Sustainable Development Goals—both from the perspective of pursuing the outcomes as well as enabling (close to) real-time monitoring and evaluation.
-    downloadLink: http://unglobalpulse.org/sites/default/files/UNGP_BigDataGuide2016_%20Web.pdf
+    download_link: http://unglobalpulse.org/sites/default/files/UNGP_BigDataGuide2016_%20Web.pdf
