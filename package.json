@@ -17,5 +17,8 @@
     "gulp-shell": "^0.5.2",
     "gulp-util": "^3.0.7",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "contentful": "^5.1.3"
   }
 }

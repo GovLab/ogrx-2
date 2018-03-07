@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>{{page.title}}</title>
+
+    <link rel="stylesheet" href="{{ 'vendor/foundation.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'vendor/styleguide-v2.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'vendor/slick.css' | relative_url }}"/>
+    <link rel="stylesheet" href="{{ 'css/styles.css' | relative_url }}">
+    <script src="https://use.typekit.net/mvc3cdb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="{{ 'vendor/jquery-2.1.4.min.js' | relative_url }}"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40012093-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+    {% include top-bar.html %}
+
+    {{content}}
+
+    {% include footer.html %}
+    {% include copyright.html %}
+
+    <!-- NEED TO FIX RELATIVE URLS -->
+    <script src="{{ 'vendor/slick.min.js' | relative_url }}"></script>
+    <script src="{{ 'vendor/contentful.browser.js' | relative_url }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="{{ 'js/scripts.js' | relative_url }}"></script>
+    <script src="{{ 'js/underscore.js' | relative_url }}"></script>
+    <script src="{{ 'js/lunr.js' | relative_url }}"></script>
+    <script src="{{ 'js/lib/scripts.js' | relative_url }}"></script>
+    <script src="{{ 'js/filters.js' | relative_url }}"></script>
+
+    <script src="{{ 'js/uiscripts.js' | relative_url }}"></script>
+    <script src="{{ 'js/contentful_results.js' | relative_url }}"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(document).foundation();
+    });
+</script>
+
+<div id="overlay" class="js-overlay"></div>
+
+</body>
+</html>
