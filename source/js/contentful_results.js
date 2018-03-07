@@ -74,8 +74,5 @@ contentfulClient.getEntries({
 })
 .then(function(entries) {
     console.log(entries.items);
-    container.innerHTML =
-    entries.items.length + " / "
-    + entries.total +  " : "
-    + entries.items.map(results).join('\n')
+    container.innerHTML = entries.items.map(results).join('\n');
 })
