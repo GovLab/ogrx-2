@@ -281,9 +281,17 @@ and (max-width: 799px) {
     }
   }
   .js-total {
-    color: rgba(0,0,0,0.5);
-    font-size: 0.8rem;
     padding: 20px 0;
+    span {
+      color: rgba(0,0,0,0.5);
+      font-size: 0.8rem;
+    }
+    .select {
+      margin: 0 10px;
+      background-color: rgba(0,0,0,0.05);
+      width: 90px;
+      display: inline-block;
+    }
   }
   .js-current-page {
     display: inline-block;

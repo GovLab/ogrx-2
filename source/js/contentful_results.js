@@ -103,15 +103,15 @@ var pagination = function (p, l, t) {
         }
     }
 
-    html += "</div><div class='js-total'>Showing " +
-    "<div class='select' style='width: 100px; display: inline-block;'><select name='select-limit' id='js-select-limit' onchange='selectLimitChange(this, " + t + ")'>" +
+    html += "</div><div class='js-total'><span>Showing </span>" +
+    "<div class='select' style=''><select name='select-limit' id='js-select-limit' onchange='selectLimitChange(this, " + t + ")'>" +
     "<option value='25' " + (l == 25 ? "selected" : "") + ">25</option>" +
     "<option value='50' " + (l == 50 ? "selected" : "") + ">50</option>" +
     "<option value='100' " + (l == 100 ? "selected" : "") + ">100</option>" +
     "<option value='200' " + (l == 200 ? "selected" : "") + ">200</option>" +
     "<option value='500' " + (l == 500 ? "selected" : "") + ">500</option>" +
     "<option value='1000' " + (l == 1000 ? "selected" : "") + ">1000</option>" +
-    "</select></div> per page of " + t + " articles</div></div>";
+    "</select></div><span> per page of <b>" + t + "</b> articles</span></div></div>";
 
     return html;
 }
