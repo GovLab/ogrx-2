@@ -1,11 +1,7 @@
 var contentfulClient = contentful.createClient({
   accessToken: '0fc4b56fae09e39a5cf7f383a3b35514f594e7a0b0b8c56c2421d771dacfc4e2',
   space: 'ufh1mvj7xl16'
-})
-
-var CONTENT_TYPE_ID = 'paper'
-
-var container = document.getElementById('content')
+});
 
 var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
 
@@ -116,7 +112,18 @@ var pagination = function (p, l, t) {
     return html;
 }
 
+var selectLimitChange = function(e, total) {
+    var page = findGetParameter('p');
+    if (page*e.value > total) {
+        page = Math.floor(total/e.value)+1;
+    }
+    location = 'all_sdk.html?p=' + page + '&limit=' + e.value;
+}
+
 var renderEntries = function() {
+    var CONTENT_TYPE_ID = 'paper';
+    var container = document.getElementById('content');
+
     var page = findGetParameter('p');
     var limit = findGetParameter('limit');
     page = (page === null || page < 1) ? 1 : page;
@@ -140,12 +147,16 @@ var renderEntries = function() {
     })
 }
 
-var selectLimitChange = function(e, total) {
-    var page = findGetParameter('p');
-    if (page*e.value > total) {
-        page = Math.floor(total/e.value)+1;
-    }
-    location = 'all_sdk.html?p=' + page + '&limit=' + e.value;
+var renderSingleEntry = function() {
+    var container = document.getElementById('paper-content')
+
+    var id = findGetParameter('id');
+
+    contentfulClient.getEntry(id)
+    .then(function (entry) {
+        console.log(entry)
+    })
 }
 
-renderEntries();
+if (document.getElementById('content') != null) { renderEntries(); }
+if (document.getElementById('paper-content') != null) { renderSingleEntry(); }

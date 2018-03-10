@@ -1,0 +1,78 @@
+---
+layout: contentful_sdk
+---
+<div id="blog-single">
+  <div class="top-section top-section--main-color blog-header">
+    <h1>{{page.publication_name}}</h1>
+    <h3 class="blog-single__meta">{{page.sys.created_at | date: '%B %d, %Y'}} by {{ page.authors | join: ", "}}</h3>
+
+      <div class="paper-metadata">
+        <div class="row">
+          <div class="large-6 medium-6 small-12 column">
+
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>
+              {% if page.publication_type %}
+                {% for type in page.publication_type %}
+                  <div class="column large-8 medium-6 small-12 type">{{ type }}</div>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>
+                {% if page.region %}
+                  <div class="column large-8 medium-6 small-12 type">{{ page.region | join: ", " }}</div>
+                {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>
+              {% if page.sector_category %}
+                <div class="column large-8 medium-6 small-12 category">{{ page.sector_category | join: ", " }}</div>
+              {% endif %}
+            </div>
+        </div>
+
+          <div class="large-6 column">
+
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>
+              {% if page.innovation_category %}
+                <div class="column large-8 medium-6 small-12 type">{{ page.innovation_category | join: ", "}}</div>
+              {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12 paper-metadata__left-column">Methodology</div>
+                {% if page.methodology %}
+                  <div class="column large-8 medium-6 small-12 type">{{ page.methodology | join: ", " }}</div>
+                {% endif %}
+            </div>
+            <div class="row">
+              <div class="column large-4 medium-6 small-12  paper-metadata__left-column">Objective</div>
+                {% if page.objective_category %}
+                  <div class="column large-8 medium-6 small-12  category">{{ page.objective_category  | join: ", " }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="{{ page.download_link }}" target="_blank" id="paper-access-button" class="button">Access this Publication</a>
+  </div>
+
+  <section class="blog-content blog-single">
+    <div class="row">
+      <div class="large-8 column large-offset-2">
+        {{page.abstract}}
+      </div>
+    </div>
+  </section>
+
+<div id="paper-content"></div>
+
+</div>
+
+
+
+
+
+
