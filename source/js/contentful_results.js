@@ -83,43 +83,69 @@ var findGetParameter = function(parameterName) {
 var pagination = function (p, l, t) {
     var numPagesDisplayed = 10;
     var max = Math.floor(t/l);
-    var html = "Page: ";
     var startPage = Math.floor(p - numPagesDisplayed/2);
     var pn = startPage;
     startPage = (startPage < 1) ? 1 : startPage;
-    // html += (p > 1) ? "(Previous) " : "";
-    for (var i = 0; i < numPagesDisplayed && pn < max; i++) {
+
+    if ([25,50,100,200,500,1000].indexOf(l) > -1) {
+        l = 100;
+    }
+
+    var html = "<div class='js-pagination'><div>Page: ";
+
+    for (var i = 0; i < numPagesDisplayed && pn <= max; i++) {
         pn = startPage + i;
-        console.log (i, numPagesDisplayed-1, (i < numPagesDisplayed-1));
         if (pn != p) {
             html += "<a href='all_sdk.html?p=" + pn + "&limit=" + l + "'>" + pn + "</a>";
         }
         else {
             html += "<span class='js-current-page'>" + pn + "</span>";
         }
-        // html += ((i < numPagesDisplayed-1 && pn < max) ? ", " : "");
-        // html += " ";
     }
-    // html += " (Next)";
+
+    html += "</div><div class='js-total'>Showing " +
+    "<div class='select' style='width: 100px; display: inline-block;'><select name='select-limit' id='js-select-limit' onchange='selectLimitChange(this, " + t + ")'>" +
+    "<option value='25' " + (l == 25 ? "selected" : "") + ">25</option>" +
+    "<option value='50' " + (l == 50 ? "selected" : "") + ">50</option>" +
+    "<option value='100' " + (l == 100 ? "selected" : "") + ">100</option>" +
+    "<option value='200' " + (l == 200 ? "selected" : "") + ">200</option>" +
+    "<option value='500' " + (l == 500 ? "selected" : "") + ">500</option>" +
+    "<option value='1000' " + (l == 1000 ? "selected" : "") + ">1000</option>" +
+    "</select></div> per page of " + t + " articles</div></div>";
+
     return html;
 }
 
-var page = findGetParameter('p');
-var limit = findGetParameter('limit');
-page = (page === null || page < 1) ? 1 : page;
-limit = (limit === null) ? 100 : limit;
-limit = (limit > 1000) ? 1000 : limit;
-var skip = Math.floor(page-1) * limit;
-console.log(page, limit, skip);
-contentfulClient.getEntries({
-    content_type: CONTENT_TYPE_ID,
-    skip: skip,
-    limit: limit,
-    order: 'sys.createdAt'
-})
-.then(function(entries) {
-    console.log(entries.items);
-    container.innerHTML =
-    "<div class='js-pagination'><div>" + entries.total + " results.</div><div>" + pagination(page, limit, entries.total) + "</div></div>"
-    + entries.items.map(results).join('\n');
-})
+var renderEntries = function() {
+    var page = findGetParameter('p');
+    var limit = findGetParameter('limit');
+    page = (page === null || page < 1) ? 1 : page;
+    limit = (limit === null) ? 100 : limit;
+    limit = (limit > 1000) ? 1000 : limit;
+    var skip = Math.floor(page-1) * limit;
+
+
+    contentfulClient.getEntries({
+        content_type: CONTENT_TYPE_ID,
+        skip: skip,
+        limit: limit,
+        order: 'sys.createdAt'
+    })
+    .then(function(entries) {
+        // if skip exceeds total, redirect back to p=1 using current limit to avoid broken page (should only happen if values are manually entered in url)
+        if (skip > entries.total) {
+            location = 'all_sdk.html?p=1&limit=' + limit;
+        }
+        container.innerHTML = pagination(page, limit, entries.total) + entries.items.map(results).join('\n') + pagination(page, limit, entries.total);
+    })
+}
+
+var selectLimitChange = function(e, total) {
+    var page = findGetParameter('p');
+    if (page*e.value > total) {
+        page = Math.floor(total/e.value)+1;
+    }
+    location = 'all_sdk.html?p=' + page + '&limit=' + e.value;
+}
+
+renderEntries();

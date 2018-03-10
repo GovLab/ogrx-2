@@ -269,18 +269,25 @@ and (max-width: 799px) {
 }
 
 .js-pagination {
+  text-align: center;
+  padding: 20px;
   a {
     // text-decoration: underline;
     color: #3b4f65;
     display: inline-block;
-    padding: 20px;
+    padding: 0 20px;
     &:hover {
       // background-color: rgba(0,0,0,0.05);
     }
   }
+  .js-total {
+    color: rgba(0,0,0,0.5);
+    font-size: 0.8rem;
+    padding: 20px 0;
+  }
   .js-current-page {
     display: inline-block;
-    padding: 20px;
+    padding: 0 20px;
     font-weight: bold;
   }
 }
