@@ -166,12 +166,15 @@ var renderSingleEntry = function() {
         if (entry.fields.authors === undefined) { entry.fields.authors = []; }
         if (entry.fields.innovationCategory === undefined) { entry.fields.innovationCategory = []; }
 
+        console.log(entry);
+
         container.innerHTML = '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
-        '<h1>' + entry.fields.publicationName + '</h1>'
+        '<h1>' + entry.fields.publicationName + '</h1>' +
         '<h3 class="blog-single__meta">' + entry.sys.createdAt +
         ' by ' + entry.fields.authors.join(', ') + '</h3>' +
-        '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
-        entry.fields.publicationType.map(function(i){ return '<div class="column large-8 medium-6 small-12 type">' + slugify(i) + '</div>'}).join('\n') +
+        '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row">' +
+        '<div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
+        entry.fields.publicationType.map(function(i){ return '<div class="column large-8 medium-6 small-12 type">' + i + '</div>'}).join('\n') +
         '</div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>' +
         '<div class="column large-8 medium-6 small-12 type">' + entry.fields.region.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>' +
         '<div class="column large-8 medium-6 small-12 category">' + entry.fields.sectorCategory.join(', ') + '</div></div></div><div class="large-6 column"><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>' +
