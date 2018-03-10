@@ -31,6 +31,7 @@ var results = function (item) {
     item.fields.publicationType.map(function(i){ return "f-" + slugify(i)}).join(' ') + " " +
     item.fields.authors.map(function(i){ return "f-" + slugify(i)}).join(' ') + " " +
     item.fields.innovationCategory.map(function(i){ return "m-" + slugify(i)}).join(' ') + " " +
+    "f-search-" + slugify(item.sys.id) + " " +
 
     "' style='display: inline-block; margin-left: -4px;'>" +
     "<h3 class='result-item__name'><a href='' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
@@ -66,13 +67,59 @@ var results = function (item) {
     "</div>"
 }
 
+var findGetParameter = function(parameterName) {
+    var result = null,
+    tmp = [];
+    location.search
+    .substr(1)
+    .split("&")
+    .forEach(function (item) {
+      tmp = item.split("=");
+      if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+  });
+    return result;
+}
+
+var pagination = function (p, l, t) {
+    var numPagesDisplayed = 10;
+    var max = Math.floor(t/l);
+    var html = "Page: ";
+    var startPage = Math.floor(p - numPagesDisplayed/2);
+    var pn = startPage;
+    startPage = (startPage < 1) ? 1 : startPage;
+    // html += (p > 1) ? "(Previous) " : "";
+    for (var i = 0; i < numPagesDisplayed && pn < max; i++) {
+        pn = startPage + i;
+        console.log (i, numPagesDisplayed-1, (i < numPagesDisplayed-1));
+        if (pn != p) {
+            html += "<a href='all_sdk.html?p=" + pn + "&limit=" + l + "'>" + pn + "</a>";
+        }
+        else {
+            html += "<span class='js-current-page'>" + pn + "</span>";
+        }
+        // html += ((i < numPagesDisplayed-1 && pn < max) ? ", " : "");
+        // html += " ";
+    }
+    // html += " (Next)";
+    return html;
+}
+
+var page = findGetParameter('p');
+var limit = findGetParameter('limit');
+page = (page === null || page < 1) ? 1 : page;
+limit = (limit === null) ? 100 : limit;
+limit = (limit > 1000) ? 1000 : limit;
+var skip = Math.floor(page-1) * limit;
+console.log(page, limit, skip);
 contentfulClient.getEntries({
     content_type: CONTENT_TYPE_ID,
-    skip: 100,
-    limit: 200,
+    skip: skip,
+    limit: limit,
     order: 'sys.createdAt'
 })
 .then(function(entries) {
     console.log(entries.items);
-    container.innerHTML = entries.items.map(results).join('\n');
+    container.innerHTML =
+    "<div class='js-pagination'><div>" + entries.total + " results.</div><div>" + pagination(page, limit, entries.total) + "</div></div>"
+    + entries.items.map(results).join('\n');
 })

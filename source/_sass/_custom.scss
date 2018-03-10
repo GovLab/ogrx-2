@@ -267,3 +267,22 @@ and (max-width: 799px) {
    }
  }
 }
+
+.js-pagination {
+  a {
+    // text-decoration: underline;
+    color: #3b4f65;
+    display: inline-block;
+    padding: 20px;
+    &:hover {
+      // background-color: rgba(0,0,0,0.05);
+    }
+  }
+  .js-current-page {
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+  }
+}
+
+
