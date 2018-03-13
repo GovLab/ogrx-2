@@ -1,7 +1,21 @@
 ---
 layout: contentful_sdk
 ---
-{% unless page.use_sdk %}
+{% if page.use_sdk %}
+
+<div id="list-content">
+  <div class="top-section top-section--main-color blog-header">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <p class="js-loading js-loading--white"><i class="js-loading-spinner material-icons">refresh</i></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% else %}
+
+
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.title}}</h1>
@@ -100,6 +114,4 @@ layout: contentful_sdk
 
 </div>
 
-{% endunless %}
-
-<div id="list-content"><p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p></div>
+{% endif %}
