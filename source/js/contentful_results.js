@@ -6,6 +6,8 @@ var contentfulClient = contentful.createClient({
 var PAPER_CONTENT_TYPE_ID = 'paper';
 var LIST_CONTENT_TYPE_ID = 'list';
 
+var dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+
 var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
 var deslugify = function(text) { return text.toString().replace(/\-/g, ' '); }
 
@@ -81,7 +83,7 @@ var singleResult = function(entry) {
 
     return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
     '<h1>' + entry.fields.publicationName + '</h1>' +
-    '<h3 class="blog-single__meta">' + entry.sys.createdAt +
+    '<h3 class="blog-single__meta">' + (new Date(entry.sys.createdAt)).toLocaleDateString('en-US', dateFormatOptions) +
     ' by ' + entry.fields.authors.join(', ') + '</h3>' +
     '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row">' +
     '<div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
@@ -104,7 +106,7 @@ var singleList = function(entry) {
 
     return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
     '<h1>' + entry.fields.title + '</h1>' +
-    '<h3 class="blog-single__meta">' + entry.sys.createdAt + ' by ' +
+    '<h3 class="blog-single__meta">' + (new Date(entry.sys.createdAt)).toLocaleDateString('en-US', dateFormatOptions) + ' by ' +
     entry.fields.author.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') + '</h3>' +
     ((entry.fields.affiliationLogo === undefined) ? entry.fields.affiliation.map(function(i){ return '<p>' + i + '</p>'; }) : '<img src="' + entry.fields.affiliationLogo.fields.file.url + '" style="max-width: 200px">') +
     '<p>&nbsp;</p></div><section class="blog-content blog-single"><div class="row"><div class="large-10 column large-offset-1">' +
