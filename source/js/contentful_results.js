@@ -188,7 +188,11 @@ var renderEntries = function() {
     var limit = findGetParameter('limit');
 
     var filter = findGetParameter('f');
-    if (filter == 'true' || filter == '1') {
+    var query = findGetParameter('q');
+    if (query !== null) {
+        params['query'] = query;
+    }
+    else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');

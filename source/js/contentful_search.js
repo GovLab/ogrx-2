@@ -13,17 +13,29 @@ $(function() {
         return result;
     }
 
+    var search = function(v) {
+        var p = findGetParameter('p');
+        var limit = findGetParameter('limit');
+        var open = findGetParameter('open');
+        p = (p === null) ? '' : '&p=' + p;
+        limit = (limit === null) ? '' : '&limit=' + limit;
+        open = (open === null) ? '' : '&open=' + open;
+
+
+        window.location.href = './all_sdk.html?&q=' + v + limit + open;
+    }
+
     $('#sdk-search').keypress(function (e) {
         if (e.which == 13) {
             e.preventDefault();
-            console.log($(this).val());
+            search($(this).val());
             return false;
         }
     });
 
     $('#sdk-search-trigger').click(function (e) {
         e.preventDefault();
-        console.log($('#sdk-search').val());
+        search($('#sdk-search').val());
     });
 
 
@@ -31,7 +43,7 @@ $(function() {
         window.location.href = './all_sdk.html';
     });
 
-    if (findGetParameter('f')) {
+    if (findGetParameter('f') || findGetParameter('q')) {
         $('#sdk-clear-filter-btn').addClass('active')
     }
 
