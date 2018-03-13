@@ -33,7 +33,8 @@ var results = function (item) {
     "f-search-" + slugify(item.sys.id) + " " +
 
     "' style='display: inline-block; margin-left: -4px;'>" +
-    "<h3 class='result-item__name'><a href='' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
+    // "<h3 class='result-item__name'><a href='../paper.html?n=" + slugify(item.fields.publicationName) + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
+    "<h3 class='result-item__name'><a href='../paper.html?id=" + item.sys.id + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
     "<p class='result-item__authors'>" +
     item.fields.authors.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') +
     "</p>" +
