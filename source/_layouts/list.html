@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: contentful_sdk
 ---
+{% unless page.use_sdk %}
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.title}}</h1>
@@ -98,3 +99,7 @@ layout: default
   </div>
 
 </div>
+
+{% endunless %}
+
+<div id="list-content"></div>

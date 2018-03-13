@@ -3,7 +3,8 @@ var contentfulClient = contentful.createClient({
   space: 'ufh1mvj7xl16'
 });
 
-var CONTENT_TYPE_ID = 'paper';
+var PAPER_CONTENT_TYPE_ID = 'paper';
+var LIST_CONTENT_TYPE_ID = 'list';
 
 var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
 var deslugify = function(text) { return text.toString().replace(/\-/g, ' '); }
@@ -97,6 +98,23 @@ var singleResult = function(entry) {
     '</div></div></section></div>';
 }
 
+var singleList = function(entry) {
+    console.log(entry);
+    console.log (entry.fields.affiliationLogo.fields.file);
+
+    return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
+    '<h1>' + entry.fields.title + '</h1>' +
+    '<h3 class="blog-single__meta">' + entry.sys.createdAt + ' by ' +
+    entry.fields.author.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') + '</h3>' +
+    ((entry.fields.affiliationLogo === undefined) ? entry.fields.affiliation.map(function(i){ return '<p>' + i + '</p>'; }) : '<img src="' + entry.fields.affiliationLogo.fields.file.url + '" style="max-width: 200px">') +
+    '<p>&nbsp;</p></div><section class="blog-content blog-single"><div class="row"><div class="large-10 column large-offset-1">' +
+    entry.fields.description +
+    '</div></div></section>' +
+    ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
+    entry.fields.articlesList.map(results) +
+    '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">Back to Lists</a></p></div></div></div>';
+}
+
 var findGetParameter = function(parameterName) {
     var result = null,
     tmp = [];
@@ -166,7 +184,7 @@ var renderEntries = function() {
 
 
     contentfulClient.getEntries({
-        content_type: CONTENT_TYPE_ID,
+        content_type: PAPER_CONTENT_TYPE_ID,
         skip: skip,
         limit: limit,
         order: 'sys.createdAt'
@@ -189,7 +207,7 @@ var renderSingleEntry = function() {
     if (name !== null) {
         name = deslugify(name);
         contentfulClient.getEntries({
-            content_type: CONTENT_TYPE_ID,
+            content_type: PAPER_CONTENT_TYPE_ID,
             'fields.publicationName[match]': name
         })
         .then(function(entries) {
@@ -210,5 +228,28 @@ var renderSingleEntry = function() {
     }
 }
 
+var renderList = function() {
+    var container = document.getElementById('list-content');
+
+    var name = location.pathname.replace(/^.*\//,'').replace(/\.html$/,'');
+
+    name = deslugify(name);
+    contentfulClient.getEntries({
+        content_type: LIST_CONTENT_TYPE_ID,
+        'fields.title[match]': name
+    })
+    .then(function(entries) {
+        console.log(name);
+        if (entries.items.length > 0) {
+            console.log(entries.items[0].sys.id);
+            container.innerHTML = singleList(entries.items[0]);
+        } else {
+            throw 'No entry found';
+        }
+    })
+    .catch(console.error)
+}
+
 if (document.getElementById('content') != null) { renderEntries(); }
 if (document.getElementById('paper-content') != null) { renderSingleEntry(); }
+if (document.getElementById('list-content') != null) { renderList(); }
