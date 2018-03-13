@@ -300,4 +300,23 @@ and (max-width: 799px) {
   }
 }
 
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.js-loading {
+  color: rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 60px;
+  font-size: 1.5rem;
+  .js-loading-spinner {
+    vertical-align: middle;
+    font-size: 3rem;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
 
