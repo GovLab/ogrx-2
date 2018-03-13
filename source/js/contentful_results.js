@@ -44,26 +44,26 @@ var results = function (item) {
     "<div class='result-item__taxonomy result-item__taxonomy--category'>" +
     "<span class='result-item__taxonomy__key'>Category</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.innovationCategory.map(function(i){ return "<a href='' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + slugify(i) + "</a>"}).join(' ') +
+    item.fields.innovationCategory.map(function(i){ return "<a href='all_sdk.html?f=true&category=" + slugify(i) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
 
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--methodology'>" +
     "<span class='result-item__taxonomy__key'>Methodology</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href=''>" + i + "</a>"}).join(' ') +
+    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&methodology=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--objective'>" +
     "<span class='result-item__taxonomy__key'>Objective</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href=''>" + i + "</a>"}).join(' ') +
+    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&objective=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--type'>" +
     "<span class='result-item__taxonomy__key'>Type</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href=''>" + i + "</a>"}).join(' ') +
+    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&type=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     (item.fields.open ? "" : "<div class='result-item__unpaywall'><p>May be available at</p><a href='http://unpaywall.org/''><img src='../images/unpaywall.png'></a></div>") +
@@ -177,20 +177,34 @@ var selectLimitChange = function(e, total) {
 var renderEntries = function() {
     var container = document.getElementById('content');
 
+    var params = {
+        content_type: PAPER_CONTENT_TYPE_ID,
+        skip: skip,
+        limit: limit,
+        order: '-sys.createdAt'
+    };
+
     var page = findGetParameter('p');
     var limit = findGetParameter('limit');
+
+    var filter = findGetParameter('f');
+    if (filter == 'true' || filter == '1') {
+        var category = findGetParameter('category');
+        var methodology = findGetParameter('methodology');
+        var objective = findGetParameter('objective');
+        var type = findGetParameter('type');
+        if (category !== null) { params['fields.innovationCategory[match]'] = deslugify(category); }
+        if (methodology !== null) { params['fields.methodology[match]'] = deslugify(methodology); }
+        if (objective !== null) { params['fields.objectiveCategory[match]'] = deslugify(objective); }
+        if (type !== null) { params['fields.publicationType[match]'] = deslugify(type); }
+    }
+
     page = (page === null || page < 1) ? 1 : page;
     limit = (limit === null) ? 100 : limit;
     limit = (limit > 1000) ? 1000 : limit;
     var skip = Math.floor(page-1) * limit;
 
-
-    contentfulClient.getEntries({
-        content_type: PAPER_CONTENT_TYPE_ID,
-        skip: skip,
-        limit: limit,
-        order: '-sys.createdAt'
-    })
+    contentfulClient.getEntries(params)
     .then(function(entries) {
         // if skip exceeds total, redirect back to p=1 using current limit to avoid broken page (should only happen if values are manually entered in url)
         if (skip > entries.total) {
