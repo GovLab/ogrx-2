@@ -189,7 +189,7 @@ var renderEntries = function() {
         content_type: PAPER_CONTENT_TYPE_ID,
         skip: skip,
         limit: limit,
-        order: 'sys.createdAt'
+        order: '-sys.createdAt'
     })
     .then(function(entries) {
         // if skip exceeds total, redirect back to p=1 using current limit to avoid broken page (should only happen if values are manually entered in url)
