@@ -321,5 +321,9 @@ and (max-width: 799px) {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+  img {
+    opacity: 0.1;
+    width: 50px;
+  }
 }
 
