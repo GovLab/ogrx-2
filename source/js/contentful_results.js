@@ -3,7 +3,10 @@ var contentfulClient = contentful.createClient({
   space: 'ufh1mvj7xl16'
 });
 
+var CONTENT_TYPE_ID = 'paper';
+
 var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
+var deslugify = function(text) { return text.toString().replace(/\-/g, ' ').replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }
 
 var results = function (item) {
     if (item.fields.organization === undefined) { item.fields.organization = []; }
@@ -61,6 +64,36 @@ var results = function (item) {
     "</div>" +
     (item.fields.open ? "" : "<div class='result-item__unpaywall'><p>May be available at</p><a href='http://unpaywall.org/''><img src='../images/unpaywall.png'></a></div>") +
     "</div>"
+}
+
+var singleResult = function(entry) {
+    if (entry.fields.organization === undefined) { entry.fields.organization = []; }
+    if (entry.fields.objectiveCategory === undefined) { entry.fields.objectiveCategory = []; }
+    if (entry.fields.methodology === undefined) { entry.fields.methodology = []; }
+    if (entry.fields.sectorCategory === undefined) { entry.fields.sectorCategory = []; }
+    if (entry.fields.region === undefined) { entry.fields.region = []; }
+    if (entry.fields.project === undefined) { entry.fields.project = []; }
+    if (entry.fields.publicationType === undefined) { entry.fields.publicationType = []; }
+    if (entry.fields.authors === undefined) { entry.fields.authors = []; }
+    if (entry.fields.innovationCategory === undefined) { entry.fields.innovationCategory = []; }
+
+    return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
+    '<h1>' + entry.fields.publicationName + '</h1>' +
+    '<h3 class="blog-single__meta">' + entry.sys.createdAt +
+    ' by ' + entry.fields.authors.join(', ') + '</h3>' +
+    '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row">' +
+    '<div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
+    entry.fields.publicationType.map(function(i){ return '<div class="column large-8 medium-6 small-12 type">' + i + '</div>'}).join('\n') +
+    '</div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>' +
+    '<div class="column large-8 medium-6 small-12 type">' + entry.fields.region.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>' +
+    '<div class="column large-8 medium-6 small-12 category">' + entry.fields.sectorCategory.join(', ') + '</div></div></div><div class="large-6 column"><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>' +
+    '<div class="column large-8 medium-6 small-12 type">' + entry.fields.innovationCategory.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Methodology</div>' +
+    '<div class="column large-8 medium-6 small-12 type">' + entry.fields.methodology.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12  paper-metadata__left-column">Objective</div>' +
+    '<div class="column large-8 medium-6 small-12 category">' + entry.fields.objectiveCategory.join(', ') + '</div> </div> </div> </div> </div>' +
+    '<a href="' + entry.fields.downloadLink + '" target="_blank" id="paper-access-button" class="button">Access this Publication</a> </div>' +
+    '<section class="blog-content blog-single"><div class="row"><div class="large-8 column large-offset-2">' +
+    entry.fields.abstract +
+    '</div></div></section></div>';
 }
 
 var findGetParameter = function(parameterName) {
@@ -121,7 +154,6 @@ var selectLimitChange = function(e, total) {
 }
 
 var renderEntries = function() {
-    var CONTENT_TYPE_ID = 'paper';
     var container = document.getElementById('content');
 
     var page = findGetParameter('p');
@@ -151,41 +183,29 @@ var renderSingleEntry = function() {
     var container = document.getElementById('paper-content')
 
     var id = findGetParameter('id');
+    var name = findGetParameter('n');
 
-    contentfulClient.getEntry(id)
-    .then(function (entry) {
-        console.log(entry)
-
-        if (entry.fields.organization === undefined) { entry.fields.organization = []; }
-        if (entry.fields.objectiveCategory === undefined) { entry.fields.objectiveCategory = []; }
-        if (entry.fields.methodology === undefined) { entry.fields.methodology = []; }
-        if (entry.fields.sectorCategory === undefined) { entry.fields.sectorCategory = []; }
-        if (entry.fields.region === undefined) { entry.fields.region = []; }
-        if (entry.fields.project === undefined) { entry.fields.project = []; }
-        if (entry.fields.publicationType === undefined) { entry.fields.publicationType = []; }
-        if (entry.fields.authors === undefined) { entry.fields.authors = []; }
-        if (entry.fields.innovationCategory === undefined) { entry.fields.innovationCategory = []; }
-
-        console.log(entry);
-
-        container.innerHTML = '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
-        '<h1>' + entry.fields.publicationName + '</h1>' +
-        '<h3 class="blog-single__meta">' + entry.sys.createdAt +
-        ' by ' + entry.fields.authors.join(', ') + '</h3>' +
-        '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row">' +
-        '<div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
-        entry.fields.publicationType.map(function(i){ return '<div class="column large-8 medium-6 small-12 type">' + i + '</div>'}).join('\n') +
-        '</div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Region</div>' +
-        '<div class="column large-8 medium-6 small-12 type">' + entry.fields.region.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Sector</div>' +
-        '<div class="column large-8 medium-6 small-12 category">' + entry.fields.sectorCategory.join(', ') + '</div></div></div><div class="large-6 column"><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Category</div>' +
-        '<div class="column large-8 medium-6 small-12 type">' + entry.fields.innovationCategory.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12 paper-metadata__left-column">Methodology</div>' +
-        '<div class="column large-8 medium-6 small-12 type">' + entry.fields.methodology.join(', ') + '</div></div><div class="row"><div class="column large-4 medium-6 small-12  paper-metadata__left-column">Objective</div>' +
-        '<div class="column large-8 medium-6 small-12 category">' + entry.fields.objectiveCategory.join(', ') + '</div> </div> </div> </div> </div>' +
-        '<a href="' + entry.fields.downloadLink + '" target="_blank" id="paper-access-button" class="button">Access this Publication</a> </div>' +
-        '<section class="blog-content blog-single"><div class="row"><div class="large-8 column large-offset-2">' +
-        entry.fields.abstract +
-        '</div></div></section></div>';
-    })
+    if (name !== null) {
+        name = deslugify(name);
+        contentfulClient.getEntries({
+            content_type: CONTENT_TYPE_ID,
+            'fields.publicationName[match]': name
+        })
+        .then(function(entries) {
+            console.log(name, entries)
+            if (entries.items.length > 0) {
+                container.innerHTML = singleResult(entries.items[0]);
+            } else {
+                throw 'No entry found';
+            }
+        })
+        .catch(console.error)
+    } else {
+        contentfulClient.getEntry(id)
+        .then(function(entry){
+            container.innerHTML = singleResult(entry);
+        });
+    }
 }
 
 if (document.getElementById('content') != null) { renderEntries(); }
