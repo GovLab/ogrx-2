@@ -11,6 +11,45 @@ layout: contentful_sdk
       </div>
     </div>
 
+    <div class="row align-center">
+      <div class="large-6 column large-offset-1">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="js-open-switch" type="checkbox" class="filter">
+            <span class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-10 column">
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-10 column">
+        <form id="sdk-search-form" action="" class="search search--main-search search--negative">
+          <input id="sdk-search" type="text" placeholder="Search" />
+          <input id="sdk-search-trigger" class="material-icons" type="button" value="search" >
+        </form>
+      </div>
+    </div>
+
+    <p>
+
+      <div class="row align-center">
+        <div class="large-3 column">
+          <a class="button" id="sdk-clear-filter-btn"><i class="material-icons">clear</i> Clear Filters</a>
+        </div>
+      </div>
+      &nbsp;
+
+    </p>
+
   </div>
 
   <div class="page-section results-section">

@@ -327,3 +327,9 @@ and (max-width: 799px) {
   }
 }
 
+#sdk-clear-filter-btn {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
