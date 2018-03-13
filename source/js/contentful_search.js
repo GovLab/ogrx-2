@@ -35,5 +35,33 @@ $(function() {
         $('#sdk-clear-filter-btn').addClass('active')
     }
 
+    $('#sdk-open-button').click(function (e) {
+        var open = findGetParameter('open');
+
+        if (open != 'true') {
+            open = '?f=true&open=true';
+        } else {
+            open = '?f=true';
+        }
+
+        var category = findGetParameter('category');
+        var methodology = findGetParameter('methodology');
+        var objective = findGetParameter('objective');
+        var type = findGetParameter('type');
+        category = (category === null) ? '' : '&category=' + category;
+        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
+        objective = (objective === null) ? '' : '&objective=' + objective;
+        type = (type === null) ? '' : '&type=' + type;
+
+        window.location.href = './all_sdk.html' + open + category + methodology + objective + type;
+    });
+
+    var open = findGetParameter('open');
+    if (open == 'true') {
+        $('#sdk-open-switch').prop('checked', true);
+    } else {
+        $('#sdk-open-switch').prop('checked', false);
+    }
+
 
 });

@@ -193,10 +193,12 @@ var renderEntries = function() {
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
         var type = findGetParameter('type');
+        var open = findGetParameter('open');
         if (category !== null) { params['fields.innovationCategory[match]'] = deslugify(category); }
         if (methodology !== null) { params['fields.methodology[match]'] = deslugify(methodology); }
         if (objective !== null) { params['fields.objectiveCategory[match]'] = deslugify(objective); }
         if (type !== null) { params['fields.publicationType[match]'] = deslugify(type); }
+        if (open !== null) { params['fields.open'] = open; }
     }
 
     page = (page === null || page < 1) ? 1 : page;
