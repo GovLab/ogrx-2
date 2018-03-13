@@ -6,7 +6,7 @@ var contentfulClient = contentful.createClient({
 var CONTENT_TYPE_ID = 'paper';
 
 var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
-var deslugify = function(text) { return text.toString().replace(/\-/g, ' ').replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }
+var deslugify = function(text) { return text.toString().replace(/\-/g, ' '); }
 
 var results = function (item) {
     if (item.fields.organization === undefined) { item.fields.organization = []; }
@@ -192,8 +192,9 @@ var renderSingleEntry = function() {
             'fields.publicationName[match]': name
         })
         .then(function(entries) {
-            console.log(name, entries)
+            console.log(name);
             if (entries.items.length > 0) {
+                console.log(entries.items[0].sys.id);
                 container.innerHTML = singleResult(entries.items[0]);
             } else {
                 throw 'No entry found';
