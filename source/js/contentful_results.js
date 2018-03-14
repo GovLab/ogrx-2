@@ -167,12 +167,31 @@ var pagination = function (p, l, t, params) {
 }
 
 var selectLimitChange = function(e, total) {
+    var paramstring = '';
     var page = findGetParameter('p');
     page = (page === null) ? 1 : page;
     if (page*e.value > total) {
         page = Math.floor(total/e.value)+1;
     }
-    location = 'all_sdk.html?p=' + page + '&limit=' + e.value;
+    var query = findGetParameter('q');
+    var filter = findGetParameter('f');
+    if (query !== null) {
+        paramstring = '&q=' + query;
+    }
+    else if (filter == 'true' || filter == '1') {
+        var category = findGetParameter('category');
+        var methodology = findGetParameter('methodology');
+        var objective = findGetParameter('objective');
+        var type = findGetParameter('type');
+        var open = findGetParameter('open');
+        category = (category === null) ? '' : '&category=' + category;
+        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
+        objective = (objective === null) ? '' : '&objective=' + objective;
+        type = (type === null) ? '' : '&type=' + type;
+        open = (open === null) ? '' : '&open=' + open;
+        paramstring = '&f=true' + category + methodology + objective + type + open;
+    }
+    location = 'all_sdk.html?p=' + page + '&limit=' + e.value + paramstring;
 }
 
 var renderEntries = function() {
@@ -188,11 +207,12 @@ var renderEntries = function() {
     var page = findGetParameter('p');
     var limit = findGetParameter('limit');
 
-    var filter = findGetParameter('f');
     var query = findGetParameter('q');
+    var filter = findGetParameter('f');
     if (query !== null) {
         params['query'] = query;
-    } else if (filter == 'true' || filter == '1') {
+    }
+    else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
