@@ -211,6 +211,7 @@ var renderEntries = function() {
     var filter = findGetParameter('f');
     if (query !== null) {
         params['query'] = query;
+        paramstring = '&q=' + query;
     }
     else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
