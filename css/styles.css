@@ -235,6 +235,56 @@
 @media only screen and (max-width: 799px) {
   .footer__content .button {
     margin: 0 auto; } }
+.js-pagination {
+  text-align: center;
+  padding: 20px; }
+  .js-pagination a {
+    color: #3b4f65;
+    display: inline-block;
+    padding: 0 20px; }
+  .js-pagination .js-total {
+    padding: 20px 0; }
+    .js-pagination .js-total span {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.8rem; }
+    .js-pagination .js-total .select {
+      margin: 0 10px;
+      background-color: rgba(0, 0, 0, 0.05);
+      width: 90px;
+      display: inline-block; }
+  .js-pagination .js-current-page {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.js-loading {
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 60px;
+  font-size: 1.5rem; }
+  .js-loading--white {
+    color: rgba(255, 255, 255, 0.1); }
+  .js-loading .js-loading-spinner {
+    vertical-align: middle;
+    font-size: 3rem;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+  .js-loading img {
+    opacity: 0.1;
+    width: 50px; }
+
+#sdk-clear-filter-btn {
+  display: none; }
+  #sdk-clear-filter-btn.active {
+    display: block; }
+
 .footer h4 {
   font-size: 1rem;
   text-transform: uppercase;
