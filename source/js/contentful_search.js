@@ -54,29 +54,6 @@ $(function() {
 
         var query = findGetParameter('q');
         var filter = findGetParameter('f');
-        if (query !== null) {
-            paramstring = '?q=' + encodeURIComponent(query);
-
-            if (open != 'true') {
-                paramstring += '&open=true';
-            }
-        }
-        else if (filter == 'true' || filter == '1') {
-            if (open != 'true') {
-                paramstring += '?f=true&open=true';
-            } else {
-                paramstring = '?f=true';
-            }
-        }
-        else {
-            if (open != 'true') {
-                paramstring += '?f=true&open=true';
-            } else {
-                paramstring = '?';
-            }
-        }
-
-
         var category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
@@ -85,7 +62,35 @@ $(function() {
         methodology = (methodology === null) ? '' : '&methodology=' + encodeURIComponent(methodology);
         objective = (objective === null) ? '' : '&objective=' + encodeURIComponent(objective);
         type = (type === null) ? '' : '&type=' + encodeURIComponent(type);
-        window.location.href = './all_sdk.html' + paramstring + category + methodology + objective + type;
+        var filterparams = category + methodology + objective + type;
+        if (filterparams == '') {
+            filter = '';
+        }
+
+        if (query !== null) {
+            paramstring = '?q=' + encodeURIComponent(query);
+
+            if (open != 'true') {
+                paramstring += '&open=true';
+            }
+        }
+        else if (filter == 'true' || filter == '1') {
+            paramstring = '?f=true';
+            if (open != 'true') {
+                paramstring += '&open=true';
+            }
+        }
+        else {
+            if (open != 'true') {
+                paramstring = '?f=true&open=true';
+            } else {
+                paramstring = '?';
+            }
+        }
+
+
+
+        window.location.href = './all_sdk.html' + paramstring + filterparams;
     });
 
     var open = findGetParameter('open');
