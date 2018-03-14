@@ -12,7 +12,9 @@ var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+
 var safeslug = function(text) { return text.toString().toLowerCase().replace(/-/g, '%%').replace(/\s+/g, '-'); }
 var deslugify = function(text) { return text.toString().replace(/[\-]/g, ' ').replace('%%', '-'); }
 
-var results = function (item) {
+var results = function (item, basepath) {
+    console.log(basepath);
+    if (typeof basepath === "undefined") { basepath = ''; }
     if (item.fields.organization === undefined) { item.fields.organization = []; }
     if (item.fields.objectiveCategory === undefined) { item.fields.objectiveCategory = []; }
     if (item.fields.methodology === undefined) { item.fields.methodology = []; }
@@ -37,34 +39,34 @@ var results = function (item) {
     "f-search-" + slugify(item.sys.id) + " " +
 
     "' style='display: inline-block; margin-left: -4px;'>" +
-    "<h3 class='result-item__name'><a href='../paper.html?n=" + encodeURIComponent(safeslug(item.fields.publicationName)).replace('%20', '-') + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
+    "<h3 class='result-item__name'><a href='" + basepath + "paper.html?n=" + encodeURIComponent(safeslug(item.fields.publicationName)).replace('%20', '-') + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
     // "<h3 class='result-item__name'><a href='../paper.html?id=" + item.sys.id + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
     "<p class='result-item__authors'>" +
-    item.fields.authors.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') +
+    item.fields.authors.map(function(i){ return "<a href='" + basepath + "by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') +
     "</p>" +
     "<div class='result-item__taxonomy result-item__taxonomy--category'>" +
     "<span class='result-item__taxonomy__key'>Category</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.innovationCategory.map(function(i){ return "<a href='all_sdk.html?f=true&category=" + encodeURIComponent(safeslug(i)) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.innovationCategory.map(function(i){ return "<a href='" + basepath + "all_sdk.html?f=true&category=" + encodeURIComponent(safeslug(i)) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
 
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--methodology'>" +
     "<span class='result-item__taxonomy__key'>Methodology</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&methodology=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&methodology=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--objective'>" +
     "<span class='result-item__taxonomy__key'>Objective</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&objective=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&objective=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--type'>" +
     "<span class='result-item__taxonomy__key'>Type</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&type=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&type=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     (item.fields.open ? "" : "<div class='result-item__unpaywall'><p>May be available at</p><a href='http://unpaywall.org/''><img src='../images/unpaywall.png'></a></div>") +
@@ -114,7 +116,7 @@ var singleList = function(entry) {
     entry.fields.description +
     '</div></div></section>' +
     ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
-    entry.fields.articlesList.map(results) +
+    entry.fields.articlesList.map(function(i) { return results(i, '../'); }) +
     '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">Back to Lists</a></p></div></div></div>';
 }
 
@@ -252,7 +254,7 @@ var renderEntries = function() {
         if (skip > entries.total) {
             location = 'all_sdk.html?p=1&limit=' + limit;
         }
-        container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(results).join('\n') + pagination(page, limit, entries.total, paramstring);
+        container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(function(i) { return results(i, ''); }).join('\n') + pagination(page, limit, entries.total, paramstring);
     })
 }
 
