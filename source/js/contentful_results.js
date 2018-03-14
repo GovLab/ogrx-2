@@ -8,8 +8,8 @@ var LIST_CONTENT_TYPE_ID = 'list';
 
 var dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
-var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
-var deslugify = function(text) { return text.toString().replace(/\-/g, ' '); }
+var slugify = function(text) { return encodeURIComponent(text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-\/]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, '')); }
+var deslugify = function(text) { return text.toString().replace(/[\-]/g, ' '); }
 
 var results = function (item) {
     if (item.fields.organization === undefined) { item.fields.organization = []; }
