@@ -1,0 +1,68 @@
+---
+layout: contentful_sdk
+---
+
+<div class="base-result-page">
+  <div class="top-section top-section--all">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <h1>All Articles</h1>
+        <h3 class="top-section__tagline">Across the world, science and technology are creating innovative ways for people to tackle society’s problems together.</h3>
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-6 column large-offset-1">
+        <div class="switch">
+          <label>
+            All Articles
+            <input id="sdk-open-switch" type="checkbox">
+            <span id="sdk-open-button" class="lever"></span>
+            Open Access Articles Only
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-10 column">
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-10 column">
+        <form id="sdk-search-form" action="" class="search search--main-search search--negative">
+          <input id="sdk-search" type="text" placeholder="Search" />
+          <input id="sdk-search-trigger" class="material-icons" type="button" value="search" >
+        </form>
+      </div>
+    </div>
+
+    <p>
+
+      <div class="row align-center">
+        <div class="large-3 column">
+          <a class="button" id="sdk-clear-filter-btn"><i class="material-icons">clear</i> Clear Filters</a>
+        </div>
+      </div>
+      &nbsp;
+
+    </p>
+
+  </div>
+
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
+
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
