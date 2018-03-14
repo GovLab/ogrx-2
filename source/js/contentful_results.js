@@ -130,7 +130,7 @@ var findGetParameter = function(parameterName) {
     return result;
 }
 
-var pagination = function (p, l, t) {
+var pagination = function (p, l, t, params) {
     var numPagesDisplayed = 10;
     var max = Math.floor(t/l);
     var startPage = Math.floor(p - numPagesDisplayed/2);
@@ -146,7 +146,7 @@ var pagination = function (p, l, t) {
     for (var i = 0; i < numPagesDisplayed && pn <= max; i++) {
         pn = startPage + i;
         if (pn != p) {
-            html += "<a href='all_sdk.html?p=" + pn + "&limit=" + l + "'>" + pn + "</a>";
+            html += "<a href='all_sdk.html?p=" + pn + "&limit=" + l + params + "'>" + pn + "</a>";
         }
         else {
             html += "<span class='js-current-page'>" + pn + "</span>";
@@ -168,6 +168,7 @@ var pagination = function (p, l, t) {
 
 var selectLimitChange = function(e, total) {
     var page = findGetParameter('p');
+    page = (page === null) ? 1 : page;
     if (page*e.value > total) {
         page = Math.floor(total/e.value)+1;
     }
@@ -179,10 +180,10 @@ var renderEntries = function() {
 
     var params = {
         content_type: PAPER_CONTENT_TYPE_ID,
-        skip: skip,
-        limit: limit,
         order: '-sys.createdAt'
     };
+
+    var paramstring = '';
 
     var page = findGetParameter('p');
     var limit = findGetParameter('limit');
@@ -191,8 +192,7 @@ var renderEntries = function() {
     var query = findGetParameter('q');
     if (query !== null) {
         params['query'] = query;
-    }
-    else if (filter == 'true' || filter == '1') {
+    } else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
@@ -203,6 +203,12 @@ var renderEntries = function() {
         if (objective !== null) { params['fields.objectiveCategory[match]'] = deslugify(objective); }
         if (type !== null) { params['fields.publicationType[match]'] = deslugify(type); }
         if (open !== null) { params['fields.open'] = open; }
+        category = (category === null) ? '' : '&category=' + category;
+        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
+        objective = (objective === null) ? '' : '&objective=' + objective;
+        type = (type === null) ? '' : '&type=' + type;
+        open = (open === null) ? '' : '&open=' + open;
+        paramstring = '&f=true' + category + methodology + objective + type + open;
     }
 
     page = (page === null || page < 1) ? 1 : page;
@@ -210,13 +216,16 @@ var renderEntries = function() {
     limit = (limit > 1000) ? 1000 : limit;
     var skip = Math.floor(page-1) * limit;
 
+    params['skip'] = skip;
+    params['limit'] = limit;
+
     contentfulClient.getEntries(params)
     .then(function(entries) {
         // if skip exceeds total, redirect back to p=1 using current limit to avoid broken page (should only happen if values are manually entered in url)
         if (skip > entries.total) {
             location = 'all_sdk.html?p=1&limit=' + limit;
         }
-        container.innerHTML = pagination(page, limit, entries.total) + entries.items.map(results).join('\n') + pagination(page, limit, entries.total);
+        container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(results).join('\n') + pagination(page, limit, entries.total, paramstring);
     })
 }
 
