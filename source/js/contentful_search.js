@@ -60,10 +60,10 @@ $(function() {
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
         var type = findGetParameter('type');
-        category = (category === null) ? '' : '&category=' + category;
-        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
-        objective = (objective === null) ? '' : '&objective=' + objective;
-        type = (type === null) ? '' : '&type=' + type;
+        category = (category === null) ? '' : '&category=' + encodeURIComponent(category);
+        methodology = (methodology === null) ? '' : '&methodology=' + encodeURIComponent(methodology);
+        objective = (objective === null) ? '' : '&objective=' + encodeURIComponent(objective);
+        type = (type === null) ? '' : '&type=' + encodeURIComponent(type);
 
         window.location.href = './all_sdk.html' + open + category + methodology + objective + type;
     });

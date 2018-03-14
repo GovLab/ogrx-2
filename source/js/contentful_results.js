@@ -176,7 +176,7 @@ var selectLimitChange = function(e, total) {
     var query = findGetParameter('q');
     var filter = findGetParameter('f');
     if (query !== null) {
-        paramstring = '&q=' + query;
+        paramstring = '&q=' + encodeURIComponent(query);
     }
     else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
@@ -184,11 +184,11 @@ var selectLimitChange = function(e, total) {
         var objective = findGetParameter('objective');
         var type = findGetParameter('type');
         var open = findGetParameter('open');
-        category = (category === null) ? '' : '&category=' + category;
-        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
-        objective = (objective === null) ? '' : '&objective=' + objective;
-        type = (type === null) ? '' : '&type=' + type;
-        open = (open === null) ? '' : '&open=' + open;
+        category = (category === null) ? '' : '&category=' + encodeURIComponent(category);
+        methodology = (methodology === null) ? '' : '&methodology=' + encodeURIComponent(methodology);
+        objective = (objective === null) ? '' : '&objective=' + encodeURIComponent(objective);
+        type = (type === null) ? '' : '&type=' + encodeURIComponent(type);
+        open = (open === null) ? '' : '&open=' + encodeURIComponent(open);
         paramstring = '&f=true' + category + methodology + objective + type + open;
     }
     location = 'all_sdk.html?p=' + page + '&limit=' + e.value + paramstring;
@@ -211,7 +211,7 @@ var renderEntries = function() {
     var filter = findGetParameter('f');
     if (query !== null) {
         params['query'] = query;
-        paramstring = '&q=' + query;
+        paramstring = '&q=' + encodeURIComponent(query);
     }
     else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
@@ -224,11 +224,11 @@ var renderEntries = function() {
         if (objective !== null) { params['fields.objectiveCategory[match]'] = deslugify(objective); }
         if (type !== null) { params['fields.publicationType[match]'] = deslugify(type); }
         if (open !== null) { params['fields.open'] = open; }
-        category = (category === null) ? '' : '&category=' + category;
-        methodology = (methodology === null) ? '' : '&methodology=' + methodology;
-        objective = (objective === null) ? '' : '&objective=' + objective;
-        type = (type === null) ? '' : '&type=' + type;
-        open = (open === null) ? '' : '&open=' + open;
+        category = (category === null) ? '' : '&category=' + encodeURIComponent(category);
+        methodology = (methodology === null) ? '' : '&methodology=' + encodeURIComponent(methodology);
+        objective = (objective === null) ? '' : '&objective=' + encodeURIComponent(objective);
+        type = (type === null) ? '' : '&type=' + encodeURIComponent(type);
+        open = (open === null) ? '' : '&open=' + encodeURIComponent(open);
         paramstring = '&f=true' + category + methodology + objective + type + open;
     }
 
