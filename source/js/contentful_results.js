@@ -176,7 +176,9 @@ var selectLimitChange = function(e, total) {
     var query = findGetParameter('q');
     var filter = findGetParameter('f');
     if (query !== null) {
-        paramstring = '&q=' + encodeURIComponent(query);
+        var open = findGetParameter('open');
+        open = (open === null) ? '' : '&open=' + encodeURIComponent(open);
+        paramstring = '&q=' + encodeURIComponent(query) + open;
     }
     else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
@@ -210,8 +212,11 @@ var renderEntries = function() {
     var query = findGetParameter('q');
     var filter = findGetParameter('f');
     if (query !== null) {
+        var open = findGetParameter('open');
+        if (open !== null) { params['fields.open'] = open; }
+        open = (open === null) ? '' : '&open=' + encodeURIComponent(open);
         params['query'] = query;
-        paramstring = '&q=' + encodeURIComponent(query);
+        paramstring = '&q=' + encodeURIComponent(query) + open;
     }
     else if (filter == 'true' || filter == '1') {
         var category = findGetParameter('category');
