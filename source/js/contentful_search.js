@@ -19,10 +19,11 @@ $(function() {
         var open = findGetParameter('open');
         p = (p === null) ? '' : '&p=' + p;
         limit = (limit === null) ? '' : '&limit=' + limit;
-        open = (open === null) ? '' : '&open=' + open;
+        // open = (open === null) ? '' : '&open=' + open;
 
 
-        window.location.href = './all_sdk.html?&q=' + v + limit + open;
+        // window.location.href = './all_sdk.html?q=' + v + limit + open;
+        window.location.href = './all_sdk.html?q=' + v + limit;
     }
 
     $('#sdk-search').keypress(function (e) {
@@ -49,12 +50,32 @@ $(function() {
 
     $('#sdk-open-button').click(function (e) {
         var open = findGetParameter('open');
+        var paramstring = '';
 
-        if (open != 'true') {
-            open = '?f=true&open=true';
-        } else {
-            open = '?f=true';
+        var query = findGetParameter('q');
+        var filter = findGetParameter('f');
+        if (query !== null) {
+            paramstring = '?q=' + encodeURIComponent(query);
+
+            if (open != 'true') {
+                paramstring += '&open=true';
+            }
         }
+        else if (filter == 'true' || filter == '1') {
+            if (open != 'true') {
+                paramstring += '?f=true&open=true';
+            } else {
+                paramstring = '?f=true';
+            }
+        }
+        else {
+            if (open != 'true') {
+                paramstring += '?f=true&open=true';
+            } else {
+                paramstring = '?';
+            }
+        }
+
 
         var category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
@@ -64,8 +85,7 @@ $(function() {
         methodology = (methodology === null) ? '' : '&methodology=' + encodeURIComponent(methodology);
         objective = (objective === null) ? '' : '&objective=' + encodeURIComponent(objective);
         type = (type === null) ? '' : '&type=' + encodeURIComponent(type);
-
-        window.location.href = './all_sdk.html' + open + category + methodology + objective + type;
+        window.location.href = './all_sdk.html' + paramstring + category + methodology + objective + type;
     });
 
     var open = findGetParameter('open');
