@@ -8,8 +8,9 @@ var LIST_CONTENT_TYPE_ID = 'list';
 
 var dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
-var slugify = function(text) { return encodeURIComponent(text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-\/]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, '')); }
-var deslugify = function(text) { return text.toString().replace(/[\-]/g, ' '); }
+var slugify = function(text) { return text.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').replace(/^-+/, '').replace(/-+$/, ''); }
+var safeslug = function(text) { return text.toString().toLowerCase().replace(/-/g, '%%').replace(/\s+/g, '-'); }
+var deslugify = function(text) { return text.toString().replace(/[\-]/g, ' ').replace('%%', '-'); }
 
 var results = function (item) {
     if (item.fields.organization === undefined) { item.fields.organization = []; }
@@ -36,34 +37,34 @@ var results = function (item) {
     "f-search-" + slugify(item.sys.id) + " " +
 
     "' style='display: inline-block; margin-left: -4px;'>" +
-    // "<h3 class='result-item__name'><a href='../paper.html?n=" + slugify(item.fields.publicationName) + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
-    "<h3 class='result-item__name'><a href='../paper.html?id=" + item.sys.id + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
+    "<h3 class='result-item__name'><a href='../paper.html?n=" + encodeURIComponent(safeslug(item.fields.publicationName)).replace('%20', '-') + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
+    // "<h3 class='result-item__name'><a href='../paper.html?id=" + item.sys.id + "' title='" + item.fields.publicationName + "'>" + item.fields.publicationName + "</a></h3>" +
     "<p class='result-item__authors'>" +
     item.fields.authors.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') +
     "</p>" +
     "<div class='result-item__taxonomy result-item__taxonomy--category'>" +
     "<span class='result-item__taxonomy__key'>Category</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.innovationCategory.map(function(i){ return "<a href='all_sdk.html?f=true&category=" + slugify(i) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.innovationCategory.map(function(i){ return "<a href='all_sdk.html?f=true&category=" + encodeURIComponent(safeslug(i)) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
 
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--methodology'>" +
     "<span class='result-item__taxonomy__key'>Methodology</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&methodology=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&methodology=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--objective'>" +
     "<span class='result-item__taxonomy__key'>Objective</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&objective=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&objective=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--type'>" +
     "<span class='result-item__taxonomy__key'>Type</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&type=" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='all_sdk.html?f=true&type=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     (item.fields.open ? "" : "<div class='result-item__unpaywall'><p>May be available at</p><a href='http://unpaywall.org/''><img src='../images/unpaywall.png'></a></div>") +
