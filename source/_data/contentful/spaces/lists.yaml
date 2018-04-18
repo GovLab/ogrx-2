@@ -1,738 +1,956 @@
 ---
 list:
 - sys:
-    id: M24ihkHGeIosci8IuYC44
-    created_at: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
-    updated_at: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
+    id: 3WmLe1fRi0co2Yy2WkEe60
+    created_at: !ruby/object:DateTime 2018-04-18 18:33:21.907000000 Z
+    updated_at: !ruby/object:DateTime 2018-04-18 18:37:59.569000000 Z
     content_type_id: list
     space:
       sys:
         id: ufh1mvj7xl16
     type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
     revision: 2
     content_type:
       sys:
         id: list
     locale: en-US
-  title: Selected Readings on Policy Informatics
+  title: Selected Readings on Crowdlaw
   author:
-  - Erik Johnston
+  - Beth Simone Noveck
   affiliation:
-  - Center for Policy Informatics
-  description: "__Policy informatics__ is the transdisciplinary study and application
-    of how computation and communication technology leverages information to better
-    understand and address complex public policy and administration problems and realize
-    innovations in governance processes and institutions. Rapid advancements in information,
-    computation, and communication technology continue to proliferate society and
-    become increasingly embedded in our everyday activities, transforming how we learn,
-    communicate, coordinate, organize, produce, consume, and govern. As the world
-    becomes increasingly complex, interconnected, dynamic, and resource-constrained,
-    so do the public issues with which we must grapple. In an information-intensive
-    governance environment, advancements in information, computation, and communication
-    technology afford us the possibility to better tackle complex public issues in
-    new and innovative ways that tap into and reflect the reality of this world. In
-    particular, this involves liberating data, cultivating the bottom-up generation
-    of data and ideas, modeling and simulating system dynamics of coupled human-environmental
-    interactions, as well as engaging, educating, and empowering public officials,
-    future researchers, and the public-at-large to interact with data and one another
-    in a manner that collectively produces meaningful insights, solutions, and actions
-    to address public issues.\n\nThe following reading materials are useful for scholars
-    and practitioners to understand policy informatics theoretically and practically
-    and to apply it in diverse social and policy contexts. Most of the readings were
-    selected because in addition to a theoretical contribution, they regularly are
-    situated in useful applications across many contexts including health, education,
-    and the environment. The readings range from motivating the urgency behind a formal
-    study of policy informatics, to highlighting advances in analytics including simulation
-    and computational analytics, to design recommendations of the open organizational
-    implications of a increasingly connected public through crowdsourcing, participatory
-    platforms, and citizen science, to emerging ethical considerations including the
-    digitally invisible and algorithmic biases. \n"
+  - The GovLab
+  affiliation_logo:
+    sys:
+      id: 1XX7vkow5iiQouOgKCAmWy
+      created_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
+      updated_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
+    title: govlab-logo-white
+    description: 
+    url: "//images.ctfassets.net/ufh1mvj7xl16/1XX7vkow5iiQouOgKCAmWy/e14875e43f92a37db7c07bad04c5ad20/govlab-logo-white.png"
+  description: "With rates of trust in government at all-time lows, the legitimacy
+    and effectiveness of traditional representative models of urban lawmaking, typically
+    dominated by political party agendas and conducted by professional staff and politicians
+    working behind largely closed doors, are called into question. But technology
+    offers the promise of opening how lawmaking bodies work to new sources of expertise
+    and opinion and of making lawmakers accountable to the public more than just on
+    Election Day. Around the world, there are already significant examples of local
+    legislatures and national parliaments turning to the Internet and new civic technologies
+    to involve the public at various stages of decision-making from agenda-setting
+    to evaluation. We call such open and participatory lawmaking: “CrowdLaw.”\n \nThe
+    pieces collected here are focused on public engagement practices connected to
+    the process of making laws and policies. For reasons of space, we do not include
+    readings on citizen participation, crowdsourcing or open innovation generally
+    (see GovLab’s Selected Readings on Crowdsourcing Opinions and Ideas) but focus,
+    instead, on engagement in these specific institutional contexts. To consult more
+    resources, visit [www.crowd.law](https://www.crowd.law) and our [CrowdLaw Twitter
+    list](https://twitter.com/TheGovLab/lists/crowdlaw)."
   articles_list:
   - sys:
-      id: 8xF9RfEO9GKi6Co06yEow
-      created_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      id: 4GHtGQtIF2SwoCoGsIakY4
+      created_at: !ruby/object:DateTime 2017-11-28 22:06:28.673000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:04.718000000 Z
       content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      revision: 1
-      content_type:
+      environment:
         sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Simulation for Policy Inquiry
-    authors:
-    - Anand Desai (Ed)
-    publication_date: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Data Governance
-    objective_category:
-    - Effectiveness
-    sector_category:
-    - Conceptual Framework
-    - Governance
-    methodology:
-    - Conceptual Framework
-    - Essay Collection
-    publication_type:
-    - Book
-    abstract: Public policy and management problems have been described as poorly
-      defined, messy, squishy, unstructured, intractable, and wicked. In a word, they
-      are complex. This book illustrates the development and use of simulation models
-      designed to capture some of the complexity inherent in the formulation, management,
-      and implementation of policies aimed at addressing such problems. Simulation
-      models have long existed at the fringes of policy inquiry but are not yet considered
-      an essential component of the policy analyst’s toolkit. However, this situation
-      is likely to change because with improvements in computational power and software,
-      simulation is now easier to include in the standard repertoire of research tools
-      available for discovery and decision support. This volume provides both a conceptual
-      rationale for using simulations to inform public policy and a practical introduction
-      to how such models might be constructed and employed. The focus of these papers
-      is on the uses of simulation to gain understanding and inform policy decisions
-      and action. Techniques represented in this volume include Monte Carlo simulation,
-      system dynamics and agent based modeling.
-    download_link: 'http://www.springer.com/us/book/9781461416647
-
-'
-  - sys:
-      id: 3nuF9Hr9GECicaQKw8YeoI
-      created_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'The Responsive City: Engaging Communities Through Data-Smart
-      Governance'
-    authors:
-    - Susan Crawford
-    - Stephen Goldsmith
-    publication_date: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Smart Cities
-    sector_category:
-    - Urban Planning
-    - Governance
-    methodology:
-    - Case Studies
-    - User Studies
-    publication_type:
-    - Book
-    abstract: 'Responsive City is a guide to civic engagement and governance in the
-      digital age that will help leaders link important breakthroughs in technology
-      and data analytics with age-old lessons of small-group community input to create
-      more agile, competitive, and economically resilient cities. Featuring vivid
-      case studies highlighting the work of pioneers in New York, Boston, Chicago
-      and more, the book provides a compelling model for the future of governance.
-      The book will help mayors, chief technology officers, city administrators, agency
-      directors, civic groups and nonprofit leaders break out of current paradigms
-      to collectively address civic problems. The Responsive City is the culmination
-      of research originating from the Data-Smart City Solutions initiative, an ongoing
-      project at Harvard Kennedy School working to catalyze adoption of data projects
-      on the city level. The book is co-authored by Professor Stephen Goldsmith, director
-      of Data-Smart City Solutions at Harvard Kennedy School, and Professor Susan
-      Crawford, co-director of Harvard''s Berkman Center for Internet and Society.
-      Former New York City Mayor Michael Bloomberg penned the book’s foreword.  Based
-      on the authors’ experiences and extensive research, The Responsive City explores
-      topics including: Building trust in the public sector and fostering a sustained,
-      collective voice among communities; Using data-smart governance to preempt and
-      predict problems while improving quality of life; Creating efficiencies and
-      saving taxpayer money with digital tools; and Spearheading these new approaches
-      to government with innovative leadership.
-
-'
-    download_link: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
-  - sys:
-      id: 6MoF99htFmU6MKg6UuYsUG
-      created_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
-      of Business'
-    authors:
-    - Jeff Howe
-    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    sector_category:
-    - Governance
-    methodology:
-    - Case Studies
-    publication_type:
-    - Book
-    abstract: Why does Procter & Gamble repeatedly call on enthusiastic amateurs to
-      solve scientific and technical challenges? How can companies as diverse as iStockphoto
-      and Threadless employ just a handful of people, yet generate millions of dollars
-      in revenue every year? "Crowdsourcing" is how the power of the many can be leveraged
-      to accomplish feats that were once the responsibility of a specialized few.
-      Jeff Howe reveals that the crowd is more than wise–it’s talented, creative,
-      and stunningly productive. It’s also a perfect meritocracy, where age, gender,
-      race, education, and job history no longer matter; the quality of the work is
-      all that counts. If you can perform the service, design the product, or solve
-      the problem, you’ve got the job.But crowdsourcing has also triggered a dramatic
-      shift in the way work is organized, talent is employed, research is conducted,
-      and products are made and marketed. As the crowd comes to supplant traditional
-      forms of labor, pain and disruption are inevitable, and Howe delves into both
-      the positive and negative consequences of this intriguing phenomenon. Through
-      extensive reporting from the front lines of this workplace revolution, he employs
-      a brilliant array of stories to look at the economic, cultural, business, and
-      political implications of crowdsourcing.
-    download_link: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
-  - sys:
-      id: nJqEKYjhBuICcWWimu0WY
-      created_at: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
+          id: master
+          type: Link
+          linkType: Environment
       revision: 2
       content_type:
         sys:
           id: paper
       locale: en-US
     open: false
-    publication_name: Governance Infrastructures in 2020
+    publication_name: 'Big Mind: How Collective Intelligence Can Change Our World'
+    organization:
+    - MacArthur Foundation Research Network on Opening Governance
     authors:
-    - Erik Johnston
-    publication_date: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
+    - Geoff Mulgan
+    publication_date: !ruby/object:DateTime 2017-11-13 00:00:00.000000000 -05:00
     innovation_category:
-    - Data Governance
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    abstract: A governance infrastructure is the collection of technologies and systems,
-      people, policies, practices, and relationships that interact to support governing
-      activities. Information technology, especially communication and computational
-      technologies, continues to augment society’s ability to organize, interact,
-      and govern. As we think about the future of governance, this article challenges
-      us to move beyond questions of how to best manage government institutions to
-      how to design smart governance systems with the appropriate incentives and rules
-      to harness and coordinate the enthusiasm and capabilities of those governed.
-      This article anticipates how the interaction of technology and society can be
-      leveraged to mindfully design an interaction-defined, participation-based governance
-      infrastructure to return power to the people while increasing accountability.
-      Supporting examples of such governance approaches already exist and are regularly
-      emerging in distributed organizations, online communities, nonprofits, and governments.
-    download_link: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
-  - sys:
-      id: 5mB4NAsSZiCCQGYwe6eigc
-      created_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Governance in the Information Era
-    authors:
-    - Erik Johnston
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Data Governance
-    objective_category:
-    - Effectiveness
-    sector_category:
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: Policy informatics is addressing governance challenges and their consequences,
-      which span the seeming inability of governments to solve complex problems and
-      the disaffection of people from their governments. Policy informatics seeks
-      approaches that enable our governance systems to address increasingly complex
-      challenges and to meet the rising expectations of people to be full participants
-      in their communities. This book approaches these challenges by applying a combination
-      of the latest American and European approaches in applying complex systems modeling,
-      crowdsourcing, participatory platforms and citizen science to explore complex
-      governance challenges in domains that include education, environment, and health.
-    download_link: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
-  - sys:
-      id: 5eO4ThP9HOQSMs4qamKQEY
-      created_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Design Lessons for Smart Governance Infrastructures
-    authors:
-    - Erik Johnston
-    - Derek Hansen
-    publication_date: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Data Governance
-    objective_category:
-    - Effectiveness
-    sector_category:
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Book Chapter
-    abstract: This chapter provides design lessons on how to take advantage of advances
-      in information technologies that have enabled new governance infrastructures
-      to become both possible and desirable. A governance infrastructure is the collection
-      of technologies, people, policies, practices, resources, social norms, and information
-      that interact to support governing activities. Smart governance infrastructures
-      augment society's ability to organize, interact, and govern. Novel instances
-      of smart governance infrastructures already exist and are regularly emerging
-      in distributed organizations and online communities. As we think about rebooting
-      the public square, this chapter is intended to challenge us to move beyond questions
-      of how to best manage government institutions to questions of how to design
-      governance systems with the appropriate incentives and rules to harness and
-      coordinate the diversity, enthusiasm, and capabilities of those governed. We
-      provide several design lessons learned from successful governance infrastructures
-      and propose how they can be applied to address national priorities. This chapter
-      anticipates how the interaction of technology and society can be leveraged to
-      mindfully design problem-defined, participation-based governance infrastructures
-      to return power to the people while increasing accountability and efficiency.
-    download_link: nationalresourcenetwork.org/Documents/Document/Document/301940
-  - sys:
-      id: 63wsPNLDeEQkgq8ykGik8q
-      created_at: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: How Regular People Can Help Shape Science
-    authors:
-    - David Lang
-    publication_date: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Citizen Science
     - Collective Intelligence
+    - Crowdlaw
     objective_category:
     - Effectiveness
-    - Participation
-    sector_category:
-    - Education
-    - Science
     methodology:
     - Conceptual Framework
+    - Qualitative Analysis
     publication_type:
-    - Article Draft
-    download_link: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
+    - Book
+    abstract: |-
+      A new field of collective intelligence has emerged in the last few years, prompted by a wave of digital technologies that make it possible for organizations and societies to think at large scale. This “bigger mind”—human and machine capabilities working together—has the potential to solve the great challenges of our time. So why do smart technologies not automatically lead to smart results? Gathering insights from diverse fields, including philosophy, computer science, and biology, Big Mind reveals how collective intelligence can guide corporations, governments, universities, and societies to make the most of human brains and digital technologies.
+
+      Geoff Mulgan explores how collective intelligence has to be consciously organized and orchestrated in order to harness its powers. He looks at recent experiments mobilizing millions of people to solve problems, and at groundbreaking technology like Google Maps and Dove satellites. He also considers why organizations full of smart people and machines can make foolish mistakes—from investment banks losing billions to intelligence agencies misjudging geopolitical events—and shows how to avoid them.
+
+      Highlighting differences between environments that stimulate intelligence and those that blunt it, Mulgan shows how human and machine intelligence could solve challenges in business, climate change, democracy, and public health. But for that to happen we’ll need radically new professions, institutions, and ways of thinking.
+
+      Informed by the latest work on data, web platforms, and artificial intelligence, Big Mind shows how collective intelligence could help us survive and thrive.
+    download_link: https://press.princeton.edu/titles/11098.html
   - sys:
-      id: WBtwNIjeCcKAaOOqwY0y8
-      created_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      id: 48UwrAqfv2ssIGEGsGS2Om
+      created_at: !ruby/object:DateTime 2018-01-23 03:14:42.394000000 Z
+      updated_at: !ruby/object:DateTime 2018-01-23 03:14:42.394000000 Z
       content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publication_name: 'Informed and Interconnected: A Manifesto for Smarter Cities'
+    publication_name: 'Examining the Quality of Crowdsourced Deliberation: Respect,
+      Reciprocity and Lack of Common-Good Orientation'
+    region:
+    - Finland
     authors:
-    - Rosabeth Kanter
-    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    - Tanja Aitamurto
+    - Jorge Saldivar
     innovation_category:
-    - Smart Cities
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Crowdlaw
     objective_category:
-    - Effectiveness
     - Participation
     sector_category:
-    - Policy
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Working Paper
-    abstract: The need for a fresh approach to U.S. communities is more urgent than
-      ever because of the biggest global economic crisis since the Great Depression.
-      Through examination of the barriers to solving urban problems (and the ways
-      they reinforce each other), this paper offers a new approach to community transformation
-      which calls for leaders to use technology to inform and connect people. We need
-      to convert the social safety net into a social safety network through the creation
-      of smarter communities that are information-rich, interconnected, and able to
-      provide opportunities to all citizens. This process has already begun through
-      such programs as Harlem Children's Zone, Baltimore's CitiStat, Elevate Miami,
-      and others. And they can be replicated. But technology alone is not the answer.
-      Realization of the vision requires leaders to invest in the tools, guide their
-      use, and pave the way for transformation. Perhaps the urgency of the current
-      economic crisis can provide the impetus to overcome resistance to change and
-      turn problems into an opportunity to reduce costs, improve services to communities,
-      and make our cities smarter.
-    download_link: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
-  - sys:
-      id: 2ai3l30s8EIsQqSw6SeQyg
-      created_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Policy modeling to support administrative decisionmaking on
-      the New York state HIV testing law.
-    authors:
-    - Martin
-    - E. G.
-    - MacDonald
-    - R. H.
-    - Smith
-    - L. C.
-    - Gordon
-    - D. E.
-    - Tesoriero
-    - J. M.
-    - Laufer
-    - F. N.
-    - O’Connell
-    - D. A
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Big Data
-    - Open Data
-    objective_category:
-    - Effectiveness
-    - Participation and Sharing
-    sector_category:
-    - Health
+    - Environment
     - Law
-    - Science
+    - Transportation
     methodology:
     - Case Studies
     - Statistical Modeling
     publication_type:
-    - Journal Article
-    abstract: A recent New York law requires medical providers to offer HIV tests
-      as part of routine care. We developed a system dynamics simulation model of
-      the HIV testing and care system to help administrators understand the law's
-      potential epidemic impact, resource needs, strategies to improve implementation,
-      and appropriate outcome indicators for future policy evaluations once postlaw
-      data become available. Policy modeling allowed us to synthesize information
-      from numerous sources including quantitative administrative data sets and practitioners'
-      content expertise, structure the information to be viewed both numerically and
-      visually, and organize consensus for decisionmaking purposes. This case illustrates
-      how policy modeling can provide an integrated framework for administrators to
-      examine policy problems in complex systems, particularly when data time lags
-      limit pre--post comparisons and key outcomes cannot be measured directly.
-    download_link: https://www.ncbi.nlm.nih.gov/pubmed/25893238
+    - Conference Proceedings
+    project:
+    - Discourse Quality Index
+    abstract: In this paper, published at CHI ’17, we examine deliberative quality
+      of crowdsourced deliberation. Analyzing data from two crowdsourced policy-making
+      processes, we found a good quality deliberation with respect, reciprocity, and
+      storytelling according to the standards in the theory of deliberative democracy.
+      We identified a group of super-deliberators, whose deliberation was above the
+      average, and low-quality deliberators, whose deliberation was below the average.
+      The findings show that even when crowdsourced policymaking was not designed
+      for deliberation, it can facilitate a fairly high-quality democratic deliberation.
+    download_link: http://thefinnishexperiment.com/2017/04/26/quality-of-crowdsourced-deliberation-respect-reciprocity-and-lack-of-common-good-orientation/
   - sys:
-      id: 2XEZZJVjLqCy0cAgU2UEeY
-      created_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      id: paper_43
+      created_at: !ruby/object:DateTime 2016-12-07 01:03:28.489000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:55:49.828000000 Z
       content_type_id: paper
       space:
         sys:
           id: ufh1mvj7xl16
       type: Entry
-      revision: 1
-      content_type:
+      environment:
         sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: The Entrepreneurial State
-    authors:
-    - Mariana Mazzucato
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Big Data
-    - Institutional Innovation
-    objective_category:
-    - Effectiveness
-    - Participation and Sharing
-    - Urban Design
-    sector_category:
-    - Urban Planning
-    - Policy
-    - Governance
-    - Urban Design
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: 'The book comprehensively debunks the myth of a lumbering, bureaucratic
-      state versus a dynamic, innovative private sector. In a series of case studies—from
-      IT, biotech, nanotech to today’s emerging green tech—Professor Mazzucato shows
-      that the opposite is true: the private sector only finds the courage to invest
-      after an entrepreneurial state has made the high-risk investments. In an intensely
-      researched chapter, she reveals that every technology that makes the iPhone
-      so ‘smart’ was government funded: the Internet, GPS, its touch-screen display
-      and the voice-activated Siri. Mazzucato also controversially argues that in
-      the history of modern capitalism the State has not only fixed market failures,
-      but has also actively shaped and created markets. In doing so, it sometimes
-      wins and sometimes fails. Yet by not admitting the State’s role in such active
-      risk taking, and pretending that the state only cheers on the side-lines while
-      the private sector roars, we have ended up creating an ‘innovation system’ whereby
-      the public sector socializes risks, while rewards are privatized. The book considers
-      how to change this dysfunctional dynamic so that economic growth can be not
-      only ‘smart’ but also ‘inclusive’.'
-    download_link: http://www.anthempress.com/the-entrepreneurial-state-876
-  - sys:
-      id: 4AMlQ0OMYwEWCwQ8aKSGqU
-      created_at: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    publication_name: Smart Citizens, Smarter State
-    organization:
-    - The GovLab
-    authors:
-    - Beth Simone Noveck
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Collective Intelligence
-    - Distributed Governance
-    - Open Data
-    - Data Governance
-    objective_category:
-    - Effectiveness
-    - Participation
-    - Accessibility
-    sector_category:
-    - Politics
-    - Policy
-    - Governance
-    - Open Data
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: Government “of the people, by the people, for the people” expresses
-      an ideal that resonates in all democracies. Yet poll after poll reveals deep
-      distrust of institutions that seem to have left “the people” out of the governing
-      equation. Government bureaucracies that are supposed to solve critical problems
-      on their own are a troublesome outgrowth of the professionalization of public
-      life in the industrial age. They are especially ill-suited to confronting today’s
-      complex challenges. Offering a far-reaching program for innovation, Smart Citizens,
-      Smarter State suggests that public decisionmaking could be more effective and
-      legitimate if government were smarter—if our institutions knew how to use technology
-      to leverage citizens’ expertise. Just as individuals use only part of their
-      brainpower to solve most problems, governing institutions make far too little
-      use of the skills and experience of those inside and outside of government with
-      scientific credentials, practical skills, and ground-level street smarts. New
-      tools—what Beth Simone Noveck calls technologies of expertise—are making it
-      possible to match the supply of citizen expertise to the demand for it in government.
-      Drawing on a wide range of academic disciplines and practical examples from
-      her work as an adviser to governments on institutional innovation, Noveck explores
-      how to create more open and collaborative institutions. In so doing, she puts
-      forward a profound new vision for participatory democracy rooted not in the
-      paltry act of occasional voting or the serendipity of crowdsourcing but in people’s
-      knowledge and know-how.
-    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
-  - sys:
-      id: 7Jah8NPwo8wWsoeOYsOM8E
-      created_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: The Black Box Society
-    authors:
-    - Frank Pasquale
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Big Data
-    - Open Data
-    objective_category:
-    - Privacy
-    - Transparency
-    sector_category:
-    - Human Rights
-    - Law
-    - Private
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: Every day, corporations are connecting the dots about our personal behavior—silently
-      scrutinizing clues left behind by our work habits and Internet use. The data
-      compiled and portraits created are incredibly detailed, to the point of being
-      invasive. But who connects the dots about what firms are doing with this information?
-      The Black Box Society argues that we all need to be able to do so—and to set
-      limits on how big data affects our lives. Hidden algorithms can make (or ruin)
-      reputations, decide the destiny of entrepreneurs, or even devastate an entire
-      economy. Shrouded in secrecy and complexity, decisions at major Silicon Valley
-      and Wall Street firms were long assumed to be neutral and technical. But leaks,
-      whistleblowers, and legal disputes have shed new light on automated judgment.
-      Self-serving and reckless behavior is surprisingly common, and easy to hide
-      in code protected by legal and real secrecy. Even after billions of dollars
-      of fines have been levied, underfunded regulators may have only scratched the
-      surface of this troubling behavior. Frank Pasquale exposes how powerful interests
-      abuse secrecy for profit and explains ways to rein them in. Demanding transparency
-      is only the first step. An intelligible society would assure that key decisions
-      of its most important firms are fair, nondiscriminatory, and open to criticism.
-      Silicon Valley and Wall Street need to accept as much accountability as they
-      impose on others.
-    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
-  - sys:
-      id: 5D75xkWIakOoiUsY8wUQ2i
-      created_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
-    authors:
-    - Clay Shirky
-    publication_date: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Co-Creation
-    objective_category:
-    - Effectiveness
-    - Co-Creation
-    sector_category:
-    - Governance
-    - Open Data
-    - Big Data
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    abstract: In his bestselling Here Comes Everybody, Internet guru Clay Shirky provided
-      readers with a much-needed primer for the digital age. Now, with Cognitive Surplus,
-      he reveals how new digital technology is unleashing a torrent of creative production
-      that will transform our world. For the first time, people are embracing new
-      media that allow them to pool their efforts at vanishingly low cost. The results
-      of this aggregated effort range from mind-expanding reference tools like Wikipedia
-      to life-saving Web sites like Ushahidi.com, which allows Kenyans to report acts
-      of violence in real time. Cognitive Surplus explores what's possible when people
-      unite to use their intellect, energy, and time for the greater good.
-    download_link: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
-  - sys:
-      id: 2IXPwn23ksUuecSgkimMYa
-      created_at: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
+          id: master
+          type: Link
+          linkType: Environment
       revision: 3
       content_type:
         sys:
           id: paper
       locale: en-US
     open: true
-    publication_name: 'Designing Successful Participatory Platforms with a Public
-      Intent: Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
+    publication_name: Does Crowdsourcing Legislation Increase Political Legitimacy?
+      The Case of Avoin Ministeri in Finland
+    region:
+    - Finland
     authors:
-    - Chase Treisman
-    - Tanya M. Kelley
-    - Erik W. Johnston
-    publication_date: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
+    - Henrik Serup Christensen
+    - Maija Karjalainen
+    - Laura Nurminen
+    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
     innovation_category:
     - Citizen Engagement and Crowdsourcing
-    - Data Governance
+    - Crowdlaw
     objective_category:
-    - Access
+    - Legitimacy
+    - Participation
+    methodology:
+    - Survey
+    publication_type:
+    - Journal Article
+    git_hub: ''
+    abstract: Crowdsourcing legislation gives ordinary citizens, rather than political
+      and bureaucratic elites, the chance to cooperate to come up with innovative
+      new policies. By increasing popular involvement, representative democracies
+      hope to restock dwindling reserves of political legitimacy. However, it is still
+      not clear how involvement in legislative decision making affects the attitudes
+      of the participants. It is therefore of central concern to establish whether
+      crowdsourcing can actually help restore political legitimacy by creating more
+      positive attitudes toward the political system. This article contributes to
+      this research agenda by examining the developments in attitudes among the users
+      on the Finnish website Avoin Ministeriö (“Open Ministry”) which orchestrates
+      crowdsourcing of legislation by providing online tools for deliberating ideas
+      for citizens' initiatives. The developments in attitudes are investigated with
+      a two-stage survey of 421 respondents who answered questions concerning political
+      and social attitudes, as well as political activities performed. The results
+      suggest that while crowdsourcing legislation has so far not affected political
+      legitimacy in a positive manner, it has the potential to do so.
+    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.80/abstract
+    related_content_title: Does crowdsourcing citizen initiatives affect attitudes
+      towards democracy?
+    related_content_url: http://blogs.oii.ox.ac.uk/policy/does-crowdsourcing-of-citizen-initiatives-affect-attitudes-towards-democracy/
+    related_data_url: ''
+  - sys:
+      id: paper_a50
+      created_at: !ruby/object:DateTime 2016-12-07 00:55:07.305000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:12.161000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 3
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Citizen engagement in rulemaking — evidence on regulatory practices
+      in 185 countries
+    authors:
+    - Melissa Marie Johns
+    - Valentina Saltane
+    publication_date: !ruby/object:DateTime 2016-09-28 12:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Crowdlaw
+    - Institutional Innovation
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Research Report
+    git_hub: ''
+    abstract: 'This paper presents a new database of indicators measuring the extent
+      to which rulemaking processes are transparent and participatory across 185 countries.
+      The data look at how citizen engagement happens in practice, including when
+      and how governments open the policy-making process to public input. The data
+      also capture the use of ex ante assessments to determine the possible cost of
+      compliance with a proposed new regulation, the likely administrative burden
+      of enforcing the regulation, and its potential environmental and social impacts.
+      The data show that citizens have more opportunities to participate directly
+      in the rulemaking process in developed economies than in developing ones. Differences
+      are also apparent among regions: rulemaking processes are significantly less
+      transparent and inclusive in Sub-Saharan Africa, the Middle East and North Africa,
+      and South Asia on average than in Organisation for Economic Co-operation and
+      Development high-income countries, Europe and Central Asia, and East Asia and
+      the Pacific. In addition, ex ante impact assessments are much more common among
+      higher-income economies than among lower-income ones. And greater citizen engagement
+      in rulemaking is associated with higher-quality regulation, stronger democratic
+      regimes, and less corrupt institutions.'
+    download_link: http://documents.worldbank.org/curated/en/462571475068174273/Citizen-engagement-in-rulemaking-evidence-on-regulatory-practices-in-185-countries
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 41TIbJzNBmaQGMmaSIUkmk
+      created_at: !ruby/object:DateTime 2018-01-23 22:57:17.276000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:21.196000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Crowdsourcing Government: Lessons from Multiple Disciplines'
+    authors:
+    - Helen Liu
+    publication_date: !ruby/object:DateTime 2017-07-13 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    - Distributed Governance
+    objective_category:
     - Effectiveness
     - Participation
     sector_category:
     - Policy
     - Governance
-    - Social Movements
+    methodology:
+    - Conceptual Framework
+    - Qualitative Analysis
+    publication_type:
+    - Journal Article
+    abstract: 'Crowdsourcing has proliferated across disciplines and professional
+      fields. Implementers in the public sector face practical challenges, however,
+      in the execution of crowdsourcing. This review synthesizes prior crowdsourcing
+      research and practices from a variety of disciplines and focuses to identify
+      lessons for meeting the practical challenges of crowdsourcing in the public
+      sector. It identifies three distinct categories of crowdsourcing: organizations,
+      products and services, and holistic systems. Lessons about the fundamental logic
+      process design - alignment, motivation, and evaluation - identified across the
+      three categories are discussed. Conclusions drawn from past studies and the
+      result in evidence can help public managers better design and implement crowdsourcing
+      in the public sector.'
+    download_link: http://onlinelibrary.wiley.com/doi/10.1111/puar.12808/full
+  - sys:
+      id: 45VOLVKMv68g2o6mMeckC6
+      created_at: !ruby/object:DateTime 2018-01-25 02:03:06.808000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:30.972000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: decidim.barcelona, Spain
+    organization:
+    - Making All Voices Count
+    region:
+    - Spain
+    authors:
+    - Ismael Peña-López
+    publication_date: !ruby/object:DateTime 2017-07-05 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Crowdlaw
+    objective_category:
+    - Legitimacy
+    - Participation
+    - Accountability
+    sector_category:
+    - Governance
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: |-
+      In September 2015, Madrid – the capital of Spain – initiated a participatory democracy project, Decide Madrid (Madrid decides), to enable participatory strategic planning for the municipality. Six month after, Barcelona – the second largest city in Spain and capital of Catalonia – began its own participatory democracy project, decidim.barcelona (Barcelona we decide) in February 2016. Both cities use the same free software platform as a base, and are guided by the same political vision. The success of these initiatives and the strong political vision behind them have spawned plenty of other initiatives in the country – especially in Catalonia – that are working to emulate the two big cities. These cities are sharing free-software-based technology, procedures and protocols, their reflections – both on open events and formal official meetings. What began as a seemingly onetime project has grown in scale.
+
+      Using Anthony Giddens’ Structuration theory, this case study examines the e-participation initiative of the City Council of Barcelona (Spain), decidim.barcelona. The study analyses the inception and first use of decidim.barcelona for the strategic plan of the municipality in the years 2016-2019.
+    download_link: http://www.makingallvoicescount.org/publication/decidim-barcelona-spain/
+  - sys:
+      id: paper_318
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:20.185000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:55:57.063000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: The Fundamentals of Policy Crowdsourcing
+    authors:
+    - John Prpić
+    - Araz Taeihagh
+    - James Melton
+    publication_date: !ruby/object:DateTime 2015-08-19 12:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
     methodology:
     - Conceptual Framework
     publication_type:
     - Journal Article
-    abstract: Public  organizations  have  interacted  with  citizens  through increasingly  sophisticated  internet-enabled  technology.  Participatory
-      platforms  emerged  from  Web  2.0  technologies  in  the  mid-2000s  as  a
-      governance mechanism to  engage  citizens in the process of  effecting  social
-      change.  Although  the  potential  of  platforms  is  recognized,  its  successful
-      implementation has faced challenges. To begin to get a handle on how to best
-      design  and  manage  participatory  platforms,  we  conducted  an  exploratory
-      participatory  action  research  study  grounded  in  two  events  –  The  Policy
-      Challenge and NSF Workshop on Participatory Platforms with a Public Intent.
-      Both events  communed  practitioners,  scholars,  and citizen participants with
-      diverse experience and expertise conducting and researching platforms. The insights  expressed  through  the
-      events  and  follow-up  interviews  and  online survey  informed  our  development  of  a  participatory  platform  lifecycle  and
-      design framework to assist designing successful participatory platforms.
-    download_link: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
+    git_hub: ''
+    abstract: What is the state of the research on crowdsourcing for policymaking?
+      This article begins to answer this question by collecting, categorizing, and
+      situating an extensive body of the extant research investigating policy crowdsourcing,
+      within a new framework built on fundamental typologies from each field. We first
+      define seven universal characteristics of the three general crowdsourcing techniques
+      (virtual labor markets, tournament crowdsourcing, open collaboration), to examine
+      the relative trade-offs of each modality. We then compare these three types
+      of crowdsourcing to the different stages of the policy cycle, in order to situate
+      the literature spanning both domains. We finally discuss research trends in
+      crowdsourcing for public policy and highlight the research gaps and overlaps
+      in the literature.
+    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.102/abstract?userIsAuthenticated=false&deniedAccessCustomisedMessage=
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: paper_14
+      created_at: !ruby/object:DateTime 2016-12-07 01:03:32.733000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 17:03:47.105000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Constitutional Conventions in the Digital Era: Lessons from
+      Iceland and Ireland'
+    region:
+    - Canada
+    - Iceland
+    - Ireland
+    authors:
+    - Silvia Suteu
+    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    git_hub: ''
+    abstract: Mechanisms of constitutional development have recently attracted significant
+      attention, specifically, instances where popular involvement was central to
+      the constitutional change. Examples include attempts by British Columbia, the
+      Netherlands, and Ontario at electoral reform, in addition to the more sweeping
+      reforms sought in Iceland and Ireland. Each of these countries’ attempts exemplifies
+      varied innovative avenues to reform involving participatory and partially citizen-led
+      processes aimed at revitalizing politics. The little legal scholarship on these
+      developments has provided an insufficient analytical account of such novel approaches
+      to constitution-making. This Essay seeks to build upon the current descriptive
+      work on constitutional conventions by focusing on the cases of Iceland and Ireland.
+      The Essay further aims to evaluate whether the means undertaken by each country
+      translates into novelty at a more substantive level, namely, the quality of
+      the process and legitimacy of the end product. The Essay proposes standards
+      of direct democratic engagements that adequately fit these new developments
+      and further identifies lessons for participatory constitution-making processes
+      in the digital twenty-first century.
+    download_link: http://iclr.bclawreview.org/files/2015/05/03_suteu.pdf
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 2zIiaRFzjaKO4YcA0ooqk
+      created_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: The Electronic Revolution in Rulemaking
+    region:
+    - United States
+    authors:
+    - Beth Simone Noveck
+    publication_date: !ruby/object:DateTime 2004-01-01 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    download_link: https://digitalcommons.nyls.edu/cgi/viewcontent.cgi?referer=http://thegovlab.org/the-govlab-selected-readings-on-crowdlaw/&httpsredir=1&article=1781&context=fac_articles_chapters
+  - sys:
+      id: 3NKjzRtFk4kGCUQ6oUCM20
+      created_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Digital Democracy: The Tools Transforming Political Engagement'
+    region:
+    - United Kingdom
+    authors:
+    - Julie Simon
+    - Theo Bass
+    - Victoria Boelman
+    - Geoff Mulgan
+    publication_date: !ruby/object:DateTime 2017-02-01 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: |-
+      - Digital democracy is a broad concept and not easy to define. The paper provides a granular approach to help encompass its various activities and methods (our ‘typology of digital democracy’).
+      - Many initiatives exist simply as an app, or web page, driven by what the technology can do, rather than by what the need is.
+      - Lessons from global case studies describe how digital tools are being used to engage communities in more meaningful political participation, and how they are improving the quality and legitimacy of decision-making.
+      - Digital democracy is still young. Projects must embed better methods for evaluation of their goals if the field is to grow.
+    download_link: http://www.nesta.org.uk/publications/digital-democracy-tools-transforming-political-engagement#sthash.z7YBQm2D.dpuf
+  - sys:
+      id: 4uFGlvz2NWQMsGkaCyYIwQ
+      created_at: !ruby/object:DateTime 2018-04-12 20:59:41.998000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:59:41.998000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'The Value of Crowdsourcing in Public Policy-Making: Epistemic,
+      Democratic and Economic Value'
+    region:
+    - United States
+    authors:
+    - Tanja Aitamurto
+    - Kaiping Chen
+    publication_date: !ruby/object:DateTime 2017-02-03 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Journal Article
+    abstract: 'While national and local governments increasingly deploy crowdsourcing
+      in lawmaking as an open government practice, it remains unclear how crowdsourcing
+      creates value when it is applied in policymaking. Therefore, in this article,
+      we examine value creation in crowdsourcing for public policymaking. We introduce
+      a framework for analysing value creation in public policymaking in the following
+      three dimensions: democratic, epistemic and economic. Democratic value is created
+      by increasing transparency, accountability, inclusiveness and deliberation in
+      crowdsourced policymaking. Epistemic value is developed when crowdsourcing serves
+      as a knowledge search mechanism and a learning context. Economic value is created
+      when crowdsourcing makes knowledge search in policymaking more efficient and
+      enables government to produce policies that better address citizens’ needs and
+      societal issues. We show how these tenets of value creation are manifest in
+      crowdsourced policymaking by drawing on instances of crowdsourced lawmaking,
+      and we also discuss the contingencies and challenges preventing value creation.'
+    download_link: https://www.tandfonline.com/doi/full/10.1080/20508840.2017.1282665
+  - sys:
+      id: oFPCXqMLHqw8GYAwIOqqq
+      created_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: "“CrowdLaw”: Online Public Participation in Lawmaking"
+    organization:
+    - The GovLab
+    region:
+    - United States
+    authors:
+    - Beth Simone Noveck
+    - Gabriella Capone
+    publication_date: !ruby/object:DateTime 2017-09-19 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: The goal of this paper is to help the Assembly of the Community of Madrid,
+      the legislature governing one of the seventeen autonomous communities of Spain,
+      and the 179 Ayuntamientos (“City Councils”) within the Madrid region to (1)
+      develop the capacity design and (2) use public engagement to improve the quality,
+      effectiveness and legitimacy of the lawmaking process.
+    download_link: https://crowd.law/
+  - sys:
+      id: 7BjvDi6FVYc4gikUA08GuO
+      created_at: !ruby/object:DateTime 2018-04-18 16:26:02.723000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-18 16:26:02.723000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Notes on the creation and impacts of Brazil’s Internet Bill
+      of Rights
+    region:
+    - Brazil
+    authors:
+    - Ronaldo Lemos
+    - Carlos Affonso Souza
+    - Fabro Steibel
+    publication_date: !ruby/object:DateTime 2017-01-12 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Participation
+    sector_category:
+    - Internet Governance
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Journal Article
+    abstract: The process that led to the approval of Brazil’s Internet Bill of Rights
+      (‘Marco Civil da Internet’) was the first initiative from the Federal Government
+      to crowdsource the making of a Draft Bill of Law, using the internet to diversify
+      the debate and invite participation from different stakeholders. This article
+      provides an overview of the process behind the creation of such a law, emphasising
+      the participatory process that resulted in the final wording of the law. Additionally,
+      the article reflects upon some of the most relevant challenges for the enforcement
+      of Brazil’s Internet Bill of Rights, as well as its international impact on
+      future case law and in the legislative process.
+    download_link: https://www.tandfonline.com/doi/pdf/10.1080/20508840.2016.1264677?needAccess=true
+  - sys:
+      id: 4fAstztThSI0CUg8IkQeiY
+      created_at: !ruby/object:DateTime 2018-04-18 16:26:02.603000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-18 16:26:02.603000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Evaluating E-Rulemaking: Public Participation and Political
+      Institutions'
+    region:
+    - United States
+    authors:
+    - Stuart M. Benjamin
+    publication_date: !ruby/object:DateTime 2006-11-01 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Journal Article
+    abstract: |-
+      "Proponents of electronic rulemaking proposals designed to
+      enhance ordinary citizens’ involvement in the rulemaking process
+      have debated with skeptics the question of whether such initiatives will
+      actually increase citizens’ involvement. In the debate thus far,
+      however, proponents have largely assumed the desirability of such
+      involvement, and skeptics have usually not challenged that
+      assumption. In addition, proponents and skeptics have focused on the
+      relationship between agencies and individuals, failing to consider the
+      larger administrative law context—and in particular the role played
+      by Congress and the courts. This Article considers e-rulemaking in a
+      broader institutional context and directly addresses the desirability of
+      the proposed e-rulemaking initiatives. The Article finds that there are
+      good reasons to believe that e-rulemaking initiatives’ costs outweigh their benefits, but that it would be premature to settle on that conclusion. The Article ultimately advocates modest experimentation with e-rulemaking, both to allow for further evaluation of e-rulemaking and to provide additional data about the rulemaking process more generally. "
+    download_link: http://lsr.nellco.org/cgi/viewcontent.cgi?article=1073&context=duke_fs
+  - sys:
+      id: 4zSzYjUZJKGCIYSWacKYQW
+      created_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
+      updated_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'The open parliament in the age of the internet: can the people
+      now collaborate with legislatures in lawmaking?'
+    region:
+    - Brazil
+    - Chile
+    authors:
+    - Cristiano Ferri Soares de Faria
+    publication_date: !ruby/object:DateTime 2013-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Collective Intelligence
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    sector_category:
+    - Law
+    - Politics
+    methodology:
+    - Case Studies
+    - Comparative Analysis
+    - Conceptual Framework
+    - Design Science
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    project:
+    - E-Democracia
+    abstract: Is the co-existence of participatory and deliberative actions with the
+      exercise of parliamentary office really feasible? In what way has Information
+      and Communication Technology fostered interaction between parliamentary representatives
+      and society at large in the daily round of legislative activities? Are we drawing
+      closer to a hybrid system of representative and participatory democracy through
+      the incorporation of effective ways of co-producing laws into legislative agendas?
+      This work seeks to address those questions and evaluate other international
+      experiences and experiments designed to achieve the same ends. The book is based
+      on a study of two particular cases where parliamentary bodies designed and implemented
+      participatory digital processes, namely, the e-Democracy Program developed by
+      the Brazilian House of Representatives, and the Virtual Senator Program developed
+      by the Chilean Senate. The text unfolds in the form of a systematic analysis
+      of institutional aspects embracing political and organizational elements as
+      well as the social aspects associated to the application of digital democracy
+      in parliaments. The investigation shows that at the stage they found themselves
+      in 2010 those projects had only brought in very incipient results in regard
+      to the aspects of enhancing representativity in decision making processes, aggregating
+      collective intelligence to the legislative process or transparency to parliamentary
+      performances, even though all of those are precious components of any democracy
+      that deems itself to be participatory and deliberative. Nevertheless, such experiences
+      have had the merit of contributing towards the gradual construction of more
+      effective participatory mechanisms, complementary to the political representation
+      system in place.
+    download_link: http://bd.camara.gov.br/bd/handle/bdcamara/12756
+  - sys:
+      id: paper_362
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:44.712000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:44.712000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Crowdsourced Deliberation: The Case of the Law on Off-Road
+      Traffic in Finland'
+    region:
+    - Finland
+    authors:
+    - Tanja Aitamurto
+    - Hélène Landemore
+    publication_date: !ruby/object:DateTime 2016-04-27 12:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    git_hub: ''
+    abstract: This article examines the emergence of democratic deliberation in a
+      crowdsourced law reform process. The empirical context of the study is a crowdsourced
+      legislative reform in Finland, initiated by the Finnish government. The findings
+      suggest that online exchanges in the crowdsourced process qualify as democratic
+      deliberation according to the classical definition. We introduce the term “crowdsourced
+      deliberation” to mean an open, asynchronous, depersonalized, and distributed
+      kind of online deliberation occurring among self-selected participants in the
+      context of an attempt by government or another organization to open up the policymaking
+      or lawmaking process. The article helps to characterize the nature of crowdsourced
+      policymaking and to understand its possibilities as a practice for implementing
+      open government principles. We aim to make a contribution to the literature
+      on crowdsourcing in policymaking, participatory and deliberative democracy and,
+      specifically, the newly emerging subfield in deliberative democracy that focuses
+      on “deliberative systems.”
+    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.115/abstract
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 4hPfUuIzsc2K4U2M2oOgym
+      created_at: !ruby/object:DateTime 2018-04-12 21:08:31.697000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 21:08:31.697000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: US Public Participation Playbook
+    region:
+    - United States
+    publication_date: !ruby/object:DateTime 2015-02-05 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    - Transparency
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    - Qualitative Analysis
+    - Quantitative Analysis
+    publication_type:
+    - Research Report
+    abstract: The U.S. Public Participation Playbook is a resource for government
+      managers to effectively evaluate and build better services through public participation
+      using best practices and performance metrics.
+    download_link: https://participation.usa.gov/
+  use_sdk: true
 - sys:
     id: 6iITlL4lYQ0gK8sEseKqCy
     created_at: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
@@ -742,6 +960,11 @@ list:
       sys:
         id: ufh1mvj7xl16
     type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
     revision: 6
     content_type:
       sys:
@@ -828,6 +1051,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -883,6 +1111,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -935,6 +1168,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -974,6 +1212,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1024,6 +1267,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1074,6 +1322,814 @@ list:
 '
     download_link: http://sms.sagepub.com/content/1/2/2056305115616151.abstract
 - sys:
+    id: M24ihkHGeIosci8IuYC44
+    created_at: !ruby/object:DateTime 2016-12-07 20:54:17.988000000 Z
+    updated_at: !ruby/object:DateTime 2016-12-08 05:49:56.978000000 Z
+    content_type_id: list
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
+    revision: 2
+    content_type:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Policy Informatics
+  author:
+  - Erik Johnston
+  affiliation:
+  - Center for Policy Informatics
+  description: "__Policy informatics__ is the transdisciplinary study and application
+    of how computation and communication technology leverages information to better
+    understand and address complex public policy and administration problems and realize
+    innovations in governance processes and institutions. Rapid advancements in information,
+    computation, and communication technology continue to proliferate society and
+    become increasingly embedded in our everyday activities, transforming how we learn,
+    communicate, coordinate, organize, produce, consume, and govern. As the world
+    becomes increasingly complex, interconnected, dynamic, and resource-constrained,
+    so do the public issues with which we must grapple. In an information-intensive
+    governance environment, advancements in information, computation, and communication
+    technology afford us the possibility to better tackle complex public issues in
+    new and innovative ways that tap into and reflect the reality of this world. In
+    particular, this involves liberating data, cultivating the bottom-up generation
+    of data and ideas, modeling and simulating system dynamics of coupled human-environmental
+    interactions, as well as engaging, educating, and empowering public officials,
+    future researchers, and the public-at-large to interact with data and one another
+    in a manner that collectively produces meaningful insights, solutions, and actions
+    to address public issues.\n\nThe following reading materials are useful for scholars
+    and practitioners to understand policy informatics theoretically and practically
+    and to apply it in diverse social and policy contexts. Most of the readings were
+    selected because in addition to a theoretical contribution, they regularly are
+    situated in useful applications across many contexts including health, education,
+    and the environment. The readings range from motivating the urgency behind a formal
+    study of policy informatics, to highlighting advances in analytics including simulation
+    and computational analytics, to design recommendations of the open organizational
+    implications of a increasingly connected public through crowdsourcing, participatory
+    platforms, and citizen science, to emerging ethical considerations including the
+    digitally invisible and algorithmic biases. \n"
+  articles_list:
+  - sys:
+      id: 8xF9RfEO9GKi6Co06yEow
+      created_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:52:06.165000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Simulation for Policy Inquiry
+    authors:
+    - Anand Desai (Ed)
+    publication_date: !ruby/object:DateTime 2012-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Data Governance
+    objective_category:
+    - Effectiveness
+    sector_category:
+    - Conceptual Framework
+    - Governance
+    methodology:
+    - Conceptual Framework
+    - Essay Collection
+    publication_type:
+    - Book
+    abstract: Public policy and management problems have been described as poorly
+      defined, messy, squishy, unstructured, intractable, and wicked. In a word, they
+      are complex. This book illustrates the development and use of simulation models
+      designed to capture some of the complexity inherent in the formulation, management,
+      and implementation of policies aimed at addressing such problems. Simulation
+      models have long existed at the fringes of policy inquiry but are not yet considered
+      an essential component of the policy analyst’s toolkit. However, this situation
+      is likely to change because with improvements in computational power and software,
+      simulation is now easier to include in the standard repertoire of research tools
+      available for discovery and decision support. This volume provides both a conceptual
+      rationale for using simulations to inform public policy and a practical introduction
+      to how such models might be constructed and employed. The focus of these papers
+      is on the uses of simulation to gain understanding and inform policy decisions
+      and action. Techniques represented in this volume include Monte Carlo simulation,
+      system dynamics and agent based modeling.
+    download_link: 'http://www.springer.com/us/book/9781461416647
+
+'
+  - sys:
+      id: 3nuF9Hr9GECicaQKw8YeoI
+      created_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:56:56.742000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'The Responsive City: Engaging Communities Through Data-Smart
+      Governance'
+    authors:
+    - Susan Crawford
+    - Stephen Goldsmith
+    publication_date: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Smart Cities
+    sector_category:
+    - Urban Planning
+    - Governance
+    methodology:
+    - Case Studies
+    - User Studies
+    publication_type:
+    - Book
+    abstract: 'Responsive City is a guide to civic engagement and governance in the
+      digital age that will help leaders link important breakthroughs in technology
+      and data analytics with age-old lessons of small-group community input to create
+      more agile, competitive, and economically resilient cities. Featuring vivid
+      case studies highlighting the work of pioneers in New York, Boston, Chicago
+      and more, the book provides a compelling model for the future of governance.
+      The book will help mayors, chief technology officers, city administrators, agency
+      directors, civic groups and nonprofit leaders break out of current paradigms
+      to collectively address civic problems. The Responsive City is the culmination
+      of research originating from the Data-Smart City Solutions initiative, an ongoing
+      project at Harvard Kennedy School working to catalyze adoption of data projects
+      on the city level. The book is co-authored by Professor Stephen Goldsmith, director
+      of Data-Smart City Solutions at Harvard Kennedy School, and Professor Susan
+      Crawford, co-director of Harvard''s Berkman Center for Internet and Society.
+      Former New York City Mayor Michael Bloomberg penned the book’s foreword.  Based
+      on the authors’ experiences and extensive research, The Responsive City explores
+      topics including: Building trust in the public sector and fostering a sustained,
+      collective voice among communities; Using data-smart governance to preempt and
+      predict problems while improving quality of life; Creating efficiencies and
+      saving taxpayer money with digital tools; and Spearheading these new approaches
+      to government with innovative leadership.
+
+'
+    download_link: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118910907.html
+  - sys:
+      id: 6MoF99htFmU6MKg6UuYsUG
+      created_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 18:59:30.689000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Crowdsourcing: Why the Power of the Crowd Is Driving the Future
+      of Business'
+    authors:
+    - Jeff Howe
+    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    sector_category:
+    - Governance
+    methodology:
+    - Case Studies
+    publication_type:
+    - Book
+    abstract: Why does Procter & Gamble repeatedly call on enthusiastic amateurs to
+      solve scientific and technical challenges? How can companies as diverse as iStockphoto
+      and Threadless employ just a handful of people, yet generate millions of dollars
+      in revenue every year? "Crowdsourcing" is how the power of the many can be leveraged
+      to accomplish feats that were once the responsibility of a specialized few.
+      Jeff Howe reveals that the crowd is more than wise–it’s talented, creative,
+      and stunningly productive. It’s also a perfect meritocracy, where age, gender,
+      race, education, and job history no longer matter; the quality of the work is
+      all that counts. If you can perform the service, design the product, or solve
+      the problem, you’ve got the job.But crowdsourcing has also triggered a dramatic
+      shift in the way work is organized, talent is employed, research is conducted,
+      and products are made and marketed. As the crowd comes to supplant traditional
+      forms of labor, pain and disruption are inevitable, and Howe delves into both
+      the positive and negative consequences of this intriguing phenomenon. Through
+      extensive reporting from the front lines of this workplace revolution, he employs
+      a brilliant array of stories to look at the economic, cultural, business, and
+      political implications of crowdsourcing.
+    download_link: https://www.amazon.com/Crowdsourcing-Power-Driving-Future-Business/dp/0307396215
+  - sys:
+      id: nJqEKYjhBuICcWWimu0WY
+      created_at: !ruby/object:DateTime 2016-12-07 19:04:36.544000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:07:42.347000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Governance Infrastructures in 2020
+    authors:
+    - Erik Johnston
+    publication_date: !ruby/object:DateTime 2010-12-03 00:00:00.000000000 -05:00
+    innovation_category:
+    - Data Governance
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Policy
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    abstract: A governance infrastructure is the collection of technologies and systems,
+      people, policies, practices, and relationships that interact to support governing
+      activities. Information technology, especially communication and computational
+      technologies, continues to augment society’s ability to organize, interact,
+      and govern. As we think about the future of governance, this article challenges
+      us to move beyond questions of how to best manage government institutions to
+      how to design smart governance systems with the appropriate incentives and rules
+      to harness and coordinate the enthusiasm and capabilities of those governed.
+      This article anticipates how the interaction of technology and society can be
+      leveraged to mindfully design an interaction-defined, participation-based governance
+      infrastructure to return power to the people while increasing accountability.
+      Supporting examples of such governance approaches already exist and are regularly
+      emerging in distributed organizations, online communities, nonprofits, and governments.
+    download_link: http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6210.2010.02254.x/full
+  - sys:
+      id: 5mB4NAsSZiCCQGYwe6eigc
+      created_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:07:28.421000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Governance in the Information Era
+    authors:
+    - Erik Johnston
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Data Governance
+    objective_category:
+    - Effectiveness
+    sector_category:
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: Policy informatics is addressing governance challenges and their consequences,
+      which span the seeming inability of governments to solve complex problems and
+      the disaffection of people from their governments. Policy informatics seeks
+      approaches that enable our governance systems to address increasingly complex
+      challenges and to meet the rising expectations of people to be full participants
+      in their communities. This book approaches these challenges by applying a combination
+      of the latest American and European approaches in applying complex systems modeling,
+      crowdsourcing, participatory platforms and citizen science to explore complex
+      governance challenges in domains that include education, environment, and health.
+    download_link: https://www.routledge.com/Governance-in-the-Information-Era-Theory-and-Practice-of-Policy-Informatics/Johnston/p/book/9781138832077
+  - sys:
+      id: 5eO4ThP9HOQSMs4qamKQEY
+      created_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:11:27.848000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Design Lessons for Smart Governance Infrastructures
+    authors:
+    - Erik Johnston
+    - Derek Hansen
+    publication_date: !ruby/object:DateTime 2010-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Data Governance
+    objective_category:
+    - Effectiveness
+    sector_category:
+    - Policy
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Book Chapter
+    abstract: This chapter provides design lessons on how to take advantage of advances
+      in information technologies that have enabled new governance infrastructures
+      to become both possible and desirable. A governance infrastructure is the collection
+      of technologies, people, policies, practices, resources, social norms, and information
+      that interact to support governing activities. Smart governance infrastructures
+      augment society's ability to organize, interact, and govern. Novel instances
+      of smart governance infrastructures already exist and are regularly emerging
+      in distributed organizations and online communities. As we think about rebooting
+      the public square, this chapter is intended to challenge us to move beyond questions
+      of how to best manage government institutions to questions of how to design
+      governance systems with the appropriate incentives and rules to harness and
+      coordinate the diversity, enthusiasm, and capabilities of those governed. We
+      provide several design lessons learned from successful governance infrastructures
+      and propose how they can be applied to address national priorities. This chapter
+      anticipates how the interaction of technology and society can be leveraged to
+      mindfully design problem-defined, participation-based governance infrastructures
+      to return power to the people while increasing accountability and efficiency.
+    download_link: nationalresourcenetwork.org/Documents/Document/Document/301940
+  - sys:
+      id: 63wsPNLDeEQkgq8ykGik8q
+      created_at: !ruby/object:DateTime 2016-12-07 19:17:53.098000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:33:47.049000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: How Regular People Can Help Shape Science
+    authors:
+    - David Lang
+    publication_date: !ruby/object:DateTime 2016-03-23 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Citizen Science
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Education
+    - Science
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Article Draft
+    download_link: http://ideas.ted.com/how-regular-people-can-help-shape-science/?utm_campaign=social&utm_medium=referral&utm_source=facebook.com&utm_content=ideas-blog&utm_term=science
+  - sys:
+      id: WBtwNIjeCcKAaOOqwY0y8
+      created_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:23:00.213000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Informed and Interconnected: A Manifesto for Smarter Cities'
+    authors:
+    - Rosabeth Kanter
+    publication_date: !ruby/object:DateTime 2009-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Smart Cities
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Policy
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Working Paper
+    abstract: The need for a fresh approach to U.S. communities is more urgent than
+      ever because of the biggest global economic crisis since the Great Depression.
+      Through examination of the barriers to solving urban problems (and the ways
+      they reinforce each other), this paper offers a new approach to community transformation
+      which calls for leaders to use technology to inform and connect people. We need
+      to convert the social safety net into a social safety network through the creation
+      of smarter communities that are information-rich, interconnected, and able to
+      provide opportunities to all citizens. This process has already begun through
+      such programs as Harlem Children's Zone, Baltimore's CitiStat, Elevate Miami,
+      and others. And they can be replicated. But technology alone is not the answer.
+      Realization of the vision requires leaders to invest in the tools, guide their
+      use, and pave the way for transformation. Perhaps the urgency of the current
+      economic crisis can provide the impetus to overcome resistance to change and
+      turn problems into an opportunity to reduce costs, improve services to communities,
+      and make our cities smarter.
+    download_link: http://www.hbs.edu/faculty/Pages/item.aspx?num=36185
+  - sys:
+      id: 2ai3l30s8EIsQqSw6SeQyg
+      created_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:28:37.258000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Policy modeling to support administrative decisionmaking on
+      the New York state HIV testing law.
+    authors:
+    - Martin
+    - E. G.
+    - MacDonald
+    - R. H.
+    - Smith
+    - L. C.
+    - Gordon
+    - D. E.
+    - Tesoriero
+    - J. M.
+    - Laufer
+    - F. N.
+    - O’Connell
+    - D. A
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Big Data
+    - Open Data
+    objective_category:
+    - Effectiveness
+    - Participation and Sharing
+    sector_category:
+    - Health
+    - Law
+    - Science
+    methodology:
+    - Case Studies
+    - Statistical Modeling
+    publication_type:
+    - Journal Article
+    abstract: A recent New York law requires medical providers to offer HIV tests
+      as part of routine care. We developed a system dynamics simulation model of
+      the HIV testing and care system to help administrators understand the law's
+      potential epidemic impact, resource needs, strategies to improve implementation,
+      and appropriate outcome indicators for future policy evaluations once postlaw
+      data become available. Policy modeling allowed us to synthesize information
+      from numerous sources including quantitative administrative data sets and practitioners'
+      content expertise, structure the information to be viewed both numerically and
+      visually, and organize consensus for decisionmaking purposes. This case illustrates
+      how policy modeling can provide an integrated framework for administrators to
+      examine policy problems in complex systems, particularly when data time lags
+      limit pre--post comparisons and key outcomes cannot be measured directly.
+    download_link: https://www.ncbi.nlm.nih.gov/pubmed/25893238
+  - sys:
+      id: 2XEZZJVjLqCy0cAgU2UEeY
+      created_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 19:40:02.927000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: The Entrepreneurial State
+    authors:
+    - Mariana Mazzucato
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Big Data
+    - Institutional Innovation
+    objective_category:
+    - Effectiveness
+    - Participation and Sharing
+    - Urban Design
+    sector_category:
+    - Urban Planning
+    - Policy
+    - Governance
+    - Urban Design
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: 'The book comprehensively debunks the myth of a lumbering, bureaucratic
+      state versus a dynamic, innovative private sector. In a series of case studies—from
+      IT, biotech, nanotech to today’s emerging green tech—Professor Mazzucato shows
+      that the opposite is true: the private sector only finds the courage to invest
+      after an entrepreneurial state has made the high-risk investments. In an intensely
+      researched chapter, she reveals that every technology that makes the iPhone
+      so ‘smart’ was government funded: the Internet, GPS, its touch-screen display
+      and the voice-activated Siri. Mazzucato also controversially argues that in
+      the history of modern capitalism the State has not only fixed market failures,
+      but has also actively shaped and created markets. In doing so, it sometimes
+      wins and sometimes fails. Yet by not admitting the State’s role in such active
+      risk taking, and pretending that the state only cheers on the side-lines while
+      the private sector roars, we have ended up creating an ‘innovation system’ whereby
+      the public sector socializes risks, while rewards are privatized. The book considers
+      how to change this dysfunctional dynamic so that economic growth can be not
+      only ‘smart’ but also ‘inclusive’.'
+    download_link: http://www.anthempress.com/the-entrepreneurial-state-876
+  - sys:
+      id: 4AMlQ0OMYwEWCwQ8aKSGqU
+      created_at: !ruby/object:DateTime 2016-12-07 19:45:47.097000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:33:38.076000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    publication_name: Smart Citizens, Smarter State
+    organization:
+    - The GovLab
+    authors:
+    - Beth Simone Noveck
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Distributed Governance
+    - Open Data
+    - Data Governance
+    objective_category:
+    - Effectiveness
+    - Participation
+    - Accessibility
+    sector_category:
+    - Politics
+    - Policy
+    - Governance
+    - Open Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: Government “of the people, by the people, for the people” expresses
+      an ideal that resonates in all democracies. Yet poll after poll reveals deep
+      distrust of institutions that seem to have left “the people” out of the governing
+      equation. Government bureaucracies that are supposed to solve critical problems
+      on their own are a troublesome outgrowth of the professionalization of public
+      life in the industrial age. They are especially ill-suited to confronting today’s
+      complex challenges. Offering a far-reaching program for innovation, Smart Citizens,
+      Smarter State suggests that public decisionmaking could be more effective and
+      legitimate if government were smarter—if our institutions knew how to use technology
+      to leverage citizens’ expertise. Just as individuals use only part of their
+      brainpower to solve most problems, governing institutions make far too little
+      use of the skills and experience of those inside and outside of government with
+      scientific credentials, practical skills, and ground-level street smarts. New
+      tools—what Beth Simone Noveck calls technologies of expertise—are making it
+      possible to match the supply of citizen expertise to the demand for it in government.
+      Drawing on a wide range of academic disciplines and practical examples from
+      her work as an adviser to governments on institutional innovation, Noveck explores
+      how to create more open and collaborative institutions. In so doing, she puts
+      forward a profound new vision for participatory democracy rooted not in the
+      paltry act of occasional voting or the serendipity of crowdsourcing but in people’s
+      knowledge and know-how.
+    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674286054
+  - sys:
+      id: 7Jah8NPwo8wWsoeOYsOM8E
+      created_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:15:28.696000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: The Black Box Society
+    authors:
+    - Frank Pasquale
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Big Data
+    - Open Data
+    objective_category:
+    - Privacy
+    - Transparency
+    sector_category:
+    - Human Rights
+    - Law
+    - Private
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: Every day, corporations are connecting the dots about our personal behavior—silently
+      scrutinizing clues left behind by our work habits and Internet use. The data
+      compiled and portraits created are incredibly detailed, to the point of being
+      invasive. But who connects the dots about what firms are doing with this information?
+      The Black Box Society argues that we all need to be able to do so—and to set
+      limits on how big data affects our lives. Hidden algorithms can make (or ruin)
+      reputations, decide the destiny of entrepreneurs, or even devastate an entire
+      economy. Shrouded in secrecy and complexity, decisions at major Silicon Valley
+      and Wall Street firms were long assumed to be neutral and technical. But leaks,
+      whistleblowers, and legal disputes have shed new light on automated judgment.
+      Self-serving and reckless behavior is surprisingly common, and easy to hide
+      in code protected by legal and real secrecy. Even after billions of dollars
+      of fines have been levied, underfunded regulators may have only scratched the
+      surface of this troubling behavior. Frank Pasquale exposes how powerful interests
+      abuse secrecy for profit and explains ways to rein them in. Demanding transparency
+      is only the first step. An intelligible society would assure that key decisions
+      of its most important firms are fair, nondiscriminatory, and open to criticism.
+      Silicon Valley and Wall Street need to accept as much accountability as they
+      impose on others.
+    download_link: http://www.hup.harvard.edu/catalog.php?isbn=9780674368279
+  - sys:
+      id: 5D75xkWIakOoiUsY8wUQ2i
+      created_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:17:42.537000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Cognitive Surplus: How Technology Makes Consumers into Collaborators'
+    authors:
+    - Clay Shirky
+    publication_date: !ruby/object:DateTime 2011-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Co-Creation
+    objective_category:
+    - Effectiveness
+    - Co-Creation
+    sector_category:
+    - Governance
+    - Open Data
+    - Big Data
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    abstract: In his bestselling Here Comes Everybody, Internet guru Clay Shirky provided
+      readers with a much-needed primer for the digital age. Now, with Cognitive Surplus,
+      he reveals how new digital technology is unleashing a torrent of creative production
+      that will transform our world. For the first time, people are embracing new
+      media that allow them to pool their efforts at vanishingly low cost. The results
+      of this aggregated effort range from mind-expanding reference tools like Wikipedia
+      to life-saving Web sites like Ushahidi.com, which allows Kenyans to report acts
+      of violence in real time. Cognitive Surplus explores what's possible when people
+      unite to use their intellect, energy, and time for the greater good.
+    download_link: https://www.amazon.com/Cognitive-Surplus-Technology-Consumers-Collaborators/dp/0143119583
+  - sys:
+      id: 2IXPwn23ksUuecSgkimMYa
+      created_at: !ruby/object:DateTime 2016-12-07 20:20:08.414000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:32:37.923000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 3
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Designing Successful Participatory Platforms with a Public
+      Intent: Lessons Learned from Practitioners, Scholars, and Citizen Participants. '
+    authors:
+    - Chase Treisman
+    - Tanya M. Kelley
+    - Erik W. Johnston
+    publication_date: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Data Governance
+    objective_category:
+    - Access
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Policy
+    - Governance
+    - Social Movements
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    abstract: Public  organizations  have  interacted  with  citizens  through increasingly  sophisticated  internet-enabled  technology.  Participatory
+      platforms  emerged  from  Web  2.0  technologies  in  the  mid-2000s  as  a
+      governance mechanism to  engage  citizens in the process of  effecting  social
+      change.  Although  the  potential  of  platforms  is  recognized,  its  successful
+      implementation has faced challenges. To begin to get a handle on how to best
+      design  and  manage  participatory  platforms,  we  conducted  an  exploratory
+      participatory  action  research  study  grounded  in  two  events  –  The  Policy
+      Challenge and NSF Workshop on Participatory Platforms with a Public Intent.
+      Both events  communed  practitioners,  scholars,  and citizen participants with
+      diverse experience and expertise conducting and researching platforms. The insights  expressed  through  the
+      events  and  follow-up  interviews  and  online survey  informed  our  development  of  a  participatory  platform  lifecycle  and
+      design framework to assist designing successful participatory platforms.
+    download_link: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
+- sys:
     id: 4XDvBZXr288E4smsGAiQCa
     created_at: !ruby/object:DateTime 2017-02-02 22:41:46.138000000 Z
     updated_at: !ruby/object:DateTime 2017-02-06 16:38:40.139000000 Z
@@ -1082,6 +2138,11 @@ list:
       sys:
         id: ufh1mvj7xl16
     type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
     revision: 3
     content_type:
       sys:
@@ -1133,6 +2194,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1174,6 +2240,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1207,6 +2278,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1252,6 +2328,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1296,6 +2377,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1341,6 +2427,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1387,6 +2478,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1421,6 +2517,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1479,6 +2580,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1521,6 +2627,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1556,6 +2667,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1594,6 +2710,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1638,6 +2759,11 @@ list:
       sys:
         id: ufh1mvj7xl16
     type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
     revision: 1
     content_type:
       sys:
@@ -1663,6 +2789,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1698,6 +2829,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1752,6 +2888,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1787,6 +2928,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1834,6 +2980,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1876,6 +3027,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1906,6 +3062,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1953,6 +3114,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -1985,6 +3151,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2023,6 +3194,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2075,6 +3251,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2118,6 +3299,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2156,6 +3342,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2194,6 +3385,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
@@ -2238,6 +3434,11 @@ list:
         sys:
           id: ufh1mvj7xl16
       type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
       revision: 1
       content_type:
         sys:
