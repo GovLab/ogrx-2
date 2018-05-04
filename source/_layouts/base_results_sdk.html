@@ -3,11 +3,11 @@ layout: contentful_sdk
 ---
 
 <div class="base-result-page">
-  <div class="top-section top-section--all">
+  <div class="top-section top-section--{{page.title | slugify}}">
     <div class="row align-center">
       <div class="large-10 column">
-        <h1>All Articles</h1>
-        <h3 class="top-section__tagline">Across the world, science and technology are creating innovative ways for people to tackle society’s problems together.</h3>
+        <h1>{{page.title}}</h1>
+        <h3 class="top-section__tagline">{{page.subtitle}}</h3>
       </div>
     </div>
 
@@ -69,6 +69,6 @@ layout: contentful_sdk
 
 <script>
   $(function() {
-    if (document.getElementById('content') != null) { renderEntries('content'); }
+    if (document.getElementById('content') != null) { renderEntries('content', '{{page.title}}', '../'); }
   });
 </script>

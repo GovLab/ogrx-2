@@ -16,7 +16,7 @@ layout: default
 
   <section class="page-section main-categories">
     <div class="row expanded small-collapse medium-collapse large-collapse">
-      <div class="medium-3 column ">
+      <div class="medium-4 column ">
         <a class="category-item category-item--all" href="by/all.html">
           <div class="aligner">
             <div class="aligner-item">
@@ -31,7 +31,7 @@ layout: default
       {% assign name = category.display_name %}
       {% endif %}
       {% if category.featured %}
-      <div class="medium-3 column ">
+      <div class="medium-4 column ">
         <a class="category-item category-item--{{name | slugify}}" href="categories/{{category.title | slugify}}.html">
           <div class="aligner">
             <div class="aligner-item">

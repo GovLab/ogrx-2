@@ -52,7 +52,7 @@ page_gen:
 
   # The other datasets are based in this one, but sending to the respective folders.
   - data: main-categories
-    template: base_results
+    template: base_results_sdk
     name: title
     dir: categories
     extension: html
@@ -102,9 +102,10 @@ contentful:
         cda_query:                  # Optional
           content_type: paper
           include: 1
+          limit: 5
           # limit: 10
           # limit: 50
-          limit: 1000
+          # limit: 1000
         content_types:
           paper: SysMapper
           blogpost: SysMapper
