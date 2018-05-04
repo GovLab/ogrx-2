@@ -28,6 +28,10 @@
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -52,8 +56,65 @@
 
     
 
-<div id="list-content">
+<div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
+    <h1>Selected Readings on Crowdlaw</h1>
+    <h3 class="blog-single__meta">April 18, 2018 by  <a href="../authors/beth-simone-noveck.html">Beth Simone Noveck</a> </h3>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="../organizations/the-govlab.html"><img src="../images/organizations/govlab-logo-white.png" style="max-width: 200px"></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p>&nbsp;</p>
+  </div>
+  <section class="blog-content blog-single">
+    <div class="row">
+      <div class="large-10 column large-offset-1">
+        <p>With rates of trust in government at all-time lows, the legitimacy and effectiveness of traditional representative models of urban lawmaking, typically dominated by political party agendas and conducted by professional staff and politicians working behind largely closed doors, are called into question. But technology offers the promise of opening how lawmaking bodies work to new sources of expertise and opinion and of making lawmakers accountable to the public more than just on Election Day. Around the world, there are already significant examples of local legislatures and national parliaments turning to the Internet and new civic technologies to involve the public at various stages of decision-making from agenda-setting to evaluation. We call such open and participatory lawmaking: “CrowdLaw.”</p>
+
+<p>The pieces collected here are focused on public engagement practices connected to the process of making laws and policies. For reasons of space, we do not include readings on citizen participation, crowdsourcing or open innovation generally (see GovLab’s <a href="http://thegovlab.org/the-govlab-selected-readings-on-crowdsourcing-opinions-and-ideas/">Selected Readings on Crowdsourcing Opinions and Ideas</a>) but focus, instead, on engagement in these specific institutional contexts. To consult more resources, visit To consult more resources, visit <a href="https://crowd.law">www.crowd.law</a>.</p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div id="list-content">
     <div class="row align-center">
       <div class="large-10 column">
         <!-- <p class="js-loading js-loading--white"><i class="js-loading-spinner material-icons">refresh</i></p> -->
@@ -61,7 +122,14 @@
       </div>
     </div>
   </div>
+
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('list-content') != null) { renderList('list-content'); }
+  });
+</script>
 
 
 
@@ -208,7 +276,6 @@
 
 
     <script src="/vendor/slick.min.js"></script>
-    <script src="/vendor/contentful.browser.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="/js/underscore.js"></script>
@@ -217,8 +284,6 @@
     <script src="/js/filters.js"></script>
 
     <script src="/js/uiscripts.js"></script>
-    <script src="/js/contentful_search.js"></script>
-    <script src="/js/contentful_results.js"></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>

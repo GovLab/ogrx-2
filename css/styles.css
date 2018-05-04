@@ -630,6 +630,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     background-color: #00ad98; }
   .category-item--labs-and-experimentation {
     background-color: #dbc048; }
+  .category-item--crowdlaw {
+    background-color: #8b62bb; }
   .category-item--all:hover {
     background-color: #304052; }
   .category-item--behavioral-research:hover, .category-item--behavioral-science-and-nudges:hover {
@@ -646,6 +648,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     background-color: #008e7d; }
   .category-item--labs-and-experimentation:hover {
     background-color: #d6b72e; }
+  .category-item--crowdlaw:hover {
+    background-color: #7b4db2; }
 
 .tag--all {
   background-color: rgba(59, 79, 101, 0.2);
@@ -671,6 +675,9 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .tag--labs-and-experimentation {
   background-color: rgba(219, 192, 72, 0.2);
   color: #dbc048; }
+.tag--crowdlaw {
+  background-color: rgba(139, 98, 187, 0.2);
+  color: #8b62bb; }
 
 .top-section {
   background-color: #004f6f; }
@@ -690,6 +697,8 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     background-color: #00ad98; }
   .top-section--labs-and-experimentation {
     background-color: #dbc048; }
+  .top-section--crowdlaw {
+    background-color: #8b62bb; }
 
 .organizations {
   text-align: center; }

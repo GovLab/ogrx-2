@@ -107,15 +107,7 @@ var singleList = function(entry) {
     console.log(entry);
     console.log (entry.fields.affiliationLogo.fields.file);
 
-    return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
-    '<h1>' + entry.fields.title + '</h1>' +
-    '<h3 class="blog-single__meta">' + (new Date(entry.sys.createdAt)).toLocaleDateString('en-US', dateFormatOptions) + ' by ' +
-    entry.fields.author.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') + '</h3>' +
-    ((entry.fields.affiliationLogo === undefined) ? entry.fields.affiliation.map(function(i){ return '<p>' + i + '</p>'; }) : '<img src="' + entry.fields.affiliationLogo.fields.file.url + '" style="max-width: 200px">') +
-    '<p>&nbsp;</p></div><section class="blog-content blog-single"><div class="row"><div class="large-10 column large-offset-1">' +
-    entry.fields.description +
-    '</div></div></section>' +
-    ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
+    return ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
     entry.fields.articlesList.map(function(i) { return results(i, '../'); }) +
     '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">Back to Lists</a></p></div></div></div>';
 }
@@ -149,7 +141,7 @@ var pagination = function (p, l, t, params) {
     for (var i = 0; i < numPagesDisplayed && pn <= max; i++) {
         pn = startPage + i;
         if (pn != p) {
-            html += "<a href='all_sdk.html?p=" + pn + "&limit=" + l + params + "'>" + pn + "</a>";
+            html += "<a href='./" + location.pathname.split('/').pop() + "?p=" + pn + "&limit=" + l + params + "'>" + pn + "</a>";
         }
         else {
             html += "<span class='js-current-page'>" + pn + "</span>";
@@ -196,16 +188,25 @@ var selectLimitChange = function(e, total) {
         open = (open === null) ? '' : '&open=' + encodeURIComponent(open);
         paramstring = '&f=true' + category + methodology + objective + type + open;
     }
-    location = 'all_sdk.html?p=' + page + '&limit=' + e.value + paramstring;
+    location = location.pathname.split('/').pop() + '?p=' + page + '&limit=' + e.value + paramstring;
 }
 
-var renderEntries = function() {
-    var container = document.getElementById('content');
+var renderEntries = function(el, _category, basepath) {
+    var container = document.getElementById(el);
+    var category;
 
     var params = {
         content_type: PAPER_CONTENT_TYPE_ID,
         order: '-sys.createdAt'
     };
+
+    if (typeof _category !== "undefined") {
+        category = _category;
+        if (category !== null) { params['fields.innovationCategory[match]'] = category; }
+    }
+    if (typeof basepath === "undefined") {
+        basepath = '';
+    }
 
     var paramstring = '';
 
@@ -222,7 +223,7 @@ var renderEntries = function() {
         paramstring = '&q=' + encodeURIComponent(query) + open;
     }
     else if (filter == 'true' || filter == '1') {
-        var category = findGetParameter('category');
+        category = findGetParameter('category');
         var methodology = findGetParameter('methodology');
         var objective = findGetParameter('objective');
         var type = findGetParameter('type');
@@ -254,12 +255,12 @@ var renderEntries = function() {
         if (skip > entries.total) {
             location = 'all_sdk.html?p=1&limit=' + limit;
         }
-        container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(function(i) { return results(i, ''); }).join('\n') + pagination(page, limit, entries.total, paramstring);
+        container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(function(i) { return results(i, basepath); }).join('\n') + pagination(page, limit, entries.total, paramstring);
     })
 }
 
-var renderSingleEntry = function() {
-    var container = document.getElementById('paper-content')
+var renderSingleEntry = function(el) {
+    var container = document.getElementById(el)
 
     var id = findGetParameter('id');
     var name = findGetParameter('n');
@@ -288,8 +289,8 @@ var renderSingleEntry = function() {
     }
 }
 
-var renderList = function() {
-    var container = document.getElementById('list-content');
+var renderList = function(el) {
+    var container = document.getElementById(el);
 
     var name = location.pathname.replace(/^.*\//,'').replace(/\.html$/,'');
 
@@ -309,7 +310,3 @@ var renderList = function() {
     })
     .catch(console.error)
 }
-
-if (document.getElementById('content') != null) { renderEntries(); }
-if (document.getElementById('paper-content') != null) { renderSingleEntry(); }
-if (document.getElementById('list-content') != null) { renderList(); }

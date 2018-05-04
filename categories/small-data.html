@@ -28,6 +28,10 @@
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -59,639 +63,67 @@
       </div>
     </div>
 
-    
-    
-
-    <!-- IF PRE-FILTERED PAPER RESULTS LENGTH > 18 INCLUDE FILTERS -->
-    
-
-<script>
-window.store = {
-  
-  "paper-a19": {
-    "title": "Data Ethics – The New Competitive Advantage",
-    "author": "Grey Hasselbalch,Pernille Tranberg",
-    "category": "Small Data",
-    "content": "Respect for privacy and the individual’s right to control their own data is becoming a key competitive parameter. Companies, organisations and authorities that treat data ethics as a social responsibility as important as environmental awareness and respect for human rights are tomorrow’s winners. Digital trust is paramount for digital growth and welfare.  This book combines broad trend analysis with case studies of companies working with data ethics to varying degrees. The authors make the case how citizens and consumers are no longer just concerned about their lack of control over data, but also have begun to act, and how alternative business models, advances in technology and a new European data protection regulation combined foster a growing market for data ethical products and services. It provides a critical and fresh look at tech trends and the ethical dilemmas intertwined with them. It is a book for responsible players on how to get started with data ethics and how to use it to develop digital trust.",
-    "url": "papers/data-ethics--the-new-competitive-advantage.html"
-  }
-  ,
-  
-  "paper-155": {
-    "title": "Beyond the Quantified Self: Thematic exploration of a dataistic paradigm",
-    "author": "Minna Ruckenstein,Mika Pantzar",
-    "category": "Small Data",
-    "content": "This article investigates the metaphor of the Quantified Self (QS) as it is presented in the magazine Wired (2008–2012). Four interrelated themes—transparency, optimization, feedback loop, and biohacking—are identified as formative in defining a new numerical self and promoting a dataist paradigm. Wired captures certain interests and desires with the QS metaphor, while ignoring and downplaying others, suggesting that the QS positions self-tracking devices and applications as interfaces that energize technological engagements, thereby pushing us to rethink life in a data-driven manner. The thematic analysis of the QS is treated as a schematic aid for raising critical questions about self-quantification, for instance, detecting the merging of epistemological claims, technological devices, and market-making efforts. From this perspective, another definition of the QS emerges: a knowledge system that remains flexible in its aims and can be used as a resource for epistemological inquiry and in the formation of alternative paradigms.",
-    "url": "papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html"
-  }
-  ,
-  
-  "12oaa65ykwcoccmgeq6aye": {
-    "title": "Opportunities and Risks in Emerging Technologies",
-    "author": "The Web Foundation",
-    "category": "Labs and Experimentation,Small Data,Algorithmic Scrutiny,Artificial Intelligence",
-    "content": "To achieve our vision of digital equality, we need to understand how new technologies are shaping society; where they present opportunities to make people's lives better, and indeed where they threaten to create harm. To this end, we have commisioned a series of white papers examining three key digital trends: artificial intelligence, algorithms, and control of personal data. The papers focus on low- and middle-income countries, which are all too often overlooked in debates around the impacts of emerging technologies.The series addresses each of these three digital issues, looking at how they are impacting people's lives and identifying steps that governments, companies and civil society organizations can take to limit the harms, and maximize benefits, for citizens.We will use these white papers to refine our thinking and set our work agenda on digital equality in the years ahead. We are sharing them openly with the hope they benefit others working towards our goal and to amplify the limited research currently available on digital issues in low- and middle-income countries. We intend the papers to foster discussion about the steps we can take together to ensure emerging technologies are used in ways that benefit people's lives, whether they are in Los Angeles or Lagos.",
-    "url": "papers/opportunities-and-risks-in-emerging-technologies.html"
-  }
-  ,
-  
-  "paper-388": {
-    "title": "Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle",
-    "author": "Liane Colonna",
-    "category": "Data Analysis,Small Data",
-    "content": "This paper is about how the concept of personal data mining, a term used to explain the individual use of dynamic data processing techniques to find hidden patterns and trends in large amounts of personal data, challenges the concept of data minimization. It is an attempt to demonstrate that fair information principles like data minimization, while providing a useful starting point for data protection laws, must give way to more nuanced legal rules and models. It stresses that a shift of paradigms from the current paternalistic approach to handling personal towards an empowered-user approach is needed in order to better protect privacy in light of recent advancements in technology.",
-    "url": "papers/mo-data-mo-problems-personal-data-mining-and-the-challenge-to-the-data-mnimization-principle.html"
-  }
-  
-  
-};
-</script>
-<script src="../js/lunr.min.js"></script>
-<script src="../js/lunr-filter.js"></script>
-
-<section class="filters">
-
-  <div class="row align-center">
-    <div class="large-6 column large-offset-1">
-      <span class="filter-ui-container js-multi">
+    <div class="row align-center">
+      <div class="large-6 column large-offset-1">
         <div class="switch">
           <label>
             All Articles
-            <input id="open-switch" type="checkbox" class="filter" data-filter="f-open">
-            <span class="lever"></span>
+            <input id="sdk-open-switch" type="checkbox">
+            <span id="sdk-open-button" class="lever"></span>
             Open Access Articles Only
           </label>
         </div>
-      </span>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    // $(function(){
-    //   $("#open-switch").click(function() {
-    //       if ($("#open-switch").attr('data-filter') == "f-open-false") {
-    //         $("#open-switch").attr('data-filter') == "f-open-false"
-    //       }
-    //   });
-    // });
-  </script>
-
-  <div class="row align-center">
-    <div class="large-10 column">
-      <form action="" class="search search--main-search search--negative lunr-form" id="lunr-filter-form">
-        <input id="lunr-filter" type="text" placeholder="Search" data-category="" />
-        <input class="search__trigger material-icons" type="button" value="search" id="search-button">
-      </form>
-    </div>
-  </div>
-
-  <div class="filter-controls">
-    <div class="row expanded align-center">
-      <div class="large-12 column">
-
-        
-        
-        
-        
-        
-        
-        
-
-        
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-organization" class="filter js-change" >
-              <option data-filter="*">Organization</option>
-              
-              <option data-filter="f-swedish-law-and-informatics-research-institute">Swedish Law and Informatics Research Institute</option>
-              
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-objective" class="filter js-change" >
-              <option data-filter="**">Objective</option>
-              
-              <option data-filter="f-legitimacy">Legitimacy</option>
-              
-              <option data-filter="f-effectiveness">Effectiveness</option>
-              
-              <option data-filter="f-privacy">Privacy</option>
-              
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-methodology" class="filter js-change" >
-              <option data-filter="***">Methodology</option>
-              
-              <option data-filter="f-conceptual-framework">Conceptual Framework</option>
-              
-              <option data-filter="f-qualitative-analysis">Qualitative Analysis</option>
-              
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-sector" class="filter js-change" >
-              <option data-filter="****">Sector</option>
-              
-              <option data-filter="f-human-rights">Human Rights</option>
-              
-              <option data-filter="f-business">Business</option>
-              
-              <option data-filter="f-health">Health</option>
-              
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-region" class="filter js-change" >
-              <option data-filter="*****">Region</option>
-              
-              <option data-filter="f-europe">Europe</option>
-              
-            </select>
-          </div>
-        </div>
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-type" class="filter js-change" >
-              <option data-filter="******">Type</option>
-              
-              <option data-filter="f-book">Book</option>
-              
-              <option data-filter="f-journal-article">Journal Article</option>
-              
-              <option data-filter="f-white-paper">White Paper</option>
-              
-              <option data-filter="f-research-report">Research Report</option>
-              
-            </select>
-          </div>
-        </div>
-
-
-        <div class="filter-ui-container">
-          <div class="select">
-            <select name="" id="filter-project" class="filter js-change" disabled>
-              <option data-filter="*******">Project</option>
-              
-            </select>
-          </div>
-        </div>
-
       </div>
     </div>
+
     <div class="row align-center">
-      <div class="large-3 column">
-        <a class="button" id="clear-filter-btn">Clear Filters</a>
+      <div class="large-10 column">
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row align-center">
+      <div class="large-10 column">
+        <form id="sdk-search-form" action="" class="search search--main-search search--negative">
+          <input id="sdk-search" type="text" placeholder="Search" />
+          <input id="sdk-search-trigger" class="material-icons" type="button" value="search" >
+        </form>
+      </div>
+    </div>
+
+    <p>
+
+      <div class="row align-center">
+        <div class="large-3 column">
+          <a class="button" id="sdk-clear-filter-btn"><i class="material-icons">clear</i> Clear Filters</a>
+        </div>
+      </div>
+      &nbsp;
+
+    </p>
+
+  </div>
+
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
+
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
+
       </div>
     </div>
   </div>
 
-
-</section>
-  </div>
-
-  
-
-<div class="page-section results-section isotope">
-  <div class="row expanded">
-    <div class="column large-12">
-
-      
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-legitimacy
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-human-rights
-      
-      f-business
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-grey-hasselbalch
-      
-      f-pernille-tranberg
-      
-
-      
-      m-small-data
-      
-
-      f-search-paper-a19
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/data-ethics--the-new-competitive-advantage.html" title="Data Ethics – The New Competitive Advantage">Data Ethics – The New Competitive Advantage</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Grey+Hasselbalch">Grey Hasselbalch</a>
-        
-        <a href="../by/author.html?query=Pernille+Tranberg">Pernille Tranberg</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-      <div class="result-item__unpaywall">
-        <p class="">May be available at</p>
-        <a href="http://unpaywall.org/"><img class="" src="../images/unpaywall.png" alt=""></a>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">closed</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-
-      
-
-      
-      f-effectiveness
-      
-      f-privacy
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-health
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-minna-ruckenstein
-      
-      f-mika-pantzar
-      
-
-      
-      m-small-data
-      
-
-      f-search-paper-155
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/beyond-the-quantified-self-thematic-exploration-of-a-dataistic-paradigm.html" title="Beyond the Quantified Self: Thematic exploration of a dataistic paradigm">Beyond the Quantified Self: Thematic exploration of a dataistic paradigm</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Minna+Ruckenstein">Minna Ruckenstein</a>
-        
-        <a href="../by/author.html?query=Mika+Pantzar">Mika Pantzar</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-      <div class="result-item__unpaywall">
-        <p class="">May be available at</p>
-        <a href="http://unpaywall.org/"><img class="" src="../images/unpaywall.png" alt=""></a>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">closed</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-
-      
-
-      
-
-      
-      f-qualitative-analysis
-      
-
-      
-
-      
-
-      
-
-      
-      f-white-paper
-      
-
-      
-      f-the-web-foundation
-      
-
-      
-      m-labs-and-experimentation
-      
-      m-small-data
-      
-      m-algorithmic-scrutiny
-      
-      m-artificial-intelligence
-      
-
-      f-search-12oaa65ykwcoccmgeq6aye
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/opportunities-and-risks-in-emerging-technologies.html" title="Opportunities and Risks in Emerging Technologies">Opportunities and Risks in Emerging Technologies</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=The+Web+Foundation">The Web Foundation</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/labs-and-experimentation.html" class="result-item__tag result-item__tag--labs-and-experimentation">Labs and Experimentation</a>
-          
-          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
-          
-          <a href="../categories/algorithmic-scrutiny.html" class="result-item__tag result-item__tag--algorithmic-scrutiny">Algorithmic Scrutiny</a>
-          
-          <a href="../categories/artificial-intelligence.html" class="result-item__tag result-item__tag--artificial-intelligence">Artificial Intelligence</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/white-paper.html">White Paper</a>
-          
-        </span>
-      </div>
-      
-      <div class="result-item__unpaywall">
-        <p class="">May be available at</p>
-        <a href="http://unpaywall.org/"><img class="" src="../images/unpaywall.png" alt=""></a>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">closed</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-swedish-law-and-informatics-research-institute
-      
-
-      
-      f-legitimacy
-      
-      f-privacy
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-
-      
-      f-europe
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-liane-colonna
-      
-
-      
-      m-data-analysis
-      
-      m-small-data
-      
-
-      f-search-paper-388
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/mo-data-mo-problems-personal-data-mining-and-the-challenge-to-the-data-mnimization-principle.html" title="Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle">Mo' Data, Mo' Problems? Personal Data Mining and the Challenge to the Data Mnimization Principle</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Liane+Colonna">Liane Colonna</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-          
-          <a href="../categories/small-data.html" class="result-item__tag result-item__tag--small-data">Small Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--swedish-law-and-informatics-research-institute">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/iri-white.png" alt="">
-      </div>
-      
-    </div>
-
-    
-  </div>
-</div>
 </div>
 
-</div>
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderEntries('content', 'Small Data', '../'); }
+  });
+</script>
 
     <footer class='footer'>
   <div class="row">
@@ -835,7 +267,6 @@ window.store = {
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>

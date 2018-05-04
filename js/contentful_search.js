@@ -23,7 +23,7 @@ $(function() {
 
 
         // window.location.href = './all_sdk.html?q=' + v + limit + open;
-        window.location.href = './all_sdk.html?q=' + v + limit;
+        window.location.href = './' + location.pathname.split('/').pop() + '?q=' + v + limit;
     }
 
     $('#sdk-search').keypress(function (e) {
@@ -41,7 +41,7 @@ $(function() {
 
 
     $('#sdk-clear-filter-btn').click(function (e) {
-        window.location.href = './all_sdk.html';
+        window.location.href = './' + location.pathname.split('/').pop();
     });
 
     if (findGetParameter('f') || findGetParameter('q')) {
@@ -90,7 +90,7 @@ $(function() {
 
 
 
-        window.location.href = './all_sdk.html' + paramstring + filterparams;
+        window.location.href = './' + location.pathname.split('/').pop() + paramstring + filterparams;
     });
 
     var open = findGetParameter('open');
