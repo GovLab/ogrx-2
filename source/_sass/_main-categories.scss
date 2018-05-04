@@ -28,6 +28,7 @@
   &--expert-networking { background-color: $expert-networking; }
   &--open-data { background-color: $open-data; }
   &--labs-and-experimentation { background-color: $labs-and-experimentation; }
+  &--crowdlaw { background-color: $crowdlaw; }
 
   &--all:hover { background-color: darken($all, 6); }
   &--behavioral-research:hover,
@@ -38,6 +39,7 @@
   &--expert-networking:hover { background-color: darken($expert-networking, 6); }
   &--open-data:hover { background-color: darken($open-data, 6); }
   &--labs-and-experimentation:hover { background-color: darken($labs-and-experimentation, 6); }
+  &--crowdlaw:hover { background-color: darken($crowdlaw, 6); }
 }
 
 
@@ -74,6 +76,10 @@
   &--labs-and-experimentation {
     background-color: rgba($labs-and-experimentation, .2);
     color: $labs-and-experimentation;
+  }
+  &--crowdlaw {
+    background-color: rgba($crowdlaw, .2);
+    color: $crowdlaw;
   }
 }
 
@@ -115,6 +121,9 @@
   }
   &--labs-and-experimentation {
     background-color: $labs-and-experimentation;
+  }
+  &--crowdlaw {
+    background-color: $crowdlaw;
   }
 }
 
