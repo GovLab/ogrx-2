@@ -3,8 +3,38 @@ layout: contentful_sdk
 ---
 {% if page.use_sdk %}
 
-<div id="list-content">
+<div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
+    <h1>{{page.title}}</h1>
+    <h3 class="blog-single__meta">{{page.sys.created_at | date: '%B %d, %Y'}} by {% for a in page.author %} <a href="{% assign found = false %}{% for b in site.data.custom_authors %}{% if a == b.title %}{{a | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{a | replace: ' ', '+' }}{% endunless %}">{{a}}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</h3>
+    {% for a in page.affiliation %}
+    {% assign prem = false %}
+    {% for b in site.data.organizations %}
+    {% if a == b.title %}
+    {% assign prem = true %}
+    {% if b.display %}
+    <a href="{{a | datapage_url: '../organizations'}}"><img src="../images/organizations/{{b.image_white}}" style="max-width: 200px"></a>
+    {% else %}
+    <img src="../images/organizations/{{b.image_white}}" style="max-width: 200px">
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% unless prem %}
+    <p>{{a}}</p>
+    {% endunless %}
+    {% endfor %}
+    <p>&nbsp;</p>
+  </div>
+  <section class="blog-content blog-single">
+    <div class="row">
+      <div class="large-10 column large-offset-1">
+        {{page.description | markdownify}}
+      </div>
+    </div>
+
+  </section>
+
+  <div id="list-content">
     <div class="row align-center">
       <div class="large-10 column">
         <!-- <p class="js-loading js-loading--white"><i class="js-loading-spinner material-icons">refresh</i></p> -->
@@ -12,6 +42,7 @@ layout: contentful_sdk
       </div>
     </div>
   </div>
+
 </div>
 
 <script>

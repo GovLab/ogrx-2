@@ -107,15 +107,7 @@ var singleList = function(entry) {
     console.log(entry);
     console.log (entry.fields.affiliationLogo.fields.file);
 
-    return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
-    '<h1>' + entry.fields.title + '</h1>' +
-    '<h3 class="blog-single__meta">' + (new Date(entry.sys.createdAt)).toLocaleDateString('en-US', dateFormatOptions) + ' by ' +
-    entry.fields.author.map(function(i){ return "<a href='../by/author.html?query=" + i.replace(" ", "+") + "'>" + i + "</a>"}).join(' ') + '</h3>' +
-    ((entry.fields.affiliationLogo === undefined) ? entry.fields.affiliation.map(function(i){ return '<p>' + i + '</p>'; }) : '<img src="' + entry.fields.affiliationLogo.fields.file.url + '" style="max-width: 200px">') +
-    '<p>&nbsp;</p></div><section class="blog-content blog-single"><div class="row"><div class="large-10 column large-offset-1">' +
-    entry.fields.description +
-    '</div></div></section>' +
-    ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
+    return ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
     entry.fields.articlesList.map(function(i) { return results(i, '../'); }) +
     '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">Back to Lists</a></p></div></div></div>';
 }
