@@ -84,9 +84,12 @@ var singleResult = function(entry) {
     if (entry.fields.authors === undefined) { entry.fields.authors = []; }
     if (entry.fields.innovationCategory === undefined) { entry.fields.innovationCategory = []; }
 
+    var utcAdjust = 4;
+    var date = new Date(new Date(entry.fields.publicationDate).getTime() + utcAdjust*3600000);
+
     return '<div id="blog-single"><div class="top-section top-section--main-color blog-header">' +
     '<h1>' + entry.fields.publicationName + '</h1>' +
-    '<h3 class="blog-single__meta">' + (new Date(entry.sys.createdAt)).toLocaleDateString('en-US', dateFormatOptions) +
+    '<h3 class="blog-single__meta">' + (date).toLocaleDateString('en-US', dateFormatOptions) +
     ' by ' + entry.fields.authors.join(', ') + '</h3>' +
     '<div class="paper-metadata"><div class="row"><div class="large-6 medium-6 small-12 column"><div class="row">' +
     '<div class="column large-4 medium-6 small-12 paper-metadata__left-column">Type</div>' +
