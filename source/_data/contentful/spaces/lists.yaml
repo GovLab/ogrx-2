@@ -1,945 +1,6 @@
 ---
 list:
 - sys:
-    id: 3WmLe1fRi0co2Yy2WkEe60
-    created_at: !ruby/object:DateTime 2018-04-18 18:33:21.907000000 Z
-    updated_at: !ruby/object:DateTime 2018-04-19 13:25:40.561000000 Z
-    content_type_id: list
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    environment:
-      sys:
-        id: master
-        type: Link
-        linkType: Environment
-    revision: 4
-    content_type:
-      sys:
-        id: list
-    locale: en-US
-  title: Selected Readings on Crowdlaw
-  author:
-  - Beth Simone Noveck
-  affiliation:
-  - The GovLab
-  affiliation_logo:
-    sys:
-      id: 1XX7vkow5iiQouOgKCAmWy
-      created_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
-      updated_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
-    title: govlab-logo-white
-    description: 
-    url: "//images.ctfassets.net/ufh1mvj7xl16/1XX7vkow5iiQouOgKCAmWy/e14875e43f92a37db7c07bad04c5ad20/govlab-logo-white.png"
-  description: |-
-    With rates of trust in government at all-time lows, the legitimacy and effectiveness of traditional representative models of urban lawmaking, typically dominated by political party agendas and conducted by professional staff and politicians working behind largely closed doors, are called into question. But technology offers the promise of opening how lawmaking bodies work to new sources of expertise and opinion and of making lawmakers accountable to the public more than just on Election Day. Around the world, there are already significant examples of local legislatures and national parliaments turning to the Internet and new civic technologies to involve the public at various stages of decision-making from agenda-setting to evaluation. We call such open and participatory lawmaking: “CrowdLaw.”
-
-
-    The pieces collected here are focused on public engagement practices connected to the process of making laws and policies. For reasons of space, we do not include readings on citizen participation, crowdsourcing or open innovation generally (see GovLab’s [Selected Readings on Crowdsourcing Opinions and Ideas](http://thegovlab.org/the-govlab-selected-readings-on-crowdsourcing-opinions-and-ideas/)) but focus, instead, on engagement in these specific institutional contexts. To consult more resources, visit To consult more resources, visit [www.crowd.law](https://crowd.law).
-  articles_list:
-  - sys:
-      id: 4GHtGQtIF2SwoCoGsIakY4
-      created_at: !ruby/object:DateTime 2017-11-28 22:06:28.673000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:56:04.718000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Big Mind: How Collective Intelligence Can Change Our World'
-    organization:
-    - MacArthur Foundation Research Network on Opening Governance
-    authors:
-    - Geoff Mulgan
-    publication_date: !ruby/object:DateTime 2017-11-13 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    abstract: |-
-      A new field of collective intelligence has emerged in the last few years, prompted by a wave of digital technologies that make it possible for organizations and societies to think at large scale. This “bigger mind”—human and machine capabilities working together—has the potential to solve the great challenges of our time. So why do smart technologies not automatically lead to smart results? Gathering insights from diverse fields, including philosophy, computer science, and biology, Big Mind reveals how collective intelligence can guide corporations, governments, universities, and societies to make the most of human brains and digital technologies.
-
-      Geoff Mulgan explores how collective intelligence has to be consciously organized and orchestrated in order to harness its powers. He looks at recent experiments mobilizing millions of people to solve problems, and at groundbreaking technology like Google Maps and Dove satellites. He also considers why organizations full of smart people and machines can make foolish mistakes—from investment banks losing billions to intelligence agencies misjudging geopolitical events—and shows how to avoid them.
-
-      Highlighting differences between environments that stimulate intelligence and those that blunt it, Mulgan shows how human and machine intelligence could solve challenges in business, climate change, democracy, and public health. But for that to happen we’ll need radically new professions, institutions, and ways of thinking.
-
-      Informed by the latest work on data, web platforms, and artificial intelligence, Big Mind shows how collective intelligence could help us survive and thrive.
-    download_link: https://press.princeton.edu/titles/11098.html
-  - sys:
-      id: 48UwrAqfv2ssIGEGsGS2Om
-      created_at: !ruby/object:DateTime 2018-01-23 03:14:42.394000000 Z
-      updated_at: !ruby/object:DateTime 2018-01-23 03:14:42.394000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Examining the Quality of Crowdsourced Deliberation: Respect,
-      Reciprocity and Lack of Common-Good Orientation'
-    region:
-    - Finland
-    authors:
-    - Tanja Aitamurto
-    - Jorge Saldivar
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Collective Intelligence
-    - Crowdlaw
-    objective_category:
-    - Participation
-    sector_category:
-    - Environment
-    - Law
-    - Transportation
-    methodology:
-    - Case Studies
-    - Statistical Modeling
-    publication_type:
-    - Conference Proceedings
-    project:
-    - Discourse Quality Index
-    abstract: In this paper, published at CHI ’17, we examine deliberative quality
-      of crowdsourced deliberation. Analyzing data from two crowdsourced policy-making
-      processes, we found a good quality deliberation with respect, reciprocity, and
-      storytelling according to the standards in the theory of deliberative democracy.
-      We identified a group of super-deliberators, whose deliberation was above the
-      average, and low-quality deliberators, whose deliberation was below the average.
-      The findings show that even when crowdsourced policymaking was not designed
-      for deliberation, it can facilitate a fairly high-quality democratic deliberation.
-    download_link: http://thefinnishexperiment.com/2017/04/26/quality-of-crowdsourced-deliberation-respect-reciprocity-and-lack-of-common-good-orientation/
-  - sys:
-      id: paper_43
-      created_at: !ruby/object:DateTime 2016-12-07 01:03:28.489000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:55:49.828000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 3
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Does Crowdsourcing Legislation Increase Political Legitimacy?
-      The Case of Avoin Ministeri in Finland
-    region:
-    - Finland
-    authors:
-    - Henrik Serup Christensen
-    - Maija Karjalainen
-    - Laura Nurminen
-    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Legitimacy
-    - Participation
-    methodology:
-    - Survey
-    publication_type:
-    - Journal Article
-    git_hub: ''
-    abstract: Crowdsourcing legislation gives ordinary citizens, rather than political
-      and bureaucratic elites, the chance to cooperate to come up with innovative
-      new policies. By increasing popular involvement, representative democracies
-      hope to restock dwindling reserves of political legitimacy. However, it is still
-      not clear how involvement in legislative decision making affects the attitudes
-      of the participants. It is therefore of central concern to establish whether
-      crowdsourcing can actually help restore political legitimacy by creating more
-      positive attitudes toward the political system. This article contributes to
-      this research agenda by examining the developments in attitudes among the users
-      on the Finnish website Avoin Ministeriö (“Open Ministry”) which orchestrates
-      crowdsourcing of legislation by providing online tools for deliberating ideas
-      for citizens' initiatives. The developments in attitudes are investigated with
-      a two-stage survey of 421 respondents who answered questions concerning political
-      and social attitudes, as well as political activities performed. The results
-      suggest that while crowdsourcing legislation has so far not affected political
-      legitimacy in a positive manner, it has the potential to do so.
-    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.80/abstract
-    related_content_title: Does crowdsourcing citizen initiatives affect attitudes
-      towards democracy?
-    related_content_url: http://blogs.oii.ox.ac.uk/policy/does-crowdsourcing-of-citizen-initiatives-affect-attitudes-towards-democracy/
-    related_data_url: ''
-  - sys:
-      id: paper_a50
-      created_at: !ruby/object:DateTime 2016-12-07 00:55:07.305000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:56:12.161000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 3
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Citizen engagement in rulemaking — evidence on regulatory practices
-      in 185 countries
-    authors:
-    - Melissa Marie Johns
-    - Valentina Saltane
-    publication_date: !ruby/object:DateTime 2016-09-28 12:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Collective Intelligence
-    - Crowdlaw
-    - Institutional Innovation
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Research Report
-    git_hub: ''
-    abstract: 'This paper presents a new database of indicators measuring the extent
-      to which rulemaking processes are transparent and participatory across 185 countries.
-      The data look at how citizen engagement happens in practice, including when
-      and how governments open the policy-making process to public input. The data
-      also capture the use of ex ante assessments to determine the possible cost of
-      compliance with a proposed new regulation, the likely administrative burden
-      of enforcing the regulation, and its potential environmental and social impacts.
-      The data show that citizens have more opportunities to participate directly
-      in the rulemaking process in developed economies than in developing ones. Differences
-      are also apparent among regions: rulemaking processes are significantly less
-      transparent and inclusive in Sub-Saharan Africa, the Middle East and North Africa,
-      and South Asia on average than in Organisation for Economic Co-operation and
-      Development high-income countries, Europe and Central Asia, and East Asia and
-      the Pacific. In addition, ex ante impact assessments are much more common among
-      higher-income economies than among lower-income ones. And greater citizen engagement
-      in rulemaking is associated with higher-quality regulation, stronger democratic
-      regimes, and less corrupt institutions.'
-    download_link: http://documents.worldbank.org/curated/en/462571475068174273/Citizen-engagement-in-rulemaking-evidence-on-regulatory-practices-in-185-countries
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: 41TIbJzNBmaQGMmaSIUkmk
-      created_at: !ruby/object:DateTime 2018-01-23 22:57:17.276000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:56:21.196000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Crowdsourcing Government: Lessons from Multiple Disciplines'
-    authors:
-    - Helen Liu
-    publication_date: !ruby/object:DateTime 2017-07-13 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    - Distributed Governance
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    - Qualitative Analysis
-    publication_type:
-    - Journal Article
-    abstract: 'Crowdsourcing has proliferated across disciplines and professional
-      fields. Implementers in the public sector face practical challenges, however,
-      in the execution of crowdsourcing. This review synthesizes prior crowdsourcing
-      research and practices from a variety of disciplines and focuses to identify
-      lessons for meeting the practical challenges of crowdsourcing in the public
-      sector. It identifies three distinct categories of crowdsourcing: organizations,
-      products and services, and holistic systems. Lessons about the fundamental logic
-      process design - alignment, motivation, and evaluation - identified across the
-      three categories are discussed. Conclusions drawn from past studies and the
-      result in evidence can help public managers better design and implement crowdsourcing
-      in the public sector.'
-    download_link: http://onlinelibrary.wiley.com/doi/10.1111/puar.12808/full
-  - sys:
-      id: 45VOLVKMv68g2o6mMeckC6
-      created_at: !ruby/object:DateTime 2018-01-25 02:03:06.808000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:56:30.972000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: decidim.barcelona, Spain
-    organization:
-    - Making All Voices Count
-    region:
-    - Spain
-    authors:
-    - Ismael Peña-López
-    publication_date: !ruby/object:DateTime 2017-07-05 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Civic Technology
-    - Crowdlaw
-    objective_category:
-    - Legitimacy
-    - Participation
-    - Accountability
-    sector_category:
-    - Governance
-    methodology:
-    - Case Studies
-    publication_type:
-    - Research Report
-    abstract: |-
-      In September 2015, Madrid – the capital of Spain – initiated a participatory democracy project, Decide Madrid (Madrid decides), to enable participatory strategic planning for the municipality. Six month after, Barcelona – the second largest city in Spain and capital of Catalonia – began its own participatory democracy project, decidim.barcelona (Barcelona we decide) in February 2016. Both cities use the same free software platform as a base, and are guided by the same political vision. The success of these initiatives and the strong political vision behind them have spawned plenty of other initiatives in the country – especially in Catalonia – that are working to emulate the two big cities. These cities are sharing free-software-based technology, procedures and protocols, their reflections – both on open events and formal official meetings. What began as a seemingly onetime project has grown in scale.
-
-      Using Anthony Giddens’ Structuration theory, this case study examines the e-participation initiative of the City Council of Barcelona (Spain), decidim.barcelona. The study analyses the inception and first use of decidim.barcelona for the strategic plan of the municipality in the years 2016-2019.
-    download_link: http://www.makingallvoicescount.org/publication/decidim-barcelona-spain/
-  - sys:
-      id: paper_318
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:20.185000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:55:57.063000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: The Fundamentals of Policy Crowdsourcing
-    authors:
-    - John Prpić
-    - Araz Taeihagh
-    - James Melton
-    publication_date: !ruby/object:DateTime 2015-08-19 12:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    git_hub: ''
-    abstract: What is the state of the research on crowdsourcing for policymaking?
-      This article begins to answer this question by collecting, categorizing, and
-      situating an extensive body of the extant research investigating policy crowdsourcing,
-      within a new framework built on fundamental typologies from each field. We first
-      define seven universal characteristics of the three general crowdsourcing techniques
-      (virtual labor markets, tournament crowdsourcing, open collaboration), to examine
-      the relative trade-offs of each modality. We then compare these three types
-      of crowdsourcing to the different stages of the policy cycle, in order to situate
-      the literature spanning both domains. We finally discuss research trends in
-      crowdsourcing for public policy and highlight the research gaps and overlaps
-      in the literature.
-    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.102/abstract?userIsAuthenticated=false&deniedAccessCustomisedMessage=
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: paper_14
-      created_at: !ruby/object:DateTime 2016-12-07 01:03:32.733000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 17:03:47.105000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 2
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Constitutional Conventions in the Digital Era: Lessons from
-      Iceland and Ireland'
-    region:
-    - Canada
-    - Iceland
-    - Ireland
-    authors:
-    - Silvia Suteu
-    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    git_hub: ''
-    abstract: Mechanisms of constitutional development have recently attracted significant
-      attention, specifically, instances where popular involvement was central to
-      the constitutional change. Examples include attempts by British Columbia, the
-      Netherlands, and Ontario at electoral reform, in addition to the more sweeping
-      reforms sought in Iceland and Ireland. Each of these countries’ attempts exemplifies
-      varied innovative avenues to reform involving participatory and partially citizen-led
-      processes aimed at revitalizing politics. The little legal scholarship on these
-      developments has provided an insufficient analytical account of such novel approaches
-      to constitution-making. This Essay seeks to build upon the current descriptive
-      work on constitutional conventions by focusing on the cases of Iceland and Ireland.
-      The Essay further aims to evaluate whether the means undertaken by each country
-      translates into novelty at a more substantive level, namely, the quality of
-      the process and legitimacy of the end product. The Essay proposes standards
-      of direct democratic engagements that adequately fit these new developments
-      and further identifies lessons for participatory constitution-making processes
-      in the digital twenty-first century.
-    download_link: http://iclr.bclawreview.org/files/2015/05/03_suteu.pdf
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: 2zIiaRFzjaKO4YcA0ooqk
-      created_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: The Electronic Revolution in Rulemaking
-    region:
-    - United States
-    authors:
-    - Beth Simone Noveck
-    publication_date: !ruby/object:DateTime 2004-01-01 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    download_link: https://digitalcommons.nyls.edu/cgi/viewcontent.cgi?referer=http://thegovlab.org/the-govlab-selected-readings-on-crowdlaw/&httpsredir=1&article=1781&context=fac_articles_chapters
-  - sys:
-      id: 3NKjzRtFk4kGCUQ6oUCM20
-      created_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Digital Democracy: The Tools Transforming Political Engagement'
-    region:
-    - United Kingdom
-    authors:
-    - Julie Simon
-    - Theo Bass
-    - Victoria Boelman
-    - Geoff Mulgan
-    publication_date: !ruby/object:DateTime 2017-02-01 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Legitimacy
-    - Participation
-    methodology:
-    - Case Studies
-    publication_type:
-    - Research Report
-    abstract: |-
-      - Digital democracy is a broad concept and not easy to define. The paper provides a granular approach to help encompass its various activities and methods (our ‘typology of digital democracy’).
-      - Many initiatives exist simply as an app, or web page, driven by what the technology can do, rather than by what the need is.
-      - Lessons from global case studies describe how digital tools are being used to engage communities in more meaningful political participation, and how they are improving the quality and legitimacy of decision-making.
-      - Digital democracy is still young. Projects must embed better methods for evaluation of their goals if the field is to grow.
-    download_link: http://www.nesta.org.uk/publications/digital-democracy-tools-transforming-political-engagement#sthash.z7YBQm2D.dpuf
-  - sys:
-      id: 4uFGlvz2NWQMsGkaCyYIwQ
-      created_at: !ruby/object:DateTime 2018-04-12 20:59:41.998000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 20:59:41.998000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'The Value of Crowdsourcing in Public Policy-Making: Epistemic,
-      Democratic and Economic Value'
-    region:
-    - United States
-    authors:
-    - Tanja Aitamurto
-    - Kaiping Chen
-    publication_date: !ruby/object:DateTime 2017-02-03 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    publication_type:
-    - Journal Article
-    abstract: 'While national and local governments increasingly deploy crowdsourcing
-      in lawmaking as an open government practice, it remains unclear how crowdsourcing
-      creates value when it is applied in policymaking. Therefore, in this article,
-      we examine value creation in crowdsourcing for public policymaking. We introduce
-      a framework for analysing value creation in public policymaking in the following
-      three dimensions: democratic, epistemic and economic. Democratic value is created
-      by increasing transparency, accountability, inclusiveness and deliberation in
-      crowdsourced policymaking. Epistemic value is developed when crowdsourcing serves
-      as a knowledge search mechanism and a learning context. Economic value is created
-      when crowdsourcing makes knowledge search in policymaking more efficient and
-      enables government to produce policies that better address citizens’ needs and
-      societal issues. We show how these tenets of value creation are manifest in
-      crowdsourced policymaking by drawing on instances of crowdsourced lawmaking,
-      and we also discuss the contingencies and challenges preventing value creation.'
-    download_link: https://www.tandfonline.com/doi/full/10.1080/20508840.2017.1282665
-  - sys:
-      id: oFPCXqMLHqw8GYAwIOqqq
-      created_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: "“CrowdLaw”: Online Public Participation in Lawmaking"
-    organization:
-    - The GovLab
-    region:
-    - United States
-    authors:
-    - Beth Simone Noveck
-    - Gabriella Capone
-    publication_date: !ruby/object:DateTime 2017-09-19 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Legitimacy
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    publication_type:
-    - Research Report
-    abstract: The goal of this paper is to help the Assembly of the Community of Madrid,
-      the legislature governing one of the seventeen autonomous communities of Spain,
-      and the 179 Ayuntamientos (“City Councils”) within the Madrid region to (1)
-      develop the capacity design and (2) use public engagement to improve the quality,
-      effectiveness and legitimacy of the lawmaking process.
-    download_link: https://crowd.law/
-  - sys:
-      id: 7BjvDi6FVYc4gikUA08GuO
-      created_at: !ruby/object:DateTime 2018-04-18 16:26:02.723000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-18 16:26:02.723000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Notes on the creation and impacts of Brazil’s Internet Bill
-      of Rights
-    region:
-    - Brazil
-    authors:
-    - Ronaldo Lemos
-    - Carlos Affonso Souza
-    - Fabro Steibel
-    publication_date: !ruby/object:DateTime 2017-01-12 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Participation
-    sector_category:
-    - Internet Governance
-    - Law
-    methodology:
-    - Case Studies
-    publication_type:
-    - Journal Article
-    abstract: The process that led to the approval of Brazil’s Internet Bill of Rights
-      (‘Marco Civil da Internet’) was the first initiative from the Federal Government
-      to crowdsource the making of a Draft Bill of Law, using the internet to diversify
-      the debate and invite participation from different stakeholders. This article
-      provides an overview of the process behind the creation of such a law, emphasising
-      the participatory process that resulted in the final wording of the law. Additionally,
-      the article reflects upon some of the most relevant challenges for the enforcement
-      of Brazil’s Internet Bill of Rights, as well as its international impact on
-      future case law and in the legislative process.
-    download_link: https://www.tandfonline.com/doi/pdf/10.1080/20508840.2016.1264677?needAccess=true
-  - sys:
-      id: 4fAstztThSI0CUg8IkQeiY
-      created_at: !ruby/object:DateTime 2018-04-18 16:26:02.603000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-18 16:26:02.603000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Evaluating E-Rulemaking: Public Participation and Political
-      Institutions'
-    region:
-    - United States
-    authors:
-    - Stuart M. Benjamin
-    publication_date: !ruby/object:DateTime 2006-11-01 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    publication_type:
-    - Journal Article
-    abstract: |-
-      "Proponents of electronic rulemaking proposals designed to
-      enhance ordinary citizens’ involvement in the rulemaking process
-      have debated with skeptics the question of whether such initiatives will
-      actually increase citizens’ involvement. In the debate thus far,
-      however, proponents have largely assumed the desirability of such
-      involvement, and skeptics have usually not challenged that
-      assumption. In addition, proponents and skeptics have focused on the
-      relationship between agencies and individuals, failing to consider the
-      larger administrative law context—and in particular the role played
-      by Congress and the courts. This Article considers e-rulemaking in a
-      broader institutional context and directly addresses the desirability of
-      the proposed e-rulemaking initiatives. The Article finds that there are
-      good reasons to believe that e-rulemaking initiatives’ costs outweigh their benefits, but that it would be premature to settle on that conclusion. The Article ultimately advocates modest experimentation with e-rulemaking, both to allow for further evaluation of e-rulemaking and to provide additional data about the rulemaking process more generally. "
-    download_link: http://lsr.nellco.org/cgi/viewcontent.cgi?article=1073&context=duke_fs
-  - sys:
-      id: 4zSzYjUZJKGCIYSWacKYQW
-      created_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
-      updated_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'The open parliament in the age of the internet: can the people
-      now collaborate with legislatures in lawmaking?'
-    region:
-    - Brazil
-    - Chile
-    authors:
-    - Cristiano Ferri Soares de Faria
-    publication_date: !ruby/object:DateTime 2013-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Civic Technology
-    - Collective Intelligence
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Legitimacy
-    - Participation
-    sector_category:
-    - Law
-    - Politics
-    methodology:
-    - Case Studies
-    - Comparative Analysis
-    - Conceptual Framework
-    - Design Science
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    project:
-    - E-Democracia
-    abstract: Is the co-existence of participatory and deliberative actions with the
-      exercise of parliamentary office really feasible? In what way has Information
-      and Communication Technology fostered interaction between parliamentary representatives
-      and society at large in the daily round of legislative activities? Are we drawing
-      closer to a hybrid system of representative and participatory democracy through
-      the incorporation of effective ways of co-producing laws into legislative agendas?
-      This work seeks to address those questions and evaluate other international
-      experiences and experiments designed to achieve the same ends. The book is based
-      on a study of two particular cases where parliamentary bodies designed and implemented
-      participatory digital processes, namely, the e-Democracy Program developed by
-      the Brazilian House of Representatives, and the Virtual Senator Program developed
-      by the Chilean Senate. The text unfolds in the form of a systematic analysis
-      of institutional aspects embracing political and organizational elements as
-      well as the social aspects associated to the application of digital democracy
-      in parliaments. The investigation shows that at the stage they found themselves
-      in 2010 those projects had only brought in very incipient results in regard
-      to the aspects of enhancing representativity in decision making processes, aggregating
-      collective intelligence to the legislative process or transparency to parliamentary
-      performances, even though all of those are precious components of any democracy
-      that deems itself to be participatory and deliberative. Nevertheless, such experiences
-      have had the merit of contributing towards the gradual construction of more
-      effective participatory mechanisms, complementary to the political representation
-      system in place.
-    download_link: http://bd.camara.gov.br/bd/handle/bdcamara/12756
-  - sys:
-      id: paper_362
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:44.712000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-06 23:16:44.712000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Crowdsourced Deliberation: The Case of the Law on Off-Road
-      Traffic in Finland'
-    region:
-    - Finland
-    authors:
-    - Tanja Aitamurto
-    - Hélène Landemore
-    publication_date: !ruby/object:DateTime 2016-04-27 12:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Participation
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    git_hub: ''
-    abstract: This article examines the emergence of democratic deliberation in a
-      crowdsourced law reform process. The empirical context of the study is a crowdsourced
-      legislative reform in Finland, initiated by the Finnish government. The findings
-      suggest that online exchanges in the crowdsourced process qualify as democratic
-      deliberation according to the classical definition. We introduce the term “crowdsourced
-      deliberation” to mean an open, asynchronous, depersonalized, and distributed
-      kind of online deliberation occurring among self-selected participants in the
-      context of an attempt by government or another organization to open up the policymaking
-      or lawmaking process. The article helps to characterize the nature of crowdsourced
-      policymaking and to understand its possibilities as a practice for implementing
-      open government principles. We aim to make a contribution to the literature
-      on crowdsourcing in policymaking, participatory and deliberative democracy and,
-      specifically, the newly emerging subfield in deliberative democracy that focuses
-      on “deliberative systems.”
-    download_link: http://onlinelibrary.wiley.com/doi/10.1002/poi3.115/abstract
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: 4hPfUuIzsc2K4U2M2oOgym
-      created_at: !ruby/object:DateTime 2018-04-12 21:08:31.697000000 Z
-      updated_at: !ruby/object:DateTime 2018-04-12 21:08:31.697000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: US Public Participation Playbook
-    region:
-    - United States
-    publication_date: !ruby/object:DateTime 2015-02-05 00:00:00.000000000 -04:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Crowdlaw
-    objective_category:
-    - Effectiveness
-    - Participation
-    - Transparency
-    sector_category:
-    - Law
-    methodology:
-    - Case Studies
-    - Qualitative Analysis
-    - Quantitative Analysis
-    publication_type:
-    - Research Report
-    abstract: The U.S. Public Participation Playbook is a resource for government
-      managers to effectively evaluate and build better services through public participation
-      using best practices and performance metrics.
-    download_link: https://participation.usa.gov/
-  use_sdk: true
-- sys:
     id: 6iITlL4lYQ0gK8sEseKqCy
     created_at: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
     updated_at: !ruby/object:DateTime 2016-12-09 17:05:05.119000000 Z
@@ -3449,3 +2510,470 @@ list:
     abstract: An overview report from the World Economic Forum on the existing data
       deficit and the value and impact of big data for sustainable development
     download_link: http://www3.weforum.org/docs/WEFUSA_DataDrivenDevelopment_Report2015.pdf
+- sys:
+    id: 3WmLe1fRi0co2Yy2WkEe60
+    created_at: !ruby/object:DateTime 2018-04-18 18:33:21.907000000 Z
+    updated_at: !ruby/object:DateTime 2018-07-13 22:59:59.129000000 Z
+    content_type_id: list
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
+    revision: 5
+    content_type:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Crowdlaw
+  author:
+  - Beth Simone Noveck
+  affiliation:
+  - The GovLab
+  affiliation_logo:
+    sys:
+      id: 1XX7vkow5iiQouOgKCAmWy
+      created_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
+      updated_at: !ruby/object:DateTime 2018-03-13 04:42:31.665000000 Z
+    title: govlab-logo-white
+    description: 
+    url: "//images.ctfassets.net/ufh1mvj7xl16/1XX7vkow5iiQouOgKCAmWy/e14875e43f92a37db7c07bad04c5ad20/govlab-logo-white.png"
+  description: |-
+    With rates of trust in government at all-time lows, the legitimacy and effectiveness of traditional representative models of urban lawmaking, typically dominated by political party agendas and conducted by professional staff and politicians working behind largely closed doors, are called into question. But technology offers the promise of opening how lawmaking bodies work to new sources of expertise and opinion and of making lawmakers accountable to the public more than just on Election Day. Around the world, there are already significant examples of local legislatures and national parliaments turning to the Internet and new civic technologies to involve the public at various stages of decision-making from agenda-setting to evaluation. We call such open and participatory lawmaking: “CrowdLaw.”
+
+
+    The pieces collected here are focused on public engagement practices connected to the process of making laws and policies. For reasons of space, we do not include readings on citizen participation, crowdsourcing or open innovation generally (see GovLab’s [Selected Readings on Crowdsourcing Opinions and Ideas](http://thegovlab.org/the-govlab-selected-readings-on-crowdsourcing-opinions-and-ideas/)) but focus, instead, on engagement in these specific institutional contexts. To consult more resources, visit To consult more resources, visit [www.crowd.law](https://crowd.law).
+  articles_list:
+  - sys:
+      id: paper_a50
+      created_at: !ruby/object:DateTime 2016-12-07 00:55:07.305000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:12.161000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 3
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Citizen engagement in rulemaking — evidence on regulatory practices
+      in 185 countries
+    authors:
+    - Melissa Marie Johns
+    - Valentina Saltane
+    publication_date: !ruby/object:DateTime 2016-09-28 12:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Crowdlaw
+    - Institutional Innovation
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Research Report
+    git_hub: ''
+    abstract: 'This paper presents a new database of indicators measuring the extent
+      to which rulemaking processes are transparent and participatory across 185 countries.
+      The data look at how citizen engagement happens in practice, including when
+      and how governments open the policy-making process to public input. The data
+      also capture the use of ex ante assessments to determine the possible cost of
+      compliance with a proposed new regulation, the likely administrative burden
+      of enforcing the regulation, and its potential environmental and social impacts.
+      The data show that citizens have more opportunities to participate directly
+      in the rulemaking process in developed economies than in developing ones. Differences
+      are also apparent among regions: rulemaking processes are significantly less
+      transparent and inclusive in Sub-Saharan Africa, the Middle East and North Africa,
+      and South Asia on average than in Organisation for Economic Co-operation and
+      Development high-income countries, Europe and Central Asia, and East Asia and
+      the Pacific. In addition, ex ante impact assessments are much more common among
+      higher-income economies than among lower-income ones. And greater citizen engagement
+      in rulemaking is associated with higher-quality regulation, stronger democratic
+      regimes, and less corrupt institutions.'
+    download_link: http://documents.worldbank.org/curated/en/462571475068174273/Citizen-engagement-in-rulemaking-evidence-on-regulatory-practices-in-185-countries
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 45VOLVKMv68g2o6mMeckC6
+      created_at: !ruby/object:DateTime 2018-01-25 02:03:06.808000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:56:30.972000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: decidim.barcelona, Spain
+    organization:
+    - Making All Voices Count
+    region:
+    - Spain
+    authors:
+    - Ismael Peña-López
+    publication_date: !ruby/object:DateTime 2017-07-05 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Crowdlaw
+    objective_category:
+    - Legitimacy
+    - Participation
+    - Accountability
+    sector_category:
+    - Governance
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: |-
+      In September 2015, Madrid – the capital of Spain – initiated a participatory democracy project, Decide Madrid (Madrid decides), to enable participatory strategic planning for the municipality. Six month after, Barcelona – the second largest city in Spain and capital of Catalonia – began its own participatory democracy project, decidim.barcelona (Barcelona we decide) in February 2016. Both cities use the same free software platform as a base, and are guided by the same political vision. The success of these initiatives and the strong political vision behind them have spawned plenty of other initiatives in the country – especially in Catalonia – that are working to emulate the two big cities. These cities are sharing free-software-based technology, procedures and protocols, their reflections – both on open events and formal official meetings. What began as a seemingly onetime project has grown in scale.
+
+      Using Anthony Giddens’ Structuration theory, this case study examines the e-participation initiative of the City Council of Barcelona (Spain), decidim.barcelona. The study analyses the inception and first use of decidim.barcelona for the strategic plan of the municipality in the years 2016-2019.
+    download_link: http://www.makingallvoicescount.org/publication/decidim-barcelona-spain/
+  - sys:
+      id: paper_14
+      created_at: !ruby/object:DateTime 2016-12-07 01:03:32.733000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 17:03:47.105000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 2
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Constitutional Conventions in the Digital Era: Lessons from
+      Iceland and Ireland'
+    region:
+    - Canada
+    - Iceland
+    - Ireland
+    authors:
+    - Silvia Suteu
+    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    git_hub: ''
+    abstract: Mechanisms of constitutional development have recently attracted significant
+      attention, specifically, instances where popular involvement was central to
+      the constitutional change. Examples include attempts by British Columbia, the
+      Netherlands, and Ontario at electoral reform, in addition to the more sweeping
+      reforms sought in Iceland and Ireland. Each of these countries’ attempts exemplifies
+      varied innovative avenues to reform involving participatory and partially citizen-led
+      processes aimed at revitalizing politics. The little legal scholarship on these
+      developments has provided an insufficient analytical account of such novel approaches
+      to constitution-making. This Essay seeks to build upon the current descriptive
+      work on constitutional conventions by focusing on the cases of Iceland and Ireland.
+      The Essay further aims to evaluate whether the means undertaken by each country
+      translates into novelty at a more substantive level, namely, the quality of
+      the process and legitimacy of the end product. The Essay proposes standards
+      of direct democratic engagements that adequately fit these new developments
+      and further identifies lessons for participatory constitution-making processes
+      in the digital twenty-first century.
+    download_link: http://iclr.bclawreview.org/files/2015/05/03_suteu.pdf
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 2zIiaRFzjaKO4YcA0ooqk
+      created_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-18 16:25:49.705000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: The Electronic Revolution in Rulemaking
+    region:
+    - United States
+    authors:
+    - Beth Simone Noveck
+    publication_date: !ruby/object:DateTime 2004-01-01 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    download_link: https://digitalcommons.nyls.edu/cgi/viewcontent.cgi?referer=http://thegovlab.org/the-govlab-selected-readings-on-crowdlaw/&httpsredir=1&article=1781&context=fac_articles_chapters
+  - sys:
+      id: 3NKjzRtFk4kGCUQ6oUCM20
+      created_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 20:58:21.461000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Digital Democracy: The Tools Transforming Political Engagement'
+    region:
+    - United Kingdom
+    authors:
+    - Julie Simon
+    - Theo Bass
+    - Victoria Boelman
+    - Geoff Mulgan
+    publication_date: !ruby/object:DateTime 2017-02-01 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: |-
+      - Digital democracy is a broad concept and not easy to define. The paper provides a granular approach to help encompass its various activities and methods (our ‘typology of digital democracy’).
+      - Many initiatives exist simply as an app, or web page, driven by what the technology can do, rather than by what the need is.
+      - Lessons from global case studies describe how digital tools are being used to engage communities in more meaningful political participation, and how they are improving the quality and legitimacy of decision-making.
+      - Digital democracy is still young. Projects must embed better methods for evaluation of their goals if the field is to grow.
+    download_link: http://www.nesta.org.uk/publications/digital-democracy-tools-transforming-political-engagement#sthash.z7YBQm2D.dpuf
+  - sys:
+      id: oFPCXqMLHqw8GYAwIOqqq
+      created_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
+      updated_at: !ruby/object:DateTime 2018-04-12 21:14:51.886000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: "“CrowdLaw”: Online Public Participation in Lawmaking"
+    organization:
+    - The GovLab
+    region:
+    - United States
+    authors:
+    - Beth Simone Noveck
+    - Gabriella Capone
+    publication_date: !ruby/object:DateTime 2017-09-19 00:00:00.000000000 -04:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Research Report
+    abstract: The goal of this paper is to help the Assembly of the Community of Madrid,
+      the legislature governing one of the seventeen autonomous communities of Spain,
+      and the 179 Ayuntamientos (“City Councils”) within the Madrid region to (1)
+      develop the capacity design and (2) use public engagement to improve the quality,
+      effectiveness and legitimacy of the lawmaking process.
+    download_link: https://crowd.law/
+  - sys:
+      id: 4zSzYjUZJKGCIYSWacKYQW
+      created_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
+      updated_at: !ruby/object:DateTime 2018-01-23 03:13:26.814000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'The open parliament in the age of the internet: can the people
+      now collaborate with legislatures in lawmaking?'
+    region:
+    - Brazil
+    - Chile
+    authors:
+    - Cristiano Ferri Soares de Faria
+    publication_date: !ruby/object:DateTime 2013-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Collective Intelligence
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    - Participation
+    sector_category:
+    - Law
+    - Politics
+    methodology:
+    - Case Studies
+    - Comparative Analysis
+    - Conceptual Framework
+    - Design Science
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    project:
+    - E-Democracia
+    abstract: Is the co-existence of participatory and deliberative actions with the
+      exercise of parliamentary office really feasible? In what way has Information
+      and Communication Technology fostered interaction between parliamentary representatives
+      and society at large in the daily round of legislative activities? Are we drawing
+      closer to a hybrid system of representative and participatory democracy through
+      the incorporation of effective ways of co-producing laws into legislative agendas?
+      This work seeks to address those questions and evaluate other international
+      experiences and experiments designed to achieve the same ends. The book is based
+      on a study of two particular cases where parliamentary bodies designed and implemented
+      participatory digital processes, namely, the e-Democracy Program developed by
+      the Brazilian House of Representatives, and the Virtual Senator Program developed
+      by the Chilean Senate. The text unfolds in the form of a systematic analysis
+      of institutional aspects embracing political and organizational elements as
+      well as the social aspects associated to the application of digital democracy
+      in parliaments. The investigation shows that at the stage they found themselves
+      in 2010 those projects had only brought in very incipient results in regard
+      to the aspects of enhancing representativity in decision making processes, aggregating
+      collective intelligence to the legislative process or transparency to parliamentary
+      performances, even though all of those are precious components of any democracy
+      that deems itself to be participatory and deliberative. Nevertheless, such experiences
+      have had the merit of contributing towards the gradual construction of more
+      effective participatory mechanisms, complementary to the political representation
+      system in place.
+    download_link: http://bd.camara.gov.br/bd/handle/bdcamara/12756
+  - sys:
+      id: paper_39
+      created_at: !ruby/object:DateTime 2016-12-07 01:03:29.472000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-08 02:34:10.674000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 3
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Collective Intelligence in Law Reforms: When the Logic of the
+      Crowds and the Logic of Policymaking Collide'
+    region:
+    - Finland
+    authors:
+    - Tanja Aitamurto
+    publication_date: !ruby/object:DateTime 2016-01-04 12:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Collective Intelligence
+    - Crowdlaw
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Law
+    methodology:
+    - Case Studies
+    publication_type:
+    - Conference Proceedings
+    git_hub: ''
+    abstract: 'What causes the challenges when crowdsourcing is applied in policymaking?
+      The difficulties are a result of a severe conflict between the logics of the
+      crowds and the logics of policymaking.  The paper “Collective Intelligence in
+      Law Reforms: When the Logic of the Crowds and the Logic of Policymaking Collide”,
+      published at the Hawaii International Conference on System Sciences (HICSS 2016)
+      shows how the two virtues of collective intelligence – cognitive diversity and
+      large crowds – turn into perils in crowdsourced policymaking. '
+    download_link: http://thefinnishexperiment.com/2016/01/04/collective-intelligence-in-law-reforms-when-the-logic-of-the-crowds-and-the-logic-of-policymaking-collide/
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  use_sdk: true
