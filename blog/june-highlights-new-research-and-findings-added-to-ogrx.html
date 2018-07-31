@@ -11,23 +11,34 @@
     <link rel="stylesheet" href="/vendor/styleguide-v2.css">
     <link rel="stylesheet" href="/vendor/slick.css"/>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://use.typekit.net/mvc3cdb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/vendor/jquery-2.1.4.min.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40012093-7', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-40012093-7', 'auto');
+      ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -50,8 +61,7 @@
   </nav> -->
 </header>
 
-    <!-- This page uses Styleguide 2 -->
-<div id="blog-single">
+    <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>June Highlights: New Research and Findings Added to OGRX</h1>
     <h3 class="blog-single__meta">June 14, 2018 by   <a href="../authors/andrew-young.html">Andrew Young</a> </h3>
@@ -128,487 +138,13 @@
   </section>
   
 
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/who-killed-albert-einstein-from-open-data-to-murder-mystery-games.html" title="Who Killed Albert Einstein? From Open Data to Murder Mystery Games">Who Killed Albert Einstein? From Open Data to Murder Mystery Games</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Gabriella+A.+B.+Barros">Gabriella A. B. Barros</a>
-      
-      <a href="../by/author.html?query=Michael+Cerny+Green">Michael Cerny Green</a>
-      
-      <a href="../by/author.html?query=Antonios+Liapis">Antonios Liapis</a>
-      
-      <a href="../by/author.html?query=Julian+Togelius">Julian Togelius</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-        
-      </span>
-
+  <div id="blog-content">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_white_24px.svg"></p>
+      </div>
     </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/user-studies.html">User Studies</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/outside-innovation.html">Outside Innovation</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
   </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/open-data-sharing-and-the-global-south--who-benefits.html" title="Open data sharing and the Global South--Who benefits?">Open data sharing and the Global South--Who benefits?</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=David+Serwadda">David Serwadda</a>
-      
-      <a href="../by/author.html?query=Paul+Ndebele">Paul Ndebele</a>
-      
-      <a href="../by/author.html?query=M.+Kate+Grabowski">M. Kate Grabowski</a>
-      
-      <a href="../by/author.html?query=Francis+Bajunirwe">Francis Bajunirwe</a>
-      
-      <a href="../by/author.html?query=Rhoda+K.+Wanyenze">Rhoda K. Wanyenze</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/open-data-charter-measurement-guide.html" title="Open Data Charter Measurement Guide">Open Data Charter Measurement Guide</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Ana+Brandusescu">Ana Brandusescu</a>
-      
-      <a href="../by/author.html?query=Danny+Lämmerhirt">Danny Lämmerhirt</a>
-      
-      <a href="../by/author.html?query=et+al.">et al.</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-        
-      </span>
-    </div>
-    
-    <div class="result-item__extras result-item__extras--open-knowledge-international">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <img class="result-item__extras--organization-logo" src="../images/organizations/oki-white.png" alt="">
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/artificial-intelligence-and-privacy.html" title="Artificial Intelligence and Privacy">Artificial Intelligence and Privacy</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=The+Norwegian+Data+Protection+Authority">The Norwegian Data Protection Authority</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/artificial-intelligence.html" class="result-item__tag result-item__tag--artificial-intelligence">Artificial Intelligence</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/what-to-do-when-machines-do-everything-how-to-get-ahead-in-a-world-of-ai-algorithms-bots-and-big-data.html" title="What To Do When Machines Do Everything: How to Get Ahead in a World of AI, Algorithms, Bots, and Big Data">What To Do When Machines Do Everything: How to Get Ahead in a World of AI, Algorithms, Bots, and Big Data</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Malcolm+Frank">Malcolm Frank</a>
-      
-      <a href="../by/author.html?query=Paul+Roehrig">Paul Roehrig</a>
-      
-      <a href="../by/author.html?query=Ben+Pring">Ben Pring</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/artificial-intelligence.html" class="result-item__tag result-item__tag--artificial-intelligence">Artificial Intelligence</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/book.html">Book</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/privacy-and-freedom-of-expression-in-the-age-of-artificial-intelligence.html" title="Privacy and Freedom of Expression In the Age of Artificial Intelligence">Privacy and Freedom of Expression In the Age of Artificial Intelligence</a></h3>
-    <p class="result-item__authors">
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/artificial-intelligence.html" class="result-item__tag result-item__tag--artificial-intelligence">Artificial Intelligence</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-        <a class="result-item__tag" href="../objectives/privacy.html">Privacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/crowdsourcing-as-a-platform-for-digital-labor-unions.html" title="Crowdsourcing as a Platform for Digital Labor Unions">Crowdsourcing as a Platform for Digital Labor Unions</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Payal+Arora">Payal Arora</a>
-      
-      <a href="../by/author.html?query=Linnea+Holter+Thompson">Linnea Holter Thompson</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-        <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-        <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/livestreaming-pollution-a-new-form-of-public-disclosure-and-a-catalyst-for-citizen-engagement.html" title="Livestreaming Pollution: A New Form of Public Disclosure and a Catalyst for Citizen Engagement?">Livestreaming Pollution: A New Form of Public Disclosure and a Catalyst for Citizen Engagement?</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Emiliano+Huet-Vaughn">Emiliano Huet-Vaughn</a>
-      
-      <a href="../by/author.html?query=Nicholas+Muller">Nicholas Muller</a>
-      
-      <a href="../by/author.html?query=Yen-Chia+Hsu">Yen-Chia Hsu</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/access.html">Access</a>
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/working-paper.html">Working Paper</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/citicafe-conversation-based-intelligent-platform-for-citizen-engagement.html" title="Citicafe: conversation-based intelligent platform for citizen engagement">Citicafe: conversation-based intelligent platform for citizen engagement</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Amol+Dumrewal">Amol Dumrewal</a>
-      
-      <a href="../by/author.html?query=Anwesh+Basu">Anwesh Basu</a>
-      
-      <a href="../by/author.html?query=Austin+Shubham+Atreja">Austin Shubham Atreja</a>
-      
-      <a href="../by/author.html?query=Prateeti+Mohapatra">Prateeti Mohapatra</a>
-      
-      <a href="../by/author.html?query=Pooja+Aggarwal">Pooja Aggarwal</a>
-      
-      <a href="../by/author.html?query=Gargi+B.+Dasgupta">Gargi B. Dasgupta</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-
 
   <div class="row">
     <div class="large-8 column large-offset-2" style="text-align: center; padding: 40px 0;">
@@ -617,6 +153,12 @@
   </div>
 
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('blog-content') != null) { renderBlog('blog-content'); }
+  });
+</script>
 
 
     <footer class='footer'>
@@ -761,7 +303,6 @@
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
@@ -775,12 +316,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $(document).foundation();
-    });
-</script>
+        $(function() {
+            $(document).foundation();
+        });
+    </script>
 
-<div id="overlay" class="js-overlay"></div>
+    <div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

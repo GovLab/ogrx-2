@@ -11,23 +11,34 @@
     <link rel="stylesheet" href="/vendor/styleguide-v2.css">
     <link rel="stylesheet" href="/vendor/slick.css"/>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://use.typekit.net/mvc3cdb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/vendor/jquery-2.1.4.min.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40012093-7', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-40012093-7', 'auto');
+      ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -85,256 +96,33 @@
     <h1>Articles</h1>
   </div>
 
-  
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
 
-<div class="page-section results-section isotope">
-  <div class="row expanded">
-    <div class="column large-12">
-
-      
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-open-evidence
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-design-science
-      
-
-      
-      f-energy
-      
-
-      
-
-      
-
-      
-      f-journal-article
-      
-
-      
-      f-francesco-bogliacino
-      
-      f-cristiano-codagnone
-      
-      f-giuseppe-alessandro-veltri
-      
-      f-francisco-lupiáñez-villanueva
-      
-      f-george-gaskell
-      
-      f-andriy-ivchenko
-      
-
-      
-      m-behavioral-science-and-nudges
-      
-
-      f-search-paper-385
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/labels-as-nudges-an-experimental-study-of-car-eco-labels.html" title="Labels as nudges? An experimental study of car eco-labels">Labels as nudges? An experimental study of car eco-labels</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Francesco+Bogliacino">Francesco Bogliacino</a>
-        
-        <a href="../by/author.html?query=Cristiano+Codagnone">Cristiano Codagnone</a>
-        
-        <a href="../by/author.html?query=Giuseppe+Alessandro+Veltri">Giuseppe Alessandro Veltri</a>
-        
-        <a href="../by/author.html?query=Francisco+Lupiáñez-Villanueva">Francisco Lupiáñez-Villanueva</a>
-        
-        <a href="../by/author.html?query=George+Gaskell">George Gaskell</a>
-        
-        <a href="../by/author.html?query=Andriy+Ivchenko">Andriy Ivchenko</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/behavioral-science-and-nudges.html" class="result-item__tag result-item__tag--behavioral-science-and-nudges">Behavioral Science and Nudges</a>
-          
-        </span>
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
 
       </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/design-science.html">Design Science</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--open-evidence">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/open-evidence-white.png" alt="">
-      </div>
-      
     </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-open-evidence
-      
-
-      
-      f-effectiveness
-      
-      f-participation
-      
-
-      
-      f-case-studies
-      
-      f-qualitative-analysis
-      
-      f-survey
-      
-
-      
-      f-economy
-      
-
-      
-      f-europe
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-european-commission
-      
-      f-directorate-general-for-research-and-innovation
-      
-
-      
-      m-co-creation
-      
-
-      f-search-paper-386
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/an-analysis-of-the-role-and-impact-of-industry-participation-in-framework-programmes.html" title="An analysis of the role and impact of industry participation in framework programmes">An analysis of the role and impact of industry participation in framework programmes</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=European+Commission">European Commission</a>
-        
-        <a href="../by/author.html?query=Directorate-General+for+Research+and+Innovation">Directorate-General for Research and Innovation</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/co-creation.html" class="result-item__tag result-item__tag--co-creation">Co-Creation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--open-evidence">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/open-evidence-white.png" alt="">
-      </div>
-      
-    </div>
-
-    
   </div>
-</div>
-</div>
+
+
+  <div class="row">
+    <div class="large-12 column" style="padding: 40px 0">
+      <p style="text-align: center;"><a class="button" href="../organizations.html">All Organizations</a></p>
+    </div>
+  </div>
 
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderEntries('content',  '../', null, 'Open Evidence'); }
+  });
+</script>
 
     <footer class='footer'>
   <div class="row">
@@ -478,7 +266,6 @@
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
@@ -492,12 +279,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $(document).foundation();
-    });
-</script>
+        $(function() {
+            $(document).foundation();
+        });
+    </script>
 
-<div id="overlay" class="js-overlay"></div>
+    <div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

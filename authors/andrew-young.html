@@ -11,23 +11,34 @@
     <link rel="stylesheet" href="/vendor/styleguide-v2.css">
     <link rel="stylesheet" href="/vendor/slick.css"/>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://use.typekit.net/mvc3cdb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/vendor/jquery-2.1.4.min.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40012093-7', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-40012093-7', 'auto');
+      ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -97,367 +108,33 @@
     <h1>Articles</h1>
   </div>
 
-  
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
 
-<div class="page-section results-section isotope">
-  <div class="row expanded">
-    <div class="column large-12">
-
-      
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-the-govlab
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-case-studies
-      
-      f-qualitative-analysis
-      
-
-      
-
-      
-
-      
-
-      
-      f-book
-      
-
-      
-      f-andrew-young
-      
-      f-stefaan-verhulst
-      
-
-      
-      m-open-data
-      
-
-      f-search-paper-a64
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/the-global-impact-of-open-data.html" title="The Global Impact of Open Data">The Global Impact of Open Data</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Andrew+Young">Andrew Young</a>
-        
-        <a href="../by/author.html?query=Stefaan+Verhulst">Stefaan Verhulst</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
 
       </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-          
-          <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/book.html">Book</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--the-govlab">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
-      </div>
-      
     </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-the-govlab
-      
-
-      
-      f-effectiveness
-      
-
-      
-      f-conceptual-framework
-      
-
-      
-      f-philanthropy-and-aid
-      
-
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-andrew-miller
-      
-      f-andrew-young
-      
-      f-beth-simone-noveck
-      
-
-      
-      m-collective-intelligence
-      
-      m-institutional-innovation
-      
-
-      f-search-paper-a54
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/innovations-in-open-grantmaking.html" title="Innovations in Open Grantmaking">Innovations in Open Grantmaking</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Andrew+Miller">Andrew Miller</a>
-        
-        <a href="../by/author.html?query=Andrew+Young">Andrew Young</a>
-        
-        <a href="../by/author.html?query=Beth+Simone+Noveck">Beth Simone Noveck</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-          
-          <a href="../categories/institutional-innovation.html" class="result-item__tag result-item__tag--institutional-innovation">Institutional Innovation</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--the-govlab">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
-      </div>
-      
-    </div>
-
-    
-
-      <div class="result-item
-      
-      m-open
-      f-open
-      
-
-      
-      f-the-govlab
-      
-
-      
-      f-access
-      
-      f-effectiveness
-      
-      f-legitimacy
-      
-      f-participation
-      
-
-      
-      f-comparative-analysis
-      
-      f-survey
-      
-
-      
-
-      
-      f-canada
-      
-
-      
-
-      
-      f-research-report
-      
-
-      
-      f-andrew-young
-      
-      f-christina-rogawski
-      
-      f-sabeel-rahman
-      
-      f-stefaan-verhulst
-      
-
-      
-      m-citizen-engagement-and-crowdsourcing
-      
-      m-open-data
-      
-
-      f-search-paper-12
-
-      " style="display: inline-block; margin-left: -4px;">
-      <h3 class="result-item__name"><a href="../papers/reimagining-governance-in-practice-benchmarking-british-columbias-citizen-engagement-efforts.html" title="Reimagining Governance in Practice: Benchmarking British Columbia’s Citizen Engagement Efforts">Reimagining Governance in Practice: Benchmarking British Columbia’s Citizen Engagement Efforts</a></h3>
-      <p class="result-item__authors">
-        
-        <a href="../by/author.html?query=Andrew+Young">Andrew Young</a>
-        
-        <a href="../by/author.html?query=Christina+Rogawski">Christina Rogawski</a>
-        
-        <a href="../by/author.html?query=Sabeel+Rahman">Sabeel Rahman</a>
-        
-        <a href="../by/author.html?query=Stefaan+Verhulst">Stefaan Verhulst</a>
-        
-      </p>
-      <div class="result-item__taxonomy result-item__taxonomy--category">
-        <span class="result-item__taxonomy__key">Category</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-          
-          <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-          
-        </span>
-
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--methodology">
-        <span class="result-item__taxonomy__key">Methodology</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-          
-          <a class="result-item__tag" href="../methodologies/survey.html">Survey</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--objective">
-        <span class="result-item__taxonomy__key">Objective</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../objectives/access.html">Access</a>
-          
-          <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-          
-          <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-          
-          <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-          
-        </span>
-      </div>
-      <div class="result-item__taxonomy result-item__taxonomy--type">
-        <span class="result-item__taxonomy__key">Type</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="../types/research-report.html">Research Report</a>
-          
-        </span>
-      </div>
-      
-      <!-- <div class="result-item__taxonomy result-item__taxonomy--open">
-        <span class="result-item__taxonomy__key">Open</span>
-        <span class="result-item__taxonomy__value">
-          
-          <a class="result-item__tag" href="">open</a>
-          
-        </span>
-      </div> -->
-      
-      
-      
-      <div class="result-item__extras result-item__extras--the-govlab">
-        <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
-      </div>
-      
-    </div>
-
-    
   </div>
+
+
+  <div class="row">
+    <div class="large-12 column" style="padding: 40px 0">
+      <p style="text-align: center;"><a class="button" href="../authors.html">All Authors</a></p>
+    </div>
+  </div>
+
 </div>
-</div>
-</div>
+
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderEntries('content',  '../', null, null, 'Andrew Young'); }
+  });
+</script>
 
 
     <footer class='footer'>
@@ -602,7 +279,6 @@
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
@@ -616,12 +292,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $(document).foundation();
-    });
-</script>
+        $(function() {
+            $(document).foundation();
+        });
+    </script>
 
-<div id="overlay" class="js-overlay"></div>
+    <div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>

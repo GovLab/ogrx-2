@@ -11,23 +11,34 @@
     <link rel="stylesheet" href="/vendor/styleguide-v2.css">
     <link rel="stylesheet" href="/vendor/slick.css"/>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://use.typekit.net/mvc3cdb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/vendor/jquery-2.1.4.min.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40012093-7', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-40012093-7', 'auto');
+      ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -50,8 +61,7 @@
   </nav> -->
 </header>
 
-    <!-- This page uses Styleguide 2 -->
-<div id="blog-single">
+    <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>January Highlights: New Research and Findings on OGRX</h1>
     <h3 class="blog-single__meta">January 24, 2017 by   <a href="../authors/andrew-young.html">Andrew Young</a> </h3>
@@ -77,311 +87,13 @@
   </section>
   
 
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/crowdsourcing-it-matters-who-the-crowd-are.html" title="Crowdsourcing: It Matters Who the Crowd Are">Crowdsourcing: It Matters Who the Crowd Are</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Alexis+Comber">Alexis Comber</a>
-      
-      <a href="../by/author.html?query=Peter+Mooney">Peter Mooney</a>
-      
-      <a href="../by/author.html?query=Ross+S.+Purves">Ross S. Purves</a>
-      
-      <a href="../by/author.html?query=Duccio+Rocchini">Duccio Rocchini</a>
-      
-      <a href="../by/author.html?query=Ariane+Walz">Ariane Walz</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-        <a href="../categories/citizen-science.html" class="result-item__tag result-item__tag--citizen-science">Citizen Science</a>
-        
-        <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-        
-      </span>
-
+  <div id="blog-content">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_white_24px.svg"></p>
+      </div>
     </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-        
-        <a class="result-item__tag" href="../methodologies/comparative-analysis.html">Comparative Analysis</a>
-        
-        <a class="result-item__tag" href="../methodologies/qualitative-analysis.html">Qualitative Analysis</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/participation.html">Participation</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
   </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/towards-scalable-governance-sensemaking-and-cooperation-in-the-age-of-social-media.html" title="Towards Scalable Governance: Sensemaking and Cooperation in the Age of Social Media">Towards Scalable Governance: Sensemaking and Cooperation in the Age of Social Media</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Iyad+Rahwan">Iyad Rahwan</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-        <a href="../categories/civic-technology.html" class="result-item__tag result-item__tag--civic-technology">Civic Technology</a>
-        
-        <a href="../categories/collective-intelligence.html" class="result-item__tag result-item__tag--collective-intelligence">Collective Intelligence</a>
-        
-        <a href="../categories/social-media.html" class="result-item__tag result-item__tag--social-media">Social Media</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-        <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/just-good-enough-data-figuring-data-citizenships-through-air-pollution-sensing-and-data-stories.html" title="Just Good Enough Data: Figuring Data Citizenships through Air Pollution Sensing and Data Stories">Just Good Enough Data: Figuring Data Citizenships through Air Pollution Sensing and Data Stories</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Jennifer+Gabrys">Jennifer Gabrys</a>
-      
-      <a href="../by/author.html?query=Helen+Pritchard">Helen Pritchard</a>
-      
-      <a href="../by/author.html?query=Benjamin+Barratt">Benjamin Barratt</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-        <a href="../categories/citizen-science.html" class="result-item__tag result-item__tag--citizen-science">Citizen Science</a>
-        
-        <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-        <a class="result-item__tag" href="../methodologies/quantitative-analysis.html">Quantitative Analysis</a>
-        
-        <a class="result-item__tag" href="../methodologies/statistical-modeling.html">Statistical Modeling</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/data-collaboratives-as-a-new-frontier-of-cross-sector-partnerships-in-the-age-of-open-data-taxonomy-development.html" title="Data Collaboratives as a New Frontier of Cross-Sector Partnerships in the Age of Open Data: Taxonomy Development">Data Collaboratives as a New Frontier of Cross-Sector Partnerships in the Age of Open Data: Taxonomy Development</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Iryna+Susha">Iryna Susha</a>
-      
-      <a href="../by/author.html?query=Marijn+Janssen">Marijn Janssen</a>
-      
-      <a href="../authors/stefaan-verhulst.html">Stefaan Verhulst</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/data-analysis.html" class="result-item__tag result-item__tag--data-analysis">Data Analysis</a>
-        
-        <a href="../categories/data-collaboratives.html" class="result-item__tag result-item__tag--data-collaboratives">Data Collaboratives</a>
-        
-        <a href="../categories/open-data.html" class="result-item__tag result-item__tag--open-data">Open Data</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/case-studies.html">Case Studies</a>
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/conference-proceedings.html">Conference Proceedings</a>
-        
-      </span>
-    </div>
-    
-    <div class="result-item__extras result-item__extras--the-govlab">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <img class="result-item__extras--organization-logo" src="../images/organizations/govlab-logo-white.png" alt="">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-  </div>
-  
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../papers/too-much-democracy-in-all-the-wrong-places-toward-a-grammar-of-participation.html" title="Too Much Democracy in All the Wrong Places: Toward a Grammar of Participation">Too Much Democracy in All the Wrong Places: Toward a Grammar of Participation</a></h3>
-    <p class="result-item__authors">
-      
-      <a href="../by/author.html?query=Christopher+M.+Kelty">Christopher M. Kelty</a>
-      
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a href="../categories/citizen-engagement-and-crowdsourcing.html" class="result-item__tag result-item__tag--citizen-engagement-and-crowdsourcing">Citizen Engagement and Crowdsourcing</a>
-        
-      </span>
-
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../methodologies/conceptual-framework.html">Conceptual Framework</a>
-        
-        <a class="result-item__tag" href="../methodologies/ethnography.html">Ethnography</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../objectives/effectiveness.html">Effectiveness</a>
-        
-        <a class="result-item__tag" href="../objectives/legitimacy.html">Legitimacy</a>
-        
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        
-        <a class="result-item__tag" href="../types/journal-article.html">Journal Article</a>
-        
-      </span>
-    </div>
-    
-  </div>
-  
-
 
   <div class="row">
     <div class="large-8 column large-offset-2" style="text-align: center; padding: 40px 0;">
@@ -390,6 +102,12 @@
   </div>
 
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('blog-content') != null) { renderBlog('blog-content'); }
+  });
+</script>
 
 
     <footer class='footer'>
@@ -534,7 +252,6 @@
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
@@ -548,12 +265,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/plugins/foundation.equalizer.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $(document).foundation();
-    });
-</script>
+        $(function() {
+            $(document).foundation();
+        });
+    </script>
 
-<div id="overlay" class="js-overlay"></div>
+    <div id="overlay" class="js-overlay"></div>
 
 </body>
 </html>
