@@ -49,26 +49,26 @@ var results = function (item, basepath) {
     "<div class='result-item__taxonomy result-item__taxonomy--category'>" +
     "<span class='result-item__taxonomy__key'>Category</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.innovationCategory.map(function(i){ return "<a href='" + basepath + "all_sdk.html?f=true&category=" + encodeURIComponent(safeslug(i)) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.innovationCategory.map(function(i){ return "<a href='" + basepath + "all.html?f=true&category=" + encodeURIComponent(safeslug(i)) + "' class='result-item__tag result-item__tag--" + slugify(i) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
 
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--methodology'>" +
     "<span class='result-item__taxonomy__key'>Methodology</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&methodology=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.methodology.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all.html?f=true&methodology=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--objective'>" +
     "<span class='result-item__taxonomy__key'>Objective</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&objective=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.objectiveCategory.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all.html?f=true&objective=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     "<div class='result-item__taxonomy result-item__taxonomy--type'>" +
     "<span class='result-item__taxonomy__key'>Type</span>" +
     "<span class='result-item__taxonomy__value'>" +
-    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all_sdk.html?f=true&type=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
+    item.fields.publicationType.map(function(i){ return "<a class='result-item__tag' href='" + basepath + "all.html?f=true&type=" + encodeURIComponent(safeslug(i)) + "'>" + i + "</a>"}).join(' ') +
     "</span>" +
     "</div>" +
     (item.fields.open ? "" : "<div class='result-item__unpaywall'><p>May be available at</p><a href='http://unpaywall.org/''><img src='../images/unpaywall.png'></a></div>") +
@@ -271,7 +271,7 @@ var renderEntries = function(el, basepath, _category, _organization, _author) {
     .then(function(entries) {
         // if skip exceeds total, redirect back to p=1 using current limit to avoid broken page (should only happen if values are manually entered in url)
         if (skip > entries.total) {
-            location = 'all_sdk.html?p=1&limit=' + limit;
+            location = 'all.html?p=1&limit=' + limit;
         }
         container.innerHTML = pagination(page, limit, entries.total, paramstring) + entries.items.map(function(i) { return results(i, basepath); }).join('\n') + pagination(page, limit, entries.total, paramstring);
     })

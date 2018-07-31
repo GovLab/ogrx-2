@@ -22,7 +22,7 @@ $(function() {
         // open = (open === null) ? '' : '&open=' + open;
 
 
-        // window.location.href = './all_sdk.html?q=' + v + limit + open;
+        // window.location.href = './all.html?q=' + v + limit + open;
         window.location.href = './' + location.pathname.split('/').pop() + '?q=' + v + limit;
     }
 
