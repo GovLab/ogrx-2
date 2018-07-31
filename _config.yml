@@ -102,10 +102,10 @@ contentful:
         cda_query:                  # Optional
           content_type: paper
           include: 1
-          limit: 1
+          # limit: 1
           # limit: 10
           # limit: 50
-          # limit: 1000
+          limit: 1000
         content_types:
           paper: SysMapper
           blogpost: SysMapper
