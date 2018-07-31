@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contentful_sdk
 ---
 <div class="organization-page">
   <div class="top-section" style="background-color: #{{ page.color }};">
@@ -55,6 +55,30 @@ layout: default
     <h1>Articles</h1>
   </div>
 
-  {% include paper_list.html filter_on="organization" filter_by=page.title %}
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
+
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-12 column" style="padding: 40px 0">
+      <p style="text-align: center;"><a class="button" href="../organizations.html">All Organizations</a></p>
+    </div>
+  </div>
 
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderEntries('content',  '../', null, '{{page.title}}'); }
+  });
+</script>

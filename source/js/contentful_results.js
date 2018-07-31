@@ -112,7 +112,7 @@ var singleList = function(entry) {
 
     return ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
     entry.fields.articlesList.map(function(i) { return results(i, '../'); }) +
-    '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">Back to Lists</a></p></div></div></div>';
+    '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">All Selected Readings</a></p></div></div></div>';
 }
 
 var findGetParameter = function(parameterName) {
@@ -194,21 +194,25 @@ var selectLimitChange = function(e, total) {
     location = location.pathname.split('/').pop() + '?p=' + page + '&limit=' + e.value + paramstring;
 }
 
-var renderEntries = function(el, _category, basepath) {
+var renderEntries = function(el, basepath, _category, _organization) {
     var container = document.getElementById(el);
-    var category;
+    var category, organization;
 
     var params = {
         content_type: PAPER_CONTENT_TYPE_ID,
         order: '-sys.createdAt'
     };
 
+    if (typeof basepath === "undefined") {
+        basepath = '';
+    }
     if (typeof _category !== "undefined") {
         category = _category;
         if (category !== null) { params['fields.innovationCategory[match]'] = category; }
     }
-    if (typeof basepath === "undefined") {
-        basepath = '';
+    if (typeof _organization !== "undefined") {
+        organization = _organization;
+        if (organization !== null) { params['fields.organization[match]'] = organization; }
     }
 
     var paramstring = '';
