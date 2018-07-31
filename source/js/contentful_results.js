@@ -194,9 +194,9 @@ var selectLimitChange = function(e, total) {
     location = location.pathname.split('/').pop() + '?p=' + page + '&limit=' + e.value + paramstring;
 }
 
-var renderEntries = function(el, basepath, _category, _organization) {
+var renderEntries = function(el, basepath, _category, _organization, _author) {
     var container = document.getElementById(el);
-    var category, organization;
+    var category, organization, author;
 
     var params = {
         content_type: PAPER_CONTENT_TYPE_ID,
@@ -213,6 +213,10 @@ var renderEntries = function(el, basepath, _category, _organization) {
     if (typeof _organization !== "undefined") {
         organization = _organization;
         if (organization !== null) { params['fields.organization[match]'] = organization; }
+    }
+    if (typeof _author !== "undefined") {
+        author = _author;
+        if (author !== null) { params['fields.authors[match]'] = author; }
     }
 
     var paramstring = '';
