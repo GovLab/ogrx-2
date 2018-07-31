@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contentful_sdk
 alphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 custom_authors:
   - Beth Simone Noveck
@@ -58,7 +58,11 @@ custom_authors:
         {% endfor %}
       </div>
     </div>
-    <div class="row expanded">
+    <div class="row expanded" id="content">
+
+      <p class="js-loading js-loading--white" style="text-align: center; width: 100px; display:block; margin: 0 auto;"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+
+      {% comment %}
 
       {% assign papers = site.data.contentful.spaces.papers.paper %}
 
@@ -85,10 +89,12 @@ custom_authors:
         {% if page.custom_authors contains a %}
         <a href="{{a | slugify | datapage_url: 'authors'}}">{{a}}</a>
         {% else %}
-        <a href="by/author.html?query={{a | replace: ' ', '+' }}">{{ a }}</a>
+        <a href="by/author.html?name={{a | replace: ' ', '+' }}">{{ a }}</a>
         {% endif %}
       </div>
       {% endfor %}
+
+      {% endcomment %}
 
   </div>
 </div>
@@ -96,3 +102,10 @@ custom_authors:
 </div>
 
 <script src="./js/scrollbtn.js"></script>
+
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderAuthors('content'); }
+  });
+</script>
+
