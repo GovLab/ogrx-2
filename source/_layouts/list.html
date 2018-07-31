@@ -1,7 +1,6 @@
 ---
 layout: contentful_sdk
 ---
-{% if page.use_sdk %}
 
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
@@ -51,7 +50,7 @@ layout: contentful_sdk
   });
 </script>
 
-{% else %}
+{% comment %}
 
 
 <div id="blog-single">
@@ -152,4 +151,4 @@ layout: contentful_sdk
 
 </div>
 
-{% endif %}
+{% endcomment %}
