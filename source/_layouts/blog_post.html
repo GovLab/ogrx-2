@@ -1,7 +1,7 @@
 ---
 layout: contentful_sdk
 ---
-<!-- This page uses Styleguide 2 -->
+
 <div id="blog-single">
   <div class="top-section top-section--main-color blog-header">
     <h1>{{page.title}}</h1>
@@ -22,59 +22,13 @@ layout: contentful_sdk
   </section>
   {% endif %}
 
-  {% for b in page.articles_list %}
-  <div class="result-item" style="display: inline-block; margin-left: -4px;">
-    <h3 class="result-item__name"><a href="../{{b.publication_name | datapage_url: 'papers'}}" title="{{b.publication_name}}">{{b.publication_name}}</a></h3>
-    <p class="result-item__authors">
-      {% for author in b.authors %}
-      <a href="{% assign found = false %}{% for c in site.data.custom_authors %}{% if author == c.title %}{{author | datapage_url: '../authors'}}{% assign found = true %}{% endif %}{% endfor %}{% unless found %}../by/author.html?query={{author | replace: ' ', '+' }}{% endunless %}">{{author}}</a>
-      {% endfor %}
-    </p>
-    <div class="result-item__taxonomy result-item__taxonomy--category">
-      <span class="result-item__taxonomy__key">Category</span>
-      <span class="result-item__taxonomy__value">
-        {% for category in b.innovation_category %}
-        <a href="../{{category | datapage_url: 'categories'}}" class="result-item__tag result-item__tag--{{ category | slugify }}">{{ category }}</a>
-        {% endfor %}
-      </span>
-
+  <div id="blog-content">
+    <div class="row align-center">
+      <div class="large-10 column">
+        <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_white_24px.svg"></p>
+      </div>
     </div>
-    <div class="result-item__taxonomy result-item__taxonomy--methodology">
-      <span class="result-item__taxonomy__key">Methodology</span>
-      <span class="result-item__taxonomy__value">
-        {% for methodology in b.methodology %}
-        <a class="result-item__tag" href="../{{methodology | datapage_url: 'methodologies'}}">{{ methodology }}</a>
-        {% endfor %}
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--objective">
-      <span class="result-item__taxonomy__key">Objective</span>
-      <span class="result-item__taxonomy__value">
-        {% for objective in b.objective_category %}
-        <a class="result-item__tag" href="../{{objective | datapage_url: 'objectives'}}">{{ objective }}</a>
-        {% endfor %}
-      </span>
-    </div>
-    <div class="result-item__taxonomy result-item__taxonomy--type">
-      <span class="result-item__taxonomy__key">Type</span>
-      <span class="result-item__taxonomy__value">
-        {% for type in b.publication_type %}
-        <a class="result-item__tag" href="../{{type | datapage_url: 'types'}}">{{ type }}</a>
-        {% endfor %}
-      </span>
-    </div>
-    {% for org in b.organization %}
-    <div class="result-item__extras result-item__extras--{{ org | slugify }}">
-      {% for o in site.data.organizations %}
-      {% if org == o.title %}
-      <img class="result-item__extras--organization-logo" src="../images/organizations/{{o.image_white}}" alt="">
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endfor %}
   </div>
-  {% endfor %}
-
 
   <div class="row">
     <div class="large-8 column large-offset-2" style="text-align: center; padding: 40px 0;">
@@ -83,3 +37,9 @@ layout: contentful_sdk
   </div>
 
 </div>
+
+<script>
+  $(function() {
+    if (document.getElementById('blog-content') != null) { renderBlog('blog-content'); }
+  });
+</script>

@@ -5,6 +5,7 @@ var contentfulClient = contentful.createClient({
 
 var PAPER_CONTENT_TYPE_ID = 'paper';
 var LIST_CONTENT_TYPE_ID = 'list';
+var BLOG_CONTENT_TYPE_ID = 'blogpost';
 
 var dateFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -15,7 +16,6 @@ var getLastInitial = function(text) { return text.toString().replace(/^.*\s+/, '
 var getLastName = function(text) { return text.toString().replace(/^.*\s+/, ''); }
 
 var results = function (item, basepath) {
-    console.log(basepath);
     if (typeof basepath === "undefined") { basepath = ''; }
     if (item.fields.organization === undefined) { item.fields.organization = []; }
     if (item.fields.objectiveCategory === undefined) { item.fields.objectiveCategory = []; }
@@ -109,12 +109,13 @@ var singleResult = function(entry) {
 }
 
 var singleList = function(entry) {
-    console.log(entry);
-    console.log (entry.fields.affiliationLogo.fields.file);
-
     return ((entry.fields.articlesList === undefined) ? '' : '<section class="divider"><h1>Selected Readings</h1></section>') +
     entry.fields.articlesList.map(function(i) { return results(i, '../'); }) +
     '<div class="row"><div class="large-12 column" style="padding: 40px 0"><p style="text-align: center;"><a class="button" href="../selectedreadings.html">All Selected Readings</a></p></div></div></div>';
+}
+
+var singleBlog = function(entry) {
+    return (entry.fields.articlesList === undefined) ? '' : entry.fields.articlesList.map(function(i) { return results(i, '../'); });
 }
 
 var singleAuthor = function(entry) {
@@ -322,6 +323,28 @@ var renderList = function(el) {
         if (entries.items.length > 0) {
             console.log(entries.items[0].sys.id);
             container.innerHTML = singleList(entries.items[0]);
+        } else {
+            throw 'No entry found';
+        }
+    })
+    .catch(console.error)
+}
+
+var renderBlog = function(el) {
+    var container = document.getElementById(el);
+
+    var name = location.pathname.replace(/^.*\//,'').replace(/\.html$/,'');
+
+    name = deslugify(name);
+    contentfulClient.getEntries({
+        content_type: BLOG_CONTENT_TYPE_ID,
+        'fields.title[match]': name
+    })
+    .then(function(entries) {
+        console.log(name);
+        if (entries.items.length > 0) {
+            console.log(entries.items[0].sys.id);
+            container.innerHTML = singleBlog(entries.items[0]);
         } else {
             throw 'No entry found';
         }
