@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title></title>
+    <title>Open Data Research Symposium</title>
 
     <link rel="stylesheet" href="/vendor/foundation.min.css">
     <link rel="stylesheet" href="/vendor/styleguide-v2.css">
@@ -35,6 +35,10 @@
 </head>
 
 <body>
+    <script src="/vendor/contentful.browser.js"></script>
+    <script src="/js/contentful_search.js"></script>
+    <script src="/js/contentful_results.js"></script>
+
     <header class="top-bar">
   <span class="top-bar__button js-trigger-menu">menu</span>
   <nav class="main-menu js-target-menu main-menu--left">
@@ -57,236 +61,79 @@
   </nav> -->
 </header>
 
-    <div class="organization-list-page">
+    <div class="organization-page">
+  <div class="top-section" style="background-color: #47a6b3;">
+    <div class="row">
+      <div class="large-6 column organization-page__image-column">
+        <img class="organization-page__org-logo" src="/images/organizations/odrs-horizontal-full-white.png" alt="Open Data Research Symposium" title="Open Data Research Symposium">
+        
+        <span class="button" onclick="$('.extra-info-panel').toggleClass('visible');">More Information</span>
+        
+      </div>
+      <div class="large-6 column">
+        <div class="organization-page__description">As open data become entrenched in the policy mainstream, there is an ongoing need to delve deeper into the dynamics of open data practices. At the same time, there is a need to maintain a critical perspective and to develop empirically-tested theories on the publication, use and impact of open data.</div>
+        <div class="organization-page__extras">
+          
+          <a href="http://odresearch.org/" class="social-media-icon" id="medium-url" target="_blank">
+            <img src="/images/browser-window-logo.png" alt="Open Data Research Symposium url">
+          </a>
+          
+          
+          <a href="https://twitter.com/search?f=tweets&q=%23odrs18&src=typd" class="social-media-icon" target="_blank">
+            <img src="/images/twitter-logo.png" alt="Open Data Research Symposium Twitter">
+          </a>
+          
+          
+          
+        </div>
+      </div>
+    </div>
 
-  <div class="top-section">
-    <h1>Organizations</h1>
+    
+      <!-- {# Extra Info Panel #} -->
+      <div class="extra-info-panel">
+        <div class="row">
+          <div class="large-10 column large-offset-1 column"  style="text-align: left">
+            <p>The 3rd Open Data Research Symposium (ODRS) offered researchers an opportunity to share completed research to inform our understanding of open data’s contribution to society. Held in Buenos Aires, Argentina in September 2018, ODRS provided participants with an opportunity to shape the open data research agenda such that the knowledge produced by the research community is both relevant and robust.</p>
+          </div>
+        </div>
+      </div>
+    
+
   </div>
 
-<!-- List of Organizations - Founding Organizations -->
-<div class="divider">
+  <!-- {# Article Section #} -->
+  <div class="divider">
+    <h1>Articles</h1>
+  </div>
+
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="column large-12" style="padding-left: unset; padding-right: unset;">
+
+        <div id="content" class="content-container">
+          <!-- <p class="js-loading"><i class="js-loading-spinner material-icons">refresh</i></p> -->
+          <p class="js-loading js-loading--white"><img class="js-loading-spinner" src="../images/ic_refresh_black_24px.svg"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
   <div class="row">
-    <div class="column large-12">
-      <h2>Founding Partners</h2>
+    <div class="large-12 column" style="padding: 40px 0">
+      <p style="text-align: center;"><a class="button" href="../organizations.html">All Organizations</a></p>
     </div>
   </div>
+
 </div>
 
-  <div class="page-section organizations">
-    <div class="row align-spaced expanded align-middle">
-      
-        
-      
-        
-      
-        
-      
-        
-        <div class="medium-4 column">
-          <a class="organization--world-bank-digital-engagement-evaluation-team" href="./organizations/world-bank-digital-engagement-evaluation-team.html"><img class="organization-logo" src="./images/organizations/deet-logo.png" alt="World Bank Digital Engagement Evaluation Team"></a>
-        </div>
-        
-      
-        
-        <div class="medium-4 column">
-          <a class="organization--mysociety" href="./organizations/mysociety.html"><img class="organization-logo" src="./images/organizations/mysociety-logo.png" alt="mySociety"></a>
-        </div>
-        
-      
-        
-        <div class="medium-4 column">
-          <a class="organization--the-govlab" href="./organizations/the-govlab.html"><img class="organization-logo" src="./images/organizations/govlab-logo.png" alt="The GovLab"></a>
-        </div>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-
-    </div>
-  </div>
-
-  <div class="divider">
-    <div class="row">
-      <div class="column large-12">
-        <h2>Network Partners</h2>
-      </div>
-    </div>
-  </div>
-
-    <div class="page-section organizations">
-    <div class="row align-spaced expanded align-middle">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          <div class="medium-4 column">
-              <a class="organization--macarthur-foundation-research-network-on-opening-governance" href="./organizations/macarthur-foundation-research-network-on-opening-governance.html"><img class="organization-logo" src="./images/organizations/maca-network-logo.png" alt="MacArthur Foundation Research Network on Opening Governance"></a>
-          </div>
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-
-  <div class="divider">
-    <div class="row">
-      <div class="column large-12">
-        <h2>Contributing Partners</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-section organizations">
-    <div class="row align-spaced expanded align-middle">
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--open-data-research-symposium" href="./organizations/open-data-research-symposium.html"><img class="organization-logo" src="./images/organizations/odrs-horizontal-full.png" alt="Open Data Research Symposium"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--open-culture-foundation" href="./organizations/open-culture-foundation.html"><img class="organization-logo" src="./images/organizations/ocf-logo.png" alt="Open Culture Foundation"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--data-for-policy" href="./organizations/data-for-policy.html"><img class="organization-logo" src="./images/organizations/dfp-logo.png" alt="Data for Policy"></a>
-          </div>
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--centre-for-public-impact" href="./organizations/centre-for-public-impact.html"><img class="organization-logo" src="./images/organizations/CPI-logo.png" alt="Centre for Public Impact"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--open-evidence" href="./organizations/open-evidence.html"><img class="organization-logo" src="./images/organizations/open-evidence-logo.png" alt="Open Evidence"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--digital-commons-lab" href="./organizations/digital-commons-lab.html"><img class="organization-logo" src="./images/organizations/dcl-logo.png" alt="Digital Commons Lab"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--open-data-for-development" href="./organizations/open-data-for-development.html"><img class="organization-logo" src="./images/organizations/od4d-logo.png" alt="Open Data for Development"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--swedish-law-and-informatics-research-institute" href="./organizations/swedish-law-and-informatics-research-institute.html"><img class="organization-logo" src="./images/organizations/iri-logo.png" alt="Swedish Law and Informatics Research Institute"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--center-for-policy-informatics" href="./organizations/center-for-policy-informatics.html"><img class="organization-logo" src="./images/organizations/ASU-CPI-logo.png" alt="Center for Policy Informatics"></a>
-          </div>
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--open-knowledge-international" href="./organizations/open-knowledge-international.html"><img class="organization-logo" src="./images/organizations/oki-color.png" alt="Open Knowledge International"></a>
-          </div>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-          <div class="medium-4 column">
-              <a class="organization--making-all-voices-count" href="./organizations/making-all-voices-count.html"><img class="organization-logo" src="./images/organizations/mavc-ogrx-color.png" alt="Making All Voices Count"></a>
-          </div>
-          
-        
-      
-    </div>
-  </div>
-</div>
+<script>
+  $(function() {
+    if (document.getElementById('content') != null) { renderEntries('content',  '../', null, 'Open Data Research Symposium'); }
+  });
+</script>
 
     <footer class='footer'>
   <div class="row">
@@ -430,7 +277,6 @@
 </div>
 
 
-    <!-- NEED TO FIX RELATIVE URLS -->
     <script src="/vendor/slick.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script src="/js/scripts.js"></script>
