@@ -1,3 +1,22 @@
+- title: Open Data Research Symposium # Organization
+  image: odrs-horizontal-full.png # Logo image
+  image_white: odrs-horizontal-full-white.png # Logo image (white version)
+  short_description: As open data become entrenched in the policy mainstream, there is an ongoing need to delve deeper into the dynamics of open data practices. At the same time, there is a need to maintain a critical perspective and to develop empirically-tested theories on the publication, use and impact of open data.
+  long_description: The 3rd Open Data Research Symposium (ODRS) offered researchers an opportunity to share completed research to inform our understanding of open data’s contribution to society. Held in Buenos Aires, Argentina in September 2018, ODRS provided participants with an opportunity to shape the open data research agenda such that the knowledge produced by the research community is both relevant and robust.
+  display_name:
+    - open-data-research-symposium # To be used as a custom filter
+    - Open Data Research Symposium
+  founding_partner: false
+  network_partner: false
+  color: 47a6b3 # Hash value to be applied to the top section
+  social_media: # Links
+    url: http://odresearch.org/
+    github: false
+    facebook: false
+    twitter: https://twitter.com/search?f=tweets&q=%23odrs18&src=typd
+  display: true
+  display_rank: 1
+
 - title: Open Culture Foundation # Organization
   image: ocf-logo.png # Logo image
   image_white: ocf-logo-white.png # Logo image (white version)
