@@ -1,6 +1,1013 @@
 ---
 list:
 - sys:
+    id: 4XDvBZXr288E4smsGAiQCa
+    created_at: !ruby/object:DateTime 2017-02-02 22:41:46.138000000 Z
+    updated_at: !ruby/object:DateTime 2018-07-31 13:16:18.616000000 Z
+    content_type_id: list
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
+    revision: 4
+    content_type:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Collective Intelligence
+  author:
+  - Geoff Mulgan
+  affiliation:
+  - Nesta
+  affiliation_logo:
+    sys:
+      id: GqXR9G1WACqEmYa6U8OKY
+      created_at: !ruby/object:DateTime 2018-07-31 13:16:02.965000000 Z
+      updated_at: !ruby/object:DateTime 2018-07-31 13:16:02.965000000 Z
+    title: Nesta White Horizontal Logo RGB
+    description: 
+    url: "//images.ctfassets.net/ufh1mvj7xl16/GqXR9G1WACqEmYa6U8OKY/17169c5e7b9a0266d19668c48234f46a/Nesta_White_Horizontal_Logo_RGB.png"
+  description: "Collective intelligence is a newish term for an old topic. It describes
+    how intelligence functions at large scales: how teams or meetings do or don’t
+    make the most of their members, through to how whole societies solve problems.
+    \ The phrase was first used in the 19th century but has been given much greater
+    prominence recently thanks to the spread of digital tools. There’s relatively
+    little literature on collective intelligence as such, but there is a very broad
+    literature of related topics, from philosophical speculation about how the Internet
+    could change the way humanity thinks to social psychology, computer science to
+    economics. This reflects the fact that there isn’t yet a coherent discipline of
+    collective intelligence. But over the next few decades there’s a good prospect
+    that one will emerge, synthesising insights from across a range of disciplines,
+    and in particular showing how the combination of human and machine intelligence
+    can help groups think and act more successfully.\n\nThe following readings give
+    a flavour of the range. They include some very broad sweeps (such as the books
+    by Pierre Levy and Howard Bloom); a collection from Thomas Malone and Michael
+    Bernstein which aims to map the state of the field, including the contributions
+    of various social science disciplines; a recent collection from the foremost contemporary
+    author on individual intelligence (Robert Sternberg); and a very different collection
+    focused more on democracy and public decision-making (Helene Landemore and Jon
+    Elster). \n\nThe piece by Anita Woolley et al is a good example of a specific
+    experiment which showed some of the characteristics that make a group better at
+    solving problems. Cass Sunstein’s book is a very readable guide to group decision
+    making, which reaffirms the principle that it’s often sensible to get a group
+    to agree on diagnosis before moving onto prescription. Simon Hartley’s book on
+    teams is a good example of the huge literature on what makes teams work – whether
+    in sports or business.   Michael Nielsen’s book is a fascinating account of how
+    science is being transformed by the Internet and new ways of mobilising many minds
+    to solve problems. Finally, I’ve also added on a link to a short paper I wrote
+    on what’s known about making meetings successful – which shows why the vast majority
+    of meetings in academic, business and politics are so unsuccessful in making the
+    most of the brainpower of their participants.\n"
+  articles_list:
+  - sys:
+      id: B5jerRrhg42QgkMKGeqcs
+      created_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Collective Intelligence: Mankind''s Emerging World in Cyberspace'
+    authors:
+    - Pierre Levy
+    publication_date: !ruby/object:DateTime 1999-01-19 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    sector_category:
+    - Internet Governance
+    methodology:
+    - Conceptual Framework
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    abstract: The number of travelers along the information superhighway is increasing
+      at a rate of 10 percent a month. How will this communications revolution affect
+      our culture and society? Pierre Lévy shows how the unfettered exchange of ideas
+      in cyberspace has the potential to liberate us from the social and political
+      hierarchies that have stood in the way of mankind's advancement. Anthropologist,
+      historian, sociologist, and philosopher, Lévy writes with a depth of scholarship
+      and imaginative insight rare among media critics. At once a profound historical
+      analysis of the development of human culture and a blueprint for the future,
+      Collective Intelligence is a visionary work.
+    download_link: https://www.amazon.com/Collective-Intelligence-Mankinds-Emerging-Cyberspace/dp/0738202614
+  - sys:
+      id: 2LO6aQwoukOqMkGaWggguQ
+      created_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Global Brain: The Evolution of Mass Mind from the Big Bang
+      to the 21st Century'
+    authors:
+    - Howard Bloom
+    publication_date: !ruby/object:DateTime 2017-01-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    abstract: |-
+      In this extraordinary follow-up to the critically acclaimed The Lucifer Principle, Howard Bloom-one of today's preeminent thinkers-offers us a bold rewrite of the evolutionary saga. He shows how plants and animals (including humans) have evolved together as components of a worldwide learning machine. He describes the network of life on Earth as one that is, in fact, a ""complex adaptive system,"" a global brain in which each of us plays a sometimes conscious, sometimes unknowing role. and he reveals that the World Wide Web is just the latest step in the development of this brain. These are theories as important as they are radical. Informed by twenty years of interdisciplinary research, Bloom takes us on a spellbinding journey back to the big bang to let us see how its fires forged primordial sociality. As he brings us back via surprising routes, we see how our earliest bacterial ancestors built multitrillion-member research and development teams a full 3.5 billion years ago. We watch him unravel the previously unrecognized strands of interconnectedness woven by crowds of trilobites, hunting packs of dinosaurs, feathered flying lizards gathered in flocks, troops of baboons making communal decisions, and adventurous tribes of protohumans spreading across continents but still linked by primitive forms of information networking. We soon find ourselves reconsidering our place in the world. Along the way, Bloom offers us exhilarating insights into the strange tricks of body and mind that have organized a variety of life forms: spiny lobsters, which, during the Paleozoic age, participated in communal marching rituals; and bees, which, during the age of dinosaurs, conducted collective brainwork. This fascinating tour continues on to the sometimes brutal subculture wars that have spurred the growth of human civilization since the Stone Age. Bloom shows us how culture shapes our infant brains, immersing us in a matrix of truth and mass delusion that we think of as reality.
+
+      Global Brain is more than just a brilliantly original contribution to the ongoing debate on the inner workings of evolution. It is a ""grand vision,"" says the eminent evolutionary biologist David Sloan Wilson, a work that transforms our very view of who we are and why.
+  - sys:
+      id: 6N2e1GkpTqyok0eU28SAcC
+      created_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Handbook of Collective Intelligence
+    authors:
+    - Thomas W. Malone
+    - Michael S. Bernstein
+    publication_date: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Essay Collection
+    publication_type:
+    - Book
+    abstract: "Intelligence does not arise only in individual brains; it also arises
+      in groups of individuals. This is collective intelligence: groups of individuals
+      acting collectively in ways that seem intelligent. In recent years, a new kind
+      of collective intelligence has emerged: interconnected groups of people and
+      computers, collectively doing intelligent things. Today these groups are engaged
+      in tasks that range from writing software to predicting the results of presidential
+      elections. This volume reports on the latest research in the study of collective
+      intelligence, laying out a shared set of research challenges from a variety
+      of disciplinary and methodological perspectives. Taken together, these essays—by
+      leading researchers from such fields as computer science, biology, economics,
+      and psychology—lay the foundation for a new multidisciplinary field. \n\nEach
+      essay describes the work on collective intelligence in a particular discipline—for
+      example, economics and the study of markets; biology and research on emergent
+      behavior in ant colonies; human-computer interaction and artificial intelligence;
+      and cognitive psychology and the “wisdom of crowds” effect. Other areas in social
+      science covered include social psychology, organizational theory, law, and communications. "
+    download_link: https://mitpress.mit.edu/hci
+  - sys:
+      id: 4P6hFcgOtGQUEAKw0mykiC
+      created_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Evidence for a Collective Intelligence Factor in the Performance
+      of Human Groups
+    authors:
+    - Anita Williams Woolley
+    - Christopher F. Chabris
+    - Alex Pentland
+    - Nada Hashmi
+    - Thomas W. Malone
+    publication_date: !ruby/object:DateTime 2010-10-29 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Randomized Controlled Trial
+    publication_type:
+    - Journal Article
+    abstract: Psychologists have repeatedly shown that a single statistical factor—often
+      called “general intelligence”—emerges from the correlations among people’s performance
+      on a wide variety of cognitive tasks. But no one has systematically examined
+      whether a similar kind of “collective intelligence” exists for groups of people.
+      In two studies with 699 people, working in groups of two to five, we find converging
+      evidence of a general collective intelligence factor that explains a group’s
+      performance on a wide variety of tasks. This “c factor” is not strongly correlated
+      with the average or maximum individual intelligence of group members but is
+      correlated with the average social sensitivity of group members, the equality
+      in distribution of conversational turn-taking, and the proportion of females
+      in the group.
+    download_link: http://science.sciencemag.org/content/330/6004/686.full
+  - sys:
+      id: 6HXCvv9TeEi0mkYmMwAese
+      created_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Collective Wisdom: Principles and Mechanisms'
+    authors:
+    - Hélène Landemore
+    - Jon Elster
+    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    - Legitimacy
+    sector_category:
+    - Law
+    - Politics
+    - Policy
+    methodology:
+    - Case Studies
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    abstract: James Madison wrote, 'Had every Athenian citizen been a Socrates, every
+      Athenian assembly would still have been a mob'. The contributors to this volume
+      discuss and for the most part challenge this claim by considering conditions
+      under which many minds can be wiser than one. With backgrounds in economics,
+      cognitive science, political science, law and history, the authors consider
+      information markets, the internet, jury debates, democratic deliberation and
+      the use of diversity as mechanisms for improving collective decisions. At the
+      same time, they consider voter irrationality and paradoxes of aggregation as
+      possibly undermining the wisdom of groups. Implicitly or explicitly, the volume
+      also offers guidance and warnings to institutional designers.
+    download_link: https://www.amazon.com/dp/B008R9T21E/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+  - sys:
+      id: 4Uo7UpBEliua2YuwQ2gg8q
+      created_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Creative Intelligence in the 21st Century: Grappling with Enormous
+      Problems and Huge Opportunities'
+    authors:
+    - Don Ambrose
+    - Robert J. Sternberg
+    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    sector_category:
+    - Education
+    methodology:
+    - Essay Collection
+    publication_type:
+    - Book
+    abstract: How can creative individuals and societies adapt to complex 21st-century
+      conditions? Will civilizations thrive or collapse in the decades to come if
+      they are not creative enough, or if they are too creative? Interest in these
+      questions is growing; however, until now there has been inadequate understanding
+      of the socioeconomic and cultural trends and issues that influence creativity.
+      This book provides that understanding while yielding insights from many of the
+      world’s leading creativity researchers and educational experts. The book begins
+      with a big-picture, interdisciplinary overview of the socioeconomic, cultural,
+      and technological pressures emerging from 21st-century globalization and describes
+      some ways in which those pressures simultaneously suppress, distort, and invigorate
+      creativity in general, and creative education in particular. After that, prominent
+      scholars of creativity and education use their impressive knowledge bases to
+      clarify how we can adjust our thoughts and actions in order to give ourselves
+      the best possible chances for success in this complex world.
+    download_link: http://www.springer.com/us/book/9789463005067
+  - sys:
+      id: 4GB6B8Lh68iSguqKCieEs8
+      created_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Why do humans reason? Arguments for an argumentative theory
+    authors:
+    - Hugo Mercier
+    - Dan Sperber
+    publication_date: !ruby/object:DateTime 2017-11-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    - Behavioral Science and Nudges
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    abstract: |-
+      Reasoning is generally seen as a means to improve knowledge and make better decisions. However, much evidence shows that reasoning often leads to epistemic distortions and poor decisions. This suggests that the function of reasoning should be rethought. Our hypothesis is that the function of reasoning is argumentative. It is to devise and evaluate arguments intended to persuade.
+      Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation. A wide range of evidence in the psychology of reasoning and decision making can be reinterpreted and better explained in the light of this hypothesis. Poor performance in standard reasoning tasks is explained by the lack of argumentative context. When the same problems are placed in a proper argumentative setting, people turn out to be skilled arguers. Skilled
+      arguers, however, are not after the truth but after arguments supporting their views. This explains the notorious confirmation bias. This bias is apparent not only when people are actually arguing, but also when they are reasoning proactively from the perspective of having to defend their opinions. Reasoning so motivated can distort evaluations and attitudes and allow erroneous beliefs to persist. Proactively used reasoning also favors decisions that are easy to justify but not necessarily better. In all these instances traditionally described as failures or flaws, reasoning does exactly what can be expected of an argumentative device: Look for arguments that support a given conclusion, and, ceteris paribus, favor conclusions for which arguments can be found.
+    download_link: http://www.dan.sperber.fr/wp-content/uploads/2009/10/MercierSperberWhydohumansreason.pdf
+  - sys:
+      id: 1pGoE8lal2MYMKKwyY2o4E
+      created_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Wiser: Getting Beyond Groupthink to Make Groups Smarter'
+    authors:
+    - Cass Sunstein
+    - Reid Hastie
+    publication_date: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    - Behavioral Science and Nudges
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    - Qualitative Analysis
+    publication_type:
+    - Book
+    abstract: "Since the beginning of human history, people have made decisions in
+      groups—first in families and villages, and now as part of companies, governments,
+      school boards, religious organizations, or any one of countless other groups.
+      And having more than one person to help decide is good because the group benefits
+      from the collective knowledge of all of its members, and this results in better
+      decisions. Right?\n\nBack to reality. We’ve all been involved in group decisions—and
+      they’re hard. And they often turn out badly. Why? Many blame bad decisions on
+      “groupthink” without a clear idea of what that term really means. \n\nNow, Nudge
+      coauthor Cass Sunstein and leading decision-making scholar Reid Hastie shed
+      light on the specifics of why and how group decisions go wrong—and offer tactics
+      and lessons to help leaders avoid the pitfalls and reach better outcomes. In
+      the first part of the book, they explain in clear and fascinating detail the
+      distinct problems groups run into:\n\n•They often amplify, rather than correct,
+      individual errors in judgment\n•They fall victim to cascade effects, as members
+      follow what others say or do\n•They become polarized, adopting more extreme
+      positions than the ones they began with\n•They emphasize what everybody knows
+      instead of focusing on critical information that only a few people know\n\nIn
+      the second part of the book, the authors turn to straightforward methods and
+      advice for making groups smarter. These approaches include silencing the leader
+      so that the views of other group members can surface, rethinking rewards and
+      incentives to encourage people to reveal their own knowledge, thoughtfully assigning
+      roles that are aligned with people’s unique strengths, and more.\n\nWith examples
+      from a broad range of organizations—from Google to the CIA—and written in an
+      engaging and witty style, Wiser will not only enlighten you; it will help your
+      team and your organization make better decisions—decisions that lead to greater
+      success."
+    download_link: https://www.amazon.com/dp/B00O4CRR9C/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+  - sys:
+      id: 62DK1TZwbuq0aOmoWqECEO
+      created_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Stronger Together: How Great Teams Work'
+    authors:
+    - Simon Hartley
+    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: "What do world-class teams do that others don't? How do those teams
+      think, make decisions and respond to challenges?\n\nStronger Together will help
+      readers to understand what differentiates world-class teams from the rest. Using
+      these insights, readers can apply the same key principles when leading - or
+      being a part of - a team, whether they are in a business or sports environment.
+      \n\nTo illustrate how world-class teams operate and how they're led, the author
+      draws on examples of teamwork from a diverse range of disciplines, from The
+      Red Arrows to SAS Units, a Formula One Pit Crew, Americas Cup yacht crews, World
+      Championship sports teams and more. He includes case studies from his work with
+      elite professional, international and Olympic sports teams, plus executive leadership
+      teams from businesses.\n\nThis truly insightful and fascinating book lifts the
+      lid on what it takes to be the best and how we can translate these lessons to
+      our own performance."
+    download_link: https://www.amazon.com/Stronger-Together-Great-Teams-Work/dp/0349408483
+  - sys:
+      id: 3yBdw6vQa4mEOWGWc0WesM
+      created_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: Cognition in the Wild
+    authors:
+    - Edwin Hutchins
+    publication_date: !ruby/object:DateTime 1995-01-19 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    - Behavioral Science and Nudges
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: |-
+      Edwin Hutchins combines his background as an anthropologist and an open ocean racing sailor and navigator in this account of how anthropological methods can be combined with cognitive theory to produce a new reading of cognitive science. His theoretical insights are grounded in an extended analysis of ship navigation—its computational basis, its historical roots, its social organization, and the details of its implementation in actual practice aboard large ships. The result is an unusual interdisciplinary approach to cognition in culturally constituted activities outside the laboratory—"in the wild."
+
+      Hutchins examines a set of phenomena that have fallen in the cracks between the established disciplines of psychology and anthropology, bringing to light a new set of relationships between culture and cognition. The standard view is that culture affects the cognition of individuals. Hutchins argues instead that cultural activity systems have cognitive properties of their own that are different from the cognitive properties of the individuals who participate in them. Each action for bringing a large naval vessel into port, for example, is informed by culture: the navigation team can be seen as a cognitive and computational system.
+
+      Introducing Navy life and work on the bridge, Hutchins makes a clear distinction between the cognitive properties of an individual and the cognitive properties of a system. In striking contrast to the usual laboratory tasks of research in cognitive science, he applies the principal metaphor of cognitive science—cognition as computation (adopting David Marr's paradigm)—to the navigation task. After comparing modern Western navigation with the method practiced in Micronesia, Hutchins explores the computational and cognitive properties of systems that are larger than an individual. He then turns to an analysis of learning or change in the organization of cognitive systems at several scales. Hutchins's conclusion illustrates the costs of ignoring the cultural nature of cognition, pointing to the ways in which contemporary cognitive science can be transformed by new meanings and interpretations.
+    download_link: https://mitpress.mit.edu/books/cognition-wild
+  - sys:
+      id: 5o2rzi0anSmAC6KgOEyUaa
+      created_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: false
+    publication_name: 'Reinventing Discovery: The New Era of Networked Science'
+    authors:
+    - Michael Nielsen
+    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    - Participation
+    sector_category:
+    - Science
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Book
+    abstract: |-
+      In Reinventing Discovery, Michael Nielsen argues that we are living at the dawn of the most dramatic change in science in more than 300 years. This change is being driven by powerful new cognitive tools, enabled by the internet, which are greatly accelerating scientific discovery. There are many books about how the internet is changing business or the workplace or government. But this is the first book about something much more fundamental: how the internet is transforming the nature of our collective intelligence and how we understand the world.
+
+      Reinventing Discovery tells the exciting story of an unprecedented new era of networked science. We learn, for example, how mathematicians in the Polymath Project are spontaneously coming together to collaborate online, tackling and rapidly demolishing previously unsolved problems. We learn how 250,000 amateur astronomers are working together in a project called Galaxy Zoo to understand the large-scale structure of the Universe, and how they are making astonishing discoveries, including an entirely new kind of galaxy. These efforts are just a small part of the larger story told in this book--the story of how scientists are using the internet to dramatically expand our problem-solving ability and increase our combined brainpower.
+
+      This is a book for anyone who wants to understand how the online world is revolutionizing scientific discovery today--and why the revolution is just beginning.
+    download_link: https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
+  - sys:
+      id: 4geM05ASKAA4QiGQk0C6aG
+      created_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
+      updated_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Meaningful meetings: how can meetings be made better'
+    organization:
+    - MacArthur Foundation Research Network on Opening Governance
+    authors:
+    - Geoff Mulgan
+    publication_date: !ruby/object:DateTime 2015-09-20 00:00:00.000000000 -05:00
+    innovation_category:
+    - Collective Intelligence
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Working Paper
+    abstract: |-
+      Many of us spend much of our time in meetings and at conferences. But too often these feel like a waste of time, or fail to make the most of the knowledge and experience of the people present.
+
+      Meetings have changed - with much more use of online tools, and a growing range of different meeting formats. But our sense is that meetings could be much better
+      run and achieve better results.
+
+      This paper tries to help. It:
+      ● summarises some of what's known about how meetings work well or badly;
+      ● makes recommendations about how to make meetings better; and
+      ● showcases some interesting recent innovations.
+
+      It forms part of a larger research programme at Nesta on collective intelligence which is investigating how groups and organisations can make the most of their brains, and of the technologies they use.
+
+      We hope the paper will be helpful to anyone designing or running meetings of any kind, and that readers will contribute good examples, ideas and evidence which can be added into future versions.
+    download_link: http://www.nesta.org.uk/sites/default/files/meaningful_meetings.pdf
+- sys:
+    id: 6iITlL4lYQ0gK8sEseKqCy
+    created_at: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
+    updated_at: !ruby/object:DateTime 2018-07-31 13:15:30.933000000 Z
+    content_type_id: list
+    space:
+      sys:
+        id: ufh1mvj7xl16
+    type: Entry
+    environment:
+      sys:
+        id: master
+        type: Link
+        linkType: Environment
+    revision: 7
+    content_type:
+      sys:
+        id: list
+    locale: en-US
+  title: Selected Readings on Civic Technology
+  author:
+  - Rebecca Rumbul
+  affiliation:
+  - mySociety
+  affiliation_logo:
+    sys:
+      id: 40m6xCXnWom6acAUYAIYoa
+      created_at: !ruby/object:DateTime 2018-07-31 13:14:20.157000000 Z
+      updated_at: !ruby/object:DateTime 2018-07-31 13:14:20.157000000 Z
+    title: mysociety-logo-white
+    description: 
+    url: "//images.ctfassets.net/ufh1mvj7xl16/40m6xCXnWom6acAUYAIYoa/c8cc1ee4ff46ca9892c6e837dc126aa4/mysociety-logo-white.png"
+  description: "mySociety’s vision is for citizens around the world to feel empowered
+    to interact efficiently, effectively and meaningfully with their governments and
+    decision-makers using low cost and user-friendly civic technology. We want to
+    enable citizens to communicate through accessible means, to solve their problems
+    and to get what they are entitled to from institutions.\n\nWe believe that strong
+    democratic accountability and a thriving civil society are vital to our common
+    welfare, and that these cannot survive where people do not engage with government
+    and communities. We work online because we believe that the internet can meaningfully
+    lower the barriers to taking the first civic or democratic steps in a citizen’s
+    life, and that it can do so at scale.\n\nThese selected readings on civic technology
+    reflect this vision and greatly improve our understanding of how and why civic
+    tech is having an impact. \n\n\n__EVALUATING DIGITAL CITIZEN ENGAGEMENT : A PRACTICAL
+    GUIDE__\n\n*World Bank Group (2015)*\n\nWhenever I speak to someone that’s just
+    getting started in the civic tech world, this is the first report I suggest they
+    read. It's primarily aimed at practitioners rather than researchers, but it’s
+    a wonderful introduction to the key concepts, the challenges, the language and
+    the global landscape of civic tech. This report was informed by a lot of the main
+    stakeholders in civic tech, and includes great examples of the work that’s happening,
+    and the tasks associated with increasing and measuring digital civic engagement.
+    Civic tech is maturing as a field, and this report provides much encouraging inspiration
+    in analysing the real-world impacts of civic technologies, going beyond primitive
+    measurements to discuss meaningful methods.\n\n\n__THE PROBLEM OF CITIZENS: E-DEMOCRACY
+    FOR ACTUALLY EXISTING DEMOCRACY__\n\n*Kreiss (2015)*\n\nThis is an incredibly
+    thoughtful article that considers e-democracy initiatives to be fundamentally
+    flawed in their designs, and based on flawed assumptions about users being impartial
+    and non-partisan. It argues against generalising users of civic tech into a homogenous
+    group, and proposes that citizens be encouraged to deliberate and collaborate
+    both within and between partisan groupings in order to enhance understanding.
+    Whilst I find many of the suggestions in this paper impractical or unrealistic,
+    and I do not necessarily agree with the author on several points, the reason I
+    enjoy it so much is because it challenges assumptions that tend to be embedded
+    into the civic tech sphere, and prompts me to think about civic tech solutions
+    in a different way. In any field, there can be a tendency towards institutionalisation,
+    and this paper pushes against those boundaries with some very interesting arguments.
+    \n \n \n__\"I WLD LIKE U WMP TO EXTEND ELECTRICITY 2 OUR VILLAGE\": ON INFORMATION
+    TECHNOLOGY AND INTEREST ARTICULATION__ \n\n*Grossman, Humphreys & Saramone-Lutz
+    (2014)*\n\nIn a world where aid and development agencies, as well as philanthropists
+    and civil society, are promoting the transformative potential of the internet
+    in increasing civic engagement, this piece of research provides an incredibly
+    valuable insight into how individuals in developing countries are actually using
+    civic tech. A key risk in the research of civic tech is in drawing conclusions
+    based upon distinct or unrepresentative constituencies, and this research team
+    went to great lengths to conduct a high quality and well targeted analysis of
+    the low-income and marginalised individuals that are of significant interest to
+    the development community. This is an important piece of literature that I take
+    inspiration from when designing my own research projects. \n\n\n__WHO BENEFITS
+    FROM CIVIC TECH?__\n\n*mySociety (2015)*\n\nIt seems a little narcissistic to
+    cite a report produced by my own organisation, but it's a report that provides
+    some useful insights into the users of civic tech, and how they feel about the
+    tools that they are using. It is again, something of a starting point for people
+    who are just entering the world of civic tech, and provides an overview not just
+    of demographics, but of public attitudes. The great thing about this report is
+    its comparative aspect, looking at both developed countries and developing countries,
+    and whilst it makes for uncomfortable reading in places (identifying the gender,
+    age and educational imbalances in the user bases), it also provides encouraging
+    data concerning users self-reported empowerment. \n\n\n__WHEN DOES ICT-ENABLED
+    CITIZEN VOICE LEAD TO GOVERNMENT RESPONSIVENESS?__\n\n*Peixoto & Fox (2016)* \n\nThis
+    is a really important piece of research examining one of the most critical aspects
+    of e-democracy technologies; the responsiveness of governments. Civic technologists
+    can build the most beautifully crafted and user friendly platforms in the world,
+    but if politicians or bureaucrats are unwilling or unable to be responsive to
+    the issues raised by the platforms, then failure is inevitable, and the consequence
+    is a disillusioned public. This research unfortunately does not provide a very
+    encouraging picture of current institutional behaviours, however is inspirational
+    and thought-provoking for civic technologists in identifying a key issue that
+    requires an innovative solution. "
+  articles_list:
+  - sys:
+      id: paper_360
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'Evaluating Digital Citizen Engagement : A Practical Guide'
+    organization:
+    - World Bank Digital Engagement Evaluation Team
+    region:
+    - Brazil
+    - Uganda
+    - Cameroon
+    - Kenya
+    authors:
+    - World Bank Group
+    publication_date: !ruby/object:DateTime 2015-02-25 12:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    - Civic Technology
+    - Data Analysis
+    objective_category:
+    - Legitimacy
+    - Participation
+    methodology:
+    - Case Studies
+    - Conceptual Framework
+    publication_type:
+    - Working Paper
+    git_hub: ''
+    abstract: |-
+      With growing demand for transparency, accountability and citizen participation in
+       policy making and service provision, engagement between citizens and their governments,
+       as well as with donors and the private sector that deliver government
+       services, is increasingly important. Increased use of technology brings both opportunities
+       and challenges to citizen engagement processes, including opportunities
+       for collecting, analyzing and evaluating data about these processes. This guide provides
+       practical steps to assess the extent to which digital tools have contributed to
+       citizen engagement and the help to understand the impact that the introduction of
+       technology has had on the engagement processes. With examples and lessons from case studies from Brazil, Uganda, Cameroon and
+       Kenya, the guide provides practical tools and guidelines for use in evaluating the
+       expanding field of digital citizen engagement.
+    download_link: https://openknowledge.worldbank.org/bitstream/handle/10986/23752/deef-book.pdf?sequence=1&isAllowed=y
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: paper_373
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: '"I wld like u WMP to extend electricity 2 our village": On
+      Information Technology and Interest Articulation'
+    region:
+    - Uganda
+    authors:
+    - Guy Grossman
+    - Macartan Humphreys
+    - Gabriella Sacramone-Lutz
+    publication_date: !ruby/object:DateTime 2014-08-16 12:00:00.000000000 -04:00
+    innovation_category:
+    - Civic Technology
+    - Citizen Engagement and Crowdsourcing
+    objective_category:
+    - Participation
+    methodology:
+    - Case Studies
+    publication_type:
+    - Journal Article
+    git_hub: ''
+    abstract: 'How does access to information communication technology (ICT) affect
+      who gets heard and what gets communicated to politicians? On the one hand, ICT
+      can lower communication costs for poorer constituents; on the other, technological
+      channels may be used disproportionately more by the already well connected.
+      To assess the flattening effects of ICTs, we presented a representative sample
+      of constituents in Uganda with an opportunity to send a text message to their
+      representatives at one of three randomly assigned prices. Critically, and contrary
+      to concerns that technological innovations benefit the privileged, we find evidence
+      that ICT can lead to significant flattening: a greater share of marginalized
+      populations use this channel compared to existing political communication channels.
+      Price plays a more complex role. Subsidizing the full cost of messaging increases
+      uptake by over 40%. Surprisingly however, subsidy-induced increases in uptake
+      do not yield further flattening since free channels are not used at higher rates
+      by more marginalized constituents.'
+    download_link: http://journals.cambridge.org/download.php?file=%2FPSR%2FPSR108_03%2FS0003055414000331a.pdf&code=217f5c3bd941bed57005a5003ed21b36
+    related_content_title: Appendices
+    related_content_url: http://journals.cambridge.org/action/displaySuppMaterial?cupCode=1&type=4&jid=PSR&volumeId=108&issueId=03&aid=9327413&sessionId=CC69E58744D741A07ED364A13603DA95.journals
+    related_data_url: ''
+  - sys:
+      id: paper_323
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: Who Benefits From Civic Technology?
+    organization:
+    - mySociety
+    authors:
+    - Rebecca Rumbul
+    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
+    innovation_category:
+    - Civic Technology
+    objective_category:
+    - Participation
+    methodology:
+    - Quantitative Analysis
+    publication_type:
+    - Research Report
+    git_hub: ''
+    abstract: This research seeks to begin at the beginning, asking the most basic
+      questions about who actually uses civic technology and why. Gathering data from
+      civic technology groups from around the world, it shows the variations in usage
+      of civic tech across four core countries (US, UK, Kenya and South Africa), and
+      records the attitudes of users towards the platforms they are using.
+    download_link: http://www.mysociety.org/research/who-benefits-from-civic-technology/
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: paper_321
+      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: When Does ICT-Enabled Citizen Voice Lead to Government Responsiveness?
+    organization:
+    - World Bank Digital Engagement Evaluation Team
+    authors:
+    - Tiago Peixoto
+    - Jonathan Fox
+    publication_date: !ruby/object:DateTime 2016-01-01 12:00:00.000000000 -05:00
+    innovation_category:
+    - Citizen Engagement and Crowdsourcing
+    objective_category:
+    - Effectiveness
+    methodology:
+    - Case Studies
+    publication_type:
+    - Working Paper
+    git_hub: ''
+    abstract: |
+      This paper reviews evidence on the use of 23 information and communication technology (ICT) platforms
+       to project citizen voice to improve public service delivery. This meta-analysis focuses on empirical studies
+       of initiatives in the global South, highlighting both citizen uptake (‘yelp’) and the degree to which public
+       service providers respond to expressions of citizen voice (‘teeth’). The conceptual framework further distinguishes
+       between two trajectories for ICT-enabled citizen voice: Upwards accountability occurs when users
+       provide feedback directly to decision-makers in real time, allowing policy-makers and program managers
+       to identify and address service delivery problems – but at their discretion. Downwards accountability, in
+       contrast, occurs either through real time user feedback or less immediate forms of collective civic action
+       that publicly call on service providers to become more accountable and depends less exclusively on decision-
+       makers’ discretion about whether or not to act on the information provided. This distinction between
+       the ways in which ICT platforms mediate the relationship between citizens and service providers allows for
+       a precise analytical focus on how different dimensions of such platforms contribute to public sector responsiveness.
+       These cases suggest that while ICT platforms have been relevant in increasing policymakers’
+       and senior managers’ capacity to respond, most of them have yet to influence their willingness to do so.
+    download_link: http://openknowledge.worldbank.org/bitstream/handle/10986/23650/WDR16-BP-When-Does-ICT-Enabled-Citizen-Voice-Peixoto-Fox.pdf?sequence=1&isAllowed=y
+    related_content_title: ''
+    related_content_url: ''
+    related_data_url: ''
+  - sys:
+      id: 6HezXYUtdmwWe0wIW4m02E
+      created_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
+      updated_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
+      content_type_id: paper
+      space:
+        sys:
+          id: ufh1mvj7xl16
+      type: Entry
+      environment:
+        sys:
+          id: master
+          type: Link
+          linkType: Environment
+      revision: 1
+      content_type:
+        sys:
+          id: paper
+      locale: en-US
+    open: true
+    publication_name: 'The Problem of Citizens: E-Democracy for Actually Existing
+      Democracy'
+    authors:
+    - Daniel Kreiss
+    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
+    innovation_category:
+    - Distributed Governance
+    - Open Data
+    - Data Governance
+    objective_category:
+    - Access
+    - Effectiveness
+    - Participation
+    - Participation and Sharing
+    sector_category:
+    - Politics
+    - Policy
+    - Governance
+    methodology:
+    - Conceptual Framework
+    publication_type:
+    - Journal Article
+    abstract: 'This article argues that many contemporary e-democracy projects, particularly
+      in the United States, have at their heart a model of atomistic, independent,
+      rational, and general-interest citizens. As such, these projects, variously
+      grouped under the labels of e-governance, online deliberation, open government,
+      and civic technology, often assume a broad shared consensus about collective
+      definitions of “public problems” that both does not exist and sidesteps debates
+      over what these problems are and what potential solutions can and should be.
+      Drawing on recent theories of political parties, social identity, and cultural
+      cognition, this article argues that e-democracy efforts need to account for
+      the fact that the citizens practitioners appeal to see themselves by default
+      as members of social groups, and that this has implications for politics and
+      what Jasanoff calls “civic epistemology.” Presenting the case of attempting
+      to change Republican opinions about climate change, I argue that e-democracy
+      initiatives should seek to foster collaboration and deliberation within, not
+      between, parties and among partisans. To do so, e-democratic reformers need
+      to explicitly structure the collaborative and deliberative environment so there
+      is a range of intra-party opinions and beliefs as part of the consultative and
+      policy-making process.
+
+'
+    download_link: http://sms.sagepub.com/content/1/2/2056305115616151.abstract
+- sys:
     id: 3WmLe1fRi0co2Yy2WkEe60
     created_at: !ruby/object:DateTime 2018-04-18 18:33:21.907000000 Z
     updated_at: !ruby/object:DateTime 2018-07-13 22:59:59.129000000 Z
@@ -1284,384 +2291,6 @@ list:
       design framework to assist designing successful participatory platforms.
     download_link: https://www.researchgate.net/publication/308891159_Designing_Successful_Participatory_Platforms_with_a_Public_Intent_Lessons_learned_from_practitioners_scholars_and_citizen_participants
 - sys:
-    id: 6iITlL4lYQ0gK8sEseKqCy
-    created_at: !ruby/object:DateTime 2016-12-07 02:23:42.655000000 Z
-    updated_at: !ruby/object:DateTime 2018-07-31 13:15:30.933000000 Z
-    content_type_id: list
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    environment:
-      sys:
-        id: master
-        type: Link
-        linkType: Environment
-    revision: 7
-    content_type:
-      sys:
-        id: list
-    locale: en-US
-  title: Selected Readings on Civic Technology
-  author:
-  - Rebecca Rumbul
-  affiliation:
-  - mySociety
-  affiliation_logo:
-    sys:
-      id: 40m6xCXnWom6acAUYAIYoa
-      created_at: !ruby/object:DateTime 2018-07-31 13:14:20.157000000 Z
-      updated_at: !ruby/object:DateTime 2018-07-31 13:14:20.157000000 Z
-    title: mysociety-logo-white
-    description: 
-    url: "//images.ctfassets.net/ufh1mvj7xl16/40m6xCXnWom6acAUYAIYoa/c8cc1ee4ff46ca9892c6e837dc126aa4/mysociety-logo-white.png"
-  description: "mySociety’s vision is for citizens around the world to feel empowered
-    to interact efficiently, effectively and meaningfully with their governments and
-    decision-makers using low cost and user-friendly civic technology. We want to
-    enable citizens to communicate through accessible means, to solve their problems
-    and to get what they are entitled to from institutions.\n\nWe believe that strong
-    democratic accountability and a thriving civil society are vital to our common
-    welfare, and that these cannot survive where people do not engage with government
-    and communities. We work online because we believe that the internet can meaningfully
-    lower the barriers to taking the first civic or democratic steps in a citizen’s
-    life, and that it can do so at scale.\n\nThese selected readings on civic technology
-    reflect this vision and greatly improve our understanding of how and why civic
-    tech is having an impact. \n\n\n__EVALUATING DIGITAL CITIZEN ENGAGEMENT : A PRACTICAL
-    GUIDE__\n\n*World Bank Group (2015)*\n\nWhenever I speak to someone that’s just
-    getting started in the civic tech world, this is the first report I suggest they
-    read. It's primarily aimed at practitioners rather than researchers, but it’s
-    a wonderful introduction to the key concepts, the challenges, the language and
-    the global landscape of civic tech. This report was informed by a lot of the main
-    stakeholders in civic tech, and includes great examples of the work that’s happening,
-    and the tasks associated with increasing and measuring digital civic engagement.
-    Civic tech is maturing as a field, and this report provides much encouraging inspiration
-    in analysing the real-world impacts of civic technologies, going beyond primitive
-    measurements to discuss meaningful methods.\n\n\n__THE PROBLEM OF CITIZENS: E-DEMOCRACY
-    FOR ACTUALLY EXISTING DEMOCRACY__\n\n*Kreiss (2015)*\n\nThis is an incredibly
-    thoughtful article that considers e-democracy initiatives to be fundamentally
-    flawed in their designs, and based on flawed assumptions about users being impartial
-    and non-partisan. It argues against generalising users of civic tech into a homogenous
-    group, and proposes that citizens be encouraged to deliberate and collaborate
-    both within and between partisan groupings in order to enhance understanding.
-    Whilst I find many of the suggestions in this paper impractical or unrealistic,
-    and I do not necessarily agree with the author on several points, the reason I
-    enjoy it so much is because it challenges assumptions that tend to be embedded
-    into the civic tech sphere, and prompts me to think about civic tech solutions
-    in a different way. In any field, there can be a tendency towards institutionalisation,
-    and this paper pushes against those boundaries with some very interesting arguments.
-    \n \n \n__\"I WLD LIKE U WMP TO EXTEND ELECTRICITY 2 OUR VILLAGE\": ON INFORMATION
-    TECHNOLOGY AND INTEREST ARTICULATION__ \n\n*Grossman, Humphreys & Saramone-Lutz
-    (2014)*\n\nIn a world where aid and development agencies, as well as philanthropists
-    and civil society, are promoting the transformative potential of the internet
-    in increasing civic engagement, this piece of research provides an incredibly
-    valuable insight into how individuals in developing countries are actually using
-    civic tech. A key risk in the research of civic tech is in drawing conclusions
-    based upon distinct or unrepresentative constituencies, and this research team
-    went to great lengths to conduct a high quality and well targeted analysis of
-    the low-income and marginalised individuals that are of significant interest to
-    the development community. This is an important piece of literature that I take
-    inspiration from when designing my own research projects. \n\n\n__WHO BENEFITS
-    FROM CIVIC TECH?__\n\n*mySociety (2015)*\n\nIt seems a little narcissistic to
-    cite a report produced by my own organisation, but it's a report that provides
-    some useful insights into the users of civic tech, and how they feel about the
-    tools that they are using. It is again, something of a starting point for people
-    who are just entering the world of civic tech, and provides an overview not just
-    of demographics, but of public attitudes. The great thing about this report is
-    its comparative aspect, looking at both developed countries and developing countries,
-    and whilst it makes for uncomfortable reading in places (identifying the gender,
-    age and educational imbalances in the user bases), it also provides encouraging
-    data concerning users self-reported empowerment. \n\n\n__WHEN DOES ICT-ENABLED
-    CITIZEN VOICE LEAD TO GOVERNMENT RESPONSIVENESS?__\n\n*Peixoto & Fox (2016)* \n\nThis
-    is a really important piece of research examining one of the most critical aspects
-    of e-democracy technologies; the responsiveness of governments. Civic technologists
-    can build the most beautifully crafted and user friendly platforms in the world,
-    but if politicians or bureaucrats are unwilling or unable to be responsive to
-    the issues raised by the platforms, then failure is inevitable, and the consequence
-    is a disillusioned public. This research unfortunately does not provide a very
-    encouraging picture of current institutional behaviours, however is inspirational
-    and thought-provoking for civic technologists in identifying a key issue that
-    requires an innovative solution. "
-  articles_list:
-  - sys:
-      id: paper_360
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-06 23:16:43.195000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Evaluating Digital Citizen Engagement : A Practical Guide'
-    organization:
-    - World Bank Digital Engagement Evaluation Team
-    region:
-    - Brazil
-    - Uganda
-    - Cameroon
-    - Kenya
-    authors:
-    - World Bank Group
-    publication_date: !ruby/object:DateTime 2015-02-25 12:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    - Civic Technology
-    - Data Analysis
-    objective_category:
-    - Legitimacy
-    - Participation
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Working Paper
-    git_hub: ''
-    abstract: |-
-      With growing demand for transparency, accountability and citizen participation in
-       policy making and service provision, engagement between citizens and their governments,
-       as well as with donors and the private sector that deliver government
-       services, is increasingly important. Increased use of technology brings both opportunities
-       and challenges to citizen engagement processes, including opportunities
-       for collecting, analyzing and evaluating data about these processes. This guide provides
-       practical steps to assess the extent to which digital tools have contributed to
-       citizen engagement and the help to understand the impact that the introduction of
-       technology has had on the engagement processes. With examples and lessons from case studies from Brazil, Uganda, Cameroon and
-       Kenya, the guide provides practical tools and guidelines for use in evaluating the
-       expanding field of digital citizen engagement.
-    download_link: https://openknowledge.worldbank.org/bitstream/handle/10986/23752/deef-book.pdf?sequence=1&isAllowed=y
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: paper_373
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-06 23:16:50.616000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: '"I wld like u WMP to extend electricity 2 our village": On
-      Information Technology and Interest Articulation'
-    region:
-    - Uganda
-    authors:
-    - Guy Grossman
-    - Macartan Humphreys
-    - Gabriella Sacramone-Lutz
-    publication_date: !ruby/object:DateTime 2014-08-16 12:00:00.000000000 -04:00
-    innovation_category:
-    - Civic Technology
-    - Citizen Engagement and Crowdsourcing
-    objective_category:
-    - Participation
-    methodology:
-    - Case Studies
-    publication_type:
-    - Journal Article
-    git_hub: ''
-    abstract: 'How does access to information communication technology (ICT) affect
-      who gets heard and what gets communicated to politicians? On the one hand, ICT
-      can lower communication costs for poorer constituents; on the other, technological
-      channels may be used disproportionately more by the already well connected.
-      To assess the flattening effects of ICTs, we presented a representative sample
-      of constituents in Uganda with an opportunity to send a text message to their
-      representatives at one of three randomly assigned prices. Critically, and contrary
-      to concerns that technological innovations benefit the privileged, we find evidence
-      that ICT can lead to significant flattening: a greater share of marginalized
-      populations use this channel compared to existing political communication channels.
-      Price plays a more complex role. Subsidizing the full cost of messaging increases
-      uptake by over 40%. Surprisingly however, subsidy-induced increases in uptake
-      do not yield further flattening since free channels are not used at higher rates
-      by more marginalized constituents.'
-    download_link: http://journals.cambridge.org/download.php?file=%2FPSR%2FPSR108_03%2FS0003055414000331a.pdf&code=217f5c3bd941bed57005a5003ed21b36
-    related_content_title: Appendices
-    related_content_url: http://journals.cambridge.org/action/displaySuppMaterial?cupCode=1&type=4&jid=PSR&volumeId=108&issueId=03&aid=9327413&sessionId=CC69E58744D741A07ED364A13603DA95.journals
-    related_data_url: ''
-  - sys:
-      id: paper_323
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.762000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Who Benefits From Civic Technology?
-    organization:
-    - mySociety
-    authors:
-    - Rebecca Rumbul
-    publication_date: !ruby/object:DateTime 2016-12-06 20:15:00.000000000 -05:00
-    innovation_category:
-    - Civic Technology
-    objective_category:
-    - Participation
-    methodology:
-    - Quantitative Analysis
-    publication_type:
-    - Research Report
-    git_hub: ''
-    abstract: This research seeks to begin at the beginning, asking the most basic
-      questions about who actually uses civic technology and why. Gathering data from
-      civic technology groups from around the world, it shows the variations in usage
-      of civic tech across four core countries (US, UK, Kenya and South Africa), and
-      records the attitudes of users towards the platforms they are using.
-    download_link: http://www.mysociety.org/research/who-benefits-from-civic-technology/
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: paper_321
-      created_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-06 23:16:21.121000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: When Does ICT-Enabled Citizen Voice Lead to Government Responsiveness?
-    organization:
-    - World Bank Digital Engagement Evaluation Team
-    authors:
-    - Tiago Peixoto
-    - Jonathan Fox
-    publication_date: !ruby/object:DateTime 2016-01-01 12:00:00.000000000 -05:00
-    innovation_category:
-    - Citizen Engagement and Crowdsourcing
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Case Studies
-    publication_type:
-    - Working Paper
-    git_hub: ''
-    abstract: |
-      This paper reviews evidence on the use of 23 information and communication technology (ICT) platforms
-       to project citizen voice to improve public service delivery. This meta-analysis focuses on empirical studies
-       of initiatives in the global South, highlighting both citizen uptake (‘yelp’) and the degree to which public
-       service providers respond to expressions of citizen voice (‘teeth’). The conceptual framework further distinguishes
-       between two trajectories for ICT-enabled citizen voice: Upwards accountability occurs when users
-       provide feedback directly to decision-makers in real time, allowing policy-makers and program managers
-       to identify and address service delivery problems – but at their discretion. Downwards accountability, in
-       contrast, occurs either through real time user feedback or less immediate forms of collective civic action
-       that publicly call on service providers to become more accountable and depends less exclusively on decision-
-       makers’ discretion about whether or not to act on the information provided. This distinction between
-       the ways in which ICT platforms mediate the relationship between citizens and service providers allows for
-       a precise analytical focus on how different dimensions of such platforms contribute to public sector responsiveness.
-       These cases suggest that while ICT platforms have been relevant in increasing policymakers’
-       and senior managers’ capacity to respond, most of them have yet to influence their willingness to do so.
-    download_link: http://openknowledge.worldbank.org/bitstream/handle/10986/23650/WDR16-BP-When-Does-ICT-Enabled-Citizen-Voice-Peixoto-Fox.pdf?sequence=1&isAllowed=y
-    related_content_title: ''
-    related_content_url: ''
-    related_data_url: ''
-  - sys:
-      id: 6HezXYUtdmwWe0wIW4m02E
-      created_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
-      updated_at: !ruby/object:DateTime 2016-12-07 20:58:32.082000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'The Problem of Citizens: E-Democracy for Actually Existing
-      Democracy'
-    authors:
-    - Daniel Kreiss
-    publication_date: !ruby/object:DateTime 2015-01-01 00:00:00.000000000 -05:00
-    innovation_category:
-    - Distributed Governance
-    - Open Data
-    - Data Governance
-    objective_category:
-    - Access
-    - Effectiveness
-    - Participation
-    - Participation and Sharing
-    sector_category:
-    - Politics
-    - Policy
-    - Governance
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    abstract: 'This article argues that many contemporary e-democracy projects, particularly
-      in the United States, have at their heart a model of atomistic, independent,
-      rational, and general-interest citizens. As such, these projects, variously
-      grouped under the labels of e-governance, online deliberation, open government,
-      and civic technology, often assume a broad shared consensus about collective
-      definitions of “public problems” that both does not exist and sidesteps debates
-      over what these problems are and what potential solutions can and should be.
-      Drawing on recent theories of political parties, social identity, and cultural
-      cognition, this article argues that e-democracy efforts need to account for
-      the fact that the citizens practitioners appeal to see themselves by default
-      as members of social groups, and that this has implications for politics and
-      what Jasanoff calls “civic epistemology.” Presenting the case of attempting
-      to change Republican opinions about climate change, I argue that e-democracy
-      initiatives should seek to foster collaboration and deliberation within, not
-      between, parties and among partisans. To do so, e-democratic reformers need
-      to explicitly structure the collaborative and deliberative environment so there
-      is a range of intra-party opinions and beliefs as part of the consultative and
-      policy-making process.
-
-'
-    download_link: http://sms.sagepub.com/content/1/2/2056305115616151.abstract
-- sys:
     id: 5weIgaazBYIuYUIWGkcYwo
     created_at: !ruby/object:DateTime 2017-04-14 14:56:55.532000000 Z
     updated_at: !ruby/object:DateTime 2018-07-31 13:16:49.088000000 Z
@@ -2380,632 +3009,3 @@ list:
     abstract: An overview report from the World Economic Forum on the existing data
       deficit and the value and impact of big data for sustainable development
     download_link: http://www3.weforum.org/docs/WEFUSA_DataDrivenDevelopment_Report2015.pdf
-- sys:
-    id: 4XDvBZXr288E4smsGAiQCa
-    created_at: !ruby/object:DateTime 2017-02-02 22:41:46.138000000 Z
-    updated_at: !ruby/object:DateTime 2018-07-31 13:16:18.616000000 Z
-    content_type_id: list
-    space:
-      sys:
-        id: ufh1mvj7xl16
-    type: Entry
-    environment:
-      sys:
-        id: master
-        type: Link
-        linkType: Environment
-    revision: 4
-    content_type:
-      sys:
-        id: list
-    locale: en-US
-  title: Selected Readings on Collective Intelligence
-  author:
-  - Geoff Mulgan
-  affiliation:
-  - Nesta
-  affiliation_logo:
-    sys:
-      id: GqXR9G1WACqEmYa6U8OKY
-      created_at: !ruby/object:DateTime 2018-07-31 13:16:02.965000000 Z
-      updated_at: !ruby/object:DateTime 2018-07-31 13:16:02.965000000 Z
-    title: Nesta White Horizontal Logo RGB
-    description: 
-    url: "//images.ctfassets.net/ufh1mvj7xl16/GqXR9G1WACqEmYa6U8OKY/17169c5e7b9a0266d19668c48234f46a/Nesta_White_Horizontal_Logo_RGB.png"
-  description: "Collective intelligence is a newish term for an old topic. It describes
-    how intelligence functions at large scales: how teams or meetings do or don’t
-    make the most of their members, through to how whole societies solve problems.
-    \ The phrase was first used in the 19th century but has been given much greater
-    prominence recently thanks to the spread of digital tools. There’s relatively
-    little literature on collective intelligence as such, but there is a very broad
-    literature of related topics, from philosophical speculation about how the Internet
-    could change the way humanity thinks to social psychology, computer science to
-    economics. This reflects the fact that there isn’t yet a coherent discipline of
-    collective intelligence. But over the next few decades there’s a good prospect
-    that one will emerge, synthesising insights from across a range of disciplines,
-    and in particular showing how the combination of human and machine intelligence
-    can help groups think and act more successfully.\n\nThe following readings give
-    a flavour of the range. They include some very broad sweeps (such as the books
-    by Pierre Levy and Howard Bloom); a collection from Thomas Malone and Michael
-    Bernstein which aims to map the state of the field, including the contributions
-    of various social science disciplines; a recent collection from the foremost contemporary
-    author on individual intelligence (Robert Sternberg); and a very different collection
-    focused more on democracy and public decision-making (Helene Landemore and Jon
-    Elster). \n\nThe piece by Anita Woolley et al is a good example of a specific
-    experiment which showed some of the characteristics that make a group better at
-    solving problems. Cass Sunstein’s book is a very readable guide to group decision
-    making, which reaffirms the principle that it’s often sensible to get a group
-    to agree on diagnosis before moving onto prescription. Simon Hartley’s book on
-    teams is a good example of the huge literature on what makes teams work – whether
-    in sports or business.   Michael Nielsen’s book is a fascinating account of how
-    science is being transformed by the Internet and new ways of mobilising many minds
-    to solve problems. Finally, I’ve also added on a link to a short paper I wrote
-    on what’s known about making meetings successful – which shows why the vast majority
-    of meetings in academic, business and politics are so unsuccessful in making the
-    most of the brainpower of their participants.\n"
-  articles_list:
-  - sys:
-      id: B5jerRrhg42QgkMKGeqcs
-      created_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 18:33:16.683000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Collective Intelligence: Mankind''s Emerging World in Cyberspace'
-    authors:
-    - Pierre Levy
-    publication_date: !ruby/object:DateTime 1999-01-19 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    - Legitimacy
-    sector_category:
-    - Internet Governance
-    methodology:
-    - Conceptual Framework
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    abstract: The number of travelers along the information superhighway is increasing
-      at a rate of 10 percent a month. How will this communications revolution affect
-      our culture and society? Pierre Lévy shows how the unfettered exchange of ideas
-      in cyberspace has the potential to liberate us from the social and political
-      hierarchies that have stood in the way of mankind's advancement. Anthropologist,
-      historian, sociologist, and philosopher, Lévy writes with a depth of scholarship
-      and imaginative insight rare among media critics. At once a profound historical
-      analysis of the development of human culture and a blueprint for the future,
-      Collective Intelligence is a visionary work.
-    download_link: https://www.amazon.com/Collective-Intelligence-Mankinds-Emerging-Cyberspace/dp/0738202614
-  - sys:
-      id: 2LO6aQwoukOqMkGaWggguQ
-      created_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 18:53:22.782000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Global Brain: The Evolution of Mass Mind from the Big Bang
-      to the 21st Century'
-    authors:
-    - Howard Bloom
-    publication_date: !ruby/object:DateTime 2017-01-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    abstract: |-
-      In this extraordinary follow-up to the critically acclaimed The Lucifer Principle, Howard Bloom-one of today's preeminent thinkers-offers us a bold rewrite of the evolutionary saga. He shows how plants and animals (including humans) have evolved together as components of a worldwide learning machine. He describes the network of life on Earth as one that is, in fact, a ""complex adaptive system,"" a global brain in which each of us plays a sometimes conscious, sometimes unknowing role. and he reveals that the World Wide Web is just the latest step in the development of this brain. These are theories as important as they are radical. Informed by twenty years of interdisciplinary research, Bloom takes us on a spellbinding journey back to the big bang to let us see how its fires forged primordial sociality. As he brings us back via surprising routes, we see how our earliest bacterial ancestors built multitrillion-member research and development teams a full 3.5 billion years ago. We watch him unravel the previously unrecognized strands of interconnectedness woven by crowds of trilobites, hunting packs of dinosaurs, feathered flying lizards gathered in flocks, troops of baboons making communal decisions, and adventurous tribes of protohumans spreading across continents but still linked by primitive forms of information networking. We soon find ourselves reconsidering our place in the world. Along the way, Bloom offers us exhilarating insights into the strange tricks of body and mind that have organized a variety of life forms: spiny lobsters, which, during the Paleozoic age, participated in communal marching rituals; and bees, which, during the age of dinosaurs, conducted collective brainwork. This fascinating tour continues on to the sometimes brutal subculture wars that have spurred the growth of human civilization since the Stone Age. Bloom shows us how culture shapes our infant brains, immersing us in a matrix of truth and mass delusion that we think of as reality.
-
-      Global Brain is more than just a brilliantly original contribution to the ongoing debate on the inner workings of evolution. It is a ""grand vision,"" says the eminent evolutionary biologist David Sloan Wilson, a work that transforms our very view of who we are and why.
-  - sys:
-      id: 6N2e1GkpTqyok0eU28SAcC
-      created_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 18:56:05.637000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Handbook of Collective Intelligence
-    authors:
-    - Thomas W. Malone
-    - Michael S. Bernstein
-    publication_date: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Essay Collection
-    publication_type:
-    - Book
-    abstract: "Intelligence does not arise only in individual brains; it also arises
-      in groups of individuals. This is collective intelligence: groups of individuals
-      acting collectively in ways that seem intelligent. In recent years, a new kind
-      of collective intelligence has emerged: interconnected groups of people and
-      computers, collectively doing intelligent things. Today these groups are engaged
-      in tasks that range from writing software to predicting the results of presidential
-      elections. This volume reports on the latest research in the study of collective
-      intelligence, laying out a shared set of research challenges from a variety
-      of disciplinary and methodological perspectives. Taken together, these essays—by
-      leading researchers from such fields as computer science, biology, economics,
-      and psychology—lay the foundation for a new multidisciplinary field. \n\nEach
-      essay describes the work on collective intelligence in a particular discipline—for
-      example, economics and the study of markets; biology and research on emergent
-      behavior in ant colonies; human-computer interaction and artificial intelligence;
-      and cognitive psychology and the “wisdom of crowds” effect. Other areas in social
-      science covered include social psychology, organizational theory, law, and communications. "
-    download_link: https://mitpress.mit.edu/hci
-  - sys:
-      id: 4P6hFcgOtGQUEAKw0mykiC
-      created_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 19:05:40.077000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Evidence for a Collective Intelligence Factor in the Performance
-      of Human Groups
-    authors:
-    - Anita Williams Woolley
-    - Christopher F. Chabris
-    - Alex Pentland
-    - Nada Hashmi
-    - Thomas W. Malone
-    publication_date: !ruby/object:DateTime 2010-10-29 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Randomized Controlled Trial
-    publication_type:
-    - Journal Article
-    abstract: Psychologists have repeatedly shown that a single statistical factor—often
-      called “general intelligence”—emerges from the correlations among people’s performance
-      on a wide variety of cognitive tasks. But no one has systematically examined
-      whether a similar kind of “collective intelligence” exists for groups of people.
-      In two studies with 699 people, working in groups of two to five, we find converging
-      evidence of a general collective intelligence factor that explains a group’s
-      performance on a wide variety of tasks. This “c factor” is not strongly correlated
-      with the average or maximum individual intelligence of group members but is
-      correlated with the average social sensitivity of group members, the equality
-      in distribution of conversational turn-taking, and the proportion of females
-      in the group.
-    download_link: http://science.sciencemag.org/content/330/6004/686.full
-  - sys:
-      id: 6HXCvv9TeEi0mkYmMwAese
-      created_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 19:12:24.730000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Collective Wisdom: Principles and Mechanisms'
-    authors:
-    - Hélène Landemore
-    - Jon Elster
-    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    - Legitimacy
-    sector_category:
-    - Law
-    - Politics
-    - Policy
-    methodology:
-    - Case Studies
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    abstract: James Madison wrote, 'Had every Athenian citizen been a Socrates, every
-      Athenian assembly would still have been a mob'. The contributors to this volume
-      discuss and for the most part challenge this claim by considering conditions
-      under which many minds can be wiser than one. With backgrounds in economics,
-      cognitive science, political science, law and history, the authors consider
-      information markets, the internet, jury debates, democratic deliberation and
-      the use of diversity as mechanisms for improving collective decisions. At the
-      same time, they consider voter irrationality and paradoxes of aggregation as
-      possibly undermining the wisdom of groups. Implicitly or explicitly, the volume
-      also offers guidance and warnings to institutional designers.
-    download_link: https://www.amazon.com/dp/B008R9T21E/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
-  - sys:
-      id: 4Uo7UpBEliua2YuwQ2gg8q
-      created_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-01 19:16:58.360000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Creative Intelligence in the 21st Century: Grappling with Enormous
-      Problems and Huge Opportunities'
-    authors:
-    - Don Ambrose
-    - Robert J. Sternberg
-    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    sector_category:
-    - Education
-    methodology:
-    - Essay Collection
-    publication_type:
-    - Book
-    abstract: How can creative individuals and societies adapt to complex 21st-century
-      conditions? Will civilizations thrive or collapse in the decades to come if
-      they are not creative enough, or if they are too creative? Interest in these
-      questions is growing; however, until now there has been inadequate understanding
-      of the socioeconomic and cultural trends and issues that influence creativity.
-      This book provides that understanding while yielding insights from many of the
-      world’s leading creativity researchers and educational experts. The book begins
-      with a big-picture, interdisciplinary overview of the socioeconomic, cultural,
-      and technological pressures emerging from 21st-century globalization and describes
-      some ways in which those pressures simultaneously suppress, distort, and invigorate
-      creativity in general, and creative education in particular. After that, prominent
-      scholars of creativity and education use their impressive knowledge bases to
-      clarify how we can adjust our thoughts and actions in order to give ourselves
-      the best possible chances for success in this complex world.
-    download_link: http://www.springer.com/us/book/9789463005067
-  - sys:
-      id: 4GB6B8Lh68iSguqKCieEs8
-      created_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:26:51.157000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: Why do humans reason? Arguments for an argumentative theory
-    authors:
-    - Hugo Mercier
-    - Dan Sperber
-    publication_date: !ruby/object:DateTime 2017-11-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    - Behavioral Science and Nudges
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Journal Article
-    abstract: |-
-      Reasoning is generally seen as a means to improve knowledge and make better decisions. However, much evidence shows that reasoning often leads to epistemic distortions and poor decisions. This suggests that the function of reasoning should be rethought. Our hypothesis is that the function of reasoning is argumentative. It is to devise and evaluate arguments intended to persuade.
-      Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation. A wide range of evidence in the psychology of reasoning and decision making can be reinterpreted and better explained in the light of this hypothesis. Poor performance in standard reasoning tasks is explained by the lack of argumentative context. When the same problems are placed in a proper argumentative setting, people turn out to be skilled arguers. Skilled
-      arguers, however, are not after the truth but after arguments supporting their views. This explains the notorious confirmation bias. This bias is apparent not only when people are actually arguing, but also when they are reasoning proactively from the perspective of having to defend their opinions. Reasoning so motivated can distort evaluations and attitudes and allow erroneous beliefs to persist. Proactively used reasoning also favors decisions that are easy to justify but not necessarily better. In all these instances traditionally described as failures or flaws, reasoning does exactly what can be expected of an argumentative device: Look for arguments that support a given conclusion, and, ceteris paribus, favor conclusions for which arguments can be found.
-    download_link: http://www.dan.sperber.fr/wp-content/uploads/2009/10/MercierSperberWhydohumansreason.pdf
-  - sys:
-      id: 1pGoE8lal2MYMKKwyY2o4E
-      created_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:29:18.110000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Wiser: Getting Beyond Groupthink to Make Groups Smarter'
-    authors:
-    - Cass Sunstein
-    - Reid Hastie
-    publication_date: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    - Behavioral Science and Nudges
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    - Qualitative Analysis
-    publication_type:
-    - Book
-    abstract: "Since the beginning of human history, people have made decisions in
-      groups—first in families and villages, and now as part of companies, governments,
-      school boards, religious organizations, or any one of countless other groups.
-      And having more than one person to help decide is good because the group benefits
-      from the collective knowledge of all of its members, and this results in better
-      decisions. Right?\n\nBack to reality. We’ve all been involved in group decisions—and
-      they’re hard. And they often turn out badly. Why? Many blame bad decisions on
-      “groupthink” without a clear idea of what that term really means. \n\nNow, Nudge
-      coauthor Cass Sunstein and leading decision-making scholar Reid Hastie shed
-      light on the specifics of why and how group decisions go wrong—and offer tactics
-      and lessons to help leaders avoid the pitfalls and reach better outcomes. In
-      the first part of the book, they explain in clear and fascinating detail the
-      distinct problems groups run into:\n\n•They often amplify, rather than correct,
-      individual errors in judgment\n•They fall victim to cascade effects, as members
-      follow what others say or do\n•They become polarized, adopting more extreme
-      positions than the ones they began with\n•They emphasize what everybody knows
-      instead of focusing on critical information that only a few people know\n\nIn
-      the second part of the book, the authors turn to straightforward methods and
-      advice for making groups smarter. These approaches include silencing the leader
-      so that the views of other group members can surface, rethinking rewards and
-      incentives to encourage people to reveal their own knowledge, thoughtfully assigning
-      roles that are aligned with people’s unique strengths, and more.\n\nWith examples
-      from a broad range of organizations—from Google to the CIA—and written in an
-      engaging and witty style, Wiser will not only enlighten you; it will help your
-      team and your organization make better decisions—decisions that lead to greater
-      success."
-    download_link: https://www.amazon.com/dp/B00O4CRR9C/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
-  - sys:
-      id: 62DK1TZwbuq0aOmoWqECEO
-      created_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:31:00.244000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Stronger Together: How Great Teams Work'
-    authors:
-    - Simon Hartley
-    publication_date: !ruby/object:DateTime 2016-01-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: "What do world-class teams do that others don't? How do those teams
-      think, make decisions and respond to challenges?\n\nStronger Together will help
-      readers to understand what differentiates world-class teams from the rest. Using
-      these insights, readers can apply the same key principles when leading - or
-      being a part of - a team, whether they are in a business or sports environment.
-      \n\nTo illustrate how world-class teams operate and how they're led, the author
-      draws on examples of teamwork from a diverse range of disciplines, from The
-      Red Arrows to SAS Units, a Formula One Pit Crew, Americas Cup yacht crews, World
-      Championship sports teams and more. He includes case studies from his work with
-      elite professional, international and Olympic sports teams, plus executive leadership
-      teams from businesses.\n\nThis truly insightful and fascinating book lifts the
-      lid on what it takes to be the best and how we can translate these lessons to
-      our own performance."
-    download_link: https://www.amazon.com/Stronger-Together-Great-Teams-Work/dp/0349408483
-  - sys:
-      id: 3yBdw6vQa4mEOWGWc0WesM
-      created_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:32:45.969000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: Cognition in the Wild
-    authors:
-    - Edwin Hutchins
-    publication_date: !ruby/object:DateTime 1995-01-19 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    - Behavioral Science and Nudges
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: |-
-      Edwin Hutchins combines his background as an anthropologist and an open ocean racing sailor and navigator in this account of how anthropological methods can be combined with cognitive theory to produce a new reading of cognitive science. His theoretical insights are grounded in an extended analysis of ship navigation—its computational basis, its historical roots, its social organization, and the details of its implementation in actual practice aboard large ships. The result is an unusual interdisciplinary approach to cognition in culturally constituted activities outside the laboratory—"in the wild."
-
-      Hutchins examines a set of phenomena that have fallen in the cracks between the established disciplines of psychology and anthropology, bringing to light a new set of relationships between culture and cognition. The standard view is that culture affects the cognition of individuals. Hutchins argues instead that cultural activity systems have cognitive properties of their own that are different from the cognitive properties of the individuals who participate in them. Each action for bringing a large naval vessel into port, for example, is informed by culture: the navigation team can be seen as a cognitive and computational system.
-
-      Introducing Navy life and work on the bridge, Hutchins makes a clear distinction between the cognitive properties of an individual and the cognitive properties of a system. In striking contrast to the usual laboratory tasks of research in cognitive science, he applies the principal metaphor of cognitive science—cognition as computation (adopting David Marr's paradigm)—to the navigation task. After comparing modern Western navigation with the method practiced in Micronesia, Hutchins explores the computational and cognitive properties of systems that are larger than an individual. He then turns to an analysis of learning or change in the organization of cognitive systems at several scales. Hutchins's conclusion illustrates the costs of ignoring the cultural nature of cognition, pointing to the ways in which contemporary cognitive science can be transformed by new meanings and interpretations.
-    download_link: https://mitpress.mit.edu/books/cognition-wild
-  - sys:
-      id: 5o2rzi0anSmAC6KgOEyUaa
-      created_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:34:30.563000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: false
-    publication_name: 'Reinventing Discovery: The New Era of Networked Science'
-    authors:
-    - Michael Nielsen
-    publication_date: !ruby/object:DateTime 2017-12-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    - Participation
-    sector_category:
-    - Science
-    methodology:
-    - Case Studies
-    - Conceptual Framework
-    publication_type:
-    - Book
-    abstract: |-
-      In Reinventing Discovery, Michael Nielsen argues that we are living at the dawn of the most dramatic change in science in more than 300 years. This change is being driven by powerful new cognitive tools, enabled by the internet, which are greatly accelerating scientific discovery. There are many books about how the internet is changing business or the workplace or government. But this is the first book about something much more fundamental: how the internet is transforming the nature of our collective intelligence and how we understand the world.
-
-      Reinventing Discovery tells the exciting story of an unprecedented new era of networked science. We learn, for example, how mathematicians in the Polymath Project are spontaneously coming together to collaborate online, tackling and rapidly demolishing previously unsolved problems. We learn how 250,000 amateur astronomers are working together in a project called Galaxy Zoo to understand the large-scale structure of the Universe, and how they are making astonishing discoveries, including an entirely new kind of galaxy. These efforts are just a small part of the larger story told in this book--the story of how scientists are using the internet to dramatically expand our problem-solving ability and increase our combined brainpower.
-
-      This is a book for anyone who wants to understand how the online world is revolutionizing scientific discovery today--and why the revolution is just beginning.
-    download_link: https://www.amazon.com/dp/B005OQGZ54/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1
-  - sys:
-      id: 4geM05ASKAA4QiGQk0C6aG
-      created_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
-      updated_at: !ruby/object:DateTime 2017-02-02 22:39:03.537000000 Z
-      content_type_id: paper
-      space:
-        sys:
-          id: ufh1mvj7xl16
-      type: Entry
-      environment:
-        sys:
-          id: master
-          type: Link
-          linkType: Environment
-      revision: 1
-      content_type:
-        sys:
-          id: paper
-      locale: en-US
-    open: true
-    publication_name: 'Meaningful meetings: how can meetings be made better'
-    organization:
-    - MacArthur Foundation Research Network on Opening Governance
-    authors:
-    - Geoff Mulgan
-    publication_date: !ruby/object:DateTime 2015-09-20 00:00:00.000000000 -05:00
-    innovation_category:
-    - Collective Intelligence
-    objective_category:
-    - Effectiveness
-    methodology:
-    - Conceptual Framework
-    publication_type:
-    - Working Paper
-    abstract: |-
-      Many of us spend much of our time in meetings and at conferences. But too often these feel like a waste of time, or fail to make the most of the knowledge and experience of the people present.
-
-      Meetings have changed - with much more use of online tools, and a growing range of different meeting formats. But our sense is that meetings could be much better
-      run and achieve better results.
-
-      This paper tries to help. It:
-      ● summarises some of what's known about how meetings work well or badly;
-      ● makes recommendations about how to make meetings better; and
-      ● showcases some interesting recent innovations.
-
-      It forms part of a larger research programme at Nesta on collective intelligence which is investigating how groups and organisations can make the most of their brains, and of the technologies they use.
-
-      We hope the paper will be helpful to anyone designing or running meetings of any kind, and that readers will contribute good examples, ideas and evidence which can be added into future versions.
-    download_link: http://www.nesta.org.uk/sites/default/files/meaningful_meetings.pdf
