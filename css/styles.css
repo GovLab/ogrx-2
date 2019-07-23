@@ -417,12 +417,39 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 .browsing-ways {
   margin-top: 30px; }
 
+.top-bar__button {
+  position: absolute;
+  height: 100%;
+  padding: 13px; }
+  .top-bar__button a:hover {
+    text-decoration: none; }
+  .top-bar__button--text {
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 18px; }
+    .top-bar__button--text i {
+      vertical-align: bottom;
+      font-size: 1rem; }
+    @media (max-width: 840px) {
+      .top-bar__button--text {
+        font-size: 0.8rem;
+        width: 200px;
+        padding: 20px; }
+        .top-bar__button--text i {
+          font-size: 0.8rem; } }
+  .top-bar__button--left {
+    left: 0; }
+  .top-bar__button--right {
+    right: 0; }
 .top-bar__logo {
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 8px;
+  padding: 10px;
   color: white; }
   .top-bar__logo em {
     font-weight: 300; }
@@ -433,7 +460,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     display: block; }
   .top-bar__logo__mobile {
     display: none; }
-  @media (max-width: 600px) {
+  @media (max-width: 840px) {
     .top-bar__logo__desktop {
       display: none; }
     .top-bar__logo__mobile {
