@@ -19,8 +19,34 @@
   &__button {
     position: absolute;
     height: 100%;
+    padding: 13px;
+    a:hover {
+      text-decoration: none;
+    }
+    &--text {
+      font-family: "proxima-nova", sans-serif;;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      padding: 18px;
+      i {
+        vertical-align: bottom;
+        font-size: 1rem;
+      }
+      @media (max-width: 840px) {
+        font-size: 0.8rem;
+        width: 200px;
+        padding: 20px;
+        i {
+          font-size: 0.8rem;
+        }
+      }
+    }
     &--left {
       left: 0;
+    }
+    &--right {
+      right: 0;
     }
   }
   &__logo {
@@ -29,7 +55,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 8px;
+    padding: 10px;
     color: white;
 
     em {
@@ -44,7 +70,7 @@
     &__desktop { display: block; }
     &__mobile { display: none; }
 
-    @media (max-width: 600px) {
+    @media (max-width: 840px) {
       &__desktop { display: none; }
       &__mobile { display: block; }
     }
