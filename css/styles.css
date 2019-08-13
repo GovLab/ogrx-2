@@ -297,13 +297,8 @@
   margin: 0; }
 .footer__partner-logo {
   margin-right: 5%;
+  max-width: 60%;
   display: inline-block !important; }
-  .footer__partner-logo--deet {
-    max-width: 40%; }
-  .footer__partner-logo--govlab {
-    max-width: 24%; }
-  .footer__partner-logo--mysociety {
-    max-width: 25%; }
 
 .powered-by {
   text-align: right;
