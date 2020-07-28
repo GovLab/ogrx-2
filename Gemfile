@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "json", "2.0.2"
+gem "json", "2.3.0"
 gem "jekyll", "~> 3.5"
 gem 'rake'
 
